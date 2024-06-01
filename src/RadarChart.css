@@ -1,0 +1,87 @@
+.radar-chart {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .radar-chart svg {
+    background-color: #fff;
+    border-radius: 100%;
+  }
+  
+  .radar-chart line {
+    stroke: black;
+    stroke-width: 1;
+  }
+  
+  .radar-chart circle {
+    stroke: #333;
+    stroke-width: 2;
+  }
+  
+  .radar-chart circle.clickable-point {
+    stroke: none;
+  }
+  
+  .radar-chart polygon {
+    fill: rgba(100, 181, 246, 0.2);
+    stroke: #42a5f5;
+    stroke-width: 2;
+    transition: fill 0.3s, stroke 0.3s;
+  }
+  
+  .radar-chart polygon:hover {
+    fill: rgba(100, 181, 246, 0.4);
+    stroke: #1e88e5;
+  }
+  
+  .radar-chart text {
+    font-size: 14px;
+    fill: #333;
+    font-weight: 500;
+  }
+  
+  .radar-chart-controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .radar-chart-controls label {
+    font-weight: 500;
+    margin-right: 12px;
+    color: #666;
+  }
+  
+  .radar-chart-controls .select {
+    width: 120px;
+    margin-right: 24px;
+  }
+  
+  .radar-chart-controls .select:last-child {
+    margin-right: 0;
+  }
+  
+  .radar-chart-controls .select__control {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .radar-chart-controls .select__indicator {
+    color: #42a5f5;
+  }
+  
+  .radar-chart-controls .select__option--is-focused {
+    background-color: rgba(100, 181, 246, 0.1);
+  }
+  
+  .radar-chart-controls .select__option--is-selected {
+    background-color: #42a5f5;
+    color: #fff;
+  }
