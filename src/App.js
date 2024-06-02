@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <h1>Profile Selector 2.9</h1>
+      <h1>Profile Selector v3 Concept</h1>
       <RadarChart data={data} onDataChange={handleDataChange} />
       <div className="ctf-flag-display">
         <h3>Recommended Quality Profile:</h3>

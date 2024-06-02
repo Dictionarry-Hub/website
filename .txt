@@ -1,10 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import Select from 'react-select';
 import './RadarChart.css';
 
 const RadarChart = ({ data, onDataChange }) => {
     const levels = [1, 2, 3, 4, 5, 6];
+    const svgRef = useRef(null);
+    const polygonRef = useRef(null);
 
     const handleLevelChange = (selectedOption, index) => {
         const newData = [...data];
@@ -16,8 +18,6 @@ const RadarChart = ({ data, onDataChange }) => {
     const height = 500;
     const radius = Math.min(width, height) / 2;
     const angleSlice = (Math.PI * 2) / data.length;
-
-    const svgRef = useRef(null);
 
     const scale = d3.scaleLinear().range([0, radius * 0.8]).domain([0, 6]);
 
@@ -50,34 +50,28 @@ const RadarChart = ({ data, onDataChange }) => {
     const handlePointClick = (event, index, level) => {
         const newData = [...data];
         newData[index].value = level;
-
-        const point = d3.select(event.target);
-        const polygonPath = d3.select(svgRef.current).select('polygon');
-
-        // Calculate the new points with the clicked point expanded
-        const newPoints = newData
-            .map((d, i) => getPathCoordinates({ index: i, value: d.value }))
-            .map((d) => `${d.x},${d.y}`)
-            .join(' ');
-
-        // Animate the polygon to the new shape
-        polygonPath
-            .transition()
-            .duration(500)
-            .attr('points', newPoints)
-            .on('end', () => {
-                onDataChange(newData);
-            });
-
-        // Animate the clicked point
-        point
-            .transition()
-            .duration(300)
-            .attr('r', 8)
-            .transition()
-            .duration(300)
-            .attr('r', 5);
+        onDataChange(newData); // Call the onDataChange prop with the updated data
     };
+
+    useEffect(() => {
+        const animate = () => {
+            if (polygonRef.current) {
+                const points = polygonRef.current.getAttribute('points').split(' ');
+                const animatedPoints = points.map((point) => {
+                    const [x, y] = point.split(',');
+                    const jitterX = Math.random() * 2 - 1; // Random value between -1 and 1
+                    const jitterY = Math.random() * 2 - 1; // Random value between -1 and 1
+                    const newX = parseFloat(x) + jitterX;
+                    const newY = parseFloat(y) + jitterY;
+                    return `${newX},${newY}`;
+                });
+                polygonRef.current.setAttribute('points', animatedPoints.join(' '));
+            }
+            requestAnimationFrame(animate);
+        };
+
+        animate();
+    }, []);
 
     return (
         <div className="radar-chart">
@@ -135,12 +129,13 @@ const RadarChart = ({ data, onDataChange }) => {
 
                     {/* Render data polygon */}
                     <polygon
+                        ref={polygonRef}
                         points={data
                             .map((d, i) => getPathCoordinates({ index: i, value: d.value }))
                             .map((d) => `${d.x},${d.y}`)
                             .join(' ')}
                         stroke="blue"
-                        fill="rgba(135, 206, 235, 0.1)"  // Added a fill color for visibility
+                        fill="rgba(135, 206, 235, 0.1)"
                     />
 
                     {/* Render clickable points after the data polygon */}
