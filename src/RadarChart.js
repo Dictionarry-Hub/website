@@ -63,7 +63,7 @@ const RadarChart = ({ data, onDataChange }) => {
         // Animate the polygon to the new shape
         polygonPath
             .transition()
-            .duration(500)
+            .duration(200) // Reduced duration for faster animation
             .attr('points', newPoints)
             .on('end', () => {
                 onDataChange(newData);
@@ -73,7 +73,7 @@ const RadarChart = ({ data, onDataChange }) => {
         darkBluePoints
             .data(newData)
             .transition()
-            .duration(500)
+            .duration(200) // Reduced duration for faster animation
             .attr('cx', (d, i) => getPathCoordinates({ index: i, value: d.value }).x)
             .attr('cy', (d, i) => getPathCoordinates({ index: i, value: d.value }).y);
     };
