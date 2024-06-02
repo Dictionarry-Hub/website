@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import RadarChart from './RadarChart';
-
-const generateCTFFlag = (data) => {
-  const sum = data.reduce((total, d) => total + d.value, 0);
-  const flagPrefix = 'Profile{';
-  const flagSuffix = '}';
-  const randomString = Math.random().toString(36).slice(2, 8);
-  const flag = `${flagPrefix}${sum}_${randomString}${flagSuffix}`;
-  return flag;
-};
+import "./App.css"
 
 function App() {
   const [data, setData] = useState([
@@ -21,17 +13,38 @@ function App() {
     setData(newData);
   };
 
-  const ctfFlag = generateCTFFlag(data);
-
   return (
-    <div>
-      <h1>Profile Selector v3 Concept</h1>
-      <RadarChart data={data} onDataChange={handleDataChange} />
-      <div className="ctf-flag-display">
-        <h3>Recommended Quality Profile:</h3>
-        <p>{ctfFlag}</p>
+    <>
+      <div className='container-fluid nav'>
+        <div className='container'>
+          <div className="row">
+            <div className="col-12 title">
+              <h1>Dictionarry</h1>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 border border-secondary info">
+            <h4>
+              Welcome to the Profile Selector!
+            </h4>
+
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-5 border border-secondary chart border border-secondary">
+            <RadarChart data={data} onDataChange={handleDataChange} />
+          </div>
+          <div className="col-md-7">
+            <div>Column A Content (maybe some controls or info here)</div>
+          </div>
+
+        </div>
+      </div>
+    </>
+
   );
 }
 

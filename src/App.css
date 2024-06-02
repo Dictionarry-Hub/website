@@ -14,11 +14,44 @@
   color: white;
 }
 
+body {
+  background-color: #1E2129;
+}
+
 main {
   padding: 20px;
 }
 
+.container {
+  max-width: 1500px;
+}
+
+.nav {
+  background-color: #14151A;
+  color: white;  
+}
+
 h1 {
-  font-size: 2rem;
-  margin: 20px 0;
+  font-family: "Schibsted Grotesk", sans-serif !important;
+}
+
+.info {
+  color: white;
+  font-family: "Schibsted Grotesk", sans-serif !important;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.title {
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.chart {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 20px;  
+  background-color: #212529;
 }

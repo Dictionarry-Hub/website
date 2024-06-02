@@ -1,16 +1,9 @@
 import React, { useRef } from 'react';
 import * as d3 from 'd3';
-import Select from 'react-select';
 import './RadarChart.css';
 
 const RadarChart = ({ data, onDataChange }) => {
     const levels = [1, 2, 3, 4, 5, 6];
-
-    const handleLevelChange = (selectedOption, index) => {
-        const newData = [...data];
-        newData[index].value = selectedOption.value;
-        onDataChange(newData); // Call the onDataChange prop with the updated data
-    };
 
     const width = 500;
     const height = 500;
@@ -80,7 +73,7 @@ const RadarChart = ({ data, onDataChange }) => {
 
     return (
         <div className="radar-chart">
-            <svg ref={svgRef} width={width} height={height} className='chart' style={{ background: "#292e39" }}>
+            <svg ref={svgRef} width={width} height={height} className='chart'>
 
                 <g transform={`translate(${width / 2}, ${height / 2})`}>
                     {/* Render inner circles */}
@@ -191,20 +184,6 @@ const RadarChart = ({ data, onDataChange }) => {
                     ))}
                 </g>
             </svg>
-            <div className="radar-chart-controls">
-                {data.map((d, i) => (
-                    <div key={d.axis}>
-                        <label>{d.axis}: </label>
-                        <Select
-                            className="select"
-                            value={{ value: d.value, label: d.value }}
-                            onChange={(selectedOption) => handleLevelChange(selectedOption, i)}
-                            options={levels.map((level) => ({ value: level, label: level })).slice(0, 5)}
-                            isDisabled={d.value === 6}
-                        />
-                    </div>
-                ))}
-            </div>
         </div>
     );
 };
