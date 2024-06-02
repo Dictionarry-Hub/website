@@ -80,8 +80,22 @@ const RadarChart = ({ data, onDataChange }) => {
 
     return (
         <div className="radar-chart">
-            <svg ref={svgRef} width={width} height={height}>
+            <svg ref={svgRef} width={width} height={height} className='chart' style={{ background: "#292e39" }}>
+
                 <g transform={`translate(${width / 2}, ${height / 2})`}>
+                    {/* Render inner circles */}
+                    {levels.slice(0, 5).map((level) => (
+                        <circle
+                            key={`circle-${level}`}
+                            cx={0}
+                            cy={0}
+                            r={scale(level)}
+                            fill="none"
+                            stroke="#eee"
+                            className='innerCircle circleLine'
+                        />
+                    ))}
+
                     {/* Render axis lines */}
                     {data.map((d, i) => (
                         <line
@@ -90,7 +104,7 @@ const RadarChart = ({ data, onDataChange }) => {
                             y1={0}
                             x2={getPathCoordinates({ index: i, value: 5 }).x}
                             y2={getPathCoordinates({ index: i, value: 5 }).y}
-                            stroke="black"
+                            stroke="#4c566a"
                         />
                     ))}
 
@@ -105,7 +119,7 @@ const RadarChart = ({ data, onDataChange }) => {
                                     y={y}
                                     textAnchor="middle"
                                     alignmentBaseline="middle"
-                                    fill="black"
+                                    fill="white"
                                     fontSize="12px"
                                 >
                                     {d.axis}
@@ -120,7 +134,7 @@ const RadarChart = ({ data, onDataChange }) => {
                                     y={y}
                                     textAnchor="middle"
                                     alignmentBaseline="middle"
-                                    fill="black"
+                                    fill="white"
                                     fontSize="12px"
                                 >
                                     {d.axis}
@@ -130,7 +144,7 @@ const RadarChart = ({ data, onDataChange }) => {
                     })}
 
                     {/* Render outer circle */}
-                    <circle cx={0} cy={0} r={scale(5)} fill="none" stroke="#eee" />
+                    <circle cx={0} cy={0} r={scale(5)} fill="none" stroke="#eee" className='outerCircle circleLine' />
 
                     {/* Render data polygon */}
                     <polygon
@@ -171,7 +185,7 @@ const RadarChart = ({ data, onDataChange }) => {
                             cx={getPathCoordinates({ index: i, value: d.value }).x}
                             cy={getPathCoordinates({ index: i, value: d.value }).y}
                             r={5}
-                            fill={d.value === data[i].value ? 'blue' : 'lightblue'}
+                            fill={d.value === data[i].value ? '#1e88e5' : 'lightblue'}
                             className="dark-blue-point"
                         />
                     ))}

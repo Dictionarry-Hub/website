@@ -5,43 +5,43 @@
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .radar-chart svg {
-    background-color: #fff;
-    border-radius: 100%;
+
+  .radar-chart .circleLine {
+    stroke: #3b4252;
+    filter: url(#f1); /* Applies the shadow filter */
   }
-  
-  .radar-chart line {
-    stroke: black;
+  .radar-chart .outerCircle {
+    stroke-width: 1;
+  }
+
+  .radar-chart .innerCircle {
     stroke-width: 1;
   }
   
-  .radar-chart circle {
-    stroke: #333;
-    stroke-width: 2;
+  .radar-chart svg {
+    border-radius: 100%;
+    border: #3b4252
   }
   
+  
   .radar-chart circle.clickable-point {
-    stroke: none;
+    fill: #4c566a;
   }
+
+  .radar-chart circle.clickable-point:hover {
+    fill: #1e88e5; /* White stroke to highlight the circle */
+    stroke-width: 1px; /* Make the stroke thicker to stand out */
+    cursor: pointer; /* Cursor changes to a pointer to indicate it's clickable */
+}
+
   
   .radar-chart polygon {
     fill: rgba(100, 181, 246, 0.2);
-    stroke: #42a5f5;
+    stroke: #1e88e5;
     stroke-width: 2;
     transition: fill 0.3s, stroke 0.3s;
   }
-  
-  .radar-chart polygon:hover {
-    fill: rgba(100, 181, 246, 0.4);
-    stroke: #1e88e5;
-  }
-  
-  .radar-chart text {
-    font-size: 14px;
-    fill: #333;
-    font-weight: 500;
-  }
+
   
   .radar-chart-controls {
     margin-top: 40px;
