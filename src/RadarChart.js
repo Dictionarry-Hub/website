@@ -51,8 +51,8 @@ const RadarChart = ({ data, onDataChange }) => {
         const newData = [...data];
         newData[index].value = level;
 
-        const point = d3.select(event.target);
         const polygonPath = d3.select(svgRef.current).select('polygon');
+        const darkBluePoints = d3.select(svgRef.current).selectAll('.dark-blue-point');
 
         // Calculate the new points with the clicked point expanded
         const newPoints = newData
@@ -69,14 +69,13 @@ const RadarChart = ({ data, onDataChange }) => {
                 onDataChange(newData);
             });
 
-        // Animate the clicked point
-        point
+        // Animate the dark blue points
+        darkBluePoints
+            .data(newData)
             .transition()
-            .duration(300)
-            .attr('r', 8)
-            .transition()
-            .duration(300)
-            .attr('r', 5);
+            .duration(500)
+            .attr('cx', (d, i) => getPathCoordinates({ index: i, value: d.value }).x)
+            .attr('cy', (d, i) => getPathCoordinates({ index: i, value: d.value }).y);
     };
 
     return (
@@ -143,7 +142,7 @@ const RadarChart = ({ data, onDataChange }) => {
                         fill="rgba(135, 206, 235, 0.1)"  // Added a fill color for visibility
                     />
 
-                    {/* Render clickable points after the data polygon */}
+                    {/* Render clickable points */}
                     {data.map((d, i) =>
                         levels.map((level) => {
                             if (level <= 5) {
@@ -154,7 +153,7 @@ const RadarChart = ({ data, onDataChange }) => {
                                         cx={x}
                                         cy={y}
                                         r={5}
-                                        fill={d.value === level ? 'blue' : 'lightblue'}
+                                        fill={'lightblue'}
                                         onClick={(event) => handlePointClick(event, i, level)}
                                         style={{ cursor: 'pointer' }}
                                         className="clickable-point" // Add the className here
@@ -164,6 +163,18 @@ const RadarChart = ({ data, onDataChange }) => {
                             return null;
                         })
                     )}
+
+                    {/* Render dark blue points */}
+                    {data.map((d, i) => (
+                        <circle
+                            key={`dark-blue-point-${i}`}
+                            cx={getPathCoordinates({ index: i, value: d.value }).x}
+                            cy={getPathCoordinates({ index: i, value: d.value }).y}
+                            r={5}
+                            fill={d.value === data[i].value ? 'blue' : 'lightblue'}
+                            className="dark-blue-point"
+                        />
+                    ))}
                 </g>
             </svg>
             <div className="radar-chart-controls">
