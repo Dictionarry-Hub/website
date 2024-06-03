@@ -1,0 +1,13 @@
+.col-24 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  @for $i from 1 through 23 {
+    .col-#{$i} {
+      flex: 0 0 auto;
+      width: percentage($i / 24);
+      padding: 15px;
+    }
+  }

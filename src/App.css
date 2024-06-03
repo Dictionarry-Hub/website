@@ -23,7 +23,7 @@ main {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1300px;
 }
 
 .nav {
@@ -31,15 +31,17 @@ main {
   color: white;  
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Schibsted Grotesk", sans-serif !important;
+
 }
 
 .info {
   color: white;
-  font-family: "Schibsted Grotesk", sans-serif !important;
   border-radius: 10px;
   margin-top: 20px;
+  font-family: Source Sans Pro,sans-serif !important;
+  background-color: #212529;
 }
 
 .title {
@@ -48,10 +50,8 @@ h1 {
 }
 
 .chart {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  border-radius: 20px;  
+  color: white;
+  border-radius: 10px;  
   background-color: #212529;
 }
+

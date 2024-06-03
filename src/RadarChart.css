@@ -1,5 +1,5 @@
 .radar-chart {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Source Sans Pro,sans-serif !important;
 
   }
 
@@ -39,48 +39,6 @@
     transition: fill 0.3s, stroke 0.3s;
   }
 
-  
-  .radar-chart-controls {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .radar-chart .gradient-circle {
+    opacity: 0.6;
   }
-  
-  .radar-chart-controls label {
-    font-weight: 500;
-    margin-right: 12px;
-    color: #666;
-  }
-  
-  .radar-chart-controls .select {
-    width: 120px;
-    margin-right: 24px;
-  }
-  
-  .radar-chart-controls .select:last-child {
-    margin-right: 0;
-  }
-  
-  .radar-chart-controls .select__control {
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 8px;
-    font-size: 14px;
-  }
-  
-  .radar-chart-controls .select__indicator {
-    color: #42a5f5;
-  }
-  
-  .radar-chart-controls .select__option--is-focused {
-    background-color: rgba(100, 181, 246, 0.1);
-  }
-  
-  .radar-chart-controls .select__option--is-selected {
-    background-color: #42a5f5;
-    color: #fff;
-  }
-
-  

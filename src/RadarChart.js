@@ -5,8 +5,8 @@ import './RadarChart.css';
 const RadarChart = ({ data, onDataChange }) => {
     const levels = [1, 2, 3, 4, 5, 6];
 
-    const width = 500;
-    const height = 500;
+    const width = 420;
+    const height = 400;
     const radius = Math.min(width, height) / 2;
     const angleSlice = (Math.PI * 2) / data.length;
 
@@ -36,7 +36,7 @@ const RadarChart = ({ data, onDataChange }) => {
         const outerRadius = scale(7); // Adjust the radius as needed
         return {
             x: outerRadius * Math.cos(angle - Math.PI / 2),
-            y: outerRadius * Math.sin(angle - Math.PI / 2) + 50, // Add an offset to move the label down
+            y: outerRadius * Math.sin(angle - Math.PI / 2) + 35, // Add an offset to move the label down
         };
     };
 
@@ -74,8 +74,29 @@ const RadarChart = ({ data, onDataChange }) => {
     return (
         <div className="radar-chart">
             <svg ref={svgRef} width={width} height={height} className='chart'>
-
+                <defs>
+                    <radialGradient id="chartGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stopColor="#495057" stopOpacity="0.6" />
+                        <stop offset="20%" stopColor="#343a40" stopOpacity="0.5" />
+                        <stop offset="40%" stopColor="#2c3035" stopOpacity="0.4" />
+                        <stop offset="60%" stopColor="#23272b" stopOpacity="0.3" />
+                        <stop offset="80%" stopColor="#1c1f23" stopOpacity="0.2" />
+                        <stop offset="100%" stopColor="#15181b" stopOpacity="0.1" />
+                    </radialGradient>
+                </defs>
                 <g transform={`translate(${width / 2}, ${height / 2})`}>
+
+                    {levels.slice(0, 5).map((level) => (
+                        <circle
+                            key={`gradient-circle-${level}`}
+                            cx={0}
+                            cy={0}
+                            r={scale(level)}
+                            fill="url(#chartGradient)"
+                            className={`gradient-circle level-${level}`}
+                        />
+                    ))}
+
                     {/* Render inner circles */}
                     {levels.slice(0, 5).map((level) => (
                         <circle
