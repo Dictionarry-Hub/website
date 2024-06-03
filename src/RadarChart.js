@@ -1,8 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import * as d3 from 'd3';
 import './RadarChart.css';
 
+const combinationMatrix = [
+    { Quality: 5, Efficiency: 1, Compatibility: 1 },
+    { Quality: 4, Efficiency: 2, Compatibility: 2 },
+    { Quality: 4, Efficiency: 3, Compatibility: 2 },
+    { Quality: 4, Efficiency: 4, Compatibility: 3 },
+    { Quality: 3, Efficiency: 2, Compatibility: 5 },
+    { Quality: 3, Efficiency: 1, Compatibility: 2 },
+    { Quality: 2, Efficiency: 3, Compatibility: 5 },
+    { Quality: 2, Efficiency: 5, Compatibility: 4 },
+    { Quality: 2, Efficiency: 3, Compatibility: 5 },
+    { Quality: 1, Efficiency: 3, Compatibility: 5 },
+    { Quality: 1, Efficiency: 4, Compatibility: 4 },
+    { Quality: 1, Efficiency: 1, Compatibility: 5 },
+];
+
 const RadarChart = ({ data, onDataChange }) => {
+    const [availableLevels, setAvailableLevels] = useState({
+        Quality: [1, 2, 3, 4, 5],
+        Compatibility: [1, 2, 3, 4, 5],
+        Efficiency: [1, 2, 3, 4, 5]
+    });
+
+    const [selectionOrder, setSelectionOrder] = useState([]);
+
     const levels = [1, 2, 3, 4, 5, 6];
 
     const width = 420;
@@ -44,31 +67,63 @@ const RadarChart = ({ data, onDataChange }) => {
         const newData = [...data];
         newData[index].value = level;
 
+        const updatedData = updateOtherAxes(newData, index);
+
         const polygonPath = d3.select(svgRef.current).select('polygon');
         const darkBluePoints = d3.select(svgRef.current).selectAll('.dark-blue-point');
 
-        // Calculate the new points with the clicked point expanded
-        const newPoints = newData
+        const newPoints = updatedData
             .map((d, i) => getPathCoordinates({ index: i, value: d.value }))
             .map((d) => `${d.x},${d.y}`)
             .join(' ');
 
-        // Animate the polygon to the new shape
         polygonPath
             .transition()
-            .duration(200) // Reduced duration for faster animation
+            .duration(200)
             .attr('points', newPoints)
             .on('end', () => {
-                onDataChange(newData);
+                onDataChange(updatedData);
             });
 
-        // Animate the dark blue points
         darkBluePoints
-            .data(newData)
+            .data(updatedData)
             .transition()
-            .duration(200) // Reduced duration for faster animation
+            .duration(200)
             .attr('cx', (d, i) => getPathCoordinates({ index: i, value: d.value }).x)
             .attr('cy', (d, i) => getPathCoordinates({ index: i, value: d.value }).y);
+    };
+
+    const updateOtherAxes = (data, clickedIndex) => {
+        const updatedData = [...data];
+        const clickedAxis = updatedData[clickedIndex].axis;
+        const clickedValue = updatedData[clickedIndex].value;
+
+        const matchingCombination = combinationMatrix.find(
+            (combination) => combination[clickedAxis] === clickedValue
+        );
+
+        if (matchingCombination) {
+            updatedData.forEach((d, i) => {
+                if (i !== clickedIndex) {
+                    const availableValue = matchingCombination[d.axis];
+                    if (availableValue !== d.value) {
+                        updatedData[i].value = availableValue;
+                    }
+                }
+            });
+        }
+
+        return updatedData;
+    };
+
+    const handleReset = () => {
+        const resetData = [
+            { axis: 'Quality', value: 3 },
+            { axis: 'Compatibility', value: 3 },
+            { axis: 'Efficiency', value: 3 }
+        ];
+
+        onDataChange(resetData);
     };
 
     return (
@@ -184,7 +239,7 @@ const RadarChart = ({ data, onDataChange }) => {
                                         fill={'lightblue'}
                                         onClick={(event) => handlePointClick(event, i, level)}
                                         style={{ cursor: 'pointer' }}
-                                        className="clickable-point" // Add the className here
+                                        className="clickable-point"
                                     />
                                 );
                             }
@@ -205,6 +260,7 @@ const RadarChart = ({ data, onDataChange }) => {
                     ))}
                 </g>
             </svg>
+            <button onClick={handleReset}>Reset</button>
         </div>
     );
 };
