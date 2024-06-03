@@ -91,29 +91,49 @@ const RadarChart = ({ data, onDataChange }) => {
         const clickedAxis = updatedData[clickedIndex].axis;
         const clickedValue = updatedData[clickedIndex].value;
 
-        const matchingCombinations = combinationMatrix.filter(
+        const availableCombinations = combinationMatrix.filter(
             (combination) => combination[clickedAxis] === clickedValue
         );
 
-        if (matchingCombinations.length > 0) {
-            const currentCombination = {
-                Quality: updatedData.find((d) => d.axis === 'Quality').value,
-                Efficiency: updatedData.find((d) => d.axis === 'Efficiency').value,
-                Compatibility: updatedData.find((d) => d.axis === 'Compatibility').value,
-            };
-
-            const closestCombination = matchingCombinations.reduce((prev, curr) => {
-                const prevDiff = Math.abs(prev.Compatibility - currentCombination.Compatibility);
-                const currDiff = Math.abs(curr.Compatibility - currentCombination.Compatibility);
-                return prevDiff < currDiff ? prev : curr;
-            });
-
-            updatedData.forEach((d, i) => {
-                if (i !== clickedIndex) {
-                    updatedData[i].value = closestCombination[d.axis];
-                }
-            });
+        if (availableCombinations.length === 0) {
+            return updatedData;
         }
+
+        const currentCombination = {
+            Quality: updatedData.find((d) => d.axis === 'Quality').value,
+            Efficiency: updatedData.find((d) => d.axis === 'Efficiency').value,
+            Compatibility: updatedData.find((d) => d.axis === 'Compatibility').value,
+        };
+
+        const weights = {
+            Quality: 0.6,
+            Efficiency: 0.6,
+            Compatibility: 0,
+        };
+
+        const calculateWeightedDistance = (combination) => {
+            const diffQuality = Math.abs(combination.Quality - currentCombination.Quality);
+            const diffEfficiency = Math.abs(combination.Efficiency - currentCombination.Efficiency);
+            const diffCompatibility = Math.abs(combination.Compatibility - currentCombination.Compatibility);
+
+            return (
+                weights.Quality * diffQuality +
+                weights.Efficiency * diffEfficiency +
+                weights.Compatibility * diffCompatibility
+            );
+        };
+
+        const bestMatchCombination = availableCombinations.reduce((prev, curr) => {
+            const prevDistance = calculateWeightedDistance(prev);
+            const currDistance = calculateWeightedDistance(curr);
+            return prevDistance < currDistance ? prev : curr;
+        });
+
+        updatedData.forEach((d, i) => {
+            if (i !== clickedIndex) {
+                updatedData[i].value = bestMatchCombination[d.axis];
+            }
+        });
 
         return updatedData;
     };
