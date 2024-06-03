@@ -99,34 +99,18 @@ const RadarChart = ({ data, onDataChange }) => {
             return updatedData;
         }
 
-        const currentCombination = {
-            Quality: updatedData.find((d) => d.axis === 'Quality').value,
-            Efficiency: updatedData.find((d) => d.axis === 'Efficiency').value,
-            Compatibility: updatedData.find((d) => d.axis === 'Compatibility').value,
-        };
-
-        const weights = {
-            Quality: 0.6,
-            Efficiency: 0.6,
-            Compatibility: 0,
-        };
-
-        const calculateWeightedDistance = (combination) => {
-            const diffQuality = Math.abs(combination.Quality - currentCombination.Quality);
-            const diffEfficiency = Math.abs(combination.Efficiency - currentCombination.Efficiency);
-            const diffCompatibility = Math.abs(combination.Compatibility - currentCombination.Compatibility);
-
-            return (
-                weights.Quality * diffQuality +
-                weights.Efficiency * diffEfficiency +
-                weights.Compatibility * diffCompatibility
-            );
+        const calculateTriangleSize = (combination) => {
+            const a = combination.Quality;
+            const b = combination.Efficiency;
+            const c = combination.Compatibility;
+            const s = (a + b + c) / 2;
+            return Math.sqrt(s * (s - a) * (s - b) * (s - c));
         };
 
         const bestMatchCombination = availableCombinations.reduce((prev, curr) => {
-            const prevDistance = calculateWeightedDistance(prev);
-            const currDistance = calculateWeightedDistance(curr);
-            return prevDistance < currDistance ? prev : curr;
+            const prevSize = calculateTriangleSize(prev);
+            const currSize = calculateTriangleSize(curr);
+            return currSize > prevSize ? curr : prev;
         });
 
         updatedData.forEach((d, i) => {

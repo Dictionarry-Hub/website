@@ -26,7 +26,7 @@ function App() {
   const [data, setData] = useState([
     { axis: 'Quality', value: 3 },
     { axis: 'Compatibility', value: 4 },
-    { axis: 'Efficiency', value: 2 }
+    { axis: 'Efficiency', value: 3 }
   ]);
   const [qualityInfo, setQualityInfo] = useState({});
   const [efficiencyInfo, setEfficiencyInfo] = useState({});
