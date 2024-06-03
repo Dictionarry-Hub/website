@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import * as d3 from 'd3';
 import './RadarChart.css';
 
@@ -18,13 +18,6 @@ const combinationMatrix = [
 ];
 
 const RadarChart = ({ data, onDataChange }) => {
-    const [availableLevels, setAvailableLevels] = useState({
-        Quality: [1, 2, 3, 4, 5],
-        Compatibility: [1, 2, 3, 4, 5],
-        Efficiency: [1, 2, 3, 4, 5]
-    });
-
-    const [selectionOrder, setSelectionOrder] = useState([]);
 
     const levels = [1, 2, 3, 4, 5, 6];
 
@@ -114,16 +107,6 @@ const RadarChart = ({ data, onDataChange }) => {
         }
 
         return updatedData;
-    };
-
-    const handleReset = () => {
-        const resetData = [
-            { axis: 'Quality', value: 3 },
-            { axis: 'Compatibility', value: 3 },
-            { axis: 'Efficiency', value: 3 }
-        ];
-
-        onDataChange(resetData);
     };
 
     return (
@@ -260,7 +243,6 @@ const RadarChart = ({ data, onDataChange }) => {
                     ))}
                 </g>
             </svg>
-            <button onClick={handleReset}>Reset</button>
         </div>
     );
 };
