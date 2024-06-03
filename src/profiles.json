@@ -1,0 +1,74 @@
+{
+    "2160p Remux": {
+      "quality": 5,
+      "efficiency": 1,
+      "compatibility": 1,
+      "notes": ""
+    },
+    "2160p Encode": {
+      "quality": 4,
+      "efficiency": 2,
+      "compatibility": 2,
+      "notes": "Quality score 4 because not consistent enough, but is more than capable of being a 5."
+    },
+    "2160p WEB": {
+      "quality": 4,
+      "efficiency": 3,
+      "compatibility": 2,
+      "notes": ""
+    },
+    "1080p HDR Encode": {
+      "quality": 4,
+      "efficiency": 4,
+      "compatibility": 3,
+      "notes": ""
+    },
+    "1080p Encode": {
+      "quality": 3,
+      "efficiency": 2,
+      "compatibility": 4,
+      "notes": ""
+    },
+    "1080p Remux": {
+      "quality": 3,
+      "efficiency": 1,
+      "compatibility": 2,
+      "notes": "Compatibility score of 2 because of lossless audio"
+    },
+    "1080p WEB": {
+      "quality": 2,
+      "efficiency": 3,
+      "compatibility": 5,
+      "notes": ""
+    },
+    "1080p HEVC": {
+      "quality": 2,
+      "efficiency": 5,
+      "compatibility": 3,
+      "notes": ""
+    },
+    "720p Encode": {
+      "quality": 2,
+      "efficiency": 3,
+      "compatibility": 4,
+      "notes": ""
+    },
+    "SD Encode": {
+      "quality": 1,
+      "efficiency": 3,
+      "compatibility": 5,
+      "notes": ""
+    },
+    "Minimal": {
+      "quality": 1,
+      "efficiency": 4,
+      "compatibility": 3,
+      "notes": ""
+    },
+    "Compatible": {
+      "quality": 1,
+      "efficiency": 1,
+      "compatibility": 5,
+      "notes": ""
+    }
+  }

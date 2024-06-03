@@ -1,0 +1,27 @@
+[
+    {
+      "level": 1,
+      "description": "Untouched remuxes. Highest possible bitrates with no attempt to make efficient.",
+      "name": "Untouched"
+    },
+    {
+      "level": 2,
+      "description": "Transparent x264 encodes. Saves significant space compared to remux, but still quite large.",
+      "name": "Low"
+    },
+    {
+      "level": 3,
+      "description": "h264 releases with balanced bitrates. Often a 1080p WEB, or a 720p / SD encode.",
+      "name": "Standard"
+    },
+    {
+      "level": 4,
+      "description": "Highly efficient HEVC releases that might be a bit bigger / smaller that nessecary.",
+      "name": "Compact"
+    },
+    {
+      "level": 5,
+      "description": "Properly uses HEVC to achieve a higher level of quality only possible at higher bitrates / resolutions at h264.",
+      "name": "Optimized"
+    }
+]

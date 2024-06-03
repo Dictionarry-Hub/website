@@ -1,0 +1,5 @@
+{
+    "quality": "The level of detail, clarity, and overall fidelity of the audio or video. Higher levels indicate better quality.",
+    "efficiency": "The effectiveness in terms of resource usage, such as file size, bandwidth, and processing power. Higher levels indicate better efficiency.\r\n\r\nMeasured using level of transparency and how that transparency is achieved.",
+    "compatibility": "The ability to work across different devices, platforms, and formats. Higher levels indicate better compatibility.\r\n\r\nMeasured by determining if releases have: HDR, Lossless audio, HEVC or 4k resolution, high bitrate."
+}

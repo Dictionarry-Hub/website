@@ -1,0 +1,27 @@
+[
+  {
+      "level": 1,
+      "description": "Requires a top-of-the-line setup. Includes all 5 of the compatibility metrics. No single device can direct play every possible combination of these A/V metrics. You will run into issues eventually. A hefty internet connection is required to stream these files. At least 100Mbps.",
+      "name": "Cutting Edge"
+  },
+  {
+      "level": 2,
+      "description": "Includes 4 of the 5 compatibility metrics at most. An Nvidia Shield Pro *should* be able to handle everything here. 1080p Remuxes are included here as they often have TrueHD + Atmos / DTS-X. Encodes with lossless audio can be ignored if the user wants that. A hefty internet connection is required to stream these files. At least 50Mbps.",
+      "name": "High"
+  },
+  {
+      "level": 3,
+      "description": "Either HEVC (Some issues playing on browsers), or HDR + high bitrates. Make sure you have fast enough internet to stream, and a HDR capable setup (or the ability to tonemap).",
+      "name": "Moderate"
+  },
+  {
+      "level": 4,
+      "description": "High bitrates. Most devices should be able to play these files, but you should have at least a 30Mbps internet connection to stream them.",
+      "name": "Standard"
+  },
+  {
+      "level": 5,
+      "description": "Should be able to comfortably play these files everywhere, and stream them with a minimal internet connection.",
+      "name": "Universal"
+  }
+]

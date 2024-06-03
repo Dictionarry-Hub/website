@@ -1,0 +1,27 @@
+[
+  {
+      "level": 5,
+      "description": "The highest quality releases, retaining all the original detail and fidelity of the source material. These are untouched remuxes with no compression, providing the full bitrate of the source. Includes 4K resolution + HDR and lossless audio formats like Dolby TrueHD or DTS-X.",
+      "name": "Optimal"
+  },
+  {
+      "level": 4,
+      "description": "Transparent high bitrate encodes retaining all visual details details from a 4k source. These *can* be better than a remux on occasion by fixing defects in the source, but this often not the case in practice. Can include lossless audio if the user wants.",
+      "name": "Very High"
+  },
+  {
+      "level": 3,
+      "description": "High quality, transparent encodes that often fix defects in the source, or untouched remuxes. Limited to 1080p with no HDR. Can include lossless audio if remuxes are grabbed.",
+      "name": "High"
+  },
+  {
+      "level": 2,
+      "description": "Balanced releases. 1080p WEBs or HEVC encodes and transparent 720p encodes. Lossy audio and moderate bitrates.",
+      "name": "Medium"
+  },
+  {
+      "level": 1,
+      "description": "Highly efficient encodes focused on small file sizes over quality. Noticeable compression artifacts and loss of detail compared to higher tiers.",
+      "name": "Minimal"
+  }
+]
