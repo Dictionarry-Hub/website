@@ -1,0 +1,750 @@
+[
+  {
+    "currentProfile": "2160p Remux",
+    "Quality": 5,
+    "Efficiency": 1,
+    "Compatibility": 1,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -3,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -4,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 3,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 4,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 3,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 4,
+        "newProfile": "1080p Encode"
+      }
+    ]
+  },
+  {
+    "currentProfile": "2160p Encode",
+    "Quality": 4,
+    "Efficiency": 2,
+    "Compatibility": 2,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -3,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 3,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 3,
+        "newProfile": "1080p WEB"
+      }
+    ]
+  },
+  {
+    "currentProfile": "2160p WEB",
+    "Quality": 4,
+    "Efficiency": 2,
+    "Compatibility": 3,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -3,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 3,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "1080p Encode"
+      }
+    ]
+  },
+  {
+    "currentProfile": "1080p HDR Encode",
+    "Quality": 4,
+    "Efficiency": 4,
+    "Compatibility": 3,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Quality",
+        "change": -3,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -3,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "2160p WEB"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "1080p WEB"
+      }
+    ]
+  },
+  {
+    "currentProfile": "1080p Encode",
+    "Quality": 3,
+    "Efficiency": 2,
+    "Compatibility": 4,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 3,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "1080p WEB"
+      }
+    ]
+  },
+  {
+    "currentProfile": "1080p Remux",
+    "Quality": 3,
+    "Efficiency": 1,
+    "Compatibility": 2,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Quality",
+        "change": -2,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 3,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 4,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 3,
+        "newProfile": "720p Encode"
+      }
+    ]
+  },
+  {
+    "currentProfile": "1080p WEB",
+    "Quality": 2,
+    "Efficiency": 3,
+    "Compatibility": 5,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 3,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -4,
+        "newProfile": "1080p Remux"
+      }
+    ]
+  },
+  {
+    "currentProfile": "1080p HEVC",
+    "Quality": 2,
+    "Efficiency": 5,
+    "Compatibility": 3,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "720p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 3,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -4,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "SD Encode"
+      }
+    ]
+  },
+  {
+    "currentProfile": "720p Encode",
+    "Quality": 2,
+    "Efficiency": 3,
+    "Compatibility": 5,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": -1,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 3,
+        "newProfile": "2160p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 2,
+        "newProfile": "Minimal"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -4,
+        "newProfile": "1080p Remux"
+      }
+    ]
+  },
+  {
+    "currentProfile": "SD Encode",
+    "Quality": 1,
+    "Efficiency": 4,
+    "Compatibility": 5,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "720p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 3,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 4,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": 1,
+        "newProfile": "Minimal"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -3,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -4,
+        "newProfile": "1080p Remux"
+      }
+    ]
+  },
+  {
+    "currentProfile": "Minimal",
+    "Quality": 1,
+    "Efficiency": 5,
+    "Compatibility": 3,
+    "changes": [
+      {
+        "axis": "Quality",
+        "change": 1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Quality",
+        "change": 2,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 3,
+        "newProfile": "1080p HDR Encode"
+      },
+      {
+        "axis": "Quality",
+        "change": 4,
+        "newProfile": "2160p Remux"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -2,
+        "newProfile": "1080p WEB"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -3,
+        "newProfile": "1080p Encode"
+      },
+      {
+        "axis": "Efficiency",
+        "change": -4,
+        "newProfile": "1080p Remux"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -1,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": -2,
+        "newProfile": "1080p HEVC"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 1,
+        "newProfile": "SD Encode"
+      },
+      {
+        "axis": "Compatibility",
+        "change": 2,
+        "newProfile": "SD Encode"
+      }
+    ]
+  }
+]

@@ -7,26 +7,11 @@ import qualityData from './quality.json';
 import efficiencyData from './efficiency.json';
 import compatibilityData from './compatibility.json';
 
-const combinationMatrix = [
-  { Quality: 5, Efficiency: 1, Compatibility: 1, Profile: '2160p Remux' },
-  { Quality: 4, Efficiency: 2, Compatibility: 2, Profile: '2160p Encode' },
-  { Quality: 4, Efficiency: 2, Compatibility: 3, Profile: '2160p WEB' },
-  { Quality: 4, Efficiency: 4, Compatibility: 3, Profile: '1080p HDR Encode' },
-  { Quality: 3, Efficiency: 2, Compatibility: 4, Profile: '1080p Encode' },
-  { Quality: 3, Efficiency: 1, Compatibility: 2, Profile: '1080p Remux' },
-  { Quality: 2, Efficiency: 3, Compatibility: 5, Profile: '1080p WEB' },
-  { Quality: 2, Efficiency: 5, Compatibility: 3, Profile: '1080p HEVC' },
-  { Quality: 2, Efficiency: 3, Compatibility: 4, Profile: '720p Encode' },
-  { Quality: 1, Efficiency: 3, Compatibility: 5, Profile: 'SD Encode' },
-  { Quality: 1, Efficiency: 4, Compatibility: 3, Profile: 'Minimal' },
-  { Quality: 1, Efficiency: 1, Compatibility: 5, Profile: 'Compatible' },
-];
-
 function App() {
   const [data, setData] = useState([
-    { axis: 'Quality', value: 3 },
-    { axis: 'Compatibility', value: 4 },
-    { axis: 'Efficiency', value: 3 }
+    { axis: 'Quality', value: 3, currentProfile: '1080p Encode' },
+    { axis: 'Compatibility', value: 4, currentProfile: '1080p Encode' },
+    { axis: 'Efficiency', value: 2, currentProfile: '1080p Encode' }
   ]);
   const [qualityInfo, setQualityInfo] = useState({});
   const [efficiencyInfo, setEfficiencyInfo] = useState({});
@@ -35,16 +20,7 @@ function App() {
 
   const handleDataChange = (newData) => {
     setData(newData);
-
-    // Find the selected profile based on the updated data
-    const selectedCombination = combinationMatrix.find(
-      (combination) =>
-        combination.Quality === newData.find((d) => d.axis === 'Quality').value &&
-        combination.Efficiency === newData.find((d) => d.axis === 'Efficiency').value &&
-        combination.Compatibility === newData.find((d) => d.axis === 'Compatibility').value
-    );
-
-    setSelectedProfile(selectedCombination ? selectedCombination.Profile : '');
+    setSelectedProfile(newData[0].currentProfile);
   };
 
   useEffect(() => {
@@ -59,16 +35,6 @@ function App() {
     setQualityInfo(qualityDetails || {});
     setEfficiencyInfo(efficiencyDetails || {});
     setCompatibilityInfo(compatibilityDetails || {});
-
-    // Find the selected profile based on the default data
-    const defaultSelectedCombination = combinationMatrix.find(
-      (combination) =>
-        combination.Quality === data.find((d) => d.axis === 'Quality').value &&
-        combination.Efficiency === data.find((d) => d.axis === 'Efficiency').value &&
-        combination.Compatibility === data.find((d) => d.axis === 'Compatibility').value
-    );
-
-    setSelectedProfile(defaultSelectedCombination ? defaultSelectedCombination.Profile : '');
   }, [data]);
 
   return (

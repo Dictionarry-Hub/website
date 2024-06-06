@@ -1,23 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import './RadarChart.css';
-
-const combinationMatrix = [
-    { Quality: 5, Efficiency: 1, Compatibility: 1, Profile: '2160p Remux' },
-    { Quality: 4, Efficiency: 2, Compatibility: 2, Profile: '2160p Encode' },
-    { Quality: 4, Efficiency: 2, Compatibility: 3, Profile: '2160p WEB' },
-    { Quality: 4, Efficiency: 4, Compatibility: 3, Profile: '1080p HDR Encode' },
-    { Quality: 3, Efficiency: 2, Compatibility: 4, Profile: '1080p Encode' },
-    { Quality: 3, Efficiency: 1, Compatibility: 2, Profile: '1080p Remux' },
-    { Quality: 2, Efficiency: 3, Compatibility: 5, Profile: '1080p WEB' },
-    { Quality: 2, Efficiency: 5, Compatibility: 3, Profile: '1080p HEVC' },
-    { Quality: 2, Efficiency: 3, Compatibility: 4, Profile: '720p Encode' },
-    { Quality: 1, Efficiency: 3, Compatibility: 5, Profile: 'SD Encode' },
-    { Quality: 1, Efficiency: 4, Compatibility: 3, Profile: 'Minimal' },
-    { Quality: 1, Efficiency: 1, Compatibility: 5, Profile: 'Compatible' },
-];
+import { loadJumpsData } from './loadJumpsData';
 
 const RadarChart = ({ data, onDataChange }) => {
+    const [jumpsData, setJumpsData] = useState([]);
+
+    useEffect(() => {
+        const loadData = async () => {
+            const data = await loadJumpsData();
+            setJumpsData(data);
+            console.log('jumpsData:', data); // Add this line to log the loaded data
+        };
+        loadData();
+    }, []);
 
     const levels = [1, 2, 3, 4, 5, 6];
 
@@ -90,34 +86,38 @@ const RadarChart = ({ data, onDataChange }) => {
         const updatedData = [...data];
         const clickedAxis = updatedData[clickedIndex].axis;
         const clickedValue = updatedData[clickedIndex].value;
+        const currentProfile = data[clickedIndex].currentProfile;
 
-        const availableCombinations = combinationMatrix.filter(
-            (combination) => combination[clickedAxis] === clickedValue
-        );
+        if (jumpsData.length > 0) {
+            const profileData = jumpsData.find(
+                (profile) => profile.currentProfile === currentProfile
+            );
 
-        if (availableCombinations.length === 0) {
-            return updatedData;
-        }
+            if (profileData) {
+                const availableCombinations = profileData.changes.filter(
+                    (change) => change.axis === clickedAxis && change.change === clickedValue - profileData[clickedAxis]
+                );
 
-        const calculateTriangleSize = (combination) => {
-            const a = combination.Quality;
-            const b = combination.Efficiency;
-            const c = combination.Compatibility;
-            const s = (a + b + c) / 2;
-            return Math.sqrt(s * (s - a) * (s - b) * (s - c));
-        };
+                if (availableCombinations.length > 0) {
+                    const newProfile = availableCombinations[0].newProfile;
+                    const newProfileData = jumpsData.find((profile) => profile.currentProfile === newProfile);
 
-        const bestMatchCombination = availableCombinations.reduce((prev, curr) => {
-            const prevSize = calculateTriangleSize(prev);
-            const currSize = calculateTriangleSize(curr);
-            return currSize > prevSize ? curr : prev;
-        });
+                    console.log(`Change level: ${clickedValue} (${clickedAxis})`);
+                    console.log(`Going from ${currentProfile} to ${newProfile}`);
 
-        updatedData.forEach((d, i) => {
-            if (i !== clickedIndex) {
-                updatedData[i].value = bestMatchCombination[d.axis];
+                    updatedData.forEach((d, i) => {
+                        updatedData[i].value = newProfileData[d.axis];
+                        updatedData[i].currentProfile = newProfile;
+                    });
+                } else {
+                    console.log(`No available combination found for change level ${clickedValue} (${clickedAxis}) from ${currentProfile}`);
+                }
+            } else {
+                console.log(`No profile data found for ${currentProfile}`);
             }
-        });
+        } else {
+            console.log('jumpsData is empty');
+        }
 
         return updatedData;
     };
