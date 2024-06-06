@@ -58,3 +58,33 @@ h1, h2, h3, h4, h5, h6 {
 .metric {
   border-radius: 10px;  
 }
+
+.custom-row {
+  height: 500px; /* Set the desired height for the row */
+}
+
+
+.custom-chart {
+  height: 100%; /* Make the chart container fill the height of the row */
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-chart-header {
+  flex: 0; /* Don't let the header grow */
+}
+
+.custom-chart-content {
+  flex: 1; /* Let the chart content fill the remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-metric {
+  flex: 1; /* Make the info divs stretch equally to fill the height */
+}
+
+.bottom-metric {
+  margin-bottom: 0px !important;
+}

@@ -66,29 +66,32 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row custom-row">
           <div className="col-9 pt-0">
-            <div className="border border-secondary chart me-3">
-              <div className="d-flex justify-content-center">
+            <div className="border border-secondary chart me-3 custom-chart">
+              <div className="custom-chart-header">
+                <h4 className="mt-3 ml-3">Metric Selector</h4>
+              </div>
+              <div className="custom-chart-content">
                 <RadarChart data={data} onDataChange={handleDataChange} />
               </div>
             </div>
           </div>
-          <div className='col-15 pt-0 pl-0'>
-            <div className=" border border-secondary chart mb-3 metric">
+          <div className='col-15 pt-0 pl-0 d-flex flex-column'>
+            <div className="border border-secondary chart mb-3 metric custom-metric">
               <div className="d-flex mt-3 mb-3 pl-3">
                 <h4 className="mr-2">Quality: {qualityInfo.name}</h4>
               </div>
               <p className="pl-3">{qualityInfo.description}</p>
             </div>
-            <div className=" border border-secondary chart mb-3 metric">
+            <div className="border border-secondary chart mb-3 metric custom-metric">
               <div className="d-flex mt-3 mb-3 pl-3">
                 <h4 className="mr-2">Efficiency: {efficiencyInfo.name}</h4>
               </div>
               <p className="pl-3">{efficiencyInfo.description}</p>
             </div>
-            <div className=" border border-secondary chart mb-3 metric">
-              <div className="d-flex mt-3 mb-3 pl-3">
+            <div className="border border-secondary chart mb-3 metric custom-metric bottom-metric">
+              <div className="d-flex mt-3 mb-3 pl-3 pb">
                 <h4 className="mr-2">Compatibility: {compatibilityInfo.name}</h4>
               </div>
               <p className="pl-3">{compatibilityInfo.description}</p>
