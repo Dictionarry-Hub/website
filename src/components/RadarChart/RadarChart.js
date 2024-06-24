@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import './RadarChart.css';
-import { loadJumpsData } from './loadJumpsData';
+import { loadJumpsData } from '../../utils/loadJumpsData';
 
 const RadarChart = ({ data, onDataChange }) => {
     const [jumpsData, setJumpsData] = useState([]);

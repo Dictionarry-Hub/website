@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import RadarChart from './RadarChart';
-import "./App.css"
-import "./custom-grid.css"
+import RadarChart from './components/RadarChart/RadarChart';
+import Navbar from './components/Navbar/Navbar';
+import "./styles/App.css"
+import "./styles/custom-grid.css"
 // Import JSON data
-import qualityData from './quality.json';
-import efficiencyData from './efficiency.json';
-import compatibilityData from './compatibility.json';
+import qualityData from './data/quality.json';
+import efficiencyData from './data/efficiency.json';
+import compatibilityData from './data/compatibility.json';
 
 function App() {
   const [data, setData] = useState([
@@ -39,15 +40,7 @@ function App() {
 
   return (
     <>
-      <div className='container-fluid nav'>
-        <div className='container'>
-          <div className="row">
-            <div className="col-12 title">
-              <h1>Dictionarry</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Navbar />
       <div className="container">
         <div className="row">
           <div className='col-24'>
