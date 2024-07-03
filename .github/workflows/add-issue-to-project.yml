@@ -40,7 +40,7 @@ jobs:
                   }
                 }
               }
-            }' -f project=$PROJECT_ID --jq ".data.node.items.nodes[] | select(.content.number == $ISSUE_NUMBER) | .id" -F number=$ISSUE_NUMBER)
+            }' -f project=$PROJECT_ID --jq ".data.node.items.nodes[] | select(.content.number == $ISSUE_NUMBER) | .id")
           if [ -z "$item_id" ]; then
             echo "Error: Project item ID not found for issue number $ISSUE_NUMBER"
             exit 1
