@@ -25,7 +25,7 @@ jobs:
         run: |
           echo "Fetching project item ID for issue number: $ISSUE_NUMBER"
           item_id=$(gh api graphql -f query='
-            query($project:ID!, $number:Int!) {
+            query($project:ID!) {
               node(id: $project) {
                 ... on ProjectV2 {
                   items(first: 100) {
@@ -40,7 +40,7 @@ jobs:
                   }
                 }
               }
-            }' -f project=$PROJECT_ID -f number=$ISSUE_NUMBER --jq '.data.node.items.nodes[] | select(.content.number == $ISSUE_NUMBER) | .id')
+            }' -f project=$PROJECT_ID --jq ".data.node.items.nodes[] | select(.content.number == $ISSUE_NUMBER) | .id" -F number=$ISSUE_NUMBER)
           if [ -z "$item_id" ]; then
             echo "Error: Project item ID not found for issue number $ISSUE_NUMBER"
             exit 1
@@ -120,10 +120,10 @@ jobs:
                   singleSelectOptionId: $value
                 }
               }) {
-              projectV2Item {
-                id
+                projectV2Item {
+                  id
+                }
               }
-            }
             }' -f project="PVT_kwDOCjbMFM4AjuUh" -f item="${PROJECT_ITEM_ID}" -f fieldId="PVTSSF_lADOCjbMFM4AjuUhzgcCswQ" -f value="$ISSUE_TYPE_ID")
             echo "Set issue type result: $result"
           fi
