@@ -1,7 +1,7 @@
 // src/app/components/DarkModeToggle.tsx
 "use client";
 
-import { useDarkMode } from "../hooks/useDarkMode";
+import { useDarkMode } from "@hooks/useDarkMode";
 import { Moon, Sun } from "lucide-react";
 
 export function DarkModeToggle() {

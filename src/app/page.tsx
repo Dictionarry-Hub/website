@@ -1,25 +1,35 @@
 // src/app/page.tsx
-import { getVersion } from "@api/getData";
+import { getHomeContent } from "@api/getData";
+import { parseMarkdown } from "@utils/markdown";
+import { parseMarkdownHeaders } from "@utils/parseMarkdownHeaders";
+import { TableOfContents } from "@components/TableOfContents";
 
 export default async function Home() {
-  const { folders } = await getVersion();
+  const homeContent = await getHomeContent();
+  const headers = homeContent ? parseMarkdownHeaders(homeContent.content) : [];
 
   return (
-    <div className="text-gray-900 dark:text-white">
-      <h1 className="text-4xl font-bold">Dictionarry</h1>
-      <p className="mt-4 text-gray-600 dark:text-gray-300">
-        A dictionary for arr apps - custom formats, profiles, and more
-      </p>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* Section cards for each folder */}
-        {folders.map((folder) => (
-          <div
-            key={folder}
-            className="p-6 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800"
-          >
-            <h2 className="text-xl font-semibold">{folder}</h2>
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-12 gap-8 py-8">
+        {/* Sidebar */}
+        <div className="col-span-3">
+          <TableOfContents headers={headers} />
+        </div>
+
+        {/* Main content */}
+        <div className="col-span-9">
+          <div className="prose prose-lg dark:prose-invert max-w-none">
+            {homeContent ? (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: parseMarkdown(homeContent.content),
+                }}
+              />
+            ) : (
+              <p>Welcome to Dictionarry. Home page content coming soon.</p>
+            )}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
