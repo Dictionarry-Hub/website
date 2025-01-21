@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white dark:bg-gray-900">
         <Nav />
-        <main className="container mx-auto px-4 py-8">{children}</main>
+        <main className="container mx-auto px-4 py-8 mt-16">{children}</main>
       </body>
     </html>
   );

@@ -32,7 +32,9 @@ export default async function Home() {
           </div>
         </div>
         <div className="col-span-12 lg:col-span-3">
-          <TableOfContents headers={headers} />
+          <div className="lg:sticky lg:top-20">
+            <TableOfContents headers={headers} />
+          </div>
         </div>
       </div>
     </div>

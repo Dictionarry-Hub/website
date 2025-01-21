@@ -1,5 +1,4 @@
 "use client";
-
 import { useCallback, useState, useEffect } from "react";
 import { ChevronDown, Menu } from "lucide-react";
 
@@ -73,7 +72,16 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
   const scrollToHeader = useCallback((id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 64; // Height of the fixed navbar
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - navHeight - 24; // Added extra padding
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
       setIsOpen(false);
     }
   }, []);
@@ -109,7 +117,7 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
       </div>
 
       {/* Desktop version */}
-      <nav className="hidden lg:block sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto">
+      <nav className="hidden lg:block sticky top-20 max-h-[calc(100vh-5rem)] overflow-y-auto">
         <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
           <div className="py-3 px-4 border-b border-gray-200 dark:border-gray-700">
             <h2 className="font-medium text-gray-900 dark:text-white flex items-center">
