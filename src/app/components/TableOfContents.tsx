@@ -1,7 +1,7 @@
-// components/TableOfContents.tsx
 "use client";
 
 import { useCallback, useState, useEffect } from "react";
+import { ChevronDown, Menu } from "lucide-react";
 
 interface Header {
   id: string;
@@ -13,10 +13,43 @@ interface TableOfContentsProps {
   headers: Header[];
 }
 
+function TableOfContentsContent({
+  headers,
+  activeId,
+  scrollToHeader,
+}: {
+  headers: Header[];
+  activeId: string;
+  scrollToHeader: (id: string) => void;
+}) {
+  return (
+    <ul className="space-y-2">
+      {headers.map((header) => (
+        <li key={header.id}>
+          <button
+            onClick={() => scrollToHeader(header.id)}
+            className={`
+              w-full text-left transition-all duration-200 py-1.5 px-3 rounded-md
+              ${header.level > 1 ? "text-sm pl-6" : "text-base font-medium"}
+              ${
+                activeId === header.id
+                  ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+              }
+            `}
+          >
+            {header.text}
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function TableOfContents({ headers }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Intersection Observer for active section
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,47 +74,58 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
   }, []);
 
-  // Calculate padding based on header level
-  const getPaddingClass = (level: number) => {
-    const base = 4;
-    const padding = (level - 1) * base;
-    return `pl-${padding}`;
-  };
-
   return (
-    <nav className="space-y-2 sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-      <h2 className="font-semibold text-lg mb-4 text-gray-900 dark:text-white">
-        Table of Contents
-      </h2>
-      <div className="space-y-1">
-        {headers.map((header) => (
-          <button
-            key={header.id}
-            onClick={() => scrollToHeader(header.id)}
-            className={`
-              w-full text-left transition-all duration-200 py-1 px-2 rounded
-              ${getPaddingClass(header.level)}
-              ${
-                activeId === header.id
-                  ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20"
-                  : "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700/50"
-              }
-              ${header.level === 1 ? "font-medium" : "text-sm"}
-            `}
-          >
-            {/* Add visual indicator for nesting */}
-            {header.level > 1 && (
-              <span className="inline-block mr-2 opacity-40">
-                {"└─".repeat(header.level - 1)}
-              </span>
-            )}
-            {header.text}
-          </button>
-        ))}
+    <>
+      {/* Mobile version */}
+      <div className="lg:hidden">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full py-3 px-4 text-left bg-white dark:bg-gray-900 rounded-lg shadow-md flex items-center justify-between border border-gray-200 dark:border-gray-700"
+        >
+          <span className="font-medium text-gray-900 dark:text-white flex items-center">
+            <Menu className="w-5 h-5 mr-2" />
+            Table of Contents
+          </span>
+          <ChevronDown
+            className={`w-5 h-5 transform transition-transform ${
+              isOpen ? "rotate-180" : ""
+            } text-gray-500 dark:text-gray-400`}
+          />
+        </button>
+
+        {isOpen && (
+          <div className="mt-2 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-4">
+            <TableOfContentsContent
+              headers={headers}
+              activeId={activeId}
+              scrollToHeader={scrollToHeader}
+            />
+          </div>
+        )}
       </div>
-    </nav>
+
+      {/* Desktop version */}
+      <nav className="hidden lg:block sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto">
+        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+          <div className="py-3 px-4 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="font-medium text-gray-900 dark:text-white flex items-center">
+              <Menu className="w-5 h-5 mr-2" />
+              Table of Contents
+            </h2>
+          </div>
+          <div className="p-4">
+            <TableOfContentsContent
+              headers={headers}
+              activeId={activeId}
+              scrollToHeader={scrollToHeader}
+            />
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
