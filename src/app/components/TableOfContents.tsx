@@ -1,3 +1,5 @@
+// src/components/TableOfContents.tsx
+
 "use client";
 import { useCallback, useState, useEffect } from "react";
 import { ChevronDown, Menu } from "lucide-react";
@@ -6,6 +8,7 @@ interface Header {
   id: string;
   text: string;
   level: number;
+  date?: string; // optional
 }
 
 interface TableOfContentsProps {
@@ -37,7 +40,14 @@ function TableOfContentsContent({
               }
             `}
           >
-            {header.text}
+            <div className="flex justify-between items-baseline gap-3">
+              <span>{header.text}</span>
+              {header.date && header.level === 1 && (
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 whitespace-nowrap">
+                  {header.date}
+                </span>
+              )}
+            </div>
           </button>
         </li>
       ))}
@@ -58,12 +68,17 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
           }
         });
       },
-      { rootMargin: "-100px 0px -66% 0px" }
+      { rootMargin: "-80px 0px -66% 0px" }
     );
 
     headers.forEach(({ id }) => {
       const element = document.getElementById(id);
-      if (element) observer.observe(element);
+      if (element) {
+        observer.observe(element);
+        console.debug(`Observing element with ID: ${id}`);
+      } else {
+        console.warn(`Element with ID ${id} not found`);
+      }
     });
 
     return () => observer.disconnect();
@@ -73,16 +88,23 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
     const element = document.getElementById(id);
     if (element) {
       const navHeight = 64; // Height of the fixed navbar
+      const offset = 24; // Additional offset
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
-        elementPosition + window.pageYOffset - navHeight - 24; // Added extra padding
+        elementPosition + window.pageYOffset - navHeight - offset;
+
+      console.debug(`Scrolling to ${id} at position ${offsetPosition}`);
 
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
 
+      // Update active ID immediately for better UX
+      setActiveId(id);
       setIsOpen(false);
+    } else {
+      console.warn(`Target element ${id} not found`);
     }
   }, []);
 
