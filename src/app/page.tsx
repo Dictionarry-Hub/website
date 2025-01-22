@@ -1,7 +1,6 @@
-// src/app/page.tsx
 import { getHomeContent } from "@api/getData";
 import { parseMarkdown } from "@utils/markdown";
-import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
+import { parseMarkdownHeaders } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
 import { GettingStarted } from "@components/GettingStarted";
 import { ContentMetadata } from "@components/ContentMetadata";
@@ -9,21 +8,18 @@ import { ContentMetadata } from "@components/ContentMetadata";
 export default async function Home() {
   const homeContent = await getHomeContent();
   const headers = homeContent ? parseMarkdownHeaders(homeContent.content) : [];
-
-  // Create a unique ID for the home page content
   const contentId = "home-content";
-
-  // Update headers with the contentId
   const updatedHeaders = headers.map((header) => ({
     ...header,
     id: `${contentId}-${header.id}`,
   }));
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-12 gap-8 py-8">
-        <div className="col-span-12 lg:col-span-9">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+    <div className="relative min-h-screen">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+        {/* Main Content */}
+        <main className="flex-1">
+          <article className="prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6">
             {homeContent ? (
               <>
                 <div
@@ -39,14 +35,17 @@ export default async function Home() {
             ) : (
               <p>Welcome to Dictionarry. Home page content coming soon.</p>
             )}
-          </div>
-        </div>
-        <div className="col-span-12 lg:col-span-3">
-          <div className="lg:sticky lg:top-20 space-y-6">
+          </article>
+        </main>
+
+        <aside className="hidden lg:block w-[300px]">
+          <div className="fixed top-24 w-[300px]">
             <TableOfContents headers={updatedHeaders} />
-            <GettingStarted />
+            <div className="mt-6">
+              <GettingStarted />
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </div>
   );
