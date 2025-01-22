@@ -121,7 +121,7 @@ export default async function DevLogPage() {
                   <article
                     key={entry._id}
                     id={`entry-${entryId}`}
-                    className="relative prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6"
+                    className="relative prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8"
                   >
                     <div className="flex items-baseline justify-between mb-4">
                       <h1 className="text-3xl font-bold tracking-tight m-0">
