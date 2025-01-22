@@ -1,11 +1,15 @@
 // src/app/layout.tsx
 import { Schibsted_Grotesk } from "next/font/google";
+import { GeistMono } from "geist/font/mono";
 import { Nav } from "@components/Nav";
-import "./globals.css";
+import "@styles/globals.css";
+import "@styles/prism.css";
 
 const schibsted = Schibsted_Grotesk({
   subsets: ["latin"],
 });
+
+const geistMono = GeistMono;
 
 export default function RootLayout({
   children,
@@ -21,7 +25,9 @@ export default function RootLayout({
           content="A dictionary for arr apps - custom formats, profiles, and more"
         />
       </head>
-      <body className="min-h-screen bg-white dark:bg-gray-900">
+      <body
+        className={`min-h-screen bg-white dark:bg-gray-900 ${geistMono.variable}`}
+      >
         <Nav />
         <main className="container mx-auto px-4 py-8 mt-16">{children}</main>
       </body>
