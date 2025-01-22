@@ -31,12 +31,11 @@ export function Nav() {
     <div className="fixed top-0 left-0 right-0 z-50">
       <div
         className={`
-        border-b border-gray-200 dark:border-gray-800
-        bg-gradient-to-r from-blue-50 via-white to-purple-50 
-        dark:from-gray-800 dark:via-gray-900 dark:to-gray-800
-        transition-shadow duration-200
-        ${isScrolled ? "shadow-sm" : ""}
-      `}
+    border-b border-gray-200 dark:border-gray-700
+    bg-gray-50 dark:bg-gray-800
+    transition-shadow duration-200
+    ${isScrolled ? "shadow-sm" : ""}
+  `}
       >
         <nav className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">

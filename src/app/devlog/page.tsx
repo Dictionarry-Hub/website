@@ -109,7 +109,7 @@ export default async function DevLogPage() {
   });
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto">
       <div className="py-6">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
@@ -122,7 +122,7 @@ export default async function DevLogPage() {
                   <article
                     key={entry._id}
                     id={`entry-${entryId}`}
-                    className="relative prose prose-lg dark:prose-invert max-w-none bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6"
+                    className="relative prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6"
                   >
                     <div className="flex items-baseline justify-between mb-4">
                       <h1 className="text-3xl font-bold tracking-tight m-0">
@@ -130,9 +130,7 @@ export default async function DevLogPage() {
                       </h1>
                       <CreatedDateBadge date={entry.created} />
                     </div>
-
                     <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-
                     <ContentMetadata
                       author={entry.author}
                       last_modified={entry.last_modified}

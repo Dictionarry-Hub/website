@@ -139,10 +139,10 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
       </div>
 
       {/* Desktop version */}
-      <nav className="hidden lg:block sticky top-20 max-h-[calc(100vh-5rem)] overflow-y-auto">
+      <nav className="hidden lg:block sticky top-24 max-h-[calc(100vh-5rem)] overflow-y-auto">
         <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-          <div className="py-3 px-4 border-b border-gray-200 dark:border-gray-700">
-            <h2 className="font-medium text-gray-900 dark:text-white flex items-center">
+          <div className="py-3 px-4 border-b border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800/80">
+            <h2 className="font-medium text-gray-900 dark:text-white flex items-center ">
               <Menu className="w-5 h-5 mr-2" />
               Table of Contents
             </h2>
