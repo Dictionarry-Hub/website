@@ -21,7 +21,7 @@ export default async function Home() {
       <div className="container mx-auto flex flex-col lg:flex-row gap-8">
         {/* Main Content */}
         <main className="flex-1">
-          <article className="prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8">
+          <article className="prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8">
             {homeContent ? (
               <>
                 {/* Render the Markdown as React components */}

@@ -1,4 +1,5 @@
 // src/app/devlog/page.tsx
+
 import { getContent } from "@api/getData";
 import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
@@ -116,30 +117,33 @@ export default async function DevLogPage() {
             <div className="space-y-12">
               {devlogs.map((entry) => {
                 const entryId = createUrlId(entry.title);
-
                 return (
                   <article
                     key={entry._id}
                     id={`entry-${entryId}`}
-                    className="relative prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8"
+                    className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden"
                   >
-                    <div className="flex items-baseline justify-between mb-4">
-                      <h1 className="text-3xl font-bold tracking-tight m-0">
-                        {entry.title}
-                      </h1>
-                      <CreatedDateBadge date={entry.created} />
+                    {/* HEADER SECTION (custom background) */}
+                    <header className="bg-gray-100 dark:bg-gray-800/80 px-10 py-6">
+                      <div className="flex items-baseline justify-between">
+                        <h1 className="text-3xl font-bold tracking-tight m-0">
+                          {entry.title}
+                        </h1>
+                        <CreatedDateBadge date={entry.created} />
+                      </div>
+                    </header>
+
+                    {/* MAIN CONTENT SECTION */}
+                    <div className="p-10 pt-0 bg-white dark:bg-gray-900">
+                      <MarkdownRenderer
+                        content={entry.content}
+                        entryId={entryId}
+                      />
+                      <ContentMetadata
+                        author={entry.author}
+                        last_modified={entry.last_modified}
+                      />
                     </div>
-
-                    {/* Use our new MarkdownRenderer instead of parseMarkdown */}
-                    <MarkdownRenderer
-                      content={entry.content}
-                      entryId={entryId}
-                    />
-
-                    <ContentMetadata
-                      author={entry.author}
-                      last_modified={entry.last_modified}
-                    />
                   </article>
                 );
               })}
