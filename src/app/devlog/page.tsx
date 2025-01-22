@@ -1,11 +1,11 @@
 // src/app/devlog/page.tsx
 import { getContent } from "@api/getData";
-import { parseMarkdown } from "@utils/markdown";
 import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
 import { ContentMetadata } from "@components/ContentMetadata";
 import CreatedDateBadge from "@components/CreatedDateBadge";
 import { Coffee, Construction, Sparkles } from "lucide-react";
+import MarkdownRenderer from "@components/MarkdownRenderer";
 
 interface DevLogEntry {
   _id: string;
@@ -77,18 +77,18 @@ export default async function DevLogPage() {
     );
   }
 
-  // Sort dev logs by newest first (based on created date)
+  // Sort dev logs by newest first
   devlogs.sort((a, b) => {
     const dateA = new Date(a.created).getTime();
     const dateB = new Date(b.created).getTime();
     return dateB - dateA;
   });
 
-  // Create combined headers for table of contents
+  // Build combined table of contents
   const allHeaders = devlogs.flatMap((entry) => {
     const entryId = createUrlId(entry.title);
 
-    // First add the entry title as a main header with date
+    // Main "heading" for each devlog:
     const mainHeader = {
       id: `entry-${entryId}`,
       text: entry.title,
@@ -96,7 +96,7 @@ export default async function DevLogPage() {
       date: formatCreatedDate(entry.created),
     };
 
-    // Then add all the headers from the content (without dates)
+    // Sub-headers from the content
     const contentHeaders = parseMarkdownHeaders(entry.content).map(
       (header) => ({
         ...header,
@@ -114,9 +114,8 @@ export default async function DevLogPage() {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
             <div className="space-y-12">
-              {devlogs.map(async (entry) => {
+              {devlogs.map((entry) => {
                 const entryId = createUrlId(entry.title);
-                const htmlContent = await parseMarkdown(entry.content, entryId);
 
                 return (
                   <article
@@ -130,7 +129,13 @@ export default async function DevLogPage() {
                       </h1>
                       <CreatedDateBadge date={entry.created} />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+
+                    {/* Use our new MarkdownRenderer instead of parseMarkdown */}
+                    <MarkdownRenderer
+                      content={entry.content}
+                      entryId={entryId}
+                    />
+
                     <ContentMetadata
                       author={entry.author}
                       last_modified={entry.last_modified}

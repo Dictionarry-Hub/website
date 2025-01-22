@@ -16,6 +16,8 @@
     "prismjs": "^1.29.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^8.0.0",
+    "remark-gfm": "^3.0.1",
     "shiki": "^2.0.3",
     "unified": "^11.0.5"
   },

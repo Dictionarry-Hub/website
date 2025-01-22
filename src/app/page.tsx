@@ -1,14 +1,16 @@
+// src/app/page.tsx (Home page)
 import { getHomeContent } from "@api/getData";
-import { parseMarkdown } from "@utils/markdown";
 import { parseMarkdownHeaders } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
 import { GettingStarted } from "@components/GettingStarted";
 import { ContentMetadata } from "@components/ContentMetadata";
+import MarkdownRenderer from "@components/MarkdownRenderer";
 
 export default async function Home() {
   const homeContent = await getHomeContent();
-  const headers = homeContent ? parseMarkdownHeaders(homeContent.content) : [];
   const contentId = "home-content";
+
+  const headers = homeContent ? parseMarkdownHeaders(homeContent.content) : [];
   const updatedHeaders = headers.map((header) => ({
     ...header,
     id: `${contentId}-${header.id}`,
@@ -22,10 +24,10 @@ export default async function Home() {
           <article className="prose prose-lg dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800/80 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6">
             {homeContent ? (
               <>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: parseMarkdown(homeContent.content, contentId),
-                  }}
+                {/* Render the Markdown as React components */}
+                <MarkdownRenderer
+                  content={homeContent.content}
+                  entryId={contentId}
                 />
                 <ContentMetadata
                   author={homeContent.author}

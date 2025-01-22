@@ -5,7 +5,7 @@ interface Header {
   level: number;
 }
 
-function createUrlId(text: string): string {
+export function createUrlId(text: string): string {
   // Convert to lowercase and normalize spaces
   const normalizedText = text.toLowerCase().trim();
 
@@ -15,7 +15,6 @@ function createUrlId(text: string): string {
     .replace(/\s+/g, "-") // Replace spaces with single dash
     .replace(/-+/g, "-"); // Replace multiple dashes with single dash
 
-  console.debug(`Creating ID from "${text}" -> "${id}"`);
   return id;
 }
 
@@ -30,23 +29,13 @@ export function parseMarkdownHeaders(markdown: string): Header[] {
   }
 
   let match;
-  try {
-    while ((match = headerRegex.exec(markdown)) !== null) {
-      const level = match[1].length; // Number of # symbols
-      const text = match[2].trim();
-      const id = createUrlId(text);
+  while ((match = headerRegex.exec(markdown)) !== null) {
+    const level = match[1].length; // Number of # symbols
+    const text = match[2].trim();
+    const id = createUrlId(text);
 
-      headers.push({ id, text, level });
-      console.debug(
-        `Found header: Level ${level}, Text: "${text}", ID: "${id}"`
-      );
-    }
-  } catch (error) {
-    console.error("Error parsing markdown headers:", error);
+    headers.push({ id, text, level });
   }
 
   return headers;
 }
-
-// Export the createUrlId function for consistent ID generation
-export { createUrlId };
