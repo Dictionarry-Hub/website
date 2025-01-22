@@ -5,7 +5,7 @@ import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
 import { ContentMetadata } from "@components/ContentMetadata";
 import CreatedDateBadge from "@components/CreatedDateBadge";
-import { Coffee, Construction, Sparkles, Calendar } from "lucide-react";
+import { Coffee, Construction, Sparkles } from "lucide-react";
 
 interface DevLogEntry {
   _id: string;
@@ -19,7 +19,7 @@ interface DevLogEntry {
 function formatCreatedDate(dateStr: string) {
   const parsed = new Date(dateStr);
   if (isNaN(parsed.getTime())) {
-    return dateStr; // fallback
+    return dateStr;
   }
   return parsed.toLocaleString("default", {
     day: "numeric",
@@ -110,7 +110,7 @@ export default async function DevLogPage() {
 
   return (
     <div className="container mx-auto">
-      <div className="py-6">
+      <div className="pb-6">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
             <div className="space-y-12">
@@ -141,9 +141,11 @@ export default async function DevLogPage() {
             </div>
           </div>
 
-          <div className="col-span-12 lg:col-span-3">
-            <TableOfContents headers={allHeaders} />
-          </div>
+          <aside className="hidden lg:block col-span-12 lg:col-span-3">
+            <div className="fixed top-24 w-[350px]">
+              <TableOfContents headers={allHeaders} />
+            </div>
+          </aside>
         </div>
       </div>
     </div>
