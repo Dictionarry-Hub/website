@@ -7,6 +7,9 @@ import { ContentMetadata } from "@components/ContentMetadata";
 import CreatedDateBadge from "@components/CreatedDateBadge";
 import { Coffee, Construction, Sparkles } from "lucide-react";
 import MarkdownRenderer from "@components/MarkdownRenderer";
+import PinnedExplanation, {
+  getPinnedHeader,
+} from "./components/PinnedExplanation";
 
 interface DevLogEntry {
   _id: string;
@@ -85,29 +88,32 @@ export default async function DevLogPage() {
     return dateB - dateA;
   });
 
-  // Build combined table of contents
-  const allHeaders = devlogs.flatMap((entry) => {
-    const entryId = createUrlId(entry.title);
+  // Build combined table of contents, starting with pinned explanation
+  const allHeaders = [
+    getPinnedHeader(),
+    ...devlogs.flatMap((entry) => {
+      const entryId = createUrlId(entry.title);
 
-    // Main "heading" for each devlog:
-    const mainHeader = {
-      id: `entry-${entryId}`,
-      text: entry.title,
-      level: 1,
-      date: formatCreatedDate(entry.created),
-    };
+      // Main "heading" for each devlog:
+      const mainHeader = {
+        id: `entry-${entryId}`,
+        text: entry.title,
+        level: 1,
+        date: formatCreatedDate(entry.created),
+      };
 
-    // Sub-headers from the content
-    const contentHeaders = parseMarkdownHeaders(entry.content).map(
-      (header) => ({
-        ...header,
-        id: `${entryId}-${header.id}`,
-        level: header.level + 1,
-      })
-    );
+      // Sub-headers from the content
+      const contentHeaders = parseMarkdownHeaders(entry.content).map(
+        (header) => ({
+          ...header,
+          id: `${entryId}-${header.id}`,
+          level: header.level + 1,
+        })
+      );
 
-    return [mainHeader, ...contentHeaders];
-  });
+      return [mainHeader, ...contentHeaders];
+    }),
+  ];
 
   return (
     <div className="container mx-auto">
@@ -115,6 +121,10 @@ export default async function DevLogPage() {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
             <div className="space-y-12">
+              {/* Pinned Explanation Component */}
+              <PinnedExplanation />
+
+              {/* Regular DevLog Articles */}
               {devlogs.map((entry) => {
                 const entryId = createUrlId(entry.title);
                 return (
@@ -123,7 +133,6 @@ export default async function DevLogPage() {
                     id={`entry-${entryId}`}
                     className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden"
                   >
-                    {/* HEADER SECTION (custom background) */}
                     <header className="bg-gray-100 dark:bg-gray-800/80 px-10 py-6">
                       <div className="flex items-baseline justify-between">
                         <h1 className="text-3xl font-bold tracking-tight m-0">
@@ -133,7 +142,6 @@ export default async function DevLogPage() {
                       </div>
                     </header>
 
-                    {/* MAIN CONTENT SECTION */}
                     <div className="p-10 pt-0 bg-white dark:bg-gray-900">
                       <MarkdownRenderer
                         content={entry.content}
