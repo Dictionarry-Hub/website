@@ -4,6 +4,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Image from "next/image";
 import Prism from "prismjs";
 
 import "prismjs/components/prism-javascript";
@@ -15,6 +16,7 @@ import "prismjs/components/prism-css";
 import "prismjs/components/prism-markdown";
 
 import { createUrlId } from "@utils/parseMarkdownHeaders";
+import { useDarkMode } from "@hooks/useDarkMode";
 
 interface MarkdownRendererProps {
   content: string;
@@ -25,11 +27,13 @@ export default function MarkdownRenderer({
   content,
   entryId,
 }: MarkdownRendererProps) {
+  const { isDarkMode } = useDarkMode();
+
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
-        // 1) HEADINGS
+        // HEADINGS (h1, h2, etc.)
         h1({ children, ...props }: any) {
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
@@ -70,8 +74,62 @@ export default function MarkdownRenderer({
           );
         },
 
-        // 2) PRE
-        // Override the <pre> that react-markdown creates for fenced code blocks
+        // Images -> fully responsive
+        img({ src, alt, ...props }: any) {
+          // if alt starts with "dark_", we only show it if isDarkMode is true
+          // if alt starts with "light_", show it if isDarkMode is false
+          // else, always show (e.g. alt="normal" or no prefix)
+          const isDarkAlt = alt?.startsWith("dark_");
+          const isLightAlt = alt?.startsWith("light_");
+
+          // Dark mode => show dark_ images; hide light_ images
+          if (isDarkMode && isDarkAlt) {
+            return (
+              <Image
+                src={src}
+                alt={alt}
+                unoptimized
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
+                {...props}
+              />
+            );
+          } else if (!isDarkMode && isLightAlt) {
+            return (
+              <Image
+                src={src}
+                alt={alt}
+                unoptimized
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
+                {...props}
+              />
+            );
+          } else if (!isDarkAlt && !isLightAlt) {
+            // If alt doesn't start with "dark_" or "light_", always show it
+            return (
+              <Image
+                src={src}
+                alt={alt}
+                unoptimized
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
+                {...props}
+              />
+            );
+          }
+
+          // If it doesn't match current theme, show nothing
+          return null;
+        },
+
+        // PRE
         pre({ children, ...props }: any) {
           return (
             <pre
@@ -83,8 +141,7 @@ export default function MarkdownRenderer({
           );
         },
 
-        // 3) CODE
-        // For block code, we rely on the above <pre>. So we do NOT wrap again.
+        // CODE
         code({ inline, className, children, ...props }: any) {
           const codeText = String(children).replace(/\n$/, "");
           if (inline) {
@@ -104,7 +161,6 @@ export default function MarkdownRenderer({
               ? Prism.highlight(codeText, Prism.languages[lang], lang)
               : codeText;
 
-          // Return just <code>, let the <pre> from above handle wrapping
           return (
             <code
               className={`language-${lang} font-mono`}
@@ -113,9 +169,9 @@ export default function MarkdownRenderer({
           );
         },
 
-        // 4) HR
+        // HR
         hr(props: any) {
-          return <hr {...props} />;
+          return <hr className="my-4" {...props} />;
         },
       }}
     >
