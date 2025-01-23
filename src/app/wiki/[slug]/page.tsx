@@ -20,28 +20,31 @@ interface WikiEntry {
 export default async function WikiArticlePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  // Await params itself before destructuring
+  const { slug } = await params;
+
   const wikiEntries = (await getContent("wiki")) as WikiEntry[] | null;
   const article = wikiEntries?.find(
-    (entry) => entry.slug === params.slug || entry._id === params.slug
+    (entry) => entry.slug === slug || entry._id === slug
   );
   if (!article) {
     notFound();
   }
 
-  const contentId = createUrlId(article.title);
+  const entryId = createUrlId(article.title);
+
+  // Match exactly how devlog creates headers
   const headers = [
-    // Main article header
     {
-      id: `entry-${contentId}`,
+      id: `entry-${entryId}`,
       text: article.title,
       level: 1,
     },
-    // Content headers - match MarkdownRenderer.tsx ID pattern
     ...parseMarkdownHeaders(article.content).map((header) => ({
       ...header,
-      id: `${contentId}-${createUrlId(header.text)}`, // Match how MarkdownRenderer creates IDs
+      id: `${entryId}-${header.id}`, // Use header.id directly like devlog does
       level: header.level + 1,
     })),
   ];
@@ -52,7 +55,7 @@ export default async function WikiArticlePage({
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
             <article
-              id={`entry-${contentId}`}
+              id={`entry-${entryId}`}
               className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-700 overflow-hidden"
             >
               <header className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 px-6 py-4 border-b border-gray-200 dark:border-gray-700 rounded-t-lg">
@@ -63,8 +66,8 @@ export default async function WikiArticlePage({
                   <Link
                     href="/wiki"
                     className="group inline-flex items-center gap-2 px-3 py-1.5
-                             text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 
-                             transition-colors"
+                                 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400
+                                 transition-colors"
                   >
                     <ArrowLeft className="w-4 h-4" />
                     <span className="text-sm font-medium">Back to Wiki</span>
@@ -75,7 +78,7 @@ export default async function WikiArticlePage({
               <div className="p-6 pt-0 bg-white dark:bg-gray-900">
                 <MarkdownRenderer
                   content={article.content}
-                  entryId={contentId}
+                  entryId={entryId} // Use entryId like devlog does
                 />
                 <ContentMetadata
                   author={article.author}
@@ -95,7 +98,6 @@ export default async function WikiArticlePage({
     </div>
   );
 }
-
 export async function generateStaticParams() {
   const wikiEntries = (await getContent("wiki")) as WikiEntry[] | null;
   return (
