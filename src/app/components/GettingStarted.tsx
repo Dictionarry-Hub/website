@@ -1,9 +1,8 @@
 "use client";
 
-import { useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ExternalLink, BookOpen, Settings, Rocket } from "lucide-react";
+import { BookOpen, Settings, Rocket } from "lucide-react";
 
 interface ExternalLinkProps {
   href: string;

@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function NotFound() {
   const constructionGifs = ["/gifs/hammer-construction.gif"];
-
   const [currentGifIndex, setCurrentGifIndex] = useState(0);
 
   useEffect(() => {
@@ -14,7 +13,7 @@ export default function NotFound() {
       );
     }, 3000);
     return () => clearInterval(timer);
-  }, []);
+  }, [constructionGifs.length]); // Added dependency
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
@@ -27,8 +26,6 @@ export default function NotFound() {
           priority
         />
       </div>
-
-      {/* Centered caption */}
       <div className="w-[600px] text-center text-base text-gray-600 dark:text-gray-300">
         This page is currently under construction, check back soon.
       </div>

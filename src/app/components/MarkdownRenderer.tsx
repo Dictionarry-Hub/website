@@ -23,6 +23,10 @@ interface MarkdownRendererProps {
   entryId: string;
 }
 
+interface CodeProps extends React.HTMLAttributes<HTMLElement> {
+  inline?: boolean;
+}
+
 export default function MarkdownRenderer({
   content,
   entryId,
@@ -34,7 +38,10 @@ export default function MarkdownRenderer({
       remarkPlugins={[remarkGfm]}
       components={{
         // HEADINGS (h1, h2, etc.)
-        h1({ children, ...props }: any) {
+        h1({
+          children,
+          ...props
+        }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
@@ -47,7 +54,10 @@ export default function MarkdownRenderer({
             </h1>
           );
         },
-        h2({ children, ...props }: any) {
+        h2({
+          children,
+          ...props
+        }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
@@ -60,7 +70,10 @@ export default function MarkdownRenderer({
             </h2>
           );
         },
-        h3({ children, ...props }: any) {
+        h3({
+          children,
+          ...props
+        }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
@@ -75,62 +88,44 @@ export default function MarkdownRenderer({
         },
 
         // Images -> fully responsive
-        img({ src, alt, ...props }: any) {
-          // if alt starts with "dark_", we only show it if isDarkMode is true
-          // if alt starts with "light_", show it if isDarkMode is false
-          // else, always show (e.g. alt="normal" or no prefix)
+        img({
+          src,
+          alt = "",
+          width,
+          height,
+          ...props
+        }: React.ImgHTMLAttributes<HTMLImageElement>) {
           const isDarkAlt = alt?.startsWith("dark_");
           const isLightAlt = alt?.startsWith("light_");
 
-          // Dark mode => show dark_ images; hide light_ images
+          const imageProps = {
+            src: src || "",
+            alt: alt || "",
+            unoptimized: true,
+            width: Number(width) || 0,
+            height: Number(height) || 0,
+            style: { width: "100%", height: "auto" },
+            className:
+              "my-4 rounded-md border border-gray-200 dark:border-gray-700",
+            ...props,
+          };
+
           if (isDarkMode && isDarkAlt) {
-            return (
-              <Image
-                src={src}
-                alt={alt}
-                unoptimized
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "auto" }}
-                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
-                {...props}
-              />
-            );
+            return <Image {...imageProps} />;
           } else if (!isDarkMode && isLightAlt) {
-            return (
-              <Image
-                src={src}
-                alt={alt}
-                unoptimized
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "auto" }}
-                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
-                {...props}
-              />
-            );
+            return <Image {...imageProps} />;
           } else if (!isDarkAlt && !isLightAlt) {
-            // If alt doesn't start with "dark_" or "light_", always show it
-            return (
-              <Image
-                src={src}
-                alt={alt}
-                unoptimized
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "auto" }}
-                className="my-4 rounded-md border border-gray-200 dark:border-gray-700"
-                {...props}
-              />
-            );
+            return <Image {...imageProps} />;
           }
 
-          // If it doesn't match current theme, show nothing
           return null;
         },
 
         // PRE
-        pre({ children, ...props }: any) {
+        pre({
+          children,
+          ...props
+        }: React.PropsWithChildren<React.HTMLAttributes<HTMLPreElement>>) {
           return (
             <pre
               className="!mt-4 !mb-4 rounded-lg !bg-[#eceff4] dark:!bg-[#2e3440] !border !border-gray-200 dark:!border-gray-700 overflow-x-auto"
@@ -142,7 +137,7 @@ export default function MarkdownRenderer({
         },
 
         // CODE
-        code({ inline, className, children, ...props }: any) {
+        code({ inline, className, children, ...props }: CodeProps) {
           const codeText = String(children).replace(/\n$/, "");
           if (inline) {
             return (
@@ -165,12 +160,13 @@ export default function MarkdownRenderer({
             <code
               className={`language-${lang} font-mono`}
               dangerouslySetInnerHTML={{ __html: highlighted }}
+              {...props}
             />
           );
         },
 
         // HR
-        hr(props: any) {
+        hr(props: React.HTMLAttributes<HTMLHRElement>) {
           return <hr className="my-4" {...props} />;
         },
       }}

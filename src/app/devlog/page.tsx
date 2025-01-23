@@ -5,7 +5,6 @@ import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
 import { TableOfContents } from "@components/TableOfContents";
 import { ContentMetadata } from "@components/ContentMetadata";
 import CreatedDateBadge from "@components/CreatedDateBadge";
-import { Coffee, Construction, Sparkles } from "lucide-react";
 import MarkdownRenderer from "@components/MarkdownRenderer";
 import PinnedExplanation, {
   getPinnedHeader,
@@ -45,36 +44,6 @@ export default async function DevLogPage() {
           <p className="text-red-600 dark:text-red-300">
             Please try refreshing the page. If the problem persists, the content
             may be temporarily unavailable.
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  if (devlogs.length === 0) {
-    return (
-      <div className="container mx-auto px-4 py-12">
-        <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-8 text-center max-w-2xl mx-auto">
-          <div className="flex justify-center gap-4 mb-6">
-            <Coffee className="w-8 h-8 text-amber-600 dark:text-amber-400 animate-bounce" />
-            <Construction
-              className="w-8 h-8 text-blue-600 dark:text-blue-400 animate-bounce"
-              style={{ animationDelay: "0.2s" }}
-            />
-            <Sparkles
-              className="w-8 h-8 text-purple-600 dark:text-purple-400 animate-bounce"
-              style={{ animationDelay: "0.4s" }}
-            />
-          </div>
-
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            🚧 Under Construction 🚧
-          </h2>
-
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Our developers are frantically typing away, fueled by coffee and
-            dreams of bug-free code. The development logs will appear here once
-            they remember to document what they're doing!
           </p>
         </div>
       </div>

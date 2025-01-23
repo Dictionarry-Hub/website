@@ -40,7 +40,7 @@ export async function getContent(type: string) {
       return data;
     } catch (parseError) {
       console.error(`Error parsing ${type} JSON:`, parseError);
-      console.error("Raw response:", text.slice(0, 200)); // Log first 200 chars for debugging
+      console.error("Raw response:", text.slice(0, 200));
       throw new Error(`Invalid JSON in ${type} response`);
     }
   } catch (error) {
@@ -66,7 +66,15 @@ export async function getHomeContent() {
     }
 
     const data = await response.json();
-    const homeEntry = data.find((entry: any) => entry._id === "home");
+
+    interface WikiEntry {
+      _id: string;
+      content?: string;
+      author?: string;
+      last_modified?: string;
+    }
+
+    const homeEntry = data.find((entry: WikiEntry) => entry._id === "home");
 
     if (!homeEntry) {
       return null;
