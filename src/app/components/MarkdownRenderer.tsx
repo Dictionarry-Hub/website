@@ -87,7 +87,7 @@ export default function MarkdownRenderer({
           );
         },
 
-        // Images -> fully responsive
+        // Images & Videos
         img({
           src,
           alt = "",
@@ -95,9 +95,49 @@ export default function MarkdownRenderer({
           height,
           ...props
         }: React.ImgHTMLAttributes<HTMLImageElement>) {
+          const videoExtensions = [".mp4", ".webm", ".ogg", ".mov"];
+          const isVideo =
+            src &&
+            videoExtensions.some((ext) => src.toLowerCase().endsWith(ext));
+
           const isDarkAlt = alt?.startsWith("dark_");
           const isLightAlt = alt?.startsWith("light_");
 
+          // Handle Streamable links
+          if (src && src.includes("streamable.com")) {
+            const streamableId = src.split("/").pop(); // Extract the video ID
+            const embedUrl = `https://streamable.com/e/${streamableId}`;
+
+            return (
+              <iframe
+                src={embedUrl}
+                className="my-4 rounded-md border border-gray-200 dark:border-gray-700 w-full aspect-video"
+                allowFullScreen
+              />
+            );
+          }
+
+          // Handle local or hosted videos
+          if (isVideo) {
+            const shouldRender =
+              (isDarkMode && isDarkAlt) ||
+              (!isDarkMode && isLightAlt) ||
+              (!isDarkAlt && !isLightAlt);
+
+            if (!shouldRender) return null;
+
+            const videoProps = {
+              src,
+              controls: true,
+              className:
+                "my-4 rounded-md border border-gray-200 dark:border-gray-700",
+              style: { width: "100%", height: "auto" },
+            };
+
+            return <video {...videoProps} />;
+          }
+
+          // Handle image rendering
           const imageProps = {
             src: src || "",
             alt: alt || "",
