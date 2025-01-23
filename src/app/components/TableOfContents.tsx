@@ -60,26 +60,34 @@ export function TableOfContents({ headers }: TableOfContentsProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === "undefined") return;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
-          }
-        });
+        // Get all intersecting entries
+        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+
+        // If we have visible entries, use the first one
+        if (visibleEntries.length > 0) {
+          setActiveId(visibleEntries[0].target.id);
+        }
       },
       { rootMargin: "-80px 0px -66% 0px" }
     );
 
-    headers.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-        console.debug(`Observing element with ID: ${id}`);
-      } else {
-        console.warn(`Element with ID ${id} not found`);
-      }
-    });
+    // Delay the observation slightly to ensure DOM is ready
+    setTimeout(() => {
+      headers.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element) {
+          observer.observe(element);
+          console.debug(`Observing element with ID: ${id}`);
+        } else {
+          console.warn(`Element with ID ${id} not found`);
+        }
+      });
+    }, 0);
 
     return () => observer.disconnect();
   }, [headers]);
