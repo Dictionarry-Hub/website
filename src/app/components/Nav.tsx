@@ -31,11 +31,11 @@ export function Nav() {
     <div className="fixed top-0 left-0 right-0 z-50">
       <div
         className={`
-    border-b border-gray-200 dark:border-gray-700
-    bg-gray-50 dark:bg-gray-800
-    transition-shadow duration-200
-    ${isScrolled ? "shadow-sm" : ""}
-  `}
+          border-b border-gray-200 dark:border-gray-700
+          bg-gray-50 dark:bg-gray-800
+          transition-shadow duration-200
+          ${isScrolled ? "shadow-sm" : ""}
+        `}
       >
         <nav className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
@@ -54,29 +54,44 @@ export function Nav() {
               </span>
             </Link>
 
-            <div className="hidden md:flex items-center space-x-1">
-              <div className="relative flex items-center">
+            <div className="hidden md:flex items-center space-x-2">
+              <div className="relative flex items-center space-x-1">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
                     className={`
-                      relative px-4 py-2 rounded-lg text-sm font-medium
-                      transition-colors duration-200
+                      group relative px-4 py-2 rounded-lg
+                      text-sm font-medium
+                      transition-all duration-200
                       ${
                         pathname === item.href
                           ? "text-blue-600 dark:text-blue-400"
-                          : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                          : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                       }
                     `}
                   >
+                    <div className="relative z-10 flex items-center">
+                      <span className="transition-transform duration-200 group-hover:-translate-y-0.5">
+                        {item.label}
+                      </span>
+                    </div>
+
+                    {/* Active state underline */}
                     {pathname === item.href && (
                       <div
-                        className="absolute inset-0 bg-gradient-to-r from-blue-50 to-blue-100/50 dark:from-blue-500/10 dark:to-blue-400/10 rounded-lg
-                        transition-all duration-300 ease-out"
+                        className="absolute bottom-0 left-1/2 -translate-x-1/2 
+                        w-4/5 h-0.5 bg-blue-600 dark:bg-blue-400
+                        rounded-full transition-all duration-300"
                       />
                     )}
-                    <span className="relative z-10">{item.label}</span>
+
+                    {/* Hover state background */}
+                    <div
+                      className="absolute inset-0 bg-gray-100 dark:bg-gray-700 
+                      opacity-0 group-hover:opacity-100
+                      transition-opacity duration-200 rounded-lg"
+                    />
                   </Link>
                 ))}
               </div>
