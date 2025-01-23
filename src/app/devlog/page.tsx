@@ -100,18 +100,21 @@ export default async function DevLogPage() {
                   <article
                     key={entry._id}
                     id={`entry-${entryId}`}
-                    className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden"
+                    className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-700 overflow-hidden"
                   >
-                    <header className="bg-gray-100 dark:bg-gray-800/80 px-10 py-6">
-                      <div className="flex items-baseline justify-between">
-                        <h1 className="text-3xl font-bold tracking-tight m-0">
+                    <header className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 px-6 py-4 border-b border-gray-200 dark:border-gray-700 rounded-t-lg">
+                      <div className="flex items-center justify-between gap-4">
+                        <h1 className="text-2xl font-semibold tracking-tight m-0 text-gray-800 dark:text-gray-100">
                           {entry.title}
                         </h1>
-                        <CreatedDateBadge date={entry.created} />
+                        <CreatedDateBadge
+                          date={entry.created}
+                          className="text-sm py-1 px-2.5 rounded-md"
+                        />
                       </div>
                     </header>
 
-                    <div className="p-10 pt-0 bg-white dark:bg-gray-900">
+                    <div className="p-6 pt-0 bg-white dark:bg-gray-900">
                       <MarkdownRenderer
                         content={entry.content}
                         entryId={entryId}
