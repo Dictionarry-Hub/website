@@ -3,11 +3,9 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
-
 import Image from "next/image";
 import Prism from "prismjs";
 
@@ -39,7 +37,6 @@ export default function MarkdownRenderer({
 
   return (
     <ReactMarkdown
-      // 2) Add remarkMath & rehypeKatex in addition to remarkGfm
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex]}
       components={{
@@ -90,6 +87,75 @@ export default function MarkdownRenderer({
             >
               {children}
             </h3>
+          );
+        },
+
+        // TABLE COMPONENTS
+        table({ children, ...props }) {
+          return (
+            <div className="rounded-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
+              <table className="w-full my-0" {...props}>
+                {children}
+              </table>
+            </div>
+          );
+        },
+        thead({ children, ...props }) {
+          return (
+            <thead className="bg-gray-50 dark:bg-gray-800" {...props}>
+              {children}
+            </thead>
+          );
+        },
+        tbody({ children, ...props }) {
+          return <tbody {...props}>{children}</tbody>;
+        },
+        tr({ children, ...props }) {
+          return (
+            <tr
+              className="border-t border-gray-200 dark:border-gray-700 first:border-0"
+              {...props}
+            >
+              {children}
+            </tr>
+          );
+        },
+        th({ children, ...props }) {
+          return (
+            <th
+              className="p-2 text-sm font-medium text-gray-900 dark:text-gray-100"
+              {...props}
+            >
+              {children}
+            </th>
+          );
+        },
+        td({ children, ...props }) {
+          // Process cell content to handle newlines and br tags
+          const processContent = (
+            content: React.ReactNode
+          ): React.ReactNode => {
+            if (typeof content === "string") {
+              return content.split(/(?:<br\s*\/?>|\n)/g).map((part, i, arr) => (
+                <React.Fragment key={i}>
+                  {part}
+                  {i < arr.length - 1 && <br />}
+                </React.Fragment>
+              ));
+            }
+            if (Array.isArray(content)) {
+              return content.map((child) => processContent(child));
+            }
+            return content;
+          };
+
+          return (
+            <td
+              className="p-2 text-sm text-gray-700 dark:text-gray-300 align-top"
+              {...props}
+            >
+              {processContent(children)}
+            </td>
           );
         },
 
@@ -186,9 +252,6 @@ export default function MarkdownRenderer({
         code({ inline, className, children, ...props }: CodeProps) {
           const codeText = String(children).replace(/\n$/, "");
 
-          // 3) If it’s math code, remark-math + rehype-katex will handle it,
-          //    so don't do Prism highlighting on `$...$` or `$$...$$` snippets.
-          //    We'll only highlight if there's a known language class:
           if (inline) {
             return (
               <code
@@ -200,7 +263,6 @@ export default function MarkdownRenderer({
             );
           }
 
-          // If there's a language, highlight it:
           const match = /language-(\w+)/.exec(className || "");
           const lang = match && match[1] ? match[1] : "";
           const highlighted =
@@ -219,7 +281,24 @@ export default function MarkdownRenderer({
 
         // HR
         hr(props: React.HTMLAttributes<HTMLHRElement>) {
-          return <hr className="my-4" {...props} />;
+          return (
+            <hr
+              className="my-4 border-t border-gray-200 dark:border-gray-700"
+              {...props}
+            />
+          );
+        },
+
+        // Handle HTML content
+        p({ children, ...props }) {
+          return (
+            <p
+              className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300"
+              {...props}
+            >
+              {children}
+            </p>
+          );
         },
       }}
     >
