@@ -30,7 +30,7 @@ export default async function WikiPage() {
     wikiEntries?.filter((entry) => entry._id !== "home") || [];
 
   return (
-    <div className="container mx-auto px-4 ">
+    <div className="container mx-auto px-0 ">
       <header className="mb-4">
         <h1 className="text-2xl font-bold mb-4">Dictionarry Wiki</h1>
 
