@@ -1,9 +1,13 @@
-// components/MarkdownRenderer.tsx
 "use client";
 
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
+
 import Image from "next/image";
 import Prism from "prismjs";
 
@@ -35,9 +39,11 @@ export default function MarkdownRenderer({
 
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
+      // 2) Add remarkMath & rehypeKatex in addition to remarkGfm
+      remarkPlugins={[remarkGfm, remarkMath]}
+      rehypePlugins={[rehypeKatex]}
       components={{
-        // HEADINGS (h1, h2, etc.)
+        // HEADINGS
         h1({
           children,
           ...props
@@ -179,6 +185,10 @@ export default function MarkdownRenderer({
         // CODE
         code({ inline, className, children, ...props }: CodeProps) {
           const codeText = String(children).replace(/\n$/, "");
+
+          // 3) If it’s math code, remark-math + rehype-katex will handle it,
+          //    so don't do Prism highlighting on `$...$` or `$$...$$` snippets.
+          //    We'll only highlight if there's a known language class:
           if (inline) {
             return (
               <code
@@ -189,6 +199,8 @@ export default function MarkdownRenderer({
               </code>
             );
           }
+
+          // If there's a language, highlight it:
           const match = /language-(\w+)/.exec(className || "");
           const lang = match && match[1] ? match[1] : "";
           const highlighted =
