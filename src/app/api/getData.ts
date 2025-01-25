@@ -168,7 +168,9 @@ export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> 
     data.forEach((item: TierInfo) => {
       const match = item.name.match(tierRegex);
       if (match) {
-        const [resolution, type, tierNumber] = match;
+        const resolution = match[1];
+        const type = match[2];
+        const tierNumber = match[3];
         const normalizedType = type.toLowerCase();
 
         if (!tiers.resolutions[resolution]) {
