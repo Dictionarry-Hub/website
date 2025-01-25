@@ -1,4 +1,54 @@
-// src/app/utils/getData.ts
+// src/app/api/getData.ts
+
+interface Condition {
+  name: string;
+  negate: boolean;
+  required: boolean;
+  type: string;
+  pattern?: string;
+  source?: string;
+  resolution?: string;
+}
+
+interface TestConditionResult {
+  matches: boolean;
+  name: string;
+  negate: boolean;
+  pattern: string;
+  required: boolean;
+  type: string;
+}
+
+interface Test {
+  conditionResults: TestConditionResult[];
+  expected: boolean;
+  id: number;
+  input: string;
+  lastRun: string;
+  passes: boolean;
+}
+
+interface TierInfo {
+  name: string;
+  description: string;
+  conditions: Condition[];
+  tags: string[];
+  tests: Test[];
+  _id: string;
+  tierNumber: number;
+}
+
+interface TypeTiers {
+  [key: string]: TierInfo[];
+}
+
+interface ResolutionTypes {
+  [key: string]: TypeTiers;
+}
+
+interface ReleaseGroupTiers {
+  resolutions: ResolutionTypes;
+}
 
 export async function getVersion() {
   try {
@@ -88,6 +138,63 @@ export async function getHomeContent() {
     };
   } catch (error) {
     console.error("Error fetching home content:", error);
+    return null;
+  }
+}
+export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> {
+  try {
+    const response = await fetch(
+      `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/custom_formats.json`,
+      {
+        next: { revalidate: 60 },
+        cache: "force-cache",
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch custom formats: ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (!data) return null;
+
+    // Case-insensitive regex with normalized output
+    const tierRegex =
+      /^(SD|720p|1080p|2160p)\s+(quality|efficient)\s+tier\s+(\d+)$/i;
+    const tiers: ReleaseGroupTiers = {
+      resolutions: {},
+    };
+
+    data.forEach((item: TierInfo) => {
+      const match = item.name.match(tierRegex);
+      if (match) {
+        const [resolution, type, tierNumber] = match;
+        const normalizedType = type.toLowerCase();
+
+        if (!tiers.resolutions[resolution]) {
+          tiers.resolutions[resolution] = {};
+        }
+
+        if (!tiers.resolutions[resolution][normalizedType]) {
+          tiers.resolutions[resolution][normalizedType] = [];
+        }
+
+        tiers.resolutions[resolution][normalizedType].push({
+          ...item,
+          tierNumber: parseInt(tierNumber),
+        });
+      }
+    });
+
+    Object.values(tiers.resolutions).forEach((resolutionTypes) => {
+      Object.values(resolutionTypes).forEach((typeTiers) => {
+        typeTiers.sort((a, b) => a.tierNumber - b.tierNumber);
+      });
+    });
+
+    return tiers;
+  } catch (error) {
+    console.error("Error fetching release group tiers:", error);
     return null;
   }
 }
