@@ -1,6 +1,6 @@
 // src/app/api/getData.ts
 
-interface Condition {
+export interface Condition {
   name: string;
   negate: boolean;
   required: boolean;
@@ -10,7 +10,7 @@ interface Condition {
   resolution?: string;
 }
 
-interface TestConditionResult {
+export interface TestConditionResult {
   matches: boolean;
   name: string;
   negate: boolean;
@@ -19,7 +19,7 @@ interface TestConditionResult {
   type: string;
 }
 
-interface Test {
+export interface Test {
   conditionResults: TestConditionResult[];
   expected: boolean;
   id: number;
@@ -28,7 +28,7 @@ interface Test {
   passes: boolean;
 }
 
-interface TierInfo {
+export interface TierInfo {
   name: string;
   description: string;
   conditions: Condition[];
@@ -38,15 +38,15 @@ interface TierInfo {
   tierNumber: number;
 }
 
-interface TypeTiers {
+export interface TypeTiers {
   [key: string]: TierInfo[];
 }
 
-interface ResolutionTypes {
+export interface ResolutionTypes {
   [key: string]: TypeTiers;
 }
 
-interface ReleaseGroupTiers {
+export interface ReleaseGroupTiers {
   resolutions: ResolutionTypes;
 }
 
