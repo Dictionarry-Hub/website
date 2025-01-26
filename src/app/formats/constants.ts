@@ -10,6 +10,8 @@ import {
   Monitor,
   Languages,
   Film,
+  Flag,
+  Zap,
 } from "lucide-react";
 
 export interface FormatCategory {
@@ -144,6 +146,30 @@ export const FORMAT_CATEGORIES: FormatCategory[] = [
       dark: "text-orange-400",
       bg: "bg-orange-50",
       darkBg: "dark:bg-orange-900/20",
+    },
+  },
+  {
+    id: "Indexer Flags",
+    label: "Indexer Flags",
+    tags: ["Flag"],
+    icon: Flag,
+    accentColor: {
+      light: "text-amber-600",
+      dark: "text-amber-400",
+      bg: "bg-amber-50",
+      darkBg: "dark:bg-amber-900/20",
+    },
+  },
+  {
+    id: "Enhancements",
+    label: "Enhancements",
+    tags: ["Enhancement"],
+    icon: Zap,
+    accentColor: {
+      light: "text-green-600",
+      dark: "text-green-400",
+      bg: "bg-green-50",
+      darkBg: "dark:bg-green-900/20",
     },
   },
 ];

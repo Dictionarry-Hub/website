@@ -1,9 +1,8 @@
-// src/app/formats/components/FormatNavigation.tsx
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ChevronDown, ChevronUp, X } from "lucide-react";
 import { FORMAT_CATEGORIES, FormatCategory } from "../constants";
 
 interface CustomFormat {
@@ -25,6 +24,40 @@ export function FormatNavigation({
   formats,
   selectedId,
 }: FormatNavigationProps) {
+  // Initialize state with all groups collapsed
+  const [collapsedGroups, setCollapsedGroups] = useState<
+    Record<string, boolean>
+  >(() => {
+    // Try to get saved state from localStorage first
+    const savedStates = localStorage.getItem("collapsedGroups");
+    if (savedStates) {
+      return JSON.parse(savedStates);
+    }
+
+    // If no saved state, create initial state with all categories collapsed
+    const initialState = FORMAT_CATEGORIES.reduce((acc, category) => {
+      acc[category.id] = true;
+      return acc;
+    }, {} as Record<string, boolean>);
+
+    // Add uncategorized section if needed
+    initialState["uncategorized"] = true;
+
+    return initialState;
+  });
+
+  // Save collapsed states to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("collapsedGroups", JSON.stringify(collapsedGroups));
+  }, [collapsedGroups]);
+
+  const toggleGroup = (groupId: string) => {
+    setCollapsedGroups((prev) => ({
+      ...prev,
+      [groupId]: !prev[groupId],
+    }));
+  };
+
   const categorizeFormats = useCallback(() => {
     const categorized: CategorizedFormat[] = FORMAT_CATEGORIES.map(
       (category) => {
@@ -65,63 +98,93 @@ export function FormatNavigation({
   const categorizedFormats = categorizeFormats();
 
   return (
-    <nav className="bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-      {/* Container with max height, scrolling, and custom scrollbar */}
-      <div className="max-h-[calc(100vh-8rem)] overflow-y-auto mb-4 scrollable">
-        <div className="space-y-0">
-          {categorizedFormats.map((category, index) => (
-            <div key={category.id} className="space-y-0">
-              {/* Category Header */}
-              <div
-                className={`py-3 px-4 mb-1 bg-gray-100 dark:bg-gray-800/80 ${
-                  index === 0
-                    ? "border-b border-gray-200 dark:border-gray-700 rounded-t-lg" // First header: bottom border
-                    : "border-y border-gray-200 dark:border-gray-700" // Other headers: top and bottom border
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  {category.icon && (
-                    <category.icon
-                      className={`w-5 h-5 ${category.accentColor?.light} ${category.accentColor?.dark}`}
-                    />
+    <div className="mb-8">
+      <div className="max-h-[calc(100vh-12rem)] overflow-y-auto scrollable pr-3">
+        <nav className="bg-white dark:bg-gray-900 shadow-md rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+          <div className="space-y-0 ">
+            {categorizedFormats.map((category, index) => {
+              const isCollapsed = collapsedGroups[category.id];
+              const hasItems = category.formats.length > 0;
+              const isLastGroup = index === categorizedFormats.length - 1;
+
+              return (
+                <div
+                  key={category.id}
+                  className={`space-y-0 ${isLastGroup ? "!mb-0" : ""}`}
+                >
+                  <button
+                    onClick={() => toggleGroup(category.id)}
+                    className={`w-full text-left py-3 px-4 bg-gray-100 dark:bg-gray-800/80 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
+                      index === 0
+                        ? "border-b border-gray-200 dark:border-gray-700 rounded-t-lg"
+                        : "border-y border-gray-200 dark:border-gray-700"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        {category.icon && (
+                          <category.icon
+                            className={`w-5 h-5 ${category.accentColor?.light} ${category.accentColor?.dark}`}
+                          />
+                        )}
+                        <h3 className="font-medium text-gray-900 dark:text-white text-sm tracking-wider">
+                          {category.label}
+                        </h3>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          {category.formats.length} format
+                          {category.formats.length !== 1 ? "s" : ""}
+                        </span>
+                        <div className="p-1 rounded-md">
+                          {hasItems ? (
+                            isCollapsed ? (
+                              <ChevronDown className="w-4 h-4" />
+                            ) : (
+                              <ChevronUp className="w-4 h-4" />
+                            )
+                          ) : (
+                            <X className="w-4 h-4 text-gray-400 dark:text-gray-500" />
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+
+                  {hasItems && !isCollapsed && (
+                    <ul className="space-y-1 px-3 py-2">
+                      {category.formats.map((format) => {
+                        const encodedId = encodeURIComponent(format._id);
+                        const isSelected = selectedId === format._id;
+
+                        return (
+                          <li key={format._id}>
+                            <Link
+                              href={`/formats/${encodedId}`}
+                              className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200
+                                ${
+                                  isSelected
+                                    ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+                                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                }`}
+                            >
+                              <ChevronRight
+                                className={`w-4 h-4 transition-opacity
+                                  ${isSelected ? "opacity-100" : "opacity-0"}`}
+                              />
+                              <span>{format.name}</span>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   )}
-                  <h3 className="font-medium text-gray-900 dark:text-white text-sm tracking-wider">
-                    {category.label}
-                  </h3>
                 </div>
-              </div>
-
-              {/* Format Links */}
-              <ul className="space-y-1 px-3 py-2">
-                {category.formats.map((format) => {
-                  const encodedId = encodeURIComponent(format._id);
-                  const isSelected = selectedId === format._id;
-
-                  return (
-                    <li key={format._id}>
-                      <Link
-                        href={`/formats/${encodedId}`}
-                        className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200
-                          ${
-                            isSelected
-                              ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
-                              : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                          }`}
-                      >
-                        <ChevronRight
-                          className={`w-4 h-4 transition-opacity
-                            ${isSelected ? "opacity-100" : "opacity-0"}`}
-                        />
-                        <span>{format.name}</span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-        </div>
+              );
+            })}
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   );
 }
