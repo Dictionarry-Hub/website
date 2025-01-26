@@ -96,7 +96,7 @@ export default async function FormatPage({ params }: PageProps) {
     <div className="container mx-auto flex flex-col box-border h-full">
       <div className="flex gap-8 flex-1 min-h-0">
         <main className="flex-1 overflow-y-auto">
-          <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8">
+          <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-0">
             <FormatDisplay format={selectedFormat} />
           </div>
         </main>

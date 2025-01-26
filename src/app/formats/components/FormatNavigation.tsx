@@ -3,7 +3,10 @@
 import { useCallback, useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronRight, ChevronDown, ChevronUp, X } from "lucide-react";
-import { FORMAT_CATEGORIES, FormatCategory } from "../constants";
+import {
+  FORMAT_CATEGORIES,
+  FormatCategory,
+} from "../constants/format_constants";
 
 interface CustomFormat {
   _id: string;

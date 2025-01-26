@@ -1,6 +1,5 @@
 // src/app/formats/page.tsx
 import { getContent } from "@api/getData";
-import { Box } from "lucide-react";
 import { FormatNavigation } from "./components/FormatNavigation";
 import { FormatDisplay } from "./components/FormatDisplay";
 

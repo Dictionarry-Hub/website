@@ -1,18 +1,22 @@
 // src/app/formats/components/FormatDisplay.tsx
+import Link from "next/link";
 import {
-  Box,
-  Info,
   CheckCircle2,
   XCircle,
+  AlertTriangle,
+  Info,
   BookOpenCheck,
   Filter,
+  ArrowLeft,
 } from "lucide-react";
+import { FORMAT_CATEGORIES } from "../constants/format_constants";
+import { CONDITION_METADATA } from "../constants/condition_constants";
 
 interface Condition {
   name: string;
   negate: boolean;
   required: boolean;
-  type: string;
+  type: keyof typeof CONDITION_METADATA;
   pattern?: string;
   source?: string;
   resolution?: string;
@@ -29,6 +33,30 @@ interface CustomFormat {
 interface FormatDisplayProps {
   format?: CustomFormat;
 }
+
+const getFeaturedIcon = (tags?: string[]) => {
+  if (!tags || tags.length === 0) return null;
+
+  // Find the first matching category based on tags
+  const matchingCategory = FORMAT_CATEGORIES.find((category) =>
+    category.tags.some((categoryTag) => tags.includes(categoryTag))
+  );
+
+  return matchingCategory
+    ? {
+        icon: matchingCategory.icon,
+        accentColor: matchingCategory.accentColor,
+      }
+    : null;
+};
+
+const formatConditionType = (type: string) => {
+  return type
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
 export function FormatDisplay({ format }: FormatDisplayProps) {
   if (!format) {
     return (
@@ -98,101 +126,113 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
     );
   }
 
+  const featuredIcon = getFeaturedIcon(format.tags);
+  const IconComponent = featuredIcon?.icon;
+  const accentColor = featuredIcon?.accentColor;
+
   return (
-    <div className="space-y-8">
+    <div className="">
       {/* Header */}
-      <div className="space-y-4">
-        <h1 className="text-3xl font-bold">{format.name}</h1>
-
-        {/* Tags */}
-        {format.tags && format.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {format.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1.5 text-sm font-medium rounded-full
-                         bg-blue-50 dark:bg-blue-900/30 
-                         text-blue-600 dark:text-blue-400
-                         border border-blue-200 dark:border-blue-800/50"
+      <div className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-t-lg border-b border-gray-200 dark:border-gray-700 p-6">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            {IconComponent && accentColor && (
+              <div
+                className={`flex-shrink-0 p-2 ${accentColor.bg} ${accentColor.darkBg} rounded-lg`}
               >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* Description */}
-        {format.description && (
-          <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700">
-            <Info className="w-5 h-5 text-gray-400 dark:text-gray-500 flex-shrink-0 mt-0.5" />
-            <p className="text-gray-600 dark:text-gray-300">
-              {format.description}
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* Conditions */}
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Conditions</h2>
-        <div className="grid gap-4">
-          {format.conditions.map((condition, index) => (
-            <div
-              key={`${condition.name}-${index}`}
-              className="p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
-            >
-              <div className="flex items-start justify-between">
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2">
-                    {condition.negate ? (
-                      <XCircle className="w-5 h-5 text-red-500" />
-                    ) : (
-                      <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    )}
-                    <h3 className="font-medium">
-                      {condition.name}
-                      {condition.required && (
-                        <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">
-                          Required
-                        </span>
-                      )}
-                    </h3>
-                  </div>
-
-                  <div className="text-sm space-y-1">
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Type:{" "}
-                      <span className="font-medium">{condition.type}</span>
-                    </p>
-                    {condition.pattern && (
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Pattern:{" "}
-                        <code className="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-900 font-mono text-xs">
-                          {condition.pattern}
-                        </code>
-                      </p>
-                    )}
-                    {condition.source && (
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Source:{" "}
-                        <span className="font-medium">{condition.source}</span>
-                      </p>
-                    )}
-                    {condition.resolution && (
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Resolution:{" "}
-                        <span className="font-medium">
-                          {condition.resolution}
-                        </span>
-                      </p>
-                    )}
-                  </div>
-                </div>
+                <IconComponent
+                  className={`w-4 h-4 ${accentColor.light} ${accentColor.dark}`}
+                />
               </div>
+            )}
+            <div className="flex items-center gap-3">
+              <h1 className="text-xl font-bold">{format.name}</h1>
+              {format.tags && format.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {format.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
-          ))}
+          </div>
+          <Link
+            href="/formats"
+            className="group inline-flex items-center gap-2 px-3 py-1.5 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span className="text-sm font-medium">Back to Formats</span>
+          </Link>
         </div>
       </div>
+
+      {/* Description */}
+      {format.description && (
+        <div className="p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <Info className="w-5 h-5 text-blue-500" />
+            <h2 className="text-lg font-semibold">Description</h2>
+          </div>
+          <p className="text-gray-600 dark:text-gray-300">
+            {format.description}
+          </p>
+        </div>
+      )}
+
+      {format.description &&
+        format.conditions &&
+        format.conditions.length > 0 && (
+          <hr className="mx-6 my-2 border-t border-gray-200 dark:border-gray-700" />
+        )}
+
+      {/* Conditions Section */}
+      {format.conditions && format.conditions.length > 0 && (
+        <div className="p-6">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="w-5 h-5 text-blue-500" />
+              <h2 className="text-lg font-semibold">Conditions</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {format.conditions.map((condition, index) => {
+                const metadata = CONDITION_METADATA[condition.type];
+                if (!metadata) return null;
+
+                const Icon = metadata.icon;
+                return (
+                  <div
+                    key={`${condition.type}-${index}`}
+                    className="p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 space-y-2"
+                  >
+                    <div className="flex items-center gap-2">
+                      <Icon className="w-4 h-4 text-blue-500" />
+                      <span className="text-sm font-medium">
+                        {condition.name}
+                      </span>
+                      <div className="flex gap-1.5 ml-auto">
+                        {condition.required && (
+                          <CheckCircle2 className="w-4 h-4 text-blue-500" />
+                        )}
+                        {condition.negate && (
+                          <XCircle className="w-4 h-4 text-blue-500" />
+                        )}
+                      </div>
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      {formatConditionType(condition.type)}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
