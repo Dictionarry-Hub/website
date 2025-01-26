@@ -1,8 +1,8 @@
-// src/app/formats/[id]/page.tsx
 import { getContent } from "@api/getData";
 import { FormatNavigation } from "../components/FormatNavigation";
 import { FormatDisplay } from "../components/FormatDisplay";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 interface CustomFormatEntry {
   _id: string;
@@ -21,30 +21,71 @@ interface CustomFormatEntry {
 }
 
 interface PageProps {
-  params: {
-    id: string;
+  params: Promise<{ id: string }>;
+}
+
+const createUrlSlug = (name: string): string => {
+  return name.toLowerCase().replace(/\s+/g, "-").trim();
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const customFormats = (await getContent("custom_formats")) as
+    | CustomFormatEntry[]
+    | null;
+
+  if (!customFormats) {
+    return {
+      title: "Format Not Found | Dictionarry",
+      description: "The requested format could not be found.",
+    };
+  }
+
+  const decodedSlug = decodeURIComponent(id);
+  const selectedFormat = customFormats.find(
+    (format) => createUrlSlug(format.name) === decodedSlug
+  );
+
+  if (!selectedFormat) {
+    return {
+      title: "Format Not Found | Dictionarry",
+      description: "The requested format could not be found.",
+    };
+  }
+
+  return {
+    title: `${selectedFormat.name} | Dictionarry`,
+    description:
+      selectedFormat.description ||
+      `Configuration details for ${selectedFormat.name}`,
   };
 }
 
 export default async function FormatPage({ params }: PageProps) {
+  const { id } = await params;
   const customFormats = (await getContent("custom_formats")) as
     | CustomFormatEntry[]
     | null;
 
   if (!customFormats) {
     return (
-      <div className="text-center p-8 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
-        <p className="text-red-600 dark:text-red-400">
-          Failed to load custom formats. Please try again later.
-        </p>
+      <div className="container mx-auto">
+        <div className="text-center p-8 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
+          <p className="text-red-600 dark:text-red-400">
+            Failed to load custom formats. Please try again later.
+          </p>
+        </div>
       </div>
     );
   }
 
-  // Decode the URL parameter
-  const decodedId = decodeURIComponent(params.id);
+  const decodedSlug = decodeURIComponent(id);
   const selectedFormat = customFormats.find(
-    (format) => format._id === decodedId
+    (format) => createUrlSlug(format.name) === decodedSlug
   );
 
   if (!selectedFormat) {
@@ -52,16 +93,19 @@ export default async function FormatPage({ params }: PageProps) {
   }
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-12 gap-8">
-        <aside className="col-span-12 lg:col-span-3">
-          <div className="sticky top-24">
-            <FormatNavigation formats={customFormats} selectedId={decodedId} />
+    <div className="container mx-auto flex flex-col box-border h-full">
+      <div className="flex gap-8 flex-1 min-h-0">
+        <main className="flex-1 overflow-y-auto">
+          <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-8">
+            <FormatDisplay format={selectedFormat} />
           </div>
-        </aside>
-        <main className="col-span-12 lg:col-span-9">
-          <FormatDisplay format={selectedFormat} />
         </main>
+        <aside className="w-[350px] overflow-y-auto">
+          <FormatNavigation
+            formats={customFormats}
+            selectedId={selectedFormat._id}
+          />
+        </aside>
       </div>
     </div>
   );

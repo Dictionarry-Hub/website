@@ -32,7 +32,7 @@ export default async function FormatsPage() {
 
   if (!customFormats) {
     return (
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="text-center p-8 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
           <p className="text-red-600 dark:text-red-400">
             Failed to load custom formats. Please try again later.
@@ -43,23 +43,16 @@ export default async function FormatsPage() {
   }
 
   return (
-    <div className="container mx-auto px-4">
-      <header className="mb-8">
-        <div className="flex items-center gap-4 mb-4">
-          <Box className="w-8 h-8 text-blue-500 dark:text-blue-400" />
-          <h1 className="text-3xl font-bold">Custom Formats</h1>
-        </div>
-      </header>
-
+    <div className="container mx-auto">
       <div className="grid grid-cols-12 gap-8">
+        <main className="col-span-12 lg:col-span-9">
+          <FormatDisplay />
+        </main>
         <aside className="col-span-12 lg:col-span-3">
           <div className="sticky top-24">
             <FormatNavigation formats={customFormats} />
           </div>
         </aside>
-        <main className="col-span-12 lg:col-span-9">
-          <FormatDisplay />
-        </main>
       </div>
     </div>
   );
