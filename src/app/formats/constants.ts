@@ -1,4 +1,3 @@
-// src/app/formats/constants.ts
 import {
   Volume2,
   Sun,
@@ -12,13 +11,14 @@ import {
   Film,
   Flag,
   Zap,
+  type LucideIcon,
 } from "lucide-react";
 
 export interface FormatCategory {
   id: string;
   label: string;
   tags: string[];
-  icon: any; // Lucide icon component
+  icon: LucideIcon | null;
   accentColor?: {
     light: string;
     dark: string;
