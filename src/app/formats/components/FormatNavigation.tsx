@@ -20,6 +20,10 @@ interface CategorizedFormat extends FormatCategory {
   formats: CustomFormat[];
 }
 
+const createUrlSlug = (name: string): string => {
+  return name.toLowerCase().replace(/\s+/g, "-").trim();
+};
+
 export function FormatNavigation({
   formats,
   selectedId,
@@ -28,27 +32,42 @@ export function FormatNavigation({
   const [collapsedGroups, setCollapsedGroups] = useState<
     Record<string, boolean>
   >(() => {
-    // Try to get saved state from localStorage first
-    const savedStates = localStorage.getItem("collapsedGroups");
-    if (savedStates) {
-      return JSON.parse(savedStates);
-    }
-
-    // If no saved state, create initial state with all categories collapsed
+    // Create initial state with all categories collapsed
     const initialState = FORMAT_CATEGORIES.reduce((acc, category) => {
       acc[category.id] = true;
       return acc;
     }, {} as Record<string, boolean>);
 
-    // Add uncategorized section if needed
+    // Add uncategorized section
     initialState["uncategorized"] = true;
+
+    // In client-side, try to get saved state
+    if (typeof window !== "undefined") {
+      try {
+        const savedStates = localStorage.getItem("collapsedGroups");
+        if (savedStates) {
+          return JSON.parse(savedStates);
+        }
+      } catch (error) {
+        console.error("Error reading from localStorage:", error);
+      }
+    }
 
     return initialState;
   });
 
   // Save collapsed states to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem("collapsedGroups", JSON.stringify(collapsedGroups));
+    if (typeof window !== "undefined") {
+      try {
+        localStorage.setItem(
+          "collapsedGroups",
+          JSON.stringify(collapsedGroups)
+        );
+      } catch (error) {
+        console.error("Error saving to localStorage:", error);
+      }
+    }
   }, [collapsedGroups]);
 
   const toggleGroup = (groupId: string) => {
@@ -101,7 +120,7 @@ export function FormatNavigation({
     <div className="mb-8">
       <div className="max-h-[calc(100vh-12rem)] overflow-y-auto scrollable pr-3">
         <nav className="bg-white dark:bg-gray-900 shadow-md rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-          <div className="space-y-0 ">
+          <div className="space-y-0">
             {categorizedFormats.map((category, index) => {
               const isCollapsed = collapsedGroups[category.id];
               const hasItems = category.formats.length > 0;
@@ -115,9 +134,9 @@ export function FormatNavigation({
                   <button
                     onClick={() => toggleGroup(category.id)}
                     className={`w-full text-left py-3 px-4 bg-gray-100 dark:bg-gray-800/80 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
-                      index === 0
-                        ? "border-b border-gray-200 dark:border-gray-700 rounded-t-lg"
-                        : "border-y border-gray-200 dark:border-gray-700"
+                      index === categorizedFormats.length - 1
+                        ? ""
+                        : "border-b border-gray-200 dark:border-gray-700"
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -154,13 +173,13 @@ export function FormatNavigation({
                   {hasItems && !isCollapsed && (
                     <ul className="space-y-1 px-3 py-2">
                       {category.formats.map((format) => {
-                        const encodedId = encodeURIComponent(format._id);
+                        const urlSlug = createUrlSlug(format.name);
                         const isSelected = selectedId === format._id;
 
                         return (
                           <li key={format._id}>
                             <Link
-                              href={`/formats/${encodedId}`}
+                              href={`/formats/${urlSlug}`}
                               className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200
                                 ${
                                   isSelected
