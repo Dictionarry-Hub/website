@@ -9,6 +9,7 @@ import {
   Handshake,
   ArrowLeft,
   Download,
+  BeakerIcon,
 } from "lucide-react";
 import { FORMAT_CATEGORIES } from "../constants/format_constants";
 import { CONDITION_METADATA } from "../constants/condition_constants";
@@ -23,12 +24,31 @@ interface Condition {
   resolution?: string;
 }
 
+interface TestConditionResult {
+  matches: boolean;
+  name: string;
+  negate: boolean;
+  pattern: string;
+  required: boolean;
+  type: string;
+}
+
+interface Test {
+  conditionResults: TestConditionResult[];
+  expected: boolean;
+  id: number;
+  input: string;
+  lastRun: string;
+  passes: boolean;
+}
+
 interface CustomFormat {
   _id: string;
   name: string;
   description?: string;
   tags?: string[];
   conditions: Condition[];
+  tests?: Test[];
 }
 
 interface FormatDisplayProps {
@@ -268,6 +288,67 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Tests Section */}
+      {format.tests && format.tests.length > 0 && (
+        <div className="p-6">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <BeakerIcon className="w-5 h-5 text-blue-500" />
+              <h2 className="text-lg font-semibold">Test Cases</h2>
+            </div>
+            <div className="space-y-4">
+              {format.tests.map((test) => (
+                <div
+                  key={test.id}
+                  className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      {test.passes ? (
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      ) : (
+                        <XCircle className="w-4 h-4 text-red-500" />
+                      )}
+                      <code className="text-sm font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
+                        {test.input}
+                      </code>
+                    </div>
+                    <span className="text-xs text-gray-500">
+                      Last run: {new Date(test.lastRun).toLocaleDateString()}
+                    </span>
+                  </div>
+
+                  <div className="mt-3 space-y-2">
+                    <div className="text-sm text-gray-600 dark:text-gray-300">
+                      Expected:{" "}
+                      <span className="font-medium">
+                        {test.expected ? "Pass" : "Fail"}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {test.conditionResults.map((result, index) => (
+                        <div
+                          key={index}
+                          className="text-xs flex items-center gap-2 p-2 bg-gray-100 dark:bg-gray-700/50 rounded"
+                        >
+                          {result.matches ? (
+                            <CheckCircle2 className="w-3 h-3 text-green-500" />
+                          ) : (
+                            <XCircle className="w-3 h-3 text-red-500" />
+                          )}
+                          <span>{result.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
