@@ -1,6 +1,5 @@
 // src/app/components/Nav.tsx
 "use client";
-
 import Image from "next/image";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { usePathname } from "next/navigation";
@@ -23,10 +22,18 @@ export function Nav() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Helper function to check if current path matches or is a subpath
+  const isActiveRoute = (href: string) => {
+    // Exact match or subpath match (but only if it starts with the full href to avoid partial matches)
+    return (
+      pathname === href ||
+      (pathname?.startsWith(href) && pathname?.charAt(href.length) === "/")
+    );
+  };
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
@@ -54,7 +61,6 @@ export function Nav() {
                 Dictionarry
               </span>
             </Link>
-
             <div className="hidden md:flex items-center space-x-2">
               <div className="relative flex items-center space-x-1">
                 {navItems.map((item) => (
@@ -66,7 +72,7 @@ export function Nav() {
                       text-sm font-medium
                       transition-all duration-200
                       ${
-                        pathname === item.href
+                        isActiveRoute(item.href)
                           ? "text-blue-600 dark:text-blue-400"
                           : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                       }
@@ -77,26 +83,23 @@ export function Nav() {
                         {item.label}
                       </span>
                     </div>
-
                     {/* Active state underline */}
-                    {pathname === item.href && (
+                    {isActiveRoute(item.href) && (
                       <div
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 
-                        w-4/5 h-0.5 bg-blue-600 dark:bg-blue-400
-                        rounded-full transition-all duration-300"
+                        className="absolute bottom-0 left-1/2 -translate-x-1/2
+                          w-4/5 h-0.5 bg-blue-600 dark:bg-blue-400
+                          rounded-full transition-all duration-300"
                       />
                     )}
-
                     {/* Hover state background */}
                     <div
-                      className="absolute inset-0 bg-gray-100 dark:bg-gray-700 
-                      opacity-0 group-hover:opacity-100
-                      transition-opacity duration-200 rounded-lg"
+                      className="absolute inset-0 bg-gray-100 dark:bg-gray-700
+                        opacity-0 group-hover:opacity-100
+                        transition-opacity duration-200 rounded-lg"
                     />
                   </Link>
                 ))}
               </div>
-
               <div className="ml-4 pl-4 border-l border-gray-200 dark:border-gray-700">
                 <DarkModeToggle />
               </div>
