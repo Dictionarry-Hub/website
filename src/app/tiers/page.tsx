@@ -12,7 +12,7 @@ export default async function Page() {
   const tiers = await getReleaseGroupTiers();
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto">
       <header className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <Box className="w-8 h-8 text-blue-500 dark:text-blue-400" />
