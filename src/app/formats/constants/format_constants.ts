@@ -102,7 +102,7 @@ export const FORMAT_CATEGORIES: FormatCategory[] = [
   },
   {
     id: "tiers",
-    label: "Tiers",
+    label: "Release Group Tiers",
     tags: ["Quality", "Efficient", "Balanced"],
     icon: BarChart3,
     accentColor: {
