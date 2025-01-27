@@ -6,8 +6,9 @@ import {
   AlertTriangle,
   Info,
   BookOpenCheck,
-  Filter,
+  Handshake,
   ArrowLeft,
+  Download,
 } from "lucide-react";
 import { FORMAT_CATEGORIES } from "../constants/format_constants";
 import { CONDITION_METADATA } from "../constants/condition_constants";
@@ -61,7 +62,7 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
   if (!format) {
     return (
       <div className="h-full space-y-8">
-        <div className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+        <div className="g-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
           <div className="mb-6">
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
@@ -80,7 +81,6 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
               details.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
               <div className="flex items-center gap-4 mb-4">
@@ -103,11 +103,10 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                 should, please let us know!
               </p>
             </div>
-
             <div className="p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex-shrink-0 p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                  <Filter className="w-5 h-5 text-green-600 dark:text-green-400" />
+                  <Handshake className="w-5 h-5 text-green-600 dark:text-green-400" />
                 </div>
                 <h3 className="font-medium">Contributing / Thanks</h3>
               </div>
@@ -119,6 +118,46 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                 you spot something that could be enhanced,{" "}
                 <em>consider contributing</em> through a PR or issue.
               </p>
+            </div>
+          </div>
+
+          <div className="mt-8 p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="flex-shrink-0 p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                <Download className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              </div>
+              <h3 className="font-medium">
+                How do I import these custom formats?
+              </h3>
+            </div>
+            <div className="text-sm text-gray-600 dark:text-gray-300">
+              <ul className="list-disc pl-6 space-y-4">
+                <li>
+                  Since Dictionarry's custom formats are built differently from
+                  standard arr* formats, you'll need to use{" "}
+                  <Link
+                    href="https://github.com/Dictionarry-Hub/profilarr"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    Profilarr
+                  </Link>{" "}
+                  and the{" "}
+                  <Link
+                    href="https://github.com/Dictionarry-Hub/database"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    Dictionarry database
+                  </Link>{" "}
+                  to import and use these custom formats. This is because
+                  Dictionarry employs a single defintion for each format, which
+                  is then compiled into a specific end format depending on the
+                  arr being imported to.
+                </li>
+                <li>
+                  Manual importing is not possible at the moment, but we're
+                  working on a solution to allow this in future!
+                </li>
+              </ul>
             </div>
           </div>
         </div>
