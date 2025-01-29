@@ -267,7 +267,7 @@ const InteractiveFlowchart: React.FC = () => {
     return visibleColumns.map((col) => {
       const colNodes = graphData.nodes.filter((n) => n.column === col);
       return (
-        <div key={col} className="flex flex-col items-start space-y-4">
+        <div key={col} className="flex-1 flex flex-col justify-center items-start space-y-4">
           {colNodes.map((node) => {
             const isSelected = selectedNodes.includes(node.id);
             const isNextAvailable = validNextIds.includes(node.id);
@@ -336,15 +336,10 @@ const InteractiveFlowchart: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      {/* 
-        Make the same container *both* your bounding box for nodes
-        and the place we absolutely-position the SVG. 
-        This ensures the lines match the node offsets exactly.
-      */}
       <div
         ref={containerRef}
         className="relative bg-gray-50 rounded-lg p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
-        style={{ minHeight: 450 }}
+        style={{ height: 450 }}
       >
         {/* Action buttons */}
         <div className="absolute top-2 left-2 flex space-x-2 z-10">
@@ -360,16 +355,8 @@ const InteractiveFlowchart: React.FC = () => {
           </button>
         </div>
 
-        {/* 
-          The columns: we use flex so each column is side by side, 
-          "space-x-8" to add horizontal gaps. 
-        */}
-        <div className="flex items-start space-x-8 pt-12">{renderColumns()}</div>
+        <div className="flex items-stretch space-x-12 h-full">{renderColumns()}</div>
 
-        {/* 
-          The SVG for edges is absolutely positioned inside the same container.
-          We set pointerEvents="none" so clicks pass through to nodes.
-        */}
         <svg
           style={{
             position: 'absolute',
