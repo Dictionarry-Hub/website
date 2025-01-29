@@ -36,9 +36,10 @@ const RecommendHeader = ({ onReset, onBack, canGoBack }: RecommendHeaderProps) =
     <div className="flex justify-between items-center mb-6">
       {/* Title and description */}
       <div>
-        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Profile Builder</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Profile Recommender</h2>
         <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
           Configure your ideal quality settings at each step, with smart filtering that shows only compatible profiles.
+          Choose a starting resolution to get started, and follow the flowchart to build your profile.
         </p>
       </div>
 

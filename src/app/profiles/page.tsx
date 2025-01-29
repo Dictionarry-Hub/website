@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { QualityProfileData, nodeTypeToIcon } from '@data/flowchartData';
 import RecommendHeader from './components/RecommendHeader';
+import FlowchartInfo from './components/FlowchartInfo';
 import FlowchartDebugPanel from './components/FlowchartDebugPanel';
 
 interface Node {
@@ -105,6 +106,7 @@ function positionsAreEqual(
 const InteractiveFlowchart: React.FC = () => {
   const graphData: GraphData = QualityProfileData;
   const [selectedNodes, setSelectedNodes] = useState<string[]>([]);
+  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
 
   // Keep a ref to the single toast ID
   const zoomToastRef = useRef<React.ReactText | null>(null);
@@ -332,6 +334,8 @@ const InteractiveFlowchart: React.FC = () => {
                   nodeRefs.current[node.id] = el;
                 }}
                 onClick={() => handleNodeClick(node.id)}
+                onMouseEnter={() => setHoveredNodeId(node.id)}
+                onMouseLeave={() => setHoveredNodeId(null)}
                 className={`
                   relative cursor-pointer rounded-md transition-all duration-200
                   bg-gray-100 dark:bg-gray-900 shadow-sm rounded-xl
@@ -387,11 +391,9 @@ const InteractiveFlowchart: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div className="space-y-4">
       <ToastContainer />
-
       <RecommendHeader onReset={handleReset} onBack={handleBack} canGoBack={selectedNodes.length > 0} />
-
       <div
         ref={containerRef}
         className="relative bg-gray-50 dark:bg-gray-900 rounded-xl p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
@@ -409,12 +411,9 @@ const InteractiveFlowchart: React.FC = () => {
         >
           {renderEdges()}
         </svg>
-
         <div className="flex items-stretch space-x-12 h-full">{renderColumns()}</div>
       </div>
-
-      {/* Debug Panel */}
-      {/* <FlowchartDebugPanel selectedNodes={selectedNodes} graphData={graphData} /> */}
+      <FlowchartInfo selectedNodes={selectedNodes} hoveredNodeId={hoveredNodeId} />
     </div>
   );
 };
