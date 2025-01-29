@@ -266,7 +266,16 @@ const InteractiveFlowchart: React.FC = () => {
       // If basically horizontal, draw a line
       if (Math.abs(y1 - y2) < 6) {
         return (
-          <line key={`${edge.from}->${edge.to}`} x1={x1} y1={y1} x2={x2} y2={y2} stroke={strokeColor} strokeWidth={2} />
+          <line
+            key={`${edge.from}->${edge.to}`}
+            x1={x1}
+            y1={y1}
+            x2={x2}
+            y2={y2}
+            stroke={strokeColor}
+            strokeWidth={2}
+            strokeDasharray="2 4"
+          />
         );
       } else {
         // Otherwise, a simple cubic curve
@@ -278,7 +287,16 @@ const InteractiveFlowchart: React.FC = () => {
             ${cx2} ${y2},
             ${x2} ${y2}
         `;
-        return <path key={`${edge.from}->${edge.to}`} d={pathD} fill="none" stroke={strokeColor} strokeWidth={2} />;
+        return (
+          <path
+            key={`${edge.from}->${edge.to}`}
+            d={pathD}
+            fill="none"
+            stroke={strokeColor}
+            strokeWidth={2}
+            strokeDasharray="2 4"
+          />
+        );
       }
     });
   };
@@ -298,7 +316,7 @@ const InteractiveFlowchart: React.FC = () => {
       return (
         <div
           key={col}
-          className="flex-1 flex flex-col justify-center items-center space-y-4 bg-gray-100 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4"
+          className="flex-1 flex flex-col justify-center items-center space-y-4 bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4"
         >
           {colNodes.map((node) => {
             const isSelected = selectedNodes.includes(node.id);
@@ -314,8 +332,8 @@ const InteractiveFlowchart: React.FC = () => {
                 }}
                 onClick={() => handleNodeClick(node.id)}
                 className={`
-                  relative cursor-pointer rounded-md border transition-all duration-200
-                  bg-gray-100 dark:bg-gray-900 shadow-sm
+                  relative cursor-pointer rounded-md transition-all duration-200
+                  bg-gray-100 dark:bg-gray-900 shadow-sm rounded-xl
                   flex items-stretch
                   ${isSelected ? 'border-blue-500 dark:border-blue-400' : 'border-gray-200 dark:border-gray-700'}
                   ${!isSelected && !isNextAvailable ? 'opacity-50' : 'opacity-100'}
@@ -325,7 +343,7 @@ const InteractiveFlowchart: React.FC = () => {
                 <div
                   className="
                     bg-gray-200 dark:bg-gray-700
-                    rounded-md flex items-center justify-center
+                    rounded-lg flex items-center justify-center
                     p-3 m-2
                   "
                 >
@@ -391,8 +409,6 @@ const InteractiveFlowchart: React.FC = () => {
           </button>
         </div>
 
-        <div className="flex items-stretch space-x-12 h-full">{renderColumns()}</div>
-
         <svg
           style={{
             position: 'absolute',
@@ -405,6 +421,8 @@ const InteractiveFlowchart: React.FC = () => {
         >
           {renderEdges()}
         </svg>
+
+        <div className="flex items-stretch space-x-12 h-full">{renderColumns()}</div>
       </div>
 
       {/* Debug Panel */}
