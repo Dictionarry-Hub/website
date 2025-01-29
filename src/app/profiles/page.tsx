@@ -1,6 +1,9 @@
 'use client';
 
-import React, { useState, useRef, useLayoutEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { QualityProfileData, nodeTypeToIcon } from '@data/flowchartData';
 import FlowchartDebugPanel from './components/FlowchartDebugPanel';
 
@@ -23,7 +26,6 @@ interface GraphData {
   edges: ConditionalEdge[];
 }
 
-// Collect edges we want to show
 function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): ConditionalEdge[] {
   const filteredSelections = selectedNodes.filter(Boolean);
   if (filteredSelections.length === 0) return [];
@@ -52,7 +54,6 @@ function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): Condit
   return edgesToRender;
 }
 
-// Decide which columns to show
 function getVisibleColumns(graphData: GraphData, selectedNodes: string[], edgesToRender: ConditionalEdge[]) {
   const filteredSelections = selectedNodes.filter(Boolean);
   const visible = new Set<number>([0]); // always show col 0
@@ -76,7 +77,6 @@ function getVisibleColumns(graphData: GraphData, selectedNodes: string[], edgesT
   return Array.from(visible).sort((a, b) => a - b);
 }
 
-// Compare node-position objects so we don’t cause an infinite update loop
 function positionsAreEqual(
   oldPositions: Record<string, { left: number; top: number; width: number; height: number }>,
   newPositions: Record<string, { left: number; top: number; width: number; height: number }>
@@ -105,7 +105,41 @@ const InteractiveFlowchart: React.FC = () => {
   const graphData: GraphData = QualityProfileData;
   const [selectedNodes, setSelectedNodes] = useState<string[]>([]);
 
-  // Which edges and columns are relevant?
+  // Keep a ref to the single toast ID
+  const zoomToastRef = useRef<React.ReactText | null>(null);
+
+  useEffect(() => {
+    function handleWheel(e: WheelEvent) {
+      // Typically on Windows: ctrlKey, on Mac: metaKey
+      if (e.ctrlKey || e.metaKey) {
+        // Reset the flowchart
+        setSelectedNodes([]);
+
+        // If no active toast yet, create a new one
+        if (!zoomToastRef.current || !toast.isActive(zoomToastRef.current)) {
+          zoomToastRef.current = toast.warn('Canvas reset due to zoom detected!', {
+            position: 'top-right',
+            autoClose: 2500,
+          });
+        } else {
+          // If toast is already active, update it and reset timer
+          toast.update(zoomToastRef.current, {
+            render: 'Canvas reset due to zoom detected!',
+            type: 'warning',
+            autoClose: 2500,
+            isLoading: false,
+          });
+        }
+      }
+    }
+
+    window.addEventListener('wheel', handleWheel, { passive: true });
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
+  // Recalculate edges/columns
   const edgesToRender = getEdgesToRender(graphData, selectedNodes);
   const visibleColumns = getVisibleColumns(graphData, selectedNodes, edgesToRender);
 
@@ -117,7 +151,6 @@ const InteractiveFlowchart: React.FC = () => {
     Record<string, { left: number; top: number; width: number; height: number }>
   >({});
 
-  // After render, measure node bounding boxes relative to our containerRef
   useLayoutEffect(() => {
     if (!containerRef.current) return;
 
@@ -129,10 +162,8 @@ const InteractiveFlowchart: React.FC = () => {
       .forEach((node) => {
         const el = nodeRefs.current[node.id];
         if (!el) return;
-
         const rect = el.getBoundingClientRect();
 
-        // subtract container’s top/left so (0,0) in our <svg> coords
         newPositions[node.id] = {
           left: rect.left - containerRect.left,
           top: rect.top - containerRect.top,
@@ -141,13 +172,12 @@ const InteractiveFlowchart: React.FC = () => {
         };
       });
 
-    // Only update state if there's a difference
     if (!positionsAreEqual(nodePositions, newPositions)) {
       setNodePositions(newPositions);
     }
   }, [graphData, visibleColumns, selectedNodes, nodePositions]);
 
-  // Node click logic
+  // Handle node clicks
   const handleNodeClick = (nodeId: string): void => {
     const node = graphData.nodes.find((n) => n.id === nodeId);
     if (!node) return;
@@ -207,7 +237,7 @@ const InteractiveFlowchart: React.FC = () => {
     }
   };
 
-  // Edges
+  // Render edges
   const renderEdges = () => {
     return edgesToRender.map((edge) => {
       const fromNode = graphData.nodes.find((n) => n.id === edge.from);
@@ -228,19 +258,18 @@ const InteractiveFlowchart: React.FC = () => {
       const toPos = nodePositions[toNode.id];
       if (!fromPos || !toPos) return null;
 
-      // connect from right edge of "from" node, to left edge of "to" node
       const x1 = fromPos.left + fromPos.width;
       const y1 = fromPos.top + fromPos.height / 2;
       const x2 = toPos.left;
       const y2 = toPos.top + toPos.height / 2;
 
-      // if basically horizontal, draw a line
+      // If basically horizontal, draw a line
       if (Math.abs(y1 - y2) < 6) {
         return (
           <line key={`${edge.from}->${edge.to}`} x1={x1} y1={y1} x2={x2} y2={y2} stroke={strokeColor} strokeWidth={2} />
         );
       } else {
-        // otherwise, a simple cubic curve
+        // Otherwise, a simple cubic curve
         const cx1 = x1 + (x2 - x1) / 3;
         const cx2 = x1 + ((x2 - x1) * 2) / 3;
         const pathD = `
@@ -254,7 +283,7 @@ const InteractiveFlowchart: React.FC = () => {
     });
   };
 
-  // Columns + nodes in normal HTML
+  // Render columns & nodes
   const renderColumns = () => {
     const lastSelectedId = selectedNodes[selectedNodes.length - 1] || null;
     const validNextEdges = graphData.edges.filter((edge) => {
@@ -267,10 +296,14 @@ const InteractiveFlowchart: React.FC = () => {
     return visibleColumns.map((col) => {
       const colNodes = graphData.nodes.filter((n) => n.column === col);
       return (
-        <div key={col} className="flex-1 flex flex-col justify-center items-center space-y-4">
+        <div
+          key={col}
+          className="flex-1 flex flex-col justify-center items-center space-y-4 bg-gray-100 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4"
+        >
           {colNodes.map((node) => {
             const isSelected = selectedNodes.includes(node.id);
-            const isNextAvailable = validNextIds.includes(node.id);
+            const isNextAvailable = (selectedNodes.length === 0 && node.column === 0) || validNextIds.includes(node.id);
+
             const Icon = nodeTypeToIcon[node.type];
 
             return (
@@ -282,23 +315,23 @@ const InteractiveFlowchart: React.FC = () => {
                 onClick={() => handleNodeClick(node.id)}
                 className={`
                   relative cursor-pointer rounded-md border transition-all duration-200
-                  bg-gray-50 dark:bg-gray-800 shadow-sm
+                  bg-gray-100 dark:bg-gray-900 shadow-sm
                   flex items-stretch
                   ${isSelected ? 'border-blue-500 dark:border-blue-400' : 'border-gray-200 dark:border-gray-700'}
-                  ${!isSelected && !isNextAvailable ? 'opacity-70' : 'opacity-100'}
+                  ${!isSelected && !isNextAvailable ? 'opacity-50' : 'opacity-100'}
                 `}
               >
                 {/* Icon container */}
                 <div
-                  className={`
-                    bg-gray-100 dark:bg-gray-700
+                  className="
+                    bg-gray-200 dark:bg-gray-700
                     rounded-md flex items-center justify-center
                     p-3 m-2
-                  `}
+                  "
                 >
                   <Icon
                     size={20}
-                    className={isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}
+                    className={isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-black dark:text-white'}
                   />
                 </div>
                 {/* Text container */}
@@ -306,7 +339,7 @@ const InteractiveFlowchart: React.FC = () => {
                   <div
                     className={`
                       text-xs font-medium
-                      ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}
+                      ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-500 dark:text-white-700'}
                     `}
                   >
                     {node.typeLabel}
@@ -319,7 +352,7 @@ const InteractiveFlowchart: React.FC = () => {
                           ? 'text-blue-600 dark:text-blue-400'
                           : isNextAvailable
                             ? 'text-gray-900 dark:text-gray-100'
-                            : 'text-gray-500 dark:text-gray-400'
+                            : 'text-black dark:text-white'
                       }
                     `}
                   >
@@ -336,13 +369,16 @@ const InteractiveFlowchart: React.FC = () => {
 
   return (
     <div className="space-y-4">
+      {/* Toast Container (must be outside the container for positioning) */}
+      <ToastContainer />
+
       <div
         ref={containerRef}
-        className="relative bg-gray-50 rounded-lg p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
+        className="relative  bg-gry-50 dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
         style={{ height: 450 }}
       >
         {/* Action buttons */}
-        <div className="absolute top-2 left-2 flex space-x-2 z-10">
+        <div className="absolute top-2 right-2 flex space-x-2 z-10">
           <button onClick={handleReset} className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">
             Reset
           </button>
@@ -372,7 +408,7 @@ const InteractiveFlowchart: React.FC = () => {
       </div>
 
       {/* Debug Panel */}
-      <FlowchartDebugPanel selectedNodes={selectedNodes} graphData={graphData} />
+      {/* <FlowchartDebugPanel selectedNodes={selectedNodes} graphData={graphData} /> */}
     </div>
   );
 };

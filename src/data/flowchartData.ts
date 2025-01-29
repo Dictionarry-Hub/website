@@ -1,20 +1,24 @@
 // src/data/recruitmentFlowData.ts
 
 import {
-  MonitorIcon, // for resolution
-  BetweenHorizontalEnd, // for compression
-  FileCog, // for encode type
+  Proportions, // for resolution
+  Shrink, // for compression
+  Scale, // for balanced
+  Zap, // for efficient
+  Blend, // for quality
   CodeIcon, // for codec
-  Lightbulb, // for HDR
+  SunMedium, // for HDR
 } from 'lucide-react';
 
 // Then create a mapping
 export const nodeTypeToIcon = {
-  resolution: MonitorIcon,
-  compression: BetweenHorizontalEnd,
-  encode: FileCog,
+  resolution: Proportions,
+  compression: Shrink,
+  quality: Blend,
+  balanced: Scale,
+  efficient: Zap,
   codec: CodeIcon,
-  hdr: Lightbulb,
+  hdr: SunMedium,
 } as const;
 
 export interface Node {
@@ -47,9 +51,9 @@ export const QualityProfileData: GraphData = {
     { id: 'compressed', label: 'Compressed', column: 1, type: 'compression', typeLabel: 'Compression' },
     { id: 'lossless', label: 'Lossless', column: 1, type: 'compression', typeLabel: 'Compression' },
     // Encode Types
-    { id: 'quality', label: 'Quality', column: 2, type: 'encode', typeLabel: 'Encode Type' },
-    { id: 'balanced', label: 'Balanced', column: 2, type: 'encode', typeLabel: 'Encode Type' },
-    { id: 'efficient', label: 'Efficient', column: 2, type: 'encode', typeLabel: 'Encode Type' },
+    { id: 'quality', label: 'Quality', column: 2, type: 'quality', typeLabel: 'Encode Type' },
+    { id: 'balanced', label: 'Balanced', column: 2, type: 'balanced', typeLabel: 'Encode Type' },
+    { id: 'efficient', label: 'Efficient', column: 2, type: 'efficient', typeLabel: 'Encode Type' },
     // Codecs
     { id: 'av1', label: 'AV1', column: 3, type: 'codec', typeLabel: 'Codec' },
     { id: 'h265', label: 'h265', column: 3, type: 'codec', typeLabel: 'Codec' },
