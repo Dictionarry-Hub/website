@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { QualityProfileData, nodeTypeToIcon } from '@data/flowchartData';
+import RecommendHeader from './components/RecommendHeader';
 import FlowchartDebugPanel from './components/FlowchartDebugPanel';
 
 interface Node {
@@ -386,29 +387,16 @@ const InteractiveFlowchart: React.FC = () => {
   };
 
   return (
-    <div className="space-y-4">
-      {/* Toast Container (must be outside the container for positioning) */}
+    <div className="">
       <ToastContainer />
+
+      <RecommendHeader onReset={handleReset} onBack={handleBack} canGoBack={selectedNodes.length > 0} />
 
       <div
         ref={containerRef}
-        className="relative  bg-gry-50 dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
+        className="relative bg-gray-50 dark:bg-gray-900 rounded-xl p-4 border border-gray-200 dark:border-gray-700 overflow-auto"
         style={{ height: 450 }}
       >
-        {/* Action buttons */}
-        <div className="absolute top-2 right-2 flex space-x-2 z-10">
-          <button onClick={handleReset} className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">
-            Reset
-          </button>
-          <button
-            onClick={handleBack}
-            disabled={selectedNodes.length === 0}
-            className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:bg-gray-100"
-          >
-            Back
-          </button>
-        </div>
-
         <svg
           style={{
             position: 'absolute',
