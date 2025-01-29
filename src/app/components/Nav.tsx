@@ -1,17 +1,18 @@
 // src/app/components/Nav.tsx
-"use client";
-import Image from "next/image";
-import { DarkModeToggle } from "./DarkModeToggle";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+'use client';
+import Image from 'next/image';
+import { DarkModeToggle } from './DarkModeToggle';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const navItems = [
-  { href: "/devlog", label: "Development Log" },
-  { href: "/wiki", label: "Wiki" },
-  { href: "/tiers", label: "Group Tiers" },
-  { href: "/formats", label: "Custom Formats" },
-  { href: "/profiles", label: "Quality Profiles" },
+  { href: '/devlog', label: 'Development Log' },
+  { href: '/wiki', label: 'Wiki' },
+  { href: '/tiers', label: 'Group Tiers' },
+  { href: '/formats', label: 'Custom Formats' },
+  { href: '/profiles', label: 'Quality Profiles' },
+  { href: '/builder', label: 'Profile Recommender' },
 ];
 
 export function Nav() {
@@ -22,17 +23,14 @@ export function Nav() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Helper function to check if current path matches or is a subpath
   const isActiveRoute = (href: string) => {
     // Exact match or subpath match (but only if it starts with the full href to avoid partial matches)
-    return (
-      pathname === href ||
-      (pathname?.startsWith(href) && pathname?.charAt(href.length) === "/")
-    );
+    return pathname === href || (pathname?.startsWith(href) && pathname?.charAt(href.length) === '/');
   };
 
   return (
@@ -42,7 +40,7 @@ export function Nav() {
           border-b border-gray-200 dark:border-gray-700
           bg-gray-50 dark:bg-gray-800
           transition-shadow duration-200
-          ${isScrolled ? "shadow-sm" : ""}
+          ${isScrolled ? 'shadow-sm' : ''}
         `}
       >
         <nav className="container mx-auto px-4">
@@ -73,8 +71,8 @@ export function Nav() {
                       transition-all duration-200
                       ${
                         isActiveRoute(item.href)
-                          ? "text-blue-600 dark:text-blue-400"
-                          : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                          ? 'text-blue-600 dark:text-blue-400'
+                          : 'text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white'
                       }
                     `}
                   >

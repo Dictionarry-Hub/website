@@ -391,7 +391,7 @@ const InteractiveFlowchart: React.FC = () => {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="">
       <ToastContainer />
       <RecommendHeader onReset={handleReset} onBack={handleBack} canGoBack={selectedNodes.length > 0} />
       <div
