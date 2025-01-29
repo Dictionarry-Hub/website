@@ -267,7 +267,7 @@ const InteractiveFlowchart: React.FC = () => {
     return visibleColumns.map((col) => {
       const colNodes = graphData.nodes.filter((n) => n.column === col);
       return (
-        <div key={col} className="flex-1 flex flex-col justify-center items-start space-y-4">
+        <div key={col} className="flex-1 flex flex-col justify-center items-center space-y-4">
           {colNodes.map((node) => {
             const isSelected = selectedNodes.includes(node.id);
             const isNextAvailable = validNextIds.includes(node.id);
@@ -292,8 +292,8 @@ const InteractiveFlowchart: React.FC = () => {
                 <div
                   className={`
                     bg-gray-100 dark:bg-gray-700
-                    rounded-l-md flex items-center justify-center
-                    px-3 py-2
+                    rounded-md flex items-center justify-center
+                    p-3 m-2
                   `}
                 >
                   <Icon
@@ -302,7 +302,7 @@ const InteractiveFlowchart: React.FC = () => {
                   />
                 </div>
                 {/* Text container */}
-                <div className="flex flex-col justify-center px-3 py-2">
+                <div className="flex flex-col justify-center pr-3 py-2">
                   <div
                     className={`
                       text-xs font-medium
