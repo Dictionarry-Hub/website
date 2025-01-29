@@ -21,17 +21,18 @@ interface GraphData {
   edges: ConditionalEdge[];
 }
 
+// -------------------------
+// 1) Collect edges we want to show
+// -------------------------
 function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): ConditionalEdge[] {
-  // Filter out any empty/undefined slots
   const filteredSelections = selectedNodes.filter(Boolean);
-
   if (filteredSelections.length === 0) {
     return [];
   }
 
   const edgesToRender: ConditionalEdge[] = [];
 
-  // 1. Highlight path edges for each consecutive pair in filteredSelections
+  // a) Highlight path edges for each consecutive pair in filteredSelections
   for (let i = 0; i < filteredSelections.length - 1; i++) {
     const fromId = filteredSelections[i];
     const toId = filteredSelections[i + 1];
@@ -44,7 +45,7 @@ function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): Condit
     }
   }
 
-  // 2. Edges from the **last non-empty** selected node that pass condition
+  // b) Edges from the last non-empty selected node that pass condition
   const lastSelected = filteredSelections[filteredSelections.length - 1];
   const nextEdges = graphData.edges.filter(
     (e) => e.from === lastSelected && (e.condition ? e.condition(filteredSelections) : true)
@@ -54,10 +55,45 @@ function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): Condit
   return edgesToRender;
 }
 
+// -------------------------
+// 2) Decide which columns to show
+// -------------------------
+function getVisibleColumns(graphData: GraphData, selectedNodes: string[], edgesToRender: ConditionalEdge[]) {
+  const filteredSelections = selectedNodes.filter(Boolean);
+
+  // Always show column 0 (so the user can start)
+  const visible = new Set<number>([0]);
+
+  // a) Columns of the selected nodes
+  for (const selId of filteredSelections) {
+    const node = graphData.nodes.find((n) => n.id === selId);
+    if (node) {
+      visible.add(node.column);
+    }
+  }
+
+  // b) Columns from the "valid next edges" of the last selected node
+  //    i.e. if there's a next edge from column 0 -> column 2, let's show column 2
+  edgesToRender.forEach((edge) => {
+    const fromNode = graphData.nodes.find((n) => n.id === edge.from);
+    const toNode = graphData.nodes.find((n) => n.id === edge.to);
+    if (!fromNode || !toNode) return;
+    visible.add(fromNode.column);
+    visible.add(toNode.column);
+  });
+
+  // c) Convert to a sorted array
+  //    e.g. [0,2,3, ...]
+  const sorted = Array.from(visible).sort((a, b) => a - b);
+
+  return sorted;
+}
+
 const InteractiveFlowchart: React.FC = () => {
   const graphData: GraphData = QualityProfileData;
   const [selectedNodes, setSelectedNodes] = useState<string[]>([]);
 
+  // Handle node click logic (unchanged)
   const handleNodeClick = (nodeId: string): void => {
     const node = graphData.nodes.find((n) => n.id === nodeId);
     if (!node) return;
@@ -73,14 +109,14 @@ const InteractiveFlowchart: React.FC = () => {
     const lastSelectedNode = graphData.nodes.find((n) => n.id === lastSelectedId);
     if (!lastSelectedNode) return;
 
-    // 1) gather edges from lastSelectedId that pass condition
+    // gather edges from lastSelectedId that pass condition
     const validNextEdges = graphData.edges.filter((edge) => {
       if (edge.from !== lastSelectedId) return false;
       if (edge.condition && !edge.condition(selectedNodes)) return false;
       return true;
     });
 
-    // 2) valid IDs we can go to from that node
+    // valid IDs we can go to from that node
     const validNextIds = validNextEdges.map((e) => e.to);
 
     // Check if user is going forward or backward
@@ -114,89 +150,62 @@ const InteractiveFlowchart: React.FC = () => {
     });
   };
 
-  const handleReset = () => {
-    // Reset all selections
-    setSelectedNodes([]);
-  };
-
+  // Reset / Back
+  const handleReset = () => setSelectedNodes([]);
   const handleBack = () => {
-    // Remove only the last selected node
     if (selectedNodes.length > 0) {
       setSelectedNodes((prev) => prev.slice(0, prev.length - 1));
     }
   };
 
-  // Standard node position logic
+  // Calculate which edges to render
+  const edgesToRender = getEdgesToRender(graphData, selectedNodes);
+
+  // Calculate which columns to show, and build a "remap" so there's no gap
+  const visibleColumns = getVisibleColumns(graphData, selectedNodes, edgesToRender);
+  const columnRemap: Record<number, number> = {};
+  visibleColumns.forEach((oldCol, idx) => {
+    columnRemap[oldCol] = idx; // e.g. old column 2 -> new index 1
+  });
+
+  // Standard node positioning, but uses the "remapped" column instead
   const getNodePosition = (node: Node) => {
+    // If the node's column is not in visibleColumns, we won't even render it,
+    // but let's be defensive
+    const newCol = columnRemap[node.column];
     const columnWidth = 200;
     const columnPadding = 100;
     const containerHeight = 400;
-    const columnNodes = graphData.nodes.filter((n) => n.column === node.column);
-    const rowIndex = columnNodes.findIndex((n) => n.id === node.id);
-    const rowHeight = containerHeight / (columnNodes.length + 1);
+
+    // Among *only* the nodes in that visible column
+    const nodesInThisVisibleCol = graphData.nodes.filter(
+      (n) => visibleColumns.includes(n.column) && n.column === node.column
+    );
+
+    // We do the same rowIndex approach, but on the subset of that column's nodes
+    const rowIndex = nodesInThisVisibleCol.findIndex((n) => n.id === node.id);
+    const rowHeight = containerHeight / (nodesInThisVisibleCol.length + 1);
 
     return {
-      x: node.column * columnWidth + columnPadding,
+      x: newCol * columnWidth + columnPadding,
       y: (rowIndex + 1) * rowHeight,
     };
   };
 
-  // Debug grid (optional)
-  const renderDebugGrid = () => {
-    const maxColumn = Math.max(...graphData.nodes.map((n) => n.column));
-    const columns = maxColumn + 1;
-    const columnWidth = 200;
-    const columnPadding = 100;
-    const containerHeight = 400;
-
-    return (
-      <>
-        {Array.from({ length: columns }).map((_, columnIndex) => {
-          const columnX = columnIndex * columnWidth + columnPadding;
-          return (
-            <line
-              key={`col-${columnIndex}`}
-              x1={columnX}
-              y1={0}
-              x2={columnX}
-              y2={containerHeight}
-              stroke="#E5E7EB"
-              strokeWidth="1"
-              strokeDasharray="4"
-            />
-          );
-        })}
-        {Array.from({ length: columns }).map((_, columnIndex) => {
-          const colNodes = graphData.nodes.filter((n) => n.column === columnIndex);
-          if (colNodes.length === 0) return null;
-          const rowHeight = containerHeight / (colNodes.length + 1);
-          return Array.from({ length: colNodes.length + 1 }).map((_, rowIndex) => (
-            <line
-              key={`row-${columnIndex}-${rowIndex}`}
-              x1={columnIndex * columnWidth + columnPadding - 50}
-              y1={rowHeight * (rowIndex + 1)}
-              x2={columnIndex * columnWidth + columnPadding + 50}
-              y2={rowHeight * (rowIndex + 1)}
-              stroke="#E5E7EB"
-              strokeWidth="1"
-              strokeDasharray="4"
-            />
-          ));
-        })}
-      </>
-    );
-  };
-
-  const edgesToRender = getEdgesToRender(graphData, selectedNodes);
-
+  // 3) Render Edges with the new positions
   const renderEdges = () => {
     return edgesToRender.map((edge) => {
       const fromNode = graphData.nodes.find((n) => n.id === edge.from);
       const toNode = graphData.nodes.find((n) => n.id === edge.to);
       if (!fromNode || !toNode) return null;
 
+      // If either column is hidden, skip
+      if (!visibleColumns.includes(fromNode.column) || !visibleColumns.includes(toNode.column)) {
+        return null;
+      }
+
+      // Check if this is a "chosen path" edge
       const isChosenPath = (() => {
-        // If it's part of the consecutive pairs in selectedNodes
         for (let i = 0; i < selectedNodes.length - 1; i++) {
           if (edge.from === selectedNodes[i] && edge.to === selectedNodes[i + 1]) {
             return true;
@@ -209,49 +218,41 @@ const InteractiveFlowchart: React.FC = () => {
 
       const fromPos = getNodePosition(fromNode);
       const toPos = getNodePosition(toNode);
-      const startX = fromPos.x + 50;
-      const startY = fromPos.y;
-      const endX = toPos.x - 50;
-      const endY = toPos.y;
 
-      // Straight line if almost same y
-      if (Math.abs(startY - endY) < 5) {
+      // Basic curve or line
+      if (Math.abs(fromPos.y - toPos.y) < 5) {
+        // Straight line
         return (
           <line
             key={`${edge.from}->${edge.to}`}
-            x1={startX}
-            y1={startY}
-            x2={endX}
-            y2={endY}
+            x1={fromPos.x + 50}
+            y1={fromPos.y}
+            x2={toPos.x - 50}
+            y2={toPos.y}
             stroke={strokeColor}
-            strokeWidth="2"
+            strokeWidth={2}
           />
         );
       } else {
-        // Curved path
-        const cx1 = startX + (endX - startX) / 3;
-        const cx2 = startX + ((endX - startX) * 2) / 3;
-        return (
-          <path
-            key={`${edge.from}->${edge.to}`}
-            d={`
-              M ${startX} ${startY}
-              C ${cx1} ${startY}
-                ${cx2} ${endY}
-                ${endX} ${endY}
-            `}
-            fill="none"
-            stroke={strokeColor}
-            strokeWidth="2"
-          />
-        );
+        // Curved line
+        const cx1 = fromPos.x + (toPos.x - fromPos.x) / 3;
+        const cx2 = fromPos.x + ((toPos.x - fromPos.x) * 2) / 3;
+        const pathD = `
+          M ${fromPos.x + 50} ${fromPos.y}
+          C ${cx1} ${fromPos.y},
+            ${cx2} ${toPos.y},
+            ${toPos.x - 50} ${toPos.y}
+        `;
+
+        return <path key={`${edge.from}->${edge.to}`} d={pathD} fill="none" stroke={strokeColor} strokeWidth={2} />;
       }
     });
   };
 
+  // 4) Render only nodes in visible columns
   const renderNodes = () => {
+    // figure out valid next for highlighting
     const lastSelectedId = selectedNodes[selectedNodes.length - 1] || null;
-
     const validNextEdges = graphData.edges.filter((edge) => {
       if (edge.from !== lastSelectedId) return false;
       if (edge.condition && !edge.condition(selectedNodes)) return false;
@@ -259,40 +260,95 @@ const InteractiveFlowchart: React.FC = () => {
     });
     const validNextIds = validNextEdges.map((e) => e.to);
 
-    return graphData.nodes.map((node) => {
-      const { x, y } = getNodePosition(node);
-      const isSelected = selectedNodes.includes(node.id);
-      const isNextAvailable = validNextIds.includes(node.id);
+    return graphData.nodes
+      .filter((node) => visibleColumns.includes(node.column))
+      .map((node) => {
+        const { x, y } = getNodePosition(node);
+        const isSelected = selectedNodes.includes(node.id);
+        const isNextAvailable = validNextIds.includes(node.id);
 
-      let rectFill, rectStroke, textFill;
-      if (isSelected) {
-        rectFill = 'fill-blue-500';
-        rectStroke = 'stroke-blue-600';
-        textFill = 'fill-white';
-      } else if (isNextAvailable) {
-        rectFill = 'fill-blue-100';
-        rectStroke = 'stroke-blue-200';
-        textFill = 'fill-blue-900';
-      } else {
-        rectFill = 'fill-gray-100';
-        rectStroke = 'stroke-gray-300';
-        textFill = 'fill-gray-600';
-      }
+        let rectFill, rectStroke, textFill;
+        if (isSelected) {
+          rectFill = 'fill-blue-500';
+          rectStroke = 'stroke-blue-600';
+          textFill = 'fill-white';
+        } else if (isNextAvailable) {
+          rectFill = 'fill-blue-100';
+          rectStroke = 'stroke-blue-200';
+          textFill = 'fill-blue-900';
+        } else {
+          rectFill = 'fill-gray-100';
+          rectStroke = 'stroke-gray-300';
+          textFill = 'fill-gray-600';
+        }
 
-      return (
-        <g
-          key={node.id}
-          transform={`translate(${x - 50}, ${y - 25})`}
-          onClick={() => handleNodeClick(node.id)}
-          className="cursor-pointer"
-        >
-          <rect width="100" height="50" rx="8" className={`${rectFill} ${rectStroke} stroke-1`} />
-          <text x="50" y="30" textAnchor="middle" className={`${textFill} text-sm font-medium`}>
-            {node.label}
-          </text>
-        </g>
-      );
-    });
+        return (
+          <g
+            key={node.id}
+            transform={`translate(${x - 50}, ${y - 25})`}
+            onClick={() => handleNodeClick(node.id)}
+            className="cursor-pointer"
+          >
+            <rect width="100" height="50" rx="8" className={`${rectFill} ${rectStroke} stroke-1`} />
+            <text x="50" y="30" textAnchor="middle" className={`${textFill} text-sm font-medium`}>
+              {node.label}
+            </text>
+          </g>
+        );
+      });
+  };
+
+  // 5) (Optional) Debug lines only for visible columns
+  const renderDebugGrid = () => {
+    // We only draw lines for each visible column in sorted order
+    const columnWidth = 200;
+    const columnPadding = 100;
+    const containerHeight = 400;
+
+    return (
+      <>
+        {visibleColumns.map((col) => {
+          const newCol = columnRemap[col];
+          const columnX = newCol * columnWidth + columnPadding;
+          return (
+            <line
+              key={`col-${col}`}
+              x1={columnX}
+              y1={0}
+              x2={columnX}
+              y2={containerHeight}
+              stroke="#E5E7EB"
+              strokeWidth="1"
+              strokeDasharray="4"
+            />
+          );
+        })}
+
+        {/* If you want row lines, do it similarly, but per column's nodes */}
+        {visibleColumns.map((col) => {
+          // The nodes *in that column*
+          const colNodes = graphData.nodes.filter((n) => n.column === col);
+          if (colNodes.length === 0) return null;
+
+          const newCol = columnRemap[col];
+          const columnX = newCol * columnWidth + columnPadding;
+
+          const rowHeight = containerHeight / (colNodes.length + 1);
+          return Array.from({ length: colNodes.length + 1 }).map((_, rowIndex) => (
+            <line
+              key={`row-${col}-${rowIndex}`}
+              x1={columnX - 50}
+              y1={rowHeight * (rowIndex + 1)}
+              x2={columnX + 50}
+              y2={rowHeight * (rowIndex + 1)}
+              stroke="#E5E7EB"
+              strokeWidth="1"
+              strokeDasharray="4"
+            />
+          ));
+        })}
+      </>
+    );
   };
 
   return (
