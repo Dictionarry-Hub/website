@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { QualityProfileData } from '@data/flowchartData';
+import { QualityProfileData, nodeTypeToIcon } from '@data/flowchartData';
 import FlowchartDebugPanel from './components/FlowchartDebugPanel';
 
 interface Node {
   id: string;
   label: string;
   column: number;
+  type: keyof typeof nodeTypeToIcon;
+  typeLabel: string;
 }
 
 interface ConditionalEdge {
@@ -251,7 +253,7 @@ const InteractiveFlowchart: React.FC = () => {
 
   // 4) Render only nodes in visible columns
   const renderNodes = () => {
-    // figure out valid next for highlighting
+    // Existing valid next logic
     const lastSelectedId = selectedNodes[selectedNodes.length - 1] || null;
     const validNextEdges = graphData.edges.filter((edge) => {
       if (edge.from !== lastSelectedId) return false;
@@ -267,37 +269,74 @@ const InteractiveFlowchart: React.FC = () => {
         const isSelected = selectedNodes.includes(node.id);
         const isNextAvailable = validNextIds.includes(node.id);
 
-        let rectFill, rectStroke, textFill;
-        if (isSelected) {
-          rectFill = 'fill-blue-500';
-          rectStroke = 'stroke-blue-600';
-          textFill = 'fill-white';
-        } else if (isNextAvailable) {
-          rectFill = 'fill-blue-100';
-          rectStroke = 'stroke-blue-200';
-          textFill = 'fill-blue-900';
-        } else {
-          rectFill = 'fill-gray-100';
-          rectStroke = 'stroke-gray-300';
-          textFill = 'fill-gray-600';
-        }
+        const Icon = nodeTypeToIcon[node.type];
 
         return (
           <g
             key={node.id}
-            transform={`translate(${x - 50}, ${y - 25})`}
+            transform={`translate(${x - 60}, ${y - 30})`}
             onClick={() => handleNodeClick(node.id)}
             className="cursor-pointer"
           >
-            <rect width="100" height="50" rx="8" className={`${rectFill} ${rectStroke} stroke-1`} />
-            <text x="50" y="30" textAnchor="middle" className={`${textFill} text-sm font-medium`}>
-              {node.label}
-            </text>
+            <foreignObject width="300" height="60">
+              <div
+                className={`
+                  h-full w-full rounded-md border transition-all duration-200
+                  bg-gray-50 dark:bg-gray-800 shadow-sm
+                  ${isSelected ? 'border-blue-500 dark:border-blue-400' : 'border-gray-200 dark:border-gray-700'}
+                  ${!isSelected && !isNextAvailable ? 'opacity-70' : 'opacity-100'}
+                `}
+              >
+                <div className="flex h-full">
+                  {/* Icon container */}
+                  <div
+                    className={`
+                    h-full aspect-square
+                    flex items-center justify-center
+                    bg-gray-100 dark:bg-gray-700
+                    rounded-md
+                  `}
+                  >
+                    <Icon
+                      size={20}
+                      className={`
+                      ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}
+                    `}
+                    />
+                  </div>
+
+                  {/* Text container */}
+                  <div className="flex flex-col justify-center px-3">
+                    <div
+                      className={`
+                      text-xs font-medium
+                      ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}
+                    `}
+                    >
+                      {node.typeLabel}
+                    </div>
+                    <div
+                      className={`
+                      text-sm font-medium
+                      ${
+                        isSelected
+                          ? 'text-blue-600 dark:text-blue-400'
+                          : isNextAvailable
+                            ? 'text-gray-900 dark:text-gray-100'
+                            : 'text-gray-500 dark:text-gray-400'
+                      }
+                    `}
+                    >
+                      {node.label}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </foreignObject>
           </g>
         );
       });
   };
-
   // 5) (Optional) Debug lines only for visible columns
   const renderDebugGrid = () => {
     // We only draw lines for each visible column in sorted order
