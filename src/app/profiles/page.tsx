@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { QualityProfileData } from "@data/flowchartData";
+import React, { useState } from 'react';
+import { QualityProfileData } from '@data/flowchartData';
+import FlowchartDebugPanel from './components/FlowchartDebugPanel';
 
 interface Node {
   id: string;
@@ -20,38 +21,33 @@ interface GraphData {
   edges: ConditionalEdge[];
 }
 
-function getEdgesToRender(
-  graphData: GraphData,
-  selectedNodes: string[]
-): ConditionalEdge[] {
-  if (selectedNodes.length === 0) {
+function getEdgesToRender(graphData: GraphData, selectedNodes: string[]): ConditionalEdge[] {
+  // Filter out any empty/undefined slots
+  const filteredSelections = selectedNodes.filter(Boolean);
+
+  if (filteredSelections.length === 0) {
     return [];
   }
 
   const edgesToRender: ConditionalEdge[] = [];
 
-  // 1. Path edges (between consecutive selected nodes)
-  for (let i = 0; i < selectedNodes.length - 1; i++) {
-    const fromId = selectedNodes[i];
-    const toId = selectedNodes[i + 1];
+  // 1. Highlight path edges for each consecutive pair in filteredSelections
+  for (let i = 0; i < filteredSelections.length - 1; i++) {
+    const fromId = filteredSelections[i];
+    const toId = filteredSelections[i + 1];
 
     const pathEdge = graphData.edges.find(
-      (e) =>
-        e.from === fromId &&
-        e.to === toId &&
-        (e.condition ? e.condition(selectedNodes) : true)
+      (e) => e.from === fromId && e.to === toId && (e.condition ? e.condition(filteredSelections) : true)
     );
     if (pathEdge) {
       edgesToRender.push(pathEdge);
     }
   }
 
-  // 2. Edges from the last selected node that pass condition
-  const lastSelected = selectedNodes[selectedNodes.length - 1];
+  // 2. Edges from the **last non-empty** selected node that pass condition
+  const lastSelected = filteredSelections[filteredSelections.length - 1];
   const nextEdges = graphData.edges.filter(
-    (e) =>
-      e.from === lastSelected &&
-      (e.condition ? e.condition(selectedNodes) : true)
+    (e) => e.from === lastSelected && (e.condition ? e.condition(filteredSelections) : true)
   );
   edgesToRender.push(...nextEdges);
 
@@ -74,9 +70,7 @@ const InteractiveFlowchart: React.FC = () => {
     }
 
     const lastSelectedId = selectedNodes[selectedNodes.length - 1];
-    const lastSelectedNode = graphData.nodes.find(
-      (n) => n.id === lastSelectedId
-    );
+    const lastSelectedNode = graphData.nodes.find((n) => n.id === lastSelectedId);
     if (!lastSelectedNode) return;
 
     // 1) gather edges from lastSelectedId that pass condition
@@ -173,25 +167,21 @@ const InteractiveFlowchart: React.FC = () => {
           );
         })}
         {Array.from({ length: columns }).map((_, columnIndex) => {
-          const colNodes = graphData.nodes.filter(
-            (n) => n.column === columnIndex
-          );
+          const colNodes = graphData.nodes.filter((n) => n.column === columnIndex);
           if (colNodes.length === 0) return null;
           const rowHeight = containerHeight / (colNodes.length + 1);
-          return Array.from({ length: colNodes.length + 1 }).map(
-            (_, rowIndex) => (
-              <line
-                key={`row-${columnIndex}-${rowIndex}`}
-                x1={columnIndex * columnWidth + columnPadding - 50}
-                y1={rowHeight * (rowIndex + 1)}
-                x2={columnIndex * columnWidth + columnPadding + 50}
-                y2={rowHeight * (rowIndex + 1)}
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4"
-              />
-            )
-          );
+          return Array.from({ length: colNodes.length + 1 }).map((_, rowIndex) => (
+            <line
+              key={`row-${columnIndex}-${rowIndex}`}
+              x1={columnIndex * columnWidth + columnPadding - 50}
+              y1={rowHeight * (rowIndex + 1)}
+              x2={columnIndex * columnWidth + columnPadding + 50}
+              y2={rowHeight * (rowIndex + 1)}
+              stroke="#E5E7EB"
+              strokeWidth="1"
+              strokeDasharray="4"
+            />
+          ));
         })}
       </>
     );
@@ -208,17 +198,14 @@ const InteractiveFlowchart: React.FC = () => {
       const isChosenPath = (() => {
         // If it's part of the consecutive pairs in selectedNodes
         for (let i = 0; i < selectedNodes.length - 1; i++) {
-          if (
-            edge.from === selectedNodes[i] &&
-            edge.to === selectedNodes[i + 1]
-          ) {
+          if (edge.from === selectedNodes[i] && edge.to === selectedNodes[i + 1]) {
             return true;
           }
         }
         return false;
       })();
 
-      const strokeColor = isChosenPath ? "#3B82F6" : "#94A3B8";
+      const strokeColor = isChosenPath ? '#3B82F6' : '#94A3B8';
 
       const fromPos = getNodePosition(fromNode);
       const toPos = getNodePosition(toNode);
@@ -279,17 +266,17 @@ const InteractiveFlowchart: React.FC = () => {
 
       let rectFill, rectStroke, textFill;
       if (isSelected) {
-        rectFill = "fill-blue-500";
-        rectStroke = "stroke-blue-600";
-        textFill = "fill-white";
+        rectFill = 'fill-blue-500';
+        rectStroke = 'stroke-blue-600';
+        textFill = 'fill-white';
       } else if (isNextAvailable) {
-        rectFill = "fill-blue-100";
-        rectStroke = "stroke-blue-200";
-        textFill = "fill-blue-900";
+        rectFill = 'fill-blue-100';
+        rectStroke = 'stroke-blue-200';
+        textFill = 'fill-blue-900';
       } else {
-        rectFill = "fill-gray-100";
-        rectStroke = "stroke-gray-300";
-        textFill = "fill-gray-600";
+        rectFill = 'fill-gray-100';
+        rectStroke = 'stroke-gray-300';
+        textFill = 'fill-gray-600';
       }
 
       return (
@@ -299,18 +286,8 @@ const InteractiveFlowchart: React.FC = () => {
           onClick={() => handleNodeClick(node.id)}
           className="cursor-pointer"
         >
-          <rect
-            width="100"
-            height="50"
-            rx="8"
-            className={`${rectFill} ${rectStroke} stroke-1`}
-          />
-          <text
-            x="50"
-            y="30"
-            textAnchor="middle"
-            className={`${textFill} text-sm font-medium`}
-          >
+          <rect width="100" height="50" rx="8" className={`${rectFill} ${rectStroke} stroke-1`} />
+          <text x="50" y="30" textAnchor="middle" className={`${textFill} text-sm font-medium`}>
             {node.label}
           </text>
         </g>
@@ -319,29 +296,31 @@ const InteractiveFlowchart: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-96 relative bg-gray-50 rounded-lg p-4">
-      {/* Action buttons */}
-      <div className="absolute top-2 left-2 flex space-x-2">
-        <button
-          onClick={handleReset}
-          className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300"
-        >
-          Reset
-        </button>
-        <button
-          onClick={handleBack}
-          disabled={selectedNodes.length === 0}
-          className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:bg-gray-100"
-        >
-          Back
-        </button>
+    <div className="space-y-4">
+      <div className="w-full h-96 relative bg-gray-50 rounded-lg p-4">
+        {/* Action buttons */}
+        <div className="absolute top-2 left-2 flex space-x-2">
+          <button onClick={handleReset} className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300">
+            Reset
+          </button>
+          <button
+            onClick={handleBack}
+            disabled={selectedNodes.length === 0}
+            className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:bg-gray-100"
+          >
+            Back
+          </button>
+        </div>
+
+        <svg className="w-full h-full">
+          {renderDebugGrid()}
+          {renderEdges()}
+          {renderNodes()}
+        </svg>
       </div>
 
-      <svg className="w-full h-full">
-        {renderDebugGrid()}
-        {renderEdges()}
-        {renderNodes()}
-      </svg>
+      {/* Debug Panel */}
+      <FlowchartDebugPanel selectedNodes={selectedNodes} graphData={graphData} />
     </div>
   );
 };

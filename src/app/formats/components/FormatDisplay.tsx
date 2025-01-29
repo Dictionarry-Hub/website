@@ -1,5 +1,5 @@
 // src/app/formats/components/FormatDisplay.tsx
-import Link from "next/link";
+import Link from 'next/link';
 import {
   CheckCircle2,
   XCircle,
@@ -10,9 +10,9 @@ import {
   ArrowLeft,
   Download,
   BeakerIcon,
-} from "lucide-react";
-import { FORMAT_CATEGORIES } from "../constants/format_constants";
-import { CONDITION_METADATA } from "../constants/condition_constants";
+} from 'lucide-react';
+import { FORMAT_CATEGORIES } from '../constants/format_constants';
+import { CONDITION_METADATA } from '../constants/condition_constants';
 
 interface Condition {
   name: string;
@@ -73,9 +73,9 @@ const getFeaturedIcon = (tags?: string[]) => {
 
 const formatConditionType = (type: string) => {
   return type
-    .split("_")
+    .split('_')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+    .join(' ');
 };
 
 export function FormatDisplay({ format }: FormatDisplayProps) {
@@ -91,14 +91,11 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
               <h2 className="text-xl font-semibold">About Custom Formats</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              This page serves as a <em>detailed technical reference</em> for
-              Dictionarry's custom format system. While most users won't need
-              this level of detail, we maintain it to be{" "}
-              <strong>fully transparent about how our system works</strong>.
-              It's here for anyone who wants to verify our approach, contribute
-              improvements, or just learn more about our technical philosophy.
-              Select a format from the sidebar to explore its implementation
-              details.
+              This page serves as a <em>detailed technical reference</em> for Dictionarry's custom format system. While
+              most users won't need this level of detail, we maintain it to be{' '}
+              <strong>fully transparent about how our system works</strong>. It's here for anyone who wants to verify
+              our approach, contribute improvements, or just learn more about our technical philosophy. Select a format
+              from the sidebar to explore its implementation details.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -110,17 +107,11 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                 <h3 className="font-medium">Testing</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                Each format needs to work <em>reliably</em> for our automation
-                to be useful, which is why{" "}
-                <strong>
-                  Profilarr includes a comprehensive test suite to validate
-                  everything
-                </strong>
-                . We've included all test cases here so you can see exactly what
-                we're checking for. Since it's impossible to test every possible
-                release name out there, we rely on <em>your feedback</em> to
-                catch edge cases - if you notice something not working as it
-                should, please let us know!
+                Each format needs to work <em>reliably</em> for our automation to be useful, which is why{' '}
+                <strong>Profilarr includes a comprehensive test suite to validate everything</strong>. We've included
+                all test cases here so you can see exactly what we're checking for. Since it's impossible to test every
+                possible release name out there, we rely on <em>your feedback</em> to catch edge cases - if you notice
+                something not working as it should, please let us know!
               </p>
             </div>
             <div className="p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
@@ -131,11 +122,9 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                 <h3 className="font-medium">Contributing / Thanks</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                These formats represent a <strong>collaborative effort</strong>,
-                building upon foundations from <em>TRaSH guides</em> and
-                evolving through community input. This documentation serves both
-                as a reference and a way to identify potential improvements. If
-                you spot something that could be enhanced,{" "}
+                These formats represent a <strong>collaborative effort</strong>, building upon foundations from{' '}
+                <em>TRaSH guides</em> and evolving through community input. This documentation serves both as a
+                reference and a way to identify potential improvements. If you spot something that could be enhanced,{' '}
                 <em>consider contributing</em> through a PR or issue.
               </p>
             </div>
@@ -146,36 +135,32 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
               <div className="flex-shrink-0 p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
                 <Download className="w-5 h-5 text-purple-600 dark:text-purple-400" />
               </div>
-              <h3 className="font-medium">
-                How do I import these custom formats?
-              </h3>
+              <h3 className="font-medium">How do I import these custom formats?</h3>
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-300">
               <ul className="list-disc pl-6 space-y-4">
                 <li>
-                  Since Dictionarry's custom formats are built differently from
-                  standard arr* formats, you'll need to use{" "}
+                  Since Dictionarry's custom formats are built differently from standard arr* formats, you'll need to
+                  use{' '}
                   <Link
                     href="https://github.com/Dictionarry-Hub/profilarr"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Profilarr
-                  </Link>{" "}
-                  and the{" "}
+                  </Link>{' '}
+                  and the{' '}
                   <Link
                     href="https://github.com/Dictionarry-Hub/database"
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     Dictionarry database
-                  </Link>{" "}
-                  to import and use these custom formats. This is because
-                  Dictionarry employs a single defintion for each format, which
-                  is then compiled into a specific end format depending on the
-                  arr being imported to.
+                  </Link>{' '}
+                  to import and use these custom formats. This is because Dictionarry employs a single defintion for
+                  each format, which is then compiled into a specific end format depending on the arr being imported to.
                 </li>
                 <li>
-                  Manual importing is not possible at the moment, but we're
-                  working on a solution to allow this in future!
+                  Manual importing is not possible at the moment, but we're working on a solution to allow this in
+                  future!
                 </li>
               </ul>
             </div>
@@ -196,12 +181,8 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             {IconComponent && accentColor && (
-              <div
-                className={`flex-shrink-0 p-2 ${accentColor.bg} ${accentColor.darkBg} rounded-lg`}
-              >
-                <IconComponent
-                  className={`w-4 h-4 ${accentColor.light} ${accentColor.dark}`}
-                />
+              <div className={`flex-shrink-0 p-2 ${accentColor.bg} ${accentColor.darkBg} rounded-lg`}>
+                <IconComponent className={`w-4 h-4 ${accentColor.light} ${accentColor.dark}`} />
               </div>
             )}
             <div className="flex items-center gap-3">
@@ -237,17 +218,13 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
             <Info className="w-5 h-5 text-blue-500" />
             <h2 className="text-lg font-semibold">Description</h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            {format.description}
-          </p>
+          <p className="text-gray-600 dark:text-gray-300">{format.description}</p>
         </div>
       )}
 
-      {format.description &&
-        format.conditions &&
-        format.conditions.length > 0 && (
-          <hr className="mx-6 my-2 border-t border-gray-200 dark:border-gray-700" />
-        )}
+      {format.description && format.conditions && format.conditions.length > 0 && (
+        <hr className="mx-6 my-2 border-t border-gray-200 dark:border-gray-700" />
+      )}
 
       {/* Conditions Section */}
       {format.conditions && format.conditions.length > 0 && (
@@ -270,16 +247,10 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                   >
                     <div className="flex items-center gap-2">
                       <Icon className="w-4 h-4 text-blue-500" />
-                      <span className="text-sm font-medium">
-                        {condition.name}
-                      </span>
+                      <span className="text-sm font-medium">{condition.name}</span>
                       <div className="flex gap-1.5 ml-auto">
-                        {condition.required && (
-                          <CheckCircle2 className="w-4 h-4 text-blue-500" />
-                        )}
-                        {condition.negate && (
-                          <XCircle className="w-4 h-4 text-blue-500" />
-                        )}
+                        {condition.required && <CheckCircle2 className="w-4 h-4 text-blue-500" />}
+                        {condition.negate && <XCircle className="w-4 h-4 text-blue-500" />}
                       </div>
                     </div>
                     <div className="text-xs text-gray-500 dark:text-gray-400">
@@ -303,10 +274,7 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
             </div>
             <div className="space-y-4">
               {format.tests.map((test) => (
-                <div
-                  key={test.id}
-                  className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50"
-                >
+                <div key={test.id} className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
                       {test.passes ? (
@@ -325,10 +293,7 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
 
                   <div className="mt-3 space-y-2">
                     <div className="text-sm text-gray-600 dark:text-gray-300">
-                      Expected:{" "}
-                      <span className="font-medium">
-                        {test.expected ? "Pass" : "Fail"}
-                      </span>
+                      Expected: <span className="font-medium">{test.expected ? 'Pass' : 'Fail'}</span>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
