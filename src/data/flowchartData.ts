@@ -129,6 +129,11 @@ export const QualityProfileData: GraphData = {
 
     // codecs -> hdr
     { from: 'h264', to: 'sdr' },
+    {
+      from: 'h265',
+      to: 'sdr',
+      condition: (selectedNodes) => selectedNodes.includes('efficient'),
+    },
     { from: 'h265', to: 'hdr' },
     {
       from: 'h265',
