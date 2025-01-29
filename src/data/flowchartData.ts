@@ -1,9 +1,28 @@
 // src/data/recruitmentFlowData.ts
 
+import {
+  MonitorIcon, // for resolution
+  BetweenHorizontalEnd, // for compression
+  FileCog, // for encode type
+  CodeIcon, // for codec
+  Lightbulb, // for HDR
+} from 'lucide-react';
+
+// Then create a mapping
+export const nodeTypeToIcon = {
+  resolution: MonitorIcon,
+  compression: BetweenHorizontalEnd,
+  encode: FileCog,
+  codec: CodeIcon,
+  hdr: Lightbulb,
+} as const;
+
 export interface Node {
   id: string;
   label: string;
   column: number;
+  type: keyof typeof nodeTypeToIcon;
+  typeLabel: string;
 }
 
 export interface ConditionalEdge {
@@ -20,57 +39,25 @@ export interface GraphData {
 export const QualityProfileData: GraphData = {
   nodes: [
     // Resolutions
-    { id: 'sd', label: 'SD', column: 0 },
-    { id: '720p', label: '720p', column: 0 },
-    { id: '1080p', label: '1080p', column: 0 },
-    { id: '2160p', label: '2160p', column: 0 },
-
+    { id: 'sd', label: 'SD', column: 0, type: 'resolution', typeLabel: 'Resolution' },
+    { id: '720p', label: '720p', column: 0, type: 'resolution', typeLabel: 'Resolution' },
+    { id: '1080p', label: '1080p', column: 0, type: 'resolution', typeLabel: 'Resolution' },
+    { id: '2160p', label: '2160p', column: 0, type: 'resolution', typeLabel: 'Resolution' },
     // Compression
-    {
-      id: 'compressed',
-      label: 'Compressed',
-      column: 1,
-    },
-    {
-      id: 'lossless',
-      label: 'Lossless',
-      column: 1,
-    },
-
+    { id: 'compressed', label: 'Compressed', column: 1, type: 'compression', typeLabel: 'Compression' },
+    { id: 'lossless', label: 'Lossless', column: 1, type: 'compression', typeLabel: 'Compression' },
     // Encode Types
-    {
-      id: 'quality',
-      label: 'Quality',
-      column: 2,
-    },
-    {
-      id: 'balanced',
-      label: 'Balanced',
-      column: 2,
-    },
-    {
-      id: 'efficient',
-      label: 'Efficient',
-      column: 2,
-    },
-
+    { id: 'quality', label: 'Quality', column: 2, type: 'encode', typeLabel: 'Encode Type' },
+    { id: 'balanced', label: 'Balanced', column: 2, type: 'encode', typeLabel: 'Encode Type' },
+    { id: 'efficient', label: 'Efficient', column: 2, type: 'encode', typeLabel: 'Encode Type' },
     // Codecs
-    { id: 'av1', label: 'AV1', column: 3 },
-    { id: 'h265', label: 'h265', column: 3 },
-    { id: 'h264', label: 'h264', column: 3 },
-
+    { id: 'av1', label: 'AV1', column: 3, type: 'codec', typeLabel: 'Codec' },
+    { id: 'h265', label: 'h265', column: 3, type: 'codec', typeLabel: 'Codec' },
+    { id: 'h264', label: 'h264', column: 3, type: 'codec', typeLabel: 'Codec' },
     // HDR
-    { id: 'sdr', label: 'SDR', column: 4 },
-    {
-      id: 'hdr',
-      label: 'DoVi + HDR Fallback',
-      column: 4,
-    },
-    {
-      id: 'dovi',
-      label: 'DoVi No Fallback',
-      column: 4,
-    },
+    { id: 'sdr', label: 'SDR', column: 4, type: 'hdr', typeLabel: 'HDR Type' },
+    { id: 'hdr', label: 'DoVi + HDR Fallback', column: 4, type: 'hdr', typeLabel: 'HDR Type' },
+    { id: 'dovi', label: 'DoVi No Fallback', column: 4, type: 'hdr', typeLabel: 'HDR Type' },
   ],
 
   edges: [
