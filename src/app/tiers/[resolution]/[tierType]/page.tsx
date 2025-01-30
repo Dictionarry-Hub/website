@@ -1,28 +1,28 @@
 // src/app/tiers/[resolution]/[tierType]/page.tsx
 
-import { getReleaseGroupTiers, TierInfo, Condition } from "@api/getData";
-import { Star, Zap, ChevronLeft, ChevronRight } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import type { Metadata } from "next";
+import { getReleaseGroupTiers, TierInfo, Condition } from '@api/getData';
+import { Star, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import type { Metadata } from 'next';
 
 export async function generateStaticParams() {
   return [
-    { resolution: "2160p", tierType: "quality" },
-    { resolution: "2160p", tierType: "efficient" },
-    { resolution: "1080p", tierType: "quality" },
-    { resolution: "1080p", tierType: "efficient" },
-    { resolution: "720p", tierType: "quality" },
-    { resolution: "720p", tierType: "efficient" },
-    { resolution: "SD", tierType: "quality" },
-    { resolution: "SD", tierType: "efficient" },
+    { resolution: '2160p', tierType: 'quality' },
+    { resolution: '2160p', tierType: 'efficient' },
+    { resolution: '1080p', tierType: 'quality' },
+    { resolution: '1080p', tierType: 'efficient' },
+    { resolution: '720p', tierType: 'quality' },
+    { resolution: '720p', tierType: 'efficient' },
+    { resolution: 'SD', tierType: 'quality' },
+    { resolution: 'SD', tierType: 'efficient' },
   ];
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ resolution: string; tierType: "quality" | "efficient" }>;
+  params: Promise<{ resolution: string; tierType: 'quality' | 'efficient' }>;
 }): Promise<Metadata> {
   const { resolution, tierType } = await params;
   return {
@@ -34,7 +34,7 @@ export async function generateMetadata({
 export default async function TierPage({
   params,
 }: {
-  params: Promise<{ resolution: string; tierType: "quality" | "efficient" }>;
+  params: Promise<{ resolution: string; tierType: 'quality' | 'efficient' }>;
 }) {
   const { resolution, tierType } = await params;
   const data = await getReleaseGroupTiers();
@@ -42,14 +42,14 @@ export default async function TierPage({
 
   const colorStyles = {
     quality: {
-      bg: "bg-blue-100 dark:bg-blue-900/30",
-      text: "text-blue-600 dark:text-blue-400",
-      badgeBg: "bg-blue-100/70 dark:bg-blue-900/30",
+      bg: 'bg-blue-100 dark:bg-blue-900/30',
+      text: 'text-blue-600 dark:text-blue-400',
+      badgeBg: 'bg-blue-100/70 dark:bg-blue-900/30',
     },
     efficient: {
-      bg: "bg-green-100 dark:bg-green-900/30",
-      text: "text-green-600 dark:text-green-400",
-      badgeBg: "bg-green-100/70 dark:bg-green-900/30",
+      bg: 'bg-green-100 dark:bg-green-900/30',
+      text: 'text-green-600 dark:text-green-400',
+      badgeBg: 'bg-green-100/70 dark:bg-green-900/30',
     },
   };
 
@@ -63,21 +63,17 @@ export default async function TierPage({
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className={`p-3 ${currentColor.bg} rounded-lg`}>
-                {tierType === "quality" ? (
+                {tierType === 'quality' ? (
                   <Star className={`w-6 h-6 ${currentColor.text}`} />
                 ) : (
                   <Zap className={`w-6 h-6 ${currentColor.text}`} />
                 )}
               </div>
               <h1 className="text-3xl font-bold">
-                {resolution}{" "}
-                {tierType.charAt(0).toUpperCase() + tierType.slice(1)} Tiers
+                {resolution} {tierType.charAt(0).toUpperCase() + tierType.slice(1)} Tiers
               </h1>
             </div>
-            <Link
-              href="/tiers"
-              className={`flex items-center gap-2 text-sm ${currentColor.text} hover:underline`}
-            >
+            <Link href="/tiers" className={`flex items-center gap-2 text-sm ${currentColor.text} hover:underline`}>
               <ChevronLeft className="w-4 h-4" />
               Back to All Tiers
             </Link>
@@ -109,21 +105,17 @@ export default async function TierPage({
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className={`p-3 ${currentColor.bg} rounded-lg`}>
-              {tierType === "quality" ? (
+              {tierType === 'quality' ? (
                 <Star className={`w-6 h-6 ${currentColor.text}`} />
               ) : (
                 <Zap className={`w-6 h-6 ${currentColor.text}`} />
               )}
             </div>
             <h1 className="text-3xl font-bold">
-              {resolution}{" "}
-              {tierType.charAt(0).toUpperCase() + tierType.slice(1)} Tiers
+              {resolution} {tierType.charAt(0).toUpperCase() + tierType.slice(1)} Tiers
             </h1>
           </div>
-          <Link
-            href="/tiers"
-            className={`flex items-center gap-2 text-sm ${currentColor.text} hover:underline`}
-          >
+          <Link href="/tiers" className={`flex items-center gap-2 text-sm ${currentColor.text} hover:underline`}>
             <ChevronLeft className="w-4 h-4" />
             Back to All Tiers
           </Link>
@@ -132,15 +124,11 @@ export default async function TierPage({
         <div className="grid gap-6">
           {resolutionTiers.map((tier: TierInfo) => {
             const groups = tier.conditions
-              ?.flatMap(
-                (c: Condition) =>
-                  c.pattern?.replace(/^\^|\$/g, "").split("|") || []
-              )
+              ?.filter((c: Condition) => c.type === 'release_group') // Filter by type
+              .flatMap((c: Condition) => c.name?.split('|') || [])
               .filter(Boolean) as string[];
             const uniqueGroups = [...new Set(groups)];
-            const tierName = `${resolution} ${tierType} Tier ${tier.tierNumber}`
-              .toLowerCase()
-              .replace(/\s+/g, "-");
+            const tierName = `${resolution} ${tierType} Tier ${tier.tierNumber}`.toLowerCase().replace(/\s+/g, '-');
 
             return (
               <div
@@ -152,9 +140,7 @@ export default async function TierPage({
               >
                 <div className="flex flex-col gap-6">
                   <div className="flex items-center justify-between border-b pb-4 border-gray-200 dark:border-gray-700">
-                    <h2 className="text-xl font-semibold">
-                      Tier {tier.tierNumber}
-                    </h2>
+                    <h2 className="text-xl font-semibold">Tier {tier.tierNumber}</h2>
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/formats/${tierName}`}
@@ -169,11 +155,9 @@ export default async function TierPage({
                       <div
                         className="flex items-center gap-2
                                    bg-gray-100 dark:bg-gray-800
-                                   px-3 py-1 rounded-full text-sm"
+                                   px-3 py-1 rounded-md text-sm"
                       >
-                        <span className="text-gray-600 dark:text-gray-300">
-                          {uniqueGroups.length} Groups
-                        </span>
+                        <span className="text-gray-600 dark:text-gray-300">{uniqueGroups.length} Groups</span>
                       </div>
                     </div>
                   </div>
@@ -183,7 +167,7 @@ export default async function TierPage({
                         key={group}
                         className={`px-3 py-1.5
                                    ${currentColor.badgeBg} ${currentColor.text}
-                                   rounded-full text-sm font-medium`}
+                                   rounded-md text-sm font-medium`}
                       >
                         {group}
                       </span>
