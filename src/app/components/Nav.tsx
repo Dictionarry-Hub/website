@@ -12,7 +12,7 @@ const navItems = [
   { href: '/tiers', label: 'Group Tiers' },
   { href: '/formats', label: 'Custom Formats' },
   { href: '/profiles', label: 'Quality Profiles' },
-  { href: '/builder', label: 'Profile Recommender' },
+  { href: '/builder', label: 'Profile Builder' },
 ];
 
 export function Nav() {
