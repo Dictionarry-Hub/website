@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react';
 const navItems = [
   { href: '/devlog', label: 'Development Log' },
   { href: '/wiki', label: 'Wiki' },
-  { href: '/tiers', label: 'Group Tiers' },
   { href: '/formats', label: 'Custom Formats' },
+  { href: '/tiers', label: 'Group Tiers' },
   { href: '/profiles', label: 'Quality Profiles' },
   { href: '/builder', label: 'Profile Builder' },
 ];
