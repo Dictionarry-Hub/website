@@ -1,5 +1,5 @@
 import React from 'react';
-import { columnInfo, getRecommendation } from '@/data/profileInfoData';
+import { columnInfo, getRecommendations } from '@/data/profileInfoData';
 import { QualityProfileData } from '@/data/flowchartData';
 
 interface FlowchartInfoProps {
@@ -58,28 +58,25 @@ const FlowchartInfo: React.FC<FlowchartInfoProps> = ({ selectedNodes, hoveredNod
   const getCurrentColumnNodes = () => {
     const edges = getEdgesToRender();
     const visibleColumns = getVisibleColumns(edges);
-
-    // Get last visible column
     const currentColumn = visibleColumns[visibleColumns.length - 1];
-
-    // Return nodes in current column
     return QualityProfileData.nodes.filter((n) => n.column === currentColumn);
   };
 
   const currentColumnNodes = getCurrentColumnNodes();
+  const recommendations = getRecommendations(selectedNodes);
 
   return (
     <div className="grid grid-cols-4 gap-4 mt-4">
       {/* Information Section */}
-      <div className="col-span-3 flex flex-col bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-4 space-y-4">
+      <div className="col-span-2 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
         <h3 className="text-lg pl-2 font-semibold text-gray-900 dark:text-white">Information</h3>
 
         {/* Column Info */}
-        <div>
+        <div className="mt-4">
           <p className="pl-2 text-gray-600 dark:text-gray-300">{columnInfo[currentColumnNodes[0]?.column || 0].info}</p>
         </div>
 
-        <div className="px-2">
+        <div className="px-2 my-4">
           <hr className="border-t border-gray-300 dark:border-gray-700" />
         </div>
 
@@ -117,10 +114,10 @@ const FlowchartInfo: React.FC<FlowchartInfoProps> = ({ selectedNodes, hoveredNod
         </div>
       </div>
 
-      {/* Recommendation Section */}
-      <div className="col-span-1 flex flex-col bg-gray-200 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-4 space-y-4">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Recommendation</h3>
-        <p className="text-gray-600 dark:text-gray-300">{getRecommendation(selectedNodes)}</p>
+      {/* Recommendations Section */}
+      <div className="col-span-2 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-4">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Recommendations</h3>
+        <div>{recommendations}</div>
       </div>
     </div>
   );

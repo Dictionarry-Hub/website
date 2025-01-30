@@ -1,4 +1,7 @@
-// src/data/profileInfoData.ts
+// src/data/profileInfoData.tsx
+import React from 'react';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 // Column-based information
 export type ColumnInfo = {
@@ -8,6 +11,13 @@ export type ColumnInfo = {
       info: string;
     };
   };
+};
+
+export type Profile = {
+  name: string;
+  description: string;
+  requirements: string[];
+  tags?: string[];
 };
 
 export const columnInfo: ColumnInfo[] = [
@@ -41,7 +51,6 @@ export const columnInfo: ColumnInfo[] = [
       },
     },
   },
-
   // Column 2 - Encode Types
   {
     info: 'Dictionarry defines three distinct encoding approaches, catering to different user preferences regarding quality, file size, and efficiency.',
@@ -57,7 +66,6 @@ export const columnInfo: ColumnInfo[] = [
       },
     },
   },
-
   // Column 3 - Codecs
   {
     info: 'A video codec is a method or standard for compressing and decompressing digital video. As newer codecs appear, they tend to offer better compression (smaller file sizes or higher quality) but often require more powerful or recent hardware and can be harder to produce. This leads to fewer available encodes, especially the more recent they are. The right codec choice depends on your playback devices, available bandwidth, and desire for efficiency versus compatibility and quality.',
@@ -73,13 +81,12 @@ export const columnInfo: ColumnInfo[] = [
       },
     },
   },
-
   // Column 4 - HDR
   {
     info: 'High Dynamic Range (HDR) expands color depth and brightness ranges beyond Standard Dynamic Range (SDR). HDR is generally only available with H.265 (or newer) due to bit-depth requirements. Choosing HDR can deliver vivid, lifelike images, but requires a compatible device. Dolby Vision (DoVi) is an advanced form of HDR that may include—or omit fallback HDR10 metadata for non-DoVi hardware.',
     nodes: {
       sdr: {
-        info: "SDR (Standard Dynamic Range) uses lower brightness levels and typically 8-bit color. It's universal, ensuring compatibility across all devices, but lacks the richer contrast and color detail found in HDR. Best for older screens or situations where HDR playback isn’t guaranteed.",
+        info: "SDR (Standard Dynamic Range) uses lower brightness levels and typically 8-bit color. It's universal, ensuring compatibility across all devices, but lacks the richer contrast and color detail found in HDR. Best for older screens or situations where HDR playback isn't guaranteed.",
       },
       hdr: {
         info: 'HDR10 or HDR10+ utilizes 10-bit color to produce deeper blacks and brighter highlights. Dolby Vision is a premium HDR format offering dynamic metadata for scene-by-scene optimization. This options prefers Dolby Vision ONLY with HDR fallback, but also allows releases with normal HDR10/+. Make sure your device supports HDR before selecting this.',
@@ -91,14 +98,170 @@ export const columnInfo: ColumnInfo[] = [
   },
 ];
 
-// Recommendations based on combinations
-export const getRecommendation = (selectedNodes: string[]): string => {
-  // This function will analyze the combination of selected nodes
-  // and return appropriate recommendations
-  // Example logic:
-  if (selectedNodes.includes('2160p') && selectedNodes.includes('efficient')) {
-    return 'Consider using h265 with SDR for better compatibility';
+// Define all available profiles
+export const profiles: Profile[] = [
+  {
+    name: 'DVD Remux',
+    description: 'This profile is a work in progress, check back later!',
+    requirements: ['sd', 'lossless'],
+    tags: ['SD', 'Remux', 'Lossless Audio'],
+  },
+  {
+    name: 'SD Quality',
+    description: 'This profile is a work in progress, check back later!',
+    requirements: ['sd', 'compressed', 'quality', 'h264', 'sdr'],
+    tags: ['SD', 'x264', 'Lossy Audio'],
+  },
+  {
+    name: '720p Quality',
+    description: 'This profile is a work in progress, check back later!',
+    requirements: ['720p', 'compressed', 'quality', 'h264', 'sdr'],
+    tags: ['720p', 'x264', 'Lossy Audio'],
+  },
+  {
+    name: '1080p Efficient',
+    description: 'This profile is a work in progress, check back later!',
+    requirements: ['1080p', 'compressed', 'efficient', 'h265', 'av1', 'sdr', 'hdr', 'dovi'],
+    tags: ['1080p', 'x265', 'AV1', 'Efficient Focused'],
+  },
+  {
+    name: '1080p Balanced',
+    description:
+      '1080p Balanced targets consistent & immutable 1080p WEB-DLs with fallback to transparent x264 encodes, prioritised using the Golden Popcorn Performance Index. Special considerations are given to Balanced groups who prioritize streaming optimisation over quality.',
+    requirements: ['1080p', 'compressed', 'balanced', 'h264', 'sdr'],
+    tags: ['1080p', 'x264', 'Lossy Audio', 'Balanced Focused'],
+  },
+  {
+    name: '1080p Quality',
+    description:
+      '1080p Quality utilizes the Golden Popcorn Performance Index to target transparent x264 1080p encodes with 5 quality tiers prioritising encodes with high GPPi scores.',
+    requirements: ['1080p', 'compressed', 'quality', 'h264', 'sdr'],
+    tags: ['1080p', 'x264', 'Lossy Audio', 'Quality Focused'],
+  },
+  {
+    name: '1080p Quality (HDR)',
+    description:
+      '1080p Quality (HDR) utilizes the Golden Popcorn Performance Index to target transparent x265 HDR 1080p encodes from UHD Bluray sources, with fallback to regular 1080p Quality profile.',
+    requirements: ['1080p', 'compressed', 'quality', 'h265', 'hdr'],
+    tags: ['1080p', 'x264', 'x265', 'HDR', 'Lossy Audio', 'Quality Focused'],
+  },
+  {
+    name: '1080p Remux',
+    description:
+      '1080p Remux utilizes audio tags to prioritise high quality lossless copies of HD Blu-rays. Focuses on audio metrics such as TrueHD, Atmos, DTS-X for determining upgrades.',
+    requirements: ['1080p', 'lossless', 'sdr', 'h264'],
+    tags: ['1080p', 'Remux', 'Lossless Audio', 'h264'],
+  },
+  {
+    name: '2160p Balanced',
+    description:
+      '2160p Balanced targets consistent & immutable 2160p HDR WEB-DLs with lossy audio. Special considerations for Balanced groups who prioritize streaming optimisation.',
+    requirements: ['2160p', 'compressed', 'balanced', 'h265', 'hdr', 'dovi'],
+    tags: ['2160p', 'HDR', 'x264', 'h265', 'Lossy Audio', 'Balanced Focused'],
+  },
+  {
+    name: '2160p Quality',
+    description:
+      '2160p Quality utilizes the Encode Efficiency Index metric at a 55% target ratio to prioritize transparent x265 4k encodes. Features 4 quality tiers for reputable groups with HDR and lossless audio considerations.',
+    requirements: ['2160p', 'compressed', 'quality', 'h265', 'hdr'],
+    tags: ['2160p', 'HDR', 'x265', 'Encode', 'Lossless Audio', 'Quality Focused'],
+  },
+  {
+    name: '2160p Remux',
+    description:
+      '2160p Remux utilizes audio/video tags to prioritise high quality lossless copies of UHD Blu-rays, using metrics like Dolby Vision, TrueHD, Atmos, and HDR10+ for upgrade decisions.',
+    requirements: ['2160p', 'lossless', 'h265', 'hdr'],
+    tags: ['2160p', 'Remux', 'HDR', 'Lossless Audio', 'h265'],
+  },
+];
+
+// Helper function to create URL-friendly profile names
+const createSlug = (name: string): string => {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+};
+
+// Render a single profile recommendation
+const ProfileCard: React.FC<{ profile: Profile }> = ({ profile }) => {
+  const slug = createSlug(profile.name);
+
+  return (
+    <Link
+      href={`/profiles/${slug}`}
+      className="group block p-4 mb-2 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 
+        hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-200 dark:hover:border-blue-800
+        transition-all duration-200 relative"
+    >
+      <div className="flex justify-between items-start gap-4">
+        <div className="flex-1 space-y-3">
+          <div className="flex items-center gap-2">
+            <h4 className="text-md font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {profile.name}
+            </h4>
+            <ArrowRight
+              className="h-4 w-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 
+              -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-200"
+            />
+          </div>
+
+          <p className="text-gray-600 dark:text-gray-300 text-sm">{profile.description}</p>
+
+          {profile.tags && (
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {profile.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-2 py-0.5 text-xs font-medium rounded-full
+                    bg-gray-100 dark:bg-gray-700 
+                    text-gray-600 dark:text-gray-300
+                    group-hover:bg-blue-100 group-hover:text-blue-700
+                    dark:group-hover:bg-blue-900/30 dark:group-hover:text-blue-300
+                    transition-colors"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </Link>
+  );
+};
+
+export const getRecommendations = (selectedNodes: string[]): React.ReactNode => {
+  const filteredSelections = selectedNodes.filter(Boolean);
+
+  if (filteredSelections.length === 0) {
+    return <p className="text-gray-600 dark:text-gray-300 text-sm">Make a selection to see recommendations</p>;
   }
 
-  return 'Make a selection to see recommendations';
+  // Find all profiles that match the current selections
+  const matchingProfiles = profiles.filter((profile) => {
+    // Check if all selected nodes are part of the profile's requirements
+    return (
+      filteredSelections.every((selection) => profile.requirements.includes(selection)) &&
+      // Check if the profile matches the resolution if one is selected
+      (!filteredSelections.some((sel) => ['2160p', '1080p', '720p'].includes(sel)) ||
+        profile.requirements.some((req) => filteredSelections.includes(req)))
+    );
+  });
+
+  if (matchingProfiles.length === 0) {
+    return (
+      <div className="text-center p-4">
+        <p className="text-gray-600 dark:text-gray-300 text-sm">No matching profiles for current selections</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-4">
+      {matchingProfiles.map((profile, index) => (
+        <ProfileCard key={index} profile={profile} />
+      ))}
+    </div>
+  );
 };
