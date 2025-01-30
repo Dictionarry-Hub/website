@@ -1,8 +1,21 @@
-import { getContent } from "@api/getData";
-import { FormatNavigation } from "../components/FormatNavigation";
-import { FormatDisplay } from "../components/FormatDisplay";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
+import { getContent } from '@api/getData';
+import { FormatNavigation } from '../components/FormatNavigation';
+import { FormatDisplay } from '../components/FormatDisplay';
+import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
+
+type ConditionType =
+  | 'release_title'
+  | 'release_group'
+  | 'edition'
+  | 'language'
+  | 'indexer_flag'
+  | 'source'
+  | 'resolution'
+  | 'quality_modifier'
+  | 'size'
+  | 'release_type'
+  | 'year';
 
 interface CustomFormatEntry {
   _id: string;
@@ -12,81 +25,64 @@ interface CustomFormatEntry {
     name: string;
     negate: boolean;
     required: boolean;
-    type: string;
+    type: ConditionType;
     pattern?: string;
     source?: string;
     resolution?: string;
   }>;
   tags?: string[];
 }
-
 interface PageProps {
   params: Promise<{ id: string }>;
 }
 
 const createUrlSlug = (name: string): string => {
-  return name.toLowerCase().replace(/\s+/g, "-").trim();
+  return name.toLowerCase().replace(/\s+/g, '-').trim();
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
-  const customFormats = (await getContent("custom_formats")) as
-    | CustomFormatEntry[]
-    | null;
+  const customFormats = (await getContent('custom_formats')) as CustomFormatEntry[] | null;
 
   if (!customFormats) {
     return {
-      title: "Format Not Found | Dictionarry",
-      description: "The requested format could not be found.",
+      title: 'Format Not Found | Dictionarry',
+      description: 'The requested format could not be found.',
     };
   }
 
   const decodedSlug = decodeURIComponent(id);
-  const selectedFormat = customFormats.find(
-    (format) => createUrlSlug(format.name) === decodedSlug
-  );
+  const selectedFormat = customFormats.find((format) => createUrlSlug(format.name) === decodedSlug);
 
   if (!selectedFormat) {
     return {
-      title: "Format Not Found | Dictionarry",
-      description: "The requested format could not be found.",
+      title: 'Format Not Found | Dictionarry',
+      description: 'The requested format could not be found.',
     };
   }
 
   return {
     title: `${selectedFormat.name} | Dictionarry`,
-    description:
-      selectedFormat.description ||
-      `Configuration details for ${selectedFormat.name}`,
+    description: selectedFormat.description || `Configuration details for ${selectedFormat.name}`,
   };
 }
 
 export default async function FormatPage({ params }: PageProps) {
   const { id } = await params;
-  const customFormats = (await getContent("custom_formats")) as
-    | CustomFormatEntry[]
-    | null;
+  const customFormats = (await getContent('custom_formats')) as CustomFormatEntry[] | null;
 
   if (!customFormats) {
     return (
       <div className="container mx-auto">
         <div className="text-center p-8 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
-          <p className="text-red-600 dark:text-red-400">
-            Failed to load custom formats. Please try again later.
-          </p>
+          <p className="text-red-600 dark:text-red-400">Failed to load custom formats. Please try again later.</p>
         </div>
       </div>
     );
   }
 
   const decodedSlug = decodeURIComponent(id);
-  const selectedFormat = customFormats.find(
-    (format) => createUrlSlug(format.name) === decodedSlug
-  );
+  const selectedFormat = customFormats.find((format) => createUrlSlug(format.name) === decodedSlug);
 
   if (!selectedFormat) {
     notFound();
@@ -101,10 +97,7 @@ export default async function FormatPage({ params }: PageProps) {
           </div>
         </main>
         <aside className="w-[350px] overflow-y-auto">
-          <FormatNavigation
-            formats={customFormats}
-            selectedId={selectedFormat._id}
-          />
+          <FormatNavigation formats={customFormats} selectedId={selectedFormat._id} />
         </aside>
       </div>
     </div>
