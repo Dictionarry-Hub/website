@@ -103,3 +103,13 @@ export default async function FormatPage({ params }: PageProps) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const customFormats = (await getContent('custom_formats')) as CustomFormatEntry[] | null;
+
+  return (
+    customFormats?.map((format) => ({
+      id: createUrlSlug(format.name),
+    })) || []
+  );
+}
