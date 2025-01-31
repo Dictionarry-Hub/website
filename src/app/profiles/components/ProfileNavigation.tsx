@@ -22,7 +22,10 @@ interface ProfileCategory {
 }
 
 const createUrlSlug = (name: string): string => {
-  return name.toLowerCase().replace(/\s+/g, '-').trim();
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 };
 
 export function ProfileNavigation({ profiles, selectedId }: ProfileNavigationProps) {

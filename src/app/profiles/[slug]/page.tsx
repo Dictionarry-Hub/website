@@ -11,7 +11,10 @@ interface PageProps {
 }
 
 const createUrlSlug = (name: string): string => {
-  return name.toLowerCase().replace(/\s+/g, '-').trim();
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
