@@ -1,14 +1,17 @@
 // src/app/devlog/page.tsx
 
-import { getContent } from "@api/getData";
-import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
-import { TableOfContents } from "@components/TableOfContents";
-import { ContentMetadata } from "@components/ContentMetadata";
-import CreatedDateBadge from "@components/CreatedDateBadge";
-import MarkdownRenderer from "@components/MarkdownRenderer";
-import PinnedExplanation, {
-  getPinnedHeader,
-} from "./components/PinnedExplanation";
+import { getContent } from '@api/getData';
+import { parseMarkdownHeaders, createUrlId } from '@utils/parseMarkdownHeaders';
+import { TableOfContents } from '@components/TableOfContents';
+import { ContentMetadata } from '@components/ContentMetadata';
+import CreatedDateBadge from '@components/CreatedDateBadge';
+import MarkdownRenderer from '@components/MarkdownRenderer';
+import PinnedExplanation, { getPinnedHeader } from './components/PinnedExplanation';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'DevLog',
+};
 
 interface DevLogEntry {
   _id: string;
@@ -24,26 +27,23 @@ function formatCreatedDate(dateStr: string) {
   if (isNaN(parsed.getTime())) {
     return dateStr;
   }
-  return parsed.toLocaleString("default", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
+  return parsed.toLocaleString('default', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
   });
 }
 
 export default async function DevLogPage() {
-  const devlogs = (await getContent("dev_logs")) as DevLogEntry[] | null;
+  const devlogs = (await getContent('dev_logs')) as DevLogEntry[] | null;
 
   if (!devlogs) {
     return (
       <div className="container mx-auto px-4 py-12">
         <div className="bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg p-6 text-center">
-          <h2 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-2">
-            Unable to load development logs
-          </h2>
+          <h2 className="text-lg font-semibold text-red-800 dark:text-red-200 mb-2">Unable to load development logs</h2>
           <p className="text-red-600 dark:text-red-300">
-            Please try refreshing the page. If the problem persists, the content
-            may be temporarily unavailable.
+            Please try refreshing the page. If the problem persists, the content may be temporarily unavailable.
           </p>
         </div>
       </div>
@@ -72,13 +72,11 @@ export default async function DevLogPage() {
       };
 
       // Sub-headers from the content
-      const contentHeaders = parseMarkdownHeaders(entry.content).map(
-        (header) => ({
-          ...header,
-          id: `${entryId}-${header.id}`,
-          level: header.level + 1,
-        })
-      );
+      const contentHeaders = parseMarkdownHeaders(entry.content).map((header) => ({
+        ...header,
+        id: `${entryId}-${header.id}`,
+        level: header.level + 1,
+      }));
 
       return [mainHeader, ...contentHeaders];
     }),
@@ -107,22 +105,13 @@ export default async function DevLogPage() {
                         <h1 className="text-2xl font-semibold tracking-tight m-0 text-gray-800 dark:text-gray-100">
                           {entry.title}
                         </h1>
-                        <CreatedDateBadge
-                          date={entry.created}
-                          className="text-sm py-1 px-2.5 rounded-md"
-                        />
+                        <CreatedDateBadge date={entry.created} className="text-sm py-1 px-2.5 rounded-md" />
                       </div>
                     </header>
 
                     <div className="p-6 pt-0 bg-white dark:bg-gray-900">
-                      <MarkdownRenderer
-                        content={entry.content}
-                        entryId={entryId}
-                      />
-                      <ContentMetadata
-                        author={entry.author}
-                        last_modified={entry.last_modified}
-                      />
+                      <MarkdownRenderer content={entry.content} entryId={entryId} />
+                      <ContentMetadata author={entry.author} last_modified={entry.last_modified} />
                     </div>
                   </article>
                 );

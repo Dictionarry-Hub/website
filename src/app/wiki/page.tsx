@@ -1,8 +1,13 @@
 // src/app/wiki/page.tsx
-import { getContent } from "@api/getData";
-import Link from "next/link";
-import { Clock, User } from "lucide-react";
-import { format } from "date-fns";
+import { getContent } from '@api/getData';
+import Link from 'next/link';
+import { Clock, User } from 'lucide-react';
+import { format } from 'date-fns';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Wiki',
+};
 
 interface WikiEntry {
   _id: string;
@@ -18,16 +23,15 @@ interface WikiEntry {
 
 const formatDate = (dateStr: string) => {
   try {
-    return format(new Date(dateStr), "MMM dd, yyyy");
+    return format(new Date(dateStr), 'MMM dd, yyyy');
   } catch {
     return dateStr;
   }
 };
 
 export default async function WikiPage() {
-  const wikiEntries = (await getContent("wiki")) as WikiEntry[] | null;
-  const filteredEntries =
-    wikiEntries?.filter((entry) => entry._id !== "home") || [];
+  const wikiEntries = (await getContent('wiki')) as WikiEntry[] | null;
+  const filteredEntries = wikiEntries?.filter((entry) => entry._id !== 'home') || [];
 
   return (
     <div className="container mx-auto px-0 ">
@@ -35,18 +39,13 @@ export default async function WikiPage() {
         <h1 className="text-2xl font-bold mb-4">Dictionarry Wiki</h1>
 
         <p className="text-gray-600 dark:text-gray-400 text-lg">
-          Comprehensive documentation for media automation concepts and
-          configurations
+          Comprehensive documentation for media automation concepts and configurations
         </p>
       </header>
 
       <div className="grid gap-4">
         {filteredEntries.map((entry) => (
-          <Link
-            key={entry._id}
-            href={`/wiki/${entry.slug || entry._id}`}
-            className="block group"
-          >
+          <Link key={entry._id} href={`/wiki/${entry.slug || entry._id}`} className="block group">
             <article
               className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80  rounded-lg border border-gray-200 dark:border-gray-700 p-6 
 transition-all duration-200 ease-in-out
@@ -92,17 +91,13 @@ group-hover:shadow-md"
                   rounded-full border border-blue-100 dark:border-blue-800/50"
                       >
                         <User className="w-4 h-4 text-blue-500 dark:text-blue-400" />
-                        <span className="text-sm text-blue-600 dark:text-blue-300">
-                          {entry.author}
-                        </span>
+                        <span className="text-sm text-blue-600 dark:text-blue-300">{entry.author}</span>
                       </div>
                     )}
                   </div>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-300">
-                  {entry.blurb || "No description provided"}
-                </p>
+                <p className="text-gray-600 dark:text-gray-300">{entry.blurb || 'No description provided'}</p>
               </div>
             </article>
           </Link>

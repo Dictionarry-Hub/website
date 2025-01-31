@@ -1,12 +1,33 @@
 // src/app/wiki/[slug]/page.tsx
-import { getContent } from "@api/getData";
-import { parseMarkdownHeaders, createUrlId } from "@utils/parseMarkdownHeaders";
-import { TableOfContents } from "@components/TableOfContents";
-import { ContentMetadata } from "@components/ContentMetadata";
-import MarkdownRenderer from "@components/MarkdownRenderer";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { getContent } from '@api/getData';
+import { parseMarkdownHeaders, createUrlId } from '@utils/parseMarkdownHeaders';
+import { TableOfContents } from '@components/TableOfContents';
+import { ContentMetadata } from '@components/ContentMetadata';
+import MarkdownRenderer from '@components/MarkdownRenderer';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  // Await params first
+  const { slug } = await params;
+
+  const wikiEntries = (await getContent('wiki')) as WikiEntry[] | null;
+  const article = wikiEntries?.find((entry) => entry.slug === slug || entry._id === slug);
+
+  if (!article) {
+    return {
+      title: 'Article Not Found',
+      description: 'The requested wiki article could not be found.',
+    };
+  }
+
+  return {
+    title: article.title,
+    description: article.content.substring(0, 160).replace(/[#*`]/g, ''),
+  };
+}
 
 interface WikiEntry {
   _id: string;
@@ -17,18 +38,12 @@ interface WikiEntry {
   slug?: string;
 }
 
-export default async function WikiArticlePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function WikiArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   // Await params itself before destructuring
   const { slug } = await params;
 
-  const wikiEntries = (await getContent("wiki")) as WikiEntry[] | null;
-  const article = wikiEntries?.find(
-    (entry) => entry.slug === slug || entry._id === slug
-  );
+  const wikiEntries = (await getContent('wiki')) as WikiEntry[] | null;
+  const article = wikiEntries?.find((entry) => entry.slug === slug || entry._id === slug);
   if (!article) {
     notFound();
   }
@@ -80,10 +95,7 @@ export default async function WikiArticlePage({
                   content={article.content}
                   entryId={entryId} // Use entryId like devlog does
                 />
-                <ContentMetadata
-                  author={article.author}
-                  last_modified={article.last_modified}
-                />
+                <ContentMetadata author={article.author} last_modified={article.last_modified} />
               </div>
             </article>
           </div>
@@ -99,10 +111,10 @@ export default async function WikiArticlePage({
   );
 }
 export async function generateStaticParams() {
-  const wikiEntries = (await getContent("wiki")) as WikiEntry[] | null;
+  const wikiEntries = (await getContent('wiki')) as WikiEntry[] | null;
   return (
     wikiEntries
-      ?.filter((entry) => entry._id !== "home")
+      ?.filter((entry) => entry._id !== 'home')
       .map((entry) => ({
         slug: entry.slug || entry._id,
       })) || []

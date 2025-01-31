@@ -5,17 +5,23 @@ import { Nav } from '@components/Nav';
 import { Footer } from '@components/Footer';
 import '@styles/globals.css';
 import '@styles/prism.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 const schibsted = Schibsted_Grotesk({
   subsets: ['latin'],
 });
 const geistMono = GeistMono;
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://dictionarry.vercel.app'),
   title: {
     template: '%s | Dictionarry',
-    default: 'Dictionarry - Simplify Media Automation',
+    default: 'Dictionarry',
   },
   description:
     'Simplify Radarr & Sonarr media automation through extensive, data-driven documentation, custom formats, and quality profiles. Make media management approachable without requiring extensive technical knowledge.',
@@ -46,10 +52,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: '/apple-touch-icon.png',
   },
@@ -57,7 +63,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'santiagosayshey' }],
   creator: 'santiagosayshey',
   publisher: 'Dictionarry',
-  viewport: 'width=device-width, initial-scale=1',
   robots: {
     index: true,
     follow: true,
