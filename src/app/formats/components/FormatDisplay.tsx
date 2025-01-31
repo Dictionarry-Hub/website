@@ -1,4 +1,6 @@
 // src/app/formats/components/FormatDisplay.tsx
+'use client';
+
 import Link from 'next/link';
 import {
   CheckCircle2,
@@ -10,9 +12,13 @@ import {
   ArrowLeft,
   Download,
   BeakerIcon,
+  Copy,
+  Check,
 } from 'lucide-react';
+import { useState } from 'react';
 import { FORMAT_CATEGORIES } from '../constants/format_constants';
 import { CONDITION_METADATA } from '../constants/condition_constants';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 interface Condition {
   name: string;
@@ -78,12 +84,24 @@ const formatConditionType = (type: string) => {
     .join(' ');
 };
 
+const shouldShowPattern = (type: string): boolean => {
+  return ['release_group', 'release_title', 'edition'].includes(type);
+};
+
 export function FormatDisplay({ format }: FormatDisplayProps) {
   if (!format) return null;
 
   const featuredIcon = getFeaturedIcon(format.tags);
   const IconComponent = featuredIcon?.icon;
   const accentColor = featuredIcon?.accentColor;
+
+  const [copiedPattern, setCopiedPattern] = useState<string | null>(null);
+
+  const handleCopy = async (pattern: string) => {
+    await navigator.clipboard.writeText(pattern);
+    setCopiedPattern(pattern);
+    setTimeout(() => setCopiedPattern(null), 2000);
+  };
 
   return (
     <div className="">
@@ -151,11 +169,10 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                 if (!metadata) return null;
 
                 const Icon = metadata.icon;
-                return (
-                  <div
-                    key={`${condition.type}-${index}`}
-                    className="p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 space-y-2"
-                  >
+                const showPattern = shouldShowPattern(condition.type);
+
+                const conditionContent = (
+                  <div className="p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 space-y-2 cursor-help">
                     <div className="flex items-center gap-2">
                       <Icon className="w-4 h-4 text-blue-500" />
                       <span className="text-sm font-medium">{condition.name}</span>
@@ -168,6 +185,42 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                       {formatConditionType(condition.type)}
                     </div>
                   </div>
+                );
+
+                return showPattern && condition.pattern ? (
+                  <TooltipProvider key={`${condition.type}-${index}`} delayDuration={0}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-full" asChild>
+                        <div>{conditionContent}</div>
+                      </TooltipTrigger>
+                      <TooltipContent
+                        side="bottom"
+                        className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-xl"
+                        sideOffset={5}
+                      >
+                        <div className="flex items-center gap-2">
+                          <code className="text-sm font-mono break-all bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">
+                            {condition.pattern}
+                          </code>
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleCopy(condition.pattern || '');
+                            }}
+                            className="flex-shrink-0 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                          >
+                            {copiedPattern === condition.pattern ? (
+                              <Check className="w-4 h-4 text-green-500" />
+                            ) : (
+                              <Copy className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                            )}
+                          </button>
+                        </div>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                ) : (
+                  <div key={`${condition.type}-${index}`}>{conditionContent}</div>
                 );
               })}
             </div>
