@@ -1,6 +1,6 @@
 import { getContent } from '@api/getData';
 import { FormatNavigation } from './components/FormatNavigation';
-import { Info, BeakerIcon, GitBranch, Download, Library } from 'lucide-react';
+import { Info, BeakerIcon, Handshake, Download, Library } from 'lucide-react';
 import Link from 'next/link';
 
 interface CustomFormatEntry {
@@ -94,9 +94,27 @@ export default async function FormatsPage() {
                     </div>
                     <div className="p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
                       <p className="text-sm text-gray-600 dark:text-gray-300">
-                        Each format includes comprehensive test cases to validate its behavior. These tests ensure
-                        reliable detection across different naming patterns and edge cases. You can inspect the test
-                        cases for each format to understand exactly what it will match.
+                        Each format needs to work <em>reliably</em> for our automation to be useful, which is why{' '}
+                        <strong>Profilarr includes a comprehensive test suite to validate everything</strong>. We've
+                        included all test cases here so you can see exactly what we're checking for. Since it's
+                        impossible to test every possible release name out there, we rely on <em>your feedback</em> to
+                        catch edge cases - if you notice something not working as it should, please let us know!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Contributing and Thanks */}
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Handshake className="w-5 h-5 text-blue-500" />
+                      <h2 className="text-lg font-semibold">Contributing / Thanks</h2>
+                    </div>
+                    <div className="p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
+                      <p className="text-sm text-gray-600 dark:text-gray-300">
+                        These formats represent a <strong>collaborative effort</strong>, building upon foundations from{' '}
+                        <em>TRaSH guides</em> and evolving through community input. This documentation serves both as a
+                        reference and a way to identify potential improvements. If you spot something that could be
+                        enhanced, <em>consider contributing</em> through a PR or issue.
                       </p>
                     </div>
                   </div>
