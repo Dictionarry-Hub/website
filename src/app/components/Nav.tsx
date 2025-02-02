@@ -7,7 +7,7 @@ import { MobileNav } from './MobileNav';
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const isDesktop = useMediaQuery('(min-width: 1000px)');
+  const isDesktop = useMediaQuery('(min-width: 1200px)');
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
