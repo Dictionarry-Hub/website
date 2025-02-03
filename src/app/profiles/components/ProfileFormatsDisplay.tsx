@@ -1,3 +1,5 @@
+// src/app/profiles/components/ProfileFormatsDisplay.tsx
+
 'use client';
 
 import React, { useEffect, useState } from 'react';

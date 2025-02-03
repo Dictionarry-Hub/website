@@ -1,13 +1,10 @@
 // src/app/devlog/page.tsx
-
 import { getContent } from '@api/getData';
-import { parseMarkdownHeaders, createUrlId } from '@utils/parseMarkdownHeaders';
-import { TableOfContents } from '@components/TableOfContents';
-import { ContentMetadata } from '@components/ContentMetadata';
-import CreatedDateBadge from '@components/CreatedDateBadge';
-import MarkdownRenderer from '@components/MarkdownRenderer';
-import PinnedExplanation, { getPinnedHeader } from './components/PinnedExplanation';
+import Link from 'next/link';
+import { Clock, User } from 'lucide-react';
+import { format } from 'date-fns';
 import { Metadata } from 'next';
+import PinnedExplanation from './components/PinnedExplanation';
 
 export const metadata: Metadata = {
   title: 'DevLog',
@@ -16,28 +13,27 @@ export const metadata: Metadata = {
 interface DevLogEntry {
   _id: string;
   title: string;
+  slug?: string;
   content: string;
+  blurb?: string;
   author: string;
-  last_modified: string;
   created: string;
+  last_modified: string;
+  tags?: string[];
 }
 
-function formatCreatedDate(dateStr: string) {
-  const parsed = new Date(dateStr);
-  if (isNaN(parsed.getTime())) {
+const formatDate = (dateStr: string) => {
+  try {
+    return format(new Date(dateStr), 'MMM dd, yyyy');
+  } catch {
     return dateStr;
   }
-  return parsed.toLocaleString('default', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
-}
+};
 
 export default async function DevLogPage() {
-  const devlogs = (await getContent('dev_logs')) as DevLogEntry[] | null;
+  const devLogEntries = (await getContent('dev_logs')) as DevLogEntry[] | null;
 
-  if (!devlogs) {
+  if (!devLogEntries) {
     return (
       <div className="container mx-auto px-4 py-12">
         <div className="bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg p-6 text-center">
@@ -50,81 +46,63 @@ export default async function DevLogPage() {
     );
   }
 
-  // Sort dev logs by newest first
-  devlogs.sort((a, b) => {
+  const sortedDevLogs = devLogEntries.sort((a, b) => {
     const dateA = new Date(a.created).getTime();
     const dateB = new Date(b.created).getTime();
     return dateB - dateA;
   });
 
-  // Build combined table of contents, starting with pinned explanation
-  const allHeaders = [
-    getPinnedHeader(),
-    ...devlogs.flatMap((entry) => {
-      const entryId = createUrlId(entry.title);
-
-      // Main "heading" for each devlog:
-      const mainHeader = {
-        id: `entry-${entryId}`,
-        text: entry.title,
-        level: 1,
-        date: formatCreatedDate(entry.created),
-      };
-
-      // Sub-headers from the content
-      const contentHeaders = parseMarkdownHeaders(entry.content).map((header) => ({
-        ...header,
-        id: `${entryId}-${header.id}`,
-        level: header.level + 1,
-      }));
-
-      return [mainHeader, ...contentHeaders];
-    }),
-  ];
-
   return (
-    <div className="container mx-auto">
-      <div className="pb-6">
-        <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-12 lg:col-span-9">
-            <div className="space-y-12">
-              {/* Pinned Explanation Component */}
-              <PinnedExplanation />
+    <div className="container mx-auto px-0">
+      <PinnedExplanation />
 
-              {/* Regular DevLog Articles */}
-              {devlogs.map((entry) => {
-                const entryId = createUrlId(entry.title);
-                return (
-                  <article
-                    key={entry._id}
-                    id={`entry-${entryId}`}
-                    className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-700 overflow-hidden"
-                  >
-                    <header className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 px-6 py-4 border-b border-gray-200 dark:border-gray-700 rounded-t-lg">
-                      <div className="flex items-center justify-between gap-4">
-                        <h1 className="text-2xl font-semibold tracking-tight m-0 text-gray-800 dark:text-gray-100">
-                          {entry.title}
-                        </h1>
-                        <CreatedDateBadge date={entry.created} className="text-sm py-1 px-2.5 rounded-md" />
+      <div className="grid gap-4 mt-5">
+        {sortedDevLogs.map((entry) => (
+          <Link key={entry._id} href={`/devlog/${entry.slug || entry._id}`} className="block group">
+            <article className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+                  <div className="flex flex-col gap-4">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      {entry.title}
+                    </h2>
+
+                    {entry.tags && entry.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {entry.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900/30 
+                                text-blue-600 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50"
+                          >
+                            {tag}
+                          </span>
+                        ))}
                       </div>
-                    </header>
+                    )}
+                  </div>
 
-                    <div className="p-6 pt-0 bg-white dark:bg-gray-900">
-                      <MarkdownRenderer content={entry.content} entryId={entryId} />
-                      <ContentMetadata author={entry.author} last_modified={entry.last_modified} />
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-
-          <aside className="hidden lg:block col-span-12 lg:col-span-3">
-            <div className="fixed top-24 w-[350px]">
-              <TableOfContents headers={allHeaders} />
-            </div>
-          </aside>
-        </div>
+                  <div className="flex flex-wrap sm:flex-col gap-3 sm:items-end">
+                    {entry.created && (
+                      <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full border border-gray-200 dark:border-gray-700 whitespace-nowrap">
+                        <Clock className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                        <span className="text-sm text-gray-600 dark:text-gray-300">
+                          Created {formatDate(entry.created)}
+                        </span>
+                      </div>
+                    )}
+                    {entry.author && (
+                      <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 rounded-full border border-blue-100 dark:border-blue-800/50 whitespace-nowrap">
+                        <User className="w-4 h-4 text-blue-500 dark:text-blue-400" />
+                        <span className="text-sm text-blue-600 dark:text-blue-300">{entry.author}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </article>
+          </Link>
+        ))}
       </div>
     </div>
   );

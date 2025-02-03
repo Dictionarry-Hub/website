@@ -1,6 +1,8 @@
+// src/app/formats/[id]/page.tsx
+
 import { getContent } from '@api/getData';
-import { FormatNavigation } from '../components/FormatNavigation';
 import { FormatDisplay } from '../components/FormatDisplay';
+import { ResponsiveFormatLayout } from '../components/ResponsiveFormatLayout';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
@@ -89,18 +91,11 @@ export default async function FormatPage({ params }: PageProps) {
   }
 
   return (
-    <div className="container mx-auto flex flex-col box-border h-full">
-      <div className="flex gap-8 flex-1 min-h-0">
-        <main className="flex-1 overflow-y-auto">
-          <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-0">
-            <FormatDisplay format={selectedFormat} />
-          </div>
-        </main>
-        <aside className="w-[350px] overflow-y-auto">
-          <FormatNavigation formats={customFormats} selectedId={selectedFormat._id} />
-        </aside>
+    <ResponsiveFormatLayout formats={customFormats} selectedId={selectedFormat._id}>
+      <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-0">
+        <FormatDisplay format={selectedFormat} />
       </div>
-    </div>
+    </ResponsiveFormatLayout>
   );
 }
 

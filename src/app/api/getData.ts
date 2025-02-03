@@ -53,8 +53,8 @@ export interface ReleaseGroupTiers {
 export async function getVersion() {
   try {
     const response = await fetch(
-      "https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/version.json",
-      { next: { revalidate: 60 } }
+      'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/version.json',
+      { next: { revalidate: 86400 } }
     );
 
     if (!response.ok) {
@@ -64,7 +64,7 @@ export async function getVersion() {
     const version = await response.json();
     return version;
   } catch (error) {
-    console.error("Error fetching version:", error);
+    console.error('Error fetching version:', error);
     return null;
   }
 }
@@ -74,8 +74,8 @@ export async function getContent(type: string) {
     const response = await fetch(
       `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/${type}.json`,
       {
-        next: { revalidate: 60 },
-        cache: "force-cache",
+        next: { revalidate: 86400 },
+        cache: 'force-cache',
       }
     );
 
@@ -90,7 +90,7 @@ export async function getContent(type: string) {
       return data;
     } catch (parseError) {
       console.error(`Error parsing ${type} JSON:`, parseError);
-      console.error("Raw response:", text.slice(0, 200));
+      console.error('Raw response:', text.slice(0, 200));
       throw new Error(`Invalid JSON in ${type} response`);
     }
   } catch (error) {
@@ -102,17 +102,17 @@ export async function getContent(type: string) {
 export async function getHomeContent() {
   try {
     const response = await fetch(
-      "https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/wiki.json",
+      'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/wiki.json',
       {
         next: {
-          revalidate: 60,
+          revalidate: 86400,
         },
-        cache: "force-cache",
+        cache: 'force-cache',
       }
     );
 
     if (!response.ok) {
-      throw new Error("Failed to fetch");
+      throw new Error('Failed to fetch');
     }
 
     const data = await response.json();
@@ -124,7 +124,7 @@ export async function getHomeContent() {
       last_modified?: string;
     }
 
-    const homeEntry = data.find((entry: WikiEntry) => entry._id === "home");
+    const homeEntry = data.find((entry: WikiEntry) => entry._id === 'home');
 
     if (!homeEntry) {
       return null;
@@ -132,12 +132,12 @@ export async function getHomeContent() {
 
     return {
       id: homeEntry._id,
-      content: homeEntry.content || "",
-      author: homeEntry.author || "Unknown",
+      content: homeEntry.content || '',
+      author: homeEntry.author || 'Unknown',
       last_modified: homeEntry.last_modified || null,
     };
   } catch (error) {
-    console.error("Error fetching home content:", error);
+    console.error('Error fetching home content:', error);
     return null;
   }
 }
@@ -146,8 +146,8 @@ export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> 
     const response = await fetch(
       `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/custom_formats.json`,
       {
-        next: { revalidate: 60 },
-        cache: "force-cache",
+        next: { revalidate: 86400 },
+        cache: 'force-cache',
       }
     );
 
@@ -159,8 +159,7 @@ export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> 
     if (!data) return null;
 
     // Case-insensitive regex with normalized output
-    const tierRegex =
-      /^(SD|720p|1080p|2160p)\s+(quality|efficient)\s+tier\s+(\d+)$/i;
+    const tierRegex = /^(SD|720p|1080p|2160p)\s+(quality|efficient)\s+tier\s+(\d+)$/i;
     const tiers: ReleaseGroupTiers = {
       resolutions: {},
     };
@@ -196,7 +195,7 @@ export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> 
 
     return tiers;
   } catch (error) {
-    console.error("Error fetching release group tiers:", error);
+    console.error('Error fetching release group tiers:', error);
     return null;
   }
 }

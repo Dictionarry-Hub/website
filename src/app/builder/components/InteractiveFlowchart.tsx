@@ -1,3 +1,5 @@
+// src/app/builder/components/InteractiveFlowchart.tsx
+
 'use client';
 
 import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';

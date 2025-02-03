@@ -1,3 +1,5 @@
+// src/app/builder/components/FlowchartInfo.tsx
+
 import React from 'react';
 import { columnInfo, getRecommendations } from '@/data/profileInfoData';
 import { QualityProfileData } from '@/data/flowchartData';

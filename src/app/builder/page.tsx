@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
-import InteractiveFlowchart from './components/InteractiveFlowchart';
+// src/app/builder/page.tsx
+import BuilderClient from './components/BuilderClient';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Profile Builder',
 };
 
-export default function BuilderPage() {
-  return <InteractiveFlowchart />;
+export default function Page() {
+  return <BuilderClient />;
 }
