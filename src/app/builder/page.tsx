@@ -1,3 +1,5 @@
+// src/app/builder/page.tsx
+
 import type { Metadata } from 'next';
 import InteractiveFlowchart from './components/InteractiveFlowchart';
 
