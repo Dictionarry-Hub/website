@@ -53,8 +53,7 @@ export interface ReleaseGroupTiers {
 export async function getVersion() {
   try {
     const response = await fetch(
-      'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/version.json',
-      { next: { revalidate: 86400 } }
+      'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/version.json'
     );
 
     if (!response.ok) {
@@ -72,11 +71,7 @@ export async function getVersion() {
 export async function getContent(type: string) {
   try {
     const response = await fetch(
-      `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/${type}.json`,
-      {
-        next: { revalidate: 86400 },
-        cache: 'force-cache',
-      }
+      `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/${type}.json`
     );
 
     if (!response.ok) {
@@ -101,15 +96,7 @@ export async function getContent(type: string) {
 
 export async function getHomeContent() {
   try {
-    const response = await fetch(
-      'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/wiki.json',
-      {
-        next: {
-          revalidate: 86400,
-        },
-        cache: 'force-cache',
-      }
-    );
+    const response = await fetch('https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/wiki.json');
 
     if (!response.ok) {
       throw new Error('Failed to fetch');
@@ -144,11 +131,7 @@ export async function getHomeContent() {
 export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> {
   try {
     const response = await fetch(
-      `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/custom_formats.json`,
-      {
-        next: { revalidate: 86400 },
-        cache: 'force-cache',
-      }
+      `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/custom_formats.json`
     );
 
     if (!response.ok) {
