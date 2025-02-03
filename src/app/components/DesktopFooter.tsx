@@ -13,25 +13,7 @@ export function DesktopFooter() {
         <div className="flex flex-col items-center space-y-2 md:items-start">
           <div className="group relative inline-flex items-center gap-2 rounded-md bg-gray-300/50 dark:bg-gray-800/50 px-3 py-1.5 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
             <Hammer size={14} className="text-gray-500" />
-            <span className="text-sm text-gray-600 dark:text-gray-400">
-              built by{' '}
-              <Link
-                href="https://github.com/santiagosayshey"
-                className="relative text-gray-900 dark:text-gray-100 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="relative">
-                  santiagosayshey
-                  <span className="absolute -bottom-px left-0 w-full h-px bg-blue-600 dark:bg-blue-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-                </span>
-              </Link>
-            </span>
-
-            {/* Tooltip */}
-            <span className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-900 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 dark:bg-gray-100 dark:text-gray-900">
-              No copyright, use this stuff however you want :P
-            </span>
+            <span className="text-sm text-gray-600 dark:text-gray-400">Dictionarry • 2025</span>
           </div>
         </div>
 
