@@ -1,12 +1,11 @@
-"use client";
+// src/app/formats/components/FormatNavigation.tsx
 
-import { useCallback, useState, useEffect } from "react";
-import Link from "next/link";
-import { ChevronRight, ChevronDown, ChevronUp, X } from "lucide-react";
-import {
-  FORMAT_CATEGORIES,
-  FormatCategory,
-} from "../constants/format_constants";
+'use client';
+
+import { useCallback, useState, useEffect } from 'react';
+import Link from 'next/link';
+import { ChevronRight, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { FORMAT_CATEGORIES, FormatCategory } from '../constants/format_constants';
 
 interface CustomFormat {
   _id: string;
@@ -24,35 +23,33 @@ interface CategorizedFormat extends FormatCategory {
 }
 
 const createUrlSlug = (name: string): string => {
-  return name.toLowerCase().replace(/\s+/g, "-").trim();
+  return name.toLowerCase().replace(/\s+/g, '-').trim();
 };
 
-export function FormatNavigation({
-  formats,
-  selectedId,
-}: FormatNavigationProps) {
+export function FormatNavigation({ formats, selectedId }: FormatNavigationProps) {
   // Initialize state with all groups collapsed
-  const [collapsedGroups, setCollapsedGroups] = useState<
-    Record<string, boolean>
-  >(() => {
+  const [collapsedGroups, setCollapsedGroups] = useState<Record<string, boolean>>(() => {
     // Create initial state with all categories collapsed
-    const initialState = FORMAT_CATEGORIES.reduce((acc, category) => {
-      acc[category.id] = true;
-      return acc;
-    }, {} as Record<string, boolean>);
+    const initialState = FORMAT_CATEGORIES.reduce(
+      (acc, category) => {
+        acc[category.id] = true;
+        return acc;
+      },
+      {} as Record<string, boolean>
+    );
 
     // Add uncategorized section
-    initialState["uncategorized"] = true;
+    initialState['uncategorized'] = true;
 
     // In client-side, try to get saved state
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       try {
-        const savedStates = localStorage.getItem("collapsedGroups");
+        const savedStates = localStorage.getItem('collapsedGroups');
         if (savedStates) {
           return JSON.parse(savedStates);
         }
       } catch (error) {
-        console.error("Error reading from localStorage:", error);
+        console.error('Error reading from localStorage:', error);
       }
     }
 
@@ -61,14 +58,11 @@ export function FormatNavigation({
 
   // Save collapsed states to localStorage whenever they change
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       try {
-        localStorage.setItem(
-          "collapsedGroups",
-          JSON.stringify(collapsedGroups)
-        );
+        localStorage.setItem('collapsedGroups', JSON.stringify(collapsedGroups));
       } catch (error) {
-        console.error("Error saving to localStorage:", error);
+        console.error('Error saving to localStorage:', error);
       }
     }
   }, [collapsedGroups]);
@@ -81,34 +75,25 @@ export function FormatNavigation({
   };
 
   const categorizeFormats = useCallback(() => {
-    const categorized: CategorizedFormat[] = FORMAT_CATEGORIES.map(
-      (category) => {
-        const matchingFormats = formats.filter((format) =>
-          format.tags?.some((tag) => category.tags.includes(tag))
-        );
+    const categorized: CategorizedFormat[] = FORMAT_CATEGORIES.map((category) => {
+      const matchingFormats = formats.filter((format) => format.tags?.some((tag) => category.tags.includes(tag)));
 
-        return {
-          ...category,
-          formats: matchingFormats.sort((a, b) => a.name.localeCompare(b.name)),
-        };
-      }
-    );
+      return {
+        ...category,
+        formats: matchingFormats.sort((a, b) => a.name.localeCompare(b.name)),
+      };
+    });
 
     // Add uncategorized section for formats that don't match any category
     const uncategorizedFormats = formats.filter(
-      (format) =>
-        !format.tags?.some((tag) =>
-          FORMAT_CATEGORIES.some((cat) => cat.tags.includes(tag))
-        )
+      (format) => !format.tags?.some((tag) => FORMAT_CATEGORIES.some((cat) => cat.tags.includes(tag)))
     );
 
     if (uncategorizedFormats.length > 0) {
       categorized.push({
-        id: "uncategorized",
-        label: "Other Formats",
-        formats: uncategorizedFormats.sort((a, b) =>
-          a.name.localeCompare(b.name)
-        ),
+        id: 'uncategorized',
+        label: 'Other Formats',
+        formats: uncategorizedFormats.sort((a, b) => a.name.localeCompare(b.name)),
         tags: [],
         icon: null,
       });
@@ -130,16 +115,11 @@ export function FormatNavigation({
               const isLastGroup = index === categorizedFormats.length - 1;
 
               return (
-                <div
-                  key={category.id}
-                  className={`space-y-0 ${isLastGroup ? "!mb-0" : ""}`}
-                >
+                <div key={category.id} className={`space-y-0 ${isLastGroup ? '!mb-0' : ''}`}>
                   <button
                     onClick={() => toggleGroup(category.id)}
                     className={`w-full text-left py-3 px-4 bg-gray-100 dark:bg-gray-800/80 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
-                      index === categorizedFormats.length - 1
-                        ? ""
-                        : "border-b border-gray-200 dark:border-gray-700"
+                      index === categorizedFormats.length - 1 ? '' : 'border-b border-gray-200 dark:border-gray-700'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -156,7 +136,7 @@ export function FormatNavigation({
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                           {category.formats.length} format
-                          {category.formats.length !== 1 ? "s" : ""}
+                          {category.formats.length !== 1 ? 's' : ''}
                         </span>
                         <div className="p-1 rounded-md">
                           {hasItems ? (
@@ -186,13 +166,13 @@ export function FormatNavigation({
                               className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200
                                 ${
                                   isSelected
-                                    ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
-                                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'
+                                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                                 }`}
                             >
                               <ChevronRight
                                 className={`w-4 h-4 transition-opacity
-                                  ${isSelected ? "opacity-100" : "opacity-0"}`}
+                                  ${isSelected ? 'opacity-100' : 'opacity-0'}`}
                               />
                               <span>{format.name}</span>
                             </Link>

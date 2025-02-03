@@ -107,36 +107,29 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
     <div className="">
       {/* Header */}
       <div className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-t-lg border-b border-gray-200 dark:border-gray-700 p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {IconComponent && accentColor && (
-              <div className={`flex-shrink-0 p-2 ${accentColor.bg} ${accentColor.darkBg} rounded-lg`}>
-                <IconComponent className={`w-4 h-4 ${accentColor.light} ${accentColor.dark}`} />
-              </div>
-            )}
-            <div className="flex items-center gap-3">
-              <h1 className="text-xl font-bold">{format.name}</h1>
-              {format.tags && format.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {format.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              {IconComponent && accentColor && (
+                <div className={`flex-shrink-0 p-2 ${accentColor.bg} ${accentColor.darkBg} rounded-lg`}>
+                  <IconComponent className={`w-4 h-4 ${accentColor.light} ${accentColor.dark}`} />
                 </div>
               )}
+              <h1 className="text-xl font-bold">{format.name}</h1>
             </div>
+            <div className="hidden sm:block">
+              <Link
+                href="/formats"
+                className="group inline-flex items-center gap-2 px-3 py-1.5 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                <span className="text-sm font-medium">Back to Formats</span>
+              </Link>
+            </div>
+            <Link href="/formats" className="sm:hidden">
+              <ArrowLeft className="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400" />
+            </Link>
           </div>
-          <Link
-            href="/formats"
-            className="group inline-flex items-center gap-2 px-3 py-1.5 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm font-medium">Back to Formats</span>
-          </Link>
         </div>
       </div>
 
@@ -239,14 +232,17 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
             <div className="space-y-4">
               {format.tests.map((test) => (
                 <div key={test.id} className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50">
-                  <div className="flex items-center justify-between mb-2">
+                  {/* Test Header */}
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      {test.passes ? (
-                        <CheckCircle2 className="w-4 h-4 text-green-500" />
-                      ) : (
-                        <XCircle className="w-4 h-4 text-red-500" />
-                      )}
-                      <code className="text-sm font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
+                      <div className="flex-shrink-0">
+                        {test.passes ? (
+                          <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        ) : (
+                          <XCircle className="w-4 h-4 text-red-500" />
+                        )}
+                      </div>
+                      <code className="text-sm font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded break-all max-w-[250px] sm:max-w-none">
                         {test.input}
                       </code>
                     </div>
@@ -256,22 +252,26 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                   </div>
 
                   <div className="mt-3 space-y-2">
+                    {/* Test Results */}
                     <div className="text-sm text-gray-600 dark:text-gray-300">
                       Expected: <span className="font-medium">{test.expected ? 'Pass' : 'Fail'}</span>
                     </div>
 
+                    {/* Condition Results */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {test.conditionResults.map((result, index) => (
                         <div
                           key={index}
                           className="text-xs flex items-center gap-2 p-2 bg-gray-100 dark:bg-gray-700/50 rounded"
                         >
-                          {result.matches ? (
-                            <CheckCircle2 className="w-3 h-3 text-green-500" />
-                          ) : (
-                            <XCircle className="w-3 h-3 text-red-500" />
-                          )}
-                          <span>{result.name}</span>
+                          <div className="flex-shrink-0">
+                            {result.matches ? (
+                              <CheckCircle2 className="w-3 h-3 text-green-500" />
+                            ) : (
+                              <XCircle className="w-3 h-3 text-red-500" />
+                            )}
+                          </div>
+                          <span className="break-words">{result.name}</span>
                         </div>
                       ))}
                     </div>
