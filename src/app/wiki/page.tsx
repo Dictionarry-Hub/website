@@ -35,14 +35,24 @@ export default async function WikiPage() {
 
   return (
     <div className="container mx-auto px-0">
-      <header className="mb-4">
-        <h1 className="text-2xl font-bold mb-4">Dictionarry Wiki</h1>
-        <p className="text-gray-600 dark:text-gray-400 text-lg">
-          Comprehensive documentation for media automation concepts and configurations
-        </p>
-      </header>
+      <article
+        id="pinned-explanation"
+        className="relative prose prose-lg dark:prose-invert max-w-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-700 overflow-hidden"
+      >
+        <header className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 px-6 py-4 border-b border-gray-200 dark:border-gray-700 rounded-t-lg">
+          <div className="flex items-center gap-3">
+            <h1 className="text-2xl font-semibold tracking-tight m-0 text-gray-800 dark:text-gray-100">
+              Dictionarry Wiki
+            </h1>
+          </div>
+        </header>
 
-      <div className="grid gap-4">
+        <div className="p-6 bg-white dark:bg-gray-900">
+          Comprehensive documentation for media automation concepts and configurations
+        </div>
+      </article>
+
+      <div className="grid gap-4 mt-5">
         {filteredEntries.map((entry) => (
           <Link key={entry._id} href={`/wiki/${entry.slug || entry._id}`} className="block group">
             <article className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
