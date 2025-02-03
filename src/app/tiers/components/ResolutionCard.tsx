@@ -1,3 +1,5 @@
+// src/app/tiers/components/ResolutionCard.tsx
+
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Star, Zap } from 'lucide-react';
@@ -40,10 +42,10 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
   const resData = RESOLUTION_DATA[resolution as keyof typeof RESOLUTION_DATA];
 
   return (
-    <div className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+    <div className="bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
       {/* Header */}
-      <div className="px-6 py-5 border-b border-gray-200 dark:border-gray-700 bg-white/50 dark:bg-gray-800/50">
-        <h2 className="text-xl font-bold">
+      <div className="px-6 py-5 border-b border-gray-200 dark:border-gray-700 bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80">
+        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
           {resData.title} ({resolution})
         </h2>
       </div>
@@ -52,12 +54,12 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
       <div className="grid md:grid-cols-2 divide-x divide-gray-200 dark:divide-gray-700">
         {/* Quality Section */}
         <Link href={`/tiers/${resolution}/quality`} className="group">
-          <div className="p-6 transition-all duration-200 hover:bg-white/50 dark:hover:bg-gray-800/50">
+          <div className="p-6 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800">
             <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                    <Star className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <Star className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
                     <div className="flex items-center gap-3">
@@ -71,7 +73,7 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
                     <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">{resData.qualityNote}</p>
                   </div>
                 </div>
-                <ArrowRight className="hidden sm:block w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
+                <ArrowRight className="hidden sm:block w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
               </div>
             </div>
           </div>
@@ -79,12 +81,12 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
 
         {/* Efficiency Section */}
         <Link href={`/tiers/${resolution}/efficient`} className="group">
-          <div className="p-6 transition-all duration-200 hover:bg-white/50 dark:hover:bg-gray-800/50">
+          <div className="p-6 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800">
             <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                    <Zap className="w-5 h-5 text-green-600 dark:text-green-400" />
+                    <Zap className="w-4 h-4 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
                     <div className="flex items-center gap-3">
@@ -98,7 +100,7 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
                     <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">{resData.efficiencyNote}</p>
                   </div>
                 </div>
-                <ArrowRight className="hidden sm:block w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
+                <ArrowRight className="hidden sm:block w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
               </div>
             </div>
           </div>
