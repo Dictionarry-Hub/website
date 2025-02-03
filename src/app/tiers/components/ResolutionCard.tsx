@@ -51,7 +51,7 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
       </div>
 
       {/* Tier Links Grid */}
-      <div className="grid md:grid-cols-2 divide-x divide-gray-200 dark:divide-gray-700">
+      <div className="grid md:grid-cols-2">
         {/* Quality Section */}
         <Link href={`/tiers/${resolution}/quality`} className="group">
           <div className="p-6 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800">
@@ -80,7 +80,10 @@ export default function ResolutionCard({ resolution, Quality = [], Efficient = [
         </Link>
 
         {/* Efficiency Section */}
-        <Link href={`/tiers/${resolution}/efficient`} className="group">
+        <Link
+          href={`/tiers/${resolution}/efficient`}
+          className="group border-t md:border-t-0 md:border-l border-gray-200 dark:border-gray-700"
+        >
           <div className="p-6 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800">
             <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between">
