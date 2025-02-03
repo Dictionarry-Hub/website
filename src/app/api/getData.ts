@@ -54,7 +54,7 @@ export async function getVersion() {
   try {
     const response = await fetch(
       'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/version.json',
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 86400 } }
     );
 
     if (!response.ok) {
@@ -74,7 +74,7 @@ export async function getContent(type: string) {
     const response = await fetch(
       `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/${type}.json`,
       {
-        next: { revalidate: 60 },
+        next: { revalidate: 86400 },
         cache: 'force-cache',
       }
     );
@@ -105,7 +105,7 @@ export async function getHomeContent() {
       'https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/wiki.json',
       {
         next: {
-          revalidate: 60,
+          revalidate: 86400,
         },
         cache: 'force-cache',
       }
@@ -146,7 +146,7 @@ export async function getReleaseGroupTiers(): Promise<ReleaseGroupTiers | null> 
     const response = await fetch(
       `https://raw.githubusercontent.com/Dictionarry-Hub/database/stable/bundles/custom_formats.json`,
       {
-        next: { revalidate: 60 },
+        next: { revalidate: 86400 },
         cache: 'force-cache',
       }
     );
