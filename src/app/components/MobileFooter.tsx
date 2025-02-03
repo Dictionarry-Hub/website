@@ -2,8 +2,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Hammer, Coffee } from 'lucide-react';
-import { useState } from 'react';
+import { SupportButton } from './SupportButton';
 
 export function MobileFooter() {
   return (
@@ -55,14 +54,7 @@ export function MobileFooter() {
             </div>
           </Link>
 
-          <Link
-            href="https://www.buymeacoffee.com/santiagosayshey"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative transform transition-transform duration-200 ease-out hover:scale-105"
-          >
-            <Coffee size={20} className="text-gray-600 dark:text-gray-400" />
-          </Link>
+          <SupportButton />
         </div>
       </div>
     </div>

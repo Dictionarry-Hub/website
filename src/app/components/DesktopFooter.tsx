@@ -2,7 +2,8 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Hammer, Coffee } from 'lucide-react';
+import { Hammer } from 'lucide-react';
+import { SupportButton } from './SupportButton';
 
 export function DesktopFooter() {
   return (
@@ -88,19 +89,7 @@ export function DesktopFooter() {
             </div>
           </Link>
 
-          <a
-            href="https://www.buymeacoffee.com/santiagosayshey"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative transform transition-transform duration-200 ease-out hover:scale-105"
-          >
-            <img
-              src="https://img.buymeacoffee.com/button-api/?text=Support Us!&emoji=☕&slug=santiagosayshey&button_colour=3B82F6&font_colour=ffffff&font_family=Inter&outline_colour=ffffff&coffee_colour=FFDD00"
-              alt="Buy Me a Coffee"
-              width="160"
-              height="42"
-            />
-          </a>
+          <SupportButton />
         </div>
       </div>
     </div>

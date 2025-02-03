@@ -1,8 +1,5 @@
 // src/app/components/Footer.tsx
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Hammer, Coffee } from 'lucide-react';
 import { useMediaQuery } from '@hooks/useMediaQuery';
 import { MobileFooter } from './MobileFooter';
 import { DesktopFooter } from './DesktopFooter';
