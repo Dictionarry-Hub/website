@@ -82,6 +82,11 @@ export async function getContent(type: string) {
 
     try {
       const data = JSON.parse(text);
+
+      if (type === 'profiles') {
+        console.log('Profiles data:', JSON.stringify(data, null, 2));
+      }
+
       return data;
     } catch (parseError) {
       console.error(`Error parsing ${type} JSON:`, parseError);
