@@ -1,3 +1,5 @@
+// src/app/profiles/components/ProfileDisplay.tsx
+
 'use client';
 
 import React from 'react';

@@ -1,3 +1,5 @@
+// src/app/profiles/components/ProfileNavigation.tsx
+
 'use client';
 
 import { useCallback, useState, useEffect } from 'react';
