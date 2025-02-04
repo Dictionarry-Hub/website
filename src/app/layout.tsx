@@ -3,6 +3,8 @@ import { Schibsted_Grotesk } from 'next/font/google';
 import { GeistMono } from 'geist/font/mono';
 import { Nav } from '@components/Nav';
 import { Footer } from '@components/Footer';
+import { NavigationWrapper } from './components/NavigationWrapper';
+import { getContent } from '@api/getData';
 import '@styles/globals.css';
 import '@styles/prism.css';
 import type { Metadata, Viewport } from 'next';
@@ -73,11 +75,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const [customFormats, profiles] = await Promise.all([getContent('custom_formats'), getContent('profiles')]);
+
   return (
-    <html lang="en" className={`dark ${schibsted.className}`}>
+    <html lang="en" className={`dark ${schibsted.className} scrollable`}>
       <body className={`min-h-screen bg-white dark:bg-gray-900 ${geistMono.variable} flex flex-col`}>
-        <Nav />
+        <Nav formatNav={<NavigationWrapper formats={customFormats} profiles={profiles} />} />
         <main className="container mx-auto px-4 py-8 mt-16 flex-1 w-full">{children}</main>
         <Footer />
       </body>
