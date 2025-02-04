@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`dark ${schibsted.className}`}>
+    <html lang="en" className={`dark ${schibsted.className} scrollable`}>
       <body className={`min-h-screen bg-white dark:bg-gray-900 ${geistMono.variable} flex flex-col`}>
         <Nav />
         <main className="container mx-auto px-4 py-8 mt-16 flex-1 w-full">{children}</main>
