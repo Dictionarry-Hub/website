@@ -7,6 +7,6 @@ import MobileInteractiveFlowchart from './MobileInteractiveFlowchart';
 import { useMediaQuery } from '@hooks/useMediaQuery';
 
 export default function BuilderClient() {
-  const isMobile = useMediaQuery('(max-width: 768px)');
-  return isMobile ? <MobileInteractiveFlowchart /> : <InteractiveFlowchart />;
+  const isVertical = useMediaQuery('(orientation: portrait)');
+  return isVertical ? <MobileInteractiveFlowchart /> : <InteractiveFlowchart />;
 }
