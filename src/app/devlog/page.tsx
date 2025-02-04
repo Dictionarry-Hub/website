@@ -59,7 +59,7 @@ export default async function DevLogPage() {
       <div className="grid gap-4 mt-5">
         {sortedDevLogs.map((entry) => (
           <Link key={entry._id} href={`/devlog/${entry.slug || entry._id}`} className="block group">
-            <article className="bg-gradient-to-br from-gray-50/80 to-gray-100/50 dark:from-gray-800/90 dark:to-gray-900/80 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+            <article className="bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
                   <div className="flex flex-col gap-4">
