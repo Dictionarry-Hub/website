@@ -12,6 +12,8 @@ interface NavProps {
 export function Nav({ formatNav }: NavProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const isPortrait = useMediaQuery('(orientation: portrait)');
+  const isNarrow = useMediaQuery('(max-width: 1024px)');
+  const shouldShowMobile = isPortrait || isNarrow;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
@@ -26,7 +28,7 @@ export function Nav({ formatNav }: NavProps) {
       >
         <nav className="container mx-auto px-4">
           <div className="h-16 flex items-center">
-            {!isPortrait ? (
+            {!shouldShowMobile ? (
               <DesktopNav />
             ) : (
               <>
