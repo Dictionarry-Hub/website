@@ -18,6 +18,7 @@ import {
 import { useState } from 'react';
 import { FORMAT_CATEGORIES } from '../constants/format_constants';
 import { CONDITION_METADATA } from '../constants/condition_constants';
+import ReactMarkdown from 'react-markdown';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 interface Condition {
@@ -140,7 +141,9 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
             <Info className="w-5 h-5 text-blue-500" />
             <h2 className="text-lg font-semibold">Description</h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-300">{format.description}</p>
+          <div className="prose prose-sm dark:prose-invert max-w-none">
+            <ReactMarkdown>{format.description}</ReactMarkdown>
+          </div>
         </div>
       )}
 
