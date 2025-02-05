@@ -187,7 +187,15 @@ export function FormatDisplay({ format }: FormatDisplayProps) {
                   <TooltipProvider key={`${condition.type}-${index}`} delayDuration={0}>
                     <Tooltip>
                       <TooltipTrigger className="w-full" asChild>
-                        <div>{conditionContent}</div>
+                        <button
+                          className="w-full text-left"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                          }}
+                        >
+                          {conditionContent}
+                        </button>
                       </TooltipTrigger>
                       <TooltipContent
                         side="bottom"
