@@ -185,60 +185,46 @@ const InteractiveFlowchart: React.FC = () => {
     const node = graphData.nodes.find((n) => n.id === nodeId);
     if (!node) return;
 
+    // Check if node is already selected
+    if (selectedNodes.includes(nodeId)) {
+      const index = selectedNodes.indexOf(nodeId);
+      setSelectedNodes((prev) => prev.slice(0, index));
+      return;
+    }
+
+    // First selection must be from column 0
     if (selectedNodes.length === 0) {
-      // Must pick from column 0 first
       if (node.column !== 0) return;
       setSelectedNodes([nodeId]);
       return;
     }
 
+    // Check if this is a valid next selection
     const lastSelectedId = selectedNodes[selectedNodes.length - 1];
-    const lastSelectedNode = graphData.nodes.find((n) => n.id === lastSelectedId);
-    if (!lastSelectedNode) return;
-
-    // gather edges from lastSelectedId that pass condition
-    const validNextEdges = graphData.edges.filter((edge) => {
-      if (edge.from !== lastSelectedId) return false;
-      if (edge.condition && !edge.condition(selectedNodes)) return false;
-      return true;
-    });
+    const validNextEdges = graphData.edges.filter(
+      (edge) => edge.from === lastSelectedId && (!edge.condition || edge.condition(selectedNodes))
+    );
     const validNextIds = validNextEdges.map((e) => e.to);
 
-    // forward or backward?
-    const goingForward = validNextIds.includes(nodeId);
-    const goingBack = node.column < lastSelectedNode.column;
+    if (!validNextIds.includes(nodeId)) return;
 
-    if (!goingForward && !goingBack) return;
-
-    // if going back
-    if (goingBack) {
-      if (!selectedNodes.includes(nodeId)) return;
-      const index = selectedNodes.indexOf(nodeId);
-      setSelectedNodes((prev) => prev.slice(0, index + 1));
-      return;
-    }
-
-    // going forward
+    // Add new selection
     const currentColumn = node.column;
-    if (currentColumn < selectedNodes.length) {
-      // slice off future picks
-      setSelectedNodes((prev) => prev.slice(0, currentColumn));
-    }
-
     setSelectedNodes((prev) => {
       const newSel = [...prev];
       newSel[currentColumn] = nodeId;
-      return newSel;
+      return newSel.slice(0, currentColumn + 1);
     });
   };
 
-  // Reset / Back
+  // Reset handler - simply clears all selections
   const handleReset = () => setSelectedNodes([]);
-  const handleBack = () => {
-    if (selectedNodes.length > 0) {
-      setSelectedNodes((prev) => prev.slice(0, prev.length - 1));
-    }
-  };
+
+  // Back handler - removes the last selected node
+  const handleBack = () => setSelectedNodes((prev) => prev.slice(0, -1));
+
+  // Can go back - determines if back button should be enabled
+  const canGoBack = selectedNodes.length > 0;
 
   // Render edges
   const renderEdges = () => {
