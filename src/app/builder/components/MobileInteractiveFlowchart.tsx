@@ -1,3 +1,5 @@
+// src/app/builder/components/MobileInteractiveFlowchart.tsx
+
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { Info } from 'lucide-react';
@@ -183,35 +185,30 @@ const MobileInteractiveFlowchart: React.FC = () => {
     const node = graphData.nodes.find((n) => n.id === nodeId);
     if (!node) return;
 
+    // Check if node is already selected
+    if (selectedNodes.includes(nodeId)) {
+      const index = selectedNodes.indexOf(nodeId);
+      setSelectedNodes((prev) => prev.slice(0, index));
+      return;
+    }
+
+    // First selection must be from column 0
     if (selectedNodes.length === 0) {
       if (node.column !== 0) return;
       setSelectedNodes([nodeId]);
       return;
     }
 
+    // Check if this is a valid next selection
     const lastSelectedId = selectedNodes[selectedNodes.length - 1];
-    const lastSelectedNode = graphData.nodes.find((n) => n.id === lastSelectedId);
-    if (!lastSelectedNode) return;
-
-    const validNextEdges = graphData.edges.filter((edge) => {
-      if (edge.from !== lastSelectedId) return false;
-      if (edge.condition && !edge.condition(selectedNodes)) return false;
-      return true;
-    });
+    const validNextEdges = graphData.edges.filter(
+      (edge) => edge.from === lastSelectedId && (!edge.condition || edge.condition(selectedNodes))
+    );
     const validNextIds = validNextEdges.map((e) => e.to);
 
-    const goingForward = validNextIds.includes(nodeId);
-    const goingBack = node.column < lastSelectedNode.column;
+    if (!validNextIds.includes(nodeId)) return;
 
-    if (!goingForward && !goingBack) return;
-
-    if (goingBack) {
-      if (!selectedNodes.includes(nodeId)) return;
-      const index = selectedNodes.indexOf(nodeId);
-      setSelectedNodes((prev) => prev.slice(0, index + 1));
-      return;
-    }
-
+    // Add new selection
     const currentColumn = node.column;
     setSelectedNodes((prev) => {
       const newSel = [...prev];
