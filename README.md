@@ -1,7 +1,6 @@
 # Website
 
-This repository contains the source code for Dictionarry's website, built with Next.js 15 using Incremental Static
-Regeneration (ISR) to keep content updated dynamically. The site pulls data from Dictionarry's database and includes:
+This repository contains the source code for Dictionarry's website, built with Next.js 15. The site pulls data from Dictionarry's database and includes:
 
 - Articles and guides on general audio/video concepts
 - Development logs outlining database / website / profilarr progress
