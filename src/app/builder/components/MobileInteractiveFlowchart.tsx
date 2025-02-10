@@ -1,3 +1,5 @@
+// src/app/builder/components/MobileInteractiveFlowchart.tsx
+
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { Info } from 'lucide-react';
