@@ -50,17 +50,18 @@ export default async function WikiArticlePage({ params }: { params: Promise<{ sl
 
   const entryId = createUrlId(article.title);
 
-  // Match exactly how devlog creates headers
+  // Create a consistent header structure for the TOC
   const headers = [
     {
       id: `entry-${entryId}`,
       text: article.title,
       level: 1,
     },
+    // Map markdown headers with proper IDs matching the MarkdownRenderer component
     ...parseMarkdownHeaders(article.content).map((header) => ({
       ...header,
-      id: `${entryId}-${header.id}`, // Use header.id directly like devlog does
-      level: header.level + 1,
+      id: `${entryId}-${header.id}`, 
+      level: header.level, // Keep the original level for proper nesting
     })),
   ];
 
@@ -93,7 +94,7 @@ export default async function WikiArticlePage({ params }: { params: Promise<{ sl
               <div className="p-6 pt-0 bg-white dark:bg-gray-900">
                 <MarkdownRenderer
                   content={article.content}
-                  entryId={entryId} // Use entryId like devlog does
+                  entryId={entryId}
                 />
                 <ContentMetadata author={article.author} last_modified={article.last_modified} />
               </div>
@@ -101,7 +102,7 @@ export default async function WikiArticlePage({ params }: { params: Promise<{ sl
           </div>
 
           <aside className="hidden lg:block col-span-12 lg:col-span-3">
-            <div className="fixed top-24 w-[350px]">
+            <div className="fixed top-24 w-[350px] max-w-full">
               <TableOfContents headers={headers} />
             </div>
           </aside>

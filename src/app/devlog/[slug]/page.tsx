@@ -50,16 +50,18 @@ export default async function DevLogArticlePage({ params }: { params: Promise<{ 
 
   const entryId = createUrlId(article.title);
 
+  // Create a consistent header structure for the TOC
   const headers = [
     {
       id: `entry-${entryId}`,
       text: article.title,
       level: 1,
     },
+    // Map markdown headers with proper IDs matching the MarkdownRenderer component
     ...parseMarkdownHeaders(article.content).map((header) => ({
       ...header,
       id: `${entryId}-${header.id}`,
-      level: header.level + 1,
+      level: header.level, // Keep the original level for proper nesting
     })),
   ];
 
@@ -97,7 +99,7 @@ export default async function DevLogArticlePage({ params }: { params: Promise<{ 
           </div>
 
           <aside className="hidden lg:block col-span-12 lg:col-span-3">
-            <div className="fixed top-24 w-[350px]">
+            <div className="fixed top-24 w-[350px] max-w-full">
               <TableOfContents headers={headers} />
             </div>
           </aside>

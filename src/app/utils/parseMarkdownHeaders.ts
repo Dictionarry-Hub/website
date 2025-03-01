@@ -5,6 +5,11 @@ interface Header {
   level: number;
 }
 
+/**
+ * Creates a URL-friendly ID from text
+ * @param text The header text to convert to an ID
+ * @returns A normalized ID string
+ */
 export function createUrlId(text: string): string {
   // Convert to lowercase and normalize spaces
   const normalizedText = text.toLowerCase().trim();
@@ -13,20 +18,26 @@ export function createUrlId(text: string): string {
   const id = normalizedText
     .replace(/[^a-z0-9-\s]/g, "") // Remove special chars except spaces and dashes
     .replace(/\s+/g, "-") // Replace spaces with single dash
-    .replace(/-+/g, "-"); // Replace multiple dashes with single dash
+    .replace(/-+/g, "-") // Replace multiple dashes with single dash
+    .replace(/^-|-$/g, ""); // Remove leading and trailing dashes
 
-  return id;
+  return id || "section"; // Fallback ID if empty
 }
 
+/**
+ * Parses markdown content to extract headers
+ * @param markdown The markdown content to parse
+ * @returns An array of header objects with id, text and level
+ */
 export function parseMarkdownHeaders(markdown: string): Header[] {
+  if (!markdown) {
+    console.warn("No markdown content provided to parseMarkdownHeaders");
+    return [];
+  }
+
   // Match all headers (# Header, ## Header, etc.)
   const headerRegex = /^(#{1,6})\s+(.+)$/gm;
   const headers: Header[] = [];
-
-  if (!markdown) {
-    console.warn("No markdown content provided to parseMarkdownHeaders");
-    return headers;
-  }
 
   let match;
   while ((match = headerRegex.exec(markdown)) !== null) {

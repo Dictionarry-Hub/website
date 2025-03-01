@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -33,6 +33,21 @@ interface CodeProps extends React.HTMLAttributes<HTMLElement> {
 export default function MarkdownRenderer({ content, entryId }: MarkdownRendererProps) {
   const { isDarkMode } = useDarkMode();
 
+  // Ensure Prism highlights code blocks on render and DOM updates
+  useEffect(() => {
+    // Small delay to ensure ReactMarkdown has finished rendering
+    const timer = setTimeout(() => {
+      Prism.highlightAll();
+    }, 50);
+    
+    return () => clearTimeout(timer);
+  }, [content]);
+
+  // Helper to consistently generate header IDs
+  const generateHeaderId = (text: string): string => {
+    return `${entryId}-${createUrlId(text)}`;
+  };
+
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm, remarkMath]}
@@ -41,45 +56,65 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
         // HEADINGS
         h1({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
-          const id = `${entryId}-${createUrlId(text)}`;
+          const id = generateHeaderId(text);
           return (
-            <h1 id={id} className="text-4xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full" {...props}>
+            <h1 
+              id={id} 
+              className="text-4xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24" 
+              {...props}
+            >
               {children}
             </h1>
           );
         },
         h2({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
-          const id = `${entryId}-${createUrlId(text)}`;
+          const id = generateHeaderId(text);
           return (
-            <h2 id={id} className="text-3xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full" {...props}>
+            <h2 
+              id={id} 
+              className="text-3xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24" 
+              {...props}
+            >
               {children}
             </h2>
           );
         },
         h3({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
-          const id = `${entryId}-${createUrlId(text)}`;
+          const id = generateHeaderId(text);
           return (
-            <h3 id={id} className="text-2xl font-bold tracking-tight mt-8 mb-4" {...props}>
+            <h3 
+              id={id} 
+              className="text-2xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
+              {...props}
+            >
               {children}
             </h3>
           );
         },
         h4({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
-          const id = `${entryId}-${createUrlId(text)}`;
+          const id = generateHeaderId(text);
           return (
-            <h4 id={id} className="text-xl font-bold tracking-tight mt-8 mb-4" {...props}>
+            <h4 
+              id={id} 
+              className="text-xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
+              {...props}
+            >
               {children}
             </h4>
           );
         },
         h5({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
           const text = flattenToString(children);
-          const id = `${entryId}-${createUrlId(text)}`;
+          const id = generateHeaderId(text);
           return (
-            <h5 id={id} className="text-base font-bold tracking-tight mt-8 mb-4" {...props}>
+            <h5 
+              id={id} 
+              className="text-base font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
+              {...props}
+            >
               {children}
             </h5>
           );
