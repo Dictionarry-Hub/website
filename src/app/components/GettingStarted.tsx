@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import { BookOpen, Settings, Rocket } from "lucide-react";
+import Link from 'next/link';
+import Image from 'next/image';
+import { BookOpen, Settings, Rocket } from 'lucide-react';
 
 interface ExternalLinkProps {
   href: string;
@@ -47,26 +47,16 @@ export function GettingStarted() {
           <span>Find your preferred profiles</span>
         </Link>
 
-        <ExternalLinkComponent href="https://github.com/Dictionarry-Hub/profilarr">
+        <ExternalLinkComponent href="https://dictionarry.dev/wiki/profilarr-setup">
           <div className="w-[18px] h-[18px] relative">
-            <Image
-              src="/GitHub.svg"
-              alt="GitHub"
-              fill
-              className="object-contain dark:invert dark:brightness-100"
-            />
+            <Image src="/GitHub.svg" alt="GitHub" fill className="object-contain dark:invert dark:brightness-100" />
           </div>
-          <span>Download Profilarr on GitHub</span>
+          <span>Setup Profilarr</span>
         </ExternalLinkComponent>
 
         <ExternalLinkComponent href="https://discord.com/invite/Y9TYP6jeYZ">
           <div className="w-[18px] h-[18px] relative">
-            <Image
-              src="/Discord.svg"
-              alt="Discord"
-              fill
-              className="object-contain dark:invert dark:brightness-100"
-            />
+            <Image src="/Discord.svg" alt="Discord" fill className="object-contain dark:invert dark:brightness-100" />
           </div>
           <span>Chat with the community!</span>
         </ExternalLinkComponent>
