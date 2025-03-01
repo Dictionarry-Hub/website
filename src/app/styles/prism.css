@@ -307,3 +307,71 @@ pre[class*="language-"] > code {
 .dark pre[class*="language-"] > code {
   color: #e2e8f0;
 }
+
+/* Code Copy Button Styling */
+.code-copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #4a5568;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.code-copy-button:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.code-copy-button:active {
+  transform: scale(0.95);
+}
+
+/* Dark mode styling for the copy button */
+.dark .code-copy-button {
+  background-color: rgba(45, 55, 72, 0.7);
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark .code-copy-button:hover {
+  background-color: rgba(45, 55, 72, 0.9);
+}
+
+/* Success state styling */
+.copy-icon-success {
+  color: #48bb78 !important; /* Success green */
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  transition: all 0.2s ease;
+}
+
+.dark .copy-icon-success {
+  color: #68d391 !important; /* Lighter green for dark mode */
+}
+
+/* Icon styling */
+.copy-icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: all 0.2s ease;
+}
+
+/* Adjust the language tag position to avoid overlap with copy button */
+pre[class*="language-"]::before {
+  right: 3rem;
+}
