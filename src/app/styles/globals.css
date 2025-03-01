@@ -119,4 +119,10 @@ html {
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Global rule to remove backticks from code elements */
+  code::before,
+  code::after {
+    content: none !important;
+  }
 }
