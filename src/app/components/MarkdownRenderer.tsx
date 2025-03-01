@@ -43,7 +43,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
-            <h1 id={id} className="text-3xl font-bold tracking-tight" {...props}>
+            <h1 id={id} className="text-4xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full" {...props}>
               {children}
             </h1>
           );
@@ -52,7 +52,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
-            <h2 id={id} className="text-2xl font-semibold tracking-tight mt-8 mb-4" {...props}>
+            <h2 id={id} className="text-3xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full" {...props}>
               {children}
             </h2>
           );
@@ -61,9 +61,27 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = `${entryId}-${createUrlId(text)}`;
           return (
-            <h3 id={id} className="text-xl font-medium tracking-tight mt-6 mb-3" {...props}>
+            <h3 id={id} className="text-2xl font-bold tracking-tight mt-8 mb-4" {...props}>
               {children}
             </h3>
+          );
+        },
+        h4({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
+          const text = flattenToString(children);
+          const id = `${entryId}-${createUrlId(text)}`;
+          return (
+            <h4 id={id} className="text-xl font-bold tracking-tight mt-8 mb-4" {...props}>
+              {children}
+            </h4>
+          );
+        },
+        h5({ children, ...props }: React.PropsWithChildren<React.HTMLAttributes<HTMLHeadingElement>>) {
+          const text = flattenToString(children);
+          const id = `${entryId}-${createUrlId(text)}`;
+          return (
+            <h5 id={id} className="text-base font-bold tracking-tight mt-8 mb-4" {...props}>
+              {children}
+            </h5>
           );
         },
 
