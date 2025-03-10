@@ -39,7 +39,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
     const timer = setTimeout(() => {
       Prism.highlightAll();
     }, 50);
-    
+
     return () => clearTimeout(timer);
   }, [content]);
 
@@ -58,9 +58,9 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = generateHeaderId(text);
           return (
-            <h1 
-              id={id} 
-              className="text-4xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24" 
+            <h1
+              id={id}
+              className="text-4xl font-bold tracking-tight mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24"
               {...props}
             >
               {children}
@@ -71,9 +71,9 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = generateHeaderId(text);
           return (
-            <h2 
-              id={id} 
-              className="text-3xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24" 
+            <h2
+              id={id}
+              className="text-3xl font-bold tracking-tight mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 w-full scroll-mt-24"
               {...props}
             >
               {children}
@@ -84,11 +84,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = generateHeaderId(text);
           return (
-            <h3 
-              id={id} 
-              className="text-2xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
-              {...props}
-            >
+            <h3 id={id} className="text-2xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" {...props}>
               {children}
             </h3>
           );
@@ -97,11 +93,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = generateHeaderId(text);
           return (
-            <h4 
-              id={id} 
-              className="text-xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
-              {...props}
-            >
+            <h4 id={id} className="text-xl font-bold tracking-tight mt-8 mb-4 scroll-mt-24" {...props}>
               {children}
             </h4>
           );
@@ -110,11 +102,7 @@ export default function MarkdownRenderer({ content, entryId }: MarkdownRendererP
           const text = flattenToString(children);
           const id = generateHeaderId(text);
           return (
-            <h5 
-              id={id} 
-              className="text-base font-bold tracking-tight mt-8 mb-4 scroll-mt-24" 
-              {...props}
-            >
+            <h5 id={id} className="text-base font-bold tracking-tight mt-8 mb-4 scroll-mt-24" {...props}>
               {children}
             </h5>
           );
