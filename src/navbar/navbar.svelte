@@ -4,7 +4,7 @@
   import Extras from './components/extras.svelte';
 </script>
 
-<nav class="w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-700">
+<nav class="w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-600">
   <div class="w-full px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-3 items-center h-16">
       <div class="col-span-1">
