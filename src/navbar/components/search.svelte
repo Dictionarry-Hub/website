@@ -1,9 +1,11 @@
 <script>
   import Dropdown from '@ui/dropdown.svelte';
-  import DropdownRow from '@ui/DropdownRow.svelte';
+  import DropdownRow from '@ui/dropdownRow.svelte';
   import { Filter, Search } from 'lucide-svelte';
-  import { searchFilters } from '@shared/testData';
+  import { searchFilters } from '@shared/constants/testData';
   import { clickOutside } from '@shared/utils/clickOutside.js';
+  
+  export let openSearchModal = () => {};
   
   let filterOpen = false;
   let selectedFilter = 'All Parts of Speech';
@@ -13,7 +15,7 @@
   function handleKeydown(event) {
     if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
       event.preventDefault();
-      searchInput?.focus();
+      openSearchModal();
     }
   }
 </script>
@@ -59,7 +61,9 @@
       bind:this={searchInput}
       type="text"
       placeholder="Search..."
-      class="w-64 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
+      readonly
+      class="w-64 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none cursor-pointer"
+      on:click={openSearchModal}
     />
     
     <!-- Ctrl+K Pill (Right side) -->
@@ -73,7 +77,7 @@
 
 <!-- Mobile view -->
 <div class="lg:hidden">
-  <button class="social-icon">
+  <button class="social-icon" on:click={openSearchModal}>
     <span class="sr-only">Search</span>
     <Search class="w-5 h-5" />
   </button>

@@ -4,7 +4,6 @@
   
   // Subscribe to theme store
   $: isDark = $theme;
-  $: console.log('Theme store value:', $theme, 'isDark:', isDark);
 </script>
 
 <style>

@@ -1,7 +1,7 @@
 <script>
-  import ThemeToggle from '@ui/ThemeToggle.svelte';
+  import ThemeToggle from '@ui/themeToggle.svelte';
   import Dropdown from '@ui/dropdown.svelte';
-  import DropdownRow from '@ui/DropdownRow.svelte';
+  import DropdownRow from '@ui/dropdownRow.svelte';
   import { siGithub, siDiscord } from 'simple-icons';
   import { MoreHorizontal } from 'lucide-svelte';
   import { clickOutside } from '@shared/utils/clickOutside.js';

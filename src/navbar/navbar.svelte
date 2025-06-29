@@ -2,6 +2,13 @@
   import Header from './components/header.svelte';
   import Search from './components/search.svelte';
   import Extras from './components/extras.svelte';
+  import SearchModal from '../searchModal/searchModal.svelte';
+  
+  let isSearchModalOpen = false;
+  
+  function openSearchModal() {
+    isSearchModalOpen = true;
+  }
 </script>
 
 <nav class="w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-600">
@@ -13,13 +20,13 @@
       <div class="col-span-1 flex justify-center">
         <!-- Desktop: Full search bar in center -->
         <div class="hidden lg:block">
-          <Search />
+          <Search {openSearchModal} />
         </div>
       </div>
       <div class="col-span-1 flex justify-end">
         <!-- Mobile: Search + Extras side by side -->
         <div class="lg:hidden flex items-center space-x-2">
-          <Search />
+          <Search {openSearchModal} />
           <Extras />
         </div>
         <!-- Desktop: Just Extras -->
@@ -30,3 +37,5 @@
     </div>
   </div>
 </nav>
+
+<SearchModal bind:isOpen={isSearchModalOpen} />
