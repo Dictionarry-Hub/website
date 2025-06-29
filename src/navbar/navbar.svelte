@@ -11,10 +11,21 @@
         <Header />
       </div>
       <div class="col-span-1 flex justify-center">
-        <Search />
+        <!-- Desktop: Full search bar in center -->
+        <div class="hidden lg:block">
+          <Search />
+        </div>
       </div>
       <div class="col-span-1 flex justify-end">
-        <Extras />
+        <!-- Mobile: Search + Extras side by side -->
+        <div class="lg:hidden flex items-center space-x-2">
+          <Search />
+          <Extras />
+        </div>
+        <!-- Desktop: Just Extras -->
+        <div class="hidden lg:block">
+          <Extras />
+        </div>
       </div>
     </div>
   </div>

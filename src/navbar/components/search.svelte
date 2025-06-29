@@ -1,39 +1,68 @@
 <script>
   import Dropdown from '@ui/dropdown.svelte';
+  import DropdownRow from '@ui/DropdownRow.svelte';
+  import { Filter, Search } from 'lucide-svelte';
+  import { searchFilters } from '@shared/testData';
+  import { clickOutside } from '@shared/utils/clickOutside.js';
   
   let filterOpen = false;
+  let selectedFilter = 'All Parts of Speech';
 </script>
 
-<div class="flex items-center space-x-3">
-  <div class="relative">
-    <button 
-      on:click={() => filterOpen = !filterOpen}
-      class="inline-flex items-center justify-center rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-500"
+<!-- Desktop view -->
+<div class="hidden lg:flex relative items-center">
+  <!-- Filter Button + Search Input Combined -->
+  <div class="relative flex items-center">
+    <!-- Filter Button (Left side) -->
+    <div 
+      class="relative"
+      role="button"
+      tabindex="0"
+      on:mouseenter={() => filterOpen = true}
+      on:mouseleave={() => filterOpen = false}
+      use:clickOutside={() => filterOpen = false}
     >
-      Filter
-      <svg class="ml-2 -mr-1 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </button>
+      <button 
+        class="flex items-center justify-center px-3 h-10 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-600 rounded-l-md border-r-0 text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
+        on:click={() => filterOpen = !filterOpen}
+      >
+        <span class="sr-only">Filter</span>
+        <Filter class="w-4 h-4 transition-all duration-200 {filterOpen ? 'scale-110' : ''}" />
+      </button>
+      
+      <!-- Filter Dropdown -->
+      <Dropdown bind:isOpen={filterOpen} position="center">
+        {#each searchFilters as filter, index}
+          <DropdownRow 
+            showBorder={index < searchFilters.length - 1} 
+            onclick={() => selectedFilter = filter}
+          >
+            <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
+          </DropdownRow>
+        {/each}
+      </Dropdown>
+    </div>
     
-    <Dropdown bind:isOpen={filterOpen}>
-      <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700">Filter option 1</a>
-      <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700">Filter option 2</a>
-      <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700">Filter option 3</a>
-    </Dropdown>
-  </div>
-  
-  <div class="relative">
+    <!-- Search Input (Middle) -->
     <input
       type="text"
       placeholder="Search..."
-      class="w-64 px-4 py-2 border border-neutral-300 rounded-md bg-white text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-neutral-500"
+      class="w-64 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
     />
-    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-neutral-400 hover:text-neutral-600">
-      <span class="sr-only">Search</span>
-      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-      </svg>
-    </button>
+    
+    <!-- Ctrl+K Pill (Right side) -->
+    <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center space-x-2">
+      <div class="px-2 py-1 bg-neutral-100 dark:bg-neutral-700 rounded text-xs text-neutral-600 dark:text-neutral-300 font-mono">
+        Ctrl+K
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- Mobile view -->
+<div class="lg:hidden">
+  <button class="social-icon">
+    <span class="sr-only">Search</span>
+    <Search class="w-5 h-5" />
+  </button>
 </div>
