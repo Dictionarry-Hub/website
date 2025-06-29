@@ -10,6 +10,9 @@
   let filterOpen = false;
   let searchInput;
   
+  // Calculate active filter count (excluding "All Types")
+  $: activeFilterCount = $filterStore.searchFilters.filter(filter => filter !== 'All Types').length;
+  
   // Handle Ctrl+K shortcut
   function handleKeydown(event) {
     if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
@@ -41,6 +44,13 @@
         <span class="sr-only">Filter</span>
         <Filter class="w-4 h-4 transition-all duration-200 {filterOpen ? 'scale-110' : ''}" />
       </button>
+      
+      <!-- Filter Count Indicator -->
+      {#if activeFilterCount > 0}
+        <div class="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
+          <span class="text-[10px] font-medium text-white leading-none">{activeFilterCount}</span>
+        </div>
+      {/if}
       
       <!-- Filter Dropdown -->
       <Dropdown bind:isOpen={filterOpen} position="center">
