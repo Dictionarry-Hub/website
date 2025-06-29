@@ -30,6 +30,53 @@ function sanitizeForSearch(text: string): string {
     .trim();
 }
 
+function stripMarkdown(text: string): string {
+  return text
+    // Remove headers
+    .replace(/^#{1,6}\s+/gm, '')
+    // Remove bold/italic
+    .replace(/\*\*\*(.*?)\*\*\*/g, '$1')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/__(.*?)__/g, '$1')
+    .replace(/_(.*?)_/g, '$1')
+    // Remove strikethrough
+    .replace(/~~(.*?)~~/g, '$1')
+    // Remove links but keep text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    // Remove inline code backticks
+    .replace(/`([^`]+)`/g, '$1')
+    // Clean up line breaks
+    .replace(/\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function smartTruncate(text: string, limit: number): string {
+  if (!text || text.length <= limit) return text;
+  
+  // Strip markdown first
+  const cleanText = stripMarkdown(text);
+  if (cleanText.length <= limit) return cleanText;
+  
+  // Find a good breaking point
+  let truncated = cleanText.substring(0, limit);
+  
+  // Look for sentence endings within last 50 characters
+  const sentenceEnd = truncated.lastIndexOf('. ');
+  if (sentenceEnd > limit - 50) {
+    return truncated.substring(0, sentenceEnd + 1);
+  }
+  
+  // Fall back to word boundary
+  const lastSpace = truncated.lastIndexOf(' ');
+  if (lastSpace > limit - 30) {
+    return truncated.substring(0, lastSpace) + '...';
+  }
+  
+  return truncated + '...';
+}
+
 function extractFrontmatter(content: string): { frontmatter: any; body: string } {
   const frontmatterRegex = /^---\s*\n(.*?)\n---\s*\n(.*)/s;
   const match = content.match(frontmatterRegex);
@@ -59,13 +106,13 @@ function processWikiFiles(): SearchEntry[] {
       
       const id = basename(file, '.md');
       const title = frontmatter.title || id.replace(/[-_]/g, ' ');
-      const description = frontmatter.description || body.substring(0, 200).replace(/\n/g, ' ').trim();
+      const description = frontmatter.description || body;
       
       entries.push({
         id: `wiki-${id}`,
         title,
         description,
-        content: body.substring(0, 1000),
+        content: body,
         route: `/wiki/${id}`,
         type: 'wiki',
         tags: frontmatter.tags || [],
@@ -93,13 +140,13 @@ function processDevLogs(): SearchEntry[] {
       
       const id = basename(file, '.md');
       const title = frontmatter.title || id.replace(/[-_]/g, ' ');
-      const description = frontmatter.description || body.substring(0, 200).replace(/\n/g, ' ').trim();
+      const description = frontmatter.description || body;
       
       entries.push({
         id: `dev-log-${id}`,
         title,
         description,
-        content: body.substring(0, 1000),
+        content: body,
         route: `/dev-logs/${id}`,
         type: 'dev_log',
         tags: frontmatter.tags || ['development'],

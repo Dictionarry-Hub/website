@@ -33,26 +33,76 @@
   function processMarkdown(text) {
     if (!text) return '';
     
-    return text
+    const result = text
+      // Headers (convert to proper block elements)
+      .replace(/^### (.*$)/gm, '<div class="font-semibold text-neutral-800 dark:text-neutral-200 mb-1">$1</div>')
+      .replace(/^## (.*$)/gm, '<div class="font-bold text-neutral-900 dark:text-white mb-1">$1</div>')
+      .replace(/^# (.*$)/gm, '<div class="font-bold text-lg text-neutral-900 dark:text-white mb-2">$1</div>')
       // Bold text **text** or __text__
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/__(.*?)__/g, '<strong>$1</strong>')
-      // Italic text *text* or _text_
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/_(.*?)_/g, '<em>$1</em>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold">$1</strong>')
+      .replace(/__(.*?)__/g, '<strong class="font-semibold">$1</strong>')
+      // Bold-italic combination ***text*** or ___text___
+      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong class="font-bold italic">$1</strong>')
+      .replace(/_{3}(.*?)_{3}/g, '<strong class="font-bold italic">$1</strong>')
+      // Italic text *text* or _text_ (but not if it's part of a bold)
+      .replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<em class="italic">$1</em>')
+      .replace(/(?<!_)_([^_]+?)_(?!_)/g, '<em class="italic">$1</em>')
+      // Strikethrough ~~text~~
+      .replace(/~~(.*?)~~/g, '<del class="line-through text-neutral-500 dark:text-neutral-400">$1</del>')
       // Links [text](url)
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">$1</a>')
-      // Code `code`
-      .replace(/`([^`]+)`/g, '<code class="bg-neutral-100 dark:bg-neutral-800 px-1 py-0.5 rounded text-sm">$1</code>');
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>')
+      // Inline code `code`
+      .replace(/`([^`]+)`/g, '<code class="bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-xs font-mono">$1</code>')
+      // Line breaks (convert double line breaks to paragraphs)
+      .replace(/\n\n/g, '<br><br>')
+      // Single line breaks
+      .replace(/\n/g, '<br>');
+    
+    return result;
   }
   
-  // Get truncated description
-  $: truncatedDescription = entry.description && entry.description.length > DESCRIPTION_LIMIT 
-    ? entry.description.substring(0, DESCRIPTION_LIMIT) + '...'
-    : entry.description;
+  // Smart truncation that doesn't break markdown syntax
+  function smartTruncate(text, limit) {
+    if (!text || text.length <= limit) return text;
     
-  $: shouldShowExpand = entry.description && entry.description.length > DESCRIPTION_LIMIT;
+    let truncated = text.substring(0, limit);
+    
+    // Don't break markdown syntax - look for safe breaking points
+    const unsafePatterns = [
+      /\*\*[^*]*$/, // incomplete bold
+      /_[^_]*$/, // incomplete italic  
+      /`[^`]*$/, // incomplete code
+      /\[[^\]]*$/, // incomplete link start
+      /\([^)]*$/ // incomplete link url
+    ];
+    
+    // If we're in the middle of markdown, back up to safe spot
+    for (const pattern of unsafePatterns) {
+      if (pattern.test(truncated)) {
+        const match = truncated.match(pattern);
+        if (match) {
+          truncated = truncated.substring(0, match.index);
+        }
+      }
+    }
+    
+    // Look for sentence endings within last 50 characters
+    const sentenceEnd = truncated.lastIndexOf('. ');
+    if (sentenceEnd > limit - 50) {
+      truncated = truncated.substring(0, sentenceEnd + 1);
+    } else {
+      // Fall back to word boundary
+      const lastSpace = truncated.lastIndexOf(' ');
+      if (lastSpace > limit - 30) {
+        truncated = truncated.substring(0, lastSpace);
+      }
+    }
+    
+    return truncated + '...';
+  }
   
+  $: truncatedDescription = smartTruncate(entry.description, DESCRIPTION_LIMIT);
+  $: shouldShowExpand = entry.description && entry.description.length > DESCRIPTION_LIMIT;
   $: displayDescription = isExpanded ? entry.description : truncatedDescription;
 </script>
 
