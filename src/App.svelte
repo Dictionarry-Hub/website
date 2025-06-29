@@ -11,5 +11,5 @@
 <Navbar />
 
 <main>
-  hello
+  
 </main>
