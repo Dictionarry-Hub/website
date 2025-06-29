@@ -21,6 +21,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "lucide-svelte": "^0.525.0",
     "tinro": "^0.6.12"
   }
 }
