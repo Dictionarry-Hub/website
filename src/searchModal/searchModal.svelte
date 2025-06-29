@@ -4,37 +4,32 @@
   import DropdownRow from '@ui/dropdownRow.svelte';
   import SearchResult from './searchResult.svelte';
   import { Filter } from 'lucide-svelte';
-  import { testSearchData, searchFilters } from '@shared/constants/testData';
   import { funnySearchMessages } from '@shared/constants/funnySearchMessages';
   import { clickOutside } from '@shared/utils/clickOutside.js';
+  import { searchResults, searchTerm, searchFilter, searchFilters, performSearch, clearSearch } from '@shared/stores/search';
   
   export let isOpen = false;
   
   let searchInput;
-  let searchTerm = '';
-  let selectedFilter = 'All Types';
+  let currentSearchTerm = '';
+  let currentSelectedFilter = 'All Types';
   let filterOpen = false;
   let highlightedIndex = 0;
   let resultsContainer;
   let keyboardMode = false;
   let randomMessage = funnySearchMessages[Math.floor(Math.random() * funnySearchMessages.length)];
   
-  // Filter and search results
-  $: filteredResults = !searchTerm ? [] : testSearchData.filter(entry => {
-    const matchesSearch = entry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      entry.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      entry.content?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      entry.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-    
-    const matchesFilter = selectedFilter === 'All Types' || 
-      (selectedFilter === 'Wiki Articles' && entry.type === 'wiki') ||
-      (selectedFilter === 'Development Logs' && entry.type === 'dev_log') ||
-      (selectedFilter === 'Regex Patterns' && entry.type === 'regex_pattern') ||
-      (selectedFilter === 'Custom Formats' && entry.type === 'custom_format') ||
-      (selectedFilter === 'Quality Profiles' && entry.type === 'profile');
-    
-    return matchesSearch && matchesFilter;
-  });
+  // Reactive statements to sync local state with stores
+  $: if (currentSearchTerm !== $searchTerm) {
+    performSearch(currentSearchTerm, currentSelectedFilter);
+  }
+  
+  $: if (currentSelectedFilter !== $searchFilter) {
+    performSearch(currentSearchTerm, currentSelectedFilter);
+  }
+  
+  // Use results from store
+  $: filteredResults = $searchResults;
   
   // Reset highlight when results change
   $: if (filteredResults) {
@@ -95,8 +90,9 @@
   
   function closeModal() {
     isOpen = false;
-    searchTerm = '';
+    currentSearchTerm = '';
     highlightedIndex = 0;
+    clearSearch();
   }
 </script>
 
@@ -127,7 +123,7 @@
           {#each searchFilters as filter, index}
             <DropdownRow 
               showBorder={index < searchFilters.length - 1} 
-              onclick={() => selectedFilter = filter}
+              onclick={() => currentSelectedFilter = filter}
             >
               <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
             </DropdownRow>
@@ -138,7 +134,7 @@
       <!-- Search Input -->
       <input
         bind:this={searchInput}
-        bind:value={searchTerm}
+        bind:value={currentSearchTerm}
         type="text"
         placeholder="Search dictionarry..."
         class="flex-1 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
@@ -148,9 +144,9 @@
   
   <!-- Results body -->
   <div bind:this={resultsContainer} class="flex-1 flex flex-col">
-    {#if searchTerm && filteredResults.length === 0}
+    {#if currentSearchTerm && filteredResults.length === 0}
       <div class="text-center py-8 text-neutral-500 dark:text-neutral-400">
-        <p>No results found for "{searchTerm}"</p>
+        <p>No results found for "{currentSearchTerm}"</p>
         <p class="text-sm mt-1">Try a different search term or filter</p>
       </div>
     {:else if filteredResults.length > 0}
@@ -161,7 +157,7 @@
         >
           <SearchResult 
             {entry} 
-            {searchTerm}
+            searchTerm={currentSearchTerm}
             isHighlighted={index === highlightedIndex}
             on:click={() => selectResult(entry)}
           />

@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run build-search-index && vite",
+    "build": "npm run build-search-index && vite build",
+    "build-search-index": "tsx scripts/generateSearchIndex.ts",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
@@ -17,12 +18,14 @@
     "svelte": "^5.34.7",
     "svelte-check": "^4.2.2",
     "tailwindcss": "^4.1.11",
+    "tsx": "^4.19.2",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   },
   "dependencies": {
     "lucide-svelte": "^0.525.0",
     "simple-icons": "^15.4.0",
-    "tinro": "^0.6.12"
+    "tinro": "^0.6.12",
+    "yaml": "^2.6.1"
   }
 }
