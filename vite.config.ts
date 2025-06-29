@@ -13,6 +13,7 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
       '@pages': resolve(__dirname, './src/pages'),
       '@shared': resolve(__dirname, './src/shared'),
+      '@ui': resolve(__dirname, './src/shared/ui'),
     }
   },
   base: './' // For static site deployment

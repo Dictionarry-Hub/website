@@ -13,7 +13,8 @@
     "paths": {
       "@/*": ["src/*"],
       "@pages/*": ["src/pages/*"],
-      "@shared/*": ["src/shared/*"]
+      "@shared/*": ["src/shared/*"],
+      "@ui/*": ["src/shared/ui/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.ts"]

@@ -25,3 +25,6 @@ dist-ssr
 
 # database
 public/database
+
+# ai
+CLAUDE.md
