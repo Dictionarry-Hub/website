@@ -93,7 +93,7 @@
 
 <!-- Mobile view -->
 <div class="lg:hidden">
-  <button class="social-icon" on:click={openSearchModal}>
+  <button class="p-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 rounded-md transition-all duration-200 hover:scale-105" on:click={openSearchModal}>
     <span class="sr-only">Search</span>
     <Search class="w-5 h-5" />
   </button>

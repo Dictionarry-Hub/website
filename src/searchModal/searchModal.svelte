@@ -106,7 +106,7 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<Modal bind:isOpen width="max-w-4xl" height="h-[32rem] max-h-[calc(100vh-8rem)]" footer="true" onClose={closeModal}>
+<Modal bind:isOpen width="max-w-4xl" height="h-[80vh] max-h-[calc(100vh-2rem)] sm:h-[32rem] sm:max-h-[calc(100vh-8rem)]" footer="true" onClose={closeModal}>
   <!-- Custom header with search -->
   <div slot="header" class="w-full">
     <div class="flex items-center space-x-0">
@@ -194,15 +194,20 @@
         </div>
       {/each}
     {:else}
-      <div class="flex-1 flex items-center justify-center text-neutral-500 dark:text-neutral-400">
-        <p>{randomMessage}</p>
+      <div class="flex-1 flex items-center justify-center text-neutral-500 dark:text-neutral-400 px-4">
+        <p class="text-center">{randomMessage}</p>
       </div>
     {/if}
   </div>
   
-  <!-- Footer with keyboard shortcuts -->
+  <!-- Footer -->
   <div slot="footer" class="flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
-    <div class="flex items-center space-x-4">
+    <div class="text-neutral-400 dark:text-neutral-500">
+      {filteredResults.length} result{filteredResults.length === 1 ? '' : 's'}
+    </div>
+    
+    <!-- Desktop: Keyboard shortcuts -->
+    <div class="hidden sm:flex items-center space-x-4">
       <div class="flex items-center space-x-1">
         <kbd class="px-1.5 py-0.5 bg-neutral-200 dark:bg-neutral-700 rounded text-xs">↑</kbd>
         <kbd class="px-1.5 py-0.5 bg-neutral-200 dark:bg-neutral-700 rounded text-xs">↓</kbd>
@@ -217,8 +222,15 @@
         <span>close</span>
       </div>
     </div>
-    <div class="text-neutral-400 dark:text-neutral-500">
-      {filteredResults.length} result{filteredResults.length === 1 ? '' : 's'}
+    
+    <!-- Mobile: Close button -->
+    <div class="sm:hidden">
+      <button 
+        class="px-3 py-1.5 bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 rounded text-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 transition-colors"
+        on:click={closeModal}
+      >
+        Close
+      </button>
     </div>
   </div>
 </Modal>
