@@ -1,14 +1,13 @@
 <script>
   import Dropdown from '@ui/dropdown.svelte';
   import DropdownRow from '@ui/dropdownRow.svelte';
-  import { Filter, Search } from 'lucide-svelte';
-  import { searchFilters } from '@shared/constants/testData';
+  import { Filter, Search, Check } from 'lucide-svelte';
   import { clickOutside } from '@shared/utils/clickOutside.js';
+  import { filterStore, filterOptions } from '@shared/stores/filter';
   
   export let openSearchModal = () => {};
   
   let filterOpen = false;
-  let selectedFilter = 'All Parts of Speech';
   let searchInput;
   
   // Handle Ctrl+K shortcut
@@ -45,12 +44,19 @@
       
       <!-- Filter Dropdown -->
       <Dropdown bind:isOpen={filterOpen} position="center">
-        {#each searchFilters as filter, index}
+        {#each filterOptions as filter, index}
           <DropdownRow 
-            showBorder={index < searchFilters.length - 1} 
-            onclick={() => selectedFilter = filter}
+            showBorder={index < filterOptions.length - 1} 
+            onclick={() => filterStore.toggleSearchFilter(filter)}
           >
-            <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
+            <div class="flex items-center justify-between w-full">
+              <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
+              {#if $filterStore.searchFilters.includes(filter)}
+                <div class="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
+                  <Check class="w-2.5 h-2.5 text-white" />
+                </div>
+              {/if}
+            </div>
           </DropdownRow>
         {/each}
       </Dropdown>

@@ -1,4 +1,5 @@
 import { writable, derived } from 'svelte/store';
+import { filterStore } from './filter';
 
 export interface SearchEntry {
   id: string;
@@ -23,23 +24,17 @@ export const searchIndex = writable<SearchIndex | null>(null);
 // Store for current search term
 export const searchTerm = writable<string>('');
 
-// Store for selected filter
-export const searchFilter = writable<string>('All Types');
+// Re-export filter functionality from filter store
+export const selectedFilters = derived(filterStore, $filterStore => $filterStore.searchFilters);
+export const toggleSearchFilter = filterStore.toggleSearchFilter;
 
-// Available filter options
-export const searchFilters = [
-  'All Types',
-  'Wiki Articles',
-  'Custom Formats', 
-  'Quality Profiles',
-  'Development Logs',
-  'Regex Patterns'
-];
+// Available filter options (re-export from filter store)
+export { filterOptions as searchFilters } from './filter';
 
 // Derived store for filtered search results
 export const searchResults = derived(
-  [searchIndex, searchTerm, searchFilter],
-  ([$searchIndex, $searchTerm, $searchFilter]) => {
+  [searchIndex, searchTerm, selectedFilters],
+  ([$searchIndex, $searchTerm, $selectedFilters]) => {
     if (!$searchIndex || !$searchTerm.trim()) {
       return [];
     }
@@ -48,13 +43,13 @@ export const searchResults = derived(
     
     return $searchIndex.entries
       .filter(entry => {
-        // Filter by type
-        const matchesFilter = $searchFilter === 'All Types' || 
-          ($searchFilter === 'Wiki Articles' && entry.type === 'wiki') ||
-          ($searchFilter === 'Custom Formats' && entry.type === 'custom_format') ||
-          ($searchFilter === 'Quality Profiles' && entry.type === 'profile') ||
-          ($searchFilter === 'Development Logs' && entry.type === 'dev_log') ||
-          ($searchFilter === 'Regex Patterns' && entry.type === 'regex_pattern');
+        // Filter by type - matches if "All Types" is selected OR if specific type is selected
+        const matchesFilter = $selectedFilters.includes('All Types') ||
+          ($selectedFilters.includes('Wiki Articles') && entry.type === 'wiki') ||
+          ($selectedFilters.includes('Custom Formats') && entry.type === 'custom_format') ||
+          ($selectedFilters.includes('Quality Profiles') && entry.type === 'profile') ||
+          ($selectedFilters.includes('Development Logs') && entry.type === 'dev_log') ||
+          ($selectedFilters.includes('Regex Patterns') && entry.type === 'regex_pattern');
         
         if (!matchesFilter) return false;
 
@@ -74,33 +69,50 @@ export const searchResults = derived(
         // Helper function to normalize text (remove special chars, extra spaces)
         const normalize = (text) => text.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
         
-        // Check for exact matches first (huge bonus)
-        const normalizedTerm = normalize(term);
-        if (normalize(a.title) === normalizedTerm) scoreA += 100;
-        if (normalize(b.title) === normalizedTerm) scoreB += 100;
+        // Calculate similarity percentage between two strings
+        const calculateSimilarity = (str1, str2) => {
+          const norm1 = normalize(str1);
+          const norm2 = normalize(str2);
+          
+          if (norm1 === norm2) return 1.0; // 100% match
+          
+          // Count overlapping characters
+          let matches = 0;
+          const longer = norm1.length > norm2.length ? norm1 : norm2;
+          const shorter = norm1.length <= norm2.length ? norm1 : norm2;
+          
+          for (let i = 0; i < shorter.length; i++) {
+            if (longer.includes(shorter[i])) {
+              matches++;
+            }
+          }
+          
+          // Percentage based on the longer string length
+          return matches / longer.length;
+        };
         
+        const normalizedTerm = normalize(term);
+        
+        // Title similarity scoring (0-100 points based on percentage)
+        const aTitleSimilarity = calculateSimilarity(normalizedTerm, a.title);
+        const bTitleSimilarity = calculateSimilarity(normalizedTerm, b.title);
+        
+        scoreA += aTitleSimilarity * 100; // 0-100 points for title similarity
+        scoreB += bTitleSimilarity * 100;
+        
+        // Additional scoring for word matches
         termWords.forEach(word => {
           const normalizedWord = normalize(word);
           
-          // Title matches
-          const aTitleNorm = normalize(a.title);
-          const bTitleNorm = normalize(b.title);
-          
-          if (aTitleNorm === normalizedWord) scoreA += 50; // Exact word match in title
-          else if (aTitleNorm.includes(normalizedWord)) scoreA += 20; // Partial match in title
-          
-          if (bTitleNorm === normalizedWord) scoreB += 50;
-          else if (bTitleNorm.includes(normalizedWord)) scoreB += 20;
-          
-          // Description matches: medium weight (10 points)
+          // Description matches: medium weight
           if (normalize(a.description).includes(normalizedWord)) scoreA += 10;
           if (normalize(b.description).includes(normalizedWord)) scoreB += 10;
           
-          // Tag matches: lower weight (5 points)
+          // Tag matches: lower weight
           if (a.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreA += 5;
           if (b.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreB += 5;
           
-          // Content matches: lowest weight (2 points)
+          // Content matches: lowest weight
           if (a.content && normalize(a.content).includes(normalizedWord)) scoreA += 2;
           if (b.content && normalize(b.content).includes(normalizedWord)) scoreB += 2;
         });
@@ -136,13 +148,10 @@ export async function loadSearchIndex(): Promise<void> {
 // Function to clear search
 export function clearSearch(): void {
   searchTerm.set('');
-  searchFilter.set('All Types');
+  filterStore.reset();
 }
 
 // Function to perform search
-export function performSearch(term: string, filter?: string): void {
+export function performSearch(term: string): void {
   searchTerm.set(term);
-  if (filter) {
-    searchFilter.set(filter);
-  }
 }

@@ -3,16 +3,16 @@
   import Dropdown from '@ui/dropdown.svelte';
   import DropdownRow from '@ui/dropdownRow.svelte';
   import SearchResult from './searchResult.svelte';
-  import { Filter } from 'lucide-svelte';
+  import { Filter, Check } from 'lucide-svelte';
   import { funnySearchMessages } from '@shared/constants/funnySearchMessages';
   import { clickOutside } from '@shared/utils/clickOutside.js';
-  import { searchResults, searchTerm, searchFilter, searchFilters, performSearch, clearSearch } from '@shared/stores/search';
+  import { searchResults, searchTerm, selectedFilters, searchFilters, performSearch, clearSearch, toggleSearchFilter } from '@shared/stores/search';
+  import { filterStore } from '@shared/stores/filter';
   
   export let isOpen = false;
   
   let searchInput;
   let currentSearchTerm = '';
-  let currentSelectedFilter = 'All Types';
   let filterOpen = false;
   let highlightedIndex = 0;
   let resultsContainer;
@@ -21,11 +21,7 @@
   
   // Reactive statements to sync local state with stores
   $: if (currentSearchTerm !== $searchTerm) {
-    performSearch(currentSearchTerm, currentSelectedFilter);
-  }
-  
-  $: if (currentSelectedFilter !== $searchFilter) {
-    performSearch(currentSearchTerm, currentSelectedFilter);
+    performSearch(currentSearchTerm);
   }
   
   // Use results from store
@@ -132,9 +128,16 @@
           {#each searchFilters as filter, index}
             <DropdownRow 
               showBorder={index < searchFilters.length - 1} 
-              onclick={() => currentSelectedFilter = filter}
+              onclick={() => filterStore.toggleSearchFilter(filter)}
             >
-              <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
+              <div class="flex items-center justify-between w-full">
+                <span class="text-sm text-neutral-700 dark:text-neutral-300">{filter}</span>
+                {#if $filterStore.searchFilters.includes(filter)}
+                  <div class="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
+                    <Check class="w-2.5 h-2.5 text-white" />
+                  </div>
+                {/if}
+              </div>
             </DropdownRow>
           {/each}
         </Dropdown>
