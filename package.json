@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run build-search-index && vite",
-    "build": "npm run build-search-index && vite build",
+    "dev": "npm run generate-routes && npm run build-search-index && vite",
+    "build": "npm run generate-routes && npm run build-search-index && vite build",
+    "generate-routes": "tsx scripts/generate-routes.ts",
     "build-search-index": "tsx scripts/generateSearchIndex.ts",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
@@ -23,7 +24,10 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
     "lucide-svelte": "^0.525.0",
+    "marked": "^16.0.0",
     "simple-icons": "^15.4.0",
     "tinro": "^0.6.12",
     "yaml": "^2.6.1"
