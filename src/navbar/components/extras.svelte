@@ -1,5 +1,12 @@
+<script>
+  import { theme } from '@shared/stores/theme.ts'
+</script>
+
 <div class="flex items-center space-x-4">
-  <button class="p-2 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 rounded-md">
+  <button 
+    on:click={theme.toggle}
+    class="p-2 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 rounded-md"
+  >
     <span class="sr-only">Toggle dark mode</span>
     <span class="text-sm">🌙 Dark mode toggle goes here</span>
   </button>
