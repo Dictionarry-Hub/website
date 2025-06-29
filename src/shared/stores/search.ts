@@ -58,37 +58,54 @@ export const searchResults = derived(
         
         if (!matchesFilter) return false;
 
-        // Search in title, description, content, and tags
-        const searchableText = [
-          entry.title,
-          entry.description,
-          entry.content || '',
-          ...entry.tags
-        ].join(' ').toLowerCase();
-
-        return searchableText.includes(term);
+        return (
+          entry.title.toLowerCase().includes(term) ||
+          entry.description.toLowerCase().includes(term) ||
+          (entry.content && entry.content.toLowerCase().includes(term)) ||
+          entry.tags.some(tag => tag.toLowerCase().includes(term))
+        );
       })
       .sort((a, b) => {
-        // Score based on where the match appears
+        // Calculate weighted search scores
         const termWords = term.split(' ');
         let scoreA = 0;
         let scoreB = 0;
 
-        // Higher score for title matches
+        // Helper function to normalize text (remove special chars, extra spaces)
+        const normalize = (text) => text.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+        
+        // Check for exact matches first (huge bonus)
+        const normalizedTerm = normalize(term);
+        if (normalize(a.title) === normalizedTerm) scoreA += 100;
+        if (normalize(b.title) === normalizedTerm) scoreB += 100;
+        
         termWords.forEach(word => {
-          if (a.title.toLowerCase().includes(word)) scoreA += 10;
-          if (b.title.toLowerCase().includes(word)) scoreB += 10;
+          const normalizedWord = normalize(word);
           
-          // Medium score for description matches
-          if (a.description.toLowerCase().includes(word)) scoreA += 5;
-          if (b.description.toLowerCase().includes(word)) scoreB += 5;
+          // Title matches
+          const aTitleNorm = normalize(a.title);
+          const bTitleNorm = normalize(b.title);
           
-          // Lower score for content/tag matches
-          if (a.searchText.includes(word)) scoreA += 1;
-          if (b.searchText.includes(word)) scoreB += 1;
+          if (aTitleNorm === normalizedWord) scoreA += 50; // Exact word match in title
+          else if (aTitleNorm.includes(normalizedWord)) scoreA += 20; // Partial match in title
+          
+          if (bTitleNorm === normalizedWord) scoreB += 50;
+          else if (bTitleNorm.includes(normalizedWord)) scoreB += 20;
+          
+          // Description matches: medium weight (10 points)
+          if (normalize(a.description).includes(normalizedWord)) scoreA += 10;
+          if (normalize(b.description).includes(normalizedWord)) scoreB += 10;
+          
+          // Tag matches: lower weight (5 points)
+          if (a.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreA += 5;
+          if (b.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreB += 5;
+          
+          // Content matches: lowest weight (2 points)
+          if (a.content && normalize(a.content).includes(normalizedWord)) scoreA += 2;
+          if (b.content && normalize(b.content).includes(normalizedWord)) scoreB += 2;
         });
 
-        // Factor in base weight
+        // Factor in base content type weight
         scoreA += a.weight;
         scoreB += b.weight;
 

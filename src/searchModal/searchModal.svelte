@@ -45,6 +45,15 @@
   function handleKeydown(event) {
     if (!isOpen) return;
     
+    // Handle Ctrl+K to focus search input
+    if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+      event.preventDefault();
+      if (searchInput) {
+        searchInput.focus();
+      }
+      return;
+    }
+    
     switch (event.key) {
       case 'ArrowDown':
         event.preventDefault();
@@ -132,13 +141,21 @@
       </div>
       
       <!-- Search Input -->
-      <input
-        bind:this={searchInput}
-        bind:value={currentSearchTerm}
-        type="text"
-        placeholder="Search dictionarry..."
-        class="flex-1 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
-      />
+      <div class="relative flex-1">
+        <input
+          bind:this={searchInput}
+          bind:value={currentSearchTerm}
+          type="text"
+          placeholder="Search dictionarry..."
+          class="w-full px-4 pr-16 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
+        />
+        <!-- Ctrl+K Pill -->
+        <div class="absolute right-2 top-1/2 transform -translate-y-1/2">
+          <div class="px-2 py-1 bg-neutral-100 dark:bg-neutral-700 rounded text-xs text-neutral-600 dark:text-neutral-300 font-mono">
+            Ctrl+K
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   
