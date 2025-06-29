@@ -7,7 +7,18 @@
   
   let filterOpen = false;
   let selectedFilter = 'All Parts of Speech';
+  let searchInput;
+  
+  // Handle Ctrl+K shortcut
+  function handleKeydown(event) {
+    if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+      event.preventDefault();
+      searchInput?.focus();
+    }
+  }
 </script>
+
+<svelte:window on:keydown={handleKeydown} />
 
 <!-- Desktop view -->
 <div class="hidden lg:flex relative items-center">
@@ -45,6 +56,7 @@
     
     <!-- Search Input (Middle) -->
     <input
+      bind:this={searchInput}
       type="text"
       placeholder="Search..."
       class="w-64 px-4 h-10 border border-neutral-300 dark:border-neutral-600 rounded-r-md bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none"
