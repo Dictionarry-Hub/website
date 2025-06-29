@@ -1,11 +1,26 @@
+<script>
+  import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
+  import { onMount, onDestroy } from 'svelte';
+  
+  onMount(() => {
+    setNavigationItems([
+      { title: '👋 Welcome!', children: ['💡 Motivation', '⚙️ Profilarr', '🔨 Development Notice'] }
+    ], '#/');
+  });
+  
+  onDestroy(() => {
+    clearNavigation();
+  });
+</script>
+
 <div class="p-6 max-w-4xl mx-auto">
-  <h1 class="text-3xl font-bold text-neutral-900 dark:text-white mb-6">👋 Welcome!</h1>
+  <h1 id="welcome" class="text-3xl font-bold text-neutral-900 dark:text-white mb-6">👋 Welcome!</h1>
   
   <p class="text-lg text-neutral-700 dark:text-neutral-300 mb-8">
     Welcome to Dictionarry! This project aims to wiki-fy and simplify media automation in Radarr / Sonarr through extensive, data driven documentation, custom formats and quality profiles.
   </p>
 
-  <section class="mb-8">
+  <section id="motivation" class="mb-8">
     <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 Motivation</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
@@ -57,7 +72,7 @@
     </p>
   </section>
 
-  <section class="mb-8">
+  <section id="profilarr" class="mb-8">
     <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">⚙️ Profilarr</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
@@ -101,7 +116,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="development-notice">
     <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔨 Development Notice</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300">

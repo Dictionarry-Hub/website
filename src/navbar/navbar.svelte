@@ -11,7 +11,7 @@
   }
 </script>
 
-<nav class="sticky top-0 z-30 w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-600">
+<nav class="sticky top-0 z-50 w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-600">
   <div class="w-full px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-3 items-center h-16">
       <div class="col-span-1">

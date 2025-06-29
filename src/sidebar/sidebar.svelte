@@ -42,8 +42,7 @@
 <aside class="sticky top-16 w-80 h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 border-r border-neutral-200 dark:border-neutral-700 overflow-y-auto">
   <div class="p-4">
     <!-- Getting Started Section -->
-    <SidebarSection title="🚀 Getting Started">
-      <SidebarItem href="/" label="Welcome!" isActive={currentPath === "/"} />
+    <SidebarSection title="🚀 Getting Started" href="/" isActive={currentPath === "/"}>
       <SidebarItem href="/profilarr-setup" label="Profilarr Setup" isActive={currentPath === "/profilarr-setup"} />
       <SidebarItem href="/development" label="Development" isActive={currentPath === "/development"} />
     </SidebarSection>
