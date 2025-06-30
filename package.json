@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run generate-routes && npm run build-search-index && vite",
+    "dev": "npm run generate-routes && npm run build-search-index && vite --host",
     "build": "npm run generate-routes && npm run build-search-index && vite build",
     "generate-routes": "tsx scripts/generate-routes.ts",
     "build-search-index": "tsx scripts/generateSearchIndex.ts",
