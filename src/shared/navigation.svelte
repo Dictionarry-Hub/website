@@ -1,6 +1,5 @@
 <script>
   import { navigationItems } from '@shared/stores/navigation';
-  import NavigationSection from './navigationSection.svelte';
   import NavigationItem from './navigationItem.svelte';
   import { onMount, onDestroy } from 'svelte';
   
