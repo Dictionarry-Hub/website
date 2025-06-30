@@ -1,10 +1,30 @@
 <script>
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
+  import { showHoverInfo, hideHoverInfo } from '@shared/stores/hoverInfo';
   import { onMount, onDestroy } from 'svelte';
+  
+  // Define hover definitions for this page
+  const hoverDefinitions = {
+    'custom formats': {
+      term: 'Custom Formats',
+      description: 'Pattern-matching rules that identify specific qualities, codecs, or release characteristics in media file names.'
+    },
+    'quality profiles': {
+      term: 'Quality Profiles', 
+      description: 'Collections of custom formats with assigned scores that determine which releases to prefer or reject.'
+    }
+  };
+  
+  function handleHover(key) {
+    const def = hoverDefinitions[key];
+    if (def) {
+      showHoverInfo(def.term, def.description);
+    }
+  }
   
   onMount(() => {
     setNavigationItems([
-      { title: '👋 Hey!', children: ['The Configuration Landscape', 'What Dictionarry Does', 'The Tooling Challenge', 'Bridges, Not Moats', 'Getting Started'] }
+      { title: 'Motivation', children: ['The Configuration Landscape', 'A Potential Solution', 'The Tooling Challenge', 'Getting Started'] }
     ], '#/');
   });
   
@@ -14,29 +34,29 @@
 </script>
 
 <div class="p-6 max-w-4xl mx-auto">
-  <h1 id="hey" class="text-3xl font-bold text-neutral-900 dark:text-white mb-6">💡 Motivation</h1>
-  
-  <p class="text-lg text-neutral-700 dark:text-neutral-300 mb-8">
-    Configuration management in media automation has evolved into a peculiar form of oral tradition. Knowledge passes through Reddit posts and Discord conversations-each person reconstructing solutions from fragments of community wisdom. The result? Hundreds of hours collectively spent solving identical problems.
+  <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 Motivation</h2>
+
+  <p class="text-neutral-700 dark:text-neutral-300 mb-8">
+    Every media automation setup starts the same way: hours of digging through forum posts and guides, trying to piece together how everything actually works. The result? Hundreds of hours collectively spent solving identical problems.
   </p>
 
   <section id="the-configuration-landscape" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">The Configuration Landscape</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🌍 The Configuration Landscape</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      When someone asks "how do I grab high-quality 4K content?" they're really asking several interconnected questions about codecs, release groups, source types, and quality thresholds. The typical answer involves creating dozens of custom formats, each targeting specific patterns in release names.
+      When someone asks "how do I grab high-quality 4K content?" they're really asking several interconnected questions about codecs, release groups, source types, and quality thresholds. The typical answer involves creating dozens of <span class="hidden lg:inline underline decoration-dotted cursor-help text-blue-600 dark:text-blue-400" on:mouseenter={() => handleHover('custom formats')} on:mouseleave={hideHoverInfo}>custom formats</span><span class="lg:hidden">custom formats</span>, each targeting specific patterns in release names.
     </p>
 
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      Custom formats are means to an end, not ends in themselves. They're pattern-matching utilities that help identify what you want, but the real value lies in how they work together to achieve your goals. The real challenge lies in orchestrating these tools into coherent quality profiles that balance quality, storage, availability, and personal preference. This orchestration knowledge exists, but it's largely implicit, buried in individual setups that took weeks to perfect.
+      Custom formats solve individual problems: identifying 4K releases, filtering out low-quality sources, prioritizing certain encoders. But they create a new problem: how do you make 20+ individual rules work together without conflicts? The real challenge lies in orchestrating these tools into coherent <span class="hidden lg:inline underline decoration-dotted cursor-help text-blue-600 dark:text-blue-400" on:mouseenter={() => handleHover('quality profiles')} on:mouseleave={hideHoverInfo}>quality profiles</span><span class="lg:hidden">quality profiles</span> that balance quality, storage, availability, and personal preference. This orchestration knowledge exists, but it's largely implicit, buried in individual setups that took weeks to perfect.
     </p>
   </section>
 
-  <section id="what-dictionarry-does" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">What Dictionarry Does</h2>
+  <section id="a-potential-solution" class="mb-8">
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">✨ A Potential Solution</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      We maintain a database of complete, tested configurations for common use cases. Each configuration represents a particular philosophy about media collection:
+      Instead of everyone rebuilding the same configurations from scratch, what if we shared complete, battle-tested profiles? Each one designed around a specific approach to media collection:
     </p>
 
     <ul class="list-disc list-inside space-y-2 mb-6 text-neutral-700 dark:text-neutral-300">
@@ -56,63 +76,45 @@
         <strong class="text-neutral-900 dark:text-white">And More</strong> - Additional profiles for specific use cases and requirements
       </li>
     </ul>
-
-    <p class="text-neutral-700 dark:text-neutral-300">
-      These aren't universal truths about media collection. They're opinionated starting points that encode specific trade-offs and priorities.
-    </p>
   </section>
 
   <section id="the-tooling-challenge" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">The Tooling Challenge</h2>
-    
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔧 The Tooling Challenge</h2>
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
       Even with perfect configuration databases, a critical gap remains: how do you actually apply these configurations to your setup? How do you handle updates without losing your customizations? How do you track what changed and why?
     </p>
-
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      Profilarr addresses these questions. It provides the synchronization layer between configuration sources and Radarr/Sonarr instances.
+      Profilarr solves these problems. It's a management tool that sits between configuration databases and your Radarr/Sonarr installations, automatically pulling updates, converting formats, and syncing everything while preserving your local changes.
     </p>
-
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      Key architectural decisions:
+      The process is simple:
     </p>
-
-    <ul class="list-disc list-inside space-y-2 mb-6 text-neutral-700 dark:text-neutral-300">
-      <li><strong class="text-neutral-900 dark:text-white">Database Agnostic</strong> - The protocol works with any git-based configuration repository</li>
-      <li><strong class="text-neutral-900 dark:text-white">Local Modifications Persist</strong> - Your changes aren't obliterated by upstream updates</li>
-      <li><strong class="text-neutral-900 dark:text-white">Conflict Resolution is Transparent</strong> - You see what changed and why before accepting updates</li>
-      <li><strong class="text-neutral-900 dark:text-white">Version Control Throughout</strong> - Every configuration change is tracked and reversible</li>
+    <ul class="list-disc list-inside space-y-2 mb-4 text-neutral-700 dark:text-neutral-300">
+      <li>You link a configuration database</li>
+      <li>You connect your Radarr/Sonarr instances</li>
+      <li>You press sync</li>
     </ul>
-  </section>
-
-  <section id="bridges-not-moats" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">Bridges, Not Moats</h2>
-    
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      The goal isn't to centralize media automation configuration-it's to democratize it. Multiple configuration databases should emerge, each reflecting different philosophies and use cases:
-
+      Behind the scenes, Profilarr:
     </p>
-
     <ul class="list-disc list-inside space-y-2 mb-6 text-neutral-700 dark:text-neutral-300">
-      <li><strong class="text-neutral-900 dark:text-white">Anime-focused configurations</strong> - Handling fansub group hierarchies, dual audio preferences, and seasonal naming conventions</li>
-      <li><strong class="text-neutral-900 dark:text-white">Language-specific databases</strong> - French VOSTFR priorities, German DL requirements, Spanish dub preferences</li>
-      <li><strong class="text-neutral-900 dark:text-white">Hardware-constrained setups</strong> - Optimized for transcoding limitations, bandwidth restrictions, or storage constraints</li>
+      <li>Automatically compiles configurations for different arr formats</li>
+      <li>Preserves your local modifications</li>
+      <li>Pulls in new updates from the database</li>
+      <li>Handles merge conflicts transparently</li>
+      <li>Tracks every change with version control</li>
     </ul>
-
-    <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      By making configurations shareable as complete, tested units-and providing the infrastructure to manage them, Profilarr lowers the barrier for anyone to contribute their expertise. The ecosystem improves when we build bridges between our knowledge, not moats around it.
-    </p>
   </section>
 
   <section id="getting-started" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">Getting Started</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🚀 Getting Started</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      <strong class="text-neutral-900 dark:text-white">Profilarr 1.0.0</strong> is in open beta. The setup process takes about 5 minutes for a basic installation.
+      <strong class="text-neutral-900 dark:text-white">Profilarr 1.0.0</strong> is in open beta.
     </p>
 
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      <a href="https://dictionarry.dev/wiki/profilarr-setup" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">-> Profilarr Setup Guide</a>
+      <a href="#/profilarr-setup" class="text-blue-600 dark:text-blue-400 hover:underline">-> Profilarr Setup Guide</a>
     </p>
   </section>
 </div>
