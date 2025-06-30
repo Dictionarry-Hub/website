@@ -10,7 +10,7 @@
 
 <a 
   {href}
-  class="block px-2 py-1 {textSize} rounded transition-colors {isActive ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-900 dark:text-blue-100 font-medium border-l-2 border-blue-500' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800'}"
+  class="block px-2 py-1 {textSize} rounded transition-colors {isActive ? 'text-blue-600 dark:text-blue-400 font-medium' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800'}"
   on:click|preventDefault={() => {
     const targetId = href.replace('#section=', '');
     const element = document.getElementById(targetId);

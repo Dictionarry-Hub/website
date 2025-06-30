@@ -2,7 +2,7 @@
   import ThemeToggle from '@ui/themeToggle.svelte';
   import Dropdown from '@ui/dropdown.svelte';
   import DropdownRow from '@ui/dropdownRow.svelte';
-  import { siGithub, siDiscord } from 'simple-icons';
+  import { siGithub, siDiscord, siBuymeacoffee } from 'simple-icons';
   import { MoreHorizontal } from 'lucide-svelte';
   import { clickOutside } from '@shared/utils/clickOutside.js';
   
@@ -25,6 +25,13 @@
     <span class="sr-only">Discord</span>
     <svg class="w-5.5 h-5.5" viewBox="0 0 24 24" fill="currentColor">
       <path d={siDiscord.path} />
+    </svg>
+  </a>
+  
+  <a href="https://buymeacoffee.com/santiagosayshey" class="social-icon" target="_blank" rel="noopener noreferrer">
+    <span class="sr-only">Buy Me A Coffee</span>
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d={siBuymeacoffee.path} />
     </svg>
   </a>
 </div>
@@ -68,6 +75,13 @@
           <span class="sr-only">Discord</span>
           <svg class="w-5.5 h-5.5" viewBox="0 0 24 24" fill="currentColor">
             <path d={siDiscord.path} />
+          </svg>
+        </a>
+        
+        <a href="https://buymeacoffee.com/santiagosayshey" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <span class="sr-only">Buy Me A Coffee</span>
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d={siBuymeacoffee.path} />
           </svg>
         </a>
       </div>

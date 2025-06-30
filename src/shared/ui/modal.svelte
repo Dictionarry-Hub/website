@@ -26,7 +26,7 @@
 {#if isOpen}
   <!-- Backdrop -->
   <div 
-    class="fixed inset-0 z-40 flex items-center justify-center p-4"
+    class="fixed inset-0 z-40 flex items-center justify-center p-4 sm:p-4 pt-20 sm:pt-4"
     style="backdrop-filter: brightness(0.4);"
     transition:fade={{ duration: 200 }}
     on:click={handleClose}
