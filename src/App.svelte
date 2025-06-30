@@ -37,18 +37,27 @@
         setTimeout(() => {
           const element = document.getElementById(targetId);
           if (element) {
-            const navbarHeight = 80;
-            const elementPosition = element.offsetTop - navbarHeight;
-            window.scrollTo({
-              top: elementPosition,
-              behavior: 'smooth'
-            });
+            const mainContent = document.querySelector('main');
+            if (mainContent) {
+              const mainContentRect = mainContent.getBoundingClientRect();
+              const elementRect = element.getBoundingClientRect();
+              const scrollTop = mainContent.scrollTop;
+              const targetScrollTop = scrollTop + elementRect.top - mainContentRect.top - 20;
+              
+              mainContent.scrollTo({
+                top: targetScrollTop,
+                behavior: 'smooth'
+              });
+            }
           }
-        }, 300);
+        }, 100);
         return;
       }
     }
-    window.scrollTo(0, 0);
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.scrollTo(0, 0);
+    }
   })
   
   // Initialize theme and search index on app mount
@@ -58,9 +67,9 @@
   })
 </script>
 
-<div class="min-h-screen flex flex-col">
+<div class="h-screen flex flex-col">
   <Navbar />
-  <div class="flex flex-1 relative">
+  <div class="flex flex-1 relative overflow-hidden">
     <!-- Desktop sidebar -->
     <div class="hidden lg:block">
       <Sidebar />
@@ -83,7 +92,7 @@
     {/if}
     
     <!-- Main content -->
-    <main class="flex-1 {$isMobileSidebarOpen ? 'hidden lg:block' : ''}">
+    <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden lg:block' : ''}">
       <Route path="/*" let:meta>
         {#if (meta.url === "/" || meta.url === "" || meta.url === "/welcome") || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/')}
           <Welcome />
