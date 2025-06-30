@@ -1,6 +1,7 @@
 <script>
   import { navigationItems } from '@shared/stores/navigation';
   import NavigationItem from './navigationItem.svelte';
+  import HoverInfo from '@shared/components/hoverInfo.svelte';
   import { onMount, onDestroy } from 'svelte';
   
   let activeSection = '';
@@ -25,12 +26,16 @@
     }
     
     // Fall back to scroll position detection
+    const mainContent = document.querySelector('main');
+    if (!mainContent) return;
+    
     const sections = document.querySelectorAll('[id]');
     let current = '';
     
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 120) { // Account for navbar height + some buffer
+      const mainRect = mainContent.getBoundingClientRect();
+      if (rect.top <= mainRect.top + 120) { // Account for navbar height + some buffer
         current = section.id;
       }
     });
@@ -40,12 +45,18 @@
   
   onMount(() => {
     updateActiveSection();
-    window.addEventListener('scroll', updateActiveSection);
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.addEventListener('scroll', updateActiveSection);
+    }
     window.addEventListener('hashchange', updateActiveSection);
   });
   
   onDestroy(() => {
-    window.removeEventListener('scroll', updateActiveSection);
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.removeEventListener('scroll', updateActiveSection);
+    }
     window.removeEventListener('hashchange', updateActiveSection);
   });
 </script>
@@ -102,6 +113,7 @@
         {/if}
       {/each}
     </div>
+    <HoverInfo />
   </div>
 </aside>
 {/if}

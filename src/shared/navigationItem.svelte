@@ -15,14 +15,18 @@
     const targetId = href.replace('#section=', '');
     const element = document.getElementById(targetId);
     if (element) {
-      // Calculate offset for navbar (64px + some padding)
-      const navbarHeight = 80;
-      const elementPosition = element.offsetTop - navbarHeight;
-      
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
+      const mainContent = document.querySelector('main');
+      if (mainContent) {
+        const mainContentRect = mainContent.getBoundingClientRect();
+        const elementRect = element.getBoundingClientRect();
+        const scrollTop = mainContent.scrollTop;
+        const targetScrollTop = scrollTop + elementRect.top - mainContentRect.top - 20;
+        
+        mainContent.scrollTo({
+          top: targetScrollTop,
+          behavior: 'smooth'
+        });
+      }
       
       // Update URL with section parameter, keeping current route
       const currentPath = window.location.hash.split('#section')[0] || '#/';
