@@ -6,11 +6,3 @@
   />
   <h1 class="hidden sm:block text-xl font-bold text-neutral-700 dark:text-neutral-300 whitespace-nowrap header-font">dictionarry</h1>
 </div>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
-  
-  .header-font {
-    font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
-  }
-</style>

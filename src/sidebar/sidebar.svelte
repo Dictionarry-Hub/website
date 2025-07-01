@@ -48,7 +48,7 @@
     </SidebarSection>
   
     <!-- Quality Profiles Section -->
-    <SidebarSection title="Quality Profiles" href="/quality-profile" isActive={currentPath === "/quality-profile"}>
+    <SidebarSection title="⚡ Quality Profiles" href="/quality-profile" isActive={currentPath === "/quality-profile"}>
       {#each qualityProfileRoutes as route}
         <SidebarItem 
           href={route.path} 
@@ -59,7 +59,7 @@
     </SidebarSection>
 
     <!-- Development Log Section -->
-    <SidebarSection title="Development Log" href="/dev-logs" isActive={currentPath === "/dev-logs"}>
+    <SidebarSection title="📝 Development Log" href="/dev-logs" isActive={currentPath === "/dev-logs"} isOpen={false}>
       {#each devLogRoutes as route}
         <SidebarItem 
           href={route.path} 
@@ -70,7 +70,7 @@
     </SidebarSection>
     
     <!-- Wiki Section -->
-    <SidebarSection title="Wiki" href="/wiki" isActive={currentPath === "/wiki"}>
+    <SidebarSection title="📚 Wiki" href="/wiki" isActive={currentPath === "/wiki"} isOpen={false}>
       {#each wikiRoutes as route}
         <SidebarItem 
           href={route.path} 
@@ -81,7 +81,7 @@
     </SidebarSection>
     
     <!-- Custom Formats Section -->
-    <SidebarSection title="Custom Formats" href="/custom-format" isActive={currentPath === "/custom-format"}>
+    <SidebarSection title="🎨 Custom Formats" href="/custom-format" isActive={currentPath === "/custom-format"}>
       {#each customFormatRoutes as route}
         <SidebarItem 
           href={route.path} 
@@ -92,7 +92,7 @@
     </SidebarSection>
     
     <!-- Regex Patterns Section -->
-    <SidebarSection title="Regex Patterns" href="/regex-pattern" isActive={currentPath === "/regex-pattern"}>
+    <SidebarSection title="🔍 Regex Patterns" href="/regex-pattern" isActive={currentPath === "/regex-pattern"}>
       {#each regexPatternRoutes as route}
         <SidebarItem 
           href={route.path} 
@@ -103,7 +103,7 @@
     </SidebarSection>
     
     <!-- Media Management Section -->
-    <SidebarSection title="Media Management" href="/media-management" isActive={currentPath === "/media-management"}>
+    <SidebarSection title="📁 Media Management" href="/media-management" isActive={currentPath === "/media-management"}>
       {#each mediaManagementRoutes as route}
         <SidebarItem 
           href={route.path} 
