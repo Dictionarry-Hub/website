@@ -2,6 +2,23 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
 import { join, extname, basename } from 'path';
 import { parse as parseYaml } from 'yaml';
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    // Remove emojis and special characters first
+    .replace(/[\u{1F600}-\u{1F64F}]|[\u{1F300}-\u{1F5FF}]|[\u{1F680}-\u{1F6FF}]|[\u{1F1E0}-\u{1F1FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '')
+    // Replace spaces with hyphens
+    .replace(/\s+/g, '-')
+    // Remove parentheses and brackets
+    .replace(/[()[\]]/g, '')
+    // Remove other special characters except hyphens and alphanumeric
+    .replace(/[^a-z0-9-]/g, '')
+    // Remove multiple consecutive hyphens
+    .replace(/-+/g, '-')
+    // Remove leading and trailing hyphens
+    .replace(/^-+|-+$/g, '');
+}
+
 interface SearchEntry {
   id: string;
   title: string;
@@ -104,16 +121,17 @@ function processWikiFiles(): SearchEntry[] {
       const content = readFileSync(join(wikiPath, file), 'utf-8');
       const { frontmatter, body } = extractFrontmatter(content);
       
-      const id = basename(file, '.md');
-      const title = frontmatter.title || id.replace(/[-_]/g, ' ');
+      const filename = basename(file, '.md');
+      const slug = slugify(filename);
+      const title = frontmatter.title || filename.replace(/[-_]/g, ' ');
       const description = frontmatter.description || body;
       
       entries.push({
-        id: `wiki-${id}`,
+        id: `wiki-${slug}`,
         title,
         description,
         content: body,
-        route: `/wiki/${id}`,
+        route: `/wiki/${slug}`,
         type: 'wiki',
         tags: frontmatter.tags || [],
         searchText: sanitizeForSearch(`${title} ${description} ${body}`),
@@ -138,16 +156,17 @@ function processDevLogs(): SearchEntry[] {
       const content = readFileSync(join(devLogPath, file), 'utf-8');
       const { frontmatter, body } = extractFrontmatter(content);
       
-      const id = basename(file, '.md');
-      const title = frontmatter.title || id.replace(/[-_]/g, ' ');
+      const filename = basename(file, '.md');
+      const slug = slugify(filename);
+      const title = frontmatter.title || filename.replace(/[-_]/g, ' ');
       const description = frontmatter.description || body;
       
       entries.push({
-        id: `dev-log-${id}`,
+        id: `dev-log-${slug}`,
         title,
         description,
         content: body,
-        route: `/dev-logs/${id}`,
+        route: `/dev-logs/${slug}`,
         type: 'dev_log',
         tags: frontmatter.tags || ['development'],
         searchText: sanitizeForSearch(`${title} ${description} ${body}`),
@@ -173,15 +192,16 @@ function processCustomFormats(): SearchEntry[] {
       
       try {
         const data = parseYaml(content);
-        const id = basename(file, '.yml');
-        const title = data.name || id.replace(/[-_]/g, ' ');
+        const filename = basename(file, '.yml');
+        const slug = slugify(filename);
+        const title = data.name || filename.replace(/[-_]/g, ' ');
         const description = data.description || '';
         
         entries.push({
-          id: `custom-format-${id}`,
+          id: `custom-format-${slug}`,
           title,
           description,
-          route: `/custom-formats/${id}`,
+          route: `/custom-format/${slug}`,
           type: 'custom_format',
           tags: data.tags || [],
           searchText: sanitizeForSearch(`${title} ${description} custom format`),
@@ -210,15 +230,16 @@ function processProfiles(): SearchEntry[] {
       
       try {
         const data = parseYaml(content);
-        const id = basename(file, '.yml');
-        const title = data.name || id.replace(/[-_]/g, ' ');
+        const filename = basename(file, '.yml');
+        const slug = slugify(filename);
+        const title = data.name || filename.replace(/[-_]/g, ' ');
         const description = data.description || '';
         
         entries.push({
-          id: `profile-${id}`,
+          id: `profile-${slug}`,
           title,
           description,
-          route: `/profiles/${id}`,
+          route: `/quality-profile/${slug}`,
           type: 'profile',
           tags: data.tags || ['quality', 'profile'],
           searchText: sanitizeForSearch(`${title} ${description} quality profile`),
@@ -247,17 +268,18 @@ function processRegexPatterns(): SearchEntry[] {
       
       try {
         const data = parseYaml(content);
-        const id = basename(file, '.yml');
-        const title = data.name || id.replace(/[-_]/g, ' ');
+        const filename = basename(file, '.yml');
+        const slug = slugify(filename);
+        const title = data.name || filename.replace(/[-_]/g, ' ');
         const description = data.description || '';
         const pattern = data.regex || '';
         
         entries.push({
-          id: `regex-${id}`,
+          id: `regex-${slug}`,
           title,
           description,
           content: pattern,
-          route: `/regex-patterns/${id}`,
+          route: `/regex-pattern/${slug}`,
           type: 'regex_pattern',
           tags: data.tags || ['regex', 'pattern'],
           searchText: sanitizeForSearch(`${title} ${description} ${pattern} regex pattern`),

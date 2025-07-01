@@ -8,6 +8,7 @@
   import { clickOutside } from '@shared/utils/clickOutside.js';
   import { searchResults, searchTerm, selectedFilters, searchFilters, performSearch, clearSearch, toggleSearchFilter } from '@shared/stores/search';
   import { filterStore } from '@shared/stores/filter';
+  import { router } from 'tinro';
   
   export let isOpen = false;
   
@@ -91,8 +92,8 @@
   }
   
   function selectResult(entry) {
-    console.log('Selected:', entry);
-    // TODO: Implement result selection logic
+    // Navigate to the selected entry's route
+    router.goto(entry.route);
     closeModal();
   }
   
