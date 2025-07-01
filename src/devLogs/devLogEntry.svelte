@@ -44,7 +44,7 @@
 
     {#if route.html}
       <div 
-        class="prose prose-sm dark:prose-invert max-w-none text-neutral-600 dark:text-neutral-300 overflow-hidden line-clamp-3 mb-4"
+        class="markdown-content max-w-none text-neutral-600 dark:text-neutral-300 overflow-hidden line-clamp-3 mb-4"
       >
         {@html route.html}
       </div>
