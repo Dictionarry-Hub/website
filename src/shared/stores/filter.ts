@@ -15,7 +15,8 @@ export const filterOptions = [
   'Custom Formats', 
   'Quality Profiles',
   'Development Logs',
-  'Regex Patterns'
+  'Regex Patterns',
+  'Media Management'
 ];
 
 // Load filter state from localStorage

@@ -7,7 +7,7 @@ export interface SearchEntry {
   description: string;
   content?: string;
   route: string;
-  type: 'wiki' | 'custom_format' | 'profile' | 'dev_log' | 'regex_pattern';
+  type: 'wiki' | 'custom_format' | 'profile' | 'dev_log' | 'regex_pattern' | 'media_management';
   tags: string[];
   searchText: string;
   weight: number;
@@ -49,7 +49,8 @@ export const searchResults = derived(
           ($selectedFilters.includes('Custom Formats') && entry.type === 'custom_format') ||
           ($selectedFilters.includes('Quality Profiles') && entry.type === 'profile') ||
           ($selectedFilters.includes('Development Logs') && entry.type === 'dev_log') ||
-          ($selectedFilters.includes('Regex Patterns') && entry.type === 'regex_pattern');
+          ($selectedFilters.includes('Regex Patterns') && entry.type === 'regex_pattern') ||
+          ($selectedFilters.includes('Media Management') && entry.type === 'media_management');
         
         if (!matchesFilter) return false;
 

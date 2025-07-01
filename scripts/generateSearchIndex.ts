@@ -25,7 +25,7 @@ interface SearchEntry {
   description: string;
   content?: string;
   route: string;
-  type: 'wiki' | 'custom_format' | 'profile' | 'dev_log' | 'regex_pattern';
+  type: 'wiki' | 'custom_format' | 'profile' | 'dev_log' | 'regex_pattern' | 'media_management';
   tags: string[];
   searchText: string;
   weight: number;
@@ -296,6 +296,65 @@ function processRegexPatterns(): SearchEntry[] {
   return entries;
 }
 
+function processMediaManagement(): SearchEntry[] {
+  const entries: SearchEntry[] = [];
+  const mediaManagementPath = join(DATABASE_PATH, 'media_management');
+  
+  try {
+    const files = readdirSync(mediaManagementPath).filter(f => f.endsWith('.yml'));
+    
+    for (const file of files) {
+      const content = readFileSync(join(mediaManagementPath, file), 'utf-8');
+      
+      try {
+        const data = parseYaml(content);
+        const filename = basename(file, '.yml');
+        const slug = slugify(filename);
+        const title = filename.replace(/[-_]/g, ' ');
+        
+        // Create searchable content from the YAML data
+        const searchableContent = Object.entries(data)
+          .map(([section, config]) => {
+            if (typeof config === 'object' && config !== null) {
+              return Object.entries(config as Record<string, any>)
+                .map(([key, value]) => `${key}: ${value}`)
+                .join(' ');
+            }
+            return `${section}: ${config}`;
+          })
+          .join(' ');
+        
+        let description = '';
+        if (slug === 'naming') {
+          description = 'File and folder naming configuration for Radarr and Sonarr';
+        } else if (slug === 'quality-definitions') {
+          description = 'Quality definitions and file size limits for different video qualities';
+        } else if (slug === 'misc') {
+          description = 'Miscellaneous media management settings';
+        }
+        
+        entries.push({
+          id: `media-management-${slug}`,
+          title,
+          description,
+          content: searchableContent,
+          route: `/media-management/${slug}`,
+          type: 'media_management',
+          tags: ['media', 'management', 'settings', slug],
+          searchText: sanitizeForSearch(`${title} ${description} ${searchableContent} media management`),
+          weight: 0.8
+        });
+      } catch (e) {
+        console.warn(`Failed to parse media management ${file}:`, e);
+      }
+    }
+  } catch (e) {
+    console.warn('Failed to process media management files:', e);
+  }
+  
+  return entries;
+}
+
 function generateSearchIndex(): void {
   console.log('Generating search index...');
   
@@ -304,7 +363,8 @@ function generateSearchIndex(): void {
     ...processDevLogs(),
     ...processCustomFormats(),
     ...processProfiles(),
-    ...processRegexPatterns()
+    ...processRegexPatterns(),
+    ...processMediaManagement()
   ];
   
   const searchIndex: SearchIndex = {
