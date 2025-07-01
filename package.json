@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
     "js-yaml": "^4.1.0",
     "lucide-svelte": "^0.525.0",
     "marked": "^16.0.0",

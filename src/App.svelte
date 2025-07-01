@@ -1,4 +1,5 @@
 <script>
+  import 'highlight.js/styles/atom-one-dark.css'
   import { Route, router } from 'tinro'
   import Navbar from './navbar/navbar.svelte'
   import Sidebar from './sidebar/sidebar.svelte'
@@ -6,6 +7,8 @@
   import Welcome from './gettingStarted/welcome.svelte'
   import ProfilarrSetup from './gettingStarted/profilarrSetup.svelte'
   import Development from './gettingStarted/development.svelte'
+  import DevLogTimeline from './devLogs/devLogTimeline.svelte'
+  import DevLogPage from './devLogs/devLogPage.svelte'
   import NotFound from '@shared/components/notFound.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
@@ -64,6 +67,7 @@
   onMount(async () => {
     theme.init()
     await loadSearchIndex()
+    
   })
 </script>
 
@@ -100,6 +104,10 @@
           <ProfilarrSetup />
         {:else if meta.url === "/development" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/development')}
           <Development />
+        {:else if meta.url === "/dev-logs" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/dev-logs')}
+          <DevLogTimeline />
+        {:else if meta.url.startsWith("/dev-logs/")}
+          <DevLogPage />
         {:else}
           <NotFound />
         {/if}

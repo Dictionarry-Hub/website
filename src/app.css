@@ -59,3 +59,179 @@ body {
 .dark ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(163 163 163);
 }
+
+/* Markdown Content Styles */
+.markdown-content {
+  color: rgb(38 38 38);
+  line-height: 1.625;
+}
+
+.dark .markdown-content {
+  color: rgb(229 229 229);
+}
+
+.markdown-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(23 23 23);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(229 229 229);
+  padding-bottom: 0.5rem;
+}
+
+.dark .markdown-content h1 {
+  color: rgb(255 255 255);
+  border-bottom-color: rgb(64 64 64);
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(23 23 23);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.dark .markdown-content h2 {
+  color: rgb(255 255 255);
+}
+
+.markdown-content h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgb(23 23 23);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.dark .markdown-content h3 {
+  color: rgb(255 255 255);
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+  color: rgb(64 64 64);
+}
+
+.dark .markdown-content p {
+  color: rgb(212 212 212);
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  color: rgb(64 64 64);
+}
+
+.dark .markdown-content ul,
+.dark .markdown-content ol {
+  color: rgb(212 212 212);
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content li {
+  margin-bottom: 0.25rem;
+}
+
+.markdown-content code:not(.hljs) {
+  background-color: rgb(245 245 245);
+  color: rgb(38 38 38);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.dark .markdown-content code:not(.hljs) {
+  background-color: rgb(38 38 38);
+  color: rgb(229 229 229);
+}
+
+.markdown-content code.hljs {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875rem;
+}
+
+.markdown-content pre {
+  background-color: rgb(245 245 245);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.dark .markdown-content pre {
+  background-color: rgb(38 38 38);
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid rgb(212 212 212);
+  padding-left: 1rem;
+  font-style: italic;
+  color: rgb(115 115 115);
+  margin-bottom: 1rem;
+}
+
+.dark .markdown-content blockquote {
+  border-left-color: rgb(115 115 115);
+  color: rgb(163 163 163);
+}
+
+.markdown-content a {
+  color: rgb(37 99 235);
+  text-decoration: underline;
+}
+
+.dark .markdown-content a {
+  color: rgb(96 165 250);
+}
+
+.markdown-content strong {
+  font-weight: 600;
+  color: rgb(23 23 23);
+}
+
+.dark .markdown-content strong {
+  color: rgb(255 255 255);
+}
+
+.markdown-content em {
+  font-style: italic;
+}
+
+.markdown-content .video-embed {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.markdown-content .video-embed iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Make default text darker in light mode for better contrast */
+.hljs {
+  color: rgb(55 65 81) !important;
+}
+
+.dark .hljs {
+  color: inherit !important;
+}
+
+
