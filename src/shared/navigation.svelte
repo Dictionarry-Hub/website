@@ -2,6 +2,7 @@
   import { navigationItems } from '@shared/stores/navigation';
   import NavigationItem from './navigationItem.svelte';
   import HoverInfo from '@shared/components/hoverInfo.svelte';
+  import { Navigation } from 'lucide-svelte';
   import { onMount, onDestroy } from 'svelte';
   
   let activeSection = '';
@@ -64,6 +65,14 @@
 {#if $navigationItems.items.length > 0}
 <aside class="sticky top-16 w-80 h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 border-l border-neutral-200 dark:border-neutral-700 overflow-y-auto">
   <div class="p-4">
+    <div class="mb-4">
+      <div class="flex items-center space-x-2">
+        <Navigation class="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
+        <span class="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+          Navigation
+        </span>
+      </div>
+    </div>
     <div class="space-y-1">
       {#each $navigationItems.items as item}
         {#if typeof item === 'string'}

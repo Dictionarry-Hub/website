@@ -11,7 +11,7 @@
     setNavigationItems([
       'Radarr',
       'Sonarr'
-    ]);
+    ], '#/media-management/naming');
   });
 
   onDestroy(() => {

@@ -34,7 +34,7 @@
 </script>
 
 <div class="p-6 max-w-4xl mx-auto">
-  <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 Motivation</h2>
+  <h2 id="motivation" class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 Motivation</h2>
 
   <p class="text-neutral-700 dark:text-neutral-300 mb-8">
     Every media automation setup starts the same way: hours of digging through forum posts and guides, trying to piece together how everything actually works. The result? Hundreds of hours collectively spent solving identical problems.

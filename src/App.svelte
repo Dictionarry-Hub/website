@@ -9,6 +9,11 @@
   import Development from './gettingStarted/development.svelte'
   import DevLogTimeline from './devLogs/devLogTimeline.svelte'
   import DevLogPage from './devLogs/devLogPage.svelte'
+  import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
+  import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
+  import NamingPage from './mediaManagement/namingPage.svelte'
+  import QualityDefinitionsPage from './mediaManagement/qualityDefinitionsPage.svelte'
+  import MiscSettingsPage from './mediaManagement/miscSettingsPage.svelte'
   import NotFound from '@shared/components/notFound.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
@@ -108,6 +113,16 @@
           <DevLogTimeline />
         {:else if meta.url.startsWith("/dev-logs/")}
           <DevLogPage />
+        {:else if meta.url === "/quality-profile" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/quality-profile')}
+          <QualityProfilePage />
+        {:else if meta.url === "/media-management" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management')}
+          <MediaManagementPage />
+        {:else if meta.url === "/media-management/naming" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/naming')}
+          <NamingPage />
+        {:else if meta.url === "/media-management/qualitydefinitions" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/qualitydefinitions')}
+          <QualityDefinitionsPage />
+        {:else if meta.url === "/media-management/misc" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/misc')}
+          <MiscSettingsPage />
         {:else}
           <NotFound />
         {/if}
