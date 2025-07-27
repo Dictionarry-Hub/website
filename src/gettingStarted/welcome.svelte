@@ -34,7 +34,7 @@
 </script>
 
 <div class="p-6 max-w-4xl mx-auto">
-  <h2 id="motivation" class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 Motivation</h2>
+  <h2 id="motivation" class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔥 Motivation</h2>
 
   <p class="text-neutral-700 dark:text-neutral-300 mb-8">
     Every media automation setup starts the same way: hours of digging through forum posts and guides, trying to piece together how everything actually works. The result? Hundreds of hours collectively spent solving identical problems.
@@ -53,7 +53,7 @@
   </section>
 
   <section id="a-potential-solution" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">✨ A Potential Solution</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">💡 A Potential Solution</h2>
     
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
       Instead of everyone rebuilding the same configurations from scratch, what if we shared complete, battle-tested profiles? Each one designed around a specific approach to media collection:
@@ -84,7 +84,10 @@
       Even with perfect configuration databases, a critical gap remains: how do you actually apply these configurations to your setup? How do you handle updates without losing your customizations? How do you track what changed and why?
     </p>
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      Profilarr solves these problems. It's a management tool that sits between configuration databases and your Radarr/Sonarr installations, automatically pulling updates, converting formats, and syncing everything while preserving your local changes.
+      For developers, the challenge is even greater: how do you work on, test, and share these configuration databases with ease? Without proper tooling, you're stuck working directly inside Radarr/Sonarr's interface with no version control, manually interacting with APIs to import/export configurations, and dealing with a finicky, error-prone process.
+    </p>
+    <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+      Profilarr solves all these problems. It's a management tool that sits between configuration databases and your Radarr/Sonarr installations, automatically pulling updates, converting formats, and syncing everything while preserving your local changes. For developers, it provides a proper workflow with version control, easy testing, and seamless sharing.
     </p>
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
       The process is simple:

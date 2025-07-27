@@ -21,17 +21,53 @@
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
   
-  // Import generated routes at build time
-  import { routes } from './generated/routes'
+  // Import generated content database at build time
+  import { contentDatabase } from './generated/contentDatabase'
   
-  // Create route mapping
-  const routeMap = {}
-  routes.forEach(route => {
-    routeMap[route.path] = route
-  })
+  // Route configuration - single source of truth for all routes
+  const routeConfig = {
+    '/': Welcome,
+    '/welcome': Welcome,
+    '/profilarr-setup': ProfilarrSetup,
+    '/development': Development,
+    '/dev-logs': DevLogTimeline,
+    '/quality-profile': QualityProfilePage,
+    '/media-management': MediaManagementPage,
+    '/media-management/naming': NamingPage,
+    '/media-management/qualitydefinitions': QualityDefinitionsPage,
+    '/media-management/misc': MiscSettingsPage,
+  }
+  
+  // Dynamic route patterns
+  const dynamicRoutes = [
+    { pattern: /^\/dev-logs\//, component: DevLogPage },
+    // Add more dynamic patterns here as needed
+  ]
+  
+  // Helper to get component for a route
+  function getRouteComponent(url) {
+    // Remove section parameters for route matching
+    const cleanUrl = url.split('#section=')[0]
+    
+    // Check static routes first
+    if (routeConfig[cleanUrl]) {
+      return routeConfig[cleanUrl]
+    }
+    
+    // Check dynamic routes
+    for (const route of dynamicRoutes) {
+      if (route.pattern.test(cleanUrl)) {
+        return route.component
+      }
+    }
+    
+    // Default to NotFound
+    return NotFound
+  }
   
   // Enable hash-based routing for SPA
   router.mode.hash()
+  
   // Scroll to top on route change, but handle section parameters
   router.subscribe(() => {
     // Close mobile sidebar on route change
@@ -72,7 +108,6 @@
   onMount(async () => {
     theme.init()
     await loadSearchIndex()
-    
   })
 </script>
 
@@ -103,29 +138,7 @@
     <!-- Main content -->
     <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden lg:block' : ''}">
       <Route path="/*" let:meta>
-        {#if (meta.url === "/" || meta.url === "" || meta.url === "/welcome") || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/')}
-          <Welcome />
-        {:else if meta.url === "/profilarr-setup" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/profilarr-setup')}
-          <ProfilarrSetup />
-        {:else if meta.url === "/development" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/development')}
-          <Development />
-        {:else if meta.url === "/dev-logs" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/dev-logs')}
-          <DevLogTimeline />
-        {:else if meta.url.startsWith("/dev-logs/")}
-          <DevLogPage />
-        {:else if meta.url === "/quality-profile" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/quality-profile')}
-          <QualityProfilePage />
-        {:else if meta.url === "/media-management" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management')}
-          <MediaManagementPage />
-        {:else if meta.url === "/media-management/naming" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/naming')}
-          <NamingPage />
-        {:else if meta.url === "/media-management/qualitydefinitions" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/qualitydefinitions')}
-          <QualityDefinitionsPage />
-        {:else if meta.url === "/media-management/misc" || (meta.url.includes("section=") && meta.url.split('#section=')[0] === '/media-management/misc')}
-          <MiscSettingsPage />
-        {:else}
-          <NotFound />
-        {/if}
+        <svelte:component this={getRouteComponent(meta.url)} />
       </Route>
     </main>
     

@@ -18,7 +18,7 @@
 
 <div class="max-w-4xl mx-auto p-6 space-y-8">
   <div class="space-y-4">
-    <h1 id="overview" class="text-2xl font-bold text-neutral-900 dark:text-white">Media Management Settings</h1>
+    <h1 id="overview" class="text-xl font-bold text-neutral-900 dark:text-white">Media Management Settings</h1>
     <p class="text-neutral-600 dark:text-neutral-400">
       Additional configuration settings that work alongside quality profiles and custom formats to control how your media is organized, named, and processed.
     </p>
@@ -31,7 +31,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
         </svg>
       </div>
-      <h2 id="naming" class="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Naming</h2>
+      <h2 id="naming" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">Naming</h2>
     </div>
     
     <div class="p-6 space-y-4">
@@ -72,7 +72,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
         </svg>
       </div>
-      <h2 id="quality-definitions" class="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Quality Definitions</h2>
+      <h2 id="quality-definitions" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">Quality Definitions</h2>
     </div>
     
     <div class="p-6 space-y-4">
@@ -97,7 +97,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
         </svg>
       </div>
-      <h2 id="miscellaneous-settings" class="text-xl font-semibold text-neutral-800 dark:text-neutral-200">Miscellaneous Settings</h2>
+      <h2 id="miscellaneous-settings" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">Miscellaneous Settings</h2>
     </div>
     
     <div class="p-6">

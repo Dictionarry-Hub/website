@@ -1,35 +1,35 @@
 <script>
   import SidebarSection from './sidebarSection.svelte';
   import SidebarItem from './sidebarItem.svelte';
-  import { routes } from '../generated/routes';
+  import { contentDatabase } from '../generated/contentDatabase';
   import { router } from 'tinro';
   
   // Get current path for active state
   $: currentPath = $router.path;
   
-  // Filter routes by category at build time
-  const devLogRoutes = routes
-    .filter(route => route.category === 'dev-logs')
+  // Filter entries by category/type at build time
+  const devLogEntries = contentDatabase.entries
+    .filter(entry => entry.category === 'dev-logs' && entry.type !== 'static')
     .sort((a, b) => a.slug.localeCompare(b.slug));
   
-  const wikiRoutes = routes
-    .filter(route => route.category === 'wiki')
+  const wikiEntries = contentDatabase.entries
+    .filter(entry => entry.category === 'wiki')
     .sort((a, b) => a.slug.localeCompare(b.slug));
   
-  const qualityProfileRoutes = routes
-    .filter(route => route.type === 'quality-profile')
-    .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  const qualityProfileEntries = contentDatabase.entries
+    .filter(entry => entry.type === 'quality-profile')
+    .sort((a, b) => a.title.localeCompare(b.title));
   
-  const customFormatRoutes = routes
-    .filter(route => route.type === 'custom-format')
-    .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  const customFormatEntries = contentDatabase.entries
+    .filter(entry => entry.type === 'custom-format')
+    .sort((a, b) => a.title.localeCompare(b.title));
   
-  const regexPatternRoutes = routes
-    .filter(route => route.type === 'regex-pattern')
-    .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  const regexPatternEntries = contentDatabase.entries
+    .filter(entry => entry.type === 'regex-pattern')
+    .sort((a, b) => a.title.localeCompare(b.title));
   
-  const mediaManagementRoutes = routes
-    .filter(route => route.type === 'media-management')
+  const mediaManagementEntries = contentDatabase.entries
+    .filter(entry => entry.type === 'media-management')
     .sort((a, b) => {
       // Custom sort order for media management
       const order = ['naming', 'qualitydefinitions', 'misc'];
@@ -49,68 +49,66 @@
   
     <!-- Quality Profiles Section -->
     <SidebarSection title="⚡ Quality Profiles" href="/quality-profile" isActive={currentPath === "/quality-profile"}>
-      {#each qualityProfileRoutes as route}
+      {#each qualityProfileEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.data.name}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>
 
     <!-- Development Log Section -->
     <SidebarSection title="📝 Development Log" href="/dev-logs" isActive={currentPath === "/dev-logs"} isOpen={false}>
-      {#each devLogRoutes as route}
+      {#each devLogEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.frontmatter?.title || route.slug}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>
     
     <!-- Wiki Section -->
     <SidebarSection title="📚 Wiki" href="/wiki" isActive={currentPath === "/wiki"} isOpen={false}>
-      {#each wikiRoutes as route}
+      {#each wikiEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.frontmatter?.title || route.slug}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>
     
     <!-- Custom Formats Section -->
     <SidebarSection title="🎨 Custom Formats" href="/custom-format" isActive={currentPath === "/custom-format"}>
-      {#each customFormatRoutes as route}
+      {#each customFormatEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.data.name}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>
     
     <!-- Regex Patterns Section -->
     <SidebarSection title="🔍 Regex Patterns" href="/regex-pattern" isActive={currentPath === "/regex-pattern"}>
-      {#each regexPatternRoutes as route}
+      {#each regexPatternEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.data.name}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>
     
     <!-- Media Management Section -->
     <SidebarSection title="📁 Media Management" href="/media-management" isActive={currentPath === "/media-management"}>
-      {#each mediaManagementRoutes as route}
+      {#each mediaManagementEntries as entry}
         <SidebarItem 
-          href={route.path} 
-          label={route.slug === 'naming' ? 'Naming Settings' : 
-                 route.slug === 'qualitydefinitions' ? 'Quality Definitions' : 
-                 route.slug === 'misc' ? 'Misc Settings' : route.data?.name || route.slug}
-          isActive={currentPath === route.path}
+          href={entry.path} 
+          label={entry.title}
+          isActive={currentPath === entry.path}
         />
       {/each}
     </SidebarSection>

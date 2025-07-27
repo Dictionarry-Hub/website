@@ -1,25 +1,6 @@
-import { writable, derived } from 'svelte/store';
+import { writable, derived, get } from 'svelte/store';
 import { filterStore } from './filter';
-
-export interface SearchEntry {
-  id: string;
-  title: string;
-  description: string;
-  content?: string;
-  route: string;
-  type: 'wiki' | 'custom_format' | 'profile' | 'dev_log' | 'regex_pattern' | 'media_management';
-  tags: string[];
-  searchText: string;
-  weight: number;
-}
-
-export interface SearchIndex {
-  entries: SearchEntry[];
-  lastUpdated: string;
-}
-
-// Store for the search index data
-export const searchIndex = writable<SearchIndex | null>(null);
+import { contentDatabase } from '../../generated/contentDatabase';
 
 // Store for current search term
 export const searchTerm = writable<string>('');
@@ -33,31 +14,32 @@ export { filterOptions as searchFilters } from './filter';
 
 // Derived store for filtered search results
 export const searchResults = derived(
-  [searchIndex, searchTerm, selectedFilters],
-  ([$searchIndex, $searchTerm, $selectedFilters]) => {
-    if (!$searchIndex || !$searchTerm.trim()) {
+  [searchTerm, selectedFilters],
+  ([$searchTerm, $selectedFilters]) => {
+    if (!$searchTerm.trim()) {
       return [];
     }
 
     const term = $searchTerm.toLowerCase().trim();
     
-    return $searchIndex.entries
+    // Map content database entries to search results
+    return contentDatabase.entries
       .filter(entry => {
         // Filter by type - matches if "All Types" is selected OR if specific type is selected
         const matchesFilter = $selectedFilters.includes('All Types') ||
-          ($selectedFilters.includes('Wiki Articles') && entry.type === 'wiki') ||
-          ($selectedFilters.includes('Custom Formats') && entry.type === 'custom_format') ||
-          ($selectedFilters.includes('Quality Profiles') && entry.type === 'profile') ||
-          ($selectedFilters.includes('Development Logs') && entry.type === 'dev_log') ||
-          ($selectedFilters.includes('Regex Patterns') && entry.type === 'regex_pattern') ||
-          ($selectedFilters.includes('Media Management') && entry.type === 'media_management');
+          ($selectedFilters.includes('Wiki Articles') && entry.category === 'wiki') ||
+          ($selectedFilters.includes('Custom Formats') && entry.type === 'custom-format') ||
+          ($selectedFilters.includes('Quality Profiles') && entry.type === 'quality-profile') ||
+          ($selectedFilters.includes('Development Logs') && entry.category === 'dev-logs') ||
+          ($selectedFilters.includes('Regex Patterns') && entry.type === 'regex-pattern') ||
+          ($selectedFilters.includes('Media Management') && entry.type === 'media-management');
         
         if (!matchesFilter) return false;
 
         return (
           entry.title.toLowerCase().includes(term) ||
-          entry.description.toLowerCase().includes(term) ||
-          (entry.content && entry.content.toLowerCase().includes(term)) ||
+          (entry.description && entry.description.toLowerCase().includes(term)) ||
+          entry.searchText.includes(term) ||
           entry.tags.some(tag => tag.toLowerCase().includes(term))
         );
       })
@@ -113,37 +95,33 @@ export const searchResults = derived(
           if (a.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreA += 5;
           if (b.tags.some(tag => normalize(tag).includes(normalizedWord))) scoreB += 5;
           
-          // Content matches: lowest weight
-          if (a.content && normalize(a.content).includes(normalizedWord)) scoreA += 2;
-          if (b.content && normalize(b.content).includes(normalizedWord)) scoreB += 2;
+          // Search text matches: lowest weight
+          if (normalize(a.searchText).includes(normalizedWord)) scoreA += 2;
+          if (normalize(b.searchText).includes(normalizedWord)) scoreB += 2;
         });
 
         // Factor in base content type weight
-        scoreA += a.weight;
-        scoreB += b.weight;
+        scoreA += a.searchWeight;
+        scoreB += b.searchWeight;
 
         return scoreB - scoreA;
       })
-      .slice(0, 50); // Limit to top 50 results for performance
+      .slice(0, 50) // Limit to top 50 results for performance
+      .map(entry => ({
+        id: entry.id,
+        title: entry.title,
+        description: entry.description || '',
+        route: entry.path,
+        type: entry.type,
+        tags: entry.tags,
+        weight: entry.searchWeight
+      }));
   }
 );
 
-// Function to load search index
+// Function to load search index (now just logs that we're using the built-in database)
 export async function loadSearchIndex(): Promise<void> {
-  try {
-    const response = await fetch('/search-index.json');
-    if (!response.ok) {
-      throw new Error(`Failed to fetch search index: ${response.status}`);
-    }
-    
-    const index: SearchIndex = await response.json();
-    searchIndex.set(index);
-    console.log(`Loaded search index with ${index.entries.length} entries`);
-  } catch (error) {
-    console.error('Failed to load search index:', error);
-    // Set empty index as fallback
-    searchIndex.set({ entries: [], lastUpdated: new Date().toISOString() });
-  }
+  console.log(`Using content database with ${contentDatabase.entries.length} entries`);
 }
 
 // Function to clear search

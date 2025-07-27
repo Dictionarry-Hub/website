@@ -1,12 +1,12 @@
 <script>
-  import { routes } from '../generated/routes';
+  import { contentDatabase } from '../generated/contentDatabase';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv, Info } from 'lucide-svelte';
   import Tooltip from '@shared/ui/tooltip.svelte';
 
   // Find the misc settings data
-  $: miscData = routes.find(r => r.slug === 'misc' && r.type === 'media-management')?.data;
+  $: miscData = contentDatabase.entries.find(e => e.slug === 'misc' && e.type === 'media-management')?.data;
 
   onMount(() => {
     setNavigationItems([
@@ -50,7 +50,7 @@
 
 <div class="p-6 max-w-4xl mx-auto">
   <div class="space-y-4 mb-8">
-    <h1 class="text-2xl font-bold text-neutral-900 dark:text-white">Miscellaneous Settings</h1>
+    <h1 class="text-xl font-bold text-neutral-900 dark:text-white">Miscellaneous Settings</h1>
     <p class="text-neutral-600 dark:text-neutral-400">
       Additional configuration settings for Radarr and Sonarr that control various aspects of media processing and management.
     </p>
@@ -70,7 +70,7 @@
                 <Tv class="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
             {/if}
-            <h2 id="{service.toLowerCase()}" class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 capitalize">
+            <h2 id="{service.toLowerCase()}" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200 capitalize">
               {service}
             </h2>
           </div>

@@ -1,9 +1,9 @@
 <script>
-  import { routes } from '../generated/routes';
+  import { contentDatabase } from '../generated/contentDatabase';
 
-  // Filter and sort dev log routes by date (newest first)
-  const devLogRoutes = routes
-    .filter(route => route.category === 'dev-logs')
+  // Filter and sort dev log entries by date (newest first)
+  const devLogEntries = contentDatabase.entries
+    .filter(entry => entry.category === 'dev-logs' && entry.type !== 'static')
     .sort((a, b) => {
       const dateA = new Date(a.frontmatter?.created || '1970-01-01');
       const dateB = new Date(b.frontmatter?.created || '1970-01-01');
@@ -32,19 +32,19 @@
     ></div>
 
     <div class="space-y-6">
-      {#each devLogRoutes as route}
+      {#each devLogEntries as entry}
         <div class="relative pl-8 group">
           <!-- Dot on the timeline -->
           <div class="absolute left-2.5 top-1 w-3 h-3 bg-blue-500 rounded-full -translate-x-1/2 border-2 border-white dark:border-neutral-900 transition-transform duration-150 group-hover:scale-125"></div>
 
           <!-- Content -->
-          <a href="#{route.path}" class="block">
+          <a href="#{entry.path}" class="block">
             <div class="p-2.5 rounded-md bg-transparent group-hover:bg-neutral-100 dark:group-hover:bg-neutral-800/50 transition-colors duration-150">
               <p class="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-0.5">
-                {formatDate(route.frontmatter?.created)}
+                {formatDate(entry.frontmatter?.created)}
               </p>
               <h4 class="text-sm text-neutral-700 dark:text-neutral-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 leading-tight transition-colors font-medium">
-                {route.frontmatter?.title || route.slug}
+                {entry.title}
               </h4>
             </div>
           </a>

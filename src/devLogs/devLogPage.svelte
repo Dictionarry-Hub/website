@@ -1,13 +1,13 @@
 <script>
   import { router } from 'tinro';
-  import { routes } from '../generated/routes';
+  import { contentDatabase } from '../generated/contentDatabase';
   import NotFound from '@shared/components/notFound.svelte';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onDestroy } from 'svelte';
 
-  // Get current path for finding the matching route
+  // Get current path for finding the matching entry
   $: currentPath = $router.path;
-  $: devLog = routes.find(r => r.path === currentPath);
+  $: devLog = contentDatabase.routeMap[currentPath];
 
   // Update navigation when devLog changes
   $: if (devLog && devLog.navigation) {
@@ -23,7 +23,7 @@
 
 {#if devLog}
   <div class="p-6 max-w-4xl mx-auto">
-    <h1 class="text-3xl font-bold text-neutral-900 dark:text-white mb-4">{devLog.frontmatter.title}</h1>
+    <h1 class="text-3xl font-bold text-neutral-900 dark:text-white mb-4">{devLog.title}</h1>
     <div class="markdown-content">
       {@html devLog.html}
     </div>

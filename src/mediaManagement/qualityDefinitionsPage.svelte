@@ -1,12 +1,12 @@
 <script>
-  import { routes } from '../generated/routes';
+  import { contentDatabase } from '../generated/contentDatabase';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv } from 'lucide-svelte';
   import Chart from 'chart.js/auto';
 
   // Find the quality definitions data
-  $: qualityDefinitionsData = routes.find(r => r.slug === 'qualitydefinitions' && r.type === 'media-management')?.data;
+  $: qualityDefinitionsData = contentDatabase.entries.find(e => e.slug === 'qualitydefinitions' && e.type === 'media-management')?.data;
 
   onMount(() => {
     setNavigationItems([
@@ -115,7 +115,7 @@
 
 <div class="p-6 max-w-4xl mx-auto">
   <div class="space-y-4 mb-8">
-    <h1 class="text-2xl font-bold text-neutral-900 dark:text-white">Quality Definitions</h1>
+    <h1 class="text-xl font-bold text-neutral-900 dark:text-white">Quality Definitions</h1>
     <p class="text-neutral-600 dark:text-neutral-400">
       File size limits for different video qualities in Radarr and Sonarr.
     </p>
@@ -135,7 +135,7 @@
                 <Tv class="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
             {/if}
-            <h2 id="{service.toLowerCase()}" class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 capitalize">
+            <h2 id="{service.toLowerCase()}" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200 capitalize">
               {service}
             </h2>
           </div>
