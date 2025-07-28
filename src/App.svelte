@@ -5,8 +5,9 @@
   import Sidebar from './sidebar/sidebar.svelte'
   import Navigation from './shared/navigation.svelte'
   import Welcome from './gettingStarted/welcome.svelte'
-  import ProfilarrSetup from './gettingStarted/profilarrSetup.svelte'
+  import ProfilarrInstallation from './gettingStarted/profilarrInstallation.svelte'
   import Development from './gettingStarted/development.svelte'
+  import Profilarr101 from './gettingStarted/101.svelte'
   import DevLogTimeline from './devLogs/devLogTimeline.svelte'
   import DevLogPage from './devLogs/devLogPage.svelte'
   import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
@@ -28,7 +29,8 @@
   const routeConfig = {
     '/': Welcome,
     '/welcome': Welcome,
-    '/profilarr-setup': ProfilarrSetup,
+    '/profilarr-setup/installation': ProfilarrInstallation,
+    '/profilarr-setup/101': Profilarr101,
     '/development': Development,
     '/dev-logs': DevLogTimeline,
     '/quality-profile': QualityProfilePage,

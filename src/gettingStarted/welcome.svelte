@@ -81,10 +81,7 @@
   <section id="the-tooling-challenge" class="mb-8">
     <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔧 The Tooling Challenge</h2>
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      Even with perfect configuration databases, a critical gap remains: how do you actually apply these configurations to your setup? How do you handle updates without losing your customizations? How do you track what changed and why?
-    </p>
-    <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      For developers, the challenge is even greater: how do you work on, test, and share these configuration databases with ease? Without proper tooling, you're stuck working directly inside Radarr/Sonarr's interface with no version control, manually interacting with APIs to import/export configurations, and dealing with a finicky, error-prone process.
+      Even with perfect configuration databases, a critical gap remains: how do you actually apply these configurations to your setup? How do you handle updates without losing your customizations? How do you track what changed and why? For developers, without proper tooling, you're stuck with no version control and manual API interactions.
     </p>
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
       Profilarr solves all these problems. It's a management tool that sits between configuration databases and your Radarr/Sonarr installations, automatically pulling updates, converting formats, and syncing everything while preserving your local changes. For developers, it provides a proper workflow with version control, easy testing, and seamless sharing.
