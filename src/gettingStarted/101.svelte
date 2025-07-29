@@ -156,8 +156,14 @@
     </div>
   </div>
 
+  <div class="mt-12">
+    <p class="text-neutral-700 dark:text-neutral-300">
+      The following sections cover each step in detail, but what you see above is the entire workflow. No configuration files, no manual API calls, no JSON editing. Just link, bridge, and sync.
+    </p>
+  </div>
+
   <PageNavigation 
     previous={{path: '/profilarr-setup/installation', title: 'Installation', description: 'Docker setup guide'}}
-    next={null}
+    next={{path: '/profilarr-setup/linking', title: 'Linking', description: 'Connect to configuration sources in detail'}}
   />
 </div>
