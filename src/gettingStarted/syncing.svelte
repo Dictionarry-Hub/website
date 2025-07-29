@@ -135,12 +135,12 @@
 
   <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
     <p class="text-neutral-700 dark:text-neutral-300">
-      You've completed the basic Profilarr setup. The following sections cover advanced topics including updates, local customizations, and database management.
+      This completes the basic setup. You've seen how Profilarr addresses the first part of the <a href="#/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a>: getting configurations from a database into your Radarr/Sonarr instances. The next sections cover the remaining aspects: handling updates, preserving customizations, and managing databases.
     </p>
   </div>
 
   <PageNavigation 
     previous={{path: '/profilarr-setup/bridging', title: 'Bridging', description: 'Connect to your Radarr/Sonarr instances'}}
-    next={null}
+    next={{path: '/profilarr-setup/updates', title: 'Updates', description: 'Handle database updates and changes'}}
   />
 </div>

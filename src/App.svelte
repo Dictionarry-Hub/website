@@ -11,6 +11,7 @@
   import Linking from './gettingStarted/linking.svelte'
   import Bridging from './gettingStarted/bridging.svelte'
   import Sync from './gettingStarted/syncing.svelte'
+  import Updates from './gettingStarted/updates.svelte'
   import DevLogTimeline from './devLogs/devLogTimeline.svelte'
   import DevLogPage from './devLogs/devLogPage.svelte'
   import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
@@ -37,6 +38,7 @@
     '/profilarr-setup/linking': Linking,
     '/profilarr-setup/bridging': Bridging,
     '/profilarr-setup/syncing': Sync,
+    '/profilarr-setup/updates': Updates,
     '/development': Development,
     '/dev-logs': DevLogTimeline,
     '/quality-profile': QualityProfilePage,

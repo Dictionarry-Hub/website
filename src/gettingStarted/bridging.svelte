@@ -39,7 +39,7 @@
 </script>
 
 <div class="p-6 max-w-4xl mx-auto">
-  <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Bridging to Radarr/Sonarr</h1>
+  <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Bridging</h1>
   
   <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 mt-8 mb-4" id="overview">Overview</h2>
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
