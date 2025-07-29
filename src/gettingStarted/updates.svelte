@@ -7,7 +7,8 @@
   onMount(() => {
     setNavigationItems([
       'Scenario',
-      'Overview'
+      'Overview',
+      'Workflow'
     ], '#/profilarr-setup/updates');
   });
   
@@ -50,6 +51,10 @@
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">
     This is how Profilarr knows when updates are available. It compares your local repository state with the remote state. When they differ, you have updates to review and apply.
   </p>
+
+  <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 mt-8 mb-4" id="workflow">
+    Workflow
+  </h2>
 
   <VideoPlayer 
     src="/video/profilarr_setup/outofdate.mp4"
