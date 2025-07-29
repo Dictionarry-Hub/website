@@ -130,7 +130,7 @@
   </p>
   
   <ul class="list-disc list-inside space-y-2 mt-4 text-neutral-700 dark:text-neutral-300">
-    <li>Hosted on GitHub repositories</li>
+    <li>Hosted as Git repositories (typically on GitHub)</li>
     <li>Can be public or private</li>
     <li>Maintained independently by their repository owners (not the Dictionarry team)</li>
     <li>Written in a standardized format that Profilarr understands</li>
