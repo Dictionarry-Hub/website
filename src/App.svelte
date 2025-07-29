@@ -9,6 +9,7 @@
   import Development from './gettingStarted/development.svelte'
   import Profilarr101 from './gettingStarted/101.svelte'
   import Linking from './gettingStarted/linking.svelte'
+  import Bridging from './gettingStarted/bridging.svelte'
   import DevLogTimeline from './devLogs/devLogTimeline.svelte'
   import DevLogPage from './devLogs/devLogPage.svelte'
   import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
@@ -33,6 +34,7 @@
     '/profilarr-setup/installation': ProfilarrInstallation,
     '/profilarr-setup/101': Profilarr101,
     '/profilarr-setup/linking': Linking,
+    '/profilarr-setup/bridging': Bridging,
     '/development': Development,
     '/dev-logs': DevLogTimeline,
     '/quality-profile': QualityProfilePage,

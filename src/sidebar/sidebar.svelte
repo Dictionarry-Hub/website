@@ -46,6 +46,7 @@
       <SidebarItem href="/profilarr-setup/installation" label="Installation" isActive={currentPath === "/profilarr-setup/installation"} />
       <SidebarItem href="/profilarr-setup/101" label="Profilarr 101" isActive={currentPath === "/profilarr-setup/101"} />
       <SidebarItem href="/profilarr-setup/linking" label="Linking" isActive={currentPath === "/profilarr-setup/linking"} />
+      <SidebarItem href="/profilarr-setup/bridging" label="Bridging" isActive={currentPath === "/profilarr-setup/bridging"} />
       <SidebarItem href="/development" label="Development" isActive={currentPath === "/development"} />
     </SidebarSection>
   

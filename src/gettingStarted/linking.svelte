@@ -185,6 +185,6 @@
 
   <PageNavigation 
     previous={{path: '/profilarr-setup/101', title: 'Profilarr 101', description: 'Learn the basics'}}
-    next={null}
+    next={{path: '/profilarr-setup/bridging', title: 'Bridging', description: 'Connect to your Radarr/Sonarr instances'}}
   />
 </div>
