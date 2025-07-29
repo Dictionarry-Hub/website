@@ -104,6 +104,6 @@
 
   <PageNavigation 
     previous={{path: '/profilarr-setup/linking', title: 'Linking', description: 'Connect to configuration sources'}}
-    next={null}
+    next={{path: '/profilarr-setup/syncing', title: 'Syncing', description: 'Push configurations to your instances'}}
   />
 </div>
