@@ -59,7 +59,7 @@
   {:else if description}
     <div class="flex items-center justify-between mb-4">
       <p class="text-neutral-700 dark:text-neutral-300">
-        {description}
+        {@html description}
       </p>
       {#if showControls}
         <div class="flex space-x-2">

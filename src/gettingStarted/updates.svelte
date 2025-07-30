@@ -99,6 +99,6 @@
 
   <PageNavigation 
     previous={{path: '/profilarr-setup/syncing', title: 'Syncing', description: 'Push configurations to your instances'}}
-    next={null}
+    next={{path: '/profilarr-setup/customizations', title: 'Customizations', description: 'Tailor configurations to your needs'}}
   />
 </div>

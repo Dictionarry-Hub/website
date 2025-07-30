@@ -114,7 +114,7 @@
     </p>
 
     <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      <a href="#/profilarr-setup" class="text-blue-600 dark:text-blue-400 hover:underline">-> Profilarr Setup Guide</a>
+      <a href="#/profilarr-setup/installation" class="text-blue-600 dark:text-blue-400 hover:underline">-> Profilarr Setup Guide</a>
     </p>
   </section>
 </div>
