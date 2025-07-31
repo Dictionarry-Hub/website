@@ -7,9 +7,9 @@
   onMount(() => {
     setNavigationItems([
       'Scenario',
-      'Overview',
+      { title: 'Overview', children: ["What's a Commit?", 'How It Works', 'Why Manual Commits?'] },
       'Workflow',
-      'Merge Conflicts'
+      { title: 'Merge Conflicts', children: ['The Scenario', "What's Happening?", 'Resolution Process', 'After Resolution'] }
     ], '#/profilarr-setup/customizations');
   });
   
@@ -35,24 +35,44 @@
   <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 mt-8 mb-4" id="overview">
     Overview
   </h2>
+  
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Making changes in Profilarr works exactly like Radarr and Sonarr. You navigate to your configuration page, click on the profile or format you want to modify, and change it. Different interface, same workflow. But there's one crucial difference at the end: you need to create a "commit".
+    Making changes in Profilarr follows the same workflow as Radarr/Sonarr, with one key addition: commits.
   </p>
-  
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    Recall again that databases are Git repositories; they track changes over time. This tracking works in both directions - The database maintainer's updates get tracked, and so do YOUR changes, with YOUR commits.
-  </p>
-  
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    A commit is a saved snapshot of your changes. Think of it as a checkpoint in a video game. It records the exact state of your configuration at that moment, along with a description of what you changed and why.
-  </p>
-  
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    This commit system is what enables the <a href="#/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">updates</a> we discussed earlier. Database maintainers create commits when they add new formats or adjust scores. You create commits when you customize your profiles. Git keeps these separate, which is why you can receive updates without losing your customizations.
-  </p>
-  
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    Why require this extra step? Why not auto-commit? The answer is reversion. Consider this: you're adjusting release group rankings in your quality profile. After several changes, your downloads are worse than before. You can't remember the original scores for each group. With commits, you can instantly revert to your previous working configuration. Without them, you'd be stuck trying to recall what the values were.
+
+  <div class="mt-4" id="whats-a-commit">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">What's a Commit?</h3>
+    <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+      <li>A saved snapshot of your changes</li>
+      <li>Like a checkpoint in a video game</li>
+      <li>Includes a description of what and why you changed</li>
+    </ul>
+  </div>
+
+  <div class="mt-6" id="how-it-works">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">How It Works</h3>
+    <p class="text-neutral-700 dark:text-neutral-300 mb-2">
+      Databases are Git repositories tracking changes in both directions:
+    </p>
+    <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+      <li><strong>Maintainer commits:</strong> New formats, adjusted scores, profile updates</li>
+      <li><strong>Your commits:</strong> Custom tweaks, personal preferences, local overrides</li>
+    </ul>
+  </div>
+
+  <div class="mt-6" id="why-manual-commits">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">Why Manual Commits?</h3>
+    <p class="text-neutral-700 dark:text-neutral-300 mb-2">
+      Example: You adjust release group rankings. Downloads get worse. What were the original values?
+    </p>
+    <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+      <li><strong>With commits:</strong> Revert instantly to previous working state</li>
+      <li><strong>Without commits:</strong> Manual recovery, lost values, no history</li>
+    </ul>
+  </div>
+
+  <p class="text-neutral-700 dark:text-neutral-300 mt-6">
+    This separation enables the <a href="#/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">update system</a>. Git keeps your changes and maintainer updates separate, merging them intelligently.
   </p>
 
   <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
@@ -107,16 +127,24 @@
   </h2>
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Consider this scenario: You've committed your Dolby Vision score change (setting it to 0). Meanwhile, the database maintainer updates the same score to -150, intending to downrank these files without blocking them entirely. When you try to pull the latest updates, both you and the maintainer have modified the exact same value.
+    Sometimes your changes and the maintainer's updates collide on the same field.
   </p>
 
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    This creates a merge conflict. Git cannot automatically decide which value to keep because both changes are valid from their respective perspectives. Should it use your 0 or the maintainer's -150? The system has no way to determine your intent.
-  </p>
+  <div class="mt-4" id="the-scenario">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">The Scenario</h3>
+    <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+      <li><strong>Your change:</strong> Dolby Vision score = 0 (allow all)</li>
+      <li><strong>Maintainer's update:</strong> Dolby Vision score = -150 (downrank, not block)</li>
+      <li><strong>Result:</strong> Same field, different values = conflict</li>
+    </ul>
+  </div>
 
-  <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    A merge conflict occurs when the same part of a file gets changed in different ways. It's Git's way of saying "I need human judgment here." Profilarr detects these conflicts and prompts you to resolve them before proceeding.
-  </p>
+  <div class="mt-6" id="whats-happening">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">What's Happening?</h3>
+    <p class="text-neutral-700 dark:text-neutral-300">
+      Git sees two valid changes to the same value and can't determine which one you want. Should Dolby Vision files be fully allowed (your 0) or just downranked (their -150)? Only you know your intent, so Profilarr asks you to decide.
+    </p>
+  </div>
 
   <VideoPlayer 
     src="/video/profilarr_setup/resolve.mp4"
@@ -134,9 +162,15 @@
     </p>
   </div>
 
-  <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Attempting to pull this change makes Profilarr enter conflict resolution mode. The system prevents any modifications or additional pulls until conflicts are resolved. You'll see both values presented side by side - your local 0 and the maintainer's incoming -150. For each conflict, you decide which value to keep. In this case, the video shows keeping the local 0 score.
-  </p>
+  <div class="mt-6" id="resolution-process">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">Resolution Process</h3>
+    <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+      <li>Pull attempt triggers conflict resolution mode</li>
+      <li>System locks - no edits or pulls allowed</li>
+      <li>Values shown side by side: your 0 vs their -150</li>
+      <li>You choose which to keep</li>
+    </ul>
+  </div>
 
   <div class="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
     <p class="text-sm text-blue-900 dark:text-blue-100">
@@ -144,9 +178,26 @@
     </p>
   </div>
 
-  <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Clicking the green checkmark confirms your choice - the Dolby Vision score remains at 0, rejecting the maintainer's -150. But you haven't lost the other updates. The system intelligently merges everything else from the maintainer while preserving your specific override. This happens through a three-way merge: Git examines the original state, your changes, and the maintainer's changes to understand who modified what. After resolution, your local database is no longer "behind" or "ahead" - it's synchronized with the maintainer's version except for your deliberate customizations. Future updates will continue to flow normally, and Git will only flag conflicts when you and the maintainer touch the same values again.
-  </p>
+  <div class="mt-6" id="after-resolution">
+    <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">After Resolution</h3>
+    <p class="text-neutral-700 dark:text-neutral-300 mb-2">
+      When you click the green checkmark to complete the merge, something important happens behind the scenes. While your Dolby Vision score remains at 0 as you chose, all the maintainer's other updates still get applied to your database.
+    </p>
+    
+    <div class="mt-4">
+      <p class="text-neutral-700 dark:text-neutral-300 font-semibold mb-1">The merge gives you:</p>
+      <ul class="list-disc list-inside space-y-1 text-neutral-700 dark:text-neutral-300">
+        <li>Your Dolby Vision preference preserved at 0</li>
+        <li>Any new custom formats the maintainer added</li>
+        <li>Score adjustments for other formats you haven't touched</li>
+        <li>A fully updated database that respects your customizations</li>
+      </ul>
+    </div>
+    
+    <p class="text-neutral-700 dark:text-neutral-300 mt-4">
+      Going forward, the system tracks which settings you've customized. Updates continue flowing normally, and you'll only see conflicts when both you and the maintainer modify the same specific value.
+    </p>
+  </div>
 
   <div class="mt-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
     <p class="text-sm text-green-900 dark:text-green-100">
