@@ -161,267 +161,537 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p Balanced Tier 1",
-            "score": 8300
+            "score": 8300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 8200
+            "score": 8200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -529,323 +799,657 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "UHD Bluray",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "2160p",
+              "Storage"
+            ]
           },
           {
             "name": "UHD Bluray (Missing)",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "2160p",
+              "Storage"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Golden Popcorn",
-            "score": 800
+            "score": 800,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing) (1080p)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "x265 (Bluray)",
-            "score": -9000
+            "score": -9000,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "2160p",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Ultra High Definition",
+              "4K",
+              "Resolution"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265 (WEB)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -957,299 +1561,609 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Golden Popcorn",
-            "score": 800
+            "score": 800,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -1359,263 +2273,509 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p Remux",
-            "score": 10000
+            "score": 10000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "Remux Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted Remux Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -1692,347 +2852,697 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Balanced Tier 1",
-            "score": 13400
+            "score": 13400,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p Balanced Tier 2",
-            "score": 13200
+            "score": 13200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 13000
+            "score": 13000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 150
+            "score": 150,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Lossless Audio (1080p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -2160,379 +3670,767 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Quality Tier 1",
-            "score": 20200
+            "score": 20200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 2",
-            "score": 20100
+            "score": 20100,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 3",
-            "score": 20000
+            "score": 20000,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 4",
-            "score": 19900
+            "score": 19900,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 5",
-            "score": 19800
+            "score": 19800,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Balanced Tier 1",
-            "score": 14400
+            "score": 14400,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p Balanced Tier 2",
-            "score": 14200
+            "score": 14200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 14000
+            "score": 14000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "2160p Quality Tier 6",
-            "score": 13100
+            "score": 13100,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 7",
-            "score": 13000
+            "score": 13000,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 150
+            "score": 150,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Lossless Audio (1080p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (Missing)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -2659,283 +4557,545 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Remux",
-            "score": 14000
+            "score": 14000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Remux",
-            "score": 10000
+            "score": 10000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "Remux Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted Remux Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -3020,255 +5180,512 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -33240,267 +35657,537 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p Balanced Tier 1",
-            "score": 8300
+            "score": 8300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 8200
+            "score": 8200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -33608,323 +36295,657 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "UHD Bluray",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "2160p",
+              "Storage"
+            ]
           },
           {
             "name": "UHD Bluray (Missing)",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "2160p",
+              "Storage"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Golden Popcorn",
-            "score": 800
+            "score": 800,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing) (1080p)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "x265 (Bluray)",
-            "score": -9000
+            "score": -9000,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "2160p",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Ultra High Definition",
+              "4K",
+              "Resolution"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265 (WEB)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -34036,299 +37057,609 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Golden Popcorn",
-            "score": 800
+            "score": 800,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -34438,263 +37769,509 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "1080p Remux",
-            "score": 10000
+            "score": 10000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "Remux Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted Remux Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -34771,347 +38348,697 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Balanced Tier 1",
-            "score": 13400
+            "score": 13400,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p Balanced Tier 2",
-            "score": 13200
+            "score": 13200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 13000
+            "score": 13000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 150
+            "score": 150,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Lossless Audio (1080p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -35239,379 +39166,767 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Quality Tier 1",
-            "score": 20200
+            "score": 20200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 2",
-            "score": 20100
+            "score": 20100,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 3",
-            "score": 20000
+            "score": 20000,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 4",
-            "score": 19900
+            "score": 19900,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 5",
-            "score": 19800
+            "score": 19800,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Balanced Tier 1",
-            "score": 14400
+            "score": 14400,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p Balanced Tier 2",
-            "score": 14200
+            "score": 14200,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 14000
+            "score": 14000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "2160p Quality Tier 6",
-            "score": 13100
+            "score": 13100,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "2160p Quality Tier 7",
-            "score": 13000
+            "score": 13000,
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 11000
+            "score": 11000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Bluray",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEBRip",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Quality Tier 1",
-            "score": 4100
+            "score": 4100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 2",
-            "score": 4000
+            "score": 4000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 3",
-            "score": 3900
+            "score": 3900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 4",
-            "score": 3800
+            "score": 3800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Quality Tier 5",
-            "score": 3700
+            "score": 3700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ]
           },
           {
             "name": "1080p Balanced Tier 1",
-            "score": 3300
+            "score": 3300,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "1080p Balanced Tier 2",
-            "score": 3200
+            "score": 3200,
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 150
+            "score": 150,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "Lossless Audio (1080p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (Missing)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -35738,283 +40053,545 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "2160p Remux",
-            "score": 14000
+            "score": 14000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "2160p WEB-DL",
-            "score": 12000
+            "score": 12000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p Remux",
-            "score": 10000
+            "score": 10000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "1080p WEB-DL",
-            "score": 8000
+            "score": 8000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "DTS-X",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "DTS-HD MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "TrueHD",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "TrueHD (Missing)",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "FLAC",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "HDR",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10 (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "Remux Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Unknown Lossless Audio",
-            "score": 50
+            "score": 50,
+            "tags": [
+              "Audio"
+            ]
           },
           {
             "name": "Remux Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Remux Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision (Without Fallback)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UHDBits",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Private Tracker",
+              "Enhancements"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted Remux Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x264 (2160p)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "x265 (WEB-DL)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -36099,255 +40676,512 @@ export const contentDatabase = {
         "custom_formats": [
           {
             "name": "720p WEB-DL",
-            "score": 6000
+            "score": 6000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Bluray",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p WEBRip",
-            "score": 5000
+            "score": 5000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "480p WEB-DL",
-            "score": 3000
+            "score": 3000,
+            "tags": [
+              "Resolution"
+            ]
           },
           {
             "name": "720p Quality Tier 1",
-            "score": 2100
+            "score": 2100,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 2",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "DVD",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD"
+            ]
           },
           {
             "name": "DVD Remux",
-            "score": 2000
+            "score": 2000,
+            "tags": [
+              "Source",
+              "SD",
+              "Lossless"
+            ]
           },
           {
             "name": "720p Quality Tier 3",
-            "score": 1900
+            "score": 1900,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 4",
-            "score": 1800
+            "score": 1800,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Quality Tier 5",
-            "score": 1700
+            "score": 1700,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ]
           },
           {
             "name": "720p Golden Popcorn",
-            "score": 600
+            "score": 600,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "MA",
-            "score": 500
+            "score": 500,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "AMZN",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ATVP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "DSNP",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Golden Popcorn",
-            "score": 400
+            "score": 400,
+            "tags": [
+              "Flag",
+              "Golden Popcorn"
+            ]
           },
           {
             "name": "CRIT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HMAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "iT",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "MAX",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NF",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "NOW",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PCOK",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 1",
-            "score": 300
+            "score": 300,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "HTSR",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "HULU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "PMTP",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "ROKU",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "SD Quality Tier 2",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ]
           },
           {
             "name": "SHO",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "STAN",
-            "score": 200
+            "score": 200,
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Atmos",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Atmos (Missing)",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Audio",
+              "Dolby"
+            ]
           },
           {
             "name": "Special Edition",
-            "score": 100
+            "score": 100,
+            "tags": [
+              "Edition"
+            ]
           },
           {
             "name": "WEB-DL Tier 1",
-            "score": 80
+            "score": 80,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 2",
-            "score": 60
+            "score": 60,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 3",
-            "score": 40
+            "score": 40,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "WEB-DL Tier 4",
-            "score": 20
+            "score": 20,
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ]
           },
           {
             "name": "Season Pack",
-            "score": 10
+            "score": 10,
+            "tags": [
+              "Enhancements"
+            ]
           },
           {
             "name": "Repack3",
-            "score": 8
+            "score": 8,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack2",
-            "score": 7
+            "score": 7,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "Repack1",
-            "score": 6
+            "score": 6,
+            "tags": [
+              "Flag",
+              "Repack"
+            ]
           },
           {
             "name": "3D",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "AV1",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "B&W",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Colour Grade",
+              "Enhancement"
+            ]
           },
           {
             "name": "Dolby Vision",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Extras",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "Full Disc",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "Full Disc (Quality Match)",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Storage"
+            ]
           },
           {
             "name": "h265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "HDR",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HDR10+",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "HLG",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "PQ",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Colour Grade",
+              "HDR"
+            ]
           },
           {
             "name": "Remux",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           },
           {
             "name": "UnWanted Release Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "UnWanted WEBRip Groups",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Release Group"
+            ]
           },
           {
             "name": "Upscaled",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "UnWanted",
+              "Enhancement"
+            ]
           },
           {
             "name": "VP9",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "VVC",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec",
+              "Bleeding Edge"
+            ]
           },
           {
             "name": "x265",
-            "score": -99999
+            "score": -99999,
+            "tags": [
+              "Codec"
+            ]
           }
         ],
         "qualities": [
@@ -96409,7 +101243,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-07-29T22:37:22.079Z",
+  "lastGenerated": "2025-08-01T10:22:07.125Z",
   "version": "1.0.0"
 } as const;
 

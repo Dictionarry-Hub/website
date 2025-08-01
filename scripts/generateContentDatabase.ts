@@ -483,6 +483,30 @@ function generateContentDatabase(): void {
       }
     }
   }
+
+  // Link custom formats to quality profiles
+  const customFormatMap = new Map(
+    entries
+      .filter(entry => entry.type === 'custom-format')
+      .map(entry => [entry.slug, entry])
+  );
+
+  for (const entry of entries) {
+    if (entry.type === 'quality-profile' && entry.data?.custom_formats) {
+      entry.data.custom_formats = entry.data.custom_formats.map((cf: any) => {
+        if (!cf.name) return cf;
+        const cfSlug = slugify(cf.name);
+        const customFormatEntry = customFormatMap.get(cfSlug);
+        if (customFormatEntry) {
+          return {
+            ...cf,
+            tags: customFormatEntry.data.tags || []
+          };
+        }
+        return cf;
+      });
+    }
+  }
   
   // Build route map
   const routeMap: Record<string, ContentEntry> = {};
