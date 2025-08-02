@@ -45,7 +45,8 @@
     'Storage': ['Storage', 'Lossless', '2160p'],
     'Release Group Tiers': ['Release Group Tier', 'GPPi'],
     'Resolution': ['Resolution', 'Ultra High Definition', '4K', '1080p', '720p', 'SD'],
-    'Source': ['Source']
+    'Source': ['Source'],
+    'Indexer Flags': ['Flag']
   };
   
   // Filter custom formats based on search term and score range

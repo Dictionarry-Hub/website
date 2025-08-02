@@ -23,7 +23,8 @@
     { name: 'Storage', icon: HardDrive },
     { name: 'Release Group Tiers', icon: Tag },
     { name: 'Resolution', icon: Square },
-    { name: 'Source', icon: Layers }
+    { name: 'Source', icon: Layers },
+    { name: 'Indexer Flags', icon: Tag }
   ];
   
   // Combine all groups, predefined and custom groups
