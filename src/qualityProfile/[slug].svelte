@@ -4,6 +4,7 @@
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import Overview from './components/overview.svelte';
+  import Scoring from './components/scoring/scoring.svelte';
   
   let profileEntry = null;
   
@@ -56,6 +57,7 @@
     <div class="p-6 max-w-4xl mx-auto">
       <!-- Scoring Section -->
       <section id="scoring" class="mb-12">
+        <Scoring {custom_formats} />
       </section>
       
       <!-- Qualities Section -->
