@@ -5,6 +5,7 @@
   
   let searchTerm = '';
   let selectedGroups = [];
+  let customTags = [];
   
   // Tag to group mapping
   const tagToGroupMapping = {
@@ -39,9 +40,20 @@
       // Check each selected group
       selectedGroups.forEach(groupName => {
         const groupTags = tagToGroupMapping[groupName] || [];
-        const hasMatchingTag = format.tags.some(tag => 
-          groupTags.some(groupTag => tag.includes(groupTag))
-        );
+        let hasMatchingTag = false;
+        
+        // Check if it's a custom tag
+        if (customTags.includes(groupName)) {
+          // For custom tags, do case-insensitive comparison
+          hasMatchingTag = format.tags.some(tag => 
+            tag.toLowerCase().includes(groupName.toLowerCase())
+          );
+        } else {
+          // For predefined groups, use the existing logic
+          hasMatchingTag = format.tags.some(tag => 
+            groupTags.some(groupTag => tag.includes(groupTag))
+          );
+        }
         
         if (hasMatchingTag) {
           belongsToGroup = true;
@@ -71,7 +83,8 @@
   }
   
   function handleGroupChange(event) {
-    selectedGroups = event.detail;
+    selectedGroups = event.detail.selectedGroups;
+    customTags = event.detail.customTags;
   }
 </script>
 
