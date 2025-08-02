@@ -20,9 +20,11 @@
     };
   })();
   
-  // Initialize min/max values if not set
-  $: if (minValue === null) minValue = scoreRange.min;
-  $: if (maxValue === null) maxValue = scoreRange.max;
+  // Reset min/max values when score range changes (new profile loaded)
+  $: {
+    minValue = scoreRange.min;
+    maxValue = scoreRange.max;
+  }
   
   // Calculate unique tag count
   $: uniqueTagCount = (() => {
