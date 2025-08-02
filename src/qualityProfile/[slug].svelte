@@ -55,8 +55,8 @@
     
     <!-- Rest of content with normal padding -->
     <div class="p-6 max-w-4xl mx-auto">
-      <!-- Scoring Section -->
-      <section id="scoring" class="mb-12">
+      <!-- Custom Formats Section -->
+      <section id="custom-formats" class="mb-12">
         <Scoring {custom_formats} />
       </section>
       
