@@ -12,6 +12,8 @@
   let customTags = [];
   let newTagInput = '';
   
+  const allGroupsOption = { name: 'All Groups', icon: Layers };
+  
   const predefinedGroups = [
     { name: 'Audio', icon: Volume2 },
     { name: 'HDR', icon: Monitor },
@@ -24,8 +26,8 @@
     { name: 'Source', icon: Layers }
   ];
   
-  // Combine predefined and custom groups
-  $: groupOptions = [...predefinedGroups, ...customTags.map(tag => ({ name: tag, icon: Tag, isCustom: true }))];
+  // Combine all groups, predefined and custom groups
+  $: groupOptions = [allGroupsOption, ...predefinedGroups, ...customTags.map(tag => ({ name: tag, icon: Tag, isCustom: true }))];
   
   // Load from localStorage on mount
   onMount(() => {
@@ -39,17 +41,32 @@
     if (savedGroups) {
       selectedGroups = JSON.parse(savedGroups);
     } else {
-      // Default to all predefined enabled
-      selectedGroups = predefinedGroups.map(g => g.name);
+      // Default to "All Groups"
+      selectedGroups = ['All Groups'];
     }
     dispatchGroupChange();
   });
   
   function toggleGroup(groupName) {
-    if (selectedGroups.includes(groupName)) {
-      selectedGroups = selectedGroups.filter(g => g !== groupName);
+    if (groupName === 'All Groups') {
+      // If "All Groups" is selected, clear everything else and select only "All Groups"
+      selectedGroups = ['All Groups'];
     } else {
-      selectedGroups = [...selectedGroups, groupName];
+      // Remove "All Groups" if it's selected and we're adding a specific group
+      let newGroups = selectedGroups.filter(g => g !== 'All Groups');
+      
+      if (newGroups.includes(groupName)) {
+        // Remove the group if it's already selected
+        newGroups = newGroups.filter(g => g !== groupName);
+        // If no groups left, default to "All Groups"
+        if (newGroups.length === 0) {
+          newGroups = ['All Groups'];
+        }
+      } else {
+        // Add the group if it's not selected
+        newGroups = [...newGroups, groupName];
+      }
+      selectedGroups = newGroups;
     }
     
     // Save to localStorage
@@ -95,8 +112,8 @@
     }
   }
   
-  // Calculate active group count
-  $: activeGroupCount = groupOptions.length - selectedGroups.length;
+  // Calculate active group count (excluding "All Groups")
+  $: activeGroupCount = selectedGroups.filter(g => g !== 'All Groups').length;
 </script>
 
 <div 
@@ -117,7 +134,7 @@
   
   <!-- Active Group Indicator -->
   {#if activeGroupCount > 0}
-    <div class="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
+    <div class="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center z-10">
       <span class="text-[10px] font-medium text-white leading-none">{activeGroupCount}</span>
     </div>
   {/if}
@@ -127,7 +144,7 @@
     <div class="overflow-hidden rounded-md">
       {#each groupOptions as group, index}
         <DropdownRow 
-          showBorder={index < groupOptions.length - 1 || customTags.length > 0} 
+          showBorder={true} 
           onclick={() => toggleGroup(group.name)}
         >
         <div class="flex items-center justify-between w-full group/row">

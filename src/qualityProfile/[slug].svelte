@@ -34,7 +34,7 @@
   
   // Set up navigation when profile is loaded
   $: if (profileEntry) {
-    const navItems = ['Overview', 'Scoring', 'Qualities'];
+    const navItems = ['Overview', 'Custom Formats', 'Qualities'];
     if (language) {
       navItems.push('Languages');
     }

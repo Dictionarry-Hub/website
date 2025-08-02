@@ -23,6 +23,15 @@
   $: if (minValue === null) minValue = scoreRange.min;
   $: if (maxValue === null) maxValue = scoreRange.max;
   
+  // Calculate unique tag count
+  $: uniqueTagCount = (() => {
+    const allTags = new Set();
+    custom_formats.forEach(format => {
+      format.tags.forEach(tag => allTags.add(tag));
+    });
+    return allTags.size;
+  })();
+  
   // Tag to group mapping
   const tagToGroupMapping = {
     'Audio': ['Audio', 'Dolby'],
@@ -56,6 +65,11 @@
   $: groupedFormats = (() => {
     const groups = {};
     const uncategorized = [];
+    
+    // If "All Groups" is selected or no groups selected, return ungrouped
+    if (selectedGroups.includes('All Groups') || selectedGroups.length === 0) {
+      return {};
+    }
     
     filteredFormats.forEach(format => {
       let belongsToGroup = false;
@@ -117,7 +131,17 @@
 </script>
 
 <div>
-  <h2 class="text-2xl font-bold mb-4">Scoring</h2>
+  <!-- Header Section -->
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">Custom Formats</h2>
+    
+    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+      <svg class="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+      </svg>
+      <span class="text-neutral-700 dark:text-neutral-300">{custom_formats.length} Formats</span>
+    </span>
+  </div>
   
   <Toolbar 
     on:search={handleSearch} 
@@ -129,7 +153,7 @@
     {maxValue}
   />
   
-  {#if selectedGroups.length === 0}
+  {#if selectedGroups.includes('All Groups') || selectedGroups.length === 0}
     <!-- Show ungrouped table when no groups selected -->
     <div class="overflow-x-auto">
       <table class="w-full border-collapse">

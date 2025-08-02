@@ -6,7 +6,7 @@
   export let tags = [];
 </script>
 
-<div class="py-12">
+<div class="py-8">
   <div class="max-w-4xl mx-auto px-6">
     <div>
       
