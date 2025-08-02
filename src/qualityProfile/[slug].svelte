@@ -36,9 +36,6 @@
   // Set up navigation when profile is loaded
   $: if (profileEntry) {
     const navItems = ['Overview', 'Custom Formats', 'Qualities'];
-    if (language) {
-      navItems.push('Languages');
-    }
     setNavigationItems(navItems, currentPath);
   }
   
@@ -51,7 +48,7 @@
   {#if profileEntry}
     <!-- Overview Section with full-width background -->
     <section id="overview">
-      <Overview {name} {description} {tags} />
+      <Overview {name} {description} {tags} {language} />
     </section>
     
     <!-- Rest of content with normal padding -->
@@ -65,14 +62,6 @@
       <section id="qualities" class="mb-12">
         <Qualities {qualities} {upgrade_until} {upgradesAllowed} />
       </section>
-      
-      <!-- Languages Section (conditional) -->
-      {#if language}
-        <section id="languages" class="mb-12">
-          <h2 class="text-2xl font-bold mb-4">Languages</h2>
-          <!-- Language settings will go here -->
-        </section>
-      {/if}
     </div>
   {:else if slug && slug !== 'quality-profile'}
     <div class="p-6 max-w-4xl mx-auto">

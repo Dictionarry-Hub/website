@@ -140,10 +140,10 @@
 
 <div>
   <!-- Header Section -->
-  <div class="flex items-center justify-between mb-4">
-    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">Custom Formats</h2>
+  <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white md:w-1/4">Custom Formats</h2>
     
-    <div class="flex items-center gap-2 flex-wrap justify-end">
+    <div class="flex flex-wrap gap-2 md:w-3/4 md:justify-end">
       <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
         <PanelBottomOpen class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
         <span class="text-neutral-700 dark:text-neutral-300">Min: {minCustomFormatScore}</span>

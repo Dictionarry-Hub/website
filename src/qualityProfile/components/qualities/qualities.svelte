@@ -12,10 +12,10 @@
 
 <div>
   <!-- Header Section -->
-  <div class="flex items-center justify-between mb-4">
-    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">Qualities</h2>
+  <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white md:w-1/4">Qualities</h2>
     
-    <div class="flex items-center gap-2">
+    <div class="flex flex-wrap gap-2 md:w-3/4 md:justify-end">
       <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
         {#if upgradesAllowed}
           <CheckCircle class="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
