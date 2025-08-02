@@ -6,6 +6,22 @@
   let searchTerm = '';
   let selectedGroups = [];
   let customTags = [];
+  let minValue = null;
+  let maxValue = null;
+  
+  // Calculate min and max scores from custom formats
+  $: scoreRange = (() => {
+    if (custom_formats.length === 0) return { min: -100000, max: 100000 };
+    const scores = custom_formats.map(f => f.score);
+    return {
+      min: Math.min(...scores),
+      max: Math.max(...scores)
+    };
+  })();
+  
+  // Initialize min/max values if not set
+  $: if (minValue === null) minValue = scoreRange.min;
+  $: if (maxValue === null) maxValue = scoreRange.max;
   
   // Tag to group mapping
   const tagToGroupMapping = {
@@ -20,13 +36,20 @@
     'Source': ['Source']
   };
   
-  // Filter custom formats based on search term
+  // Filter custom formats based on search term and score range
   $: filteredFormats = custom_formats.filter(format => {
-    if (!searchTerm) return true;
+    // Filter by search term
+    if (searchTerm) {
+      const search = searchTerm.toLowerCase();
+      const matchesSearch = format.name.toLowerCase().includes(search) ||
+                          format.tags.some(tag => tag.toLowerCase().includes(search));
+      if (!matchesSearch) return false;
+    }
     
-    const search = searchTerm.toLowerCase();
-    return format.name.toLowerCase().includes(search) ||
-           format.tags.some(tag => tag.toLowerCase().includes(search));
+    // Filter by score range
+    if (format.score < minValue || format.score > maxValue) return false;
+    
+    return true;
   });
   
   // Group formats based on selected groups
@@ -86,12 +109,25 @@
     selectedGroups = event.detail.selectedGroups;
     customTags = event.detail.customTags;
   }
+  
+  function handleValueChange(event) {
+    minValue = event.detail.min;
+    maxValue = event.detail.max;
+  }
 </script>
 
 <div>
   <h2 class="text-2xl font-bold mb-4">Scoring</h2>
   
-  <Toolbar on:search={handleSearch} on:groupChange={handleGroupChange} />
+  <Toolbar 
+    on:search={handleSearch} 
+    on:groupChange={handleGroupChange}
+    on:valueChange={handleValueChange}
+    rangeMin={scoreRange.min}
+    rangeMax={scoreRange.max}
+    {minValue}
+    {maxValue}
+  />
   
   {#if selectedGroups.length === 0}
     <!-- Show ungrouped table when no groups selected -->
