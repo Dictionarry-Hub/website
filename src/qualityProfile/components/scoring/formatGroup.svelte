@@ -1,5 +1,5 @@
 <script>
-  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight } from 'lucide-svelte';
+  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight, ExternalLink } from 'lucide-svelte';
   import { slide } from 'svelte/transition';
   
   export let groupName = '';
@@ -61,14 +61,23 @@
         </thead>
         <tbody>
           {#each formats as format, index}
-            <tr class="border-b border-neutral-100 dark:border-neutral-800 last:border-b-0 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">
+            <tr class="border-b border-neutral-100 dark:border-neutral-800 last:border-b-0 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors cursor-pointer group">
               <td class="px-4 py-3">
-                <span class="text-sm text-neutral-900 dark:text-neutral-100">{format.name}</span>
+                <a 
+                  href="/custom-format/{format.name.toLowerCase().replace(/\s+/g, '-')}"
+                  class="flex items-center gap-2 text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                >
+                  {format.name}
+                  <ExternalLink class="w-3.5 h-3.5 opacity-0 group-hover:opacity-60 transition-opacity" />
+                </a>
               </td>
               <td class="px-4 py-3 text-right">
-                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium {format.score > 0 ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' : format.score < 0 ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400' : 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-400'}">
+                <a 
+                  href="/custom-format/{format.name.toLowerCase().replace(/\s+/g, '-')}"
+                  class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium transition-all {format.score > 0 ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 group-hover:bg-green-200 dark:group-hover:bg-green-900/50' : format.score < 0 ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400 group-hover:bg-red-200 dark:group-hover:bg-red-900/50' : 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-400 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700'}"
+                >
                   {format.score > 0 ? '+' : ''}{format.score}
-                </span>
+                </a>
               </td>
             </tr>
           {/each}

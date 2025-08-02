@@ -500,7 +500,9 @@ function generateContentDatabase(): void {
         if (customFormatEntry) {
           return {
             ...cf,
-            tags: customFormatEntry.data.tags || []
+            tags: customFormatEntry.data.tags || [],
+            conditions: customFormatEntry.data.conditions || [],
+            description: customFormatEntry.data.description || ''
           };
         }
         return cf;
