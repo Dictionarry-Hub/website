@@ -17,6 +17,7 @@
   import DevLogPage from './devLogs/devLogPage.svelte'
   import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
   import QualityProfileSlug from './qualityProfile/[slug].svelte'
+  import CustomFormatSlug from './customFormat/[slug].svelte'
   import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
   import NamingPage from './mediaManagement/namingPage.svelte'
   import QualityDefinitionsPage from './mediaManagement/qualityDefinitionsPage.svelte'
@@ -55,6 +56,7 @@
   const dynamicRoutes = [
     { pattern: /^\/dev-logs\//, component: DevLogPage },
     { pattern: /^\/quality-profile\//, component: QualityProfileSlug },
+    { pattern: /^\/custom-format\//, component: CustomFormatSlug },
     // Add more dynamic patterns here as needed
   ]
   
