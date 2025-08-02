@@ -1,5 +1,6 @@
 <script>
   import Toolbar from './toolbar/toolbar.svelte';
+  import Formats from './formats.svelte';
   
   export let custom_formats = [];
   
@@ -153,66 +154,9 @@
     {maxValue}
   />
   
-  {#if selectedGroups.includes('All Groups') || selectedGroups.length === 0}
-    <!-- Show ungrouped table when no groups selected -->
-    <div class="overflow-x-auto">
-      <table class="w-full border-collapse">
-        <thead>
-          <tr class="border-b border-neutral-200">
-            <th class="text-left p-2">Custom Format</th>
-            <th class="text-left p-2">Score</th>
-            <th class="text-left p-2">Tags</th>
-          </tr>
-        </thead>
-        <tbody>
-          {#each filteredFormats as format}
-            <tr class="border-b border-neutral-100 hover:bg-neutral-50">
-              <td class="p-2">{format.name}</td>
-              <td class="p-2">{format.score}</td>
-              <td class="p-2">
-                <div class="flex flex-wrap gap-1">
-                  {#each format.tags as tag}
-                    <span class="px-2 py-1 text-xs bg-neutral-100 rounded">{tag}</span>
-                  {/each}
-                </div>
-              </td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
-    </div>
-  {:else}
-    <!-- Show grouped view -->
-    {#each Object.entries(groupedFormats) as [groupName, formats]}
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold mb-2 text-neutral-700 dark:text-neutral-300">{groupName}</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="border-b border-neutral-200">
-                <th class="text-left p-2">Custom Format</th>
-                <th class="text-left p-2">Score</th>
-                <th class="text-left p-2">Tags</th>
-              </tr>
-            </thead>
-            <tbody>
-              {#each formats as format}
-                <tr class="border-b border-neutral-100 hover:bg-neutral-50">
-                  <td class="p-2">{format.name}</td>
-                  <td class="p-2">{format.score}</td>
-                  <td class="p-2">
-                    <div class="flex flex-wrap gap-1">
-                      {#each format.tags as tag}
-                        <span class="px-2 py-1 text-xs bg-neutral-100 rounded">{tag}</span>
-                      {/each}
-                    </div>
-                  </td>
-                </tr>
-              {/each}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    {/each}
-  {/if}
+  <Formats 
+    {filteredFormats}
+    {selectedGroups}
+    {groupedFormats}
+  />
 </div>
