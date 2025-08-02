@@ -1,8 +1,12 @@
 <script>
   import Toolbar from './toolbar/toolbar.svelte';
   import Formats from './formats.svelte';
+  import { PanelBottomOpen, TrendingUp, CopyPlus } from 'lucide-svelte';
   
   export let custom_formats = [];
+  export let minCustomFormatScore = 0;
+  export let upgradeUntilScore = null;
+  export let minScoreIncrement = null;
   
   let searchTerm = '';
   let selectedGroups = [];
@@ -139,12 +143,33 @@
   <div class="flex items-center justify-between mb-4">
     <h2 class="text-2xl font-bold text-neutral-900 dark:text-white">Custom Formats</h2>
     
-    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
-      <svg class="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-      </svg>
-      <span class="text-neutral-700 dark:text-neutral-300">{custom_formats.length} Formats</span>
-    </span>
+    <div class="flex items-center gap-2 flex-wrap justify-end">
+      <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+        <PanelBottomOpen class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+        <span class="text-neutral-700 dark:text-neutral-300">Min: {minCustomFormatScore}</span>
+      </span>
+      
+      {#if upgradeUntilScore !== null}
+        <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+          <TrendingUp class="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
+          <span class="text-neutral-700 dark:text-neutral-300">Until: {upgradeUntilScore}</span>
+        </span>
+      {/if}
+      
+      {#if minScoreIncrement !== null}
+        <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+          <CopyPlus class="w-3.5 h-3.5 text-orange-600 dark:text-orange-400" />
+          <span class="text-neutral-700 dark:text-neutral-300">Increment: {minScoreIncrement}</span>
+        </span>
+      {/if}
+      
+      <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-yellow-600 dark:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+        </svg>
+        <span class="text-neutral-700 dark:text-neutral-300">{custom_formats.length} Formats</span>
+      </span>
+    </div>
   </div>
   
   <Toolbar 

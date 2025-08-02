@@ -5,6 +5,7 @@
   import { onMount, onDestroy } from 'svelte';
   import Overview from './components/overview.svelte';
   import Scoring from './components/scoring/scoring.svelte';
+  import Qualities from './components/qualities/qualities.svelte';
   
   let profileEntry = null;
   
@@ -57,13 +58,12 @@
     <div class="p-6 max-w-4xl mx-auto">
       <!-- Custom Formats Section -->
       <section id="custom-formats" class="mb-12">
-        <Scoring {custom_formats} />
+        <Scoring {custom_formats} {minCustomFormatScore} {upgradeUntilScore} {minScoreIncrement} />
       </section>
       
       <!-- Qualities Section -->
       <section id="qualities" class="mb-12">
-        <h2 class="text-2xl font-bold mb-4">Qualities</h2>
-        <!-- Quality groups will go here -->
+        <Qualities {qualities} {upgrade_until} {upgradesAllowed} />
       </section>
       
       <!-- Languages Section (conditional) -->
