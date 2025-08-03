@@ -3,6 +3,7 @@
   import { onMount, afterUpdate, onDestroy } from 'svelte';
   import FlowchartItem from './flowchartItem.svelte';
   import { flowchartColumns, flowchartEdges } from '@shared/constants/flowchartOptions';
+  import InfoTooltip from '@shared/ui/infoTooltip.svelte';
   
   let state;
   let containerRef;
@@ -25,17 +26,115 @@
   function isItemEnabled(columnIndex, itemIndex) {
     // First column is always enabled
     if (columnIndex === 0) return true;
-    
-    // Check if previous column has a selection that allows this item
+
     const prevColumnIndex = columnIndex - 1;
     const prevSelection = state.selections[prevColumnIndex + 1];
     if (!prevSelection) return false;
-    
-    const prevColId = flowchartColumns[prevColumnIndex].id;
+
     const currentColId = flowchartColumns[columnIndex].id;
+
+    // Custom logic for the 'Focus' column (col3)
+    if (currentColId === 'col3') {
+      const resolutionSelection = state.selections[1]; // col1: Resolution
+      const compressionSelection = state.selections[2]; // col2: Compression
+
+      // If compression is Lossless (index 0), only Quality (index 0) is enabled
+      if (compressionSelection === 1) {
+        return itemIndex === 0;
+      }
+
+      // If compression is Compressed (index 1)
+      if (compressionSelection === 2) {
+        // SD (index 0) or 720p (index 1) + Compressed -> only Quality (index 0) is enabled
+        if (resolutionSelection === 1 || resolutionSelection === 2) {
+          return itemIndex === 0; // Quality
+        }
+
+        // 1080p (index 2) + Compressed -> all are enabled
+        if (resolutionSelection === 3) {
+          return true; // Quality, Balanced, Efficient
+        }
+
+        // 2160p (index 3) + Compressed -> Quality (index 0) and Balanced (index 1) are enabled
+        if (resolutionSelection === 4) {
+          return itemIndex === 0 || itemIndex === 1; // Quality, Balanced
+        }
+      }
+
+      // Default to disabled if no rule matches
+      return false;
+    }
+
+    // Custom logic for the 'Codec' column (col4)
+    if (currentColId === 'col4') {
+      const resolutionSelection = state.selections[1]; // col1: Resolution
+      const compressionSelection = state.selections[2]; // col2: Compression
+      const focusSelection = state.selections[3]; // col3: Focus
+
+      // Everything 2160p only gets h265
+      if (resolutionSelection === 4) {
+        return itemIndex === 0; // h265 only
+      }
+
+      // Everything SD and 720p gets h264
+      if (resolutionSelection === 1 || resolutionSelection === 2) {
+        return itemIndex === 1; // h264 only
+      }
+
+      // 1080p logic
+      if (resolutionSelection === 3) {
+        // 1080p quality compressed gets h265 and h264
+        if (compressionSelection === 2 && focusSelection === 1) {
+          return true; // Both h265 and h264
+        }
+        // 1080p quality lossless gets h264
+        if (compressionSelection === 1 && focusSelection === 1) {
+          return itemIndex === 1; // h264 only
+        }
+        // 1080p balanced gets h264
+        if (focusSelection === 2) {
+          return itemIndex === 1; // h264 only
+        }
+        // 1080p efficient gets h265
+        if (focusSelection === 3) {
+          return itemIndex === 0; // h265 only
+        }
+      }
+
+      // Default to disabled if no rule matches
+      return false;
+    }
+
+    // Custom logic for the 'HDR' column (col5)
+    if (currentColId === 'col5') {
+      const resolutionSelection = state.selections[1]; // col1: Resolution
+      const focusSelection = state.selections[3]; // col3: Focus
+      const codecSelection = state.selections[4]; // col4: Codec
+
+      // h264 only gets SDR
+      if (codecSelection === 2) {
+        return itemIndex === 1; // SDR only
+      }
+
+      // h265 logic
+      if (codecSelection === 1) {
+        // 1080p efficient h265 only gets SDR
+        if (resolutionSelection === 3 && focusSelection === 3) {
+          return itemIndex === 1; // SDR only
+        }
+        // All other h265 only gets HDR (no SDR)
+        return itemIndex === 0; // HDR only
+      }
+
+      // Default to disabled if no rule matches
+      return false;
+    }
+
+    // Default logic for all other columns
+    const prevColId = flowchartColumns[prevColumnIndex].id;
     const edgeKey = `${prevColId}:${prevSelection - 1}`;
     const allowedConnections = flowchartEdges[edgeKey] || [];
-    
+
     return allowedConnections.includes(`${currentColId}:${itemIndex}`);
   }
   
@@ -156,12 +255,37 @@
       {#each flowchartColumns as column, columnIndex}
         {#if columnIndex + 1 <= state.currentColumn}
           <div class="relative {isPortrait ? 'p-2 py-6' : 'p-4 h-full'} {columnIndex + 1 < state.currentColumn ? (isPortrait ? 'border-b' : 'border-r') : ''} border-neutral-200 dark:border-neutral-700">
+            {#if isPortrait}
+              <!-- Column header for portrait mode -->
+              <div class="absolute -left-4 top-1/2 -translate-y-1/2 -rotate-90">
+                {#if column.description}
+                  <InfoTooltip content={column.description} position="top">
+                    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 cursor-help">
+                      {column.name}
+                    </span>
+                  </InfoTooltip>
+                {:else}
+                  <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                    {column.name}
+                  </span>
+                {/if}
+              </div>
+            {/if}
+
             {#if !isPortrait}
               <!-- Column header for horizontal mode -->
               <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
-                  {column.name}
-                </span>
+                {#if column.description}
+                  <InfoTooltip content={column.description} position="top">
+                    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 cursor-help">
+                      {column.name}
+                    </span>
+                  </InfoTooltip>
+                {:else}
+                  <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                    {column.name}
+                  </span>
+                {/if}
               </div>
             {/if}
             <div class="flex h-full {isPortrait ? 'flex-row justify-center items-center gap-1' : 'flex-col items-center justify-evenly gap-3 pt-6'}">
