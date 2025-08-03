@@ -1,6 +1,8 @@
 <script>
   import { flowchartStore } from '@shared/stores/flowchart';
   import { onMount, afterUpdate, onDestroy } from 'svelte';
+  import FlowchartItem from './flowchartItem.svelte';
+  import { flowchartColumns, flowchartEdges } from '@shared/constants/flowchartOptions';
   
   let state;
   let containerRef;
@@ -12,12 +14,29 @@
     state = value;
   });
   
-  function handleButtonClick(column, button) {
-    flowchartStore.selectButton(column, button);
+  function handleButtonClick(columnIndex, itemIndex) {
+    flowchartStore.selectButton(columnIndex + 1, itemIndex + 1);
   }
   
-  function getButtonRef(column, button) {
-    return `button-${column}-${button}`;
+  function getButtonRef(columnIndex, itemIndex) {
+    return `button-${columnIndex}-${itemIndex}`;
+  }
+  
+  function isItemEnabled(columnIndex, itemIndex) {
+    // First column is always enabled
+    if (columnIndex === 0) return true;
+    
+    // Check if previous column has a selection that allows this item
+    const prevColumnIndex = columnIndex - 1;
+    const prevSelection = state.selections[prevColumnIndex + 1];
+    if (!prevSelection) return false;
+    
+    const prevColId = flowchartColumns[prevColumnIndex].id;
+    const currentColId = flowchartColumns[columnIndex].id;
+    const edgeKey = `${prevColId}:${prevSelection - 1}`;
+    const allowedConnections = flowchartEdges[edgeKey] || [];
+    
+    return allowedConnections.includes(`${currentColId}:${itemIndex}`);
   }
   
   function checkOrientation() {
@@ -26,14 +45,20 @@
   }
   
   function calculatePath(fromCol, fromButton, toCol, toButton) {
-    const fromRef = buttonRefs[getButtonRef(fromCol, fromButton)];
-    const toRef = buttonRefs[getButtonRef(toCol, toButton)];
+    const fromRef = buttonRefs[getButtonRef(fromCol - 1, fromButton - 1)];
+    const toRef = buttonRefs[getButtonRef(toCol - 1, toButton - 1)];
     
     if (!fromRef || !toRef || !containerRef) return '';
     
     const containerRect = containerRef.getBoundingClientRect();
-    const fromRect = fromRef.getBoundingClientRect();
-    const toRect = toRef.getBoundingClientRect();
+    // Get the button element inside the wrapper div
+    const fromButtonEl = fromRef.querySelector('button');
+    const toButtonEl = toRef.querySelector('button');
+    
+    if (!fromButtonEl || !toButtonEl) return '';
+    
+    const fromRect = fromButtonEl.getBoundingClientRect();
+    const toRect = toButtonEl.getBoundingClientRect();
     
     if (isPortrait) {
       // Vertical layout - curves go from bottom to top
@@ -128,21 +153,29 @@
     <div class="relative grid {isPortrait 
       ? (state.currentColumn === 1 ? 'grid-rows-1' : state.currentColumn === 2 ? 'grid-rows-2' : state.currentColumn === 3 ? 'grid-rows-3' : state.currentColumn === 4 ? 'grid-rows-4' : 'grid-rows-5')
       : (state.currentColumn === 1 ? 'grid-cols-1' : state.currentColumn === 2 ? 'grid-cols-2' : state.currentColumn === 3 ? 'grid-cols-3' : state.currentColumn === 4 ? 'grid-cols-4' : 'grid-cols-5')}">
-      {#each [1, 2, 3, 4, 5] as column}
-        {#if column <= state.currentColumn}
-          <div class="p-4 {column < state.currentColumn ? (isPortrait ? 'border-b' : 'border-r') : ''} border-neutral-200 dark:border-neutral-700">
-            <div class="flex {isPortrait ? 'flex-row justify-center space-x-3' : 'flex-col items-center space-y-3'}">
-              {#each [1, 2, 3] as button}
-                <button
-                  bind:this={buttonRefs[getButtonRef(column, button)]}
-                  class="relative {isPortrait ? 'h-12 max-h-[60%]' : 'w-32 max-w-[60%]'} px-4 py-3 text-sm font-medium rounded-lg border transition-all z-10
-                    {state.selections[column] === button 
-                      ? 'bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 border-neutral-900 dark:border-white' 
-                      : 'bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 border-neutral-300/70 dark:border-neutral-700/50 hover:border-neutral-400 dark:hover:border-neutral-600'}"
-                  on:click={() => handleButtonClick(column, button)}
-                >
-                  c{column}b{button}
-                </button>
+      {#each flowchartColumns as column, columnIndex}
+        {#if columnIndex + 1 <= state.currentColumn}
+          <div class="relative {isPortrait ? 'p-2 py-6' : 'p-4 h-full'} {columnIndex + 1 < state.currentColumn ? (isPortrait ? 'border-b' : 'border-r') : ''} border-neutral-200 dark:border-neutral-700">
+            {#if !isPortrait}
+              <!-- Column header for horizontal mode -->
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                  {column.name}
+                </span>
+              </div>
+            {/if}
+            <div class="flex h-full {isPortrait ? 'flex-row justify-center items-center gap-1' : 'flex-col items-center justify-evenly gap-3 pt-6'}">
+              {#each column.items as item, itemIndex}
+                <div bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}>
+                  <FlowchartItem
+                    label={item.label}
+                    icon={item.icon}
+                    isSelected={state.selections[columnIndex + 1] === itemIndex + 1}
+                    {isPortrait}
+                    isEnabled={isItemEnabled(columnIndex, itemIndex)}
+                    onClick={() => handleButtonClick(columnIndex, itemIndex)}
+                  />
+                </div>
               {/each}
             </div>
           </div>
