@@ -4,6 +4,8 @@
   import FlowchartItem from './flowchartItem.svelte';
   import { flowchartColumns, flowchartEdges } from '@shared/constants/flowchartOptions';
   import InfoTooltip from '@shared/ui/infoTooltip.svelte';
+  import ColumnInfoTooltip from '@shared/ui/columnInfoTooltip.svelte';
+  import { Info } from 'lucide-svelte';
   
   let state;
   let containerRef;
@@ -238,11 +240,6 @@
 
 <div>
   <!-- Header -->
-  <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
-    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white md:w-1/4">
-      Find Your Perfect Profile
-    </h2>
-  </div>
   
   <div class="border-t border-neutral-200 dark:border-neutral-700 mb-6"></div>
   
@@ -255,20 +252,14 @@
       {#each flowchartColumns as column, columnIndex}
         {#if columnIndex + 1 <= state.currentColumn}
           <div class="relative {isPortrait ? 'p-2 py-6' : 'p-4 h-full'} {columnIndex + 1 < state.currentColumn ? (isPortrait ? 'border-b' : 'border-r') : ''} border-neutral-200 dark:border-neutral-700">
-            {#if isPortrait}
-              <!-- Column header for portrait mode -->
-              <div class="absolute -left-4 top-1/2 -translate-y-1/2 -rotate-90">
-                {#if column.description}
-                  <InfoTooltip content={column.description} position="top">
-                    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 cursor-help">
-                      {column.name}
-                    </span>
-                  </InfoTooltip>
-                {:else}
-                  <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
-                    {column.name}
-                  </span>
-                {/if}
+            {#if isPortrait && column.description}
+              <!-- Info icon for portrait mode -->
+              <div class="absolute right-2 top-1/2 -translate-y-1/2 z-10">
+                <ColumnInfoTooltip title={column.name} content={column.description} position="top">
+                  <button class="p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors touch-manipulation">
+                    <Info class="w-5 h-5 text-neutral-400 dark:text-neutral-500" />
+                  </button>
+                </ColumnInfoTooltip>
               </div>
             {/if}
 
@@ -288,7 +279,7 @@
                 {/if}
               </div>
             {/if}
-            <div class="flex h-full {isPortrait ? 'flex-row justify-center items-center gap-1' : 'flex-col items-center justify-evenly gap-3 pt-6'}">
+            <div class="flex h-full {isPortrait ? 'flex-row justify-center items-center gap-1 pr-10' : 'flex-col items-center justify-evenly gap-3 pt-6'}">
               {#each column.items as item, itemIndex}
                 <div bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}>
                   <FlowchartItem
