@@ -52,7 +52,7 @@
     </section>
     
     <!-- Rest of content with normal padding -->
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <!-- Custom Formats Section -->
       <section id="custom-formats" class="mb-12">
         <Scoring {custom_formats} {minCustomFormatScore} {upgradeUntilScore} {minScoreIncrement} />
@@ -64,11 +64,11 @@
       </section>
     </div>
   {:else if slug && slug !== 'quality-profile'}
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <p>No profile found for slug: {slug}</p>
     </div>
   {:else}
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <p>Loading...</p>
     </div>
   {/if}

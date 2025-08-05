@@ -14,9 +14,9 @@
 </script>
 
 <nav class="sticky top-0 z-50 w-full bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-600">
-  <div class="w-full px-4 sm:px-6 lg:px-8">
+  <div class="w-full universal-padding-x">
     <!-- Mobile layout -->
-    <div class="lg:hidden flex items-center justify-between h-16">
+    <div class="xl:hidden flex items-center justify-between h-16">
       <div class="flex items-center gap-2">
         <Header />
         <button
@@ -39,7 +39,7 @@
     </div>
     
     <!-- Desktop layout -->
-    <div class="hidden lg:grid grid-cols-3 items-center h-16">
+    <div class="hidden xl:grid grid-cols-3 items-center h-16">
       <div class="col-span-1">
         <Header />
       </div>

@@ -62,7 +62,7 @@
   ];
 </script>
 
-<div class="p-6 max-w-4xl mx-auto">
+<div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Installation</h1>
   
   <SetupWarning />

@@ -131,13 +131,13 @@
   <Navbar />
   <div class="flex flex-1 relative overflow-hidden">
     <!-- Desktop sidebar -->
-    <div class="hidden lg:block">
+    <div class="hidden xl:block">
       <Sidebar />
     </div>
     
     <!-- Mobile sidebar overlay -->
     {#if $isMobileSidebarOpen}
-      <div class="lg:hidden fixed inset-0 top-16 z-40 flex">
+      <div class="xl:hidden fixed inset-0 top-16 z-40 flex">
         <!-- Backdrop -->
         <div 
           class="fixed inset-0 bg-black bg-opacity-50" 
@@ -152,14 +152,16 @@
     {/if}
     
     <!-- Main content -->
-    <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden lg:block' : ''}">
-      <Route path="/*" let:meta>
-        <svelte:component this={getRouteComponent(meta.url)} />
-      </Route>
+    <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden xl:block' : ''}">
+      <div class="universal-padding">
+        <Route path="/*" let:meta>
+          <svelte:component this={getRouteComponent(meta.url)} />
+        </Route>
+      </div>
     </main>
     
     <!-- Navigation -->
-    <div class="{$isMobileSidebarOpen ? 'hidden' : ''} hidden lg:block">
+    <div class="{$isMobileSidebarOpen ? 'hidden' : ''} hidden xl:block">
       <Navigation />
     </div>
   </div>

@@ -22,7 +22,7 @@
   });
 </script>
 
-<div class="p-6 max-w-4xl mx-auto">
+<div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Profilarr 101</h1>
   
   <p class="text-neutral-700 dark:text-neutral-300">

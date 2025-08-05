@@ -22,7 +22,7 @@
 </script>
 
 {#if devLog}
-  <div class="p-6 max-w-4xl mx-auto">
+  <div >
     <h1 class="text-3xl font-bold text-neutral-900 dark:text-white mb-4">{devLog.title}</h1>
     <div class="markdown-content">
       {@html devLog.html}

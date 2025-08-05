@@ -16,7 +16,7 @@
   });
 </script>
 
-<div class="max-w-4xl mx-auto p-6 space-y-8">
+<div class="space-y-8">
   <div class="space-y-4">
     <h1 id="overview" class="text-xl font-bold text-neutral-900 dark:text-white">Media Management Settings</h1>
     <p class="text-neutral-600 dark:text-neutral-400">
@@ -100,7 +100,7 @@
       <h2 id="miscellaneous-settings" class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">Miscellaneous Settings</h2>
     </div>
     
-    <div class="p-6">
+    <div >
       <p class="text-neutral-700 dark:text-neutral-300">
         Basic configuration settings needed for custom formats and naming to work properly.
       </p>

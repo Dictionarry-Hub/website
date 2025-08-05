@@ -113,7 +113,7 @@
   }
 </script>
 
-<div class="p-6 max-w-4xl mx-auto">
+<div >
   <div class="space-y-4 mb-8">
     <h1 class="text-xl font-bold text-neutral-900 dark:text-white">Quality Definitions</h1>
     <p class="text-neutral-600 dark:text-neutral-400">

@@ -82,8 +82,7 @@
 <div>
   <!-- Overview Section with full-width background -->
   <section id="overview">
-    <div class="py-8">
-      <div class="max-w-4xl mx-auto px-6">
+    <div>
         <div class="mb-6">
           <h1 class="text-2xl font-bold text-neutral-900 dark:text-white">
             ⚡ Quality Profiles
@@ -97,12 +96,11 @@
           </h2>
           <Overview />
         </div>
-      </div>
     </div>
   </section>
   
   <!-- Rest of content with normal padding -->
-  <div class="p-6 max-w-4xl mx-auto">
+  <div >
     <!-- Profile Wizard Section - empty for navigation anchor -->
     <section id="profile-wizard">
       <Flowchart {getRecommendedProfile} />

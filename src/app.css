@@ -18,6 +18,21 @@ body {
   background-color: rgb(23 23 23);
 }
 
+/* Universal padding class */
+.universal-padding {
+  @apply p-8 md:p-12 lg:p-16 xl:p-24 2xl:p-32;
+}
+
+/* Universal horizontal padding class */
+.universal-padding-x {
+  @apply px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32;
+}
+
+/* Universal vertical padding class */
+.universal-padding-y {
+  @apply py-8 md:py-12 lg:py-16 xl:py-24 2xl:py-32;
+}
+
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }

@@ -33,7 +33,7 @@
   });
 </script>
 
-<div class="p-6 max-w-4xl mx-auto">
+<div >
   <h2 id="motivation" class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔥 Motivation</h2>
 
   <p class="text-neutral-700 dark:text-neutral-300 mb-8">

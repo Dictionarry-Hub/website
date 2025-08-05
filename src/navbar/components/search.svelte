@@ -25,7 +25,7 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <!-- Desktop view -->
-<div class="hidden lg:flex relative items-center w-full max-w-2xl">
+<div class="hidden xl:flex relative items-center w-full max-w-2xl">
   <!-- Filter Button + Search Input Combined -->
   <div class="relative flex items-center w-full">
     <!-- Filter Button (Left side) -->
@@ -92,7 +92,7 @@
 </div>
 
 <!-- Mobile view -->
-<div class="lg:hidden">
+<div class="xl:hidden">
   <button class="p-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 rounded-md transition-all duration-200 hover:scale-105" on:click={openSearchModal}>
     <span class="sr-only">Search</span>
     <Search class="w-5 h-5" />

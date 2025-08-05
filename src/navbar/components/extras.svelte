@@ -11,7 +11,7 @@
 
 
 <!-- Desktop view -->
-<div class="hidden lg:flex items-center space-x-2">
+<div class="hidden xl:flex items-center space-x-2">
   <ThemeToggle />
   
   <a href="https://github.com/Dictionarry-Hub" class="social-icon" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@
 
 <!-- Mobile view -->
 <div 
-  class="lg:hidden relative"
+  class="xl:hidden relative"
   role="button"
   tabindex="0"
   on:mouseenter={() => isDropdownOpen = true}

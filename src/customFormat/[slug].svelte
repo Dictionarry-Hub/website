@@ -45,7 +45,7 @@
     </section>
     
     <!-- Rest of content with normal padding -->
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <!-- Conditions Section -->
       <section id="conditions" class="mb-12">
         <Conditions {conditions} />
@@ -64,11 +64,11 @@
       </section>
     </div>
   {:else if slug && slug !== 'custom-format'}
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <p>No custom format found for slug: {slug}</p>
     </div>
   {:else}
-    <div class="p-6 max-w-4xl mx-auto">
+    <div >
       <p>Loading...</p>
     </div>
   {/if}

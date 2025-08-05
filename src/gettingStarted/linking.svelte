@@ -19,7 +19,7 @@
   });
 </script>
 
-<div class="p-6 max-w-4xl mx-auto">
+<div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Linking</h1>
   
   <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 mt-8 mb-4" id="overview">

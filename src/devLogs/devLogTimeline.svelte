@@ -20,9 +20,9 @@
   });
 </script>
 
-<div class="flex h-full overflow-hidden">
+<div class="flex h-full overflow-hidden -m-8 md:-m-12 lg:-m-16 xl:-m-24 2xl:-m-32">
   <div class="flex-1 overflow-y-auto">
-    <div class="p-6 max-w-4xl mx-auto">
+    <div class="universal-padding">
       
 
       <div class="text-left">

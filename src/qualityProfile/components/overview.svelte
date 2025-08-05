@@ -8,9 +8,7 @@
   export let language = null;
 </script>
 
-<div class="py-8">
-  <div class="max-w-4xl mx-auto px-6">
-    <div>
+<div class="mb-12">
       
       <!-- Header: Name and Tags -->
       <div class="flex flex-col md:flex-row md:items-start gap-4">
@@ -56,6 +54,4 @@
           </div>
         </div>
       {/if}
-    </div>
-  </div>
 </div>
