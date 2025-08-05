@@ -11,6 +11,8 @@
   let containerRef;
   let buttonRefs = {};
   let svgPaths = [];
+  let potentialPaths = [];
+  let hoveredButton = null;
   let isPortrait = false;
   
   flowchartStore.subscribe(value => {
@@ -204,6 +206,7 @@
     // Small delay to ensure DOM is updated
     setTimeout(() => {
       const paths = [];
+      const potential = [];
       
       // For each column with a selection
       for (let col = 1; col < state.currentColumn && col < 5; col++) {
@@ -218,7 +221,33 @@
         }
       }
       
+      // Calculate potential paths for the next unselected column
+      if (state.currentColumn > 1 && state.currentColumn <= 5) {
+        const lastSelectedCol = state.currentColumn - 1;
+        const lastSelection = state.selections[lastSelectedCol];
+        
+        if (lastSelection && !state.selections[state.currentColumn]) {
+          // Get all enabled items in the current column
+          const currentColIndex = state.currentColumn - 1;
+          if (currentColIndex < flowchartColumns.length) {
+            flowchartColumns[currentColIndex].items.forEach((item, itemIndex) => {
+              if (isItemEnabled(currentColIndex, itemIndex)) {
+                const pathData = calculatePath(lastSelectedCol, lastSelection, state.currentColumn, itemIndex + 1);
+                if (pathData) {
+                  potential.push({
+                    id: `potential-${lastSelectedCol}-${state.currentColumn}-${itemIndex}`,
+                    d: pathData,
+                    toButton: `${currentColIndex}-${itemIndex}`
+                  });
+                }
+              }
+            });
+          }
+        }
+      }
+      
       svgPaths = paths;
+      potentialPaths = potential;
     }, 10);
   }
   
@@ -281,7 +310,11 @@
             {/if}
             <div class="flex h-full {isPortrait ? 'flex-row justify-center items-center gap-1 pr-10' : 'flex-col items-center justify-evenly gap-3 pt-6'}">
               {#each column.items as item, itemIndex}
-                <div bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}>
+                <div 
+                  bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}
+                  on:mouseenter={() => hoveredButton = `${columnIndex}-${itemIndex}`}
+                  on:mouseleave={() => hoveredButton = null}
+                >
                   <FlowchartItem
                     label={item.label}
                     icon={item.icon}
@@ -300,6 +333,19 @@
     
     <!-- SVG Overlay for curves - positioned after buttons to ensure proper z-index -->
     <svg class="absolute inset-0 pointer-events-none" width="100%" height="100%">
+      <!-- Potential paths (dotted) -->
+      {#each potentialPaths as path}
+        <path
+          d={path.d}
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-dasharray="5,5"
+          class="text-neutral-300 dark:text-neutral-600 transition-all duration-300 {hoveredButton === path.toButton ? 'pulse-line opacity-100' : 'opacity-40'}"
+        />
+      {/each}
+      
+      <!-- Selected paths (solid) -->
       {#each svgPaths as path}
         <path
           d={path.d}
@@ -312,3 +358,20 @@
     </svg>
   </div>
 </div>
+
+<style>
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.2;
+      stroke-width: 2;
+    }
+    50% {
+      opacity: 1;
+      stroke-width: 3;
+    }
+  }
+  
+  :global(.pulse-line) {
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+</style>
