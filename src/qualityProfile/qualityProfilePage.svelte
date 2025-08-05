@@ -3,13 +3,7 @@
   import { onMount, onDestroy } from 'svelte';
   import Overview from './components/qualityProfileOverview.svelte';
   import Flowchart from './components/flowchart.svelte';
-  import { flowchartStore } from '@shared/stores/flowchart';
   import { flowchartColumns } from '@shared/constants/flowchartOptions';
-  import Tooltip from '@shared/ui/tooltip.svelte';
-  import { Link2, Clock, HelpCircle } from 'lucide-svelte';
-  
-  let recommendedProfile = null;
-  let profileUrl = null;
   
   // Map selections to profile names
   function getRecommendedProfile(selections) {
@@ -75,17 +69,6 @@
     return null;
   }
   
-  // Subscribe to flowchart changes
-  $: {
-    // Only show recommendation when all selections are complete
-    if ($flowchartStore.selections[5]) {
-      const profile = getRecommendedProfile($flowchartStore.selections);
-      recommendedProfile = profile;
-    } else {
-      recommendedProfile = null;
-    }
-  }
-  
   onMount(() => {
     const navItems = ['Overview', 'Profile Wizard'];
     setNavigationItems(navItems, '/quality-profile');
@@ -120,66 +103,9 @@
   
   <!-- Rest of content with normal padding -->
   <div class="p-6 max-w-4xl mx-auto">
-    <!-- Profile Wizard Section -->
-    <section id="profile-wizard" class="mb-12">
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-8 mb-6">
-        <div class="col-span-1 lg:col-span-3">
-          <h2 class="text-xl font-semibold text-neutral-900 dark:text-white mb-1">
-            🧙 Profile Wizard
-          </h2>
-          <p class="text-sm text-neutral-600 dark:text-neutral-400">
-            Select your preferences to find the ideal quality profile for your content<span class="hidden lg:inline">. Hover over column headers for more information</span>
-          </p>
-        </div>
-        <div class="flex col-span-1 lg:col-span-2 items-center lg:justify-end">
-          {#if recommendedProfile}
-              {#if recommendedProfile.url}
-                <a 
-                  href={recommendedProfile.url} 
-                  class="group relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-neutral-300 dark:hover:border-neutral-600 transition-all w-full lg:w-auto"
-                >
-                  <div class="flex-1">
-                    <div class="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-0.5">Recommended Profile</div>
-                    <div class="text-sm font-semibold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                      {recommendedProfile.name}
-                    </div>
-                  </div>
-                  <div class="w-8 h-8 bg-white dark:bg-neutral-700 rounded-full flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30 transition-colors">
-                    <Link2 class="w-4 h-4 text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
-                  </div>
-                  <div class="absolute inset-0 rounded-lg ring-1 ring-blue-500 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                </a>
-              {:else}
-                <div class="relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 w-full lg:w-auto">
-                  <div class="flex-1">
-                    <div class="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-0.5">Recommended Profile</div>
-                    <div class="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
-                      {recommendedProfile.name}
-                    </div>
-                  </div>
-                  <Tooltip text="This profile is coming soon" position="left">
-                    <div class="w-8 h-8 bg-green-50 dark:bg-green-900/20 rounded-full flex items-center justify-center cursor-help">
-                      <Clock class="w-4 h-4 text-green-600 dark:text-green-400" />
-                    </div>
-                  </Tooltip>
-                </div>
-              {/if}
-          {:else}
-            <div class="relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 opacity-60 w-full lg:w-auto">
-              <div class="flex-1">
-                <div class="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-0.5">Recommended Profile</div>
-                <div class="text-sm font-medium text-neutral-400 dark:text-neutral-500">
-                  Complete your selection
-                </div>
-              </div>
-              <div class="w-8 h-8 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center">
-                <HelpCircle class="w-4 h-4 text-neutral-400" />
-              </div>
-            </div>
-          {/if}
-        </div>
-      </div>
-      <Flowchart />
+    <!-- Profile Wizard Section - empty for navigation anchor -->
+    <section id="profile-wizard">
+      <Flowchart {getRecommendedProfile} />
     </section>
   </div>
 </div>
