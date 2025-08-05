@@ -1,8 +1,8 @@
 <script>
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
-  import Overview from './components/qualityProfileOverview.svelte';
-  import Flowchart from './components/flowchart.svelte';
+  import Overview from './overview/overview.svelte';
+  import Flowchart from './flowchart/flowchart.svelte';
   import { flowchartColumns } from '@shared/constants/flowchartOptions';
   
   // Map selections to profile names

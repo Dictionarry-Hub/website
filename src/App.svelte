@@ -15,8 +15,8 @@
   import Customizations from './gettingStarted/customizations.svelte'
   import DevLogTimeline from './devLogs/devLogTimeline.svelte'
   import DevLogPage from './devLogs/devLogPage.svelte'
-  import QualityProfilePage from './qualityProfile/qualityProfilePage.svelte'
-  import QualityProfileSlug from './qualityProfile/[slug].svelte'
+  import QualityProfilePage from './qualityProfile/landing/page.svelte'
+  import QualityProfileSlug from './qualityProfile/slug/page.svelte'
   import CustomFormatSlug from './customFormat/[slug].svelte'
   import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
   import NamingPage from './mediaManagement/namingPage.svelte'
@@ -153,7 +153,7 @@
     
     <!-- Main content -->
     <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden xl:block' : ''}">
-      <div class="universal-padding">
+      <div class="universal-padding max-w-6xl mx-auto">
         <Route path="/*" let:meta>
           <svelte:component this={getRouteComponent(meta.url)} />
         </Route>

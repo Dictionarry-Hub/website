@@ -1,11 +1,11 @@
 <script>
   import { router } from 'tinro';
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '../../generated/contentDatabase';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
-  import Overview from './components/overview.svelte';
-  import Scoring from './components/scoring/scoring.svelte';
-  import Qualities from './components/qualities/qualities.svelte';
+  import Overview from './overview/overview.svelte';
+  import Scoring from './scoring/scoring.svelte';
+  import Qualities from './qualities/qualities.svelte';
   
   let profileEntry = null;
   

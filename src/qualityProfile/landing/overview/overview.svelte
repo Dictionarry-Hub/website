@@ -14,7 +14,7 @@
     Instead of just guessing quality from a filename, Dictionarry uses historical data to rank release groups on their proven quality and efficiency.
   </p>
   <p class="mb-6">
-    For example, two releases might appear identical (<code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">Movie.1080p-GROUP_A</code> vs <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">Movie.1080p-GROUP_B</code>), but our data can identify that <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">GROUP_A</code>'s encodes are consistently better. The profile uses this information to automatically prefer the release from <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">GROUP_A</code>.
+    For example, two releases might appear identical (<code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">Movie.1080p-groupA</code> vs <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">Movie.1080p-groupB</code>), but our data can identify that <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">groupA</code>'s encodes are consistently better. The profile uses this information to automatically prefer the release from <code class="px-1.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 rounded text-sm">groupA</code>.
   </p>
   
   <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-3">
@@ -26,4 +26,4 @@
   <p class="mb-6">
     For example, a profile might penalize the common x265 codec, requiring it to be paired with a highly-scored, trusted release group to be downloaded. This system creates a rule: "Only get x265 releases if they come from a source you trust."
   </p>
-</div>
+</div><!--  -->

@@ -20,12 +20,12 @@ body {
 
 /* Universal padding class */
 .universal-padding {
-  @apply p-8 md:p-12 lg:p-16 xl:p-24 2xl:p-32;
+  @apply p-8 md:px-12;
 }
 
 /* Universal horizontal padding class */
 .universal-padding-x {
-  @apply px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32;
+  @apply px-8 md:px-12 lg:px-6;
 }
 
 /* Universal vertical padding class */

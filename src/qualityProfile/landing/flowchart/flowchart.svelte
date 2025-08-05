@@ -148,7 +148,7 @@
   }
   
   function checkMobile() {
-    isMobile = window.innerWidth < 1280; // Switch to mobile below 1280px
+    isMobile = window.innerWidth < 1500; // Switch to mobile below 1500px
     if (!isMobile) {
       updatePaths();
     }
