@@ -241,7 +241,7 @@
 <div>
   <!-- Header -->
   
-  <div class="border-t border-neutral-200 dark:border-neutral-700 mb-6"></div>
+  <div class="border-t border-neutral-200 dark:border-neutral-700 mb-10"></div>
   
   <!-- Flowchart Columns/Rows -->
   <div class="relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg" bind:this={containerRef}>
