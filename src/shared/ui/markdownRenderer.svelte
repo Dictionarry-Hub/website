@@ -2,6 +2,7 @@
   import CodeBlock from './codeBlock.svelte';
   import Table from './table.svelte';
   import MathRenderer from './mathRenderer.svelte';
+  import ListRenderer from './listRenderer.svelte';
   
   export let blocks = [];
   
@@ -117,35 +118,9 @@
       <MathRenderer content={block.content} display={block.display} />
       
     {:else if block.type === 'list'}
-      {#if block.ordered}
-        <ol class="list-decimal list-inside my-4 space-y-2">
-          {#each block.items as item}
-            <li class="text-neutral-700 dark:text-neutral-300">
-              {#each processParagraphContent(item) as part}
-                {#if part.type === 'math'}
-                  <MathRenderer content={part.content} display={false} />
-                {:else}
-                  {@html part.content}
-                {/if}
-              {/each}
-            </li>
-          {/each}
-        </ol>
-      {:else}
-        <ul class="list-disc list-inside my-4 space-y-2">
-          {#each block.items as item}
-            <li class="text-neutral-700 dark:text-neutral-300">
-              {#each processParagraphContent(item) as part}
-                {#if part.type === 'math'}
-                  <MathRenderer content={part.content} display={false} />
-                {:else}
-                  {@html part.content}
-                {/if}
-              {/each}
-            </li>
-          {/each}
-        </ul>
-      {/if}
+      <div class="my-4">
+        <ListRenderer items={block.items} ordered={block.ordered} />
+      </div>
       
     {:else if block.type === 'blockquote'}
       <blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 my-4 italic text-neutral-600 dark:text-neutral-400">

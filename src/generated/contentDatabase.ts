@@ -58622,10 +58622,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Storage and bandwidth are always <strong>limited resources</strong>",
-            "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>",
-            "Different codecs have different <strong>efficiency curves</strong>",
-            "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+            {
+              "content": "Storage and bandwidth are always <strong>limited resources</strong>"
+            },
+            {
+              "content": "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>"
+            },
+            {
+              "content": "Different codecs have different <strong>efficiency curves</strong>"
+            },
+            {
+              "content": "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+            }
           ]
         },
         {
@@ -58642,9 +58650,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs",
-            "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency",
-            "Most users find a sweet spot in the middle"
+            {
+              "content": "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs"
+            },
+            {
+              "content": "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency"
+            },
+            {
+              "content": "Most users find a sweet spot in the middle"
+            }
           ]
         },
         {
@@ -58675,8 +58689,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100",
-            "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+            {
+              "content": "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100"
+            },
+            {
+              "content": "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+            }
           ]
         },
         {
@@ -58687,10 +58705,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)",
-            "These space savings are consistent across different quality levels",
-            "Beyond this point, both codecs achieve <strong>near identical quality</strong>",
-            "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+            {
+              "content": "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)"
+            },
+            {
+              "content": "These space savings are consistent across different quality levels"
+            },
+            {
+              "content": "Beyond this point, both codecs achieve <strong>near identical quality</strong>"
+            },
+            {
+              "content": "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+            }
           ]
         },
         {
@@ -58707,11 +58733,21 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "This is approximately where <strong>visual transparency</strong> becomes achievable",
-            "Higher ratios provide <strong>diminishing returns</strong>",
-            "At this compression level, content achieves <strong>VMAF scores above 95</strong>",
-            "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes",
-            "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+            {
+              "content": "This is approximately where <strong>visual transparency</strong> becomes achievable"
+            },
+            {
+              "content": "Higher ratios provide <strong>diminishing returns</strong>"
+            },
+            {
+              "content": "At this compression level, content achieves <strong>VMAF scores above 95</strong>"
+            },
+            {
+              "content": "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes"
+            },
+            {
+              "content": "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+            }
           ]
         },
         {
@@ -58732,14 +58768,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by: - Starting with k random cluster centers - Assigning each group to its nearest center - Recalculating centers based on group assignments - Repeating until stable"
+            {
+              "content": "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
+            },
+            {
+              "content": "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:",
+              "children": [
+                {
+                  "content": "Starting with k random cluster centers"
+                },
+                {
+                  "content": "Assigning each group to its nearest center"
+                },
+                {
+                  "content": "Recalculating centers based on group assignments"
+                },
+                {
+                  "content": "Repeating until stable"
+                }
+              ]
+            }
           ]
         },
         {
@@ -58768,10 +58816,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Managing large libraries on limited storage",
-            "Collecting complete series where total size is a major concern",
-            "Primarily viewing on mobile devices or smaller screens",
-            "Dealing with bandwidth caps or slow internet connections"
+            {
+              "content": "Managing large libraries on limited storage"
+            },
+            {
+              "content": "Collecting complete series where total size is a major concern"
+            },
+            {
+              "content": "Primarily viewing on mobile devices or smaller screens"
+            },
+            {
+              "content": "Dealing with bandwidth caps or slow internet connections"
+            }
           ]
         },
         {
@@ -58871,9 +58927,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have reasonable storage capacity but still want efficiency",
-            "Watch on mid to large screens where quality becomes more noticeable",
-            "Want a good balance between visual quality and practical file sizes"
+            {
+              "content": "Have reasonable storage capacity but still want efficiency"
+            },
+            {
+              "content": "Watch on mid to large screens where quality becomes more noticeable"
+            },
+            {
+              "content": "Want a good balance between visual quality and practical file sizes"
+            }
           ]
         },
         {
@@ -58979,10 +59041,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Want to maintain a 4K library on limited storage",
-            "Primarily view content at typical viewing distances where subtle quality differences are less noticeable",
-            "Need to conserve bandwidth while still enjoying 4K resolution",
-            "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+            {
+              "content": "Want to maintain a 4K library on limited storage"
+            },
+            {
+              "content": "Primarily view content at typical viewing distances where subtle quality differences are less noticeable"
+            },
+            {
+              "content": "Need to conserve bandwidth while still enjoying 4K resolution"
+            },
+            {
+              "content": "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+            }
           ]
         },
         {
@@ -59003,10 +59073,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have decent storage capacity but still want reasonable efficiency",
-            "Watch on larger screens where quality differences become more apparent",
-            "Want to maintain high quality while still keeping files manageable",
-            "Need reliable HDR performance without excessive file sizes"
+            {
+              "content": "Have decent storage capacity but still want reasonable efficiency"
+            },
+            {
+              "content": "Watch on larger screens where quality differences become more apparent"
+            },
+            {
+              "content": "Want to maintain high quality while still keeping files manageable"
+            },
+            {
+              "content": "Need reliable HDR performance without excessive file sizes"
+            }
           ]
         },
         {
@@ -59027,10 +59105,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have ample storage and prioritize maximum quality consciously",
-            "Watch on high-end displays where subtle quality differences are noticeable",
-            "Want to maintain archive-quality collections",
-            "Focus on difficult-to-encode content where compression artifacts are more visible"
+            {
+              "content": "Have ample storage and prioritize maximum quality consciously"
+            },
+            {
+              "content": "Watch on high-end displays where subtle quality differences are noticeable"
+            },
+            {
+              "content": "Want to maintain archive-quality collections"
+            },
+            {
+              "content": "Focus on difficult-to-encode content where compression artifacts are more visible"
+            }
           ]
         },
         {
@@ -59298,9 +59384,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>",
-            "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>",
-            "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+            {
+              "content": "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>"
+            },
+            {
+              "content": "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>"
+            },
+            {
+              "content": "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+            }
           ]
         }
       ],
@@ -59327,7 +59419,7 @@ export const contentDatabase = {
       "slug": "profilarr-casaos",
       "category": "wiki",
       "title": "Casa OS - Profilarr Installation Guide",
-      "description": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS. Prerequisites - A working Casa OS installation (this guide uses v0.4.15). - Basic knowledge of using th...",
+      "description": "This guide walks through installing Profilarr as a custom application in Casa OS. Prerequisites Before starting, ensure you have: - Casa OS installed and running (tested with v0.4.15) - Basic familiar...",
       "frontmatter": {
         "title": "Casa OS - Profilarr Installation Guide",
         "slug": "profilarr-casaos",
@@ -59347,7 +59439,7 @@ export const contentDatabase = {
       "blocks": [
         {
           "type": "paragraph",
-          "content": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS."
+          "content": "This guide walks through installing Profilarr as a custom application in Casa OS."
         },
         {
           "type": "header",
@@ -59356,39 +59448,270 @@ export const contentDatabase = {
           "id": "prerequisites"
         },
         {
+          "type": "paragraph",
+          "content": "Before starting, ensure you have:"
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "A working Casa OS installation (this guide uses v0.4.15).",
-            "Basic knowledge of using the Casa OS interface.",
-            "Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file."
+            {
+              "content": "Casa OS installed and running (tested with v0.4.15)"
+            },
+            {
+              "content": "Basic familiarity with the Casa OS interface"
+            },
+            {
+              "content": "Access to the <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">Profilarr GitHub repository</a>"
+            }
           ]
         },
         {
           "type": "header",
           "level": 2,
-          "text": "Step-by-Step Installation",
-          "id": "step-by-step-installation"
+          "text": "Installation Process",
+          "id": "installation-process"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Adding a Custom Application",
+          "id": "adding-a-custom-application"
         },
         {
           "type": "list",
           "ordered": true,
           "items": [
-            "<strong>Add a Custom App to Casa OS:</strong> - Open your web browser and navigate to your Casa OS dashboard. - Find and click on the &quot;+&quot; icon in the top right corner of the App section. - Select “Install a customized app” - Select “Import” in the top right corner of the Settings page",
-            "<strong>Import Docker Compose File:</strong> - Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> - Scroll down to the “Installation” section - You will see a **Docker Compose (recommended) **code block - Copy the Docker Compose file code - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code> - Click on “Submit” and click “OK” to the warning",
-            "<strong>Profilarr App Details:</strong> - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables - <strong>Name:</strong> “Profilarr” - but you can change it if you want - <strong>Icon:</strong> (Optional) You can upload an icon for the app. - <strong>Web UI:</strong> Should be your host device IP address - <strong>Network:</strong> Should be bridge - <strong>Port:</strong> Should be 6868 TCP - <strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location - <strong>Environment Variables:</strong> (Only TZ is required, the others are optional) - TZ = Your Timezone (e.g., America/New_York) - GIT_USER_NAME = GitHub username for contributing - GIT_USER_EMAIL = GitHub email for contributing - PROFILARR_PAT = GitHub Personal Access Token for contributing",
-            "<strong>Install the App:</strong> - Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.",
-            "<strong>Wait for Installation:</strong> - Casa OS will now download and install the app. This might take a few minutes.",
-            "<strong>Access Profilarr:</strong> - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app."
+            {
+              "content": "Open your Casa OS dashboard in a web browser"
+            },
+            {
+              "content": "Click the <strong>+</strong> icon in the top right corner of the App section"
+            },
+            {
+              "content": "Select <strong>Install a customized app</strong>"
+            },
+            {
+              "content": "Click <strong>Import</strong> in the top right corner of the Settings page"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Importing Docker Compose Configuration",
+          "id": "importing-docker-compose-configuration"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Visit the <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">Profilarr GitHub repository</a>"
+            },
+            {
+              "content": "Navigate to the Installation section"
+            },
+            {
+              "content": "Locate the <strong>Docker Compose (recommended)</strong> code block"
+            },
+            {
+              "content": "Copy the entire Docker Compose configuration"
+            },
+            {
+              "content": "Return to Casa OS and paste the code into the import text box"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": "<strong>Note:</strong> If you&#39;re not contributing to a database, remove these lines to avoid errors: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code>"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Click <strong>Submit</strong> and acknowledge any warnings by clicking <strong>OK</strong>"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Configuring Application Settings",
+          "id": "configuring-application-settings"
+        },
+        {
+          "type": "paragraph",
+          "content": "Most settings can remain at their default values. Adjust these as needed:"
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Basic Configuration",
+          "id": "basic-configuration"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Setting",
+            "Value",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "<strong>Name</strong>",
+              "Profilarr",
+              "Customizable to your preference"
+            ],
+            [
+              "<strong>Icon</strong>",
+              "(Optional)",
+              "Upload a custom icon"
+            ],
+            [
+              "<strong>Web UI</strong>",
+              "Host device IP",
+              "Auto-detected by Casa OS"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Network & Storage",
+          "id": "network-storage"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Setting",
+            "Default Value",
+            "Description"
+          ],
+          "rows": [
+            [
+              "<strong>Network</strong>",
+              "bridge",
+              "Standard Docker networking mode"
+            ],
+            [
+              "<strong>Port</strong>",
+              "6868 TCP",
+              "Web interface port"
+            ],
+            [
+              "<strong>Volumes</strong>",
+              "Default paths",
+              "Modify host paths for custom storage location"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Environment Variables",
+          "id": "environment-variables"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Variable",
+            "Required",
+            "Description",
+            "Example"
+          ],
+          "rows": [
+            [
+              "<code>TZ</code>",
+              "<strong>Yes</strong>",
+              "Your timezone",
+              "<code>America/New_York</code>"
+            ],
+            [
+              "<code>GIT_USER_NAME</code>",
+              "No",
+              "GitHub username for contributing",
+              "<code>yourname</code>"
+            ],
+            [
+              "<code>GIT_USER_EMAIL</code>",
+              "No",
+              "GitHub email for contributing",
+              "<code>you@example.com</code>"
+            ],
+            [
+              "<code>PROFILARR_PAT</code>",
+              "No",
+              "GitHub Personal Access Token",
+              "<code>ghp_xxxxxxxxxxxx</code>"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Completing Installation",
+          "id": "completing-installation"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Click the <strong>Install</strong> button after configuring all settings"
+            },
+            {
+              "content": "Wait for Casa OS to download and set up the container (typically 2-5 minutes)"
+            },
+            {
+              "content": "Once complete, Profilarr will appear on your Casa OS dashboard"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Accessing Profilarr",
+          "id": "accessing-profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Click the Profilarr icon on your dashboard to launch the application."
+        }
+      ],
+      "markdown": "\nThis guide walks through installing Profilarr as a custom application in Casa OS.\n\n## Prerequisites\n\nBefore starting, ensure you have:\n\n- Casa OS installed and running (tested with v0.4.15)\n- Basic familiarity with the Casa OS interface\n- Access to the [Profilarr GitHub repository](https://github.com/Dictionarry-Hub/Profilarr)\n\n## Installation Process\n\n### Adding a Custom Application\n\n1. Open your Casa OS dashboard in a web browser\n2. Click the **+** icon in the top right corner of the App section\n3. Select **Install a customized app**\n4. Click **Import** in the top right corner of the Settings page\n\n### Importing Docker Compose Configuration\n\n1. Visit the [Profilarr GitHub repository](https://github.com/Dictionarry-Hub/Profilarr)\n2. Navigate to the Installation section\n3. Locate the **Docker Compose (recommended)** code block\n4. Copy the entire Docker Compose configuration\n5. Return to Casa OS and paste the code into the import text box\n\n> **Note:** If you're not contributing to a database, remove these lines to avoid errors:\n> - `env_file:`\n> - `- .env # Optional: Only needed if contributing to a database`\n\n6. Click **Submit** and acknowledge any warnings by clicking **OK**\n\n### Configuring Application Settings\n\nMost settings can remain at their default values. Adjust these as needed:\n\n#### Basic Configuration\n\n| Setting | Value | Notes |\n|---------|-------|-------|\n| **Name** | Profilarr | Customizable to your preference |\n| **Icon** | (Optional) | Upload a custom icon |\n| **Web UI** | Host device IP | Auto-detected by Casa OS |\n\n#### Network & Storage\n\n| Setting | Default Value | Description |\n|---------|---------------|-------------|\n| **Network** | bridge | Standard Docker networking mode |\n| **Port** | 6868 TCP | Web interface port |\n| **Volumes** | Default paths | Modify host paths for custom storage location |\n\n#### Environment Variables\n\n| Variable | Required | Description | Example |\n|----------|----------|-------------|---------|\n| `TZ` | **Yes** | Your timezone | `America/New_York` |\n| `GIT_USER_NAME` | No | GitHub username for contributing | `yourname` |\n| `GIT_USER_EMAIL` | No | GitHub email for contributing | `you@example.com` |\n| `PROFILARR_PAT` | No | GitHub Personal Access Token | `ghp_xxxxxxxxxxxx` |\n\n### Completing Installation\n\n1. Click the **Install** button after configuring all settings\n2. Wait for Casa OS to download and set up the container (typically 2-5 minutes)\n3. Once complete, Profilarr will appear on your Casa OS dashboard\n\n### Accessing Profilarr\n\nClick the Profilarr icon on your dashboard to launch the application.",
+      "navigation": [
+        {
+          "title": "Prerequisites",
+          "children": []
+        },
+        {
+          "title": "Installation Process",
+          "children": [
+            {
+              "title": "Adding a Custom Application",
+              "children": []
+            },
+            {
+              "title": "Importing Docker Compose Configuration",
+              "children": []
+            },
+            {
+              "title": "Configuring Application Settings",
+              "children": [
+                "Basic Configuration",
+                "Network & Storage",
+                "Environment Variables"
+              ]
+            },
+            "Completing Installation",
+            "Accessing Profilarr"
           ]
         }
       ],
-      "markdown": "\nThis guide will walk you through the process of installing Profilarr as a custom app in Casa OS.\n\n## Prerequisites\n\n- A working Casa OS installation (this guide uses v0.4.15).\n- Basic knowledge of using the Casa OS interface.\n- Access to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr) for install file.\n\n## Step-by-Step Installation\n\n1. **Add a Custom App to Casa OS:**\n   - Open your web browser and navigate to your Casa OS dashboard.\n   - Find and click on the \"+\" icon in the top right corner of the App section.\n   - Select “Install a customized app”\n   - Select “Import” in the top right corner of the Settings page\n2. **Import Docker Compose File:**\n   - Navigate to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr)\n   - Scroll down to the “Installation” section\n   - You will see a **Docker Compose (recommended) **code block\n   - Copy the Docker Compose file code\n   - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box\n     - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:\n       - `env_file:`\n       - `- .env # Optional: Only needed if contributing to a database`\n   - Click on “Submit” and click “OK” to the warning\n3. **Profilarr App Details:**\n   - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables\n   - **Name:** “Profilarr” - but you can change it if you want\n   - **Icon:** (Optional) You can upload an icon for the app.\n   - **Web UI:** Should be your host device IP address\n   - **Network:** Should be bridge\n   - **Port:** Should be 6868 TCP\n   - **Volumes:** Leave this as default unless you want to change the host path to a specific location\n   - **Environment Variables:** (Only TZ is required, the others are optional)\n     - TZ = Your Timezone (e.g., America/New_York)\n     - GIT_USER_NAME = GitHub username for contributing\n     - GIT_USER_EMAIL = GitHub email for contributing\n     - PROFILARR_PAT = GitHub Personal Access Token for contributing\n4. **Install the App:**\n   - Once you've filled in all the necessary details, click on the \"Install\" button.\n5. **Wait for Installation:**\n   - Casa OS will now download and install the app. This might take a few minutes.\n6. **Access Profilarr:**\n   - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.\n",
-      "navigation": [
-        "Prerequisites",
-        "Step-by-Step Installation"
-      ],
-      "searchText": "casa os profilarr installation guide this guide will walk you through the process of installing profilarr as a custom app in casa os prerequisites a working casa os installation this guide uses v0 4 15 basic knowledge of using th this guide will walk you through the process of installing profilarr as a custom app in casa os prerequisites a working casa os installation this guide uses v0 4 15 basic knowledge of using the casa os interface access to https github com dictionarry hub profilarr for install file step by step installation 1 add a custom app to casa os open your web browser and navigate to your casa os dashboard find and click on the icon in the top right corner of the app section select install a customized app select import in the top right corner of the settings page 2 import docker compose file navigate to https github com dictionarry hub profilarr scroll down to the installation section you will see a docker compose recommended code block copy the docker compose file code navigate back to casa os to the import docker compose page and paste the code into the empty text box note if you are not contributing to a database delete the following section or casa os will throw an error that the file is missing env_file env optional only needed if contributing to a database click on submit and click ok to the warning 3 profilarr app details you can leave most settings as default unless you have a specific reason to change them like customizing to your network system network port volumes etc otherwise just change your time zone in environmental variables name profilarr but you can change it if you want icon optional you can upload an icon for the app web ui should be your host device ip address network should be bridge port should be 6868 tcp volumes leave this as default unless you want to change the host path to a specific location environment variables only tz is required the others are optional tz your timezone e g america new_york gitusername github username for contributing gituseremail github email for contributing profilarr_pat github personal access token for contributing 4 install the app once you ve filled in all the necessary details click on the install button 5 wait for installation casa os will now download and install the app this might take a few minutes 6 access profilarr after installation is complete you should be able to find profilarr on your casa os dashboard click on it to launch the app",
+      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59399,7 +59722,7 @@ export const contentDatabase = {
         "containers"
       ],
       "filename": "profilarr-casaos.md",
-      "lastModified": "2025-06-29T12:42:25.572Z"
+      "lastModified": "2025-08-06T16:14:56.825Z"
     },
     {
       "id": "wiki-release-group-philosophy",
@@ -59462,8 +59785,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases",
-            "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+            {
+              "content": "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases"
+            },
+            {
+              "content": "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+            }
           ]
         },
         {
@@ -59663,10 +59990,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "First item in the list",
-            "Second item with more text",
-            "Third item - Nested item - Another nested item",
-            "Back to main levels"
+            {
+              "content": "First item in the list"
+            },
+            {
+              "content": "Second item with more text"
+            },
+            {
+              "content": "Third item",
+              "children": [
+                {
+                  "content": "Nested item"
+                },
+                {
+                  "content": "Another nested item"
+                }
+              ]
+            },
+            {
+              "content": "Back to main levels"
+            }
           ]
         },
         {
@@ -59679,10 +60022,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "First numbered item",
-            "Second numbered item",
-            "Third numbered item 1. Nested numbered item 2. Another nested numbered item",
-            "Back to main level"
+            {
+              "content": "First numbered item"
+            },
+            {
+              "content": "Second numbered item"
+            },
+            {
+              "content": "Third numbered item",
+              "children": [
+                {
+                  "content": "Nested numbered item"
+                },
+                {
+                  "content": "Another nested numbered item"
+                }
+              ]
+            },
+            {
+              "content": "Back to main level"
+            }
           ]
         },
         {
@@ -59826,10 +60185,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "First item with <code>inline code</code>",
-            "Second item with <a href=\"https://example.com\">a link</a>",
-            "Third item with <strong>bold text</strong>",
-            "Fourth item with <em>italic text</em>"
+            {
+              "content": "First item with <code>inline code</code>"
+            },
+            {
+              "content": "Second item with <a href=\"https://example.com\">a link</a>"
+            },
+            {
+              "content": "Third item with <strong>bold text</strong>"
+            },
+            {
+              "content": "Fourth item with <em>italic text</em>"
+            }
           ]
         },
         {
@@ -59980,8 +60347,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.",
-            "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+            {
+              "content": "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores."
+            },
+            {
+              "content": "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+            }
           ]
         },
         {
@@ -60004,7 +60375,9 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+            {
+              "content": "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+            }
           ]
         },
         {
@@ -60094,8 +60467,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.",
-            "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+            {
+              "content": "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>."
+            },
+            {
+              "content": "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+            }
           ]
         },
         {
@@ -60128,9 +60505,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them",
-            "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). ",
-            "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+            {
+              "content": "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them"
+            },
+            {
+              "content": "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). "
+            },
+            {
+              "content": "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+            }
           ]
         },
         {
@@ -60143,9 +60526,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. ",
-            "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)",
-            "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+            {
+              "content": "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. "
+            },
+            {
+              "content": "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)"
+            },
+            {
+              "content": "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+            }
           ]
         },
         {
@@ -60168,9 +60557,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. ",
-            "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. ",
-            "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+            {
+              "content": "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. "
+            },
+            {
+              "content": "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. "
+            },
+            {
+              "content": "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+            }
           ]
         },
         {
@@ -60197,8 +60592,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. ",
-            "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+            {
+              "content": "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. "
+            },
+            {
+              "content": "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+            }
           ]
         },
         {
@@ -60366,12 +60765,24 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Prefer Freeleech",
-            "Allow Prereleases (CAMS, Screeners, etc)",
-            "Language Strictness",
-            "Allow Lossless audio",
-            "Allow Dolby Vision without Fallback",
-            "Allow bleeding edge codecs (AV-1, H266)"
+            {
+              "content": "Prefer Freeleech"
+            },
+            {
+              "content": "Allow Prereleases (CAMS, Screeners, etc)"
+            },
+            {
+              "content": "Language Strictness"
+            },
+            {
+              "content": "Allow Lossless audio"
+            },
+            {
+              "content": "Allow Dolby Vision without Fallback"
+            },
+            {
+              "content": "Allow bleeding edge codecs (AV-1, H266)"
+            }
           ]
         },
         {
@@ -60392,11 +60803,21 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.",
-            "Git integration is complete and working, but needs lots of testing.",
-            "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.",
-            "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.",
-            "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+            {
+              "content": "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look."
+            },
+            {
+              "content": "Git integration is complete and working, but needs lots of testing."
+            },
+            {
+              "content": "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr."
+            },
+            {
+              "content": "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc."
+            },
+            {
+              "content": "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+            }
           ]
         },
         {
@@ -60480,14 +60901,30 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.",
-            "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.",
-            "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.",
-            "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.",
-            "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.",
-            "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!",
-            "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.",
-            "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+            {
+              "content": "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format."
+            },
+            {
+              "content": "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc."
+            },
+            {
+              "content": "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore."
+            },
+            {
+              "content": "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items."
+            },
+            {
+              "content": "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete."
+            },
+            {
+              "content": "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!"
+            },
+            {
+              "content": "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously."
+            },
+            {
+              "content": "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+            }
           ]
         },
         {
@@ -60504,7 +60941,23 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>Git integration</strong>: You can select a remote repository to connect to and: - Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded. - <strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches. - <strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop. - <strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+            {
+              "content": "<strong>Git integration</strong>: You can select a remote repository to connect to and:",
+              "children": [
+                {
+                  "content": "Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded."
+                },
+                {
+                  "content": "<strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches."
+                },
+                {
+                  "content": "<strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop."
+                },
+                {
+                  "content": "<strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+                }
+              ]
+            }
           ]
         },
         {
@@ -60762,7 +61215,9 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+            {
+              "content": "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+            }
           ]
         },
         {
@@ -60795,9 +61250,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>",
-            "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>",
-            "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+            {
+              "content": "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>"
+            },
+            {
+              "content": "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>"
+            },
+            {
+              "content": "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+            }
           ]
         },
         {
@@ -60836,9 +61297,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.",
-            "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;",
-            "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+            {
+              "content": "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency."
+            },
+            {
+              "content": "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;"
+            },
+            {
+              "content": "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+            }
           ]
         },
         {
@@ -60873,8 +61340,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>",
-            "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+            {
+              "content": "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>"
+            },
+            {
+              "content": "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+            }
           ]
         },
         {
@@ -60887,8 +61358,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Thanks to @seraphys for helping out with the profile creation / giving constant feedback.",
-            "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+            {
+              "content": "Thanks to @seraphys for helping out with the profile creation / giving constant feedback."
+            },
+            {
+              "content": "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+            }
           ]
         },
         {
@@ -119191,10 +119666,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Storage and bandwidth are always <strong>limited resources</strong>",
-            "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>",
-            "Different codecs have different <strong>efficiency curves</strong>",
-            "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+            {
+              "content": "Storage and bandwidth are always <strong>limited resources</strong>"
+            },
+            {
+              "content": "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>"
+            },
+            {
+              "content": "Different codecs have different <strong>efficiency curves</strong>"
+            },
+            {
+              "content": "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+            }
           ]
         },
         {
@@ -119211,9 +119694,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs",
-            "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency",
-            "Most users find a sweet spot in the middle"
+            {
+              "content": "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs"
+            },
+            {
+              "content": "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency"
+            },
+            {
+              "content": "Most users find a sweet spot in the middle"
+            }
           ]
         },
         {
@@ -119244,8 +119733,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100",
-            "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+            {
+              "content": "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100"
+            },
+            {
+              "content": "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+            }
           ]
         },
         {
@@ -119256,10 +119749,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)",
-            "These space savings are consistent across different quality levels",
-            "Beyond this point, both codecs achieve <strong>near identical quality</strong>",
-            "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+            {
+              "content": "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)"
+            },
+            {
+              "content": "These space savings are consistent across different quality levels"
+            },
+            {
+              "content": "Beyond this point, both codecs achieve <strong>near identical quality</strong>"
+            },
+            {
+              "content": "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+            }
           ]
         },
         {
@@ -119276,11 +119777,21 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "This is approximately where <strong>visual transparency</strong> becomes achievable",
-            "Higher ratios provide <strong>diminishing returns</strong>",
-            "At this compression level, content achieves <strong>VMAF scores above 95</strong>",
-            "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes",
-            "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+            {
+              "content": "This is approximately where <strong>visual transparency</strong> becomes achievable"
+            },
+            {
+              "content": "Higher ratios provide <strong>diminishing returns</strong>"
+            },
+            {
+              "content": "At this compression level, content achieves <strong>VMAF scores above 95</strong>"
+            },
+            {
+              "content": "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes"
+            },
+            {
+              "content": "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+            }
           ]
         },
         {
@@ -119301,14 +119812,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by: - Starting with k random cluster centers - Assigning each group to its nearest center - Recalculating centers based on group assignments - Repeating until stable"
+            {
+              "content": "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
+            },
+            {
+              "content": "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:",
+              "children": [
+                {
+                  "content": "Starting with k random cluster centers"
+                },
+                {
+                  "content": "Assigning each group to its nearest center"
+                },
+                {
+                  "content": "Recalculating centers based on group assignments"
+                },
+                {
+                  "content": "Repeating until stable"
+                }
+              ]
+            }
           ]
         },
         {
@@ -119337,10 +119860,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Managing large libraries on limited storage",
-            "Collecting complete series where total size is a major concern",
-            "Primarily viewing on mobile devices or smaller screens",
-            "Dealing with bandwidth caps or slow internet connections"
+            {
+              "content": "Managing large libraries on limited storage"
+            },
+            {
+              "content": "Collecting complete series where total size is a major concern"
+            },
+            {
+              "content": "Primarily viewing on mobile devices or smaller screens"
+            },
+            {
+              "content": "Dealing with bandwidth caps or slow internet connections"
+            }
           ]
         },
         {
@@ -119440,9 +119971,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have reasonable storage capacity but still want efficiency",
-            "Watch on mid to large screens where quality becomes more noticeable",
-            "Want a good balance between visual quality and practical file sizes"
+            {
+              "content": "Have reasonable storage capacity but still want efficiency"
+            },
+            {
+              "content": "Watch on mid to large screens where quality becomes more noticeable"
+            },
+            {
+              "content": "Want a good balance between visual quality and practical file sizes"
+            }
           ]
         },
         {
@@ -119548,10 +120085,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Want to maintain a 4K library on limited storage",
-            "Primarily view content at typical viewing distances where subtle quality differences are less noticeable",
-            "Need to conserve bandwidth while still enjoying 4K resolution",
-            "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+            {
+              "content": "Want to maintain a 4K library on limited storage"
+            },
+            {
+              "content": "Primarily view content at typical viewing distances where subtle quality differences are less noticeable"
+            },
+            {
+              "content": "Need to conserve bandwidth while still enjoying 4K resolution"
+            },
+            {
+              "content": "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+            }
           ]
         },
         {
@@ -119572,10 +120117,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have decent storage capacity but still want reasonable efficiency",
-            "Watch on larger screens where quality differences become more apparent",
-            "Want to maintain high quality while still keeping files manageable",
-            "Need reliable HDR performance without excessive file sizes"
+            {
+              "content": "Have decent storage capacity but still want reasonable efficiency"
+            },
+            {
+              "content": "Watch on larger screens where quality differences become more apparent"
+            },
+            {
+              "content": "Want to maintain high quality while still keeping files manageable"
+            },
+            {
+              "content": "Need reliable HDR performance without excessive file sizes"
+            }
           ]
         },
         {
@@ -119596,10 +120149,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Have ample storage and prioritize maximum quality consciously",
-            "Watch on high-end displays where subtle quality differences are noticeable",
-            "Want to maintain archive-quality collections",
-            "Focus on difficult-to-encode content where compression artifacts are more visible"
+            {
+              "content": "Have ample storage and prioritize maximum quality consciously"
+            },
+            {
+              "content": "Watch on high-end displays where subtle quality differences are noticeable"
+            },
+            {
+              "content": "Want to maintain archive-quality collections"
+            },
+            {
+              "content": "Focus on difficult-to-encode content where compression artifacts are more visible"
+            }
           ]
         },
         {
@@ -119867,9 +120428,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>",
-            "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>",
-            "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+            {
+              "content": "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>"
+            },
+            {
+              "content": "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>"
+            },
+            {
+              "content": "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+            }
           ]
         }
       ],
@@ -119896,7 +120463,7 @@ export const contentDatabase = {
       "slug": "profilarr-casaos",
       "category": "wiki",
       "title": "Casa OS - Profilarr Installation Guide",
-      "description": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS. Prerequisites - A working Casa OS installation (this guide uses v0.4.15). - Basic knowledge of using th...",
+      "description": "This guide walks through installing Profilarr as a custom application in Casa OS. Prerequisites Before starting, ensure you have: - Casa OS installed and running (tested with v0.4.15) - Basic familiar...",
       "frontmatter": {
         "title": "Casa OS - Profilarr Installation Guide",
         "slug": "profilarr-casaos",
@@ -119916,7 +120483,7 @@ export const contentDatabase = {
       "blocks": [
         {
           "type": "paragraph",
-          "content": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS."
+          "content": "This guide walks through installing Profilarr as a custom application in Casa OS."
         },
         {
           "type": "header",
@@ -119925,39 +120492,270 @@ export const contentDatabase = {
           "id": "prerequisites"
         },
         {
+          "type": "paragraph",
+          "content": "Before starting, ensure you have:"
+        },
+        {
           "type": "list",
           "ordered": false,
           "items": [
-            "A working Casa OS installation (this guide uses v0.4.15).",
-            "Basic knowledge of using the Casa OS interface.",
-            "Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file."
+            {
+              "content": "Casa OS installed and running (tested with v0.4.15)"
+            },
+            {
+              "content": "Basic familiarity with the Casa OS interface"
+            },
+            {
+              "content": "Access to the <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">Profilarr GitHub repository</a>"
+            }
           ]
         },
         {
           "type": "header",
           "level": 2,
-          "text": "Step-by-Step Installation",
-          "id": "step-by-step-installation"
+          "text": "Installation Process",
+          "id": "installation-process"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Adding a Custom Application",
+          "id": "adding-a-custom-application"
         },
         {
           "type": "list",
           "ordered": true,
           "items": [
-            "<strong>Add a Custom App to Casa OS:</strong> - Open your web browser and navigate to your Casa OS dashboard. - Find and click on the &quot;+&quot; icon in the top right corner of the App section. - Select “Install a customized app” - Select “Import” in the top right corner of the Settings page",
-            "<strong>Import Docker Compose File:</strong> - Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> - Scroll down to the “Installation” section - You will see a **Docker Compose (recommended) **code block - Copy the Docker Compose file code - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code> - Click on “Submit” and click “OK” to the warning",
-            "<strong>Profilarr App Details:</strong> - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables - <strong>Name:</strong> “Profilarr” - but you can change it if you want - <strong>Icon:</strong> (Optional) You can upload an icon for the app. - <strong>Web UI:</strong> Should be your host device IP address - <strong>Network:</strong> Should be bridge - <strong>Port:</strong> Should be 6868 TCP - <strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location - <strong>Environment Variables:</strong> (Only TZ is required, the others are optional) - TZ = Your Timezone (e.g., America/New_York) - GIT_USER_NAME = GitHub username for contributing - GIT_USER_EMAIL = GitHub email for contributing - PROFILARR_PAT = GitHub Personal Access Token for contributing",
-            "<strong>Install the App:</strong> - Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.",
-            "<strong>Wait for Installation:</strong> - Casa OS will now download and install the app. This might take a few minutes.",
-            "<strong>Access Profilarr:</strong> - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app."
+            {
+              "content": "Open your Casa OS dashboard in a web browser"
+            },
+            {
+              "content": "Click the <strong>+</strong> icon in the top right corner of the App section"
+            },
+            {
+              "content": "Select <strong>Install a customized app</strong>"
+            },
+            {
+              "content": "Click <strong>Import</strong> in the top right corner of the Settings page"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Importing Docker Compose Configuration",
+          "id": "importing-docker-compose-configuration"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Visit the <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">Profilarr GitHub repository</a>"
+            },
+            {
+              "content": "Navigate to the Installation section"
+            },
+            {
+              "content": "Locate the <strong>Docker Compose (recommended)</strong> code block"
+            },
+            {
+              "content": "Copy the entire Docker Compose configuration"
+            },
+            {
+              "content": "Return to Casa OS and paste the code into the import text box"
+            }
+          ]
+        },
+        {
+          "type": "blockquote",
+          "content": "<strong>Note:</strong> If you&#39;re not contributing to a database, remove these lines to avoid errors: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code>"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Click <strong>Submit</strong> and acknowledge any warnings by clicking <strong>OK</strong>"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Configuring Application Settings",
+          "id": "configuring-application-settings"
+        },
+        {
+          "type": "paragraph",
+          "content": "Most settings can remain at their default values. Adjust these as needed:"
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Basic Configuration",
+          "id": "basic-configuration"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Setting",
+            "Value",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "<strong>Name</strong>",
+              "Profilarr",
+              "Customizable to your preference"
+            ],
+            [
+              "<strong>Icon</strong>",
+              "(Optional)",
+              "Upload a custom icon"
+            ],
+            [
+              "<strong>Web UI</strong>",
+              "Host device IP",
+              "Auto-detected by Casa OS"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Network & Storage",
+          "id": "network-storage"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Setting",
+            "Default Value",
+            "Description"
+          ],
+          "rows": [
+            [
+              "<strong>Network</strong>",
+              "bridge",
+              "Standard Docker networking mode"
+            ],
+            [
+              "<strong>Port</strong>",
+              "6868 TCP",
+              "Web interface port"
+            ],
+            [
+              "<strong>Volumes</strong>",
+              "Default paths",
+              "Modify host paths for custom storage location"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Environment Variables",
+          "id": "environment-variables"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Variable",
+            "Required",
+            "Description",
+            "Example"
+          ],
+          "rows": [
+            [
+              "<code>TZ</code>",
+              "<strong>Yes</strong>",
+              "Your timezone",
+              "<code>America/New_York</code>"
+            ],
+            [
+              "<code>GIT_USER_NAME</code>",
+              "No",
+              "GitHub username for contributing",
+              "<code>yourname</code>"
+            ],
+            [
+              "<code>GIT_USER_EMAIL</code>",
+              "No",
+              "GitHub email for contributing",
+              "<code>you@example.com</code>"
+            ],
+            [
+              "<code>PROFILARR_PAT</code>",
+              "No",
+              "GitHub Personal Access Token",
+              "<code>ghp_xxxxxxxxxxxx</code>"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Completing Installation",
+          "id": "completing-installation"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Click the <strong>Install</strong> button after configuring all settings"
+            },
+            {
+              "content": "Wait for Casa OS to download and set up the container (typically 2-5 minutes)"
+            },
+            {
+              "content": "Once complete, Profilarr will appear on your Casa OS dashboard"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Accessing Profilarr",
+          "id": "accessing-profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Click the Profilarr icon on your dashboard to launch the application."
+        }
+      ],
+      "markdown": "\nThis guide walks through installing Profilarr as a custom application in Casa OS.\n\n## Prerequisites\n\nBefore starting, ensure you have:\n\n- Casa OS installed and running (tested with v0.4.15)\n- Basic familiarity with the Casa OS interface\n- Access to the [Profilarr GitHub repository](https://github.com/Dictionarry-Hub/Profilarr)\n\n## Installation Process\n\n### Adding a Custom Application\n\n1. Open your Casa OS dashboard in a web browser\n2. Click the **+** icon in the top right corner of the App section\n3. Select **Install a customized app**\n4. Click **Import** in the top right corner of the Settings page\n\n### Importing Docker Compose Configuration\n\n1. Visit the [Profilarr GitHub repository](https://github.com/Dictionarry-Hub/Profilarr)\n2. Navigate to the Installation section\n3. Locate the **Docker Compose (recommended)** code block\n4. Copy the entire Docker Compose configuration\n5. Return to Casa OS and paste the code into the import text box\n\n> **Note:** If you're not contributing to a database, remove these lines to avoid errors:\n> - `env_file:`\n> - `- .env # Optional: Only needed if contributing to a database`\n\n6. Click **Submit** and acknowledge any warnings by clicking **OK**\n\n### Configuring Application Settings\n\nMost settings can remain at their default values. Adjust these as needed:\n\n#### Basic Configuration\n\n| Setting | Value | Notes |\n|---------|-------|-------|\n| **Name** | Profilarr | Customizable to your preference |\n| **Icon** | (Optional) | Upload a custom icon |\n| **Web UI** | Host device IP | Auto-detected by Casa OS |\n\n#### Network & Storage\n\n| Setting | Default Value | Description |\n|---------|---------------|-------------|\n| **Network** | bridge | Standard Docker networking mode |\n| **Port** | 6868 TCP | Web interface port |\n| **Volumes** | Default paths | Modify host paths for custom storage location |\n\n#### Environment Variables\n\n| Variable | Required | Description | Example |\n|----------|----------|-------------|---------|\n| `TZ` | **Yes** | Your timezone | `America/New_York` |\n| `GIT_USER_NAME` | No | GitHub username for contributing | `yourname` |\n| `GIT_USER_EMAIL` | No | GitHub email for contributing | `you@example.com` |\n| `PROFILARR_PAT` | No | GitHub Personal Access Token | `ghp_xxxxxxxxxxxx` |\n\n### Completing Installation\n\n1. Click the **Install** button after configuring all settings\n2. Wait for Casa OS to download and set up the container (typically 2-5 minutes)\n3. Once complete, Profilarr will appear on your Casa OS dashboard\n\n### Accessing Profilarr\n\nClick the Profilarr icon on your dashboard to launch the application.",
+      "navigation": [
+        {
+          "title": "Prerequisites",
+          "children": []
+        },
+        {
+          "title": "Installation Process",
+          "children": [
+            {
+              "title": "Adding a Custom Application",
+              "children": []
+            },
+            {
+              "title": "Importing Docker Compose Configuration",
+              "children": []
+            },
+            {
+              "title": "Configuring Application Settings",
+              "children": [
+                "Basic Configuration",
+                "Network & Storage",
+                "Environment Variables"
+              ]
+            },
+            "Completing Installation",
+            "Accessing Profilarr"
           ]
         }
       ],
-      "markdown": "\nThis guide will walk you through the process of installing Profilarr as a custom app in Casa OS.\n\n## Prerequisites\n\n- A working Casa OS installation (this guide uses v0.4.15).\n- Basic knowledge of using the Casa OS interface.\n- Access to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr) for install file.\n\n## Step-by-Step Installation\n\n1. **Add a Custom App to Casa OS:**\n   - Open your web browser and navigate to your Casa OS dashboard.\n   - Find and click on the \"+\" icon in the top right corner of the App section.\n   - Select “Install a customized app”\n   - Select “Import” in the top right corner of the Settings page\n2. **Import Docker Compose File:**\n   - Navigate to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr)\n   - Scroll down to the “Installation” section\n   - You will see a **Docker Compose (recommended) **code block\n   - Copy the Docker Compose file code\n   - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box\n     - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:\n       - `env_file:`\n       - `- .env # Optional: Only needed if contributing to a database`\n   - Click on “Submit” and click “OK” to the warning\n3. **Profilarr App Details:**\n   - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables\n   - **Name:** “Profilarr” - but you can change it if you want\n   - **Icon:** (Optional) You can upload an icon for the app.\n   - **Web UI:** Should be your host device IP address\n   - **Network:** Should be bridge\n   - **Port:** Should be 6868 TCP\n   - **Volumes:** Leave this as default unless you want to change the host path to a specific location\n   - **Environment Variables:** (Only TZ is required, the others are optional)\n     - TZ = Your Timezone (e.g., America/New_York)\n     - GIT_USER_NAME = GitHub username for contributing\n     - GIT_USER_EMAIL = GitHub email for contributing\n     - PROFILARR_PAT = GitHub Personal Access Token for contributing\n4. **Install the App:**\n   - Once you've filled in all the necessary details, click on the \"Install\" button.\n5. **Wait for Installation:**\n   - Casa OS will now download and install the app. This might take a few minutes.\n6. **Access Profilarr:**\n   - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.\n",
-      "navigation": [
-        "Prerequisites",
-        "Step-by-Step Installation"
-      ],
-      "searchText": "casa os profilarr installation guide this guide will walk you through the process of installing profilarr as a custom app in casa os prerequisites a working casa os installation this guide uses v0 4 15 basic knowledge of using th this guide will walk you through the process of installing profilarr as a custom app in casa os prerequisites a working casa os installation this guide uses v0 4 15 basic knowledge of using the casa os interface access to https github com dictionarry hub profilarr for install file step by step installation 1 add a custom app to casa os open your web browser and navigate to your casa os dashboard find and click on the icon in the top right corner of the app section select install a customized app select import in the top right corner of the settings page 2 import docker compose file navigate to https github com dictionarry hub profilarr scroll down to the installation section you will see a docker compose recommended code block copy the docker compose file code navigate back to casa os to the import docker compose page and paste the code into the empty text box note if you are not contributing to a database delete the following section or casa os will throw an error that the file is missing env_file env optional only needed if contributing to a database click on submit and click ok to the warning 3 profilarr app details you can leave most settings as default unless you have a specific reason to change them like customizing to your network system network port volumes etc otherwise just change your time zone in environmental variables name profilarr but you can change it if you want icon optional you can upload an icon for the app web ui should be your host device ip address network should be bridge port should be 6868 tcp volumes leave this as default unless you want to change the host path to a specific location environment variables only tz is required the others are optional tz your timezone e g america new_york gitusername github username for contributing gituseremail github email for contributing profilarr_pat github personal access token for contributing 4 install the app once you ve filled in all the necessary details click on the install button 5 wait for installation casa os will now download and install the app this might take a few minutes 6 access profilarr after installation is complete you should be able to find profilarr on your casa os dashboard click on it to launch the app",
+      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -119968,7 +120766,7 @@ export const contentDatabase = {
         "containers"
       ],
       "filename": "profilarr-casaos.md",
-      "lastModified": "2025-06-29T12:42:25.572Z"
+      "lastModified": "2025-08-06T16:14:56.825Z"
     },
     "/wiki/release-group-philosophy": {
       "id": "wiki-release-group-philosophy",
@@ -120031,8 +120829,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases",
-            "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+            {
+              "content": "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases"
+            },
+            {
+              "content": "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+            }
           ]
         },
         {
@@ -120232,10 +121034,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "First item in the list",
-            "Second item with more text",
-            "Third item - Nested item - Another nested item",
-            "Back to main levels"
+            {
+              "content": "First item in the list"
+            },
+            {
+              "content": "Second item with more text"
+            },
+            {
+              "content": "Third item",
+              "children": [
+                {
+                  "content": "Nested item"
+                },
+                {
+                  "content": "Another nested item"
+                }
+              ]
+            },
+            {
+              "content": "Back to main levels"
+            }
           ]
         },
         {
@@ -120248,10 +121066,26 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "First numbered item",
-            "Second numbered item",
-            "Third numbered item 1. Nested numbered item 2. Another nested numbered item",
-            "Back to main level"
+            {
+              "content": "First numbered item"
+            },
+            {
+              "content": "Second numbered item"
+            },
+            {
+              "content": "Third numbered item",
+              "children": [
+                {
+                  "content": "Nested numbered item"
+                },
+                {
+                  "content": "Another nested numbered item"
+                }
+              ]
+            },
+            {
+              "content": "Back to main level"
+            }
           ]
         },
         {
@@ -120395,10 +121229,18 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "First item with <code>inline code</code>",
-            "Second item with <a href=\"https://example.com\">a link</a>",
-            "Third item with <strong>bold text</strong>",
-            "Fourth item with <em>italic text</em>"
+            {
+              "content": "First item with <code>inline code</code>"
+            },
+            {
+              "content": "Second item with <a href=\"https://example.com\">a link</a>"
+            },
+            {
+              "content": "Third item with <strong>bold text</strong>"
+            },
+            {
+              "content": "Fourth item with <em>italic text</em>"
+            }
           ]
         },
         {
@@ -120549,8 +121391,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.",
-            "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+            {
+              "content": "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores."
+            },
+            {
+              "content": "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+            }
           ]
         },
         {
@@ -120573,7 +121419,9 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+            {
+              "content": "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+            }
           ]
         },
         {
@@ -120663,8 +121511,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.",
-            "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+            {
+              "content": "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>."
+            },
+            {
+              "content": "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+            }
           ]
         },
         {
@@ -120697,9 +121549,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them",
-            "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). ",
-            "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+            {
+              "content": "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them"
+            },
+            {
+              "content": "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). "
+            },
+            {
+              "content": "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+            }
           ]
         },
         {
@@ -120712,9 +121570,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. ",
-            "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)",
-            "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+            {
+              "content": "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. "
+            },
+            {
+              "content": "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)"
+            },
+            {
+              "content": "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+            }
           ]
         },
         {
@@ -120737,9 +121601,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. ",
-            "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. ",
-            "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+            {
+              "content": "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. "
+            },
+            {
+              "content": "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. "
+            },
+            {
+              "content": "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+            }
           ]
         },
         {
@@ -120766,8 +121636,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. ",
-            "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+            {
+              "content": "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. "
+            },
+            {
+              "content": "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+            }
           ]
         },
         {
@@ -120935,12 +121809,24 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Prefer Freeleech",
-            "Allow Prereleases (CAMS, Screeners, etc)",
-            "Language Strictness",
-            "Allow Lossless audio",
-            "Allow Dolby Vision without Fallback",
-            "Allow bleeding edge codecs (AV-1, H266)"
+            {
+              "content": "Prefer Freeleech"
+            },
+            {
+              "content": "Allow Prereleases (CAMS, Screeners, etc)"
+            },
+            {
+              "content": "Language Strictness"
+            },
+            {
+              "content": "Allow Lossless audio"
+            },
+            {
+              "content": "Allow Dolby Vision without Fallback"
+            },
+            {
+              "content": "Allow bleeding edge codecs (AV-1, H266)"
+            }
           ]
         },
         {
@@ -120961,11 +121847,21 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.",
-            "Git integration is complete and working, but needs lots of testing.",
-            "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.",
-            "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.",
-            "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+            {
+              "content": "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look."
+            },
+            {
+              "content": "Git integration is complete and working, but needs lots of testing."
+            },
+            {
+              "content": "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr."
+            },
+            {
+              "content": "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc."
+            },
+            {
+              "content": "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+            }
           ]
         },
         {
@@ -121049,14 +121945,30 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.",
-            "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.",
-            "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.",
-            "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.",
-            "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.",
-            "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!",
-            "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.",
-            "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+            {
+              "content": "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format."
+            },
+            {
+              "content": "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc."
+            },
+            {
+              "content": "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore."
+            },
+            {
+              "content": "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items."
+            },
+            {
+              "content": "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete."
+            },
+            {
+              "content": "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!"
+            },
+            {
+              "content": "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously."
+            },
+            {
+              "content": "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+            }
           ]
         },
         {
@@ -121073,7 +121985,23 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<strong>Git integration</strong>: You can select a remote repository to connect to and: - Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded. - <strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches. - <strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop. - <strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+            {
+              "content": "<strong>Git integration</strong>: You can select a remote repository to connect to and:",
+              "children": [
+                {
+                  "content": "Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded."
+                },
+                {
+                  "content": "<strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches."
+                },
+                {
+                  "content": "<strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop."
+                },
+                {
+                  "content": "<strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+                }
+              ]
+            }
           ]
         },
         {
@@ -121331,7 +122259,9 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+            {
+              "content": "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+            }
           ]
         },
         {
@@ -121364,9 +122294,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": true,
           "items": [
-            "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>",
-            "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>",
-            "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+            {
+              "content": "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>"
+            },
+            {
+              "content": "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>"
+            },
+            {
+              "content": "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+            }
           ]
         },
         {
@@ -121405,9 +122341,15 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.",
-            "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;",
-            "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+            {
+              "content": "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency."
+            },
+            {
+              "content": "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;"
+            },
+            {
+              "content": "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+            }
           ]
         },
         {
@@ -121442,8 +122384,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>",
-            "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+            {
+              "content": "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>"
+            },
+            {
+              "content": "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+            }
           ]
         },
         {
@@ -121456,8 +122402,12 @@ export const contentDatabase = {
           "type": "list",
           "ordered": false,
           "items": [
-            "Thanks to @seraphys for helping out with the profile creation / giving constant feedback.",
-            "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+            {
+              "content": "Thanks to @seraphys for helping out with the profile creation / giving constant feedback."
+            },
+            {
+              "content": "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+            }
           ]
         },
         {
@@ -121735,8 +122685,6 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -121756,8 +122704,6 @@ export const contentDatabase = {
         "getting-started-welcome",
         "quality-profile-index",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
@@ -121814,12 +122760,13 @@ export const contentDatabase = {
       ],
       "configuration": [
         "getting-started-welcome",
-        "media-management-naming"
+        "media-management-naming",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
       ],
       "hub": [
         "getting-started-welcome",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-tweaks"
       ],
@@ -121891,6 +122838,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
+        "wiki-profilarr-casaos",
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff",
@@ -122392,8 +123340,6 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
@@ -122737,8 +123683,6 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta"
       ],
       "contribution": [
@@ -122958,6 +123902,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-faq",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
@@ -123495,6 +124441,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-modular-choices",
         "dev-logs-modular-choices",
         "dev-logs-modular-choices",
@@ -123729,6 +124677,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
@@ -123838,6 +124787,9 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-gppi",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
@@ -124007,8 +124959,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
@@ -124418,13 +125368,6 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -124797,8 +125740,6 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
@@ -125234,10 +126175,6 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -125347,7 +126284,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profilarr-is-in-beta",
@@ -125533,8 +126469,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -125614,10 +126548,6 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-markdown-test",
         "dev-logs-modular-choices",
@@ -125695,7 +126625,6 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-markdown-test",
         "dev-logs-profilarr-is-in-beta",
@@ -125876,8 +126805,6 @@ export const contentDatabase = {
         "custom-format-special-edition-unwanted",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-tweaks",
         "dev-logs-profile-tweaks",
@@ -126115,7 +127042,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
@@ -126187,7 +127113,6 @@ export const contentDatabase = {
         "regex-pattern-hdr10",
         "regex-pattern-repack1",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-tweaks",
@@ -126895,7 +127820,6 @@ export const contentDatabase = {
         "regex-pattern-extras",
         "regex-pattern-hdr",
         "regex-pattern-upscaled",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
         "dev-logs-profilarr-is-in-beta",
@@ -126991,10 +127915,6 @@ export const contentDatabase = {
         "quality-profile-2160p-remux",
         "wiki-faq",
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-markdown-test",
         "dev-logs-markdown-test",
@@ -127093,7 +128013,6 @@ export const contentDatabase = {
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "dev-logs-profile-selector-v3",
         "dev-logs-profile-selector-v3",
         "dev-logs-profile-tweaks",
@@ -127142,6 +128061,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
@@ -127891,7 +128811,6 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -128036,6 +128955,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
+        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
@@ -128660,7 +129580,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei"
+        "wiki-eei",
+        "wiki-profilarr-casaos"
       ],
       "older": [
         "custom-format-360p"
@@ -129419,6 +130340,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-profilarr-casaos",
         "dev-logs-modular-choices",
         "dev-logs-modular-choices",
         "dev-logs-profilarr-is-in-beta",
@@ -129468,8 +130390,7 @@ export const contentDatabase = {
         "regex-pattern-release-group-missing",
         "regex-pattern-truehd-missing-groups",
         "regex-pattern-uhd-bluray-missing-groups",
-        "regex-pattern-ipt-internals",
-        "wiki-profilarr-casaos"
+        "regex-pattern-ipt-internals"
       ],
       "attempts": [
         "custom-format-atmos-missing",
@@ -129631,7 +130552,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei"
+        "wiki-eei",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
       ],
       "capacity": [
         "custom-format-bluray",
@@ -129993,7 +130916,6 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-profilarr-is-in-beta"
       ],
@@ -130383,6 +131305,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -130592,7 +131515,6 @@ export const contentDatabase = {
         "regex-pattern-tving",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
         "dev-logs-modular-choices",
@@ -130692,8 +131614,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-website-20"
@@ -130836,8 +131756,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-tweaks",
         "dev-logs-profile-tweaks",
@@ -131201,6 +132119,7 @@ export const contentDatabase = {
         "regex-pattern-pq",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-selector-v3"
       ],
@@ -131544,7 +132463,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-tweaks",
@@ -131610,8 +132528,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profilarr-is-in-beta",
@@ -131706,14 +132622,6 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -131782,7 +132690,6 @@ export const contentDatabase = {
       ],
       "see": [
         "custom-format-special-edition",
-        "wiki-profilarr-casaos",
         "dev-logs-shiny-new-stuff"
       ],
       "them": [
@@ -131790,7 +132697,6 @@ export const contentDatabase = {
         "regex-pattern-remux",
         "regex-pattern-uhd-blu-ray",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
         "dev-logs-markdown-test",
@@ -132065,7 +132971,8 @@ export const contentDatabase = {
       ],
       "adding": [
         "custom-format-uhd-bluray",
-        "regex-pattern-colourisation"
+        "regex-pattern-colourisation",
+        "wiki-profilarr-casaos"
       ],
       "uses": [
         "custom-format-uhd-bluray",
@@ -132073,8 +132980,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-shiny-new-stuff",
         "dev-logs-website-20"
       ],
@@ -132171,10 +133076,12 @@ export const contentDatabase = {
         "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-ipt-internals",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-website-20"
       ],
       "remove": [
         "custom-format-uhdbits",
+        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta"
       ],
       "due": [
@@ -132225,8 +133132,7 @@ export const contentDatabase = {
         "regex-pattern-tarunk9c"
       ],
       "otherwise": [
-        "custom-format-unwanted-remux-groups",
-        "wiki-profilarr-casaos"
+        "custom-format-unwanted-remux-groups"
       ],
       "unfavourable": [
         "custom-format-unwanted-remux-groups"
@@ -132265,7 +133171,6 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-markdown-test",
         "dev-logs-profilarr-is-in-beta",
@@ -132356,10 +133261,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-website-20"
       ],
@@ -132428,7 +133329,6 @@ export const contentDatabase = {
       ],
       "down": [
         "custom-format-webrip",
-        "wiki-profilarr-casaos",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-vision-almost-realised",
         "dev-logs-vision-almost-realised",
@@ -132483,7 +133383,6 @@ export const contentDatabase = {
         "custom-format-webrip",
         "regex-pattern-colourisation",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-vision-almost-realised",
         "dev-logs-vision-almost-realised"
@@ -132639,7 +133538,6 @@ export const contentDatabase = {
         "regex-pattern-imax-enhanced",
         "regex-pattern-repack2",
         "regex-pattern-repack3",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
@@ -133345,10 +134243,12 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "preference": [
-        "regex-pattern-better-theatricals"
+        "regex-pattern-better-theatricals",
+        "wiki-profilarr-casaos"
       ],
       "terminator": [
         "regex-pattern-better-theatricals",
@@ -134193,6 +135093,8 @@ export const contentDatabase = {
         "regex-pattern-repack1",
         "regex-pattern-repack1",
         "wiki-edition-philosophy",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-markdown-test"
       ],
       "anyone": [
@@ -134381,6 +135283,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -134593,7 +135497,6 @@ export const contentDatabase = {
         "regex-pattern-showtime-rename",
         "regex-pattern-showtime",
         "regex-pattern-showtime",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
@@ -134887,7 +135790,6 @@ export const contentDatabase = {
       "others": [
         "regex-pattern-hotstar",
         "wiki-eei",
-        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "dev-logs-profilarr-is-in-beta"
       ],
@@ -135690,7 +136592,8 @@ export const contentDatabase = {
         "regex-pattern-remux"
       ],
       "container": [
-        "regex-pattern-remux"
+        "regex-pattern-remux",
+        "wiki-profilarr-casaos"
       ],
       "pouring": [
         "regex-pattern-remux"
@@ -135718,7 +136621,8 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "appear": [
-        "regex-pattern-repack1"
+        "regex-pattern-repack1",
+        "wiki-profilarr-casaos"
       ],
       "digits": [
         "regex-pattern-repack1"
@@ -135778,7 +136682,6 @@ export const contentDatabase = {
       ],
       "access": [
         "regex-pattern-roku",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-shiny-new-stuff"
@@ -136657,7 +137560,6 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-profile-selector-v3",
         "dev-logs-profile-selector-v3",
         "dev-logs-shiny-new-stuff",
@@ -136670,7 +137572,6 @@ export const contentDatabase = {
       "time": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profilarr-is-in-beta",
@@ -137125,7 +138026,6 @@ export const contentDatabase = {
       "add": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
         "dev-logs-modular-choices",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-selector-v3",
@@ -137347,7 +138247,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "errors": [
-        "wiki-edition-philosophy"
+        "wiki-edition-philosophy",
+        "wiki-profilarr-casaos"
       ],
       "technical": [
         "wiki-edition-philosophy",
@@ -137594,6 +138495,7 @@ export const contentDatabase = {
       "return": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-profilarr-casaos",
         "dev-logs-markdown-test"
       ],
       "king": [
@@ -137796,8 +138698,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "environmental": [
-        "wiki-edition-philosophy",
-        "wiki-profilarr-casaos"
+        "wiki-edition-philosophy"
       ],
       "message": [
         "wiki-edition-philosophy",
@@ -138065,6 +138966,8 @@ export const contentDatabase = {
       ],
       "setting": [
         "wiki-edition-philosophy",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-website-20"
       ],
       "moral": [
@@ -138367,10 +139270,6 @@ export const contentDatabase = {
       ],
       "change": [
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-modular-choices",
         "dev-logs-modular-choices",
         "dev-logs-profilarr-is-in-beta",
@@ -138536,9 +139435,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "walk": [
-        "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos"
+        "wiki-edition-philosophy"
       ],
       "sense": [
         "wiki-edition-philosophy"
@@ -138790,7 +139687,6 @@ export const contentDatabase = {
       ],
       "able": [
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-modular-choices",
         "dev-logs-profilarr-is-in-beta",
@@ -138825,7 +139721,6 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-modular-choices",
         "dev-logs-modular-choices",
@@ -138985,6 +139880,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
         "dev-logs-markdown-test",
         "dev-logs-modular-choices",
@@ -139515,6 +140412,8 @@ export const contentDatabase = {
       ],
       "starting": [
         "wiki-eei",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "dev-logs-profile-tweaks",
         "dev-logs-profile-tweaks",
         "dev-logs-profile-tweaks",
@@ -139932,6 +140831,7 @@ export const contentDatabase = {
       ],
       "adjust": [
         "wiki-eei",
+        "wiki-profilarr-casaos",
         "dev-logs-shiny-new-stuff"
       ],
       "priorities": [
@@ -140028,7 +140928,8 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "acknowledge": [
-        "wiki-eei"
+        "wiki-eei",
+        "wiki-profilarr-casaos"
       ],
       "marginal": [
         "wiki-eei"
@@ -140168,8 +141069,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "reason": [
-        "wiki-eei",
-        "wiki-profilarr-casaos"
+        "wiki-eei"
       ],
       "animated": [
         "wiki-eei",
@@ -140345,9 +141245,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "details": [
-        "wiki-eei",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos"
+        "wiki-eei"
       ],
       "accurately": [
         "wiki-eei"
@@ -140501,8 +141399,6 @@ export const contentDatabase = {
       ],
       "navigate": [
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "general": [
@@ -140732,7 +141628,6 @@ export const contentDatabase = {
       "take": [
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profile-selector-v3",
@@ -140742,7 +141637,9 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "value": [
-        "wiki-gppi"
+        "wiki-gppi",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
       ],
       "incorrectly": [
         "wiki-gppi",
@@ -140820,15 +141717,15 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "installation": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "walks": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
@@ -140836,68 +141733,57 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "app": [
+      "application": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta"
+        "dev-logs-shiny-new-stuff"
       ],
       "prerequisites": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "working": [
+      "ensure": [
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
-      "knowledge": [
+      "installed": [
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "running": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
+      ],
+      "tested": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "familiar": [
+        "wiki-profilarr-casaos"
+      ],
+      "familiarity": [
+        "wiki-profilarr-casaos"
       ],
       "interface": [
-        "wiki-profilarr-casaos"
-      ],
-      "install": [
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "step": [
+      "repository": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
-      ],
-      "browser": [
-        "wiki-profilarr-casaos"
+        "dev-logs-modular-choices",
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
       ],
       "dashboard": [
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "browser": [
         "wiki-profilarr-casaos"
       ],
       "click": [
@@ -140910,23 +141796,31 @@ export const contentDatabase = {
       "icon": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "corner": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
+      "app": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "dev-logs-profilarr-is-in-beta"
+      ],
       "section": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "dev-logs-markdown-test"
+      ],
+      "install": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
       ],
       "customized": [
         "wiki-profilarr-casaos"
       ],
       "import": [
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-profile-tweaks",
@@ -140935,7 +141829,6 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff"
       ],
       "page": [
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul",
         "dev-logs-modular-choices",
@@ -140948,6 +141841,11 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff"
+      ],
+      "importing": [
+        "wiki-profilarr-casaos",
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-vision-almost-realised"
       ],
       "docker": [
         "wiki-profilarr-casaos",
@@ -140961,14 +141859,16 @@ export const contentDatabase = {
       "compose": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "scroll": [
+      "visit": [
+        "wiki-profilarr-casaos",
+        "dev-logs-shiny-new-stuff"
+      ],
+      "locate": [
         "wiki-profilarr-casaos"
       ],
       "code": [
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "dev-logs-markdown-test",
@@ -140990,17 +141890,17 @@ export const contentDatabase = {
         "dev-logs-markdown-test",
         "dev-logs-markdown-test"
       ],
-      "paste": [
-        "wiki-profilarr-casaos"
+      "entire": [
+        "wiki-profilarr-casaos",
+        "dev-logs-shiny-new-stuff"
       ],
-      "empty": [
+      "paste": [
         "wiki-profilarr-casaos"
       ],
       "box": [
         "wiki-profilarr-casaos"
       ],
       "contributing": [
-        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
@@ -141031,19 +141931,14 @@ export const contentDatabase = {
         "dev-logs-website-20",
         "dev-logs-website-20"
       ],
-      "delete": [
+      "lines": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "dev-logs-markdown-test",
+        "dev-logs-markdown-test",
+        "dev-logs-vision-almost-realised"
       ],
-      "following": [
+      "avoid": [
         "wiki-profilarr-casaos"
-      ],
-      "throw": [
-        "wiki-profilarr-casaos"
-      ],
-      "error": [
-        "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul"
       ],
       "env_file": [
         "wiki-profilarr-casaos"
@@ -141054,34 +141949,27 @@ export const contentDatabase = {
       "submit": [
         "wiki-profilarr-casaos"
       ],
-      "warning": [
+      "warnings": [
         "wiki-profilarr-casaos"
       ],
-      "leave": [
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul"
+      "clicking": [
+        "wiki-profilarr-casaos"
       ],
-      "unless": [
+      "configuring": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "customizing": [
+      "remain": [
         "wiki-profilarr-casaos"
       ],
-      "port": [
+      "values": [
+        "wiki-profilarr-casaos"
+      ],
+      "notes": [
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos"
+        "dev-logs-markdown-test"
       ],
-      "volumes": [
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos"
-      ],
-      "zone": [
-        "wiki-profilarr-casaos"
-      ],
-      "variables": [
-        "wiki-profilarr-casaos",
+      "customizable": [
         "wiki-profilarr-casaos"
       ],
       "upload": [
@@ -141094,16 +141982,43 @@ export const contentDatabase = {
       "device": [
         "wiki-profilarr-casaos"
       ],
-      "address": [
+      "auto": [
+        "wiki-profilarr-casaos",
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
+      ],
+      "detected": [
+        "wiki-profilarr-casaos"
+      ],
+      "description": [
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "bridge": [
         "wiki-profilarr-casaos"
       ],
+      "networking": [
+        "wiki-profilarr-casaos"
+      ],
+      "mode": [
+        "wiki-profilarr-casaos",
+        "dev-logs-profile-selector-v3"
+      ],
+      "port": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
       "tcp": [
         "wiki-profilarr-casaos"
       ],
-      "path": [
+      "volumes": [
+        "wiki-profilarr-casaos"
+      ],
+      "paths": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "modify": [
         "wiki-profilarr-casaos"
       ],
       "location": [
@@ -141113,9 +142028,18 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "dev-logs-modular-choices"
       ],
+      "variables": [
+        "wiki-profilarr-casaos"
+      ],
+      "variable": [
+        "wiki-profilarr-casaos"
+      ],
       "required": [
         "wiki-profilarr-casaos",
         "dev-logs-architecture-overhaul"
+      ],
+      "yes": [
+        "wiki-profilarr-casaos"
       ],
       "timezone": [
         "wiki-profilarr-casaos"
@@ -141132,23 +142056,26 @@ export const contentDatabase = {
       "username": [
         "wiki-profilarr-casaos"
       ],
+      "yourname": [
+        "wiki-profilarr-casaos"
+      ],
       "gituseremail": [
         "wiki-profilarr-casaos"
       ],
       "email": [
         "wiki-profilarr-casaos"
       ],
-      "profilarr_pat": [
+      "profilarrpat": [
         "wiki-profilarr-casaos"
       ],
       "token": [
         "wiki-profilarr-casaos",
         "dev-logs-modular-choices"
       ],
-      "filled": [
+      "ghpxxxxxxxxxxxx": [
         "wiki-profilarr-casaos"
       ],
-      "necessary": [
+      "completing": [
         "wiki-profilarr-casaos"
       ],
       "button": [
@@ -141156,6 +142083,9 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff"
       ],
       "wait": [
+        "wiki-profilarr-casaos"
+      ],
+      "accessing": [
         "wiki-profilarr-casaos"
       ],
       "simplify": [
@@ -141406,6 +142336,22 @@ export const contentDatabase = {
         "dev-logs-website-20",
         "dev-logs-website-20"
       ],
+      "working": [
+        "dev-logs-architecture-overhaul",
+        "dev-logs-architecture-overhaul",
+        "dev-logs-architecture-overhaul",
+        "dev-logs-modular-choices",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profile-tweaks",
+        "dev-logs-profile-tweaks",
+        "dev-logs-profile-tweaks",
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
+      ],
       "lately": [
         "dev-logs-architecture-overhaul",
         "dev-logs-architecture-overhaul",
@@ -141551,6 +142497,9 @@ export const contentDatabase = {
         "dev-logs-markdown-test"
       ],
       "tiny": [
+        "dev-logs-architecture-overhaul"
+      ],
+      "error": [
         "dev-logs-architecture-overhaul"
       ],
       "prone": [
@@ -141719,6 +142668,9 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "wip": [
+        "dev-logs-architecture-overhaul"
+      ],
+      "leave": [
         "dev-logs-architecture-overhaul"
       ],
       "explaining": [
@@ -142002,11 +142954,6 @@ export const contentDatabase = {
       "plain": [
         "dev-logs-markdown-test"
       ],
-      "lines": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-vision-almost-realised"
-      ],
       "blockquotes": [
         "dev-logs-markdown-test",
         "dev-logs-markdown-test"
@@ -142130,9 +143077,6 @@ export const contentDatabase = {
         "dev-logs-markdown-test"
       ],
       "within": [
-        "dev-logs-markdown-test"
-      ],
-      "notes": [
         "dev-logs-markdown-test"
       ],
       "element": [
@@ -142279,11 +143223,6 @@ export const contentDatabase = {
       ],
       "unlink": [
         "dev-logs-modular-choices"
-      ],
-      "repository": [
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
       ],
       "branches": [
         "dev-logs-modular-choices",
@@ -143102,9 +144041,6 @@ export const contentDatabase = {
       "beginner": [
         "dev-logs-profile-selector-v3"
       ],
-      "mode": [
-        "dev-logs-profile-selector-v3"
-      ],
       "disclaimer": [
         "dev-logs-profile-selector-v3"
       ],
@@ -143188,6 +144124,10 @@ export const contentDatabase = {
       ],
       "respect": [
         "dev-logs-profile-tweaks"
+      ],
+      "step": [
+        "dev-logs-profile-tweaks",
+        "dev-logs-website-20"
       ],
       "hands": [
         "dev-logs-profile-tweaks"
@@ -143367,9 +144307,6 @@ export const contentDatabase = {
       "stack": [
         "dev-logs-shiny-new-stuff"
       ],
-      "application": [
-        "dev-logs-shiny-new-stuff"
-      ],
       "frontend": [
         "dev-logs-shiny-new-stuff"
       ],
@@ -143379,9 +144316,6 @@ export const contentDatabase = {
         "dev-logs-website-20",
         "dev-logs-website-20",
         "dev-logs-website-20"
-      ],
-      "visit": [
-        "dev-logs-shiny-new-stuff"
       ],
       "export": [
         "dev-logs-shiny-new-stuff",
@@ -143432,10 +144366,6 @@ export const contentDatabase = {
       "exporting": [
         "dev-logs-shiny-new-stuff"
       ],
-      "importing": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
-      ],
       "freely": [
         "dev-logs-shiny-new-stuff"
       ],
@@ -143456,6 +144386,9 @@ export const contentDatabase = {
       ],
       "mass": [
         "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
+      ],
+      "delete": [
         "dev-logs-shiny-new-stuff"
       ],
       "synced": [
@@ -143605,10 +144538,6 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff"
       ],
-      "auto": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
-      ],
       "machine": [
         "dev-logs-shiny-new-stuff",
         "dev-logs-shiny-new-stuff"
@@ -143660,6 +144589,10 @@ export const contentDatabase = {
       "solved": [
         "dev-logs-shiny-new-stuff"
       ],
+      "knowledge": [
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
+      ],
       "sends": [
         "dev-logs-shiny-new-stuff"
       ],
@@ -143673,9 +144606,6 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff"
       ],
       "imagine": [
-        "dev-logs-shiny-new-stuff"
-      ],
-      "entire": [
         "dev-logs-shiny-new-stuff"
       ],
       "hundreds": [
@@ -148049,7 +148979,7 @@ export const contentDatabase = {
       },
       "wiki-profilarr-casaos": {
         "title": "Casa OS - Profilarr Installation Guide",
-        "description": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS. Prerequisites - A working Casa OS installation (this guide uses v0.4.15). - Basic knowledge of using th...",
+        "description": "This guide walks through installing Profilarr as a custom application in Casa OS. Prerequisites Before starting, ensure you have: - Casa OS installed and running (tested with v0.4.15) - Basic familiar...",
         "route": "/wiki/profilarr-casaos",
         "type": "markdown",
         "weight": 0.8
@@ -148134,7 +149064,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-06T15:59:54.940Z",
+  "lastGenerated": "2025-08-06T16:15:12.089Z",
   "version": "1.0.0"
 } as const;
 

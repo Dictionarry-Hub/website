@@ -49,10 +49,15 @@ interface MathBlock {
   content: string;
 }
 
+interface ListItem {
+  content: string;
+  children?: ListItem[];
+}
+
 interface ListBlock {
   type: 'list';
   ordered: boolean;
-  items: string[];
+  items: ListItem[];
 }
 
 interface BlockquoteBlock {
@@ -278,50 +283,120 @@ function parseHeader(line: string): { block: HeaderBlock } {
   };
 }
 
-// Parse list
+// Parse list with support for nested lists
 function parseList(lines: string[], startIndex: number): { block: ListBlock; nextIndex: number } {
-  const items: string[] = [];
   const firstLine = lines[startIndex];
   const ordered = /^\d+\.\s+/.test(firstLine);
+  const baseIndent = getIndentLevel(lines[startIndex]);
   
-  let i = startIndex;
-  while (i < lines.length) {
-    const line = lines[i];
-    const unorderedMatch = line.match(/^[\*\-\+]\s+(.+)/);
-    const orderedMatch = line.match(/^\d+\.\s+(.+)/);
-    
-    if (ordered && orderedMatch) {
-      // Process inline elements for list items
-      items.push(processInlineElements(orderedMatch[1]));
-      i++;
-    } else if (!ordered && unorderedMatch) {
-      // Process inline elements for list items
-      items.push(processInlineElements(unorderedMatch[1]));
-      i++;
-    } else if (line.trim() === '') {
-      // Empty line might separate lists
-      i++;
-      break;
-    } else if (line.startsWith('  ') || line.startsWith('\t')) {
-      // Continuation of previous item
-      if (items.length > 0) {
-        items[items.length - 1] += ' ' + processInlineElements(line.trim());
-      }
-      i++;
-    } else {
-      // Different content type
-      break;
-    }
-  }
+  const result = parseListItems(lines, startIndex, baseIndent, ordered);
   
   return {
     block: {
       type: 'list',
       ordered,
-      items
+      items: result.items
     },
-    nextIndex: i
+    nextIndex: result.nextIndex
   };
+}
+
+// Helper function to parse list items recursively
+function parseListItems(
+  lines: string[], 
+  startIndex: number, 
+  parentIndent: number,
+  expectOrdered: boolean
+): { items: ListItem[]; nextIndex: number } {
+  const items: ListItem[] = [];
+  let i = startIndex;
+  
+  while (i < lines.length) {
+    const line = lines[i];
+    const indent = getIndentLevel(line);
+    
+    // Check if we've gone back to parent level or less
+    if (line.trim() && indent < parentIndent) {
+      break;
+    }
+    
+    // Empty line - check if list continues
+    if (!line.trim()) {
+      // Look ahead to see if list continues
+      if (i + 1 < lines.length) {
+        const nextLine = lines[i + 1];
+        const nextIndent = getIndentLevel(nextLine);
+        if (nextIndent >= parentIndent && (
+          nextLine.match(/^[\s]*[\*\-\+]\s+/) || 
+          nextLine.match(/^[\s]*\d+\.\s+/)
+        )) {
+          i++;
+          continue;
+        }
+      }
+      // End of list
+      i++;
+      break;
+    }
+    
+    // Check for list item at current indent level
+    if (indent === parentIndent) {
+      const unorderedMatch = line.match(/^[\s]*[\*\-\+]\s+(.+)/);
+      const orderedMatch = line.match(/^[\s]*\d+\.\s+(.+)/);
+      
+      if ((expectOrdered && orderedMatch) || (!expectOrdered && unorderedMatch)) {
+        const content = expectOrdered ? orderedMatch![1] : unorderedMatch![1];
+        const item: ListItem = {
+          content: processInlineElements(content)
+        };
+        
+        // Look for nested list items
+        i++;
+        if (i < lines.length) {
+          const nextIndent = getIndentLevel(lines[i]);
+          if (nextIndent > parentIndent && (
+            lines[i].match(/^[\s]*[\*\-\+]\s+/) || 
+            lines[i].match(/^[\s]*\d+\.\s+/)
+          )) {
+            // Parse nested list
+            const nestedOrdered = /^[\s]*\d+\.\s+/.test(lines[i]);
+            const nested = parseListItems(lines, i, nextIndent, nestedOrdered);
+            item.children = nested.items;
+            i = nested.nextIndex;
+          }
+        }
+        
+        items.push(item);
+      } else {
+        // Not a list item at expected level
+        break;
+      }
+    } else if (indent > parentIndent) {
+      // This shouldn't happen if we're parsing correctly
+      // Could be continuation text for previous item
+      if (items.length > 0) {
+        items[items.length - 1].content += ' ' + processInlineElements(line.trim());
+      }
+      i++;
+    } else {
+      // Less indented - end of this list level
+      break;
+    }
+  }
+  
+  return { items, nextIndex: i };
+}
+
+// Helper function to get indentation level
+function getIndentLevel(line: string): number {
+  const match = line.match(/^(\s*)/);
+  if (!match) return 0;
+  
+  const spaces = match[1];
+  // Count spaces, treating tab as 2 spaces
+  return spaces.split('').reduce((count, char) => {
+    return count + (char === '\t' ? 2 : 1);
+  }, 0);
 }
 
 // Parse blockquote
