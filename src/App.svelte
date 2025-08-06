@@ -18,6 +18,7 @@
   import QualityProfilePage from './qualityProfile/landing/page.svelte'
   import QualityProfileSlug from './qualityProfile/slug/page.svelte'
   import CustomFormatSlug from './customFormat/[slug].svelte'
+  import RegexPatternPage from './regexPattern/landing/page.svelte'
   import RegexPatternSlug from './regexPattern/slug/page.svelte'
   import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
   import NamingPage from './mediaManagement/namingPage.svelte'
@@ -47,6 +48,7 @@
     '/development': Development,
     '/dev-logs': DevLogTimeline,
     '/quality-profile': QualityProfilePage,
+    '/regex-pattern': RegexPatternPage,
     '/media-management': MediaManagementPage,
     '/media-management/naming': NamingPage,
     '/media-management/qualitydefinitions': QualityDefinitionsPage,
