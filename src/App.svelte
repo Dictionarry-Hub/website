@@ -32,6 +32,7 @@
   import { initAnchorScrolling } from '@shared/utils/scrollToAnchor'
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
+  import { fly } from 'svelte/transition'
   
   // Route configuration - single source of truth for all routes
   const routeConfig = {
@@ -140,17 +141,10 @@
       <Sidebar />
     </div>
     
-    <!-- Mobile sidebar overlay -->
+    <!-- Mobile sidebar with slide animation -->
     {#if $isMobileSidebarOpen}
-      <div class="xl:hidden fixed inset-0 top-16 z-40 flex">
-        <!-- Backdrop -->
-        <div 
-          class="fixed inset-0 bg-black bg-opacity-50" 
-          on:click={closeMobileSidebar}
-        />
-        
-        <!-- Sidebar panel -->
-        <div class="relative flex w-full bg-white dark:bg-neutral-900">
+      <div class="xl:hidden fixed inset-0 top-16 z-40" transition:fly={{ x: -320, duration: 300 }}>
+        <div class="w-full h-full bg-white dark:bg-neutral-900 overflow-y-auto">
           <Sidebar />
         </div>
       </div>
@@ -166,7 +160,7 @@
     </main>
     
     <!-- Navigation -->
-    <div class="{$isMobileSidebarOpen ? 'hidden' : ''} hidden xl:block">
+    <div class="hidden xl:block">
       <Navigation />
     </div>
   </div>
