@@ -5,6 +5,8 @@
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import SetupWarning from './components/setupWarning.svelte';
   import CodeBlock from '@shared/ui/codeBlock.svelte';
+  import DockerIcon from '@shared/icons/dockerIcon.svelte';
+  import { Terminal } from 'lucide-svelte';
 
   const pages = [
     {
@@ -52,12 +54,14 @@
     {
       title: 'Docker Compose',
       code: dockerComposeCode,
-      language: 'yaml'
+      language: 'yaml',
+      icon: DockerIcon
     },
     {
       title: 'Docker CLI',
       code: dockerCliCode,
-      language: 'bash'
+      language: 'bash',
+      icon: Terminal
     }
   ];
 </script>

@@ -78,12 +78,12 @@
     {:else if items.length === 1}
       <!-- Single item header -->
       <div class="flex items-center justify-between px-4 py-3 border-b border-neutral-200 dark:border-neutral-800">
-        <span class="text-xs text-neutral-600 dark:text-neutral-500 font-medium flex items-center gap-2">
+        <div class="flex items-center gap-2 text-xs text-neutral-600 dark:text-neutral-500 font-medium">
           {#if items[0].icon}
             <svelte:component this={items[0].icon} class="w-3.5 h-3.5" />
           {/if}
-          {items[0].title}
-        </span>
+          <span>{items[0].title}</span>
+        </div>
       </div>
     {/if}
     
