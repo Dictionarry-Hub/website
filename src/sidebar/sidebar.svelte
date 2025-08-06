@@ -74,7 +74,7 @@
       {#each devLogEntries as entry}
         <SidebarItem 
           href={entry.path} 
-          label={entry.title}
+          label={`${entry.title} (${new Date(entry.frontmatter?.created).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })})`}
           isActive={currentPath === entry.path}
         />
       {/each}

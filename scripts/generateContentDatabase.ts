@@ -437,6 +437,7 @@ function processMarkdownFile(
     // Extract title and description
     const title = frontmatter.title || filename.replace('.md', '').replace(/[-_]/g, ' ');
     const description = frontmatter.description || stripMarkdown(markdown).substring(0, 200) + '...';
+    const blurb = frontmatter.blurb || '';
     
     const entry: ContentEntry = {
       id: `${category}-${slug}`,
@@ -448,12 +449,13 @@ function processMarkdownFile(
       description,
       frontmatter: {
         ...frontmatter,
-        readingTime
+        readingTime,
+        blurb,
       },
       blocks,
       markdown,
       navigation,
-      searchText: sanitizeForSearch(`${title} ${description} ${stripMarkdown(markdown)}`),
+      searchText: sanitizeForSearch(`${title} ${description} ${blurb} ${stripMarkdown(markdown)}`),
       searchWeight: category === 'wiki' ? 0.8 : 0.6,
       tags: frontmatter.tags || [category],
       filename,
@@ -526,14 +528,6 @@ function createStaticEntries(): ContentEntry[] {
       category: 'media-management',
       tags: ['media', 'management', 'settings', 'index']
     },
-    {
-      id: 'devlogs-index',
-      path: '/devlogs',
-      title: 'Development Logs',
-      description: 'Timeline of development progress and updates',
-      category: 'devlogs',
-      tags: ['development', 'logs', 'timeline']
-    }
   ];
   
   return staticPages.map(page => ({

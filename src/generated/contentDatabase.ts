@@ -120,23 +120,6 @@ export const contentDatabase = {
       "navigation": []
     },
     {
-      "id": "devlogs-index",
-      "path": "/devlogs",
-      "title": "Development Logs",
-      "description": "Timeline of development progress and updates",
-      "category": "devlogs",
-      "tags": [
-        "development",
-        "logs",
-        "timeline"
-      ],
-      "type": "static",
-      "slug": "development-logs",
-      "searchText": "development logs timeline of development progress and updates",
-      "searchWeight": 0.7,
-      "navigation": []
-    },
-    {
       "id": "quality-profile-1080p-balanced",
       "path": "/quality-profile/1080p-balanced",
       "type": "quality-profile",
@@ -58528,7 +58511,7 @@ export const contentDatabase = {
       "navigation": [
         "Overview"
       ],
-      "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
+      "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d a comparison of theatrical vs special edition cuts and which movies benefit from each format by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59232,7 +59215,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "encode efficiency index this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal e this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal efficiency occurs in specific bitrate ranges by ranking these groups we effectively prioritize releases that maximize hevc s compression capabilities while maintaining quality at minimal file sizes what is a compression ratio a compression ratio is a made up metric that evaluates encodes against their sources we express this as the encoded file size as a percentage of its source size typically a remux or web dl for example movie source remux encode compression ratio movie a 40 gb 10 gb 25 movie b 30 gb 6 gb 20 movie c 50 gb 15 gb 30 why is this important understanding compression ratios helps balance two competing needs maintaining high video quality while minimizing file size modern codecs like hevc have a sweet spot where they deliver excellent quality with significant size savings finding this optimal point is crucial because storage and bandwidth are always limited resources going beyond certain bitrates provides diminishing quality returns different codecs have different efficiency curves release groups need clear standards for quality vs size trade offs what ratio is best there s no one size fits all answer when it comes to choosing the perfect compression ratio the best ratio depends entirely on your specific needs at 1080p space conscious users might prefer smaller files 5 10 of source with quality trade offs quality focused users might push towards higher quality 30 40 of source for transparency most users find a sweet spot in the middle however there are technical limits files larger than 40 for 1080p and 60 for 2160p provide no meaningful benefits why set maximum ratios of 40 and 60 the compression ratio ceilings are set based on different factors for 1080p and 2160p content 1080p 40 maximum the 40 ceiling for 1080p exists because we can roughly measure where hevc stops being efficient compared to avc we do this using two key video quality metrics vmaf analyzes how humans perceive video quality and scores it from 0 100 bd rate tells us how much smaller one encode is compared to another while maintaining the same quality level using these tools together shows us that hevc achieves 20 40 smaller files in the mid bitrate range 2 10 mbps for 1080p these space savings are consistent across different quality levels beyond this point both codecs achieve near identical quality at ratios above 40 avc becomes preferred due to better tooling and quality control 2160p 60 maximum the 60 ceiling for 2160p content is based on different considerations this is approximately where visual transparency becomes achievable higher ratios provide diminishing returns at this compression level content achieves vmaf scores above 95 storage efficiency becomes critical due to larger base file sizes quality improvements become increasingly subtle beyond this point read these articles to better understand how vmaf and bd rate tell us how efficient a codec is 1 2 how do we apply this index the ranking system works by calculating how close each release group streaming service comes to achieving a user s desired compression ratio this is done through a few key steps 1 delta calculation we calculate the absolute difference delta between a group s average compression ratio and the target ratio for example if a group averages 25 compression and our target is 20 their delta would be 25 20 5 percentage points 2 k means clustering we use k means clustering to automatically group release groups into tiers based on their deltas k means works by starting with k random cluster centers assigning each group to its nearest center recalculating centers based on group assignments repeating until stable example rankings 1080p examples example 1 users prioritizing storage efficiency 10 target users might choose this very aggressive compression target when managing large libraries on limited storage collecting complete series where total size is a major concern primarily viewing on mobile devices or smaller screens dealing with bandwidth caps or slow internet connections tier group efficiency delta 1 ivy 9 37 0 63 1 psa 7 89 2 11 2 vyndros 16 08 6 08 2 chivaman 16 80 6 80 2 amazon prime h 265 16 15 6 15 3 disney h 265 20 32 10 32 3 taoe 22 78 12 78 3 qxr 23 25 13 25 3 brian 25 16 15 16 3 movies anywhere h 265 26 05 16 05 4 mainframe 37 63 27 63 4 nan0 37 71 27 71 example 2 users seeking balanced quality and size 25 target this moderate compression target appeals to users who have reasonable storage capacity but still want efficiency watch on mid to large screens where quality becomes more noticeable want a good balance between visual quality and practical file sizes tier group efficiency delta 1 brian 25 16 0 16 1 movies anywhere h 265 26 05 1 05 1 qxr 23 25 1 75 1 taoe 22 78 2 22 2 disney h 265 20 32 4 68 3 amazon prime h 265 16 15 8 85 3 chivaman 16 80 8 20 3 vyndros 16 08 8 92 3 mainframe 37 63 12 63 3 nan0 37 71 12 71 4 ivy 9 37 15 63 4 psa 7 89 17 11 2160p examples example 3 extreme space saving 20 target this aggressive 2160p compression appeals to users who want to maintain a 4k library on limited storage primarily view content at typical viewing distances where subtle quality differences are less noticeable need to conserve bandwidth while still enjoying 4k resolution have a large collection of 4k content and need to balance quality with practical storage constraints todo examples example 4 balanced 4k 40 target this middle ground approach is ideal for users who have decent storage capacity but still want reasonable efficiency watch on larger screens where quality differences become more apparent want to maintain high quality while still keeping files manageable need reliable hdr performance without excessive file sizes todo examples example 5 near transparent quality 60 target this higher bitrate target is chosen by users who have ample storage and prioritize maximum quality consciously watch on high end displays where subtle quality differences are noticeable want to maintain archive quality collections focus on difficult to encode content where compression artifacts are more visible todo examples these examples demonstrate how different groups excel at different target ratios and how streaming services tend to maintain consistent compression approaches regardless of user preferences the rankings help users quickly identify which releases will best match their specific quality and size requirements frequently asked questions question answer why not just detect h265 x265 releases isn t that simpler this is a common misconception that hevc smaller better while it s true that hevc x265 can achieve better compression than avc x264 simply detecting the codec tells us nothing about the actual efficiency of the specific encode a poorly encoded hevc release can be larger and lower quality than a well tuned x264 encode by focusing on compression ratio instead of codec detection we measure what actually matters how efficiently the release uses storage space while maintaining quality this approach has several advantages br br it rewards efficient encodes regardless of codec choice br it catches inefficient hevc encodes that waste space br it avoids the complexity of parsing inconsistent hevc labeling h265 x265 br it future proofs the system for newer codecs like av1 where we can simply adjust our codec ranking priorities av1 hevc avc while still maintaining the core efficiency metric br br think of it this way users don t actually care what codec is used they care about getting high quality video at reasonable file sizes our metric measures this directly instead of using codec choice as an unreliable proxy but doesn t this ignore quality the current encoding landscape places tremendous emphasis on maximizing absolute quality often treating file size as a secondary concern this metric aims to challenge that or at least find a middle ground we care about quality hence why we use proper sources as our baseline and consider vmaf scores but we acknowledge that most users only care about getting file sizes they actually want and not the marginal quality improvements you get from encoding from a remux compared to a web dl rather than taking either extreme position quality above all or smaller is always better we focus on efficiency getting the best practical quality for any given file size target this approach will not satisfy quality enthusiasts but it better serves the needs of most users what if the source is not a 1080p remux how do you tell this metric like any data driven system will never achieve 100 accuracy however we can parse various indicators beyond just the release group or streaming service to identify non remux sources for example we can identify when a non ds4k web dl or non webrip from a reputable group is likely sourced from another lossy encode rather than a remux we also maintain a manual tagging system to downrank certain release groups known for reencoding from non high quality sources groups like psa and megusta will be ranked lower in the system regardless of their efficiency scores due to their known practices how do you prefer hevc we actually approach this from the opposite direction instead of preferring hevc we downrank avc this is because hevc naming conventions are inconsistent groups use x265 and h265 interchangeably making them difficult to parse reliably in contrast avc is almost always labeled consistently as either x264 or h264 making it much easier to identify and downrank these releases why not consider releases above 40 efficiency for standard 1080p non hdr content above 40 compression ratio x264 and x265 perform nearly identically in terms of vmaf scores eliminating hevc s key advantages at this point x264 becomes the preferred choice across all metrics the encodes are easier to produce far more common and typically undergo more rigorous quality control there s simply no compelling reason to use hevc at these higher bitrates for standard 1080p content what about animated content animated content typically has different compression characteristics than live action it often achieves excellent quality at much lower bitrates due to its unique properties flat colors sharp edges less grain ideally we would use higher target ratios for live action and lower ones for animation however reliably detecting animated content programmatically is extremely challenging while we can sometimes identify anime by certain keywords or release group patterns western animation partial animation and cgi heavy content create too many edge cases for reliable detection for now we treat all content with the same metric acknowledging this as a known limitation of the system users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material perhaps via a duplicate profile at a different compression target why does transparency require 60 at 2160p compared to 40 at 1080p the higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency br br 1 increased color depth most 2160p content uses 10 bit color depth compared to 8 bit for standard 1080p content this 25 increase in bit depth requires more data to maintain precision in color gradients and prevent banding br br 2 hdr requirements 2160p content often includes hdr metadata which demands more precise encoding of brightness levels and color information the expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes br br 3 resolution scaling while 2160p has 4x the pixels of 1080p compression efficiency doesn t scale linearly higher resolution reveals more subtle details and film grain which require more data to preserve accurately br br these factors combine multiplicatively rather than additively which is why we need a 50 increase in the compression ratio ceiling from 40 to 60 to achieve similar perceptual transparency do all 2160p releases need 60 for transparency no the actual requirements vary significantly based on several factors br br 1 content type br animation might achieve transparency at 30 40 br digital source material like cgi heavy films often requires less br film based content with heavy grain needs the full 60 br br 2 hdr implementation br sdr 2160p content can often achieve transparency at lower ratios br dolby vision adds additional overhead compared to hdr10 br some hdr grades are more demanding than others br br 3 source quality br digital intermediate resolution 2k vs 4k br film scan quality and grain structure br original master s bit depth and color space br br 4 scene complexity br high motion scenes need more data br complex textures and patterns require higher bitrates br dark scenes with subtle gradients are particularly demanding 1 shen y 2020 bjontegaard delta rate metric medium innovation labs blog https medium com innovation labs blog bjontegaard delta rate metric c8c82c1bc42c 2 ling n antier m liu y yang x li z 2024 video quality assessment from fr to nr electronics 13 5 953 https www mdpi com 2079 9292 13 5 953",
+      "searchText": "encode efficiency index this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal e a data driven metric that measures how well release groups balance file size and quality in their encodes helping users find releases that match their storage and quality preferences this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal efficiency occurs in specific bitrate ranges by ranking these groups we effectively prioritize releases that maximize hevc s compression capabilities while maintaining quality at minimal file sizes what is a compression ratio a compression ratio is a made up metric that evaluates encodes against their sources we express this as the encoded file size as a percentage of its source size typically a remux or web dl for example movie source remux encode compression ratio movie a 40 gb 10 gb 25 movie b 30 gb 6 gb 20 movie c 50 gb 15 gb 30 why is this important understanding compression ratios helps balance two competing needs maintaining high video quality while minimizing file size modern codecs like hevc have a sweet spot where they deliver excellent quality with significant size savings finding this optimal point is crucial because storage and bandwidth are always limited resources going beyond certain bitrates provides diminishing quality returns different codecs have different efficiency curves release groups need clear standards for quality vs size trade offs what ratio is best there s no one size fits all answer when it comes to choosing the perfect compression ratio the best ratio depends entirely on your specific needs at 1080p space conscious users might prefer smaller files 5 10 of source with quality trade offs quality focused users might push towards higher quality 30 40 of source for transparency most users find a sweet spot in the middle however there are technical limits files larger than 40 for 1080p and 60 for 2160p provide no meaningful benefits why set maximum ratios of 40 and 60 the compression ratio ceilings are set based on different factors for 1080p and 2160p content 1080p 40 maximum the 40 ceiling for 1080p exists because we can roughly measure where hevc stops being efficient compared to avc we do this using two key video quality metrics vmaf analyzes how humans perceive video quality and scores it from 0 100 bd rate tells us how much smaller one encode is compared to another while maintaining the same quality level using these tools together shows us that hevc achieves 20 40 smaller files in the mid bitrate range 2 10 mbps for 1080p these space savings are consistent across different quality levels beyond this point both codecs achieve near identical quality at ratios above 40 avc becomes preferred due to better tooling and quality control 2160p 60 maximum the 60 ceiling for 2160p content is based on different considerations this is approximately where visual transparency becomes achievable higher ratios provide diminishing returns at this compression level content achieves vmaf scores above 95 storage efficiency becomes critical due to larger base file sizes quality improvements become increasingly subtle beyond this point read these articles to better understand how vmaf and bd rate tell us how efficient a codec is 1 2 how do we apply this index the ranking system works by calculating how close each release group streaming service comes to achieving a user s desired compression ratio this is done through a few key steps 1 delta calculation we calculate the absolute difference delta between a group s average compression ratio and the target ratio for example if a group averages 25 compression and our target is 20 their delta would be 25 20 5 percentage points 2 k means clustering we use k means clustering to automatically group release groups into tiers based on their deltas k means works by starting with k random cluster centers assigning each group to its nearest center recalculating centers based on group assignments repeating until stable example rankings 1080p examples example 1 users prioritizing storage efficiency 10 target users might choose this very aggressive compression target when managing large libraries on limited storage collecting complete series where total size is a major concern primarily viewing on mobile devices or smaller screens dealing with bandwidth caps or slow internet connections tier group efficiency delta 1 ivy 9 37 0 63 1 psa 7 89 2 11 2 vyndros 16 08 6 08 2 chivaman 16 80 6 80 2 amazon prime h 265 16 15 6 15 3 disney h 265 20 32 10 32 3 taoe 22 78 12 78 3 qxr 23 25 13 25 3 brian 25 16 15 16 3 movies anywhere h 265 26 05 16 05 4 mainframe 37 63 27 63 4 nan0 37 71 27 71 example 2 users seeking balanced quality and size 25 target this moderate compression target appeals to users who have reasonable storage capacity but still want efficiency watch on mid to large screens where quality becomes more noticeable want a good balance between visual quality and practical file sizes tier group efficiency delta 1 brian 25 16 0 16 1 movies anywhere h 265 26 05 1 05 1 qxr 23 25 1 75 1 taoe 22 78 2 22 2 disney h 265 20 32 4 68 3 amazon prime h 265 16 15 8 85 3 chivaman 16 80 8 20 3 vyndros 16 08 8 92 3 mainframe 37 63 12 63 3 nan0 37 71 12 71 4 ivy 9 37 15 63 4 psa 7 89 17 11 2160p examples example 3 extreme space saving 20 target this aggressive 2160p compression appeals to users who want to maintain a 4k library on limited storage primarily view content at typical viewing distances where subtle quality differences are less noticeable need to conserve bandwidth while still enjoying 4k resolution have a large collection of 4k content and need to balance quality with practical storage constraints todo examples example 4 balanced 4k 40 target this middle ground approach is ideal for users who have decent storage capacity but still want reasonable efficiency watch on larger screens where quality differences become more apparent want to maintain high quality while still keeping files manageable need reliable hdr performance without excessive file sizes todo examples example 5 near transparent quality 60 target this higher bitrate target is chosen by users who have ample storage and prioritize maximum quality consciously watch on high end displays where subtle quality differences are noticeable want to maintain archive quality collections focus on difficult to encode content where compression artifacts are more visible todo examples these examples demonstrate how different groups excel at different target ratios and how streaming services tend to maintain consistent compression approaches regardless of user preferences the rankings help users quickly identify which releases will best match their specific quality and size requirements frequently asked questions question answer why not just detect h265 x265 releases isn t that simpler this is a common misconception that hevc smaller better while it s true that hevc x265 can achieve better compression than avc x264 simply detecting the codec tells us nothing about the actual efficiency of the specific encode a poorly encoded hevc release can be larger and lower quality than a well tuned x264 encode by focusing on compression ratio instead of codec detection we measure what actually matters how efficiently the release uses storage space while maintaining quality this approach has several advantages br br it rewards efficient encodes regardless of codec choice br it catches inefficient hevc encodes that waste space br it avoids the complexity of parsing inconsistent hevc labeling h265 x265 br it future proofs the system for newer codecs like av1 where we can simply adjust our codec ranking priorities av1 hevc avc while still maintaining the core efficiency metric br br think of it this way users don t actually care what codec is used they care about getting high quality video at reasonable file sizes our metric measures this directly instead of using codec choice as an unreliable proxy but doesn t this ignore quality the current encoding landscape places tremendous emphasis on maximizing absolute quality often treating file size as a secondary concern this metric aims to challenge that or at least find a middle ground we care about quality hence why we use proper sources as our baseline and consider vmaf scores but we acknowledge that most users only care about getting file sizes they actually want and not the marginal quality improvements you get from encoding from a remux compared to a web dl rather than taking either extreme position quality above all or smaller is always better we focus on efficiency getting the best practical quality for any given file size target this approach will not satisfy quality enthusiasts but it better serves the needs of most users what if the source is not a 1080p remux how do you tell this metric like any data driven system will never achieve 100 accuracy however we can parse various indicators beyond just the release group or streaming service to identify non remux sources for example we can identify when a non ds4k web dl or non webrip from a reputable group is likely sourced from another lossy encode rather than a remux we also maintain a manual tagging system to downrank certain release groups known for reencoding from non high quality sources groups like psa and megusta will be ranked lower in the system regardless of their efficiency scores due to their known practices how do you prefer hevc we actually approach this from the opposite direction instead of preferring hevc we downrank avc this is because hevc naming conventions are inconsistent groups use x265 and h265 interchangeably making them difficult to parse reliably in contrast avc is almost always labeled consistently as either x264 or h264 making it much easier to identify and downrank these releases why not consider releases above 40 efficiency for standard 1080p non hdr content above 40 compression ratio x264 and x265 perform nearly identically in terms of vmaf scores eliminating hevc s key advantages at this point x264 becomes the preferred choice across all metrics the encodes are easier to produce far more common and typically undergo more rigorous quality control there s simply no compelling reason to use hevc at these higher bitrates for standard 1080p content what about animated content animated content typically has different compression characteristics than live action it often achieves excellent quality at much lower bitrates due to its unique properties flat colors sharp edges less grain ideally we would use higher target ratios for live action and lower ones for animation however reliably detecting animated content programmatically is extremely challenging while we can sometimes identify anime by certain keywords or release group patterns western animation partial animation and cgi heavy content create too many edge cases for reliable detection for now we treat all content with the same metric acknowledging this as a known limitation of the system users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material perhaps via a duplicate profile at a different compression target why does transparency require 60 at 2160p compared to 40 at 1080p the higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency br br 1 increased color depth most 2160p content uses 10 bit color depth compared to 8 bit for standard 1080p content this 25 increase in bit depth requires more data to maintain precision in color gradients and prevent banding br br 2 hdr requirements 2160p content often includes hdr metadata which demands more precise encoding of brightness levels and color information the expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes br br 3 resolution scaling while 2160p has 4x the pixels of 1080p compression efficiency doesn t scale linearly higher resolution reveals more subtle details and film grain which require more data to preserve accurately br br these factors combine multiplicatively rather than additively which is why we need a 50 increase in the compression ratio ceiling from 40 to 60 to achieve similar perceptual transparency do all 2160p releases need 60 for transparency no the actual requirements vary significantly based on several factors br br 1 content type br animation might achieve transparency at 30 40 br digital source material like cgi heavy films often requires less br film based content with heavy grain needs the full 60 br br 2 hdr implementation br sdr 2160p content can often achieve transparency at lower ratios br dolby vision adds additional overhead compared to hdr10 br some hdr grades are more demanding than others br br 3 source quality br digital intermediate resolution 2k vs 4k br film scan quality and grain structure br original master s bit depth and color space br br 4 scene complexity br high motion scenes need more data br complex textures and patterns require higher bitrates br dark scenes with subtle gradients are particularly demanding 1 shen y 2020 bjontegaard delta rate metric medium innovation labs blog https medium com innovation labs blog bjontegaard delta rate metric c8c82c1bc42c 2 ling n antier m liu y yang x li z 2024 video quality assessment from fr to nr electronics 13 5 953 https www mdpi com 2079 9292 13 5 953",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59297,7 +59280,7 @@ export const contentDatabase = {
       "navigation": [
         "Overview"
       ],
-      "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
+      "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer frequently asked questions pertaining to dictionarry profillar and all of its tooling this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59402,7 +59385,7 @@ export const contentDatabase = {
         "The Decision Engine",
         "Formula"
       ],
-      "searchText": "golden popcorn performance index what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced te what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced team of golden popcorn checkers golden popcorns are the simplest way to quantify a subjective best encode the decision engine the golden popcorn performance index or gppi is a calculated metric pivotal to the transparent profile s decision making process it s engineered to rank release groups based on their propensity to release a golden popcorn encode at any given resolution r formula on first glance it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their golden popcorn ratio i e the number of golden popcorns divided by the total number of encodes for any given resolution r however if we were to take golden popcorn ratio at face value we might incorrectly prioritise a release group who has a high gp ratio but a low number of encodes on the opposite spectrum if we take the raw number of golden popcorns for any group we might incorrectly prioritise a group with a low gp ratio so instead we multiply the number of golden popcorns at resolution r for a given release group by a factor of said release group s golden popcorn ratio this essentially limits both metrics as a factor of each other for any given resolution r the gppi is defined as begin aligned text gppi r gper cdot left frac gper er right frac gper 2 er end aligned where text gppi _r is the golden popcorn performance index at resolution r gpe_r is the number of golden popcorns at resolution r e_r is the total number of encodes at resolution r",
+      "searchText": "golden popcorn performance index what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced te a data driven metric that identifies high quality release groups by analyzing their golden popcorn track record what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced team of golden popcorn checkers golden popcorns are the simplest way to quantify a subjective best encode the decision engine the golden popcorn performance index or gppi is a calculated metric pivotal to the transparent profile s decision making process it s engineered to rank release groups based on their propensity to release a golden popcorn encode at any given resolution r formula on first glance it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their golden popcorn ratio i e the number of golden popcorns divided by the total number of encodes for any given resolution r however if we were to take golden popcorn ratio at face value we might incorrectly prioritise a release group who has a high gp ratio but a low number of encodes on the opposite spectrum if we take the raw number of golden popcorns for any group we might incorrectly prioritise a group with a low gp ratio so instead we multiply the number of golden popcorns at resolution r for a given release group by a factor of said release group s golden popcorn ratio this essentially limits both metrics as a factor of each other for any given resolution r the gppi is defined as begin aligned text gppi r gper cdot left frac gper er right frac gper 2 er end aligned where text gppi _r is the golden popcorn performance index at resolution r gpe_r is the number of golden popcorns at resolution r e_r is the total number of encodes at resolution r",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59711,7 +59694,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
+      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar a simple guide to install profilarr in casa os as a custom app this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -59818,7 +59801,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "release group philosophy so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to first define what good even means to some people it could mean how well something looks on their screen or sounds through speakers we define this as quality to others it means how many releases they can download while still maintaining some kind of quality standard we define this as efficiency so that leads us to a new question how do we measure quality and efficiency you might think we d want to parse releases and find their technical properties resolution bitrate video audio codecs hdr etc release 1 25 2 gib blockbuster movie a 2022 hybrid 1080p webrip ddpa5 1 x264 group a release 2 27 3 gib blockbuster movie a 1080p webrip dd 7 1 x264 group b looking at these two releases you ll notice that they both have the exact same technical specification and would rank equally but they re different sizes so which is better using audio video properties to measure quality efficiency can be effective but is largely limited by the information that they convey you can t adequately answer which is better just by looking at these releases in isolation so how do we not look at these releases in isolation or rather how do we extrapolate information that isn t already there group tags our answer lies in the little bit of information at the end of every release it s group tag dictionarry tracks historic release group data in order to rank groups based on their propensity to reach quantifiable levels of quality and efficiency we do this using two metrics 1 golden popcorn performance index gppi how many golden popcorns a release group has as a ratio of their total number of releases 2 encode efficiency index eei the average size of a release group s encode compared to it s likely source these metrics are evidence based data driven and objective tl dr tl dr dictionarry simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement these release group rankings are built and maintained as custom formats to be scored in their respective quality profiles you can review these group rankings below",
+      "searchText": "release group philosophy so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to explore dictionarry s release group abstraction philosophy and what it actually means to simplify media automation so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to first define what good even means to some people it could mean how well something looks on their screen or sounds through speakers we define this as quality to others it means how many releases they can download while still maintaining some kind of quality standard we define this as efficiency so that leads us to a new question how do we measure quality and efficiency you might think we d want to parse releases and find their technical properties resolution bitrate video audio codecs hdr etc release 1 25 2 gib blockbuster movie a 2022 hybrid 1080p webrip ddpa5 1 x264 group a release 2 27 3 gib blockbuster movie a 1080p webrip dd 7 1 x264 group b looking at these two releases you ll notice that they both have the exact same technical specification and would rank equally but they re different sizes so which is better using audio video properties to measure quality efficiency can be effective but is largely limited by the information that they convey you can t adequately answer which is better just by looking at these releases in isolation so how do we not look at these releases in isolation or rather how do we extrapolate information that isn t already there group tags our answer lies in the little bit of information at the end of every release it s group tag dictionarry tracks historic release group data in order to rank groups based on their propensity to reach quantifiable levels of quality and efficiency we do this using two metrics 1 golden popcorn performance index gppi how many golden popcorns a release group has as a ratio of their total number of releases 2 encode efficiency index eei the average size of a release group s encode compared to it s likely source these metrics are evidence based data driven and objective tl dr tl dr dictionarry simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement these release group rankings are built and maintained as custom formats to be scored in their respective quality profiles you can review these group rankings below",
       "searchWeight": 0.8,
       "tags": [
         "home",
@@ -59830,1590 +59813,154 @@ export const contentDatabase = {
       "lastModified": "2025-08-06T14:42:08.168Z"
     },
     {
-      "id": "devlogs-architecture-overhaul",
-      "path": "/devlogs/architecture-overhaul",
+      "id": "devlogs-rebirth",
+      "path": "/devlogs/rebirth",
       "type": "markdown",
-      "slug": "architecture-overhaul",
+      "slug": "rebirth",
       "category": "devlogs",
-      "title": "Architecture Overhaul",
-      "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
+      "title": "Rebirth",
+      "description": "This dev log marks a rebirth for Dictionarry's documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, languag...",
       "frontmatter": {
-        "title": "Architecture Overhaul",
-        "slug": "architecture_overhaul",
+        "title": "Rebirth",
+        "slug": "rebirth",
+        "blurb": "Dictionarry, born again.",
         "author": "santiagosayshey",
-        "created": "2024-8-13",
+        "created": "2025-08-07T00:00:00.000Z",
         "tags": [
-          "devlog",
-          "architecture"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:"
-        },
-        {
-          "type": "paragraph",
-          "content": "As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool."
-        },
-        {
-          "type": "paragraph",
-          "content": "Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences."
-        },
-        {
-          "type": "paragraph",
-          "content": "Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups."
-        },
-        {
-          "type": "paragraph",
-          "content": "Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\">"
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Profile Selector",
-          "id": "profile-selector"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is."
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, here's a small update on what I've been working on lately:\n\nAs the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I've planned a complete overhaul of Dictionarry's architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.\n\nNext up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.\n\nWorking in this system is extremely error prone and time consuming. To fix this, I'm creating a standard unique to dictionarry based on a **single definition format**, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don't know exactly _how_ this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.\n\nNow, the problem with this new and improved standard is - the arrs won't be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!\n\nHere's a canvas page I made in Obsidian which visualizes this architecture:\n\n![Archiecture Diagram](https://i.imgur.com/HcXFNHU.png)\n\n# Profile Selector\n\nHere's an updated look at the new profile selector (WIP) in action. I'll leave explaining the selection algorithm for another day (because I'm still not quite happy with it), but I think it's still pretty cool to look at as is.\n\n![Selection Algorithm v1](https://streamable.com/bhi7h6)\n",
-      "navigation": [
-        "Profile Selector"
-      ],
-      "searchText": "architecture overhaul hey everyone here s a small update on what i ve been working on lately as the project has grown bigger it s gotten quite difficult to keep track of and manage a billion different custom formats q hey everyone here s a small update on what i ve been working on lately as the project has grown bigger it s gotten quite difficult to keep track of and manage a billion different custom formats quality profiles etc to help improve development productivity i ve planned a complete overhaul of dictionarry s architecture this starts with separating things into modules namely a separate database which powers the website and the profilarr tool next up is standardizing the actual entries inside the database the biggest issue in development right now is making editing updating the same thing multiple times if you have the same regex pattern for multiple cfs it needs to be updated for each one of them quality profiles across different apps have miniscule differences in syntax eg web dl in radarr vs web in sonarr which means we need multiple files with tiny differences working in this system is extremely error prone and time consuming to fix this i m creating a standard unique to dictionarry based on a single definition format i e regex patterns custom formats and quality profiles are defined once and repeated in other places using foreign keys i don t know exactly how this will look but the plan is simplicity above all outside of improving productivity i hope this standard helps encourage people who feel less confident with custom formats quality profiles make more intuitive changes to their own setups now the problem with this new and improved standard is the arrs won t be able to read the files anymore solution a compiler this is where the fun begins we take our simple easy to develop for files and push them through the compiler out pops the required syntax with those weird naming rules web dl for radarr web for sonarr without the developer needing to ever worry about it here s a canvas page i made in obsidian which visualizes this architecture archiecture diagram profile selector here s an updated look at the new profile selector wip in action i ll leave explaining the selection algorithm for another day because i m still not quite happy with it but i think it s still pretty cool to look at as is selection algorithm v1",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture"
-      ],
-      "filename": "Architecture Overhaul.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-markdown-test",
-      "path": "/devlogs/markdown-test",
-      "type": "markdown",
-      "slug": "markdown-test",
-      "category": "devlogs",
-      "title": "Markdown Formatting Test",
-      "description": "A comprehensive test of all markdown formatting features",
-      "frontmatter": {
-        "title": "Markdown Formatting Test",
-        "date": "2024-12-30",
-        "description": "A comprehensive test of all markdown formatting features",
-        "readingTime": 3
-      },
-      "blocks": [
-        {
-          "type": "header",
-          "level": 1,
-          "text": "H1 Header - Main Title",
-          "id": "h1-header---main-title"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "H2 Header - Section Title",
-          "id": "h2-header---section-title"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "H3 Header - Subsection",
-          "id": "h3-header---subsection"
-        },
-        {
-          "type": "paragraph",
-          "content": "Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "H4 Header - SubSubsection",
-          "id": "h4-header---subsubsection"
-        },
-        {
-          "type": "paragraph",
-          "content": "Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Paragraph and Text Formatting",
-          "id": "paragraph-and-text-formatting"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text."
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Lists",
-          "id": "lists"
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Unordered List",
-          "id": "unordered-list"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "First item in the list"
-            },
-            {
-              "content": "Second item with more text"
-            },
-            {
-              "content": "Third item",
-              "children": [
-                {
-                  "content": "Nested item"
-                },
-                {
-                  "content": "Another nested item"
-                }
-              ]
-            },
-            {
-              "content": "Back to main levels"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Ordered List",
-          "id": "ordered-list"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "First numbered item"
-            },
-            {
-              "content": "Second numbered item"
-            },
-            {
-              "content": "Third numbered item",
-              "children": [
-                {
-                  "content": "Nested numbered item"
-                },
-                {
-                  "content": "Another nested numbered item"
-                }
-              ]
-            },
-            {
-              "content": "Back to main level"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Code Blocks",
-          "id": "code-blocks"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a code block with syntax:"
-        },
-        {
-          "type": "code",
-          "language": "javascript",
-          "code": "function testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}"
-        },
-        {
-          "type": "paragraph",
-          "content": "And here&#39;s a simple code block:"
-        },
-        {
-          "type": "code",
-          "language": "plaintext",
-          "code": "This is just plain text\nin a code block\nwith multiple lines"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Blockquotes",
-          "id": "blockquotes"
-        },
-        {
-          "type": "blockquote",
-          "content": "This is a blockquote. It should have a left border and italic styling.  It can span multiple lines and should look distinct from regular paragraphs."
-        },
-        {
-          "type": "blockquote",
-          "content": "Here&#39;s another blockquote to test spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Links",
-          "id": "links"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Images",
-          "id": "images"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s an image (this will show as broken since it&#39;s a placeholder): <img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\">"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Tables (GitHub Flavored Markdown)",
-          "id": "tables-github-flavored-markdown"
-        },
-        {
-          "type": "table",
-          "headers": [
-            "Header 1",
-            "Header 2",
-            "Header 3"
-          ],
-          "rows": [
-            [
-              "Row 1, Col 1",
-              "Row 1, Col 2",
-              "Row 1, Col 3"
-            ],
-            [
-              "Row 2, Col 1",
-              "Row 2, Col 2",
-              "Row 2, Col 3"
-            ],
-            [
-              "Row 3, Col 1",
-              "Row 3, Col 2",
-              "Row 3, Col 3"
-            ]
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Horizontal Rule",
-          "id": "horizontal-rule"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s text before a horizontal rule."
-        },
-        {
-          "type": "paragraph",
-          "content": "---"
-        },
-        {
-          "type": "paragraph",
-          "content": "And here&#39;s text after the horizontal rule."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Line Breaks",
-          "id": "line-breaks"
-        },
-        {
-          "type": "paragraph",
-          "content": "This line should break right here (two spaces at end of line)."
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a new paragraph after the line break test."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Mixed Content Test",
-          "id": "mixed-content-test"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "List with Code and Links",
-          "id": "list-with-code-and-links"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "First item with <code>inline code</code>"
-            },
-            {
-              "content": "Second item with <a href=\"https://example.com\">a link</a>"
-            },
-            {
-              "content": "Third item with <strong>bold text</strong>"
-            },
-            {
-              "content": "Fourth item with <em>italic text</em>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Blockquote with Formatting",
-          "id": "blockquote-with-formatting"
-        },
-        {
-          "type": "blockquote",
-          "content": "This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.  It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test complex formatting within blockquotes."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Final Notes",
-          "id": "final-notes"
-        },
-        {
-          "type": "paragraph",
-          "content": "This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes."
-        },
-        {
-          "type": "paragraph",
-          "content": "The styling should be consistent and readable across all elements."
-        }
-      ],
-      "markdown": "\n# H1 Header - Main Title\n\nThis is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.\n\n## H2 Header - Section Title\n\nHere's another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.\n\n### H3 Header - Subsection\n\nEven more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.\n\n#### H4 Header - SubSubsection\n\nEven more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.\n\n## Paragraph and Text Formatting\n\nThis is a **bold text** example and this is *italic text*. You can also combine them like ***bold and italic*** text.\n\nHere's a new paragraph with some inline `code` formatting. The code should have a background color and monospace font.\n\n## Lists\n\n### Unordered List\n- First item in the list\n- Second item with more text\n- Third item\n  - Nested item\n  - Another nested item\n- Back to main levels\n\n### Ordered List\n1. First numbered item\n2. Second numbered item\n3. Third numbered item\n   1. Nested numbered item\n   2. Another nested numbered item\n4. Back to main level\n\n## Code Blocks\n\nHere's a code block with syntax:\n\n```javascript\nfunction testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}\n```\n\nAnd here's a simple code block:\n\n```\nThis is just plain text\nin a code block\nwith multiple lines\n```\n\n## Blockquotes\n\n> This is a blockquote. It should have a left border and italic styling.\n> \n> It can span multiple lines and should look distinct from regular paragraphs.\n\n> Here's another blockquote to test spacing between them.\n\n## Links\n\nHere's a [link to example.com](https://example.com) and another [link with title](https://example.com \"Example Site\").\n\n## Images\n\nHere's an image (this will show as broken since it's a placeholder):\n![Alt text for image](https://via.placeholder.com/300x200.png?text=Test+Image)\n\n## Tables (GitHub Flavored Markdown)\n\n| Header 1 | Header 2 | Header 3 |\n|----------|----------|----------|\n| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |\n| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |\n| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |\n\n## Horizontal Rule\n\nHere's text before a horizontal rule.\n\n---\n\nAnd here's text after the horizontal rule.\n\n## Line Breaks\n\nThis line should break  \nright here (two spaces at end of line).\n\nThis is a new paragraph after the line break test.\n\n## Mixed Content Test\n\nHere's a paragraph with **bold**, *italic*, and `inline code` all together. It also has a [link](https://example.com) in the middle.\n\n### List with Code and Links\n\n1. First item with `inline code`\n2. Second item with [a link](https://example.com)\n3. Third item with **bold text**\n4. Fourth item with *italic text*\n\n### Blockquote with Formatting\n\n> This blockquote contains **bold text**, *italic text*, and `inline code`.\n> \n> It also has a [link](https://example.com) and multiple paragraphs to test\n> complex formatting within blockquotes.\n\n## Final Notes\n\nThis test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.\n\nThe styling should be consistent and readable across all elements.",
-      "navigation": [
-        {
-          "title": "H1 Header - Main Title",
-          "children": [
-            {
-              "title": "H2 Header - Section Title",
-              "children": [
-                {
-                  "title": "H3 Header - Subsection",
-                  "children": [
-                    "H4 Header - SubSubsection"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Paragraph and Text Formatting",
-              "children": []
-            },
-            {
-              "title": "Lists",
-              "children": [
-                "Unordered List",
-                "Ordered List"
-              ]
-            },
-            {
-              "title": "Code Blocks",
-              "children": []
-            },
-            {
-              "title": "Blockquotes",
-              "children": []
-            },
-            {
-              "title": "Links",
-              "children": []
-            },
-            {
-              "title": "Images",
-              "children": []
-            },
-            {
-              "title": "Tables (GitHub Flavored Markdown)",
-              "children": []
-            },
-            {
-              "title": "Horizontal Rule",
-              "children": []
-            },
-            {
-              "title": "Line Breaks",
-              "children": []
-            },
-            {
-              "title": "Mixed Content Test",
-              "children": [
-                "List with Code and Links",
-                "Blockquote with Formatting"
-              ]
-            },
-            "Final Notes"
-          ]
-        }
-      ],
-      "searchText": "markdown formatting test a comprehensive test of all markdown formatting features h1 header main title this is a paragraph under the main header it should have proper spacing and use the neutral color palette for both light and dark modes h2 header section title here s another paragraph lorem ipsum dolor sit amet consectetur adipiscing elit this text should wrap nicely and have good line height for readability h3 header subsection even more text here to test the h3 styling the headers should have proper hierarchy and spacing between them h4 header subsubsection even more text here to test the h4 styling the headers should have proper hierarchy and spacing between them paragraph and text formatting this is a bold text example and this is italic text you can also combine them like bold and italic text here s a new paragraph with some inline code formatting the code should have a background color and monospace font lists unordered list first item in the list second item with more text third item nested item another nested item back to main levels ordered list 1 first numbered item 2 second numbered item 3 third numbered item 1 nested numbered item 2 another nested numbered item 4 back to main level code blocks here s a code block with syntax javascript function testfunction const message hello world console log message if true return this is a test and here s a simple code block this is just plain text in a code block with multiple lines blockquotes this is a blockquote it should have a left border and italic styling it can span multiple lines and should look distinct from regular paragraphs here s another blockquote to test spacing between them links here s a link to example com and another link with title images here s an image this will show as broken since it s a placeholder alt text for image tables github flavored markdown header 1 header 2 header 3 row 1 col 1 row 1 col 2 row 1 col 3 row 2 col 1 row 2 col 2 row 2 col 3 row 3 col 1 row 3 col 2 row 3 col 3 horizontal rule here s text before a horizontal rule and here s text after the horizontal rule line breaks this line should break right here two spaces at end of line this is a new paragraph after the line break test mixed content test here s a paragraph with bold italic and inline code all together it also has a link in the middle list with code and links 1 first item with inline code 2 second item with a link 3 third item with bold text 4 fourth item with italic text blockquote with formatting this blockquote contains bold text italic text and inline code it also has a link and multiple paragraphs to test complex formatting within blockquotes final notes this test file should demonstrate all the major markdown formatting features each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes the styling should be consistent and readable across all elements",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlogs"
-      ],
-      "filename": "Markdown Test.md",
-      "lastModified": "2025-07-01T14:00:22.253Z"
-    },
-    {
-      "id": "devlogs-modular-choices",
-      "path": "/devlogs/modular-choices",
-      "type": "markdown",
-      "slug": "modular-choices",
-      "category": "devlogs",
-      "title": "Modular Choices",
-      "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
-      "frontmatter": {
-        "title": "Modular Choices",
-        "slug": "modular_choices",
-        "author": "santiagosayshey",
-        "created": "2024-12-3",
-        "tags": [
-          "devlog",
-          "architecture",
-          "user_choice"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, here&#39;s a small (but very important) post on the new update system!"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Current Profilarr",
-          "id": "current-profilarr"
-        },
-        {
-          "type": "paragraph",
-          "content": "Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr v1",
-          "id": "profilarr-v1"
-        },
-        {
-          "type": "paragraph",
-          "content": "Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores."
-            },
-            {
-              "content": "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Settings Page",
-          "id": "settings-page"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously)."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Beta Release",
-          "id": "beta-release"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, here's a small (but very important) post on the new update system!\n\n## Current Profilarr\n\nCurrently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.\n\n## Profilarr v1\n\nUsers will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git's merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.\n\n- As an example, let's say you've made the Dolby Vision custom formats negative because your TV doesn't support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.\n- In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will 'remember' your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.\n\n### Settings Page\n\nProfilarr now includes a dedicated page for 'Sync Settings'. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr's database (not to stable, obviously).\n\n# Beta Release\n\n- Still not quite ready yet, but I'm working hard to get it out! Stay tuned :hearts:\n\nHere's a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)\n\n![Conflict Resolver](https://i.imgur.com/0EZrumU.png)\n",
-      "navigation": [
-        {
-          "title": "Current Profilarr",
-          "children": []
-        },
-        {
-          "title": "Profilarr v1",
-          "children": [
-            "Settings Page"
-          ]
-        },
-        "Beta Release"
-      ],
-      "searchText": "modular choices hey everyone here s a small but very important post on the new update system current profilarr currently there is 0 support for updates in profilarr this is obviously not ideal it s a nightmar hey everyone here s a small but very important post on the new update system current profilarr currently there is 0 support for updates in profilarr this is obviously not ideal it s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make profilarr v1 users will be able to view incoming and outgoing changes as well as resolve any conflicts between the two to achieve this a user friendly gui has been built on top of git s merge functionality and allows fine control over what should be merged ignored more specifically this functionality allows us to make custom changes and choose to retain them once a new update comes around as an example let s say you ve made the dolby vision custom formats negative because your tv doesn t support it a new update has come out which shuffles around hdr scores and this leads to a merge conflict between the two custom format scores in the settings page you can choose to accept the incoming change or retain your local changes profilarr will remember your choice and stop prompting you to update this custom format until a new update comes out in which case the situation repeats keep local or accept incoming settings page profilarr now includes a dedicated page for sync settings it allows you to link unlink a database repository view and change branches as well as deal with incoming outgoing changes and their conflicts this page has been planned for developers too you can add an authenticated github dev token to your environment and you have the ability to make changes directly to profilarr s database not to stable obviously beta release still not quite ready yet but i m working hard to get it out stay tuned hearts here s a screenshot of this new conflict resolver in action ignore the date modified row it will be removed for actual use conflict resolver",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "user_choice"
-      ],
-      "filename": "Modular Choices.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-profilarr-is-in-beta",
-      "path": "/devlogs/profilarr-is-in-beta",
-      "type": "markdown",
-      "slug": "profilarr-is-in-beta",
-      "category": "devlogs",
-      "title": "Profilarr is in Beta 🚀",
-      "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
-      "frontmatter": {
-        "title": "Profilarr is in Beta 🚀",
-        "slug": "profilarr_is_in_beta",
-        "author": "santiagosayshey",
-        "created": "2025-4-1",
-        "tags": [
-          "devlog",
-          "profilarr",
-          "database",
-          "housekeeping"
-        ],
-        "readingTime": 6
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone, long awaited dev log :)"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "What's New? 👈",
-          "id": "whats-new"
-        },
-        {
-          "type": "paragraph",
-          "content": "Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :)"
-        },
-        {
-          "type": "paragraph",
-          "content": "You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Database 💾",
-          "id": "database"
-        },
-        {
-          "type": "paragraph",
-          "content": "Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>."
-            },
-            {
-              "content": "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Tweaks 🔧",
-          "id": "tweaks"
-        },
-        {
-          "type": "paragraph",
-          "content": "I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "What's Next? 👉",
-          "id": "whats-next"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Profilarr",
-          "id": "profilarr"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them"
-            },
-            {
-              "content": "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). "
-            },
-            {
-              "content": "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Database",
-          "id": "database"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. "
-            },
-            {
-              "content": "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)"
-            },
-            {
-              "content": "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Housekeeping 🧹",
-          "id": "housekeeping"
-        },
-        {
-          "type": "paragraph",
-          "content": "We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Moderation, Wiki, Support 🤝",
-          "id": "moderation-wiki-support"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. "
-            },
-            {
-              "content": "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. "
-            },
-            {
-              "content": "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Donations 💸",
-          "id": "donations"
-        },
-        {
-          "type": "paragraph",
-          "content": "If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Taking a Break ⏸️",
-          "id": "taking-a-break"
-        },
-        {
-          "type": "paragraph",
-          "content": "I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. "
-            },
-            {
-              "content": "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Thank You 🙏",
-          "id": "thank-you"
-        },
-        {
-          "type": "paragraph",
-          "content": "This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head."
-        },
-        {
-          "type": "paragraph",
-          "content": "Cheers, everyone."
-        }
-      ],
-      "markdown": "\nhey @everyone, long awaited dev log :)\n\n## What's New? 👈\n\nMany people are already aware, but I thought I should formally announce here on discord that **Profilarr is out in beta!** I've been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it's not nearly as stable as I would like it to be, it implements the core architecture I first talked about [here](https://dictionarry.dev/devlog/architecture_overhaul). There is still so (x10) much to be done in terms of bugs & polish & new features, but I'm happy sharing it as is. Hopefully you can all find some benefit in using it too :) \n\nYou can read our setup guide [here](https://dictionarry.dev/wiki/profilarr-setup). It's available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.\n### Database 💾\n\nAlong with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: \n- @Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It's a huge change that I haven't been able to fully test myself, but I've merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the `scoring-refactor` branch in Profilarr. Please direct any issues / improvements to the database's [Issue Tracker](https://github.com/Dictionarry-Hub/database).\n- I'm personally not too happy with the state of the current database - poorly named files and renames/imports weren't taken into enough consideration and it's causing way too many download loops. I'm still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. \n\n### Tweaks 🔧\n\nI talked about tweaks in detail [here](https://dictionarry.dev/devlog/profile_tweaks) and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it's an interesting system. In practice, it's confusing and really hard to program for. It's meant to be a database agnostic feature, but was hardcoded into Profilarr's profile system. I'm going to keep this feature on the roadmap as a maybe for now, but I'm going to have to completely rethink how to implement it from the ground up. \n\n## What's Next? 👉\n\nHere's a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. \n\n### Profilarr\n\n- Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them\n- Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you'll be able to connect to multiple at once and build off them as you please (or just link a complete one). \n- Everything on the issue tracker: https://github.com/Dictionarry-Hub/profilarr/issues\n\n### Database\n\n- Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the [Encode Efficiency Index](https://dictionarry.dev/wiki/EEi) to prioritise HEVC releases. \n- Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer & better sources. I'm not personally into that much anime, so I'm going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I'll get back to you when I can!)\n- Better Streaming Service Grab Logic - This is already partially improved in Seraphys' refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. \n\n## Housekeeping 🧹\n\nWe've had an influx of new members over the past couple weeks, so I'd like to welcome you all to our discord 👋 Come say hey in #general if you haven't already. \n\n### Moderation, Wiki, Support 🤝\n\n- I'd like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. \n- The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. \n- I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. [here](https://github.com/Dictionarry-Hub/profilarr/issues) and [here](https://github.com/Dictionarry-Hub/database)\n\n### Donations 💸\n\nIf you've donated and would like a special 'Donor' role badge here on discord, please shoot me a PM. \n\n### Taking a Break ⏸️\n\nI want to let everyone know that I'll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I'm quite burnt out. I'm trying very hard to balance full time study with development, but they unfortunately just don't mesh the way I hoped they would. I can't not work at 100% for either, so something had to give and for the past month or so, that's been my sleep and sanity. I unfortunately can't delay my semester (as much as I want to), so I'm going to have to dial down the time I spend on Dictionarry/Profilarr. I think I'm going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I'll slowly pick up speed again. Couple of specific points I want to mention here:\n- I'm going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn't happen on time. The defacto answer to any ETA questions from now on will be \"when it's ready\". \n- I've been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven't forgotten about you and will get back when I have the time. If it's been a while, shoot me a PM or something as a reminder ~ I'll still be active on discord during my break. \n\n### Thank You 🙏\n\nThis project has grown tremendously in scope in the last year and that's not possible without a community, so big thanks from me to all of you. I'm still figuring all of this out as I go along so it's kind of unbelievable how many people are using a tool that once only existed in my head. \n\nCheers, everyone. \n\n",
-      "navigation": [
-        {
-          "title": "What's New? 👈",
-          "children": [
-            "Database 💾",
-            "Tweaks 🔧"
-          ]
-        },
-        {
-          "title": "What's Next? 👉",
-          "children": [
-            "Profilarr",
-            "Database"
-          ]
-        },
-        {
-          "title": "Housekeeping 🧹",
-          "children": [
-            "Moderation, Wiki, Support 🤝",
-            "Donations 💸",
-            "Taking a Break ⏸️",
-            "Thank You 🙏"
-          ]
-        }
-      ],
-      "searchText": "profilarr is in beta hey everyone long awaited dev log what s new many people are already aware but i thought i should formally announce here on discord that profilarr is out in beta i ve been working on it sin hey everyone long awaited dev log what s new many people are already aware but i thought i should formally announce here on discord that profilarr is out in beta i ve been working on it since around july last year and put in a massive effort over the christmas break to get it working even though it s not nearly as stable as i would like it to be it implements the core architecture i first talked about here there is still so x10 much to be done in terms of bugs polish new features but i m happy sharing it as is hopefully you can all find some benefit in using it too you can read our setup guide here it s available as a community app on unraid and as a docker image for both arm apple silicon raspberry pi and x86 database along with profilarr the dictionarry database has also got an overhaul we introduced the new encode efficiency index 2160p quality and balanced profiles as well as other small improvements like editions repacks and freeleech here are some scattered thoughts that you might also be interested in seraphys has been working on a scoring refactor that introduces 720p fallback fixes streaming service names and groups similar releases together better it s a huge change that i haven t been able to fully test myself but i ve merged it into a separate branch because i know people are pretty antsy to start testing themselves anyone is free to give it a try you just have to switch to the scoring refactor branch in profilarr please direct any issues improvements to the database s issue tracker i m personally not too happy with the state of the current database poorly named files and renames imports weren t taken into enough consideration and it s causing way too many download loops i m still trying to figure out exactly how i want to tackle these problems but i just want people to know that it is on my mind and it will be improved in future tweaks i talked about tweaks in detail here and had actually implemented some of them into profilarr but decided to remove them at the last minute on paper it s an interesting system in practice it s confusing and really hard to program for it s meant to be a database agnostic feature but was hardcoded into profilarr s profile system i m going to keep this feature on the roadmap as a maybe for now but i m going to have to completely rethink how to implement it from the ground up what s next here s a non comprehensive list of what you can expect me to work on now that profilarr is in beta profilarr media management sync databases will be able to implement their own media management settings quality sliders rename templates delay profiles etc and use profilarr to sync them multi database support refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them this lets profile databases exist independently of format databases and that independently of regex databases this way you ll be able to connect to multiple at once and build off them as you please or just link a complete one everything on the issue tracker https github com dictionarry hub profilarr issues database efficiency profiles 1080p efficient 10 1080p efficient 22 5 and 2160p efficient will use the encode efficiency index to prioritise hevc releases anime support likely just quality profiles but i also want to explore alternative options that better support dynamic needs we likely want to make release group tiers but also figure out a way to prioritise releases from newer better sources i m not personally into that much anime so i m going to need as much input as i can get from you guys please start those conversations if you want something to be considered some have already asked i ll get back to you when i can better streaming service grab logic this is already partially improved in seraphys refactor but i would also like to add support for more streaming services and revise the interaction between release groups and sources housekeeping we ve had an influx of new members over the past couple weeks so i d like to welcome you all to our discord come say hey in general if you haven t already moderation wiki support i d like to introduce seraphys as our first moderator and designated detail devotee big claps all around the rules faq links among others are very out of date and will be getting a refresh soon stay tuned for those updates i will likely be closing the support post channels soon and replacing them with a single simpler text channel and removing the bot integration for any basic support please message us over there but for any major issues please redirect your queries to our issue trackers on github from now on here and here donations if you ve donated and would like a special donor role badge here on discord please shoot me a pm taking a break i want to let everyone know that i ll be taking a break for a little while i spent the majority of the past 4 5 months working on profilarr and i m quite burnt out i m trying very hard to balance full time study with development but they unfortunately just don t mesh the way i hoped they would i can t not work at 100 for either so something had to give and for the past month or so that s been my sleep and sanity i unfortunately can t delay my semester as much as i want to so i m going to have to dial down the time i spend on dictionarry profilarr i think i m going to do a proper break no dev at all for a couple weeks at least until my easter break then i ll slowly pick up speed again couple of specific points i want to mention here i m going to stop giving etas for things they always take longer than i expect them to which puts pressure on me and probably disappoints you guys when something inevitably doesn t happen on time the defacto answer to any eta questions from now on will be when it s ready i ve been pretty scatterbrained lately so if someone is waiting on a message from me just know that i haven t forgotten about you and will get back when i have the time if it s been a while shoot me a pm or something as a reminder i ll still be active on discord during my break thank you this project has grown tremendously in scope in the last year and that s not possible without a community so big thanks from me to all of you i m still figuring all of this out as i go along so it s kind of unbelievable how many people are using a tool that once only existed in my head cheers everyone",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "profilarr",
-        "database",
-        "housekeeping"
-      ],
-      "filename": "Profilarr is in Beta 🚀.md",
-      "lastModified": "2025-06-30T18:13:38.032Z"
-    },
-    {
-      "id": "devlogs-profile-selector-v3",
-      "path": "/devlogs/profile-selector-v3",
-      "type": "markdown",
-      "slug": "profile-selector-v3",
-      "category": "devlogs",
-      "title": "Profile Selector v3",
-      "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
-      "frontmatter": {
-        "title": "Profile Selector v3",
-        "slug": "profile_selector_v3",
-        "author": "santiagosayshey",
-        "created": "2024-6-2",
-        "tags": [
-          "devlog",
-          "profile_selector",
-          "website"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone , thought I&#39;d make a channel to share some development logs."
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break..."
-        },
-        {
-          "type": "paragraph",
-          "content": "Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder."
-        },
-        {
-          "type": "paragraph",
-          "content": "The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc."
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a funny tidbit from development:"
-        },
-        {
-          "type": "paragraph",
-          "content": "I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work.."
-        },
-        {
-          "type": "paragraph",
-          "content": "Behold: Frankenstein&#39;s Triangle."
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\">"
-        }
-      ],
-      "markdown": "\nhey @everyone , thought I'd make a channel to share some development logs.\n\nI've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would take a break...\n\nAnyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It's not hooked up to the database yet, so random strings are being used as a placeholder.\n\nThe good thing about this design is that it's really modular. Once I finish the 'beginner' version of it, I'll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.\n\nHere's how it looks right now (obvious disclaimer that final version will look much much better):\n\n![Selector Proof of Concept](https://streamable.com/2uprnl)\n\nHere's a funny tidbit from development:\n\nI tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn't quite work..\n\nBehold: Frankenstein's Triangle.\n\n![Frankenstein's Triangle](https://streamable.com/z70sj8)\n",
-      "navigation": [
-        "Overview"
-      ],
-      "searchText": "profile selector v3 hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would tak hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would take a break anyways after designing profile selector v3 in figma for the past couple months i started work on actually implementing it let me tell you that drawing shapes is much much easier than coding them after a couple days of regretting not paying attention in high school trigonometry i have the basic functionality in place we have three data points which represent each of the requirements quality efficiency compatibility the user can select points on each of the axes and each combination is used to recommend a profile it s not hooked up to the database yet so random strings are being used as a placeholder the good thing about this design is that it s really modular once i finish the beginner version of it i ll be able to add an advanced mode which can be used to select any kind of requirement resolution hdr audio etc here s how it looks right now obvious disclaimer that final version will look much much better selector proof of concept here s a funny tidbit from development i tried writing some animation styling to make the inner polygon look like its stretching as opposed to instant static movement it didn t quite work behold frankenstein s triangle frankenstein s triangle",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "profile_selector",
-        "website"
-      ],
-      "filename": "Profile Selector v3.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-profile-tweaks",
-      "path": "/devlogs/profile-tweaks",
-      "type": "markdown",
-      "slug": "profile-tweaks",
-      "category": "devlogs",
-      "title": "Profile Tweaks",
-      "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
-      "frontmatter": {
-        "title": "Profile Tweaks",
-        "slug": "profile_tweaks",
-        "author": "santiagosayshey",
-        "created": "2024-12-3",
-        "tags": [
-          "devlog",
-          "architecture",
-          "user_choice"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!"
-        },
-        {
-          "type": "paragraph",
-          "content": "The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with."
-        },
-        {
-          "type": "paragraph",
-          "content": "Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Prefer Freeleech"
-            },
-            {
-              "content": "Allow Prereleases (CAMS, Screeners, etc)"
-            },
-            {
-              "content": "Language Strictness"
-            },
-            {
-              "content": "Allow Lossless audio"
-            },
-            {
-              "content": "Allow Dolby Vision without Fallback"
-            },
-            {
-              "content": "Allow bleeding edge codecs (AV-1, H266)"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles)."
-        },
-        {
-          "type": "paragraph",
-          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr Progress",
-          "id": "profilarr-progress"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look."
-            },
-            {
-              "content": "Git integration is complete and working, but needs lots of testing."
-            },
-            {
-              "content": "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr."
-            },
-            {
-              "content": "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc."
-            },
-            {
-              "content": "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!\n\nThe profiles we make are meant to be (really good) starting points, not a strict standard on what you _should_ be grabbing. Up until now, profiles existed as singular entities that don't respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it's a bit more hands on, and not something I expect most people to engage with.\n\nEnter 'Profile Tweaks'. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:\n\n- Prefer Freeleech\n- Allow Prereleases (CAMS, Screeners, etc)\n- Language Strictness\n- Allow Lossless audio\n- Allow Dolby Vision without Fallback\n- Allow bleeding edge codecs (AV-1, H266)\n\n(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n## Profilarr Progress\n\n- Progress is steady, I've been working on it every day since my semester ended. It's taken way, way longer than I've expected (sorry!) but I'm happy with how it's starting to look.\n- Git integration is complete and working, but needs lots of testing.\n- Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.\n- I am currently in the progress of porting existing data to the new database (https://github.com/Dictionarry-Hub/database/tree/stable) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.\n- Finally, I am starting to work on the compilation engine (https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049) and the import module. Once these things are complete, and I'm confident we won't run into massive bugs, I'll release a beta docker image. ETA? I really don't know, but I'm working as hard as I can.\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n![Profile Tweaks](https://i.imgur.com/fzbmJSn.png)\n",
-      "navigation": [
-        "Profilarr Progress"
-      ],
-      "searchText": "profile tweaks hey everyone i ve been hard at work on the next profilarr version over the past few weeks and have new stuff to show off the profiles we make are meant to be really good starting points not a st hey everyone i ve been hard at work on the next profilarr version over the past few weeks and have new stuff to show off the profiles we make are meant to be really good starting points not a strict standard on what you should be grabbing up until now profiles existed as singular entities that don t respect custom changes merge conflict resolution was a big step in the right direction for this read more in the last dev log but it s a bit more hands on and not something i expect most people to engage with enter profile tweaks these are simple check boxes you can enable disable and are unique to your profiles they will always be respected regardless of what updates we make to the base profile for now these tweaks include prefer freeleech allow prereleases cams screeners etc language strictness allow lossless audio allow dolby vision without fallback allow bleeding edge codecs av 1 h266 some are only available for specific profiles eg lossless audio for 1080p encode profiles if anyone has any tweak ideas even super specific ones please let me know and i ll work on getting it integrated here s an image of the tweaks tab profilarr progress progress is steady i ve been working on it every day since my semester ended it s taken way way longer than i ve expected sorry but i m happy with how it s starting to look git integration is complete and working but needs lots of testing data modules custom formats regex patterns quality profiles are complete and fully implement the existing logic from radarr sonarr i am currently in the progress of porting existing data to the new database https github com dictionarry hub database tree stable in the new profilarr standard format this is going to take a while as i have to write descriptions add tags test cases etc finally i am starting to work on the compilation engine https discord com channels 1202375791556431892 1246504849265266738 1272756617041154049 and the import module once these things are complete and i m confident we won t run into massive bugs i ll release a beta docker image eta i really don t know but i m working as hard as i can if anyone has any tweak ideas even super specific ones please let me know and i ll work on getting it integrated here s an image of the tweaks tab profile tweaks",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "user_choice"
-      ],
-      "filename": "Profile Tweaks.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-shiny-new-stuff",
-      "path": "/devlogs/shiny-new-stuff",
-      "type": "markdown",
-      "slug": "shiny-new-stuff",
-      "category": "devlogs",
-      "title": "Shiny New Stuff",
-      "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
-      "frontmatter": {
-        "title": "Shiny New Stuff",
-        "slug": "shiny_new_stuff",
-        "author": "santiagosayshey",
-        "created": "2024-8-19",
-        "tags": [
-          "devlog",
-          "architecture"
-        ],
-        "readingTime": 5
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone, hope you guys are well. Here&#39;s another update!"
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Motivation",
-          "id": "motivation"
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Profilarr v2 (not really v2 but it sounded cool)",
-          "id": "profilarr-v2-not-really-v2-but-it-sounded-cool"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "It's now a full stack application.",
-          "id": "its-now-a-full-stack-application"
-        },
-        {
-          "type": "paragraph",
-          "content": "This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format."
-            },
-            {
-              "content": "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc."
-            },
-            {
-              "content": "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore."
-            },
-            {
-              "content": "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items."
-            },
-            {
-              "content": "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete."
-            },
-            {
-              "content": "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!"
-            },
-            {
-              "content": "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously."
-            },
-            {
-              "content": "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Backend Improvements",
-          "id": "backend-improvements"
-        },
-        {
-          "type": "paragraph",
-          "content": "The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<strong>Git integration</strong>: You can select a remote repository to connect to and:",
-              "children": [
-                {
-                  "content": "Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded."
-                },
-                {
-                  "content": "<strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches."
-                },
-                {
-                  "content": "<strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop."
-                },
-                {
-                  "content": "<strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Containerisation",
-          "id": "containerisation"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr will FINALLY be dockerised."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Development",
-          "id": "development"
-        },
-        {
-          "type": "paragraph",
-          "content": "With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Machine Learning",
-          "id": "machine-learning"
-        },
-        {
-          "type": "paragraph",
-          "content": "This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI."
-        },
-        {
-          "type": "paragraph",
-          "content": "I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry."
-        },
-        {
-          "type": "paragraph",
-          "content": "Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!"
-        },
-        {
-          "type": "paragraph",
-          "content": "Anyway, here&#39;s some images of profilarr v2."
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Regex Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Custom Format Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Status Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "Of course, everything is still a heavy work in progress."
-        },
-        {
-          "type": "paragraph",
-          "content": "That&#39;s all for today!"
-        }
-      ],
-      "markdown": "\nhey @everyone, hope you guys are well. Here's another update!\n\n# Motivation\n\nI've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I've felt especially motivated to dive back in.\n\n# Profilarr v2 (not really v2 but it sounded cool)\n\nProfilarr is getting some really nice upgrades. Here's an outline of the most important ones:\n\n## It's now a full stack application.\n\nThis means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It's built in a way that aims to 'remaster' how it's implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:\n\n- **Single definition format**: As outlined in the previous dev log, Profilarr's version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.\n- **Sorting and Filtering**: You can now sort and filter items by title, date modified, etc.\n- **Exporting/Importing**: The standard format now allows _everyone_ to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.\n- **Syncing**: Instead of clogging up everyone's arrs with unused custom formats, the sync functionality now only imports _used_ items.\n- **Mass selection**: You can mass select items to import/export/sync/delete.\n- **Tags**: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!\n- **Testing**: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.\n- **Descriptions**: You can now explain what specific items are for. No need to look it up on the website to see what it does.\n\n## Backend Improvements\n\nThe backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:\n\n- **Git integration**: You can select a remote repository to connect to and:\n  - Add, commit, and push files; branch off; merge into. This isn't that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I've ever coded.\n  - **Branching**: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.\n  - **Pulling**: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.\n  - **External sources**: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I'll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It'll probably take some tweaking, but I know it's definitely possible now.\n\n## Containerisation\n\nProfilarr will FINALLY be dockerised.\n\n# Development\n\nWith these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.\n\n## Machine Learning\n\nThis part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I've read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. \"How do I write a custom format that matches x265 releases under size x?\" It's so easily solved using AI.\n\nI want to implement this one day, I just don't have enough knowledge or experience to do it yet. The best I've come up with is something that sends a request to OpenAI's API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people's needs. Who knows if it ever gets to that point, but that's my vision for Dictionarry.\n\nRamble over, as you can tell I've been feeling pretty motivated lately!\n\nAnyway, here's some images of profilarr v2.\n\n**Regex Page**:\n\n![Regex Page](https://i.imgur.com/kMZ9qII.png)\n\n**Custom Format Page**:\n\n![Custom Format Page](https://i.imgur.com/mCyDxId.png)\n\n**Status Page**:\n\n![Status Page](https://i.imgur.com/ZleeOEF.png)\n\nOf course, everything is still a heavy work in progress.\n\nThat's all for today!\n",
-      "navigation": [
-        {
-          "title": "Motivation",
-          "children": []
-        },
-        {
-          "title": "Profilarr v2 (not really v2 but it sounded cool)",
-          "children": [
-            "It's now a full stack application.",
-            "Backend Improvements",
-            "Containerisation"
-          ]
-        },
-        {
-          "title": "Development",
-          "children": [
-            "Machine Learning"
-          ]
-        }
-      ],
-      "searchText": "shiny new stuff hey everyone hope you guys are well here s another update motivation i ve been really struggling to work on this project for a few months now i ll finally get some time at the end of the week bu hey everyone hope you guys are well here s another update motivation i ve been really struggling to work on this project for a few months now i ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour well after cracking the architecture problem last week and seeing all the support from you guys i ve felt especially motivated to dive back in profilarr v2 not really v2 but it sounded cool profilarr is getting some really nice upgrades here s an outline of the most important ones it s now a full stack application this means we have a frontend a site that users can visit to adjust import and export regexes custom formats and quality profiles it s built in a way that aims to remaster how it s implemented in radarr sonarr all the existing functionality is there but with some really nice quality of life features single definition format as outlined in the previous dev log profilarr s version of this system will use a single definition format notably this allows you to set regex patterns once then add that regex as a condition inside a custom format sorting and filtering you can now sort and filter items by title date modified etc exporting importing the standard format now allows everyone to import export regexes custom formats and quality profiles freely no need to query apis to do this anymore syncing instead of clogging up everyone s arrs with unused custom formats the sync functionality now only imports used items mass selection you can mass select items to import export sync delete tags instead of manual selection you can set tags on specific custom formats quality profiles that should be synced this works similar to how prowlarr uses tags to selectively sync indexers since we are also using the same database for the website tags can also be used for little tidbits of information too like where a release group is an internal at testing developers can now permalink regexes to regex101 this makes it really easy to develop and test simultaneously descriptions you can now explain what specific items are for no need to look it up on the website to see what it does backend improvements the backend is essentially what profilarr is right now a tool to sync some json files to your arrs however this also has some major improvements git integration you can select a remote repository to connect to and add commit and push files branch off merge into this isn t that useful for end users but i cannot stress enough how much time and suffering this has saved me being able to revert regex custom format quality profiles to the last commit is my favorite thing i ve ever coded branching you can have different branches for different things of course this is useful for development but it also allows you to do things like separate setups for radarr sonarr lidarr most importantly it allows us developers to set stable dev and feature branches pulling you can now pull in changes from specific branches from a remote repository you can view differences and decide if you want to pull these changes in you can set it to be automatic and only alert on merge conflicts you change something but an incoming change for that item exists as well you can choose to get the most stable branch or the latest features merged into develop external sources you can set your own repo of regexes custom formats and quality profiles and share it with whoever you want as i mentioned in my last dev log i ll be working on a compiler to convert our standard profilarr format with the existing arr format the really cool thing about this is it works both ways this means the git integration compiler will allow you to use profilarr with the trash guides it ll probably take some tweaking but i know it s definitely possible now containerisation profilarr will finally be dockerised development with these changes in place it has massively improved and sped up development working in a proprietary tool now allows me the freedom to just implement a feature whenever i want to want to filter custom formats with the release tier tag boom implemented want to auto apply scores to custom formats in quality profiles based on tags boom implemented machine learning this part is mostly speculation and rambling nothing concrete yet i really want to incorporate some kind of ai help into profilarr a button you can press to auto generate regex or a custom format i ve read countless reddit posts of someone unfamiliar with regex custom formats profiles asking for help in trying to learn how do i write a custom format that matches x265 releases under size x it s so easily solved using ai i want to implement this one day i just don t have enough knowledge or experience to do it yet the best i ve come up with is something that sends a request to openai s api with a prompt the results are less than ideal but just imagine the future where some kind of machine learning tool has access to an entire database of regexes custom formats and quality profiles curated by hundreds of people and can use that knowledge to predict patterns and truly tailor stuff to suit people s needs who knows if it ever gets to that point but that s my vision for dictionarry ramble over as you can tell i ve been feeling pretty motivated lately anyway here s some images of profilarr v2 regex page regex page custom format page custom format page status page status page of course everything is still a heavy work in progress that s all for today",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture"
-      ],
-      "filename": "Shiny New Stuff.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-vision-almost-realised",
-      "path": "/devlogs/vision-almost-realised",
-      "type": "markdown",
-      "slug": "vision-almost-realised",
-      "category": "devlogs",
-      "title": "Vision (Almost) Realised",
-      "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
-      "frontmatter": {
-        "title": "Vision (Almost) Realised",
-        "slug": "vision_almost_realised",
-        "author": "santiagosayshey",
-        "created": "2024-12-24T00:00:00.000Z",
-        "tags": [
-          "devlog",
-          "architecture",
-          "gppi"
-        ],
-        "readingTime": 3
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, small log for today!"
-        },
-        {
-          "type": "code",
-          "language": "bash",
-          "code": "$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS"
-        },
-        {
-          "type": "paragraph",
-          "content": "These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times."
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop."
-        },
-        {
-          "type": "paragraph",
-          "content": "It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Golden Popcorn Performance Index Changes",
-          "id": "golden-popcorn-performance-index-changes"
-        },
-        {
-          "type": "paragraph",
-          "content": "The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?"
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Popularity",
-          "id": "popularity"
-        },
-        {
-          "type": "paragraph",
-          "content": "For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)"
-        },
-        {
-          "type": "paragraph",
-          "content": "This process will be completely automatic and will hopefully solve the problem of new good release groups."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Grouping",
-          "id": "grouping"
-        },
-        {
-          "type": "paragraph",
-          "content": "The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Thank You!",
-          "id": "thank-you"
-        },
-        {
-          "type": "paragraph",
-          "content": "That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:"
-        }
-      ],
-      "markdown": "\nHey @everyone, small log for today!\n\n```bash\n$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS\n```\n\nThese two commands are the culmination of the architecture overhaul I talked about in August: https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049. The Profilarr standard format _**works**_. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.\n\nI'm currently in the process of hooking up the database to the new website, and that's looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.\n\nIt's taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I'm fairly happy with how it's turned out. The changes won't be all that evident right away for you guys, but it's going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.\n\n## Golden Popcorn Performance Index Changes\n\nThe current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren't simply because they have no data. How do we fix this?\n\n### Popularity\n\nFor every encode at a specific resolution for a movie / tv show that is currently _popular_, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)\n\nThis process will be completely automatic and will hopefully solve the problem of new good release groups.\n\n### Grouping\n\nThe previous 'tiers' for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter 'K Means Clustering'. Essentially it's just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I've dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.\n\n## Thank You!\n\nThat's all for today, I hope everyone's doing alright and enjoying the holidays :grinning:\n",
-      "navigation": [
-        {
-          "title": "Golden Popcorn Performance Index Changes",
-          "children": [
-            "Popularity",
-            "Grouping"
-          ]
-        },
-        "Thank You!"
-      ],
-      "searchText": "vision almost realised hey everyone small log for today bash python profile_compile py profiles 1080p encode yml 1080p encode sonarr master json s converted profile saved to 1080p encode sonarr master j hey everyone small log for today bash python profile_compile py profiles 1080p encode yml 1080p encode sonarr master json s converted profile saved to 1080p encode sonarr master json python importarr py importing quality profiles to sonarr master updating 1080p encode quality profile success these two commands are the culmination of the architecture overhaul i talked about in august https discord com channels 1202375791556431892 1246504849265266738 1272756617041154049 the profilarr standard format works a typical profile is now about 300 lines down from 1000 each for radarr sonarr is able to be compiled from psf to radarr or sonarr and back regex patterns allow format resolution so no more editing the same thing 5 10 20 times i m currently in the process of hooking up the database to the new website and that s looking pretty cool too i cannot even explain how good it feels to be able to edit a profile once inside profilarr push those changes directly from profilarr have those changes reflected as incoming changes for end users and as updated information on the website all in one fell swoop it s taken a huge effort the past 4 months and i still have to actually connect it to the backend but i m fairly happy with how it s turned out the changes won t be all that evident right away for you guys but it s going to save me and anyone who wants to contribute hours upon hours of development time for everything that i have planned golden popcorn performance index changes the current gppi algorithm is strong but fundamentally flawed it does not take into consideration release groups who have no data there are terrific new groups zorosenpai for example who should be tier 2 at least but aren t simply because they have no data how do we fix this popularity for every encode at a specific resolution for a movie tv show that is currently popular a release group receives 1 score to their gppi at the end of every month the score is reset and the previous score is normalized tbd on how and added to their permanent gppi score up to a certain point and probably never past tier 3 this process will be completely automatic and will hopefully solve the problem of new good release groups grouping the previous tiers for release groups was just natural intuitive grouping humans are surprisingly very very good at pattern recognition so it was never really a problem however it was manual and we dont like manual around here enter k means clustering essentially it s just a fancy algorithm that finds natural break points between groups of numbers using k means i ve dropped the number of 1080p tiers from 7 down to 5 which in turn has increased immutability small changes but will be important in the long run thank you that s all for today i hope everyone s doing alright and enjoying the holidays grinning",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "gppi"
-      ],
-      "filename": "Vision Almost Realised.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    {
-      "id": "devlogs-website-20",
-      "path": "/devlogs/website-20",
-      "type": "markdown",
-      "slug": "website-20",
-      "category": "devlogs",
-      "title": "Website 2.0",
-      "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
-      "frontmatter": {
-        "title": "Website 2.0",
-        "slug": "website2.0",
-        "author": "santiagosayshey",
-        "created": "2025-02-02T00:00:00.000Z",
-        "tags": [
-          "devlog",
           "website",
-          "profile_builder",
-          "eei",
-          "2160p",
-          "quality"
+          "personal",
+          "milestone"
         ],
-        "readingTime": 4
+        "readingTime": 2
       },
       "blocks": [
         {
           "type": "paragraph",
-          "content": "Hey everyone, medium-ish update today."
+          "content": "This dev log marks a rebirth for Dictionarry&#39;s documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, language and structure. Going forward, dev logs will be shorter and more frequent."
         },
         {
           "type": "header",
-          "level": 2,
-          "text": "Website 2.0",
-          "id": "website-20"
+          "level": 1,
+          "text": "Website 3.0",
+          "id": "website-30"
         },
         {
           "type": "paragraph",
-          "content": "I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:"
+          "content": "The old website sucked, I couldn&#39;t stand to look at it anymore (let alone work on it), so I rebuilt it from the ground up. It follows a more traditional documentation structure (dual navigation panes, actually functioning search) but integrates many custom components you won&#39;t see on static markdown generators. Many of the changes are superficial, don&#39;t actually help anyone, but were extremely fun to work on. Some of the notable changes are:"
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             {
-              "content": "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+              "content": "Better database entry pages with fancy tools"
+            },
+            {
+              "content": "Search"
+            },
+            {
+              "content": "Better navigation (more segmented pages with shareable sections)"
+            },
+            {
+              "content": "Refreshed Wizard (renamed from builder)"
+            },
+            {
+              "content": "An extremely overthought installation guide complete with videos"
+            },
+            {
+              "content": "Regex entries"
+            },
+            {
+              "content": "Media Management"
+            },
+            {
+              "content": "Discussion via <a href=\"https://utteranc.es/\">utterances</a>"
+            },
+            {
+              "content": "Built with svelte! "
             }
           ]
         },
         {
           "type": "paragraph",
-          "content": "This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is."
-        },
-        {
-          "type": "paragraph",
-          "content": "<a href=\"https://dictionarry.dev/\">Website 2.0</a>"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "The old site will go down soon, sorry if I broke anyone&#39;s workflows D:"
+          "content": "Time will tell if I end up doing 4.0, but I am for the most part happy with this version. There is so much that&#39;s gone into the search / wizard that 99% of people will never see (Bézier curves that resize dynamically, Elo based search using clicks) but I&#39;m glad I worked on it."
         },
         {
           "type": "header",
-          "level": 3,
-          "text": "Profile Selector?",
-          "id": "profile-selector"
+          "level": 1,
+          "text": "Burnout",
+          "id": "burnout"
         },
         {
           "type": "paragraph",
-          "content": "This idea has gone through many iterations since i started Dictionarry last year."
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>"
-            },
-            {
-              "content": "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>"
-            },
-            {
-              "content": "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
-            }
-          ]
+          "content": "I&#39;m really burnt out at the moment, progress is extremely slow and I&#39;m mostly only working on stuff that brings me joy (like this website!), so bear with me through all this. Dictionarry is my baby and it&#39;s not something I&#39;d ever consider abandoning (as stressful as it is sometimes). Database work is slow, Profilarr even slower, but we slowly march ahead in spite of it all. I&#39;m starting to pivot back to doing most of this work for myself to have fun, rather than building for the community. It seems a bit counter productive, but I think more meaningful work gets done this way."
         },
         {
           "type": "paragraph",
-          "content": "Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed."
-        },
-        {
-          "type": "paragraph",
-          "content": "Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Profile Builder!",
-          "id": "profile-builder"
-        },
-        {
-          "type": "paragraph",
-          "content": "In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a>"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\">"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Encode Efficiency Index",
-          "id": "encode-efficiency-index"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency."
-            },
-            {
-              "content": "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;"
-            },
-            {
-              "content": "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it."
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "No More Parsing Codecs!!!!",
-          "id": "no-more-parsing-codecs"
-        },
-        {
-          "type": "paragraph",
-          "content": "If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable"
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
-          "id": "2160p-quality-encode-profile-release-group-tierlist"
-        },
-        {
-          "type": "paragraph",
-          "content": "Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic."
-        },
-        {
-          "type": "paragraph",
-          "content": "This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>"
-            },
-            {
-              "content": "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "Thanks",
-          "id": "thanks"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Thanks to @seraphys for helping out with the profile creation / giving constant feedback."
-            },
-            {
-              "content": "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "Show them some love."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr",
-          "id": "profilarr"
-        },
-        {
-          "type": "paragraph",
-          "content": "Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)"
+          "content": "What&#39;s next? I have no idea!"
         }
       ],
-      "markdown": "\nHey everyone, medium-ish update today.\n\n## Website 2.0\n\nI've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:\n\n- Database gets an update -> Website sees its data is stale -> Website rebuilds itself with new data -> Santiago smiles in not needing to do anything\n\nThis all ties into the whole \"write once\" philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I'm happy to share it with you guys as it is.\n\n[Website 2.0](https://dictionarry.dev/)\n\n![website2.0](https://i.imgur.com/eORTwml.png)\n\nThe old site will go down soon, sorry if I broke anyone's workflows D:\n\n### Profile Selector?\n\nThis idea has gone through many iterations since i started Dictionarry last year.\n\n1. A static flowchart with not nearly enough information / choice: https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\n2. The \"Profile Selector\" (terrible name): https://selectarr.pages.dev/\n3. Frankenstein's triangle: [Discord Link](https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925)\n\nFrankenstein's triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the \"score\" of each profile on each of it's axes and finding the best fitting triangle that used the axis that was changed.\n\nResults were pretty good but I felt that it abstracted _too much_ of what made any user choice meaningful so I decided to scrap it.\n\n### Profile Builder!\n\nIn it's place is the \"Profile Builder\" (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It's pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -> resolution -> compression -> encode type -> codec -> HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the \"trying to get the profile I want\" issue as it starts pretty broad and gets increasingly more specific the more things you choose. It's up now, give it a playwith; let me know if its good / bad / needs changes: [Profile Buider](https://dictionarry.dev/builder)\n\n![Profile Builder](https://i.imgur.com/ka8KSHl.png)\n\n## Encode Efficiency Index\n\nHere we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres's the play-by-play:\n\n- It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.\n- It can discern transparency by targeting ratios at which a codec begins to \"saturate\"\n- It can discern efficiency by targeting ratios at which a codec reaches it's \"efficiency apex\"\n\nThis is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail [here](https://dictionarry.dev/wiki/EEi). Months of research and iteration has gone into this, and I really think this is Dictionarry's biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.\n\n#### No More Parsing Codecs!!!!\n\nIf you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don't have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable\n\n#### 2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!\n\nUsing EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No \"popular\" vote. Whenever something isn't documented, we simply add that movie / tv show to the data source and groupings update automatically. It's almost like magic.\n\nThis metric has made the 2160p Quality profile possible and i dare say it's the most comprehensive one I've worked on thus far. Give the quality profile and tier lists a read here:\n\n- [216p Quality Profile](https://dictionarry.dev/profiles/2160p-quality)\n- [2160p Quality Release Group Tiers](https://dictionarry.dev/tiers/2160p/quality)\n\n#### Thanks\n\n- Thanks to @seraphys for helping out with the profile creation / giving constant feedback.\n- Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn't been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.\n\nShow them some love.\n\n## Profilarr\n\nAlmost done, I took a break for a couple weeks to finish up the website but I'm gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It's hard to say how long this is gonna take since I'm basically learning it all on the fly so bare with me on this. But, it's almost done and a beta test will be out soon (hopefully)\n",
+      "markdown": "\nThis dev log marks a rebirth for Dictionarry's documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, language and structure. Going forward, dev logs will be shorter and more frequent. \n\n# Website 3.0\n\nThe old website sucked, I couldn't stand to look at it anymore (let alone work on it), so I rebuilt it from the ground up. It follows a more traditional documentation structure (dual navigation panes, actually functioning search) but integrates many custom components you won't see on static markdown generators. Many of the changes are superficial, don't actually help anyone, but were extremely fun to work on. Some of the notable changes are:\n- Better database entry pages with fancy tools\n- Search\n- Better navigation (more segmented pages with shareable sections)\n- Refreshed Wizard (renamed from builder)\n- An extremely overthought installation guide complete with videos\n- Regex entries\n- Media Management\n- Discussion via [utterances](https://utteranc.es/)\n- Built with svelte! \n\nTime will tell if I end up doing 4.0, but I am for the most part happy with this version. There is so much that's gone into the search / wizard that 99% of people will never see (Bézier curves that resize dynamically, Elo based search using clicks) but I'm glad I worked on it. \n\n# Burnout\n\nI'm really burnt out at the moment, progress is extremely slow and I'm mostly only working on stuff that brings me joy (like this website!), so bear with me through all this. Dictionarry is my baby and it's not something I'd ever consider abandoning (as stressful as it is sometimes). Database work is slow, Profilarr even slower, but we slowly march ahead in spite of it all. I'm starting to pivot back to doing most of this work for myself to have fun, rather than building for the community. It seems a bit counter productive, but I think more meaningful work gets done this way. \n\nWhat's next? I have no idea! ",
       "navigation": [
-        {
-          "title": "Website 2.0",
-          "children": [
-            {
-              "title": "Profile Selector?",
-              "children": []
-            },
-            {
-              "title": "Profile Builder!",
-              "children": []
-            }
-          ]
-        },
-        "Encode Efficiency Index",
-        "No More Parsing Codecs!!!!",
-        "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
-        "Thanks",
-        "Profilarr"
+        "Website 3.0",
+        "Burnout"
       ],
-      "searchText": "website 2 0 hey everyone medium ish update today website 2 0 i ve wanted to transition away from the old site mkdocs for a while now as its quite hard to maintain and keep everything up to date so i built a hey everyone medium ish update today website 2 0 i ve wanted to transition away from the old site mkdocs for a while now as its quite hard to maintain and keep everything up to date so i built a new site using next js that uses isr to rebuild its content using the dictionarry database basically this just means database gets an update website sees its data is stale website rebuilds itself with new data santiago smiles in not needing to do anything this all ties into the whole write once philosophy that i instilled with profilarr and has made development much easier there are still quite a few layout issues and perhaps a devlog refactor i need to fit in somewhere but i m happy to share it with you guys as it is website 2 0 website2 0 the old site will go down soon sorry if i broke anyone s workflows d profile selector this idea has gone through many iterations since i started dictionarry last year 1 a static flowchart with not nearly enough information choice https github com santiagosayshey website blob 030f3631b4f6fffdb7fa9f4696e5d12defc84a46 docs profiles flowchart png 2 the profile selector terrible name https selectarr pages dev 3 frankenstein s triangle discord link frankenstein s triangle was supposed to be what i shipped with the new website and i actually finished it too it worked by calculating the area of the efficiency quality compatibility triangle using some formula named after some guy i forget to guesstimate user choice based on their previous selection it did this by normalizing the score of each profile on each of it s axes and finding the best fitting triangle that used the axis that was changed results were pretty good but i felt that it abstracted too much of what made any user choice meaningful so i decided to scrap it profile builder in it s place is the profile builder maybe also a terrible name it still attempts to abstract audio video down into more quantifiable groupings but limits itself to explanations of certain things where more abstraction is detrimental it s pretty self explanatory once you use it but basically you choose through increasingly niche groupings resolution compression encode type codec hdr at each step a list of recommended profiles will be shown i think this new system helps to fix the trying to get the profile i want issue as it starts pretty broad and gets increasingly more specific the more things you choose it s up now give it a playwith let me know if its good bad needs changes profile buider profile builder encode efficiency index here we go meat and potatoes this is another release group metric just like the golden popcorn performance index heres s the play by play it evaluates release groups on their average compression ratio how big their encode is compared to a source to discern quality and or efficiency it can discern transparency by targeting ratios at which a codec begins to saturate it can discern efficiency by targeting ratios at which a codec reaches it s efficiency apex this is a heavily watered down explanation of the metric you can read about it with examples in very heavy detail here months of research and iteration has gone into this and i really think this is dictionarry s biggest asset so far when av1 profiles become a thing this metric is ready for it no more parsing codecs if you parse the efficiency of a release group directly then you know youre getting something at a file size you want this means we don t have to use h265 x265 as a ridiculous proxy baseline to find content we want anymore we can just downrank all h264 instead which is much more reliable 2160p quality encode profile release group tierlist using eei we target 4k release groups at 55 target ratio to discern transparency no golden popcorns needed no complex trump parsing crap no popular vote whenever something isn t documented we simply add that movie tv show to the data source and groupings update automatically it s almost like magic this metric has made the 2160p quality profile possible and i dare say it s the most comprehensive one i ve worked on thus far give the quality profile and tier lists a read here 216p quality profile 2160p quality release group tiers thanks thanks to seraphys for helping out with the profile creation giving constant feedback thanks to erphise for being a tester the catalyst for the creation of this metric if they hadn t been testing out the hevc profile we never would have talked about compression ratios which never meant i got the idea for the metric in the first place show them some love profilarr almost done i took a break for a couple weeks to finish up the website but i m gonna get rolling again soon i just finalized authentication database migrations and the pull module the only major thing left is getting everything ready for production this means setting up the docker image unraid template etc etc it s hard to say how long this is gonna take since i m basically learning it all on the fly so bare with me on this but it s almost done and a beta test will be out soon hopefully",
+      "searchText": "rebirth this dev log marks a rebirth for dictionarry s documentation everything prior to this entry has been burned to ashes none of it is bad per se but the writing is very inconsistent in tone languag dictionarry born again this dev log marks a rebirth for dictionarry s documentation everything prior to this entry has been burned to ashes none of it is bad per se but the writing is very inconsistent in tone language and structure going forward dev logs will be shorter and more frequent website 3 0 the old website sucked i couldn t stand to look at it anymore let alone work on it so i rebuilt it from the ground up it follows a more traditional documentation structure dual navigation panes actually functioning search but integrates many custom components you won t see on static markdown generators many of the changes are superficial don t actually help anyone but were extremely fun to work on some of the notable changes are better database entry pages with fancy tools search better navigation more segmented pages with shareable sections refreshed wizard renamed from builder an extremely overthought installation guide complete with videos regex entries media management discussion via utterances built with svelte time will tell if i end up doing 4 0 but i am for the most part happy with this version there is so much that s gone into the search wizard that 99 of people will never see b zier curves that resize dynamically elo based search using clicks but i m glad i worked on it burnout i m really burnt out at the moment progress is extremely slow and i m mostly only working on stuff that brings me joy like this website so bear with me through all this dictionarry is my baby and it s not something i d ever consider abandoning as stressful as it is sometimes database work is slow profilarr even slower but we slowly march ahead in spite of it all i m starting to pivot back to doing most of this work for myself to have fun rather than building for the community it seems a bit counter productive but i think more meaningful work gets done this way what s next i have no idea",
       "searchWeight": 0.6,
       "tags": [
-        "devlog",
         "website",
-        "profile_builder",
-        "eei",
-        "2160p",
-        "quality"
+        "personal",
+        "milestone"
       ],
-      "filename": "Website 2.0.md",
-      "lastModified": "2025-06-29T12:42:25.555Z"
+      "filename": "rebirth.md",
+      "lastModified": "2025-08-06T17:34:01.420Z"
+    },
+    {
+      "id": "devlogs-zzz",
+      "path": "/devlogs/zzz",
+      "type": "markdown",
+      "slug": "zzz",
+      "category": "devlogs",
+      "title": "zzz",
+      "description": "z z...",
+      "frontmatter": {
+        "title": "zzz",
+        "slug": "zzz",
+        "blurb": "zzz",
+        "author": "santiagosayshey",
+        "created": "2025-08-020",
+        "tags": [
+          "website",
+          "personal",
+          "milestone"
+        ],
+        "readingTime": 1
+      },
+      "blocks": [
+        {
+          "type": "header",
+          "level": 1,
+          "text": "z",
+          "id": "z"
+        },
+        {
+          "type": "paragraph",
+          "content": "z"
+        }
+      ],
+      "markdown": "\n\n# z\nz\n",
+      "navigation": [
+        "z"
+      ],
+      "searchText": "zzz z z zzz z z",
+      "searchWeight": 0.6,
+      "tags": [
+        "website",
+        "personal",
+        "milestone"
+      ],
+      "filename": "zzz.md",
+      "lastModified": "2025-08-06T17:36:04.616Z"
     }
   ],
   "routeMap": {
@@ -61532,23 +60079,6 @@ export const contentDatabase = {
       "type": "static",
       "slug": "media-management",
       "searchText": "media management configure media management settings",
-      "searchWeight": 0.7,
-      "navigation": []
-    },
-    "/devlogs": {
-      "id": "devlogs-index",
-      "path": "/devlogs",
-      "title": "Development Logs",
-      "description": "Timeline of development progress and updates",
-      "category": "devlogs",
-      "tags": [
-        "development",
-        "logs",
-        "timeline"
-      ],
-      "type": "static",
-      "slug": "development-logs",
-      "searchText": "development logs timeline of development progress and updates",
       "searchWeight": 0.7,
       "navigation": []
     },
@@ -119572,7 +118102,7 @@ export const contentDatabase = {
       "navigation": [
         "Overview"
       ],
-      "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
+      "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d a comparison of theatrical vs special edition cuts and which movies benefit from each format by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -120276,7 +118806,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "encode efficiency index this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal e this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal efficiency occurs in specific bitrate ranges by ranking these groups we effectively prioritize releases that maximize hevc s compression capabilities while maintaining quality at minimal file sizes what is a compression ratio a compression ratio is a made up metric that evaluates encodes against their sources we express this as the encoded file size as a percentage of its source size typically a remux or web dl for example movie source remux encode compression ratio movie a 40 gb 10 gb 25 movie b 30 gb 6 gb 20 movie c 50 gb 15 gb 30 why is this important understanding compression ratios helps balance two competing needs maintaining high video quality while minimizing file size modern codecs like hevc have a sweet spot where they deliver excellent quality with significant size savings finding this optimal point is crucial because storage and bandwidth are always limited resources going beyond certain bitrates provides diminishing quality returns different codecs have different efficiency curves release groups need clear standards for quality vs size trade offs what ratio is best there s no one size fits all answer when it comes to choosing the perfect compression ratio the best ratio depends entirely on your specific needs at 1080p space conscious users might prefer smaller files 5 10 of source with quality trade offs quality focused users might push towards higher quality 30 40 of source for transparency most users find a sweet spot in the middle however there are technical limits files larger than 40 for 1080p and 60 for 2160p provide no meaningful benefits why set maximum ratios of 40 and 60 the compression ratio ceilings are set based on different factors for 1080p and 2160p content 1080p 40 maximum the 40 ceiling for 1080p exists because we can roughly measure where hevc stops being efficient compared to avc we do this using two key video quality metrics vmaf analyzes how humans perceive video quality and scores it from 0 100 bd rate tells us how much smaller one encode is compared to another while maintaining the same quality level using these tools together shows us that hevc achieves 20 40 smaller files in the mid bitrate range 2 10 mbps for 1080p these space savings are consistent across different quality levels beyond this point both codecs achieve near identical quality at ratios above 40 avc becomes preferred due to better tooling and quality control 2160p 60 maximum the 60 ceiling for 2160p content is based on different considerations this is approximately where visual transparency becomes achievable higher ratios provide diminishing returns at this compression level content achieves vmaf scores above 95 storage efficiency becomes critical due to larger base file sizes quality improvements become increasingly subtle beyond this point read these articles to better understand how vmaf and bd rate tell us how efficient a codec is 1 2 how do we apply this index the ranking system works by calculating how close each release group streaming service comes to achieving a user s desired compression ratio this is done through a few key steps 1 delta calculation we calculate the absolute difference delta between a group s average compression ratio and the target ratio for example if a group averages 25 compression and our target is 20 their delta would be 25 20 5 percentage points 2 k means clustering we use k means clustering to automatically group release groups into tiers based on their deltas k means works by starting with k random cluster centers assigning each group to its nearest center recalculating centers based on group assignments repeating until stable example rankings 1080p examples example 1 users prioritizing storage efficiency 10 target users might choose this very aggressive compression target when managing large libraries on limited storage collecting complete series where total size is a major concern primarily viewing on mobile devices or smaller screens dealing with bandwidth caps or slow internet connections tier group efficiency delta 1 ivy 9 37 0 63 1 psa 7 89 2 11 2 vyndros 16 08 6 08 2 chivaman 16 80 6 80 2 amazon prime h 265 16 15 6 15 3 disney h 265 20 32 10 32 3 taoe 22 78 12 78 3 qxr 23 25 13 25 3 brian 25 16 15 16 3 movies anywhere h 265 26 05 16 05 4 mainframe 37 63 27 63 4 nan0 37 71 27 71 example 2 users seeking balanced quality and size 25 target this moderate compression target appeals to users who have reasonable storage capacity but still want efficiency watch on mid to large screens where quality becomes more noticeable want a good balance between visual quality and practical file sizes tier group efficiency delta 1 brian 25 16 0 16 1 movies anywhere h 265 26 05 1 05 1 qxr 23 25 1 75 1 taoe 22 78 2 22 2 disney h 265 20 32 4 68 3 amazon prime h 265 16 15 8 85 3 chivaman 16 80 8 20 3 vyndros 16 08 8 92 3 mainframe 37 63 12 63 3 nan0 37 71 12 71 4 ivy 9 37 15 63 4 psa 7 89 17 11 2160p examples example 3 extreme space saving 20 target this aggressive 2160p compression appeals to users who want to maintain a 4k library on limited storage primarily view content at typical viewing distances where subtle quality differences are less noticeable need to conserve bandwidth while still enjoying 4k resolution have a large collection of 4k content and need to balance quality with practical storage constraints todo examples example 4 balanced 4k 40 target this middle ground approach is ideal for users who have decent storage capacity but still want reasonable efficiency watch on larger screens where quality differences become more apparent want to maintain high quality while still keeping files manageable need reliable hdr performance without excessive file sizes todo examples example 5 near transparent quality 60 target this higher bitrate target is chosen by users who have ample storage and prioritize maximum quality consciously watch on high end displays where subtle quality differences are noticeable want to maintain archive quality collections focus on difficult to encode content where compression artifacts are more visible todo examples these examples demonstrate how different groups excel at different target ratios and how streaming services tend to maintain consistent compression approaches regardless of user preferences the rankings help users quickly identify which releases will best match their specific quality and size requirements frequently asked questions question answer why not just detect h265 x265 releases isn t that simpler this is a common misconception that hevc smaller better while it s true that hevc x265 can achieve better compression than avc x264 simply detecting the codec tells us nothing about the actual efficiency of the specific encode a poorly encoded hevc release can be larger and lower quality than a well tuned x264 encode by focusing on compression ratio instead of codec detection we measure what actually matters how efficiently the release uses storage space while maintaining quality this approach has several advantages br br it rewards efficient encodes regardless of codec choice br it catches inefficient hevc encodes that waste space br it avoids the complexity of parsing inconsistent hevc labeling h265 x265 br it future proofs the system for newer codecs like av1 where we can simply adjust our codec ranking priorities av1 hevc avc while still maintaining the core efficiency metric br br think of it this way users don t actually care what codec is used they care about getting high quality video at reasonable file sizes our metric measures this directly instead of using codec choice as an unreliable proxy but doesn t this ignore quality the current encoding landscape places tremendous emphasis on maximizing absolute quality often treating file size as a secondary concern this metric aims to challenge that or at least find a middle ground we care about quality hence why we use proper sources as our baseline and consider vmaf scores but we acknowledge that most users only care about getting file sizes they actually want and not the marginal quality improvements you get from encoding from a remux compared to a web dl rather than taking either extreme position quality above all or smaller is always better we focus on efficiency getting the best practical quality for any given file size target this approach will not satisfy quality enthusiasts but it better serves the needs of most users what if the source is not a 1080p remux how do you tell this metric like any data driven system will never achieve 100 accuracy however we can parse various indicators beyond just the release group or streaming service to identify non remux sources for example we can identify when a non ds4k web dl or non webrip from a reputable group is likely sourced from another lossy encode rather than a remux we also maintain a manual tagging system to downrank certain release groups known for reencoding from non high quality sources groups like psa and megusta will be ranked lower in the system regardless of their efficiency scores due to their known practices how do you prefer hevc we actually approach this from the opposite direction instead of preferring hevc we downrank avc this is because hevc naming conventions are inconsistent groups use x265 and h265 interchangeably making them difficult to parse reliably in contrast avc is almost always labeled consistently as either x264 or h264 making it much easier to identify and downrank these releases why not consider releases above 40 efficiency for standard 1080p non hdr content above 40 compression ratio x264 and x265 perform nearly identically in terms of vmaf scores eliminating hevc s key advantages at this point x264 becomes the preferred choice across all metrics the encodes are easier to produce far more common and typically undergo more rigorous quality control there s simply no compelling reason to use hevc at these higher bitrates for standard 1080p content what about animated content animated content typically has different compression characteristics than live action it often achieves excellent quality at much lower bitrates due to its unique properties flat colors sharp edges less grain ideally we would use higher target ratios for live action and lower ones for animation however reliably detecting animated content programmatically is extremely challenging while we can sometimes identify anime by certain keywords or release group patterns western animation partial animation and cgi heavy content create too many edge cases for reliable detection for now we treat all content with the same metric acknowledging this as a known limitation of the system users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material perhaps via a duplicate profile at a different compression target why does transparency require 60 at 2160p compared to 40 at 1080p the higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency br br 1 increased color depth most 2160p content uses 10 bit color depth compared to 8 bit for standard 1080p content this 25 increase in bit depth requires more data to maintain precision in color gradients and prevent banding br br 2 hdr requirements 2160p content often includes hdr metadata which demands more precise encoding of brightness levels and color information the expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes br br 3 resolution scaling while 2160p has 4x the pixels of 1080p compression efficiency doesn t scale linearly higher resolution reveals more subtle details and film grain which require more data to preserve accurately br br these factors combine multiplicatively rather than additively which is why we need a 50 increase in the compression ratio ceiling from 40 to 60 to achieve similar perceptual transparency do all 2160p releases need 60 for transparency no the actual requirements vary significantly based on several factors br br 1 content type br animation might achieve transparency at 30 40 br digital source material like cgi heavy films often requires less br film based content with heavy grain needs the full 60 br br 2 hdr implementation br sdr 2160p content can often achieve transparency at lower ratios br dolby vision adds additional overhead compared to hdr10 br some hdr grades are more demanding than others br br 3 source quality br digital intermediate resolution 2k vs 4k br film scan quality and grain structure br original master s bit depth and color space br br 4 scene complexity br high motion scenes need more data br complex textures and patterns require higher bitrates br dark scenes with subtle gradients are particularly demanding 1 shen y 2020 bjontegaard delta rate metric medium innovation labs blog https medium com innovation labs blog bjontegaard delta rate metric c8c82c1bc42c 2 ling n antier m liu y yang x li z 2024 video quality assessment from fr to nr electronics 13 5 953 https www mdpi com 2079 9292 13 5 953",
+      "searchText": "encode efficiency index this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal e a data driven metric that measures how well release groups balance file size and quality in their encodes helping users find releases that match their storage and quality preferences this metric is aimed at identifying and ranking release groups based on their propensity to release encodes that meet certain compression ratios with particular focus on hevc releases where optimal efficiency occurs in specific bitrate ranges by ranking these groups we effectively prioritize releases that maximize hevc s compression capabilities while maintaining quality at minimal file sizes what is a compression ratio a compression ratio is a made up metric that evaluates encodes against their sources we express this as the encoded file size as a percentage of its source size typically a remux or web dl for example movie source remux encode compression ratio movie a 40 gb 10 gb 25 movie b 30 gb 6 gb 20 movie c 50 gb 15 gb 30 why is this important understanding compression ratios helps balance two competing needs maintaining high video quality while minimizing file size modern codecs like hevc have a sweet spot where they deliver excellent quality with significant size savings finding this optimal point is crucial because storage and bandwidth are always limited resources going beyond certain bitrates provides diminishing quality returns different codecs have different efficiency curves release groups need clear standards for quality vs size trade offs what ratio is best there s no one size fits all answer when it comes to choosing the perfect compression ratio the best ratio depends entirely on your specific needs at 1080p space conscious users might prefer smaller files 5 10 of source with quality trade offs quality focused users might push towards higher quality 30 40 of source for transparency most users find a sweet spot in the middle however there are technical limits files larger than 40 for 1080p and 60 for 2160p provide no meaningful benefits why set maximum ratios of 40 and 60 the compression ratio ceilings are set based on different factors for 1080p and 2160p content 1080p 40 maximum the 40 ceiling for 1080p exists because we can roughly measure where hevc stops being efficient compared to avc we do this using two key video quality metrics vmaf analyzes how humans perceive video quality and scores it from 0 100 bd rate tells us how much smaller one encode is compared to another while maintaining the same quality level using these tools together shows us that hevc achieves 20 40 smaller files in the mid bitrate range 2 10 mbps for 1080p these space savings are consistent across different quality levels beyond this point both codecs achieve near identical quality at ratios above 40 avc becomes preferred due to better tooling and quality control 2160p 60 maximum the 60 ceiling for 2160p content is based on different considerations this is approximately where visual transparency becomes achievable higher ratios provide diminishing returns at this compression level content achieves vmaf scores above 95 storage efficiency becomes critical due to larger base file sizes quality improvements become increasingly subtle beyond this point read these articles to better understand how vmaf and bd rate tell us how efficient a codec is 1 2 how do we apply this index the ranking system works by calculating how close each release group streaming service comes to achieving a user s desired compression ratio this is done through a few key steps 1 delta calculation we calculate the absolute difference delta between a group s average compression ratio and the target ratio for example if a group averages 25 compression and our target is 20 their delta would be 25 20 5 percentage points 2 k means clustering we use k means clustering to automatically group release groups into tiers based on their deltas k means works by starting with k random cluster centers assigning each group to its nearest center recalculating centers based on group assignments repeating until stable example rankings 1080p examples example 1 users prioritizing storage efficiency 10 target users might choose this very aggressive compression target when managing large libraries on limited storage collecting complete series where total size is a major concern primarily viewing on mobile devices or smaller screens dealing with bandwidth caps or slow internet connections tier group efficiency delta 1 ivy 9 37 0 63 1 psa 7 89 2 11 2 vyndros 16 08 6 08 2 chivaman 16 80 6 80 2 amazon prime h 265 16 15 6 15 3 disney h 265 20 32 10 32 3 taoe 22 78 12 78 3 qxr 23 25 13 25 3 brian 25 16 15 16 3 movies anywhere h 265 26 05 16 05 4 mainframe 37 63 27 63 4 nan0 37 71 27 71 example 2 users seeking balanced quality and size 25 target this moderate compression target appeals to users who have reasonable storage capacity but still want efficiency watch on mid to large screens where quality becomes more noticeable want a good balance between visual quality and practical file sizes tier group efficiency delta 1 brian 25 16 0 16 1 movies anywhere h 265 26 05 1 05 1 qxr 23 25 1 75 1 taoe 22 78 2 22 2 disney h 265 20 32 4 68 3 amazon prime h 265 16 15 8 85 3 chivaman 16 80 8 20 3 vyndros 16 08 8 92 3 mainframe 37 63 12 63 3 nan0 37 71 12 71 4 ivy 9 37 15 63 4 psa 7 89 17 11 2160p examples example 3 extreme space saving 20 target this aggressive 2160p compression appeals to users who want to maintain a 4k library on limited storage primarily view content at typical viewing distances where subtle quality differences are less noticeable need to conserve bandwidth while still enjoying 4k resolution have a large collection of 4k content and need to balance quality with practical storage constraints todo examples example 4 balanced 4k 40 target this middle ground approach is ideal for users who have decent storage capacity but still want reasonable efficiency watch on larger screens where quality differences become more apparent want to maintain high quality while still keeping files manageable need reliable hdr performance without excessive file sizes todo examples example 5 near transparent quality 60 target this higher bitrate target is chosen by users who have ample storage and prioritize maximum quality consciously watch on high end displays where subtle quality differences are noticeable want to maintain archive quality collections focus on difficult to encode content where compression artifacts are more visible todo examples these examples demonstrate how different groups excel at different target ratios and how streaming services tend to maintain consistent compression approaches regardless of user preferences the rankings help users quickly identify which releases will best match their specific quality and size requirements frequently asked questions question answer why not just detect h265 x265 releases isn t that simpler this is a common misconception that hevc smaller better while it s true that hevc x265 can achieve better compression than avc x264 simply detecting the codec tells us nothing about the actual efficiency of the specific encode a poorly encoded hevc release can be larger and lower quality than a well tuned x264 encode by focusing on compression ratio instead of codec detection we measure what actually matters how efficiently the release uses storage space while maintaining quality this approach has several advantages br br it rewards efficient encodes regardless of codec choice br it catches inefficient hevc encodes that waste space br it avoids the complexity of parsing inconsistent hevc labeling h265 x265 br it future proofs the system for newer codecs like av1 where we can simply adjust our codec ranking priorities av1 hevc avc while still maintaining the core efficiency metric br br think of it this way users don t actually care what codec is used they care about getting high quality video at reasonable file sizes our metric measures this directly instead of using codec choice as an unreliable proxy but doesn t this ignore quality the current encoding landscape places tremendous emphasis on maximizing absolute quality often treating file size as a secondary concern this metric aims to challenge that or at least find a middle ground we care about quality hence why we use proper sources as our baseline and consider vmaf scores but we acknowledge that most users only care about getting file sizes they actually want and not the marginal quality improvements you get from encoding from a remux compared to a web dl rather than taking either extreme position quality above all or smaller is always better we focus on efficiency getting the best practical quality for any given file size target this approach will not satisfy quality enthusiasts but it better serves the needs of most users what if the source is not a 1080p remux how do you tell this metric like any data driven system will never achieve 100 accuracy however we can parse various indicators beyond just the release group or streaming service to identify non remux sources for example we can identify when a non ds4k web dl or non webrip from a reputable group is likely sourced from another lossy encode rather than a remux we also maintain a manual tagging system to downrank certain release groups known for reencoding from non high quality sources groups like psa and megusta will be ranked lower in the system regardless of their efficiency scores due to their known practices how do you prefer hevc we actually approach this from the opposite direction instead of preferring hevc we downrank avc this is because hevc naming conventions are inconsistent groups use x265 and h265 interchangeably making them difficult to parse reliably in contrast avc is almost always labeled consistently as either x264 or h264 making it much easier to identify and downrank these releases why not consider releases above 40 efficiency for standard 1080p non hdr content above 40 compression ratio x264 and x265 perform nearly identically in terms of vmaf scores eliminating hevc s key advantages at this point x264 becomes the preferred choice across all metrics the encodes are easier to produce far more common and typically undergo more rigorous quality control there s simply no compelling reason to use hevc at these higher bitrates for standard 1080p content what about animated content animated content typically has different compression characteristics than live action it often achieves excellent quality at much lower bitrates due to its unique properties flat colors sharp edges less grain ideally we would use higher target ratios for live action and lower ones for animation however reliably detecting animated content programmatically is extremely challenging while we can sometimes identify anime by certain keywords or release group patterns western animation partial animation and cgi heavy content create too many edge cases for reliable detection for now we treat all content with the same metric acknowledging this as a known limitation of the system users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material perhaps via a duplicate profile at a different compression target why does transparency require 60 at 2160p compared to 40 at 1080p the higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency br br 1 increased color depth most 2160p content uses 10 bit color depth compared to 8 bit for standard 1080p content this 25 increase in bit depth requires more data to maintain precision in color gradients and prevent banding br br 2 hdr requirements 2160p content often includes hdr metadata which demands more precise encoding of brightness levels and color information the expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes br br 3 resolution scaling while 2160p has 4x the pixels of 1080p compression efficiency doesn t scale linearly higher resolution reveals more subtle details and film grain which require more data to preserve accurately br br these factors combine multiplicatively rather than additively which is why we need a 50 increase in the compression ratio ceiling from 40 to 60 to achieve similar perceptual transparency do all 2160p releases need 60 for transparency no the actual requirements vary significantly based on several factors br br 1 content type br animation might achieve transparency at 30 40 br digital source material like cgi heavy films often requires less br film based content with heavy grain needs the full 60 br br 2 hdr implementation br sdr 2160p content can often achieve transparency at lower ratios br dolby vision adds additional overhead compared to hdr10 br some hdr grades are more demanding than others br br 3 source quality br digital intermediate resolution 2k vs 4k br film scan quality and grain structure br original master s bit depth and color space br br 4 scene complexity br high motion scenes need more data br complex textures and patterns require higher bitrates br dark scenes with subtle gradients are particularly demanding 1 shen y 2020 bjontegaard delta rate metric medium innovation labs blog https medium com innovation labs blog bjontegaard delta rate metric c8c82c1bc42c 2 ling n antier m liu y yang x li z 2024 video quality assessment from fr to nr electronics 13 5 953 https www mdpi com 2079 9292 13 5 953",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -120341,7 +118871,7 @@ export const contentDatabase = {
       "navigation": [
         "Overview"
       ],
-      "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
+      "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer frequently asked questions pertaining to dictionarry profillar and all of its tooling this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -120446,7 +118976,7 @@ export const contentDatabase = {
         "The Decision Engine",
         "Formula"
       ],
-      "searchText": "golden popcorn performance index what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced te what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced team of golden popcorn checkers golden popcorns are the simplest way to quantify a subjective best encode the decision engine the golden popcorn performance index or gppi is a calculated metric pivotal to the transparent profile s decision making process it s engineered to rank release groups based on their propensity to release a golden popcorn encode at any given resolution r formula on first glance it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their golden popcorn ratio i e the number of golden popcorns divided by the total number of encodes for any given resolution r however if we were to take golden popcorn ratio at face value we might incorrectly prioritise a release group who has a high gp ratio but a low number of encodes on the opposite spectrum if we take the raw number of golden popcorns for any group we might incorrectly prioritise a group with a low gp ratio so instead we multiply the number of golden popcorns at resolution r for a given release group by a factor of said release group s golden popcorn ratio this essentially limits both metrics as a factor of each other for any given resolution r the gppi is defined as begin aligned text gppi r gper cdot left frac gper er right frac gper 2 er end aligned where text gppi _r is the golden popcorn performance index at resolution r gpe_r is the number of golden popcorns at resolution r e_r is the total number of encodes at resolution r",
+      "searchText": "golden popcorn performance index what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced te a data driven metric that identifies high quality release groups by analyzing their golden popcorn track record what are golden popcorns golden popcorns are very high quality encodes marked as such by one of the best private torrent trackers these releases are manually reviewed by a dedicated experienced team of golden popcorn checkers golden popcorns are the simplest way to quantify a subjective best encode the decision engine the golden popcorn performance index or gppi is a calculated metric pivotal to the transparent profile s decision making process it s engineered to rank release groups based on their propensity to release a golden popcorn encode at any given resolution r formula on first glance it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their golden popcorn ratio i e the number of golden popcorns divided by the total number of encodes for any given resolution r however if we were to take golden popcorn ratio at face value we might incorrectly prioritise a release group who has a high gp ratio but a low number of encodes on the opposite spectrum if we take the raw number of golden popcorns for any group we might incorrectly prioritise a group with a low gp ratio so instead we multiply the number of golden popcorns at resolution r for a given release group by a factor of said release group s golden popcorn ratio this essentially limits both metrics as a factor of each other for any given resolution r the gppi is defined as begin aligned text gppi r gper cdot left frac gper er right frac gper 2 er end aligned where text gppi _r is the golden popcorn performance index at resolution r gpe_r is the number of golden popcorns at resolution r e_r is the total number of encodes at resolution r",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -120755,7 +119285,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
+      "searchText": "casa os profilarr installation guide this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiar a simple guide to install profilarr in casa os as a custom app this guide walks through installing profilarr as a custom application in casa os prerequisites before starting ensure you have casa os installed and running tested with v0 4 15 basic familiarity with the casa os interface access to the profilarr github repository installation process adding a custom application 1 open your casa os dashboard in a web browser 2 click the icon in the top right corner of the app section 3 select install a customized app 4 click import in the top right corner of the settings page importing docker compose configuration 1 visit the profilarr github repository 2 navigate to the installation section 3 locate the docker compose recommended code block 4 copy the entire docker compose configuration 5 return to casa os and paste the code into the import text box note if you re not contributing to a database remove these lines to avoid errors env_file env optional only needed if contributing to a database 6 click submit and acknowledge any warnings by clicking ok configuring application settings most settings can remain at their default values adjust these as needed basic configuration setting value notes name profilarr customizable to your preference icon optional upload a custom icon web ui host device ip auto detected by casa os network storage setting default value description network bridge standard docker networking mode port 6868 tcp web interface port volumes default paths modify host paths for custom storage location environment variables variable required description example tz yes your timezone america new_york gitusername no github username for contributing yourname gituseremail no github email for contributing you example com profilarrpat no github personal access token ghpxxxxxxxxxxxx completing installation 1 click the install button after configuring all settings 2 wait for casa os to download and set up the container typically 2 5 minutes 3 once complete profilarr will appear on your casa os dashboard accessing profilarr click the profilarr icon on your dashboard to launch the application",
       "searchWeight": 0.8,
       "tags": [
         "wiki",
@@ -120862,7 +119392,7 @@ export const contentDatabase = {
           ]
         }
       ],
-      "searchText": "release group philosophy so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to first define what good even means to some people it could mean how well something looks on their screen or sounds through speakers we define this as quality to others it means how many releases they can download while still maintaining some kind of quality standard we define this as efficiency so that leads us to a new question how do we measure quality and efficiency you might think we d want to parse releases and find their technical properties resolution bitrate video audio codecs hdr etc release 1 25 2 gib blockbuster movie a 2022 hybrid 1080p webrip ddpa5 1 x264 group a release 2 27 3 gib blockbuster movie a 1080p webrip dd 7 1 x264 group b looking at these two releases you ll notice that they both have the exact same technical specification and would rank equally but they re different sizes so which is better using audio video properties to measure quality efficiency can be effective but is largely limited by the information that they convey you can t adequately answer which is better just by looking at these releases in isolation so how do we not look at these releases in isolation or rather how do we extrapolate information that isn t already there group tags our answer lies in the little bit of information at the end of every release it s group tag dictionarry tracks historic release group data in order to rank groups based on their propensity to reach quantifiable levels of quality and efficiency we do this using two metrics 1 golden popcorn performance index gppi how many golden popcorns a release group has as a ratio of their total number of releases 2 encode efficiency index eei the average size of a release group s encode compared to it s likely source these metrics are evidence based data driven and objective tl dr tl dr dictionarry simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement these release group rankings are built and maintained as custom formats to be scored in their respective quality profiles you can review these group rankings below",
+      "searchText": "release group philosophy so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to explore dictionarry s release group abstraction philosophy and what it actually means to simplify media automation so how does dictionarry actually simplify media automation well first we need to understand that we re trying to automate the subjective analysis of how good a release is to do that we need to first define what good even means to some people it could mean how well something looks on their screen or sounds through speakers we define this as quality to others it means how many releases they can download while still maintaining some kind of quality standard we define this as efficiency so that leads us to a new question how do we measure quality and efficiency you might think we d want to parse releases and find their technical properties resolution bitrate video audio codecs hdr etc release 1 25 2 gib blockbuster movie a 2022 hybrid 1080p webrip ddpa5 1 x264 group a release 2 27 3 gib blockbuster movie a 1080p webrip dd 7 1 x264 group b looking at these two releases you ll notice that they both have the exact same technical specification and would rank equally but they re different sizes so which is better using audio video properties to measure quality efficiency can be effective but is largely limited by the information that they convey you can t adequately answer which is better just by looking at these releases in isolation so how do we not look at these releases in isolation or rather how do we extrapolate information that isn t already there group tags our answer lies in the little bit of information at the end of every release it s group tag dictionarry tracks historic release group data in order to rank groups based on their propensity to reach quantifiable levels of quality and efficiency we do this using two metrics 1 golden popcorn performance index gppi how many golden popcorns a release group has as a ratio of their total number of releases 2 encode efficiency index eei the average size of a release group s encode compared to it s likely source these metrics are evidence based data driven and objective tl dr tl dr dictionarry simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement these release group rankings are built and maintained as custom formats to be scored in their respective quality profiles you can review these group rankings below",
       "searchWeight": 0.8,
       "tags": [
         "home",
@@ -120873,1591 +119403,155 @@ export const contentDatabase = {
       "filename": "release-group-philosophy.md",
       "lastModified": "2025-08-06T14:42:08.168Z"
     },
-    "/devlogs/architecture-overhaul": {
-      "id": "devlogs-architecture-overhaul",
-      "path": "/devlogs/architecture-overhaul",
+    "/devlogs/rebirth": {
+      "id": "devlogs-rebirth",
+      "path": "/devlogs/rebirth",
       "type": "markdown",
-      "slug": "architecture-overhaul",
+      "slug": "rebirth",
       "category": "devlogs",
-      "title": "Architecture Overhaul",
-      "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
+      "title": "Rebirth",
+      "description": "This dev log marks a rebirth for Dictionarry's documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, languag...",
       "frontmatter": {
-        "title": "Architecture Overhaul",
-        "slug": "architecture_overhaul",
+        "title": "Rebirth",
+        "slug": "rebirth",
+        "blurb": "Dictionarry, born again.",
         "author": "santiagosayshey",
-        "created": "2024-8-13",
+        "created": "2025-08-07T00:00:00.000Z",
         "tags": [
-          "devlog",
-          "architecture"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:"
-        },
-        {
-          "type": "paragraph",
-          "content": "As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool."
-        },
-        {
-          "type": "paragraph",
-          "content": "Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences."
-        },
-        {
-          "type": "paragraph",
-          "content": "Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups."
-        },
-        {
-          "type": "paragraph",
-          "content": "Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\">"
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Profile Selector",
-          "id": "profile-selector"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is."
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, here's a small update on what I've been working on lately:\n\nAs the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I've planned a complete overhaul of Dictionarry's architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.\n\nNext up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.\n\nWorking in this system is extremely error prone and time consuming. To fix this, I'm creating a standard unique to dictionarry based on a **single definition format**, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don't know exactly _how_ this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.\n\nNow, the problem with this new and improved standard is - the arrs won't be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!\n\nHere's a canvas page I made in Obsidian which visualizes this architecture:\n\n![Archiecture Diagram](https://i.imgur.com/HcXFNHU.png)\n\n# Profile Selector\n\nHere's an updated look at the new profile selector (WIP) in action. I'll leave explaining the selection algorithm for another day (because I'm still not quite happy with it), but I think it's still pretty cool to look at as is.\n\n![Selection Algorithm v1](https://streamable.com/bhi7h6)\n",
-      "navigation": [
-        "Profile Selector"
-      ],
-      "searchText": "architecture overhaul hey everyone here s a small update on what i ve been working on lately as the project has grown bigger it s gotten quite difficult to keep track of and manage a billion different custom formats q hey everyone here s a small update on what i ve been working on lately as the project has grown bigger it s gotten quite difficult to keep track of and manage a billion different custom formats quality profiles etc to help improve development productivity i ve planned a complete overhaul of dictionarry s architecture this starts with separating things into modules namely a separate database which powers the website and the profilarr tool next up is standardizing the actual entries inside the database the biggest issue in development right now is making editing updating the same thing multiple times if you have the same regex pattern for multiple cfs it needs to be updated for each one of them quality profiles across different apps have miniscule differences in syntax eg web dl in radarr vs web in sonarr which means we need multiple files with tiny differences working in this system is extremely error prone and time consuming to fix this i m creating a standard unique to dictionarry based on a single definition format i e regex patterns custom formats and quality profiles are defined once and repeated in other places using foreign keys i don t know exactly how this will look but the plan is simplicity above all outside of improving productivity i hope this standard helps encourage people who feel less confident with custom formats quality profiles make more intuitive changes to their own setups now the problem with this new and improved standard is the arrs won t be able to read the files anymore solution a compiler this is where the fun begins we take our simple easy to develop for files and push them through the compiler out pops the required syntax with those weird naming rules web dl for radarr web for sonarr without the developer needing to ever worry about it here s a canvas page i made in obsidian which visualizes this architecture archiecture diagram profile selector here s an updated look at the new profile selector wip in action i ll leave explaining the selection algorithm for another day because i m still not quite happy with it but i think it s still pretty cool to look at as is selection algorithm v1",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture"
-      ],
-      "filename": "Architecture Overhaul.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/markdown-test": {
-      "id": "devlogs-markdown-test",
-      "path": "/devlogs/markdown-test",
-      "type": "markdown",
-      "slug": "markdown-test",
-      "category": "devlogs",
-      "title": "Markdown Formatting Test",
-      "description": "A comprehensive test of all markdown formatting features",
-      "frontmatter": {
-        "title": "Markdown Formatting Test",
-        "date": "2024-12-30",
-        "description": "A comprehensive test of all markdown formatting features",
-        "readingTime": 3
-      },
-      "blocks": [
-        {
-          "type": "header",
-          "level": 1,
-          "text": "H1 Header - Main Title",
-          "id": "h1-header---main-title"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "H2 Header - Section Title",
-          "id": "h2-header---section-title"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "H3 Header - Subsection",
-          "id": "h3-header---subsection"
-        },
-        {
-          "type": "paragraph",
-          "content": "Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "H4 Header - SubSubsection",
-          "id": "h4-header---subsubsection"
-        },
-        {
-          "type": "paragraph",
-          "content": "Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Paragraph and Text Formatting",
-          "id": "paragraph-and-text-formatting"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text."
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Lists",
-          "id": "lists"
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Unordered List",
-          "id": "unordered-list"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "First item in the list"
-            },
-            {
-              "content": "Second item with more text"
-            },
-            {
-              "content": "Third item",
-              "children": [
-                {
-                  "content": "Nested item"
-                },
-                {
-                  "content": "Another nested item"
-                }
-              ]
-            },
-            {
-              "content": "Back to main levels"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Ordered List",
-          "id": "ordered-list"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "First numbered item"
-            },
-            {
-              "content": "Second numbered item"
-            },
-            {
-              "content": "Third numbered item",
-              "children": [
-                {
-                  "content": "Nested numbered item"
-                },
-                {
-                  "content": "Another nested numbered item"
-                }
-              ]
-            },
-            {
-              "content": "Back to main level"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Code Blocks",
-          "id": "code-blocks"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a code block with syntax:"
-        },
-        {
-          "type": "code",
-          "language": "javascript",
-          "code": "function testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}"
-        },
-        {
-          "type": "paragraph",
-          "content": "And here&#39;s a simple code block:"
-        },
-        {
-          "type": "code",
-          "language": "plaintext",
-          "code": "This is just plain text\nin a code block\nwith multiple lines"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Blockquotes",
-          "id": "blockquotes"
-        },
-        {
-          "type": "blockquote",
-          "content": "This is a blockquote. It should have a left border and italic styling.  It can span multiple lines and should look distinct from regular paragraphs."
-        },
-        {
-          "type": "blockquote",
-          "content": "Here&#39;s another blockquote to test spacing between them."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Links",
-          "id": "links"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Images",
-          "id": "images"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s an image (this will show as broken since it&#39;s a placeholder): <img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\">"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Tables (GitHub Flavored Markdown)",
-          "id": "tables-github-flavored-markdown"
-        },
-        {
-          "type": "table",
-          "headers": [
-            "Header 1",
-            "Header 2",
-            "Header 3"
-          ],
-          "rows": [
-            [
-              "Row 1, Col 1",
-              "Row 1, Col 2",
-              "Row 1, Col 3"
-            ],
-            [
-              "Row 2, Col 1",
-              "Row 2, Col 2",
-              "Row 2, Col 3"
-            ],
-            [
-              "Row 3, Col 1",
-              "Row 3, Col 2",
-              "Row 3, Col 3"
-            ]
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Horizontal Rule",
-          "id": "horizontal-rule"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s text before a horizontal rule."
-        },
-        {
-          "type": "paragraph",
-          "content": "---"
-        },
-        {
-          "type": "paragraph",
-          "content": "And here&#39;s text after the horizontal rule."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Line Breaks",
-          "id": "line-breaks"
-        },
-        {
-          "type": "paragraph",
-          "content": "This line should break right here (two spaces at end of line)."
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a new paragraph after the line break test."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Mixed Content Test",
-          "id": "mixed-content-test"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "List with Code and Links",
-          "id": "list-with-code-and-links"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "First item with <code>inline code</code>"
-            },
-            {
-              "content": "Second item with <a href=\"https://example.com\">a link</a>"
-            },
-            {
-              "content": "Third item with <strong>bold text</strong>"
-            },
-            {
-              "content": "Fourth item with <em>italic text</em>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Blockquote with Formatting",
-          "id": "blockquote-with-formatting"
-        },
-        {
-          "type": "blockquote",
-          "content": "This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.  It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test complex formatting within blockquotes."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Final Notes",
-          "id": "final-notes"
-        },
-        {
-          "type": "paragraph",
-          "content": "This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes."
-        },
-        {
-          "type": "paragraph",
-          "content": "The styling should be consistent and readable across all elements."
-        }
-      ],
-      "markdown": "\n# H1 Header - Main Title\n\nThis is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.\n\n## H2 Header - Section Title\n\nHere's another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.\n\n### H3 Header - Subsection\n\nEven more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.\n\n#### H4 Header - SubSubsection\n\nEven more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.\n\n## Paragraph and Text Formatting\n\nThis is a **bold text** example and this is *italic text*. You can also combine them like ***bold and italic*** text.\n\nHere's a new paragraph with some inline `code` formatting. The code should have a background color and monospace font.\n\n## Lists\n\n### Unordered List\n- First item in the list\n- Second item with more text\n- Third item\n  - Nested item\n  - Another nested item\n- Back to main levels\n\n### Ordered List\n1. First numbered item\n2. Second numbered item\n3. Third numbered item\n   1. Nested numbered item\n   2. Another nested numbered item\n4. Back to main level\n\n## Code Blocks\n\nHere's a code block with syntax:\n\n```javascript\nfunction testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}\n```\n\nAnd here's a simple code block:\n\n```\nThis is just plain text\nin a code block\nwith multiple lines\n```\n\n## Blockquotes\n\n> This is a blockquote. It should have a left border and italic styling.\n> \n> It can span multiple lines and should look distinct from regular paragraphs.\n\n> Here's another blockquote to test spacing between them.\n\n## Links\n\nHere's a [link to example.com](https://example.com) and another [link with title](https://example.com \"Example Site\").\n\n## Images\n\nHere's an image (this will show as broken since it's a placeholder):\n![Alt text for image](https://via.placeholder.com/300x200.png?text=Test+Image)\n\n## Tables (GitHub Flavored Markdown)\n\n| Header 1 | Header 2 | Header 3 |\n|----------|----------|----------|\n| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |\n| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |\n| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |\n\n## Horizontal Rule\n\nHere's text before a horizontal rule.\n\n---\n\nAnd here's text after the horizontal rule.\n\n## Line Breaks\n\nThis line should break  \nright here (two spaces at end of line).\n\nThis is a new paragraph after the line break test.\n\n## Mixed Content Test\n\nHere's a paragraph with **bold**, *italic*, and `inline code` all together. It also has a [link](https://example.com) in the middle.\n\n### List with Code and Links\n\n1. First item with `inline code`\n2. Second item with [a link](https://example.com)\n3. Third item with **bold text**\n4. Fourth item with *italic text*\n\n### Blockquote with Formatting\n\n> This blockquote contains **bold text**, *italic text*, and `inline code`.\n> \n> It also has a [link](https://example.com) and multiple paragraphs to test\n> complex formatting within blockquotes.\n\n## Final Notes\n\nThis test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.\n\nThe styling should be consistent and readable across all elements.",
-      "navigation": [
-        {
-          "title": "H1 Header - Main Title",
-          "children": [
-            {
-              "title": "H2 Header - Section Title",
-              "children": [
-                {
-                  "title": "H3 Header - Subsection",
-                  "children": [
-                    "H4 Header - SubSubsection"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Paragraph and Text Formatting",
-              "children": []
-            },
-            {
-              "title": "Lists",
-              "children": [
-                "Unordered List",
-                "Ordered List"
-              ]
-            },
-            {
-              "title": "Code Blocks",
-              "children": []
-            },
-            {
-              "title": "Blockquotes",
-              "children": []
-            },
-            {
-              "title": "Links",
-              "children": []
-            },
-            {
-              "title": "Images",
-              "children": []
-            },
-            {
-              "title": "Tables (GitHub Flavored Markdown)",
-              "children": []
-            },
-            {
-              "title": "Horizontal Rule",
-              "children": []
-            },
-            {
-              "title": "Line Breaks",
-              "children": []
-            },
-            {
-              "title": "Mixed Content Test",
-              "children": [
-                "List with Code and Links",
-                "Blockquote with Formatting"
-              ]
-            },
-            "Final Notes"
-          ]
-        }
-      ],
-      "searchText": "markdown formatting test a comprehensive test of all markdown formatting features h1 header main title this is a paragraph under the main header it should have proper spacing and use the neutral color palette for both light and dark modes h2 header section title here s another paragraph lorem ipsum dolor sit amet consectetur adipiscing elit this text should wrap nicely and have good line height for readability h3 header subsection even more text here to test the h3 styling the headers should have proper hierarchy and spacing between them h4 header subsubsection even more text here to test the h4 styling the headers should have proper hierarchy and spacing between them paragraph and text formatting this is a bold text example and this is italic text you can also combine them like bold and italic text here s a new paragraph with some inline code formatting the code should have a background color and monospace font lists unordered list first item in the list second item with more text third item nested item another nested item back to main levels ordered list 1 first numbered item 2 second numbered item 3 third numbered item 1 nested numbered item 2 another nested numbered item 4 back to main level code blocks here s a code block with syntax javascript function testfunction const message hello world console log message if true return this is a test and here s a simple code block this is just plain text in a code block with multiple lines blockquotes this is a blockquote it should have a left border and italic styling it can span multiple lines and should look distinct from regular paragraphs here s another blockquote to test spacing between them links here s a link to example com and another link with title images here s an image this will show as broken since it s a placeholder alt text for image tables github flavored markdown header 1 header 2 header 3 row 1 col 1 row 1 col 2 row 1 col 3 row 2 col 1 row 2 col 2 row 2 col 3 row 3 col 1 row 3 col 2 row 3 col 3 horizontal rule here s text before a horizontal rule and here s text after the horizontal rule line breaks this line should break right here two spaces at end of line this is a new paragraph after the line break test mixed content test here s a paragraph with bold italic and inline code all together it also has a link in the middle list with code and links 1 first item with inline code 2 second item with a link 3 third item with bold text 4 fourth item with italic text blockquote with formatting this blockquote contains bold text italic text and inline code it also has a link and multiple paragraphs to test complex formatting within blockquotes final notes this test file should demonstrate all the major markdown formatting features each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes the styling should be consistent and readable across all elements",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlogs"
-      ],
-      "filename": "Markdown Test.md",
-      "lastModified": "2025-07-01T14:00:22.253Z"
-    },
-    "/devlogs/modular-choices": {
-      "id": "devlogs-modular-choices",
-      "path": "/devlogs/modular-choices",
-      "type": "markdown",
-      "slug": "modular-choices",
-      "category": "devlogs",
-      "title": "Modular Choices",
-      "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
-      "frontmatter": {
-        "title": "Modular Choices",
-        "slug": "modular_choices",
-        "author": "santiagosayshey",
-        "created": "2024-12-3",
-        "tags": [
-          "devlog",
-          "architecture",
-          "user_choice"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, here&#39;s a small (but very important) post on the new update system!"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Current Profilarr",
-          "id": "current-profilarr"
-        },
-        {
-          "type": "paragraph",
-          "content": "Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr v1",
-          "id": "profilarr-v1"
-        },
-        {
-          "type": "paragraph",
-          "content": "Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around."
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores."
-            },
-            {
-              "content": "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Settings Page",
-          "id": "settings-page"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously)."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Beta Release",
-          "id": "beta-release"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, here's a small (but very important) post on the new update system!\n\n## Current Profilarr\n\nCurrently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.\n\n## Profilarr v1\n\nUsers will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git's merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.\n\n- As an example, let's say you've made the Dolby Vision custom formats negative because your TV doesn't support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.\n- In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will 'remember' your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.\n\n### Settings Page\n\nProfilarr now includes a dedicated page for 'Sync Settings'. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr's database (not to stable, obviously).\n\n# Beta Release\n\n- Still not quite ready yet, but I'm working hard to get it out! Stay tuned :hearts:\n\nHere's a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)\n\n![Conflict Resolver](https://i.imgur.com/0EZrumU.png)\n",
-      "navigation": [
-        {
-          "title": "Current Profilarr",
-          "children": []
-        },
-        {
-          "title": "Profilarr v1",
-          "children": [
-            "Settings Page"
-          ]
-        },
-        "Beta Release"
-      ],
-      "searchText": "modular choices hey everyone here s a small but very important post on the new update system current profilarr currently there is 0 support for updates in profilarr this is obviously not ideal it s a nightmar hey everyone here s a small but very important post on the new update system current profilarr currently there is 0 support for updates in profilarr this is obviously not ideal it s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make profilarr v1 users will be able to view incoming and outgoing changes as well as resolve any conflicts between the two to achieve this a user friendly gui has been built on top of git s merge functionality and allows fine control over what should be merged ignored more specifically this functionality allows us to make custom changes and choose to retain them once a new update comes around as an example let s say you ve made the dolby vision custom formats negative because your tv doesn t support it a new update has come out which shuffles around hdr scores and this leads to a merge conflict between the two custom format scores in the settings page you can choose to accept the incoming change or retain your local changes profilarr will remember your choice and stop prompting you to update this custom format until a new update comes out in which case the situation repeats keep local or accept incoming settings page profilarr now includes a dedicated page for sync settings it allows you to link unlink a database repository view and change branches as well as deal with incoming outgoing changes and their conflicts this page has been planned for developers too you can add an authenticated github dev token to your environment and you have the ability to make changes directly to profilarr s database not to stable obviously beta release still not quite ready yet but i m working hard to get it out stay tuned hearts here s a screenshot of this new conflict resolver in action ignore the date modified row it will be removed for actual use conflict resolver",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "user_choice"
-      ],
-      "filename": "Modular Choices.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/profilarr-is-in-beta": {
-      "id": "devlogs-profilarr-is-in-beta",
-      "path": "/devlogs/profilarr-is-in-beta",
-      "type": "markdown",
-      "slug": "profilarr-is-in-beta",
-      "category": "devlogs",
-      "title": "Profilarr is in Beta 🚀",
-      "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
-      "frontmatter": {
-        "title": "Profilarr is in Beta 🚀",
-        "slug": "profilarr_is_in_beta",
-        "author": "santiagosayshey",
-        "created": "2025-4-1",
-        "tags": [
-          "devlog",
-          "profilarr",
-          "database",
-          "housekeeping"
-        ],
-        "readingTime": 6
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone, long awaited dev log :)"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "What's New? 👈",
-          "id": "whats-new"
-        },
-        {
-          "type": "paragraph",
-          "content": "Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :)"
-        },
-        {
-          "type": "paragraph",
-          "content": "You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Database 💾",
-          "id": "database"
-        },
-        {
-          "type": "paragraph",
-          "content": "Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>."
-            },
-            {
-              "content": "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Tweaks 🔧",
-          "id": "tweaks"
-        },
-        {
-          "type": "paragraph",
-          "content": "I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "What's Next? 👉",
-          "id": "whats-next"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Profilarr",
-          "id": "profilarr"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them"
-            },
-            {
-              "content": "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). "
-            },
-            {
-              "content": "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Database",
-          "id": "database"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. "
-            },
-            {
-              "content": "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)"
-            },
-            {
-              "content": "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Housekeeping 🧹",
-          "id": "housekeeping"
-        },
-        {
-          "type": "paragraph",
-          "content": "We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Moderation, Wiki, Support 🤝",
-          "id": "moderation-wiki-support"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. "
-            },
-            {
-              "content": "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. "
-            },
-            {
-              "content": "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Donations 💸",
-          "id": "donations"
-        },
-        {
-          "type": "paragraph",
-          "content": "If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Taking a Break ⏸️",
-          "id": "taking-a-break"
-        },
-        {
-          "type": "paragraph",
-          "content": "I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. "
-            },
-            {
-              "content": "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Thank You 🙏",
-          "id": "thank-you"
-        },
-        {
-          "type": "paragraph",
-          "content": "This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head."
-        },
-        {
-          "type": "paragraph",
-          "content": "Cheers, everyone."
-        }
-      ],
-      "markdown": "\nhey @everyone, long awaited dev log :)\n\n## What's New? 👈\n\nMany people are already aware, but I thought I should formally announce here on discord that **Profilarr is out in beta!** I've been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it's not nearly as stable as I would like it to be, it implements the core architecture I first talked about [here](https://dictionarry.dev/devlog/architecture_overhaul). There is still so (x10) much to be done in terms of bugs & polish & new features, but I'm happy sharing it as is. Hopefully you can all find some benefit in using it too :) \n\nYou can read our setup guide [here](https://dictionarry.dev/wiki/profilarr-setup). It's available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.\n### Database 💾\n\nAlong with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: \n- @Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It's a huge change that I haven't been able to fully test myself, but I've merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the `scoring-refactor` branch in Profilarr. Please direct any issues / improvements to the database's [Issue Tracker](https://github.com/Dictionarry-Hub/database).\n- I'm personally not too happy with the state of the current database - poorly named files and renames/imports weren't taken into enough consideration and it's causing way too many download loops. I'm still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. \n\n### Tweaks 🔧\n\nI talked about tweaks in detail [here](https://dictionarry.dev/devlog/profile_tweaks) and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it's an interesting system. In practice, it's confusing and really hard to program for. It's meant to be a database agnostic feature, but was hardcoded into Profilarr's profile system. I'm going to keep this feature on the roadmap as a maybe for now, but I'm going to have to completely rethink how to implement it from the ground up. \n\n## What's Next? 👉\n\nHere's a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. \n\n### Profilarr\n\n- Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them\n- Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you'll be able to connect to multiple at once and build off them as you please (or just link a complete one). \n- Everything on the issue tracker: https://github.com/Dictionarry-Hub/profilarr/issues\n\n### Database\n\n- Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the [Encode Efficiency Index](https://dictionarry.dev/wiki/EEi) to prioritise HEVC releases. \n- Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer & better sources. I'm not personally into that much anime, so I'm going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I'll get back to you when I can!)\n- Better Streaming Service Grab Logic - This is already partially improved in Seraphys' refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. \n\n## Housekeeping 🧹\n\nWe've had an influx of new members over the past couple weeks, so I'd like to welcome you all to our discord 👋 Come say hey in #general if you haven't already. \n\n### Moderation, Wiki, Support 🤝\n\n- I'd like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. \n- The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. \n- I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. [here](https://github.com/Dictionarry-Hub/profilarr/issues) and [here](https://github.com/Dictionarry-Hub/database)\n\n### Donations 💸\n\nIf you've donated and would like a special 'Donor' role badge here on discord, please shoot me a PM. \n\n### Taking a Break ⏸️\n\nI want to let everyone know that I'll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I'm quite burnt out. I'm trying very hard to balance full time study with development, but they unfortunately just don't mesh the way I hoped they would. I can't not work at 100% for either, so something had to give and for the past month or so, that's been my sleep and sanity. I unfortunately can't delay my semester (as much as I want to), so I'm going to have to dial down the time I spend on Dictionarry/Profilarr. I think I'm going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I'll slowly pick up speed again. Couple of specific points I want to mention here:\n- I'm going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn't happen on time. The defacto answer to any ETA questions from now on will be \"when it's ready\". \n- I've been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven't forgotten about you and will get back when I have the time. If it's been a while, shoot me a PM or something as a reminder ~ I'll still be active on discord during my break. \n\n### Thank You 🙏\n\nThis project has grown tremendously in scope in the last year and that's not possible without a community, so big thanks from me to all of you. I'm still figuring all of this out as I go along so it's kind of unbelievable how many people are using a tool that once only existed in my head. \n\nCheers, everyone. \n\n",
-      "navigation": [
-        {
-          "title": "What's New? 👈",
-          "children": [
-            "Database 💾",
-            "Tweaks 🔧"
-          ]
-        },
-        {
-          "title": "What's Next? 👉",
-          "children": [
-            "Profilarr",
-            "Database"
-          ]
-        },
-        {
-          "title": "Housekeeping 🧹",
-          "children": [
-            "Moderation, Wiki, Support 🤝",
-            "Donations 💸",
-            "Taking a Break ⏸️",
-            "Thank You 🙏"
-          ]
-        }
-      ],
-      "searchText": "profilarr is in beta hey everyone long awaited dev log what s new many people are already aware but i thought i should formally announce here on discord that profilarr is out in beta i ve been working on it sin hey everyone long awaited dev log what s new many people are already aware but i thought i should formally announce here on discord that profilarr is out in beta i ve been working on it since around july last year and put in a massive effort over the christmas break to get it working even though it s not nearly as stable as i would like it to be it implements the core architecture i first talked about here there is still so x10 much to be done in terms of bugs polish new features but i m happy sharing it as is hopefully you can all find some benefit in using it too you can read our setup guide here it s available as a community app on unraid and as a docker image for both arm apple silicon raspberry pi and x86 database along with profilarr the dictionarry database has also got an overhaul we introduced the new encode efficiency index 2160p quality and balanced profiles as well as other small improvements like editions repacks and freeleech here are some scattered thoughts that you might also be interested in seraphys has been working on a scoring refactor that introduces 720p fallback fixes streaming service names and groups similar releases together better it s a huge change that i haven t been able to fully test myself but i ve merged it into a separate branch because i know people are pretty antsy to start testing themselves anyone is free to give it a try you just have to switch to the scoring refactor branch in profilarr please direct any issues improvements to the database s issue tracker i m personally not too happy with the state of the current database poorly named files and renames imports weren t taken into enough consideration and it s causing way too many download loops i m still trying to figure out exactly how i want to tackle these problems but i just want people to know that it is on my mind and it will be improved in future tweaks i talked about tweaks in detail here and had actually implemented some of them into profilarr but decided to remove them at the last minute on paper it s an interesting system in practice it s confusing and really hard to program for it s meant to be a database agnostic feature but was hardcoded into profilarr s profile system i m going to keep this feature on the roadmap as a maybe for now but i m going to have to completely rethink how to implement it from the ground up what s next here s a non comprehensive list of what you can expect me to work on now that profilarr is in beta profilarr media management sync databases will be able to implement their own media management settings quality sliders rename templates delay profiles etc and use profilarr to sync them multi database support refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them this lets profile databases exist independently of format databases and that independently of regex databases this way you ll be able to connect to multiple at once and build off them as you please or just link a complete one everything on the issue tracker https github com dictionarry hub profilarr issues database efficiency profiles 1080p efficient 10 1080p efficient 22 5 and 2160p efficient will use the encode efficiency index to prioritise hevc releases anime support likely just quality profiles but i also want to explore alternative options that better support dynamic needs we likely want to make release group tiers but also figure out a way to prioritise releases from newer better sources i m not personally into that much anime so i m going to need as much input as i can get from you guys please start those conversations if you want something to be considered some have already asked i ll get back to you when i can better streaming service grab logic this is already partially improved in seraphys refactor but i would also like to add support for more streaming services and revise the interaction between release groups and sources housekeeping we ve had an influx of new members over the past couple weeks so i d like to welcome you all to our discord come say hey in general if you haven t already moderation wiki support i d like to introduce seraphys as our first moderator and designated detail devotee big claps all around the rules faq links among others are very out of date and will be getting a refresh soon stay tuned for those updates i will likely be closing the support post channels soon and replacing them with a single simpler text channel and removing the bot integration for any basic support please message us over there but for any major issues please redirect your queries to our issue trackers on github from now on here and here donations if you ve donated and would like a special donor role badge here on discord please shoot me a pm taking a break i want to let everyone know that i ll be taking a break for a little while i spent the majority of the past 4 5 months working on profilarr and i m quite burnt out i m trying very hard to balance full time study with development but they unfortunately just don t mesh the way i hoped they would i can t not work at 100 for either so something had to give and for the past month or so that s been my sleep and sanity i unfortunately can t delay my semester as much as i want to so i m going to have to dial down the time i spend on dictionarry profilarr i think i m going to do a proper break no dev at all for a couple weeks at least until my easter break then i ll slowly pick up speed again couple of specific points i want to mention here i m going to stop giving etas for things they always take longer than i expect them to which puts pressure on me and probably disappoints you guys when something inevitably doesn t happen on time the defacto answer to any eta questions from now on will be when it s ready i ve been pretty scatterbrained lately so if someone is waiting on a message from me just know that i haven t forgotten about you and will get back when i have the time if it s been a while shoot me a pm or something as a reminder i ll still be active on discord during my break thank you this project has grown tremendously in scope in the last year and that s not possible without a community so big thanks from me to all of you i m still figuring all of this out as i go along so it s kind of unbelievable how many people are using a tool that once only existed in my head cheers everyone",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "profilarr",
-        "database",
-        "housekeeping"
-      ],
-      "filename": "Profilarr is in Beta 🚀.md",
-      "lastModified": "2025-06-30T18:13:38.032Z"
-    },
-    "/devlogs/profile-selector-v3": {
-      "id": "devlogs-profile-selector-v3",
-      "path": "/devlogs/profile-selector-v3",
-      "type": "markdown",
-      "slug": "profile-selector-v3",
-      "category": "devlogs",
-      "title": "Profile Selector v3",
-      "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
-      "frontmatter": {
-        "title": "Profile Selector v3",
-        "slug": "profile_selector_v3",
-        "author": "santiagosayshey",
-        "created": "2024-6-2",
-        "tags": [
-          "devlog",
-          "profile_selector",
-          "website"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone , thought I&#39;d make a channel to share some development logs."
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break..."
-        },
-        {
-          "type": "paragraph",
-          "content": "Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder."
-        },
-        {
-          "type": "paragraph",
-          "content": "The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc."
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here&#39;s a funny tidbit from development:"
-        },
-        {
-          "type": "paragraph",
-          "content": "I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work.."
-        },
-        {
-          "type": "paragraph",
-          "content": "Behold: Frankenstein&#39;s Triangle."
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\">"
-        }
-      ],
-      "markdown": "\nhey @everyone , thought I'd make a channel to share some development logs.\n\nI've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would take a break...\n\nAnyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It's not hooked up to the database yet, so random strings are being used as a placeholder.\n\nThe good thing about this design is that it's really modular. Once I finish the 'beginner' version of it, I'll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.\n\nHere's how it looks right now (obvious disclaimer that final version will look much much better):\n\n![Selector Proof of Concept](https://streamable.com/2uprnl)\n\nHere's a funny tidbit from development:\n\nI tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn't quite work..\n\nBehold: Frankenstein's Triangle.\n\n![Frankenstein's Triangle](https://streamable.com/z70sj8)\n",
-      "navigation": [
-        "Overview"
-      ],
-      "searchText": "profile selector v3 hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would tak hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would take a break anyways after designing profile selector v3 in figma for the past couple months i started work on actually implementing it let me tell you that drawing shapes is much much easier than coding them after a couple days of regretting not paying attention in high school trigonometry i have the basic functionality in place we have three data points which represent each of the requirements quality efficiency compatibility the user can select points on each of the axes and each combination is used to recommend a profile it s not hooked up to the database yet so random strings are being used as a placeholder the good thing about this design is that it s really modular once i finish the beginner version of it i ll be able to add an advanced mode which can be used to select any kind of requirement resolution hdr audio etc here s how it looks right now obvious disclaimer that final version will look much much better selector proof of concept here s a funny tidbit from development i tried writing some animation styling to make the inner polygon look like its stretching as opposed to instant static movement it didn t quite work behold frankenstein s triangle frankenstein s triangle",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "profile_selector",
-        "website"
-      ],
-      "filename": "Profile Selector v3.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/profile-tweaks": {
-      "id": "devlogs-profile-tweaks",
-      "path": "/devlogs/profile-tweaks",
-      "type": "markdown",
-      "slug": "profile-tweaks",
-      "category": "devlogs",
-      "title": "Profile Tweaks",
-      "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
-      "frontmatter": {
-        "title": "Profile Tweaks",
-        "slug": "profile_tweaks",
-        "author": "santiagosayshey",
-        "created": "2024-12-3",
-        "tags": [
-          "devlog",
-          "architecture",
-          "user_choice"
-        ],
-        "readingTime": 2
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!"
-        },
-        {
-          "type": "paragraph",
-          "content": "The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with."
-        },
-        {
-          "type": "paragraph",
-          "content": "Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Prefer Freeleech"
-            },
-            {
-              "content": "Allow Prereleases (CAMS, Screeners, etc)"
-            },
-            {
-              "content": "Language Strictness"
-            },
-            {
-              "content": "Allow Lossless audio"
-            },
-            {
-              "content": "Allow Dolby Vision without Fallback"
-            },
-            {
-              "content": "Allow bleeding edge codecs (AV-1, H266)"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles)."
-        },
-        {
-          "type": "paragraph",
-          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr Progress",
-          "id": "profilarr-progress"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look."
-            },
-            {
-              "content": "Git integration is complete and working, but needs lots of testing."
-            },
-            {
-              "content": "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr."
-            },
-            {
-              "content": "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc."
-            },
-            {
-              "content": "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\">"
-        }
-      ],
-      "markdown": "\nHey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!\n\nThe profiles we make are meant to be (really good) starting points, not a strict standard on what you _should_ be grabbing. Up until now, profiles existed as singular entities that don't respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it's a bit more hands on, and not something I expect most people to engage with.\n\nEnter 'Profile Tweaks'. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:\n\n- Prefer Freeleech\n- Allow Prereleases (CAMS, Screeners, etc)\n- Language Strictness\n- Allow Lossless audio\n- Allow Dolby Vision without Fallback\n- Allow bleeding edge codecs (AV-1, H266)\n\n(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n## Profilarr Progress\n\n- Progress is steady, I've been working on it every day since my semester ended. It's taken way, way longer than I've expected (sorry!) but I'm happy with how it's starting to look.\n- Git integration is complete and working, but needs lots of testing.\n- Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.\n- I am currently in the progress of porting existing data to the new database (https://github.com/Dictionarry-Hub/database/tree/stable) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.\n- Finally, I am starting to work on the compilation engine (https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049) and the import module. Once these things are complete, and I'm confident we won't run into massive bugs, I'll release a beta docker image. ETA? I really don't know, but I'm working as hard as I can.\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n![Profile Tweaks](https://i.imgur.com/fzbmJSn.png)\n",
-      "navigation": [
-        "Profilarr Progress"
-      ],
-      "searchText": "profile tweaks hey everyone i ve been hard at work on the next profilarr version over the past few weeks and have new stuff to show off the profiles we make are meant to be really good starting points not a st hey everyone i ve been hard at work on the next profilarr version over the past few weeks and have new stuff to show off the profiles we make are meant to be really good starting points not a strict standard on what you should be grabbing up until now profiles existed as singular entities that don t respect custom changes merge conflict resolution was a big step in the right direction for this read more in the last dev log but it s a bit more hands on and not something i expect most people to engage with enter profile tweaks these are simple check boxes you can enable disable and are unique to your profiles they will always be respected regardless of what updates we make to the base profile for now these tweaks include prefer freeleech allow prereleases cams screeners etc language strictness allow lossless audio allow dolby vision without fallback allow bleeding edge codecs av 1 h266 some are only available for specific profiles eg lossless audio for 1080p encode profiles if anyone has any tweak ideas even super specific ones please let me know and i ll work on getting it integrated here s an image of the tweaks tab profilarr progress progress is steady i ve been working on it every day since my semester ended it s taken way way longer than i ve expected sorry but i m happy with how it s starting to look git integration is complete and working but needs lots of testing data modules custom formats regex patterns quality profiles are complete and fully implement the existing logic from radarr sonarr i am currently in the progress of porting existing data to the new database https github com dictionarry hub database tree stable in the new profilarr standard format this is going to take a while as i have to write descriptions add tags test cases etc finally i am starting to work on the compilation engine https discord com channels 1202375791556431892 1246504849265266738 1272756617041154049 and the import module once these things are complete and i m confident we won t run into massive bugs i ll release a beta docker image eta i really don t know but i m working as hard as i can if anyone has any tweak ideas even super specific ones please let me know and i ll work on getting it integrated here s an image of the tweaks tab profile tweaks",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "user_choice"
-      ],
-      "filename": "Profile Tweaks.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/shiny-new-stuff": {
-      "id": "devlogs-shiny-new-stuff",
-      "path": "/devlogs/shiny-new-stuff",
-      "type": "markdown",
-      "slug": "shiny-new-stuff",
-      "category": "devlogs",
-      "title": "Shiny New Stuff",
-      "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
-      "frontmatter": {
-        "title": "Shiny New Stuff",
-        "slug": "shiny_new_stuff",
-        "author": "santiagosayshey",
-        "created": "2024-8-19",
-        "tags": [
-          "devlog",
-          "architecture"
-        ],
-        "readingTime": 5
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "hey @everyone, hope you guys are well. Here&#39;s another update!"
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Motivation",
-          "id": "motivation"
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Profilarr v2 (not really v2 but it sounded cool)",
-          "id": "profilarr-v2-not-really-v2-but-it-sounded-cool"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "It's now a full stack application.",
-          "id": "its-now-a-full-stack-application"
-        },
-        {
-          "type": "paragraph",
-          "content": "This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format."
-            },
-            {
-              "content": "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc."
-            },
-            {
-              "content": "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore."
-            },
-            {
-              "content": "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items."
-            },
-            {
-              "content": "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete."
-            },
-            {
-              "content": "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!"
-            },
-            {
-              "content": "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously."
-            },
-            {
-              "content": "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Backend Improvements",
-          "id": "backend-improvements"
-        },
-        {
-          "type": "paragraph",
-          "content": "The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<strong>Git integration</strong>: You can select a remote repository to connect to and:",
-              "children": [
-                {
-                  "content": "Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded."
-                },
-                {
-                  "content": "<strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches."
-                },
-                {
-                  "content": "<strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop."
-                },
-                {
-                  "content": "<strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Containerisation",
-          "id": "containerisation"
-        },
-        {
-          "type": "paragraph",
-          "content": "Profilarr will FINALLY be dockerised."
-        },
-        {
-          "type": "header",
-          "level": 1,
-          "text": "Development",
-          "id": "development"
-        },
-        {
-          "type": "paragraph",
-          "content": "With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Machine Learning",
-          "id": "machine-learning"
-        },
-        {
-          "type": "paragraph",
-          "content": "This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI."
-        },
-        {
-          "type": "paragraph",
-          "content": "I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry."
-        },
-        {
-          "type": "paragraph",
-          "content": "Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!"
-        },
-        {
-          "type": "paragraph",
-          "content": "Anyway, here&#39;s some images of profilarr v2."
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Regex Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Custom Format Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "<strong>Status Page</strong>:"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "Of course, everything is still a heavy work in progress."
-        },
-        {
-          "type": "paragraph",
-          "content": "That&#39;s all for today!"
-        }
-      ],
-      "markdown": "\nhey @everyone, hope you guys are well. Here's another update!\n\n# Motivation\n\nI've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I've felt especially motivated to dive back in.\n\n# Profilarr v2 (not really v2 but it sounded cool)\n\nProfilarr is getting some really nice upgrades. Here's an outline of the most important ones:\n\n## It's now a full stack application.\n\nThis means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It's built in a way that aims to 'remaster' how it's implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:\n\n- **Single definition format**: As outlined in the previous dev log, Profilarr's version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.\n- **Sorting and Filtering**: You can now sort and filter items by title, date modified, etc.\n- **Exporting/Importing**: The standard format now allows _everyone_ to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.\n- **Syncing**: Instead of clogging up everyone's arrs with unused custom formats, the sync functionality now only imports _used_ items.\n- **Mass selection**: You can mass select items to import/export/sync/delete.\n- **Tags**: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!\n- **Testing**: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.\n- **Descriptions**: You can now explain what specific items are for. No need to look it up on the website to see what it does.\n\n## Backend Improvements\n\nThe backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:\n\n- **Git integration**: You can select a remote repository to connect to and:\n  - Add, commit, and push files; branch off; merge into. This isn't that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I've ever coded.\n  - **Branching**: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.\n  - **Pulling**: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.\n  - **External sources**: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I'll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It'll probably take some tweaking, but I know it's definitely possible now.\n\n## Containerisation\n\nProfilarr will FINALLY be dockerised.\n\n# Development\n\nWith these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.\n\n## Machine Learning\n\nThis part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I've read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. \"How do I write a custom format that matches x265 releases under size x?\" It's so easily solved using AI.\n\nI want to implement this one day, I just don't have enough knowledge or experience to do it yet. The best I've come up with is something that sends a request to OpenAI's API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people's needs. Who knows if it ever gets to that point, but that's my vision for Dictionarry.\n\nRamble over, as you can tell I've been feeling pretty motivated lately!\n\nAnyway, here's some images of profilarr v2.\n\n**Regex Page**:\n\n![Regex Page](https://i.imgur.com/kMZ9qII.png)\n\n**Custom Format Page**:\n\n![Custom Format Page](https://i.imgur.com/mCyDxId.png)\n\n**Status Page**:\n\n![Status Page](https://i.imgur.com/ZleeOEF.png)\n\nOf course, everything is still a heavy work in progress.\n\nThat's all for today!\n",
-      "navigation": [
-        {
-          "title": "Motivation",
-          "children": []
-        },
-        {
-          "title": "Profilarr v2 (not really v2 but it sounded cool)",
-          "children": [
-            "It's now a full stack application.",
-            "Backend Improvements",
-            "Containerisation"
-          ]
-        },
-        {
-          "title": "Development",
-          "children": [
-            "Machine Learning"
-          ]
-        }
-      ],
-      "searchText": "shiny new stuff hey everyone hope you guys are well here s another update motivation i ve been really struggling to work on this project for a few months now i ll finally get some time at the end of the week bu hey everyone hope you guys are well here s another update motivation i ve been really struggling to work on this project for a few months now i ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour well after cracking the architecture problem last week and seeing all the support from you guys i ve felt especially motivated to dive back in profilarr v2 not really v2 but it sounded cool profilarr is getting some really nice upgrades here s an outline of the most important ones it s now a full stack application this means we have a frontend a site that users can visit to adjust import and export regexes custom formats and quality profiles it s built in a way that aims to remaster how it s implemented in radarr sonarr all the existing functionality is there but with some really nice quality of life features single definition format as outlined in the previous dev log profilarr s version of this system will use a single definition format notably this allows you to set regex patterns once then add that regex as a condition inside a custom format sorting and filtering you can now sort and filter items by title date modified etc exporting importing the standard format now allows everyone to import export regexes custom formats and quality profiles freely no need to query apis to do this anymore syncing instead of clogging up everyone s arrs with unused custom formats the sync functionality now only imports used items mass selection you can mass select items to import export sync delete tags instead of manual selection you can set tags on specific custom formats quality profiles that should be synced this works similar to how prowlarr uses tags to selectively sync indexers since we are also using the same database for the website tags can also be used for little tidbits of information too like where a release group is an internal at testing developers can now permalink regexes to regex101 this makes it really easy to develop and test simultaneously descriptions you can now explain what specific items are for no need to look it up on the website to see what it does backend improvements the backend is essentially what profilarr is right now a tool to sync some json files to your arrs however this also has some major improvements git integration you can select a remote repository to connect to and add commit and push files branch off merge into this isn t that useful for end users but i cannot stress enough how much time and suffering this has saved me being able to revert regex custom format quality profiles to the last commit is my favorite thing i ve ever coded branching you can have different branches for different things of course this is useful for development but it also allows you to do things like separate setups for radarr sonarr lidarr most importantly it allows us developers to set stable dev and feature branches pulling you can now pull in changes from specific branches from a remote repository you can view differences and decide if you want to pull these changes in you can set it to be automatic and only alert on merge conflicts you change something but an incoming change for that item exists as well you can choose to get the most stable branch or the latest features merged into develop external sources you can set your own repo of regexes custom formats and quality profiles and share it with whoever you want as i mentioned in my last dev log i ll be working on a compiler to convert our standard profilarr format with the existing arr format the really cool thing about this is it works both ways this means the git integration compiler will allow you to use profilarr with the trash guides it ll probably take some tweaking but i know it s definitely possible now containerisation profilarr will finally be dockerised development with these changes in place it has massively improved and sped up development working in a proprietary tool now allows me the freedom to just implement a feature whenever i want to want to filter custom formats with the release tier tag boom implemented want to auto apply scores to custom formats in quality profiles based on tags boom implemented machine learning this part is mostly speculation and rambling nothing concrete yet i really want to incorporate some kind of ai help into profilarr a button you can press to auto generate regex or a custom format i ve read countless reddit posts of someone unfamiliar with regex custom formats profiles asking for help in trying to learn how do i write a custom format that matches x265 releases under size x it s so easily solved using ai i want to implement this one day i just don t have enough knowledge or experience to do it yet the best i ve come up with is something that sends a request to openai s api with a prompt the results are less than ideal but just imagine the future where some kind of machine learning tool has access to an entire database of regexes custom formats and quality profiles curated by hundreds of people and can use that knowledge to predict patterns and truly tailor stuff to suit people s needs who knows if it ever gets to that point but that s my vision for dictionarry ramble over as you can tell i ve been feeling pretty motivated lately anyway here s some images of profilarr v2 regex page regex page custom format page custom format page status page status page of course everything is still a heavy work in progress that s all for today",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture"
-      ],
-      "filename": "Shiny New Stuff.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/vision-almost-realised": {
-      "id": "devlogs-vision-almost-realised",
-      "path": "/devlogs/vision-almost-realised",
-      "type": "markdown",
-      "slug": "vision-almost-realised",
-      "category": "devlogs",
-      "title": "Vision (Almost) Realised",
-      "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
-      "frontmatter": {
-        "title": "Vision (Almost) Realised",
-        "slug": "vision_almost_realised",
-        "author": "santiagosayshey",
-        "created": "2024-12-24T00:00:00.000Z",
-        "tags": [
-          "devlog",
-          "architecture",
-          "gppi"
-        ],
-        "readingTime": 3
-      },
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": "Hey @everyone, small log for today!"
-        },
-        {
-          "type": "code",
-          "language": "bash",
-          "code": "$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS"
-        },
-        {
-          "type": "paragraph",
-          "content": "These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times."
-        },
-        {
-          "type": "paragraph",
-          "content": "I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop."
-        },
-        {
-          "type": "paragraph",
-          "content": "It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Golden Popcorn Performance Index Changes",
-          "id": "golden-popcorn-performance-index-changes"
-        },
-        {
-          "type": "paragraph",
-          "content": "The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?"
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Popularity",
-          "id": "popularity"
-        },
-        {
-          "type": "paragraph",
-          "content": "For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)"
-        },
-        {
-          "type": "paragraph",
-          "content": "This process will be completely automatic and will hopefully solve the problem of new good release groups."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Grouping",
-          "id": "grouping"
-        },
-        {
-          "type": "paragraph",
-          "content": "The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Thank You!",
-          "id": "thank-you"
-        },
-        {
-          "type": "paragraph",
-          "content": "That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:"
-        }
-      ],
-      "markdown": "\nHey @everyone, small log for today!\n\n```bash\n$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS\n```\n\nThese two commands are the culmination of the architecture overhaul I talked about in August: https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049. The Profilarr standard format _**works**_. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.\n\nI'm currently in the process of hooking up the database to the new website, and that's looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.\n\nIt's taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I'm fairly happy with how it's turned out. The changes won't be all that evident right away for you guys, but it's going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.\n\n## Golden Popcorn Performance Index Changes\n\nThe current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren't simply because they have no data. How do we fix this?\n\n### Popularity\n\nFor every encode at a specific resolution for a movie / tv show that is currently _popular_, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)\n\nThis process will be completely automatic and will hopefully solve the problem of new good release groups.\n\n### Grouping\n\nThe previous 'tiers' for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter 'K Means Clustering'. Essentially it's just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I've dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.\n\n## Thank You!\n\nThat's all for today, I hope everyone's doing alright and enjoying the holidays :grinning:\n",
-      "navigation": [
-        {
-          "title": "Golden Popcorn Performance Index Changes",
-          "children": [
-            "Popularity",
-            "Grouping"
-          ]
-        },
-        "Thank You!"
-      ],
-      "searchText": "vision almost realised hey everyone small log for today bash python profile_compile py profiles 1080p encode yml 1080p encode sonarr master json s converted profile saved to 1080p encode sonarr master j hey everyone small log for today bash python profile_compile py profiles 1080p encode yml 1080p encode sonarr master json s converted profile saved to 1080p encode sonarr master json python importarr py importing quality profiles to sonarr master updating 1080p encode quality profile success these two commands are the culmination of the architecture overhaul i talked about in august https discord com channels 1202375791556431892 1246504849265266738 1272756617041154049 the profilarr standard format works a typical profile is now about 300 lines down from 1000 each for radarr sonarr is able to be compiled from psf to radarr or sonarr and back regex patterns allow format resolution so no more editing the same thing 5 10 20 times i m currently in the process of hooking up the database to the new website and that s looking pretty cool too i cannot even explain how good it feels to be able to edit a profile once inside profilarr push those changes directly from profilarr have those changes reflected as incoming changes for end users and as updated information on the website all in one fell swoop it s taken a huge effort the past 4 months and i still have to actually connect it to the backend but i m fairly happy with how it s turned out the changes won t be all that evident right away for you guys but it s going to save me and anyone who wants to contribute hours upon hours of development time for everything that i have planned golden popcorn performance index changes the current gppi algorithm is strong but fundamentally flawed it does not take into consideration release groups who have no data there are terrific new groups zorosenpai for example who should be tier 2 at least but aren t simply because they have no data how do we fix this popularity for every encode at a specific resolution for a movie tv show that is currently popular a release group receives 1 score to their gppi at the end of every month the score is reset and the previous score is normalized tbd on how and added to their permanent gppi score up to a certain point and probably never past tier 3 this process will be completely automatic and will hopefully solve the problem of new good release groups grouping the previous tiers for release groups was just natural intuitive grouping humans are surprisingly very very good at pattern recognition so it was never really a problem however it was manual and we dont like manual around here enter k means clustering essentially it s just a fancy algorithm that finds natural break points between groups of numbers using k means i ve dropped the number of 1080p tiers from 7 down to 5 which in turn has increased immutability small changes but will be important in the long run thank you that s all for today i hope everyone s doing alright and enjoying the holidays grinning",
-      "searchWeight": 0.6,
-      "tags": [
-        "devlog",
-        "architecture",
-        "gppi"
-      ],
-      "filename": "Vision Almost Realised.md",
-      "lastModified": "2025-06-29T12:42:25.554Z"
-    },
-    "/devlogs/website-20": {
-      "id": "devlogs-website-20",
-      "path": "/devlogs/website-20",
-      "type": "markdown",
-      "slug": "website-20",
-      "category": "devlogs",
-      "title": "Website 2.0",
-      "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
-      "frontmatter": {
-        "title": "Website 2.0",
-        "slug": "website2.0",
-        "author": "santiagosayshey",
-        "created": "2025-02-02T00:00:00.000Z",
-        "tags": [
-          "devlog",
           "website",
-          "profile_builder",
-          "eei",
-          "2160p",
-          "quality"
+          "personal",
+          "milestone"
         ],
-        "readingTime": 4
+        "readingTime": 2
       },
       "blocks": [
         {
           "type": "paragraph",
-          "content": "Hey everyone, medium-ish update today."
+          "content": "This dev log marks a rebirth for Dictionarry&#39;s documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, language and structure. Going forward, dev logs will be shorter and more frequent."
         },
         {
           "type": "header",
-          "level": 2,
-          "text": "Website 2.0",
-          "id": "website-20"
+          "level": 1,
+          "text": "Website 3.0",
+          "id": "website-30"
         },
         {
           "type": "paragraph",
-          "content": "I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:"
+          "content": "The old website sucked, I couldn&#39;t stand to look at it anymore (let alone work on it), so I rebuilt it from the ground up. It follows a more traditional documentation structure (dual navigation panes, actually functioning search) but integrates many custom components you won&#39;t see on static markdown generators. Many of the changes are superficial, don&#39;t actually help anyone, but were extremely fun to work on. Some of the notable changes are:"
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
             {
-              "content": "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+              "content": "Better database entry pages with fancy tools"
+            },
+            {
+              "content": "Search"
+            },
+            {
+              "content": "Better navigation (more segmented pages with shareable sections)"
+            },
+            {
+              "content": "Refreshed Wizard (renamed from builder)"
+            },
+            {
+              "content": "An extremely overthought installation guide complete with videos"
+            },
+            {
+              "content": "Regex entries"
+            },
+            {
+              "content": "Media Management"
+            },
+            {
+              "content": "Discussion via <a href=\"https://utteranc.es/\">utterances</a>"
+            },
+            {
+              "content": "Built with svelte! "
             }
           ]
         },
         {
           "type": "paragraph",
-          "content": "This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is."
-        },
-        {
-          "type": "paragraph",
-          "content": "<a href=\"https://dictionarry.dev/\">Website 2.0</a>"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\">"
-        },
-        {
-          "type": "paragraph",
-          "content": "The old site will go down soon, sorry if I broke anyone&#39;s workflows D:"
+          "content": "Time will tell if I end up doing 4.0, but I am for the most part happy with this version. There is so much that&#39;s gone into the search / wizard that 99% of people will never see (Bézier curves that resize dynamically, Elo based search using clicks) but I&#39;m glad I worked on it."
         },
         {
           "type": "header",
-          "level": 3,
-          "text": "Profile Selector?",
-          "id": "profile-selector"
+          "level": 1,
+          "text": "Burnout",
+          "id": "burnout"
         },
         {
           "type": "paragraph",
-          "content": "This idea has gone through many iterations since i started Dictionarry last year."
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            {
-              "content": "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>"
-            },
-            {
-              "content": "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>"
-            },
-            {
-              "content": "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
-            }
-          ]
+          "content": "I&#39;m really burnt out at the moment, progress is extremely slow and I&#39;m mostly only working on stuff that brings me joy (like this website!), so bear with me through all this. Dictionarry is my baby and it&#39;s not something I&#39;d ever consider abandoning (as stressful as it is sometimes). Database work is slow, Profilarr even slower, but we slowly march ahead in spite of it all. I&#39;m starting to pivot back to doing most of this work for myself to have fun, rather than building for the community. It seems a bit counter productive, but I think more meaningful work gets done this way."
         },
         {
           "type": "paragraph",
-          "content": "Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed."
-        },
-        {
-          "type": "paragraph",
-          "content": "Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it."
-        },
-        {
-          "type": "header",
-          "level": 3,
-          "text": "Profile Builder!",
-          "id": "profile-builder"
-        },
-        {
-          "type": "paragraph",
-          "content": "In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a>"
-        },
-        {
-          "type": "paragraph",
-          "content": "<img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\">"
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Encode Efficiency Index",
-          "id": "encode-efficiency-index"
-        },
-        {
-          "type": "paragraph",
-          "content": "Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency."
-            },
-            {
-              "content": "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;"
-            },
-            {
-              "content": "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it."
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "No More Parsing Codecs!!!!",
-          "id": "no-more-parsing-codecs"
-        },
-        {
-          "type": "paragraph",
-          "content": "If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable"
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
-          "id": "2160p-quality-encode-profile-release-group-tierlist"
-        },
-        {
-          "type": "paragraph",
-          "content": "Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic."
-        },
-        {
-          "type": "paragraph",
-          "content": "This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>"
-            },
-            {
-              "content": "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
-            }
-          ]
-        },
-        {
-          "type": "header",
-          "level": 4,
-          "text": "Thanks",
-          "id": "thanks"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            {
-              "content": "Thanks to @seraphys for helping out with the profile creation / giving constant feedback."
-            },
-            {
-              "content": "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": "Show them some love."
-        },
-        {
-          "type": "header",
-          "level": 2,
-          "text": "Profilarr",
-          "id": "profilarr"
-        },
-        {
-          "type": "paragraph",
-          "content": "Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)"
+          "content": "What&#39;s next? I have no idea!"
         }
       ],
-      "markdown": "\nHey everyone, medium-ish update today.\n\n## Website 2.0\n\nI've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:\n\n- Database gets an update -> Website sees its data is stale -> Website rebuilds itself with new data -> Santiago smiles in not needing to do anything\n\nThis all ties into the whole \"write once\" philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I'm happy to share it with you guys as it is.\n\n[Website 2.0](https://dictionarry.dev/)\n\n![website2.0](https://i.imgur.com/eORTwml.png)\n\nThe old site will go down soon, sorry if I broke anyone's workflows D:\n\n### Profile Selector?\n\nThis idea has gone through many iterations since i started Dictionarry last year.\n\n1. A static flowchart with not nearly enough information / choice: https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\n2. The \"Profile Selector\" (terrible name): https://selectarr.pages.dev/\n3. Frankenstein's triangle: [Discord Link](https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925)\n\nFrankenstein's triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the \"score\" of each profile on each of it's axes and finding the best fitting triangle that used the axis that was changed.\n\nResults were pretty good but I felt that it abstracted _too much_ of what made any user choice meaningful so I decided to scrap it.\n\n### Profile Builder!\n\nIn it's place is the \"Profile Builder\" (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It's pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -> resolution -> compression -> encode type -> codec -> HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the \"trying to get the profile I want\" issue as it starts pretty broad and gets increasingly more specific the more things you choose. It's up now, give it a playwith; let me know if its good / bad / needs changes: [Profile Buider](https://dictionarry.dev/builder)\n\n![Profile Builder](https://i.imgur.com/ka8KSHl.png)\n\n## Encode Efficiency Index\n\nHere we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres's the play-by-play:\n\n- It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.\n- It can discern transparency by targeting ratios at which a codec begins to \"saturate\"\n- It can discern efficiency by targeting ratios at which a codec reaches it's \"efficiency apex\"\n\nThis is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail [here](https://dictionarry.dev/wiki/EEi). Months of research and iteration has gone into this, and I really think this is Dictionarry's biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.\n\n#### No More Parsing Codecs!!!!\n\nIf you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don't have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable\n\n#### 2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!\n\nUsing EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No \"popular\" vote. Whenever something isn't documented, we simply add that movie / tv show to the data source and groupings update automatically. It's almost like magic.\n\nThis metric has made the 2160p Quality profile possible and i dare say it's the most comprehensive one I've worked on thus far. Give the quality profile and tier lists a read here:\n\n- [216p Quality Profile](https://dictionarry.dev/profiles/2160p-quality)\n- [2160p Quality Release Group Tiers](https://dictionarry.dev/tiers/2160p/quality)\n\n#### Thanks\n\n- Thanks to @seraphys for helping out with the profile creation / giving constant feedback.\n- Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn't been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.\n\nShow them some love.\n\n## Profilarr\n\nAlmost done, I took a break for a couple weeks to finish up the website but I'm gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It's hard to say how long this is gonna take since I'm basically learning it all on the fly so bare with me on this. But, it's almost done and a beta test will be out soon (hopefully)\n",
+      "markdown": "\nThis dev log marks a rebirth for Dictionarry's documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, language and structure. Going forward, dev logs will be shorter and more frequent. \n\n# Website 3.0\n\nThe old website sucked, I couldn't stand to look at it anymore (let alone work on it), so I rebuilt it from the ground up. It follows a more traditional documentation structure (dual navigation panes, actually functioning search) but integrates many custom components you won't see on static markdown generators. Many of the changes are superficial, don't actually help anyone, but were extremely fun to work on. Some of the notable changes are:\n- Better database entry pages with fancy tools\n- Search\n- Better navigation (more segmented pages with shareable sections)\n- Refreshed Wizard (renamed from builder)\n- An extremely overthought installation guide complete with videos\n- Regex entries\n- Media Management\n- Discussion via [utterances](https://utteranc.es/)\n- Built with svelte! \n\nTime will tell if I end up doing 4.0, but I am for the most part happy with this version. There is so much that's gone into the search / wizard that 99% of people will never see (Bézier curves that resize dynamically, Elo based search using clicks) but I'm glad I worked on it. \n\n# Burnout\n\nI'm really burnt out at the moment, progress is extremely slow and I'm mostly only working on stuff that brings me joy (like this website!), so bear with me through all this. Dictionarry is my baby and it's not something I'd ever consider abandoning (as stressful as it is sometimes). Database work is slow, Profilarr even slower, but we slowly march ahead in spite of it all. I'm starting to pivot back to doing most of this work for myself to have fun, rather than building for the community. It seems a bit counter productive, but I think more meaningful work gets done this way. \n\nWhat's next? I have no idea! ",
       "navigation": [
-        {
-          "title": "Website 2.0",
-          "children": [
-            {
-              "title": "Profile Selector?",
-              "children": []
-            },
-            {
-              "title": "Profile Builder!",
-              "children": []
-            }
-          ]
-        },
-        "Encode Efficiency Index",
-        "No More Parsing Codecs!!!!",
-        "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
-        "Thanks",
-        "Profilarr"
+        "Website 3.0",
+        "Burnout"
       ],
-      "searchText": "website 2 0 hey everyone medium ish update today website 2 0 i ve wanted to transition away from the old site mkdocs for a while now as its quite hard to maintain and keep everything up to date so i built a hey everyone medium ish update today website 2 0 i ve wanted to transition away from the old site mkdocs for a while now as its quite hard to maintain and keep everything up to date so i built a new site using next js that uses isr to rebuild its content using the dictionarry database basically this just means database gets an update website sees its data is stale website rebuilds itself with new data santiago smiles in not needing to do anything this all ties into the whole write once philosophy that i instilled with profilarr and has made development much easier there are still quite a few layout issues and perhaps a devlog refactor i need to fit in somewhere but i m happy to share it with you guys as it is website 2 0 website2 0 the old site will go down soon sorry if i broke anyone s workflows d profile selector this idea has gone through many iterations since i started dictionarry last year 1 a static flowchart with not nearly enough information choice https github com santiagosayshey website blob 030f3631b4f6fffdb7fa9f4696e5d12defc84a46 docs profiles flowchart png 2 the profile selector terrible name https selectarr pages dev 3 frankenstein s triangle discord link frankenstein s triangle was supposed to be what i shipped with the new website and i actually finished it too it worked by calculating the area of the efficiency quality compatibility triangle using some formula named after some guy i forget to guesstimate user choice based on their previous selection it did this by normalizing the score of each profile on each of it s axes and finding the best fitting triangle that used the axis that was changed results were pretty good but i felt that it abstracted too much of what made any user choice meaningful so i decided to scrap it profile builder in it s place is the profile builder maybe also a terrible name it still attempts to abstract audio video down into more quantifiable groupings but limits itself to explanations of certain things where more abstraction is detrimental it s pretty self explanatory once you use it but basically you choose through increasingly niche groupings resolution compression encode type codec hdr at each step a list of recommended profiles will be shown i think this new system helps to fix the trying to get the profile i want issue as it starts pretty broad and gets increasingly more specific the more things you choose it s up now give it a playwith let me know if its good bad needs changes profile buider profile builder encode efficiency index here we go meat and potatoes this is another release group metric just like the golden popcorn performance index heres s the play by play it evaluates release groups on their average compression ratio how big their encode is compared to a source to discern quality and or efficiency it can discern transparency by targeting ratios at which a codec begins to saturate it can discern efficiency by targeting ratios at which a codec reaches it s efficiency apex this is a heavily watered down explanation of the metric you can read about it with examples in very heavy detail here months of research and iteration has gone into this and i really think this is dictionarry s biggest asset so far when av1 profiles become a thing this metric is ready for it no more parsing codecs if you parse the efficiency of a release group directly then you know youre getting something at a file size you want this means we don t have to use h265 x265 as a ridiculous proxy baseline to find content we want anymore we can just downrank all h264 instead which is much more reliable 2160p quality encode profile release group tierlist using eei we target 4k release groups at 55 target ratio to discern transparency no golden popcorns needed no complex trump parsing crap no popular vote whenever something isn t documented we simply add that movie tv show to the data source and groupings update automatically it s almost like magic this metric has made the 2160p quality profile possible and i dare say it s the most comprehensive one i ve worked on thus far give the quality profile and tier lists a read here 216p quality profile 2160p quality release group tiers thanks thanks to seraphys for helping out with the profile creation giving constant feedback thanks to erphise for being a tester the catalyst for the creation of this metric if they hadn t been testing out the hevc profile we never would have talked about compression ratios which never meant i got the idea for the metric in the first place show them some love profilarr almost done i took a break for a couple weeks to finish up the website but i m gonna get rolling again soon i just finalized authentication database migrations and the pull module the only major thing left is getting everything ready for production this means setting up the docker image unraid template etc etc it s hard to say how long this is gonna take since i m basically learning it all on the fly so bare with me on this but it s almost done and a beta test will be out soon hopefully",
+      "searchText": "rebirth this dev log marks a rebirth for dictionarry s documentation everything prior to this entry has been burned to ashes none of it is bad per se but the writing is very inconsistent in tone languag dictionarry born again this dev log marks a rebirth for dictionarry s documentation everything prior to this entry has been burned to ashes none of it is bad per se but the writing is very inconsistent in tone language and structure going forward dev logs will be shorter and more frequent website 3 0 the old website sucked i couldn t stand to look at it anymore let alone work on it so i rebuilt it from the ground up it follows a more traditional documentation structure dual navigation panes actually functioning search but integrates many custom components you won t see on static markdown generators many of the changes are superficial don t actually help anyone but were extremely fun to work on some of the notable changes are better database entry pages with fancy tools search better navigation more segmented pages with shareable sections refreshed wizard renamed from builder an extremely overthought installation guide complete with videos regex entries media management discussion via utterances built with svelte time will tell if i end up doing 4 0 but i am for the most part happy with this version there is so much that s gone into the search wizard that 99 of people will never see b zier curves that resize dynamically elo based search using clicks but i m glad i worked on it burnout i m really burnt out at the moment progress is extremely slow and i m mostly only working on stuff that brings me joy like this website so bear with me through all this dictionarry is my baby and it s not something i d ever consider abandoning as stressful as it is sometimes database work is slow profilarr even slower but we slowly march ahead in spite of it all i m starting to pivot back to doing most of this work for myself to have fun rather than building for the community it seems a bit counter productive but i think more meaningful work gets done this way what s next i have no idea",
       "searchWeight": 0.6,
       "tags": [
-        "devlog",
         "website",
-        "profile_builder",
-        "eei",
-        "2160p",
-        "quality"
+        "personal",
+        "milestone"
       ],
-      "filename": "Website 2.0.md",
-      "lastModified": "2025-06-29T12:42:25.555Z"
+      "filename": "rebirth.md",
+      "lastModified": "2025-08-06T17:34:01.420Z"
+    },
+    "/devlogs/zzz": {
+      "id": "devlogs-zzz",
+      "path": "/devlogs/zzz",
+      "type": "markdown",
+      "slug": "zzz",
+      "category": "devlogs",
+      "title": "zzz",
+      "description": "z z...",
+      "frontmatter": {
+        "title": "zzz",
+        "slug": "zzz",
+        "blurb": "zzz",
+        "author": "santiagosayshey",
+        "created": "2025-08-020",
+        "tags": [
+          "website",
+          "personal",
+          "milestone"
+        ],
+        "readingTime": 1
+      },
+      "blocks": [
+        {
+          "type": "header",
+          "level": 1,
+          "text": "z",
+          "id": "z"
+        },
+        {
+          "type": "paragraph",
+          "content": "z"
+        }
+      ],
+      "markdown": "\n\n# z\nz\n",
+      "navigation": [
+        "z"
+      ],
+      "searchText": "zzz z z zzz z z",
+      "searchWeight": 0.6,
+      "tags": [
+        "website",
+        "personal",
+        "milestone"
+      ],
+      "filename": "zzz.md",
+      "lastModified": "2025-08-06T17:36:04.616Z"
     }
   },
   "searchIndex": {
@@ -122466,8 +119560,7 @@ export const contentDatabase = {
         "custom-format-free100",
         "regex-pattern-full-disc",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "122": [
         "wiki-edition-philosophy"
@@ -122509,9 +119602,6 @@ export const contentDatabase = {
       "266": [
         "regex-pattern-vvc"
       ],
-      "300": [
-        "devlogs-vision-almost-realised"
-      ],
       "400": [
         "regex-pattern-roku"
       ],
@@ -122526,8 +119616,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "1000": [
-        "wiki-edition-philosophy",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "1080": [
         "regex-pattern-peacock-tv"
@@ -122671,8 +119760,7 @@ export const contentDatabase = {
       ],
       "welcome": [
         "getting-started-welcome",
-        "getting-started-welcome",
-        "devlogs-profilarr-is-in-beta"
+        "getting-started-welcome"
       ],
       "dictionarry": [
         "getting-started-welcome",
@@ -122685,20 +119773,16 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-faq",
+        "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "your": [
         "getting-started-welcome",
@@ -122708,15 +119792,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "media": [
         "getting-started-welcome",
@@ -122748,12 +119824,13 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth"
       ],
       "automation": [
         "getting-started-welcome",
         "quality-profile-index",
+        "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy"
@@ -122766,9 +119843,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "hub": [
-        "getting-started-welcome",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "getting-started-welcome"
       ],
       "profilarr": [
         "getting-started-profilarr",
@@ -122785,50 +119860,11 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos",
+        "devlogs-rebirth"
       ],
       "setup": [
-        "getting-started-profilarr",
-        "devlogs-profilarr-is-in-beta"
+        "getting-started-profilarr"
       ],
       "set": [
         "getting-started-profilarr",
@@ -122838,12 +119874,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "and": [
         "getting-started-profilarr",
@@ -122851,7 +119882,6 @@ export const contentDatabase = {
         "quality-profile-index",
         "custom-format-index",
         "regex-pattern-index",
-        "devlogs-index",
         "quality-profile-1080p-balanced",
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality-hdr",
@@ -123044,6 +120074,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -123078,6 +120109,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-faq",
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
@@ -123099,132 +120133,11 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "configure": [
         "getting-started-profilarr",
@@ -123340,72 +120253,11 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "automated": [
         "getting-started-profilarr",
@@ -123545,44 +120397,21 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "profile": [
         "getting-started-profilarr",
@@ -123613,37 +120442,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "management": [
         "getting-started-profilarr",
@@ -123655,35 +120454,22 @@ export const contentDatabase = {
         "media-management-qualitydefinitions",
         "wiki-faq",
         "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "devlogs-rebirth"
       ],
       "development": [
         "getting-started-development",
         "getting-started-development",
-        "devlogs-index",
-        "devlogs-index",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "guide": [
         "getting-started-development",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-profilarr-casaos",
+        "devlogs-rebirth"
       ],
       "contribution": [
         "getting-started-development"
@@ -123698,36 +120484,7 @@ export const contentDatabase = {
         "quality-profile-2160p-remux",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "browse": [
         "quality-profile-index",
@@ -123737,9 +120494,7 @@ export const contentDatabase = {
       "manage": [
         "quality-profile-index",
         "custom-format-index",
-        "regex-pattern-index",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
+        "regex-pattern-index"
       ],
       "custom": [
         "custom-format-index",
@@ -123907,33 +120662,9 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "formats": [
         "custom-format-index",
@@ -123954,22 +120685,7 @@ export const contentDatabase = {
         "media-management-naming",
         "wiki-edition-philosophy",
         "wiki-faq",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "matching": [
         "custom-format-index",
@@ -124401,35 +121117,18 @@ export const contentDatabase = {
         "regex-pattern-x264",
         "regex-pattern-x265",
         "regex-pattern-xander",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "patterns": [
         "regex-pattern-index",
         "regex-pattern-index",
         "custom-format-uhdbits",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "advanced": [
         "regex-pattern-index",
-        "wiki-faq",
-        "devlogs-profile-selector-v3"
+        "wiki-faq"
       ],
       "settings": [
         "media-management-index",
@@ -124442,35 +121141,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "logs": [
-        "devlogs-index",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "timeline": [
-        "devlogs-index"
-      ],
-      "progress": [
-        "devlogs-index",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
-      ],
-      "updates": [
-        "devlogs-index",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "wiki-profilarr-casaos"
       ],
       "1080p": [
         "quality-profile-1080p-balanced",
@@ -124546,18 +121217,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "balanced": [
         "quality-profile-1080p-balanced",
@@ -124576,8 +121236,7 @@ export const contentDatabase = {
         "custom-format-2160p-balanced-tier-2",
         "custom-format-2160p-balanced-tier-2",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "targets": [
         "quality-profile-1080p-balanced",
@@ -124587,8 +121246,7 @@ export const contentDatabase = {
         "quality-profile-1080p-balanced",
         "quality-profile-2160p-balanced",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "immutable": [
         "quality-profile-1080p-balanced",
@@ -124677,11 +121335,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
+        "wiki-profilarr-casaos"
       ],
       "dls": [
         "quality-profile-1080p-balanced",
@@ -124790,52 +121444,12 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "fallback": [
         "quality-profile-1080p-balanced",
@@ -124848,9 +121462,7 @@ export const contentDatabase = {
         "custom-format-dolby-vision-without-fallback",
         "custom-format-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision-without-fallback",
-        "regex-pattern-dolby-vision-without-fallback",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "regex-pattern-dolby-vision-without-fallback"
       ],
       "transparent": [
         "quality-profile-1080p-balanced",
@@ -124942,6 +121554,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
@@ -124961,16 +121574,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "the": [
         "quality-profile-1080p-balanced",
@@ -125375,187 +121979,16 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "golden": [
         "quality-profile-1080p-balanced",
@@ -125586,11 +122019,9 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "popcorn": [
         "quality-profile-1080p-balanced",
@@ -125608,9 +122039,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-gppi",
+        "wiki-release-group-philosophy"
       ],
       "performance": [
         "quality-profile-1080p-balanced",
@@ -125621,9 +122051,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "index": [
         "quality-profile-1080p-balanced",
@@ -125637,12 +122065,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "special": [
         "quality-profile-1080p-balanced",
@@ -125673,7 +122096,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "considerations": [
         "quality-profile-1080p-balanced",
@@ -125742,30 +122165,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "given": [
         "quality-profile-1080p-balanced",
@@ -125847,19 +122248,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "who": [
         "quality-profile-1080p-balanced",
@@ -125906,12 +122300,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-gppi"
       ],
       "prioritize": [
         "quality-profile-1080p-balanced",
@@ -125963,10 +122352,7 @@ export const contentDatabase = {
         "regex-pattern-iqiyi",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "optimisation": [
         "quality-profile-1080p-balanced",
@@ -126007,14 +122393,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "falling": [
         "quality-profile-1080p-balanced",
@@ -126022,17 +122401,11 @@ export const contentDatabase = {
       ],
       "somewhere": [
         "quality-profile-1080p-balanced",
-        "quality-profile-2160p-balanced",
-        "devlogs-website-20"
+        "quality-profile-2160p-balanced"
       ],
       "around": [
         "quality-profile-1080p-balanced",
-        "quality-profile-2160p-balanced",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
+        "quality-profile-2160p-balanced"
       ],
       "tier": [
         "quality-profile-1080p-balanced",
@@ -126103,11 +122476,7 @@ export const contentDatabase = {
         "custom-format-web-dl-tier-4",
         "custom-format-web-dl-tier-4",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "this": [
         "quality-profile-1080p-balanced",
@@ -126178,77 +122547,15 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "includes": [
         "quality-profile-1080p-balanced",
@@ -126257,8 +122564,7 @@ export const contentDatabase = {
         "regex-pattern-imax",
         "regex-pattern-showtime-rename",
         "regex-pattern-showtime",
-        "wiki-eei",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "like": [
         "quality-profile-1080p-balanced",
@@ -126284,19 +122590,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "bhdstudio": [
         "quality-profile-1080p-balanced",
@@ -126405,6 +122699,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-faq",
         "wiki-faq",
         "wiki-gppi",
@@ -126414,6 +122709,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
+        "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -126425,22 +122721,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "can": [
         "quality-profile-1080p-balanced",
@@ -126472,43 +122753,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "found": [
         "quality-profile-1080p-balanced",
@@ -126548,29 +122793,9 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "fall": [
         "quality-profile-1080p-balanced",
@@ -126625,12 +122850,7 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "releases": [
         "quality-profile-1080p-balanced",
@@ -126688,6 +122908,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-faq",
         "wiki-faq",
         "wiki-gppi",
@@ -126697,11 +122918,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "dvd": [
         "quality-profile-1080p-balanced",
@@ -126784,10 +123001,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "utilizes": [
         "quality-profile-1080p-quality-hdr",
@@ -126804,28 +123018,16 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "custom-format-special-edition-unwanted",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "dev": [
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality",
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "wiki": [
         "quality-profile-1080p-quality-hdr",
@@ -126833,8 +123035,7 @@ export const contentDatabase = {
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
         "regex-pattern-wiki",
-        "regex-pattern-wiki",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-wiki"
       ],
       "gppi": [
         "quality-profile-1080p-quality-hdr",
@@ -126855,10 +123056,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "target": [
         "quality-profile-1080p-quality-hdr",
@@ -126881,9 +123079,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "x265": [
         "quality-profile-1080p-quality-hdr",
@@ -126909,9 +123105,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "tiers": [
         "quality-profile-1080p-quality-hdr",
@@ -126919,11 +123113,7 @@ export const contentDatabase = {
         "quality-profile-2160p-quality",
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "prioritise": [
         "quality-profile-1080p-quality-hdr",
@@ -126932,9 +123122,7 @@ export const contentDatabase = {
         "quality-profile-2160p-remux",
         "quality-profile-720p-quality",
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-gppi"
       ],
       "high": [
         "quality-profile-1080p-quality-hdr",
@@ -126962,7 +123150,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "devlogs-profile-selector-v3"
+        "wiki-gppi"
       ],
       "scores": [
         "quality-profile-1080p-quality-hdr",
@@ -126973,16 +123161,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "regular": [
         "quality-profile-1080p-quality-hdr",
         "custom-format-not-only-english-missing",
-        "regex-pattern-dolby-vision-without-fallback",
-        "devlogs-markdown-test"
+        "regex-pattern-dolby-vision-without-fallback"
       ],
       "non": [
         "quality-profile-1080p-quality-hdr",
@@ -127004,18 +123188,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "then": [
         "quality-profile-1080p-quality-hdr",
         "custom-format-webrip",
         "regex-pattern-bw",
         "wiki-edition-philosophy",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "optimised": [
         "quality-profile-1080p-quality-hdr",
@@ -127044,48 +123224,14 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "allowed": [
         "quality-profile-1080p-quality-hdr",
@@ -127114,11 +123260,7 @@ export const contentDatabase = {
         "regex-pattern-repack1",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "reputable": [
         "quality-profile-1080p-quality-hdr",
@@ -127183,13 +123325,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "has": [
         "quality-profile-1080p-quality-hdr",
@@ -127203,27 +123339,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "encoded": [
         "quality-profile-1080p-quality-hdr",
@@ -127274,6 +123391,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -127287,25 +123405,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "uhd": [
         "quality-profile-1080p-quality-hdr",
@@ -127372,9 +123473,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "strictly": [
         "quality-profile-1080p-quality-hdr"
@@ -127474,23 +123573,13 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "tags": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "media-management-naming",
-        "wiki-release-group-philosophy",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "lossless": [
         "quality-profile-1080p-remux",
@@ -127502,9 +123591,7 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
+        "wiki-faq"
       ],
       "copies": [
         "quality-profile-1080p-remux",
@@ -127568,22 +123655,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "which": [
         "quality-profile-1080p-remux",
@@ -127601,6 +123673,7 @@ export const contentDatabase = {
         "custom-format-webrip",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -127608,20 +123681,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "based": [
         "quality-profile-1080p-remux",
@@ -127644,9 +123704,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "metric": [
         "quality-profile-1080p-remux",
@@ -127662,13 +123720,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-gppi",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "avoids": [
         "quality-profile-1080p-remux",
@@ -127678,9 +123732,7 @@ export const contentDatabase = {
       "stop": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "circular": [
         "quality-profile-1080p-remux",
@@ -127710,11 +123762,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "discernable": [
         "quality-profile-1080p-remux",
@@ -127732,10 +123780,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "metrics": [
         "quality-profile-1080p-remux",
@@ -127820,15 +123865,7 @@ export const contentDatabase = {
         "regex-pattern-extras",
         "regex-pattern-hdr",
         "regex-pattern-upscaled",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "used": [
         "quality-profile-1080p-remux",
@@ -127852,13 +123889,7 @@ export const contentDatabase = {
         "custom-format-webrip",
         "regex-pattern-xvid",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "indicate": [
         "quality-profile-1080p-remux",
@@ -127903,35 +123934,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "should": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "upgraded": [
         "quality-profile-1080p-remux",
@@ -127952,33 +123961,17 @@ export const contentDatabase = {
         "regex-pattern-viki",
         "regex-pattern-wetv",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "helps": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "regex-pattern-mkv",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "grab": [
         "quality-profile-1080p-remux",
-        "quality-profile-2160p-remux",
-        "devlogs-profilarr-is-in-beta"
+        "quality-profile-2160p-remux"
       ],
       "tagged": [
         "quality-profile-1080p-remux",
@@ -127987,8 +123980,7 @@ export const contentDatabase = {
       ],
       "fairly": [
         "quality-profile-1080p-remux",
-        "quality-profile-2160p-remux",
-        "devlogs-vision-almost-realised"
+        "quality-profile-2160p-remux"
       ],
       "common": [
         "quality-profile-1080p-remux",
@@ -127998,35 +123990,18 @@ export const contentDatabase = {
       ],
       "quite": [
         "quality-profile-1080p-remux",
-        "quality-profile-2160p-remux",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "quality-profile-2160p-remux"
       ],
       "few": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "wiki-eei",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "trackers": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-gppi"
       ],
       "often": [
         "quality-profile-1080p-remux",
@@ -128064,35 +124039,8 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "best": [
         "quality-profile-1080p-remux",
@@ -128103,9 +124051,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "available": [
         "quality-profile-1080p-remux",
@@ -128114,16 +124060,12 @@ export const contentDatabase = {
         "regex-pattern-criterion-channel",
         "regex-pattern-netflix",
         "regex-pattern-roku",
-        "regex-pattern-viki",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "regex-pattern-viki"
       ],
       "cannot": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "quality-profile-2160p-remux",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "quality-profile-2160p-remux"
       ],
       "falls": [
         "quality-profile-1080p-remux",
@@ -128189,12 +124131,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "lossy": [
         "quality-profile-2160p-balanced",
@@ -128239,36 +124176,12 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "since": [
         "quality-profile-2160p-balanced",
         "custom-format-unknown-lossless-audio",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "they": [
         "quality-profile-2160p-balanced",
@@ -128290,13 +124203,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "comparatively": [
         "quality-profile-2160p-balanced"
@@ -128307,18 +124214,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "larger": [
         "quality-profile-2160p-balanced",
@@ -128347,11 +124243,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "efficiency": [
         "quality-profile-2160p-quality",
@@ -128376,22 +124268,11 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "eei": [
         "quality-profile-2160p-quality",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "ratio": [
         "quality-profile-2160p-quality",
@@ -128415,9 +124296,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "additional": [
         "quality-profile-2160p-quality",
@@ -128450,25 +124329,16 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "help": [
         "quality-profile-2160p-quality",
         "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "push": [
         "quality-profile-2160p-quality",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "lower": [
         "quality-profile-2160p-quality",
@@ -128502,15 +124372,11 @@ export const contentDatabase = {
       "ones": [
         "quality-profile-2160p-quality",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "cases": [
         "quality-profile-2160p-quality",
-        "wiki-eei",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "better": [
         "quality-profile-2160p-quality",
@@ -128542,11 +124408,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "sources": [
         "quality-profile-2160p-quality",
@@ -128555,10 +124418,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "video": [
         "quality-profile-2160p-remux",
@@ -128628,8 +124488,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "dolby": [
         "quality-profile-2160p-remux",
@@ -128661,9 +124520,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision",
         "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-formats",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "vision": [
         "quality-profile-2160p-remux",
@@ -128688,11 +124545,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "hdr10": [
         "quality-profile-2160p-remux",
@@ -128802,6 +124655,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
@@ -128811,6 +124666,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
+        "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -128820,50 +124676,10 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "some": [
         "quality-profile-2160p-remux",
@@ -128878,30 +124694,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "dovi": [
         "quality-profile-2160p-remux",
@@ -128956,22 +124749,13 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "regardless": [
         "quality-profile-2160p-remux",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "720p": [
         "quality-profile-720p-quality",
@@ -128998,8 +124782,7 @@ export const contentDatabase = {
         "custom-format-720p-web-dl",
         "custom-format-720p-webrip",
         "custom-format-720p-webrip",
-        "custom-format-720p",
-        "devlogs-profilarr-is-in-beta"
+        "custom-format-720p"
       ],
       "matches": [
         "custom-format-1080p-balanced-tier-1",
@@ -129168,8 +124951,7 @@ export const contentDatabase = {
         "regex-pattern-ipt-internals",
         "regex-pattern-mkv",
         "regex-pattern-monkee",
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "under": [
         "custom-format-1080p-balanced-tier-1",
@@ -129202,9 +124984,7 @@ export const contentDatabase = {
         "custom-format-web-dl-tier-1",
         "custom-format-web-dl-tier-2",
         "custom-format-web-dl-tier-3",
-        "custom-format-web-dl-tier-4",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff"
+        "custom-format-web-dl-tier-4"
       ],
       "format": [
         "custom-format-1080p-balanced-tier-1",
@@ -129372,25 +125152,8 @@ export const contentDatabase = {
         "regex-pattern-vp9",
         "regex-pattern-vvc",
         "wiki-edition-philosophy",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy",
+        "wiki-faq"
       ],
       "blurays": [
         "custom-format-1080p-bluray",
@@ -129413,18 +125176,14 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "works": [
         "custom-format-1080p-golden-popcorn",
         "custom-format-720p-golden-popcorn",
         "custom-format-sd-golden-popcorn",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "passthepopcorn": [
         "custom-format-1080p-golden-popcorn",
@@ -129471,9 +125230,7 @@ export const contentDatabase = {
         "media-management-naming",
         "media-management-naming",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "definition": [
         "custom-format-1080p",
@@ -129482,10 +125239,7 @@ export const contentDatabase = {
         "custom-format-540p",
         "custom-format-576p",
         "custom-format-720p",
-        "custom-format-720p",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "custom-format-720p"
       ],
       "resolution": [
         "custom-format-1080p",
@@ -129511,12 +125265,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "providing": [
         "custom-format-1080p",
@@ -129532,10 +125281,7 @@ export const contentDatabase = {
       "detail": [
         "custom-format-1080p",
         "custom-format-2160p",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "clarity": [
         "custom-format-1080p",
@@ -129653,10 +125399,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "pattern": [
         "custom-format-3d",
@@ -130075,9 +125818,7 @@ export const contentDatabase = {
         "regex-pattern-tarunk9c",
         "regex-pattern-x264",
         "regex-pattern-x265",
-        "regex-pattern-xander",
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
+        "regex-pattern-xander"
       ],
       "480p": [
         "custom-format-480p-web-dl",
@@ -130122,8 +125863,7 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "save": [
-        "custom-format-540p",
-        "devlogs-vision-almost-realised"
+        "custom-format-540p"
       ],
       "space": [
         "custom-format-540p",
@@ -130174,12 +125914,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "maintaining": [
         "custom-format-540p",
@@ -130218,17 +125953,11 @@ export const contentDatabase = {
         "custom-format-576p"
       ],
       "compatibility": [
-        "custom-format-576p",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
+        "custom-format-576p"
       ],
       "improved": [
         "custom-format-720p",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "amzn": [
         "custom-format-amzn",
@@ -130340,17 +126069,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "atvp": [
         "custom-format-atvp",
@@ -130364,8 +126083,7 @@ export const contentDatabase = {
         "regex-pattern-apple-tv",
         "regex-pattern-apple-tv",
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-itunes"
       ],
       "av1": [
         "custom-format-av1",
@@ -130374,8 +126092,7 @@ export const contentDatabase = {
         "regex-pattern-av1",
         "regex-pattern-av1",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "missing": [
         "custom-format-atmos-missing",
@@ -130401,8 +126118,7 @@ export const contentDatabase = {
         "custom-format-sdr",
         "custom-format-truehd-missing",
         "custom-format-uhd-bluray-missing",
-        "custom-format-x265-missing",
-        "devlogs-website-20"
+        "custom-format-x265-missing"
       ],
       "match": [
         "custom-format-atmos-missing",
@@ -130423,6 +126139,7 @@ export const contentDatabase = {
         "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-uhd-bluray-missing-groups",
+        "wiki-eei",
         "wiki-eei"
       ],
       "don": [
@@ -130435,12 +126152,7 @@ export const contentDatabase = {
         "regex-pattern-uhd-bluray-missing-groups",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "label": [
         "custom-format-atmos-missing"
@@ -130478,8 +126190,7 @@ export const contentDatabase = {
         "regex-pattern-imax",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "digital": [
         "custom-format-bluray",
@@ -130553,6 +126264,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
@@ -130565,9 +126277,7 @@ export const contentDatabase = {
       ],
       "gets": [
         "custom-format-bluray",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "its": [
         "custom-format-bluray",
@@ -130583,18 +126293,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "name": [
         "custom-format-bluray",
-        "wiki-profilarr-casaos",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "blue": [
         "custom-format-bluray",
@@ -130609,16 +126312,11 @@ export const contentDatabase = {
       ],
       "read": [
         "custom-format-bluray",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "shorter": [
-        "custom-format-bluray"
+        "custom-format-bluray",
+        "devlogs-rebirth"
       ],
       "wavelength": [
         "custom-format-bluray"
@@ -130679,22 +126377,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "data": [
         "custom-format-bluray",
@@ -130704,27 +126390,17 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-gppi",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "same": [
         "custom-format-bluray",
         "regex-pattern-dual-audio",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "physical": [
         "custom-format-bluray",
@@ -130752,11 +126428,7 @@ export const contentDatabase = {
         "custom-format-bluray",
         "custom-format-dvd",
         "custom-format-special-edition",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "dual": [
         "custom-format-bluray",
@@ -130766,7 +126438,8 @@ export const contentDatabase = {
         "custom-format-not-only-english",
         "regex-pattern-dual-audio",
         "regex-pattern-dual-audio",
-        "regex-pattern-dual-audio"
+        "regex-pattern-dual-audio",
+        "devlogs-rebirth"
       ],
       "25gb": [
         "custom-format-bluray",
@@ -130839,10 +126512,7 @@ export const contentDatabase = {
         "regex-pattern-roku",
         "regex-pattern-roku",
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
+        "regex-pattern-itunes"
       ],
       "dsnp": [
         "custom-format-dsnp",
@@ -130888,9 +126558,7 @@ export const contentDatabase = {
         "regex-pattern-itunes",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-gppi"
       ],
       "types": [
         "custom-format-dts-hd-ma",
@@ -130916,8 +126584,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "conflict": [
         "custom-format-dts-hd-ma",
@@ -130927,16 +126594,11 @@ export const contentDatabase = {
         "custom-format-dolby-digital",
         "custom-format-flac",
         "custom-format-truehd",
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks"
+        "wiki-edition-philosophy"
       ],
       "direct": [
         "custom-format-dvd-remux",
-        "custom-format-webrip",
-        "devlogs-profilarr-is-in-beta"
+        "custom-format-webrip"
       ],
       "rip": [
         "custom-format-dvd-remux",
@@ -130971,10 +126633,7 @@ export const contentDatabase = {
         "regex-pattern-remux",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "wiki-faq"
       ],
       "encoding": [
         "custom-format-dvd-remux",
@@ -131066,8 +126725,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "versatile": [
         "custom-format-dvd",
@@ -131076,9 +126734,7 @@ export const contentDatabase = {
       "medium": [
         "custom-format-dvd",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "widely": [
         "custom-format-dvd",
@@ -131115,8 +126771,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul"
+        "wiki-gppi"
       ],
       "suitable": [
         "custom-format-dvd",
@@ -131139,6 +126794,7 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
+        "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-eei",
@@ -131171,18 +126827,7 @@ export const contentDatabase = {
       ],
       "support": [
         "custom-format-dvd",
-        "custom-format-uhd-bluray",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "custom-format-uhd-bluray"
       ],
       "sound": [
         "custom-format-dvd"
@@ -131214,8 +126859,7 @@ export const contentDatabase = {
       "broad": [
         "custom-format-dvd",
         "regex-pattern-stan-rename",
-        "regex-pattern-stan",
-        "devlogs-website-20"
+        "regex-pattern-stan"
       ],
       "accessibility": [
         "custom-format-dvd"
@@ -131245,9 +126889,7 @@ export const contentDatabase = {
         "custom-format-free100",
         "custom-format-free25",
         "custom-format-free50",
-        "custom-format-free75",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "custom-format-free75"
       ],
       "free25": [
         "custom-format-free25"
@@ -131303,6 +126945,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
         "wiki-profilarr-casaos",
@@ -131310,15 +126955,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "does": [
         "custom-format-hdr10-missing",
@@ -131327,52 +126964,29 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "work": [
         "custom-format-hdr10-missing",
         "custom-format-special-edition-unwanted",
         "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "properly": [
         "custom-format-hdr10-missing",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test"
+        "wiki-edition-philosophy"
       ],
       "sonarr": [
         "custom-format-hdr10-missing",
         "custom-format-season-pack",
         "media-management-naming",
         "media-management-qualitydefinitions",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "hlg": [
         "custom-format-hlg",
@@ -131480,8 +127094,7 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "regex-pattern-dual-audio",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
+        "wiki-gppi"
       ],
       "anywhere": [
         "custom-format-ma",
@@ -131514,33 +127127,7 @@ export const contentDatabase = {
         "regex-pattern-now",
         "regex-pattern-tving",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "retail": [
         "custom-format-non-retail-hdr",
@@ -131570,8 +127157,7 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
-        "wiki-edition-philosophy",
-        "devlogs-profile-tweaks"
+        "wiki-edition-philosophy"
       ],
       "language": [
         "custom-format-not-english",
@@ -131580,7 +127166,7 @@ export const contentDatabase = {
         "regex-pattern-dual-audio",
         "regex-pattern-kcw",
         "regex-pattern-viu",
-        "devlogs-profile-tweaks"
+        "devlogs-rebirth"
       ],
       "mutliple": [
         "custom-format-not-only-english-missing"
@@ -131602,8 +127188,7 @@ export const contentDatabase = {
         "regex-pattern-dual-audio",
         "regex-pattern-kcw",
         "regex-pattern-nahom",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "langauge": [
         "custom-format-not-only-english-missing"
@@ -131612,11 +127197,10 @@ export const contentDatabase = {
         "custom-format-not-only-english-missing",
         "wiki-eei",
         "wiki-eei",
+        "wiki-eei",
         "wiki-faq",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "expressions": [
         "custom-format-not-only-english-missing"
@@ -131682,10 +127266,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "either": [
         "custom-format-remux",
@@ -131694,8 +127275,7 @@ export const contentDatabase = {
         "regex-pattern-repack2",
         "regex-pattern-repack3",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "h265": [
         "custom-format-remux",
@@ -131705,14 +127285,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "h264": [
         "custom-format-remux",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "repack1": [
         "custom-format-repack1",
@@ -131729,17 +127307,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "specific": [
         "custom-format-repack1",
@@ -131755,16 +127323,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "terms": [
         "custom-format-repack1",
@@ -131776,8 +127335,7 @@ export const contentDatabase = {
         "regex-pattern-3d",
         "regex-pattern-dolby-vision",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "fixing": [
         "custom-format-repack1",
@@ -131797,11 +127355,7 @@ export const contentDatabase = {
         "custom-format-repack3",
         "custom-format-special-edition-unwanted",
         "regex-pattern-d3g",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "scene": [
         "custom-format-repack1",
@@ -131834,12 +127388,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "slot": [
         "custom-format-repack1",
@@ -131850,8 +127399,7 @@ export const contentDatabase = {
         "custom-format-repack1",
         "custom-format-repack2",
         "custom-format-repack3",
-        "wiki-release-group-philosophy",
-        "devlogs-modular-choices"
+        "wiki-release-group-philosophy"
       ],
       "two": [
         "custom-format-repack1",
@@ -131863,11 +127411,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "different": [
         "custom-format-repack1",
@@ -131890,12 +127434,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "proper": [
         "custom-format-repack1",
@@ -131918,11 +127457,7 @@ export const contentDatabase = {
         "regex-pattern-repack3",
         "regex-pattern-repack3",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "fixes": [
         "custom-format-repack1",
@@ -131933,8 +127468,7 @@ export const contentDatabase = {
         "custom-format-repack2",
         "custom-format-repack3",
         "custom-format-repack3",
-        "custom-format-repack3",
-        "devlogs-profilarr-is-in-beta"
+        "custom-format-repack3"
       ],
       "another": [
         "custom-format-repack1",
@@ -131942,16 +127476,7 @@ export const contentDatabase = {
         "custom-format-repack3",
         "custom-format-it-missing",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "repack": [
         "custom-format-repack1",
@@ -131973,10 +127498,7 @@ export const contentDatabase = {
         "custom-format-repack2",
         "custom-format-repack3",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "p2p": [
         "custom-format-repack1",
@@ -131987,15 +127509,12 @@ export const contentDatabase = {
         "custom-format-repack1",
         "custom-format-repack2",
         "custom-format-repack3",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "whenever": [
         "custom-format-repack1",
         "custom-format-repack2",
-        "custom-format-repack3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "custom-format-repack3"
       ],
       "fixed": [
         "custom-format-repack1",
@@ -132034,11 +127553,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "real": [
         "custom-format-repack1",
@@ -132075,21 +127590,12 @@ export const contentDatabase = {
         "custom-format-repack3",
         "regex-pattern-remux",
         "regex-pattern-viki",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "things": [
         "custom-format-repack1",
         "custom-format-repack2",
-        "custom-format-repack3",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "custom-format-repack3"
       ],
       "meaning": [
         "custom-format-repack1",
@@ -132119,9 +127625,7 @@ export const contentDatabase = {
         "regex-pattern-pq",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3"
+        "wiki-profilarr-casaos"
       ],
       "level": [
         "custom-format-repack1",
@@ -132129,8 +127633,7 @@ export const contentDatabase = {
         "custom-format-repack3",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test"
+        "wiki-faq"
       ],
       "number": [
         "custom-format-repack1",
@@ -132145,8 +127648,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "suffixes": [
         "custom-format-repack1"
@@ -132183,8 +127685,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision",
         "regex-pattern-sdr",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "range": [
         "custom-format-sdr",
@@ -132260,8 +127761,7 @@ export const contentDatabase = {
         "custom-format-season-pack",
         "regex-pattern-special-edition",
         "regex-pattern-theatrical-edition",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "edition": [
         "custom-format-special-edition-unwanted",
@@ -132277,6 +127777,7 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition",
         "media-management-naming",
         "media-management-naming",
+        "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
@@ -132345,6 +127846,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy",
         "wiki-edition-philosophy"
       ],
       "preferred": [
@@ -132368,9 +127870,7 @@ export const contentDatabase = {
         "custom-format-special-edition-unwanted",
         "regex-pattern-dolby-vision-without-fallback",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "because": [
         "custom-format-special-edition-unwanted",
@@ -132382,11 +127882,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "titles": [
         "custom-format-special-edition-unwanted",
@@ -132401,13 +127897,7 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "movie": [
         "custom-format-special-edition-unwanted",
@@ -132427,9 +127917,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "title": [
         "custom-format-special-edition-unwanted",
@@ -132438,11 +127926,7 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "github": [
         "custom-format-special-edition-unwanted",
@@ -132450,39 +127934,20 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "com": [
         "custom-format-special-edition-unwanted",
         "wiki-eei",
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "radarr": [
         "custom-format-special-edition-unwanted",
         "custom-format-special-edition-unwanted",
         "media-management-naming",
         "media-management-qualitydefinitions",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "editions": [
         "custom-format-special-edition",
@@ -132492,13 +127957,10 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "modified": [
-        "custom-format-special-edition",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff"
+        "custom-format-special-edition"
       ],
       "versions": [
         "custom-format-special-edition",
@@ -132509,8 +127971,7 @@ export const contentDatabase = {
       ],
       "exist": [
         "custom-format-special-edition",
-        "custom-format-unknown-lossless-audio",
-        "devlogs-profilarr-is-in-beta"
+        "custom-format-unknown-lossless-audio"
       ],
       "filmmakers": [
         "custom-format-special-edition"
@@ -132528,25 +127989,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "present": [
         "custom-format-special-edition"
@@ -132558,18 +128001,13 @@ export const contentDatabase = {
         "media-management-misc",
         "media-management-naming",
         "media-management-naming",
-        "wiki-eei",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "fix": [
-        "custom-format-special-edition",
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "custom-format-special-edition"
       ],
       "problems": [
-        "custom-format-special-edition",
-        "devlogs-profilarr-is-in-beta"
+        "custom-format-special-edition"
       ],
       "studios": [
         "custom-format-special-edition",
@@ -132585,18 +128023,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
+        "wiki-edition-philosophy"
       ],
       "money": [
         "custom-format-special-edition"
@@ -132626,100 +128053,24 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "see": [
         "custom-format-special-edition",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "them": [
         "custom-format-special-edition",
         "regex-pattern-remux",
         "regex-pattern-uhd-blu-ray",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "names": [
         "custom-format-special-edition",
         "regex-pattern-mkv",
         "regex-pattern-mkv",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "director": [
         "custom-format-special-edition",
@@ -132832,14 +128183,7 @@ export const contentDatabase = {
       "multiple": [
         "custom-format-special-edition",
         "regex-pattern-full-disc",
-        "regex-pattern-netflix",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-netflix"
       ],
       "technology": [
         "custom-format-special-edition"
@@ -132930,9 +128274,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "128mbps": [
         "custom-format-uhd-bluray"
@@ -132947,27 +128289,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
+        "wiki-faq",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "adding": [
         "custom-format-uhd-bluray",
@@ -132979,9 +128304,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "color": [
         "custom-format-uhd-bluray",
@@ -132996,10 +128319,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
+        "wiki-faq"
       ],
       "bit": [
         "custom-format-uhd-bluray",
@@ -133009,7 +128329,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "devlogs-profile-tweaks"
+        "devlogs-rebirth"
       ],
       "depth": [
         "custom-format-uhd-bluray",
@@ -133048,13 +128368,7 @@ export const contentDatabase = {
       ],
       "show": [
         "custom-format-uhd-bluray",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "uhdbits": [
         "custom-format-uhdbits",
@@ -133062,9 +128376,7 @@ export const contentDatabase = {
       ],
       "unique": [
         "custom-format-uhdbits",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "indexer": [
         "custom-format-uhdbits"
@@ -133076,13 +128388,11 @@ export const contentDatabase = {
         "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-ipt-internals",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "remove": [
         "custom-format-uhdbits",
-        "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-profilarr-casaos"
       ],
       "due": [
         "custom-format-uhdbits",
@@ -133096,14 +128406,13 @@ export const contentDatabase = {
       ],
       "bad": [
         "custom-format-uhdbits",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "parsing": [
         "custom-format-uhdbits",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "banned": [
         "custom-format-unwanted-release-groups",
@@ -133157,9 +128466,7 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio"
       ],
       "named": [
-        "custom-format-unknown-lossless-audio",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "custom-format-unknown-lossless-audio"
       ],
       "safe": [
         "custom-format-unknown-lossless-audio"
@@ -133171,31 +128478,13 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "isn": [
         "custom-format-unknown-lossless-audio",
         "wiki-eei",
         "wiki-faq",
-        "wiki-release-group-philosophy",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "upscaled": [
         "custom-format-upscaled",
@@ -133260,9 +128549,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-website-20"
+        "wiki-eei",
+        "wiki-faq"
       ],
       "created": [
         "custom-format-webrip",
@@ -133279,8 +128567,7 @@ export const contentDatabase = {
         "custom-format-webrip",
         "regex-pattern-movies-anywhere",
         "regex-pattern-viki",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "platforms": [
         "custom-format-webrip",
@@ -133301,9 +128588,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "several": [
         "custom-format-webrip",
@@ -133318,7 +128603,8 @@ export const contentDatabase = {
       ],
       "via": [
         "custom-format-webrip",
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth"
       ],
       "stripping": [
         "custom-format-webrip"
@@ -133328,13 +128614,7 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "down": [
-        "custom-format-webrip",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "custom-format-webrip"
       ],
       "resulting": [
         "custom-format-webrip"
@@ -133362,7 +128642,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "traditional": [
-        "custom-format-webrip"
+        "custom-format-webrip",
+        "devlogs-rebirth"
       ],
       "capture": [
         "custom-format-webrip",
@@ -133383,9 +128664,7 @@ export const contentDatabase = {
         "custom-format-webrip",
         "regex-pattern-colourisation",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-profilarr-casaos"
       ],
       "affect": [
         "custom-format-webrip"
@@ -133404,9 +128683,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei",
+        "wiki-release-group-philosophy"
       ],
       "depending": [
         "custom-format-webrip"
@@ -133489,17 +128767,13 @@ export const contentDatabase = {
         "regex-pattern-viu",
         "regex-pattern-iqiyi",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "comes": [
         "custom-format-it-missing",
         "regex-pattern-theatrical-edition",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "ipt": [
         "custom-format-it-missing",
@@ -133519,8 +128793,7 @@ export const contentDatabase = {
         "regex-pattern-ipt-internals"
       ],
       "aren": [
-        "custom-format-x265-missing",
-        "devlogs-vision-almost-realised"
+        "custom-format-x265-missing"
       ],
       "related": [
         "regex-pattern-3d",
@@ -133618,9 +128891,7 @@ export const contentDatabase = {
         "regex-pattern-monkee"
       ],
       "start": [
-        "regex-pattern-4k4u",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-4k4u"
       ],
       "string": [
         "regex-pattern-4k4u"
@@ -133670,21 +128941,16 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "part": [
         "regex-pattern-4k4u",
         "regex-pattern-amazon-prime",
         "regex-pattern-xvid",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "longer": [
-        "regex-pattern-4k4u",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "regex-pattern-4k4u"
       ],
       "4kdvs": [
         "regex-pattern-4kdvs",
@@ -133731,8 +128997,7 @@ export const contentDatabase = {
       ],
       "apex": [
         "regex-pattern-apex",
-        "regex-pattern-apex",
-        "devlogs-website-20"
+        "regex-pattern-apex"
       ],
       "aroma": [
         "regex-pattern-aroma",
@@ -133752,8 +129017,7 @@ export const contentDatabase = {
         "regex-pattern-av1",
         "regex-pattern-vp9",
         "regex-pattern-vvc",
-        "regex-pattern-vvc",
-        "devlogs-profile-selector-v3"
+        "regex-pattern-vvc"
       ],
       "compresses": [
         "regex-pattern-av1",
@@ -133768,13 +129032,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "streams": [
         "regex-pattern-av1",
@@ -133795,9 +129053,7 @@ export const contentDatabase = {
         "regex-pattern-hotstar",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "american": [
         "regex-pattern-amazon-prime",
@@ -133884,8 +129140,7 @@ export const contentDatabase = {
         "regex-pattern-viu",
         "regex-pattern-iqiyi",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices"
+        "wiki-profilarr-casaos"
       ],
       "rental": [
         "regex-pattern-amazon-prime"
@@ -133896,11 +129151,13 @@ export const contentDatabase = {
       "stand": [
         "regex-pattern-amazon-prime",
         "regex-pattern-showtime-rename",
-        "regex-pattern-showtime"
+        "regex-pattern-showtime",
+        "devlogs-rebirth"
       ],
       "alone": [
         "regex-pattern-amazon-prime",
-        "wiki-faq"
+        "wiki-faq",
+        "devlogs-rebirth"
       ],
       "ott": [
         "regex-pattern-apple-tv"
@@ -133945,16 +129202,10 @@ export const contentDatabase = {
         "regex-pattern-apple-tv"
       ],
       "selection": [
-        "regex-pattern-apple-tv",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "regex-pattern-apple-tv"
       ],
       "production": [
-        "regex-pattern-apple-tv",
-        "devlogs-website-20"
+        "regex-pattern-apple-tv"
       ],
       "television": [
         "regex-pattern-apple-tv",
@@ -134051,24 +129302,7 @@ export const contentDatabase = {
         "regex-pattern-bw",
         "wiki-gppi",
         "wiki-gppi",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-profilarr-casaos"
       ],
       "detects": [
         "regex-pattern-bw"
@@ -134090,8 +129324,7 @@ export const contentDatabase = {
         "regex-pattern-bw"
       ],
       "spaces": [
-        "regex-pattern-bw",
-        "devlogs-markdown-test"
+        "regex-pattern-bw"
       ],
       "well": [
         "regex-pattern-bw",
@@ -134099,16 +129332,10 @@ export const contentDatabase = {
         "regex-pattern-movies-anywhere",
         "regex-pattern-viki",
         "wiki-eei",
+        "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "shorthand": [
         "regex-pattern-bw"
@@ -134170,8 +129397,7 @@ export const contentDatabase = {
         "regex-pattern-btn-atmos",
         "media-management-naming",
         "media-management-naming",
-        "wiki-eei",
-        "devlogs-architecture-overhaul"
+        "wiki-eei"
       ],
       "convention": [
         "regex-pattern-btn-atmos"
@@ -134205,8 +129431,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "subjectively": [
         "regex-pattern-better-theatricals"
@@ -134221,16 +129446,13 @@ export const contentDatabase = {
       ],
       "preferences": [
         "regex-pattern-better-theatricals",
+        "wiki-eei",
         "wiki-eei"
       ],
       "major": [
         "regex-pattern-better-theatricals",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "opinion": [
         "regex-pattern-better-theatricals"
@@ -134261,10 +129483,7 @@ export const contentDatabase = {
       "day": [
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "alien": [
         "regex-pattern-better-theatricals",
@@ -134324,12 +129543,7 @@ export const contentDatabase = {
         "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "famous": [
         "regex-pattern-better-theatricals",
@@ -134365,7 +129579,8 @@ export const contentDatabase = {
       ],
       "doing": [
         "regex-pattern-beyondhd",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "bitor": [
         "regex-pattern-bitor",
@@ -134394,19 +129609,13 @@ export const contentDatabase = {
         "regex-pattern-sing-along",
         "regex-pattern-theatrical-edition",
         "media-management-naming",
-        "media-management-naming",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "media-management-naming"
       ],
       "moniker": [
         "regex-pattern-bracketed-year"
       ],
       "inside": [
-        "regex-pattern-bracketed-year",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "regex-pattern-bracketed-year"
       ],
       "square": [
         "regex-pattern-bracketed-year"
@@ -134554,9 +129763,7 @@ export const contentDatabase = {
         "regex-pattern-colourisation"
       ],
       "images": [
-        "regex-pattern-colourisation",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-colourisation"
       ],
       "british": [
         "regex-pattern-colourisation"
@@ -134576,8 +129783,7 @@ export const contentDatabase = {
       ],
       "base": [
         "regex-pattern-colourisation",
-        "wiki-eei",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "forms": [
         "regex-pattern-colourisation",
@@ -134586,17 +129792,7 @@ export const contentDatabase = {
       ],
       "past": [
         "regex-pattern-colourisation",
-        "regex-pattern-colourisation",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "regex-pattern-colourisation"
       ],
       "tense": [
         "regex-pattern-colourisation"
@@ -134677,12 +129873,7 @@ export const contentDatabase = {
         "regex-pattern-full-disc",
         "regex-pattern-peacock-tv-rename",
         "regex-pattern-peacock-tv",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "rich": [
         "regex-pattern-criterion-channel"
@@ -134708,8 +129899,7 @@ export const contentDatabase = {
       ],
       "curated": [
         "regex-pattern-criterion-channel",
-        "regex-pattern-criterion-channel",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-criterion-channel"
       ],
       "playlists": [
         "regex-pattern-criterion-channel"
@@ -134739,11 +129929,7 @@ export const contentDatabase = {
       "yet": [
         "regex-pattern-criterion-channel",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "maintains": [
         "regex-pattern-criterion-channel",
@@ -134797,15 +129983,15 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "brings": [
-        "regex-pattern-criterion-channel"
+        "regex-pattern-criterion-channel",
+        "devlogs-rebirth"
       ],
       "cinematic": [
         "regex-pattern-criterion-channel"
       ],
       "experience": [
         "regex-pattern-criterion-channel",
-        "regex-pattern-full-disc",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-full-disc"
       ],
       "ctrlhd": [
         "regex-pattern-ctrlhd",
@@ -134880,8 +130066,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-modular-choices"
+        "wiki-gppi"
       ],
       "hubs": [
         "regex-pattern-disney"
@@ -134929,10 +130114,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-digital"
       ],
       "come": [
-        "regex-pattern-dolby-vision-without-fallback",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-dolby-vision-without-fallback"
       ],
       "ision": [
         "regex-pattern-dolby-vision-without-fallback"
@@ -134981,14 +130163,8 @@ export const contentDatabase = {
       ],
       "log": [
         "regex-pattern-dolby-vision",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "gamma": [
         "regex-pattern-dolby-vision"
@@ -135014,9 +130190,7 @@ export const contentDatabase = {
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
-        "regex-pattern-sing-along",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-sing-along"
       ],
       "dub": [
         "regex-pattern-dual-audio"
@@ -135025,8 +130199,7 @@ export const contentDatabase = {
         "regex-pattern-dual-audio"
       ],
       "switch": [
-        "regex-pattern-dual-audio",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-dual-audio"
       ],
       "between": [
         "regex-pattern-dual-audio",
@@ -135038,14 +130211,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "watching": [
         "regex-pattern-dual-audio"
@@ -135060,11 +130226,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
+        "devlogs-rebirth"
       ],
       "edph": [
         "regex-pattern-edph",
@@ -135079,8 +130241,7 @@ export const contentDatabase = {
         "regex-pattern-esir"
       ],
       "internal": [
-        "regex-pattern-evo",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-evo"
       ],
       "releasing": [
         "regex-pattern-evo"
@@ -135094,16 +130255,11 @@ export const contentDatabase = {
         "regex-pattern-repack1",
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test"
+        "wiki-profilarr-casaos"
       ],
       "anyone": [
         "regex-pattern-evo",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "else": [
         "regex-pattern-evo"
@@ -135158,11 +130314,7 @@ export const contentDatabase = {
       "feature": [
         "regex-pattern-extras",
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-itunes"
       ],
       "fff": [
         "regex-pattern-fff",
@@ -135242,14 +130394,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "structure": [
         "regex-pattern-full-disc",
         "wiki-edition-philosophy",
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "stored": [
         "regex-pattern-full-disc"
@@ -135290,22 +130442,12 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "ideal": [
         "regex-pattern-full-disc",
         "regex-pattern-h265",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "users": [
         "regex-pattern-full-disc",
@@ -135330,10 +130472,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "seeking": [
         "regex-pattern-full-disc",
@@ -135451,8 +130590,7 @@ export const contentDatabase = {
         "regex-pattern-stan-rename",
         "regex-pattern-itunes-rename",
         "media-management-naming",
-        "media-management-naming",
-        "devlogs-profilarr-is-in-beta"
+        "media-management-naming"
       ],
       "programming": [
         "regex-pattern-hbo-max-rename",
@@ -135669,7 +130807,8 @@ export const contentDatabase = {
         "regex-pattern-x264",
         "regex-pattern-x265",
         "wiki-faq",
-        "wiki-faq"
+        "wiki-faq",
+        "devlogs-rebirth"
       ],
       "hhweb": [
         "regex-pattern-hhweb",
@@ -135714,20 +130853,12 @@ export const contentDatabase = {
         "regex-pattern-wavve",
         "regex-pattern-wetv",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "introduced": [
         "regex-pattern-hotstar",
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-itunes"
       ],
       "carrying": [
         "regex-pattern-hotstar"
@@ -135740,9 +130871,7 @@ export const contentDatabase = {
         "regex-pattern-paramount",
         "regex-pattern-stan-rename",
         "regex-pattern-stan",
-        "regex-pattern-viu",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
+        "regex-pattern-viu"
       ],
       "networks": [
         "regex-pattern-hotstar",
@@ -135775,23 +130904,18 @@ export const contentDatabase = {
       "third": [
         "regex-pattern-hotstar",
         "regex-pattern-peacock-tv-rename",
-        "regex-pattern-peacock-tv",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
+        "regex-pattern-peacock-tv"
       ],
       "parties": [
         "regex-pattern-hotstar"
       ],
       "among": [
-        "regex-pattern-hotstar",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-hotstar"
       ],
       "others": [
         "regex-pattern-hotstar",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "recent": [
         "regex-pattern-hulu"
@@ -135806,19 +130930,14 @@ export const contentDatabase = {
       ],
       "channels": [
         "regex-pattern-hulu",
-        "regex-pattern-roku",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
+        "regex-pattern-roku"
       ],
       "december": [
         "regex-pattern-hulu"
       ],
       "integrated": [
         "regex-pattern-hulu",
-        "wiki-edition-philosophy",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
+        "wiki-edition-philosophy"
       ],
       "into": [
         "regex-pattern-hulu",
@@ -135829,20 +130948,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "accessible": [
         "regex-pattern-hulu"
@@ -135896,8 +131002,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "mind": [
-        "regex-pattern-imax",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-imax"
       ],
       "henceforth": [
         "regex-pattern-imax"
@@ -135951,8 +131056,7 @@ export const contentDatabase = {
       ],
       "three": [
         "regex-pattern-kcw",
-        "regex-pattern-wavve",
-        "devlogs-profile-selector-v3"
+        "regex-pattern-wavve"
       ],
       "korean": [
         "regex-pattern-kcw",
@@ -136100,18 +131204,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "libraries": [
         "regex-pattern-max-rename",
@@ -136161,16 +131254,7 @@ export const contentDatabase = {
       ],
       "allows": [
         "regex-pattern-movies-anywhere",
-        "regex-pattern-viki",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-viki"
       ],
       "stream": [
         "regex-pattern-movies-anywhere"
@@ -136179,8 +131263,7 @@ export const contentDatabase = {
         "regex-pattern-movies-anywhere",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "purchased": [
         "regex-pattern-movies-anywhere"
@@ -136256,9 +131339,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "layers": [
-        "regex-pattern-non-retail-hdr-formats",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-non-retail-hdr-formats"
       ],
       "vector": [
         "regex-pattern-non-retail-hdr-groups",
@@ -136550,8 +131631,7 @@ export const contentDatabase = {
       ],
       "request": [
         "regex-pattern-request",
-        "regex-pattern-request",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-request"
       ],
       "realhd": [
         "regex-pattern-realhd",
@@ -136562,22 +131642,16 @@ export const contentDatabase = {
       ],
       "essentially": [
         "regex-pattern-remux",
-        "wiki-gppi",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-gppi"
       ],
       "creating": [
-        "regex-pattern-remux",
-        "devlogs-architecture-overhaul"
+        "regex-pattern-remux"
       ],
       "think": [
         "regex-pattern-remux",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "carefully": [
         "regex-pattern-remux"
@@ -136599,8 +131673,7 @@ export const contentDatabase = {
         "regex-pattern-remux"
       ],
       "fine": [
-        "regex-pattern-remux",
-        "devlogs-modular-choices"
+        "regex-pattern-remux"
       ],
       "wine": [
         "regex-pattern-remux",
@@ -136616,9 +131689,7 @@ export const contentDatabase = {
         "regex-pattern-remux"
       ],
       "itself": [
-        "regex-pattern-remux",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "regex-pattern-remux"
       ],
       "appear": [
         "regex-pattern-repack1",
@@ -136630,14 +131701,7 @@ export const contentDatabase = {
       "look": [
         "regex-pattern-repack1",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "proper2": [
         "regex-pattern-repack2",
@@ -136668,8 +131732,7 @@ export const contentDatabase = {
       "free": [
         "regex-pattern-roku",
         "regex-pattern-roku",
-        "regex-pattern-vp9",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-vp9"
       ],
       "linear": [
         "regex-pattern-roku",
@@ -136683,8 +131746,7 @@ export const contentDatabase = {
       "access": [
         "regex-pattern-roku",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "paid": [
         "regex-pattern-roku"
@@ -136870,14 +131932,7 @@ export const contentDatabase = {
         "regex-pattern-showtime",
         "regex-pattern-tving",
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "softcore": [
         "regex-pattern-showtime-rename",
@@ -136898,9 +131953,7 @@ export const contentDatabase = {
       "simple": [
         "regex-pattern-simple",
         "regex-pattern-simple",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-profile-tweaks"
+        "wiki-profilarr-casaos"
       ],
       "sing": [
         "regex-pattern-sing-along",
@@ -136935,8 +131988,7 @@ export const contentDatabase = {
       ],
       "foreign": [
         "regex-pattern-stan-rename",
-        "regex-pattern-stan",
-        "devlogs-architecture-overhaul"
+        "regex-pattern-stan"
       ],
       "productions": [
         "regex-pattern-stan-rename",
@@ -137115,8 +132167,7 @@ export const contentDatabase = {
         "regex-pattern-uhd-blu-ray"
       ],
       "put": [
-        "regex-pattern-uhd-bluray-missing-groups",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-uhd-bluray-missing-groups"
       ],
       "uhdclubremux": [
         "regex-pattern-uhdclubremux",
@@ -137233,13 +132284,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "company": [
         "regex-pattern-wavve"
@@ -137271,8 +132316,7 @@ export const contentDatabase = {
         "regex-pattern-wetv"
       ],
       "outside": [
-        "regex-pattern-wetv",
-        "devlogs-architecture-overhaul"
+        "regex-pattern-wetv"
       ],
       "china": [
         "regex-pattern-wetv",
@@ -137285,20 +132329,9 @@ export const contentDatabase = {
       "website": [
         "regex-pattern-wetv",
         "regex-pattern-wetv",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "largest": [
         "regex-pattern-wetv"
@@ -137322,10 +132355,7 @@ export const contentDatabase = {
         "regex-pattern-xvid",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "compression": [
         "regex-pattern-xvid",
@@ -137358,26 +132388,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "good": [
         "regex-pattern-xvid",
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "visual": [
         "regex-pattern-xvid",
@@ -137385,8 +132403,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "sharing": [
-        "regex-pattern-xvid",
-        "devlogs-profilarr-is-in-beta"
+        "regex-pattern-xvid"
       ],
       "paired": [
         "regex-pattern-xvid"
@@ -137416,8 +132433,7 @@ export const contentDatabase = {
       ],
       "zorosenpai": [
         "regex-pattern-zorosenpai",
-        "regex-pattern-zorosenpai",
-        "devlogs-vision-almost-realised"
+        "regex-pattern-zorosenpai"
       ],
       "zurako": [
         "regex-pattern-zurako",
@@ -137498,9 +132514,7 @@ export const contentDatabase = {
       ],
       "popular": [
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "regex-pattern-itunes"
       ],
       "abc": [
         "regex-pattern-itunes-rename",
@@ -137518,10 +132532,7 @@ export const contentDatabase = {
       "view": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "desperate": [
         "regex-pattern-itunes-rename",
@@ -137545,8 +132556,7 @@ export const contentDatabase = {
       ],
       "life": [
         "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "devlogs-shiny-new-stuff"
+        "regex-pattern-itunes"
       ],
       "zack": [
         "regex-pattern-itunes-rename",
@@ -137559,11 +132569,7 @@ export const contentDatabase = {
       "select": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "wiki-profilarr-casaos",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "obtain": [
         "regex-pattern-itunes-rename",
@@ -137572,15 +132578,7 @@ export const contentDatabase = {
       "time": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "expanded": [
         "regex-pattern-itunes-rename",
@@ -137823,13 +132821,7 @@ export const contentDatabase = {
         "media-management-naming"
       ],
       "date": [
-        "media-management-naming",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "media-management-naming"
       ],
       "animeepisodeformat": [
         "media-management-naming"
@@ -137870,8 +132862,7 @@ export const contentDatabase = {
       "limits": [
         "media-management-qualitydefinitions",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "qualities": [
         "media-management-qualitydefinitions"
@@ -137885,7 +132876,7 @@ export const contentDatabase = {
       "philosophy": [
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "prefer": [
         "wiki-edition-philosophy",
@@ -137898,30 +132889,31 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-profile-tweaks"
+        "wiki-faq"
       ],
       "each": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "definitive": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
+        "wiki-edition-philosophy"
+      ],
+      "comparison": [
+        "wiki-edition-philosophy"
+      ],
+      "cuts": [
+        "wiki-edition-philosophy",
+        "wiki-edition-philosophy"
+      ],
+      "benefit": [
         "wiki-edition-philosophy"
       ],
       "studio": [
@@ -137943,8 +132935,7 @@ export const contentDatabase = {
       ],
       "recommended": [
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "counterparts": [
         "wiki-edition-philosophy"
@@ -138004,17 +132995,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "ripley": [
         "wiki-edition-philosophy",
@@ -138025,14 +133006,7 @@ export const contentDatabase = {
       ],
       "add": [
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "emotional": [
         "wiki-edition-philosophy",
@@ -138070,8 +133044,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "sentry": [
         "wiki-edition-philosophy"
@@ -138103,13 +133076,13 @@ export const contentDatabase = {
       ],
       "world": [
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test"
+        "wiki-edition-philosophy"
       ],
       "building": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy"
+        "wiki-edition-philosophy",
+        "devlogs-rebirth"
       ],
       "tension": [
         "wiki-edition-philosophy",
@@ -138122,11 +133095,7 @@ export const contentDatabase = {
       ],
       "important": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "context": [
         "wiki-edition-philosophy",
@@ -138141,7 +133110,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth"
       ],
       "spoils": [
         "wiki-edition-philosophy"
@@ -138162,9 +133132,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3"
+        "wiki-edition-philosophy"
       ],
       "workprint": [
         "wiki-edition-philosophy"
@@ -138187,12 +133155,7 @@ export const contentDatabase = {
       "happy": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "ending": [
         "wiki-edition-philosophy",
@@ -138213,7 +133176,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-gppi",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "mandated": [
         "wiki-edition-philosophy"
@@ -138270,11 +133233,7 @@ export const contentDatabase = {
       "improvements": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "cleaned": [
         "wiki-edition-philosophy"
@@ -138292,14 +133251,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "sync": [
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "zhora": [
         "wiki-edition-philosophy"
@@ -138315,8 +133267,7 @@ export const contentDatabase = {
       "obvious": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-gppi",
-        "devlogs-profile-selector-v3"
+        "wiki-gppi"
       ],
       "stunt": [
         "wiki-edition-philosophy"
@@ -138332,20 +133283,13 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "mentioned": [
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "those": [
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "shown": [
-        "wiki-edition-philosophy",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "dove": [
         "wiki-edition-philosophy"
@@ -138396,8 +133340,7 @@ export const contentDatabase = {
       "elements": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test"
+        "wiki-edition-philosophy"
       ],
       "represents": [
         "wiki-edition-philosophy"
@@ -138435,13 +133378,7 @@ export const contentDatabase = {
       "points": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "enrich": [
         "wiki-edition-philosophy",
@@ -138454,9 +133391,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "giving": [
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "lothlorien": [
         "wiki-edition-philosophy"
@@ -138495,8 +133430,7 @@ export const contentDatabase = {
       "return": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test"
+        "wiki-profilarr-casaos"
       ],
       "king": [
         "wiki-edition-philosophy",
@@ -138534,7 +133468,9 @@ export const contentDatabase = {
       ],
       "per": [
         "wiki-edition-philosophy",
-        "wiki-faq"
+        "wiki-faq",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "seamlessly": [
         "wiki-edition-philosophy"
@@ -138547,11 +133483,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "fans": [
         "wiki-edition-philosophy",
@@ -138564,7 +133497,8 @@ export const contentDatabase = {
       "consider": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth"
       ],
       "batman": [
         "wiki-edition-philosophy"
@@ -138583,8 +133517,7 @@ export const contentDatabase = {
       ],
       "hour": [
         "wiki-edition-philosophy",
-        "wiki-faq",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "restores": [
         "wiki-edition-philosophy",
@@ -138596,9 +133529,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "explain": [
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "motivations": [
         "wiki-edition-philosophy",
@@ -138621,29 +133552,18 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "helping": [
         "wiki-edition-philosophy",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "people": [
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "lex": [
         "wiki-edition-philosophy"
@@ -138668,8 +133588,7 @@ export const contentDatabase = {
       ],
       "makes": [
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "coherent": [
         "wiki-edition-philosophy"
@@ -138701,11 +133620,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "message": [
-        "wiki-edition-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "ntis": [
         "wiki-edition-philosophy"
@@ -138738,16 +133653,12 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "notably": [
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "gives": [
         "wiki-edition-philosophy"
@@ -138773,8 +133684,7 @@ export const contentDatabase = {
       "minute": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "insight": [
         "wiki-edition-philosophy"
@@ -138808,15 +133718,12 @@ export const contentDatabase = {
       ],
       "community": [
         "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "devlogs-rebirth"
       ],
       "feel": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "practices": [
         "wiki-edition-philosophy",
@@ -138843,34 +133750,14 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "completely": [
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "changes": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "stays": [
         "wiki-edition-philosophy"
@@ -138967,8 +133854,7 @@ export const contentDatabase = {
       "setting": [
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "moral": [
         "wiki-edition-philosophy"
@@ -138992,24 +133878,17 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profile-selector-v3"
+        "wiki-eei"
       ],
       "even": [
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "though": [
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "donner": [
         "wiki-edition-philosophy",
@@ -139037,8 +133916,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "ties": [
-        "wiki-edition-philosophy",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "serious": [
         "wiki-edition-philosophy"
@@ -139046,7 +133924,9 @@ export const contentDatabase = {
       "tone": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy"
+        "wiki-edition-philosophy",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "however": [
         "wiki-edition-philosophy",
@@ -139054,9 +133934,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "wiki-gppi",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-gppi"
       ],
       "expand": [
         "wiki-edition-philosophy"
@@ -139065,9 +133943,6 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "critics": [
-        "wiki-edition-philosophy"
-      ],
-      "cuts": [
         "wiki-edition-philosophy"
       ],
       "mystery": [
@@ -139098,50 +133973,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "here": [
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "why": [
         "wiki-edition-philosophy",
@@ -139159,9 +133991,7 @@ export const contentDatabase = {
       ],
       "nearly": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "storytelling": [
         "wiki-edition-philosophy",
@@ -139184,8 +134014,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "unnecessary": [
         "wiki-edition-philosophy",
@@ -139206,8 +134035,7 @@ export const contentDatabase = {
       ],
       "finding": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "dallas": [
         "wiki-edition-philosophy"
@@ -139226,8 +134054,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "act": [
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "stated": [
         "wiki-edition-philosophy"
@@ -139242,9 +134069,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "cluttered": [
         "wiki-edition-philosophy"
@@ -139269,12 +134094,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "change": [
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "empire": [
         "wiki-edition-philosophy"
@@ -139282,41 +134102,10 @@ export const contentDatabase = {
       "new": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "hope": [
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "strongly": [
         "wiki-edition-philosophy"
@@ -139354,8 +134143,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "changed": [
-        "wiki-edition-philosophy",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "music": [
         "wiki-edition-philosophy",
@@ -139401,8 +134189,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "especially": [
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "french": [
         "wiki-edition-philosophy"
@@ -139418,15 +134205,13 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "forward": [
-        "wiki-edition-philosophy"
+        "wiki-edition-philosophy",
+        "devlogs-rebirth"
       ],
       "never": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "seen": [
         "wiki-edition-philosophy"
@@ -139450,8 +134235,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "removing": [
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-edition-philosophy"
       ],
       "compelling": [
         "wiki-edition-philosophy",
@@ -139547,13 +134331,10 @@ export const contentDatabase = {
       ],
       "edge": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "despite": [
-        "wiki-edition-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
+        "wiki-edition-philosophy"
       ],
       "extensive": [
         "wiki-edition-philosophy"
@@ -139587,10 +134368,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy"
       ],
       "feeling": [
-        "wiki-edition-philosophy",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "tour": [
         "wiki-edition-philosophy"
@@ -139606,48 +134384,21 @@ export const contentDatabase = {
       ],
       "too": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "leisurely": [
         "wiki-edition-philosophy"
       ],
       "been": [
         "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "negate": [
         "wiki-edition-philosophy"
       ],
       "removed": [
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices"
+        "wiki-edition-philosophy"
       ],
       "identify": [
         "wiki-edition-philosophy",
@@ -139659,17 +134410,7 @@ export const contentDatabase = {
       ],
       "once": [
         "wiki-edition-philosophy",
-        "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "becomes": [
         "wiki-edition-philosophy",
@@ -139680,37 +134421,20 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "possible": [
-        "wiki-edition-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-edition-philosophy"
       ],
       "able": [
-        "wiki-edition-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-edition-philosophy"
       ],
       "selectively": [
-        "wiki-edition-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-edition-philosophy"
       ],
       "behaviour": [
         "wiki-edition-philosophy"
       ],
       "current": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "system": [
         "wiki-edition-philosophy",
@@ -139720,29 +134444,15 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "score": [
         "wiki-edition-philosophy",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "negative": [
-        "wiki-edition-philosophy",
-        "devlogs-modular-choices"
+        "wiki-edition-philosophy"
       ],
       "whatever": [
         "wiki-edition-philosophy",
@@ -139751,8 +134461,7 @@ export const contentDatabase = {
       ],
       "apply": [
         "wiki-edition-philosophy",
-        "wiki-eei",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "aimed": [
         "wiki-eei",
@@ -139784,9 +134493,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "ratios": [
         "wiki-eei",
@@ -139798,16 +134505,53 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "particular": [
         "wiki-eei",
         "wiki-eei"
       ],
       "optimal": [
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei"
+      ],
+      "driven": [
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-gppi",
+        "wiki-release-group-philosophy"
+      ],
+      "measures": [
+        "wiki-eei",
+        "wiki-eei"
+      ],
+      "how": [
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-eei",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy"
+      ],
+      "balance": [
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -139841,24 +134585,11 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy",
+        "devlogs-rebirth"
       ],
       "evaluates": [
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "against": [
         "wiki-eei"
@@ -139881,20 +134612,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-vision-almost-realised"
+        "wiki-profilarr-casaos"
       ],
       "understanding": [
         "wiki-eei"
-      ],
-      "balance": [
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
       ],
       "competing": [
         "wiki-eei"
@@ -139903,12 +134624,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "minimizing": [
         "wiki-eei"
@@ -139918,9 +134634,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "sweet": [
         "wiki-eei",
@@ -139942,9 +134656,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "bandwidth": [
         "wiki-eei",
@@ -139954,9 +134666,7 @@ export const contentDatabase = {
       "always": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "limited": [
         "wiki-eei",
@@ -139969,14 +134679,7 @@ export const contentDatabase = {
       ],
       "going": [
         "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "beyond": [
         "wiki-eei",
@@ -139993,7 +134696,8 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "curves": [
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth"
       ],
       "need": [
         "wiki-eei",
@@ -140008,12 +134712,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "clear": [
         "wiki-eei"
@@ -140034,13 +134733,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "answer": [
         "wiki-eei",
@@ -140048,8 +134741,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "choosing": [
         "wiki-eei"
@@ -140081,19 +134773,16 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "middle": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "meaningful": [
         "wiki-eei",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "benefits": [
         "wiki-eei"
@@ -140113,8 +134802,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "exists": [
-        "wiki-eei",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "roughly": [
         "wiki-eei"
@@ -140140,48 +134828,8 @@ export const contentDatabase = {
       "analyzes": [
         "wiki-eei"
       ],
-      "how": [
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-eei",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
       "humans": [
-        "wiki-eei",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "perceive": [
         "wiki-eei"
@@ -140197,12 +134845,11 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "tools": [
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth"
       ],
       "together": [
-        "wiki-eei",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "achieves": [
         "wiki-eei",
@@ -140214,16 +134861,13 @@ export const contentDatabase = {
       ],
       "across": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "levels": [
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-markdown-test"
+        "wiki-release-group-philosophy"
       ],
       "achieve": [
         "wiki-eei",
@@ -140232,8 +134876,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-modular-choices"
+        "wiki-release-group-philosophy"
       ],
       "near": [
         "wiki-eei",
@@ -140244,17 +134887,15 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "tooling": [
-        "wiki-eei"
+        "wiki-eei",
+        "wiki-faq"
       ],
       "control": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "approximately": [
         "wiki-eei"
@@ -140267,13 +134908,10 @@ export const contentDatabase = {
       ],
       "become": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "increasingly": [
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "subtle": [
         "wiki-eei",
@@ -140294,13 +134932,11 @@ export const contentDatabase = {
       "tell": [
         "wiki-eei",
         "wiki-eei",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "calculating": [
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "close": [
         "wiki-eei"
@@ -140311,20 +134947,14 @@ export const contentDatabase = {
       ],
       "user": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "desired": [
         "wiki-eei"
       ],
       "done": [
         "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "steps": [
         "wiki-eei"
@@ -140350,8 +134980,7 @@ export const contentDatabase = {
       ],
       "average": [
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "averages": [
         "wiki-eei"
@@ -140361,26 +134990,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "would": [
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "means": [
         "wiki-eei",
@@ -140389,23 +135005,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "clustering": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "automatically": [
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "deltas": [
         "wiki-eei"
@@ -140414,14 +135021,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
+        "devlogs-rebirth"
       ],
       "random": [
-        "wiki-eei",
-        "devlogs-profile-selector-v3"
+        "wiki-eei"
       ],
       "cluster": [
         "wiki-eei"
@@ -140449,18 +135052,10 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "until": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "stable": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "rankings": [
         "wiki-eei",
@@ -140474,20 +135069,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "prioritizing": [
         "wiki-eei",
         "wiki-release-group-philosophy"
       ],
       "choose": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "very": [
         "wiki-eei",
@@ -140495,13 +135084,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "aggressive": [
         "wiki-eei",
@@ -140546,7 +135130,9 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "slow": [
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "internet": [
         "wiki-eei"
@@ -140605,8 +135191,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "typical": [
-        "wiki-eei",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "distances": [
         "wiki-eei"
@@ -140615,17 +135200,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "conserve": [
         "wiki-eei"
       ],
       "enjoying": [
-        "wiki-eei",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "todo": [
         "wiki-eei",
@@ -140635,7 +135216,7 @@ export const contentDatabase = {
       "ground": [
         "wiki-eei",
         "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "devlogs-rebirth"
       ],
       "approach": [
         "wiki-eei",
@@ -140657,8 +135238,7 @@ export const contentDatabase = {
       ],
       "reliable": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "excessive": [
         "wiki-eei"
@@ -140673,12 +135253,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "devlogs-rebirth"
       ],
       "archive": [
         "wiki-eei"
@@ -140688,9 +135263,7 @@ export const contentDatabase = {
       ],
       "difficult": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
+        "wiki-eei"
       ],
       "artifacts": [
         "wiki-eei"
@@ -140699,8 +135272,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "demonstrate": [
-        "wiki-eei",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "excel": [
         "wiki-eei"
@@ -140717,11 +135289,11 @@ export const contentDatabase = {
       "requirements": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profile-selector-v3"
+        "wiki-eei"
       ],
       "frequently": [
         "wiki-eei",
+        "wiki-faq",
         "wiki-faq",
         "wiki-faq"
       ],
@@ -140729,13 +135301,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "questions": [
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "question": [
         "wiki-eei",
@@ -140754,23 +135326,17 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "nothing": [
-        "wiki-eei",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "actual": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "poorly": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "tuned": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "focusing": [
         "wiki-eei"
@@ -140795,11 +135361,7 @@ export const contentDatabase = {
       "choice": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "catches": [
         "wiki-eei"
@@ -140812,27 +135374,25 @@ export const contentDatabase = {
       ],
       "inconsistent": [
         "wiki-eei",
-        "wiki-eei"
+        "wiki-eei",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "labeling": [
         "wiki-eei"
       ],
       "future": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "proofs": [
         "wiki-eei"
       ],
       "newer": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "adjust": [
         "wiki-eei",
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "priorities": [
         "wiki-eei"
@@ -140841,13 +135401,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "devlogs-rebirth"
       ],
       "care": [
         "wiki-eei",
@@ -140858,40 +135412,25 @@ export const contentDatabase = {
       "getting": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "measures": [
         "wiki-eei"
       ],
       "directly": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "unreliable": [
         "wiki-eei"
       ],
       "proxy": [
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "ignore": [
-        "wiki-eei",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "landscape": [
         "wiki-eei"
       ],
       "places": [
-        "wiki-eei",
-        "devlogs-architecture-overhaul"
+        "wiki-eei"
       ],
       "tremendous": [
         "wiki-eei"
@@ -140909,23 +135448,19 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "aims": [
-        "wiki-eei",
-        "devlogs-shiny-new-stuff"
+        "wiki-eei"
       ],
       "challenge": [
         "wiki-eei"
       ],
       "least": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "hence": [
         "wiki-eei"
       ],
       "baseline": [
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "acknowledge": [
         "wiki-eei",
@@ -140935,22 +135470,10 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "get": [
-        "wiki-eei",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "taking": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "position": [
         "wiki-eei"
@@ -140961,18 +135484,13 @@ export const contentDatabase = {
       "enthusiasts": [
         "wiki-eei"
       ],
-      "driven": [
-        "wiki-eei",
-        "wiki-release-group-philosophy"
-      ],
       "accuracy": [
         "wiki-eei"
       ],
       "parse": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "indicators": [
         "wiki-eei"
@@ -140983,19 +135501,13 @@ export const contentDatabase = {
       "likely": [
         "wiki-eei",
         "wiki-gppi",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "sourced": [
         "wiki-eei"
       ],
       "manual": [
-        "wiki-eei",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "tagging": [
         "wiki-eei"
@@ -141003,8 +135515,7 @@ export const contentDatabase = {
       "downrank": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "reencoding": [
         "wiki-eei"
@@ -141020,8 +135531,7 @@ export const contentDatabase = {
         "wiki-gppi"
       ],
       "direction": [
-        "wiki-eei",
-        "devlogs-profile-tweaks"
+        "wiki-eei"
       ],
       "preferring": [
         "wiki-eei"
@@ -141044,9 +135554,7 @@ export const contentDatabase = {
       ],
       "easier": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "perform": [
         "wiki-eei"
@@ -141058,9 +135566,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "far": [
-        "wiki-eei",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "undergo": [
         "wiki-eei"
@@ -141083,9 +135589,7 @@ export const contentDatabase = {
       "action": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices"
+        "wiki-eei"
       ],
       "properties": [
         "wiki-eei",
@@ -141115,7 +135619,9 @@ export const contentDatabase = {
       ],
       "extremely": [
         "wiki-eei",
-        "devlogs-architecture-overhaul"
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "challenging": [
         "wiki-eei",
@@ -141123,12 +135629,11 @@ export const contentDatabase = {
       ],
       "sometimes": [
         "wiki-eei",
-        "wiki-faq"
+        "wiki-faq",
+        "devlogs-rebirth"
       ],
       "anime": [
-        "wiki-eei",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-eei"
       ],
       "keywords": [
         "wiki-eei"
@@ -141142,9 +135647,7 @@ export const contentDatabase = {
       "heavy": [
         "wiki-eei",
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "treat": [
         "wiki-eei"
@@ -141157,24 +135660,20 @@ export const contentDatabase = {
       ],
       "results": [
         "wiki-eei",
-        "wiki-faq",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-faq"
       ],
       "may": [
         "wiki-eei",
         "wiki-faq"
       ],
       "perhaps": [
-        "wiki-eei",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "duplicate": [
         "wiki-eei"
       ],
       "requirement": [
-        "wiki-eei",
-        "devlogs-profile-selector-v3"
+        "wiki-eei"
       ],
       "stems": [
         "wiki-eei",
@@ -141184,8 +135683,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "increased": [
-        "wiki-eei",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "increase": [
         "wiki-eei",
@@ -141218,19 +135716,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "bright": [
         "wiki-eei"
       ],
       "dark": [
         "wiki-eei",
-        "wiki-eei",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "scaling": [
         "wiki-eei"
@@ -141251,8 +135744,7 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "combine": [
-        "wiki-eei",
-        "devlogs-markdown-test"
+        "wiki-eei"
       ],
       "multiplicatively": [
         "wiki-eei"
@@ -141284,17 +135776,10 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "master": [
-        "wiki-eei",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-eei"
       ],
       "complex": [
-        "wiki-eei",
-        "devlogs-markdown-test",
-        "devlogs-website-20"
+        "wiki-eei"
       ],
       "textures": [
         "wiki-eei"
@@ -141344,15 +135829,23 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "faq": [
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "entry": [
         "wiki-faq",
-        "wiki-faq"
+        "wiki-faq",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "answers": [
         "wiki-faq",
+        "wiki-faq"
+      ],
+      "pertaining": [
+        "wiki-faq"
+      ],
+      "profillar": [
         "wiki-faq"
       ],
       "highest": [
@@ -141374,8 +135867,7 @@ export const contentDatabase = {
       ],
       "repacks": [
         "wiki-faq",
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "option": [
         "wiki-faq"
@@ -141387,23 +135879,17 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "turn": [
-        "wiki-faq",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "off": [
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "navigate": [
         "wiki-faq",
         "wiki-profilarr-casaos"
       ],
       "general": [
-        "wiki-faq",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-faq"
       ],
       "mislabeled": [
         "wiki-faq"
@@ -141416,12 +135902,8 @@ export const contentDatabase = {
       ],
       "everything": [
         "wiki-faq",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "min": [
         "wiki-faq"
@@ -141430,23 +135912,19 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "run": [
-        "wiki-faq",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "sample": [
         "wiki-faq"
       ],
       "lots": [
-        "wiki-faq",
-        "devlogs-profile-tweaks"
+        "wiki-faq"
       ],
       "usenet": [
         "wiki-faq"
       ],
       "indexers": [
-        "wiki-faq",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "minimum": [
         "wiki-faq"
@@ -141480,8 +135958,7 @@ export const contentDatabase = {
       ],
       "idea": [
         "wiki-faq",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "decoding": [
         "wiki-faq",
@@ -141515,12 +135992,10 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "generate": [
-        "wiki-faq",
-        "devlogs-shiny-new-stuff"
+        "wiki-faq"
       ],
       "upon": [
-        "wiki-faq",
-        "devlogs-vision-almost-realised"
+        "wiki-faq"
       ],
       "visually": [
         "wiki-faq"
@@ -141570,6 +136045,15 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi"
       ],
+      "identifies": [
+        "wiki-gppi"
+      ],
+      "analyzing": [
+        "wiki-gppi"
+      ],
+      "record": [
+        "wiki-gppi"
+      ],
       "team": [
         "wiki-gppi"
       ],
@@ -141592,8 +136076,7 @@ export const contentDatabase = {
         "wiki-gppi"
       ],
       "engine": [
-        "wiki-gppi",
-        "devlogs-profile-tweaks"
+        "wiki-gppi"
       ],
       "calculated": [
         "wiki-gppi"
@@ -141610,14 +136093,14 @@ export const contentDatabase = {
         "wiki-release-group-philosophy"
       ],
       "formula": [
-        "wiki-gppi",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "glance": [
         "wiki-gppi"
       ],
       "seems": [
-        "wiki-gppi"
+        "wiki-gppi",
+        "devlogs-rebirth"
       ],
       "determine": [
         "wiki-gppi"
@@ -141627,14 +136110,7 @@ export const contentDatabase = {
       ],
       "take": [
         "wiki-gppi",
-        "wiki-gppi",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "value": [
         "wiki-gppi",
@@ -141662,8 +136138,7 @@ export const contentDatabase = {
         "wiki-gppi"
       ],
       "defined": [
-        "wiki-gppi",
-        "devlogs-architecture-overhaul"
+        "wiki-gppi"
       ],
       "begin": [
         "wiki-gppi"
@@ -141681,9 +136156,7 @@ export const contentDatabase = {
         "wiki-gppi"
       ],
       "left": [
-        "wiki-gppi",
-        "devlogs-markdown-test",
-        "devlogs-website-20"
+        "wiki-gppi"
       ],
       "frac": [
         "wiki-gppi",
@@ -141692,13 +136165,7 @@ export const contentDatabase = {
       "right": [
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-profilarr-casaos"
       ],
       "gpe_r": [
         "wiki-gppi"
@@ -141717,13 +136184,15 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
       "installation": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos"
+        "wiki-profilarr-casaos",
+        "devlogs-rebirth"
       ],
       "walks": [
         "wiki-profilarr-casaos",
@@ -141738,8 +136207,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "prerequisites": [
         "wiki-profilarr-casaos",
@@ -141764,6 +136232,16 @@ export const contentDatabase = {
       "familiar": [
         "wiki-profilarr-casaos"
       ],
+      "install": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
+      "app": [
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-casaos"
+      ],
       "familiarity": [
         "wiki-profilarr-casaos"
       ],
@@ -141773,10 +136251,7 @@ export const contentDatabase = {
       ],
       "repository": [
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "dashboard": [
         "wiki-profilarr-casaos",
@@ -141803,17 +136278,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
-      "app": [
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta"
-      ],
       "section": [
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test"
-      ],
-      "install": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos"
       ],
@@ -141822,39 +136287,19 @@ export const contentDatabase = {
       ],
       "import": [
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "page": [
-        "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "importing": [
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
+        "wiki-profilarr-casaos"
       ],
       "docker": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
+        "wiki-profilarr-casaos"
       ],
       "compose": [
         "wiki-profilarr-casaos",
@@ -141862,37 +136307,20 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "visit": [
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "locate": [
         "wiki-profilarr-casaos"
       ],
       "code": [
         "wiki-profilarr-casaos",
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
+        "wiki-profilarr-casaos"
       ],
       "block": [
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
+        "wiki-profilarr-casaos"
       ],
       "entire": [
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "paste": [
         "wiki-profilarr-casaos"
@@ -141909,33 +136337,11 @@ export const contentDatabase = {
       "database": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "lines": [
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-vision-almost-realised"
+        "wiki-profilarr-casaos"
       ],
       "avoid": [
         "wiki-profilarr-casaos"
@@ -141966,8 +136372,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "notes": [
-        "wiki-profilarr-casaos",
-        "devlogs-markdown-test"
+        "wiki-profilarr-casaos"
       ],
       "customizable": [
         "wiki-profilarr-casaos"
@@ -141983,9 +136388,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "auto": [
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "detected": [
         "wiki-profilarr-casaos"
@@ -142001,8 +136404,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "mode": [
-        "wiki-profilarr-casaos",
-        "devlogs-profile-selector-v3"
+        "wiki-profilarr-casaos"
       ],
       "port": [
         "wiki-profilarr-casaos",
@@ -142025,8 +136427,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "environment": [
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices"
+        "wiki-profilarr-casaos"
       ],
       "variables": [
         "wiki-profilarr-casaos"
@@ -142035,8 +136436,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "required": [
-        "wiki-profilarr-casaos",
-        "devlogs-architecture-overhaul"
+        "wiki-profilarr-casaos"
       ],
       "yes": [
         "wiki-profilarr-casaos"
@@ -142069,8 +136469,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "token": [
-        "wiki-profilarr-casaos",
-        "devlogs-modular-choices"
+        "wiki-profilarr-casaos"
       ],
       "ghpxxxxxxxxxxxx": [
         "wiki-profilarr-casaos"
@@ -142079,8 +136478,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "button": [
-        "wiki-profilarr-casaos",
-        "devlogs-shiny-new-stuff"
+        "wiki-profilarr-casaos"
       ],
       "wait": [
         "wiki-profilarr-casaos"
@@ -142090,15 +136488,12 @@ export const contentDatabase = {
       ],
       "simplify": [
         "wiki-release-group-philosophy",
+        "wiki-release-group-philosophy",
         "wiki-release-group-philosophy"
       ],
       "trying": [
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "automate": [
         "wiki-release-group-philosophy",
@@ -142108,6 +136503,12 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy"
       ],
+      "explore": [
+        "wiki-release-group-philosophy"
+      ],
+      "abstraction": [
+        "wiki-release-group-philosophy"
+      ],
       "define": [
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
@@ -142115,19 +136516,10 @@ export const contentDatabase = {
       ],
       "something": [
         "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "looks": [
-        "wiki-release-group-philosophy",
-        "devlogs-profile-selector-v3"
+        "wiki-release-group-philosophy"
       ],
       "screen": [
         "wiki-release-group-philosophy"
@@ -142139,11 +136531,7 @@ export const contentDatabase = {
         "wiki-release-group-philosophy"
       ],
       "kind": [
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "gib": [
         "wiki-release-group-philosophy",
@@ -142158,8 +136546,7 @@ export const contentDatabase = {
       ],
       "looking": [
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "notice": [
         "wiki-release-group-philosophy"
@@ -142190,30 +136577,19 @@ export const contentDatabase = {
         "wiki-release-group-philosophy"
       ],
       "already": [
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
+        "wiki-release-group-philosophy"
       ],
       "lies": [
         "wiki-release-group-philosophy"
       ],
       "little": [
-        "wiki-release-group-philosophy",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "every": [
-        "wiki-release-group-philosophy",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
+        "wiki-release-group-philosophy"
       ],
       "tag": [
-        "wiki-release-group-philosophy",
-        "devlogs-shiny-new-stuff"
+        "wiki-release-group-philosophy"
       ],
       "historic": [
         "wiki-release-group-philosophy"
@@ -142226,8 +136602,7 @@ export const contentDatabase = {
       ],
       "quantifiable": [
         "wiki-release-group-philosophy",
-        "wiki-release-group-philosophy",
-        "devlogs-website-20"
+        "wiki-release-group-philosophy"
       ],
       "evidence": [
         "wiki-release-group-philosophy"
@@ -142240,10 +136615,7 @@ export const contentDatabase = {
       ],
       "built": [
         "wiki-release-group-philosophy",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
       "maintained": [
         "wiki-release-group-philosophy"
@@ -142254,2876 +136626,266 @@ export const contentDatabase = {
       "review": [
         "wiki-release-group-philosophy"
       ],
-      "architecture": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "overhaul": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "hey": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "everyone": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "small": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "update": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "working": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "lately": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
-      ],
-      "project": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "grown": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "bigger": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
-      ],
-      "gotten": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
-      ],
-      "keep": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "billion": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
-      ],
-      "improve": [
-        "devlogs-architecture-overhaul"
-      ],
-      "productivity": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul"
-      ],
-      "planned": [
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-vision-almost-realised"
-      ],
-      "starts": [
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20"
-      ],
-      "separating": [
-        "devlogs-architecture-overhaul"
-      ],
-      "modules": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks"
-      ],
-      "namely": [
-        "devlogs-architecture-overhaul"
-      ],
-      "separate": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
-      ],
-      "powers": [
-        "devlogs-architecture-overhaul"
-      ],
-      "tool": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "next": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "standardizing": [
-        "devlogs-architecture-overhaul"
-      ],
-      "entries": [
-        "devlogs-architecture-overhaul"
-      ],
-      "biggest": [
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20"
-      ],
-      "issue": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "editing": [
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
-      ],
-      "updating": [
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
-      ],
-      "thing": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "times": [
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
-      ],
-      "cfs": [
-        "devlogs-architecture-overhaul"
-      ],
-      "updated": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
-      ],
-      "apps": [
-        "devlogs-architecture-overhaul"
-      ],
-      "miniscule": [
-        "devlogs-architecture-overhaul"
-      ],
-      "syntax": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-markdown-test"
-      ],
-      "tiny": [
-        "devlogs-architecture-overhaul"
-      ],
-      "error": [
-        "devlogs-architecture-overhaul"
-      ],
-      "prone": [
-        "devlogs-architecture-overhaul"
-      ],
-      "consuming": [
-        "devlogs-architecture-overhaul"
-      ],
-      "repeated": [
-        "devlogs-architecture-overhaul"
-      ],
-      "keys": [
-        "devlogs-architecture-overhaul"
-      ],
-      "know": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "exactly": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "plan": [
-        "devlogs-architecture-overhaul"
-      ],
-      "simplicity": [
-        "devlogs-architecture-overhaul"
-      ],
-      "improving": [
-        "devlogs-architecture-overhaul"
-      ],
-      "encourage": [
-        "devlogs-architecture-overhaul"
-      ],
-      "confident": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks"
-      ],
-      "intuitive": [
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised"
-      ],
-      "setups": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff"
-      ],
-      "problem": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "arrs": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "won": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "anymore": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "solution": [
-        "devlogs-architecture-overhaul"
-      ],
-      "compiler": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "fun": [
-        "devlogs-architecture-overhaul"
-      ],
-      "begins": [
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20"
-      ],
-      "easy": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff"
-      ],
-      "develop": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "out": [
-        "devlogs-architecture-overhaul",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "pops": [
-        "devlogs-architecture-overhaul"
-      ],
-      "weird": [
-        "devlogs-architecture-overhaul"
-      ],
-      "rules": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "developer": [
-        "devlogs-architecture-overhaul"
-      ],
-      "needing": [
-        "devlogs-architecture-overhaul",
-        "devlogs-website-20"
-      ],
-      "ever": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "worry": [
-        "devlogs-architecture-overhaul"
-      ],
-      "canvas": [
-        "devlogs-architecture-overhaul"
-      ],
-      "obsidian": [
-        "devlogs-architecture-overhaul"
-      ],
-      "visualizes": [
-        "devlogs-architecture-overhaul"
-      ],
-      "archiecture": [
-        "devlogs-architecture-overhaul"
-      ],
-      "diagram": [
-        "devlogs-architecture-overhaul"
-      ],
-      "selector": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "wip": [
-        "devlogs-architecture-overhaul"
-      ],
-      "leave": [
-        "devlogs-architecture-overhaul"
-      ],
-      "explaining": [
-        "devlogs-architecture-overhaul"
-      ],
-      "algorithm": [
-        "devlogs-architecture-overhaul",
-        "devlogs-architecture-overhaul",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "pretty": [
-        "devlogs-architecture-overhaul",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "cool": [
-        "devlogs-architecture-overhaul",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "markdown": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "formatting": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "test": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "comprehensive": [
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "header": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "main": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "paragraph": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "spacing": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "neutral": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "palette": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "light": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "modes": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "lorem": [
-        "devlogs-markdown-test"
-      ],
-      "ipsum": [
-        "devlogs-markdown-test"
-      ],
-      "dolor": [
-        "devlogs-markdown-test"
-      ],
-      "sit": [
-        "devlogs-markdown-test"
-      ],
-      "amet": [
-        "devlogs-markdown-test"
-      ],
-      "consectetur": [
-        "devlogs-markdown-test"
-      ],
-      "adipiscing": [
-        "devlogs-markdown-test"
-      ],
-      "elit": [
-        "devlogs-markdown-test"
-      ],
-      "wrap": [
-        "devlogs-markdown-test"
-      ],
-      "nicely": [
-        "devlogs-markdown-test"
-      ],
-      "line": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "height": [
-        "devlogs-markdown-test"
-      ],
-      "readability": [
-        "devlogs-markdown-test"
-      ],
-      "subsection": [
-        "devlogs-markdown-test"
-      ],
-      "styling": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3"
-      ],
-      "headers": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "hierarchy": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "subsubsection": [
-        "devlogs-markdown-test"
-      ],
-      "bold": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "italic": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "inline": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "background": [
-        "devlogs-markdown-test"
-      ],
-      "monospace": [
-        "devlogs-markdown-test"
-      ],
-      "font": [
-        "devlogs-markdown-test"
-      ],
-      "lists": [
-        "devlogs-markdown-test",
-        "devlogs-website-20"
-      ],
-      "unordered": [
-        "devlogs-markdown-test"
-      ],
-      "list": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "item": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-shiny-new-stuff"
-      ],
-      "second": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "nested": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "ordered": [
-        "devlogs-markdown-test"
-      ],
-      "numbered": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "blocks": [
-        "devlogs-markdown-test"
-      ],
-      "javascript": [
-        "devlogs-markdown-test"
-      ],
-      "function": [
-        "devlogs-markdown-test"
-      ],
-      "testfunction": [
-        "devlogs-markdown-test"
-      ],
-      "const": [
-        "devlogs-markdown-test"
-      ],
-      "hello": [
-        "devlogs-markdown-test"
-      ],
-      "console": [
-        "devlogs-markdown-test"
-      ],
-      "plain": [
-        "devlogs-markdown-test"
-      ],
-      "blockquotes": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "blockquote": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "border": [
-        "devlogs-markdown-test"
-      ],
-      "span": [
-        "devlogs-markdown-test"
-      ],
-      "distinct": [
-        "devlogs-markdown-test"
-      ],
-      "paragraphs": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "links": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "link": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "image": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "broken": [
-        "devlogs-markdown-test"
-      ],
-      "placeholder": [
-        "devlogs-markdown-test",
-        "devlogs-profile-selector-v3"
-      ],
-      "alt": [
-        "devlogs-markdown-test"
-      ],
-      "tables": [
-        "devlogs-markdown-test"
-      ],
-      "flavored": [
-        "devlogs-markdown-test"
-      ],
-      "row": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-modular-choices"
-      ],
-      "col": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "horizontal": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "rule": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-markdown-test"
-      ],
-      "breaks": [
-        "devlogs-markdown-test",
-        "devlogs-modular-choices"
-      ],
-      "break": [
-        "devlogs-markdown-test",
-        "devlogs-markdown-test",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "mixed": [
-        "devlogs-markdown-test"
-      ],
-      "fourth": [
-        "devlogs-markdown-test"
-      ],
-      "contains": [
-        "devlogs-markdown-test"
-      ],
-      "within": [
-        "devlogs-markdown-test"
-      ],
-      "element": [
-        "devlogs-markdown-test"
-      ],
-      "styled": [
-        "devlogs-markdown-test"
-      ],
-      "appropriate": [
-        "devlogs-markdown-test"
-      ],
-      "readable": [
-        "devlogs-markdown-test"
-      ],
-      "modular": [
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3"
-      ],
-      "choices": [
-        "devlogs-modular-choices"
-      ],
-      "post": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "currently": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "obviously": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
-      ],
-      "nightmar": [
-        "devlogs-modular-choices"
-      ],
-      "nightmare": [
-        "devlogs-modular-choices"
-      ],
-      "certainly": [
-        "devlogs-modular-choices"
-      ],
-      "incoming": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "outgoing": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
-      ],
-      "resolve": [
-        "devlogs-modular-choices"
-      ],
-      "conflicts": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff"
-      ],
-      "friendly": [
-        "devlogs-modular-choices"
-      ],
-      "gui": [
-        "devlogs-modular-choices"
-      ],
-      "git": [
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "merge": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "functionality": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "merged": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
-      ],
-      "ignored": [
-        "devlogs-modular-choices"
-      ],
-      "specifically": [
-        "devlogs-modular-choices"
-      ],
-      "retain": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
-      ],
-      "let": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "say": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "shuffles": [
-        "devlogs-modular-choices"
-      ],
-      "accept": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
-      ],
-      "remember": [
-        "devlogs-modular-choices"
-      ],
-      "prompting": [
-        "devlogs-modular-choices"
-      ],
-      "case": [
-        "devlogs-modular-choices"
-      ],
-      "situation": [
-        "devlogs-modular-choices"
-      ],
-      "repeats": [
-        "devlogs-modular-choices"
-      ],
-      "unlink": [
-        "devlogs-modular-choices"
-      ],
-      "branches": [
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "deal": [
-        "devlogs-modular-choices"
-      ],
-      "developers": [
-        "devlogs-modular-choices",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "authenticated": [
-        "devlogs-modular-choices"
-      ],
-      "ability": [
-        "devlogs-modular-choices"
-      ],
-      "beta": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "ready": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "hard": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "stay": [
-        "devlogs-modular-choices",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "hearts": [
-        "devlogs-modular-choices"
-      ],
-      "screenshot": [
-        "devlogs-modular-choices"
-      ],
-      "resolver": [
-        "devlogs-modular-choices",
-        "devlogs-modular-choices"
-      ],
-      "long": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "awaited": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "aware": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "thought": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "formally": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "announce": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "discord": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "sin": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "july": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "last": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "massive": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "effort": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "christmas": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "implements": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "talked": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "x10": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "bugs": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "polish": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "hopefully": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "benefit": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "unraid": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "arm": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "silicon": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "raspberry": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "x86": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "got": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "scattered": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "thoughts": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "interested": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "seraphys": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "scoring": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "refactor": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "introduces": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "huge": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "haven": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "fully": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "myself": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "branch": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "antsy": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "testing": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "themselves": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "give": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "try": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "please": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "tracker": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "personally": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "state": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "renames": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "imports": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
-      ],
-      "weren": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "taken": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "enough": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "consideration": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "causing": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "loops": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "figure": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "tackle": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "tweaks": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "had": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "implemented": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "decided": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "paper": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "practice": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "confusing": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "really": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "program": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "meant": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "agnostic": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "hardcoded": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "roadmap": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "maybe": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "rethink": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "implement": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "expect": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "databases": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "sliders": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "templates": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "delay": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "refactoring": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "dependency": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "depend": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "lets": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "independently": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "connect": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "build": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "explore": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "alternative": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "options": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "input": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "guys": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "conversations": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "logic": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "partially": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "revise": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "interaction": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "housekeeping": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "influx": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "members": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "couple": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
-      ],
-      "weeks": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "moderation": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "introduce": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "moderator": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "designated": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "devotee": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "big": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "claps": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "refresh": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "soon": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "closing": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "replacing": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "bot": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "integration": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "redirect": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "queries": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "donations": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "donated": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "donor": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "role": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "badge": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "shoot": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "spent": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "majority": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "months": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "burnt": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "study": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "unfortunately": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "mesh": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "hoped": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "month": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "sleep": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "sanity": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "semester": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "dial": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "spend": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "easter": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "slowly": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "pick": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "speed": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "again": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20"
-      ],
-      "mention": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "etas": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "puts": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "pressure": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "probably": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "disappoints": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "inevitably": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "happen": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "defacto": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "eta": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "scatterbrained": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "someone": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-shiny-new-stuff"
-      ],
-      "waiting": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "forgotten": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "reminder": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "active": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "during": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "thank": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-vision-almost-realised"
-      ],
-      "tremendously": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "scope": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "thanks": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "figuring": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "unbelievable": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "existed": [
-        "devlogs-profilarr-is-in-beta",
-        "devlogs-profile-tweaks"
-      ],
-      "head": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "cheers": [
-        "devlogs-profilarr-is-in-beta"
-      ],
-      "share": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "inspired": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "wise": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "days": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "saying": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3"
-      ],
-      "tak": [
-        "devlogs-profile-selector-v3"
-      ],
-      "anyways": [
-        "devlogs-profile-selector-v3"
-      ],
-      "designing": [
-        "devlogs-profile-selector-v3"
-      ],
-      "figma": [
-        "devlogs-profile-selector-v3"
-      ],
-      "started": [
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
-      ],
-      "implementing": [
-        "devlogs-profile-selector-v3"
-      ],
-      "drawing": [
-        "devlogs-profile-selector-v3"
-      ],
-      "shapes": [
-        "devlogs-profile-selector-v3"
-      ],
-      "regretting": [
-        "devlogs-profile-selector-v3"
-      ],
-      "paying": [
-        "devlogs-profile-selector-v3"
-      ],
-      "attention": [
-        "devlogs-profile-selector-v3"
-      ],
-      "school": [
-        "devlogs-profile-selector-v3"
-      ],
-      "trigonometry": [
-        "devlogs-profile-selector-v3"
-      ],
-      "place": [
-        "devlogs-profile-selector-v3",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "represent": [
-        "devlogs-profile-selector-v3"
-      ],
-      "axes": [
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
-      ],
-      "combination": [
-        "devlogs-profile-selector-v3"
-      ],
-      "recommend": [
-        "devlogs-profile-selector-v3"
-      ],
-      "hooked": [
-        "devlogs-profile-selector-v3"
-      ],
-      "strings": [
-        "devlogs-profile-selector-v3"
-      ],
-      "design": [
-        "devlogs-profile-selector-v3"
-      ],
-      "finish": [
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
-      ],
-      "beginner": [
-        "devlogs-profile-selector-v3"
-      ],
-      "disclaimer": [
-        "devlogs-profile-selector-v3"
-      ],
-      "proof": [
-        "devlogs-profile-selector-v3"
-      ],
-      "concept": [
-        "devlogs-profile-selector-v3"
-      ],
-      "funny": [
-        "devlogs-profile-selector-v3"
-      ],
-      "tidbit": [
-        "devlogs-profile-selector-v3"
-      ],
-      "tried": [
-        "devlogs-profile-selector-v3"
+      "rebirth": [
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "marks": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "documentation": [
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "prior": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "burned": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "ashes": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
+      ],
+      "none": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
       "writing": [
-        "devlogs-profile-selector-v3"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "inner": [
-        "devlogs-profile-selector-v3"
+      "languag": [
+        "devlogs-rebirth"
       ],
-      "polygon": [
-        "devlogs-profile-selector-v3"
+      "born": [
+        "devlogs-rebirth"
       ],
-      "stretching": [
-        "devlogs-profile-selector-v3"
+      "again": [
+        "devlogs-rebirth"
       ],
-      "opposed": [
-        "devlogs-profile-selector-v3"
+      "logs": [
+        "devlogs-rebirth"
       ],
-      "instant": [
-        "devlogs-profile-selector-v3"
-      ],
-      "static": [
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20"
-      ],
-      "movement": [
-        "devlogs-profile-selector-v3"
-      ],
-      "didn": [
-        "devlogs-profile-selector-v3"
-      ],
-      "behold": [
-        "devlogs-profile-selector-v3"
-      ],
-      "frankenstein": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "triangle": [
-        "devlogs-profile-selector-v3",
-        "devlogs-profile-selector-v3",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "stuff": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "strict": [
-        "devlogs-profile-tweaks"
-      ],
-      "grabbing": [
-        "devlogs-profile-tweaks"
-      ],
-      "singular": [
-        "devlogs-profile-tweaks"
-      ],
-      "entities": [
-        "devlogs-profile-tweaks"
-      ],
-      "respect": [
-        "devlogs-profile-tweaks"
-      ],
-      "step": [
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "hands": [
-        "devlogs-profile-tweaks"
-      ],
-      "engage": [
-        "devlogs-profile-tweaks"
-      ],
-      "enter": [
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "check": [
-        "devlogs-profile-tweaks"
-      ],
-      "boxes": [
-        "devlogs-profile-tweaks"
-      ],
-      "enable": [
-        "devlogs-profile-tweaks"
-      ],
-      "disable": [
-        "devlogs-profile-tweaks"
-      ],
-      "respected": [
-        "devlogs-profile-tweaks"
-      ],
-      "allow": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "prereleases": [
-        "devlogs-profile-tweaks"
-      ],
-      "cams": [
-        "devlogs-profile-tweaks"
-      ],
-      "screeners": [
-        "devlogs-profile-tweaks"
-      ],
-      "strictness": [
-        "devlogs-profile-tweaks"
-      ],
-      "bleeding": [
-        "devlogs-profile-tweaks"
-      ],
-      "h266": [
-        "devlogs-profile-tweaks"
-      ],
-      "tweak": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "ideas": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "super": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "tab": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks"
-      ],
-      "steady": [
-        "devlogs-profile-tweaks"
-      ],
-      "ended": [
-        "devlogs-profile-tweaks"
-      ],
-      "expected": [
-        "devlogs-profile-tweaks"
-      ],
-      "sorry": [
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "existing": [
-        "devlogs-profile-tweaks",
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "porting": [
-        "devlogs-profile-tweaks"
-      ],
-      "tree": [
-        "devlogs-profile-tweaks"
-      ],
-      "write": [
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "descriptions": [
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff"
-      ],
-      "finally": [
-        "devlogs-profile-tweaks",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "compilation": [
-        "devlogs-profile-tweaks"
-      ],
-      "1202375791556431892": [
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "1246504849265266738": [
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "1272756617041154049": [
-        "devlogs-profile-tweaks",
-        "devlogs-vision-almost-realised"
-      ],
-      "module": [
-        "devlogs-profile-tweaks",
-        "devlogs-website-20"
-      ],
-      "shiny": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "motivation": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "struggling": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "week": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "unmotivated": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "cracking": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "seeing": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "felt": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "motivated": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "dive": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "sounded": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "nice": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "upgrades": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "outline": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "stack": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "frontend": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "site": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "export": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "regexes": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "remaster": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "outlined": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "previous": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20"
-      ],
-      "condition": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "sorting": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "filtering": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "sort": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "filter": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "items": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "exporting": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "freely": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "query": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "apis": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "syncing": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "clogging": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "unused": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "mass": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "delete": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "synced": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "prowlarr": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "tidbits": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "permalink": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "regex101": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "simultaneously": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "backend": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "json": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "remote": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "commit": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "useful": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "stress": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "suffering": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "saved": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "revert": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "favorite": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "coded": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "branching": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "course": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "lidarr": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "importantly": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "pulling": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "pull": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "decide": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "automatic": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised"
-      ],
-      "alert": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "latest": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "external": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "repo": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "whoever": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "convert": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "arr": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "ways": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "trash": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "guides": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "tweaking": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "definitely": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "containerisation": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "dockerised": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "massively": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "sped": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "proprietary": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "freedom": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "boom": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "machine": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "learning": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff",
-        "devlogs-website-20"
-      ],
-      "mostly": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "speculation": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "rambling": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "concrete": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "incorporate": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "press": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "countless": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "reddit": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "posts": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "unfamiliar": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "asking": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "learn": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "easily": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "solved": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "knowledge": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "sends": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "openai": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "api": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "prompt": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "imagine": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "hundreds": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "predict": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "truly": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "tailor": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "suit": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "knows": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "ramble": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "anyway": [
-        "devlogs-shiny-new-stuff"
-      ],
-      "status": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-shiny-new-stuff"
-      ],
-      "today": [
-        "devlogs-shiny-new-stuff",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "realised": [
-        "devlogs-vision-almost-realised"
-      ],
-      "bash": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "python": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "profile_compile": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "yml": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "converted": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "importarr": [
-        "devlogs-vision-almost-realised"
-      ],
-      "success": [
-        "devlogs-vision-almost-realised"
-      ],
-      "commands": [
-        "devlogs-vision-almost-realised"
-      ],
-      "culmination": [
-        "devlogs-vision-almost-realised"
-      ],
-      "august": [
-        "devlogs-vision-almost-realised"
-      ],
-      "compiled": [
-        "devlogs-vision-almost-realised"
-      ],
-      "psf": [
-        "devlogs-vision-almost-realised"
-      ],
-      "hooking": [
-        "devlogs-vision-almost-realised"
-      ],
-      "feels": [
-        "devlogs-vision-almost-realised"
-      ],
-      "edit": [
-        "devlogs-vision-almost-realised"
-      ],
-      "reflected": [
-        "devlogs-vision-almost-realised"
-      ],
-      "fell": [
-        "devlogs-vision-almost-realised"
-      ],
-      "swoop": [
-        "devlogs-vision-almost-realised"
-      ],
-      "turned": [
-        "devlogs-vision-almost-realised"
-      ],
-      "evident": [
-        "devlogs-vision-almost-realised"
-      ],
-      "away": [
-        "devlogs-vision-almost-realised",
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "wants": [
-        "devlogs-vision-almost-realised"
-      ],
-      "contribute": [
-        "devlogs-vision-almost-realised"
-      ],
-      "hours": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "strong": [
-        "devlogs-vision-almost-realised"
-      ],
-      "fundamentally": [
-        "devlogs-vision-almost-realised"
-      ],
-      "flawed": [
-        "devlogs-vision-almost-realised"
-      ],
-      "terrific": [
-        "devlogs-vision-almost-realised"
-      ],
-      "popularity": [
-        "devlogs-vision-almost-realised"
-      ],
-      "receives": [
-        "devlogs-vision-almost-realised"
-      ],
-      "reset": [
-        "devlogs-vision-almost-realised"
-      ],
-      "normalized": [
-        "devlogs-vision-almost-realised"
-      ],
-      "tbd": [
-        "devlogs-vision-almost-realised"
-      ],
-      "permanent": [
-        "devlogs-vision-almost-realised"
-      ],
-      "solve": [
-        "devlogs-vision-almost-realised"
-      ],
-      "grouping": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "natural": [
-        "devlogs-vision-almost-realised",
-        "devlogs-vision-almost-realised"
-      ],
-      "surprisingly": [
-        "devlogs-vision-almost-realised"
-      ],
-      "recognition": [
-        "devlogs-vision-almost-realised"
-      ],
-      "dont": [
-        "devlogs-vision-almost-realised"
-      ],
-      "fancy": [
-        "devlogs-vision-almost-realised"
-      ],
-      "finds": [
-        "devlogs-vision-almost-realised"
-      ],
-      "numbers": [
-        "devlogs-vision-almost-realised"
-      ],
-      "dropped": [
-        "devlogs-vision-almost-realised"
-      ],
-      "immutability": [
-        "devlogs-vision-almost-realised"
-      ],
-      "alright": [
-        "devlogs-vision-almost-realised"
-      ],
-      "holidays": [
-        "devlogs-vision-almost-realised"
-      ],
-      "grinning": [
-        "devlogs-vision-almost-realised"
-      ],
-      "ish": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "wanted": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "transition": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "frequent": [
+        "devlogs-rebirth"
       ],
       "old": [
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
-      "mkdocs": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "sucked": [
+        "devlogs-rebirth"
       ],
-      "isr": [
-        "devlogs-website-20"
+      "couldn": [
+        "devlogs-rebirth"
       ],
-      "rebuild": [
-        "devlogs-website-20"
+      "anymore": [
+        "devlogs-rebirth"
       ],
-      "basically": [
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "let": [
+        "devlogs-rebirth"
       ],
-      "sees": [
-        "devlogs-website-20"
+      "rebuilt": [
+        "devlogs-rebirth"
       ],
-      "stale": [
-        "devlogs-website-20"
+      "follows": [
+        "devlogs-rebirth"
       ],
-      "rebuilds": [
-        "devlogs-website-20"
+      "navigation": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "santiago": [
-        "devlogs-website-20"
+      "panes": [
+        "devlogs-rebirth"
       ],
-      "smiles": [
-        "devlogs-website-20"
+      "functioning": [
+        "devlogs-rebirth"
       ],
-      "anything": [
-        "devlogs-website-20"
+      "search": [
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "whole": [
-        "devlogs-website-20"
+      "integrates": [
+        "devlogs-rebirth"
       ],
-      "instilled": [
-        "devlogs-website-20"
+      "components": [
+        "devlogs-rebirth"
       ],
-      "layout": [
-        "devlogs-website-20"
+      "won": [
+        "devlogs-rebirth"
       ],
-      "devlog": [
-        "devlogs-website-20"
+      "static": [
+        "devlogs-rebirth"
       ],
-      "fit": [
-        "devlogs-website-20"
+      "markdown": [
+        "devlogs-rebirth"
       ],
-      "website2": [
-        "devlogs-website-20"
+      "generators": [
+        "devlogs-rebirth"
       ],
-      "broke": [
-        "devlogs-website-20"
+      "superficial": [
+        "devlogs-rebirth"
       ],
-      "workflows": [
-        "devlogs-website-20"
+      "fun": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "gone": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "iterations": [
-        "devlogs-website-20"
-      ],
-      "flowchart": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "santiagosayshey": [
-        "devlogs-website-20"
-      ],
-      "blob": [
-        "devlogs-website-20"
-      ],
-      "030f3631b4f6fffdb7fa9f4696e5d12defc84a46": [
-        "devlogs-website-20"
-      ],
-      "docs": [
-        "devlogs-website-20"
-      ],
-      "png": [
-        "devlogs-website-20"
-      ],
-      "terrible": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "selectarr": [
-        "devlogs-website-20"
+      "notable": [
+        "devlogs-rebirth"
       ],
       "pages": [
-        "devlogs-website-20"
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "supposed": [
-        "devlogs-website-20"
+      "fancy": [
+        "devlogs-rebirth"
       ],
-      "shipped": [
-        "devlogs-website-20"
+      "segmented": [
+        "devlogs-rebirth"
       ],
-      "finished": [
-        "devlogs-website-20"
+      "shareable": [
+        "devlogs-rebirth"
       ],
-      "worked": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "sections": [
+        "devlogs-rebirth"
       ],
-      "area": [
-        "devlogs-website-20"
+      "refreshed": [
+        "devlogs-rebirth"
       ],
-      "guy": [
-        "devlogs-website-20"
+      "wizard": [
+        "devlogs-rebirth",
+        "devlogs-rebirth"
       ],
-      "forget": [
-        "devlogs-website-20"
-      ],
-      "guesstimate": [
-        "devlogs-website-20"
-      ],
-      "did": [
-        "devlogs-website-20"
-      ],
-      "normalizing": [
-        "devlogs-website-20"
-      ],
-      "fitting": [
-        "devlogs-website-20"
-      ],
-      "axis": [
-        "devlogs-website-20"
-      ],
-      "abstracted": [
-        "devlogs-website-20"
-      ],
-      "scrap": [
-        "devlogs-website-20"
+      "renamed": [
+        "devlogs-rebirth"
       ],
       "builder": [
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+        "devlogs-rebirth"
       ],
-      "abstract": [
-        "devlogs-website-20"
+      "overthought": [
+        "devlogs-rebirth"
       ],
-      "groupings": [
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "entries": [
+        "devlogs-rebirth"
       ],
-      "explanations": [
-        "devlogs-website-20"
+      "discussion": [
+        "devlogs-rebirth"
       ],
-      "abstraction": [
-        "devlogs-website-20"
+      "utterances": [
+        "devlogs-rebirth"
       ],
-      "detrimental": [
-        "devlogs-website-20"
+      "svelte": [
+        "devlogs-rebirth"
       ],
-      "self": [
-        "devlogs-website-20"
+      "gone": [
+        "devlogs-rebirth"
       ],
-      "explanatory": [
-        "devlogs-website-20"
+      "zier": [
+        "devlogs-rebirth"
       ],
-      "niche": [
-        "devlogs-website-20"
+      "resize": [
+        "devlogs-rebirth"
       ],
-      "playwith": [
-        "devlogs-website-20"
+      "dynamically": [
+        "devlogs-rebirth"
       ],
-      "buider": [
-        "devlogs-website-20"
+      "elo": [
+        "devlogs-rebirth"
       ],
-      "meat": [
-        "devlogs-website-20"
+      "clicks": [
+        "devlogs-rebirth"
       ],
-      "potatoes": [
-        "devlogs-website-20"
+      "glad": [
+        "devlogs-rebirth"
       ],
-      "heres": [
-        "devlogs-website-20"
+      "worked": [
+        "devlogs-rebirth"
       ],
-      "play": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "burnout": [
+        "devlogs-rebirth"
       ],
-      "discern": [
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "really": [
+        "devlogs-rebirth"
       ],
-      "targeting": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "burnt": [
+        "devlogs-rebirth"
       ],
-      "saturate": [
-        "devlogs-website-20"
+      "out": [
+        "devlogs-rebirth"
       ],
-      "reaches": [
-        "devlogs-website-20"
+      "moment": [
+        "devlogs-rebirth"
       ],
-      "heavily": [
-        "devlogs-website-20"
+      "progress": [
+        "devlogs-rebirth"
       ],
-      "watered": [
-        "devlogs-website-20"
+      "mostly": [
+        "devlogs-rebirth"
       ],
-      "explanation": [
-        "devlogs-website-20"
+      "working": [
+        "devlogs-rebirth"
       ],
-      "research": [
-        "devlogs-website-20"
+      "stuff": [
+        "devlogs-rebirth"
       ],
-      "iteration": [
-        "devlogs-website-20"
+      "joy": [
+        "devlogs-rebirth"
       ],
-      "asset": [
-        "devlogs-website-20"
+      "bear": [
+        "devlogs-rebirth"
       ],
-      "youre": [
-        "devlogs-website-20"
+      "baby": [
+        "devlogs-rebirth"
       ],
-      "ridiculous": [
-        "devlogs-website-20"
+      "ever": [
+        "devlogs-rebirth"
       ],
-      "tierlist": [
-        "devlogs-website-20"
+      "abandoning": [
+        "devlogs-rebirth"
       ],
-      "trump": [
-        "devlogs-website-20"
+      "stressful": [
+        "devlogs-rebirth"
       ],
-      "crap": [
-        "devlogs-website-20"
+      "slower": [
+        "devlogs-rebirth"
       ],
-      "vote": [
-        "devlogs-website-20"
+      "slowly": [
+        "devlogs-rebirth"
       ],
-      "documented": [
-        "devlogs-website-20"
+      "march": [
+        "devlogs-rebirth"
       ],
-      "magic": [
-        "devlogs-website-20"
+      "ahead": [
+        "devlogs-rebirth"
       ],
-      "dare": [
-        "devlogs-website-20"
+      "spite": [
+        "devlogs-rebirth"
       ],
-      "thus": [
-        "devlogs-website-20"
+      "pivot": [
+        "devlogs-rebirth"
       ],
-      "216p": [
-        "devlogs-website-20"
+      "myself": [
+        "devlogs-rebirth"
       ],
-      "creation": [
-        "devlogs-website-20",
-        "devlogs-website-20"
+      "counter": [
+        "devlogs-rebirth"
       ],
-      "constant": [
-        "devlogs-website-20"
+      "productive": [
+        "devlogs-rebirth"
       ],
-      "feedback": [
-        "devlogs-website-20"
+      "next": [
+        "devlogs-rebirth"
       ],
-      "erphise": [
-        "devlogs-website-20"
-      ],
-      "tester": [
-        "devlogs-website-20"
-      ],
-      "catalyst": [
-        "devlogs-website-20"
-      ],
-      "hadn": [
-        "devlogs-website-20"
-      ],
-      "love": [
-        "devlogs-website-20"
-      ],
-      "took": [
-        "devlogs-website-20"
-      ],
-      "gonna": [
-        "devlogs-website-20",
-        "devlogs-website-20"
-      ],
-      "rolling": [
-        "devlogs-website-20"
-      ],
-      "finalized": [
-        "devlogs-website-20"
-      ],
-      "authentication": [
-        "devlogs-website-20"
-      ],
-      "migrations": [
-        "devlogs-website-20"
-      ],
-      "template": [
-        "devlogs-website-20"
-      ],
-      "fly": [
-        "devlogs-website-20"
-      ],
-      "bare": [
-        "devlogs-website-20"
+      "zzz": [
+        "devlogs-zzz",
+        "devlogs-zzz"
       ]
     },
     "entries": {
@@ -145173,13 +136935,6 @@ export const contentDatabase = {
         "title": "Media Management",
         "description": "Configure media management settings",
         "route": "/media-management",
-        "type": "static",
-        "weight": 0.7
-      },
-      "devlogs-index": {
-        "title": "Development Logs",
-        "description": "Timeline of development progress and updates",
-        "route": "/devlogs",
         "type": "static",
         "weight": 0.7
       },
@@ -148991,66 +140746,17 @@ export const contentDatabase = {
         "type": "markdown",
         "weight": 0.8
       },
-      "devlogs-architecture-overhaul": {
-        "title": "Architecture Overhaul",
-        "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
-        "route": "/devlogs/architecture-overhaul",
+      "devlogs-rebirth": {
+        "title": "Rebirth",
+        "description": "This dev log marks a rebirth for Dictionarry's documentation - everything prior to this entry has been burned to ashes! None of it is bad, per se, but the writing is very inconsistent in tone, languag...",
+        "route": "/devlogs/rebirth",
         "type": "markdown",
         "weight": 0.6
       },
-      "devlogs-markdown-test": {
-        "title": "Markdown Formatting Test",
-        "description": "A comprehensive test of all markdown formatting features",
-        "route": "/devlogs/markdown-test",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-modular-choices": {
-        "title": "Modular Choices",
-        "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
-        "route": "/devlogs/modular-choices",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-profilarr-is-in-beta": {
-        "title": "Profilarr is in Beta 🚀",
-        "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
-        "route": "/devlogs/profilarr-is-in-beta",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-profile-selector-v3": {
-        "title": "Profile Selector v3",
-        "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
-        "route": "/devlogs/profile-selector-v3",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-profile-tweaks": {
-        "title": "Profile Tweaks",
-        "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
-        "route": "/devlogs/profile-tweaks",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-shiny-new-stuff": {
-        "title": "Shiny New Stuff",
-        "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
-        "route": "/devlogs/shiny-new-stuff",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-vision-almost-realised": {
-        "title": "Vision (Almost) Realised",
-        "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
-        "route": "/devlogs/vision-almost-realised",
-        "type": "markdown",
-        "weight": 0.6
-      },
-      "devlogs-website-20": {
-        "title": "Website 2.0",
-        "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
-        "route": "/devlogs/website-20",
+      "devlogs-zzz": {
+        "title": "zzz",
+        "description": "z z...",
+        "route": "/devlogs/zzz",
         "type": "markdown",
         "weight": 0.6
       }
@@ -149064,7 +140770,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-06T16:23:07.283Z",
+  "lastGenerated": "2025-08-06T17:36:15.396Z",
   "version": "1.0.0"
 } as const;
 
