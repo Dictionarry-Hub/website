@@ -5,6 +5,7 @@
   import { onMount, onDestroy } from 'svelte';
   import Overview from './overview/overview.svelte';
   import Conditions from './conditions/conditions.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
   
   let formatEntry = null;
   
@@ -28,7 +29,7 @@
   
   // Set up navigation when format is loaded
   $: if (formatEntry) {
-    const navItems = ['Overview', 'Conditions', 'Tests', 'Related Formats'];
+    const navItems = ['Overview', 'Conditions', 'Tests', 'Related Formats', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -62,6 +63,16 @@
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Related Formats</h2>
         <p class="text-neutral-600 dark:text-neutral-400">Related formats section coming soon...</p>
       </section>
+      
+      <!-- Discussion Section -->
+      {#if name}
+        <section id="discussion" class="mb-12 pb-12">
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Discussion</h2>
+          {#key name}
+            <Utterances issueTerm={`🎨 Custom Format: ${name}`} />
+          {/key}
+        </section>
+      {/if}
     </div>
   {:else if slug && slug !== 'custom-format'}
     <div >

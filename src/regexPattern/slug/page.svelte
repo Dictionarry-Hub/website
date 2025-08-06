@@ -6,6 +6,7 @@
   import Overview from './overview/overview.svelte';
   import Pattern from './pattern/pattern.svelte';
   import Tests from './tests/tests.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
   
   let regexEntry = null;
   
@@ -31,7 +32,7 @@
   
   // Set up navigation when regex pattern is loaded
   $: if (regexEntry) {
-    const navItems = ['Overview', 'Pattern', 'Tests'];
+    const navItems = ['Overview', 'Pattern', 'Tests', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -58,6 +59,16 @@
       <section id="tests" class="mb-12">
         <Tests {tests} {testResults} {regex101} />
       </section>
+      
+      <!-- Discussion Section -->
+      {#if name}
+        <section id="discussion" class="mb-12 pb-12">
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Discussion</h2>
+          {#key name}
+            <Utterances issueTerm={`🔍 Regex Pattern: ${name}`} />
+          {/key}
+        </section>
+      {/if}
     </div>
   {:else if slug && slug !== 'regex-pattern'}
     <div>
