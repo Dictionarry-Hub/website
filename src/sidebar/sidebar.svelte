@@ -54,7 +54,7 @@
     </SidebarSection>
   
     <!-- Quality Profiles Section -->
-    <SidebarSection title="⚡ Quality Profiles" href="/quality-profile" isActive={currentPath === "/quality-profile"}>
+    <SidebarSection title="⚡ Quality Profiles" href="/quality-profile" isActive={currentPath === "/quality-profile"} isOpen={false}>
       {#each qualityProfileEntries as entry}
         <SidebarItem 
           href={entry.path} 
@@ -87,7 +87,7 @@
     </SidebarSection>
     
     <!-- Custom Formats Section -->
-    <SidebarSection title="🎨 Custom Formats" href="/custom-format" isActive={currentPath === "/custom-format"}>
+    <SidebarSection title="🎨 Custom Formats" href="/custom-format" isActive={currentPath === "/custom-format"} isOpen={false}>
       {#each customFormatEntries as entry}
         <SidebarItem 
           href={entry.path} 
@@ -98,7 +98,7 @@
     </SidebarSection>
     
     <!-- Regex Patterns Section -->
-    <SidebarSection title="🔍 Regex Patterns" href="/regex-pattern" isActive={currentPath === "/regex-pattern"}>
+    <SidebarSection title="🔍 Regex Patterns" href="/regex-pattern" isActive={currentPath === "/regex-pattern"} isOpen={false}>
       {#each regexPatternEntries as entry}
         <SidebarItem 
           href={entry.path} 
@@ -109,7 +109,7 @@
     </SidebarSection>
     
     <!-- Media Management Section -->
-    <SidebarSection title="📁 Media Management" href="/media-management" isActive={currentPath === "/media-management"}>
+    <SidebarSection title="📁 Media Management" href="/media-management" isActive={currentPath === "/media-management"} isOpen={false}>
       {#each mediaManagementEntries as entry}
         <SidebarItem 
           href={entry.path} 
