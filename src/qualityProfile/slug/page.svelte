@@ -6,6 +6,7 @@
   import Overview from './overview/overview.svelte';
   import Scoring from './scoring/scoring.svelte';
   import Qualities from './qualities/qualities.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
   
   let profileEntry = null;
   
@@ -35,7 +36,7 @@
   
   // Set up navigation when profile is loaded
   $: if (profileEntry) {
-    const navItems = ['Overview', 'Custom Formats', 'Qualities'];
+    const navItems = ['Overview', 'Custom Formats', 'Qualities', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -62,6 +63,16 @@
       <section id="qualities" class="mb-12">
         <Qualities {qualities} {upgrade_until} {upgradesAllowed} />
       </section>
+      
+      <!-- Discussion Section -->
+      {#if name}
+        <section id="discussion" class="mb-12 pb-12">
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Discussion</h2>
+          {#key name}
+            <Utterances issueTerm={`⚡ Quality Profile: ${name}`} />
+          {/key}
+        </section>
+      {/if}
     </div>
   {:else if slug && slug !== 'quality-profile'}
     <div >
