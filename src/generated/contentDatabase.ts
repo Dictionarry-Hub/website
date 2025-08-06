@@ -58383,11 +58383,151 @@ export const contentDatabase = {
           "extras"
         ],
         "blurb": "A comparison of theatrical vs. special edition cuts and which movies benefit from each format.",
-        "featured": true
+        "featured": true,
+        "readingTime": 7
       },
-      "html": "<p>By default, Dictionarry&#39;s profiles prefer the <a href=\"https://dictionarry.dev/formats/special-edition\">&#39;Special&#39; Edition</a> of each movie. This is because these editions are often considered the more &#39;definitive&#39; version of the movie because they contain the director&#39;s complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts.</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Preferred Version</th>\n<th>Reasons</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Aliens (1986)</td>\n<td>Special</td>\n<td>James Cameron&#39;s Special Edition enhances the film with crucial character development, particularly the scenes about Ripley&#39;s daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story.</td>\n</tr>\n<tr>\n<td>Blade Runner (1982)</td>\n<td>Final Cut</td>\n<td>The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director&#39;s Cut releases. It removes the theatrical&#39;s controversial voice-over narration and &quot;happy ending&quot; that were studio-mandated and disliked by cast and crew. It preserves the original&#39;s ambiguous ending about Deckard&#39;s nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora&#39;s death scene, digital correction of the obvious stunt double&#39;s face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene&#39;s obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth&#39;s original cinematography, and restoration of the full unicorn dream sequence that better supports the film&#39;s central mysteries. While some defend elements of other versions (particularly the 1992 Director&#39;s Cut), the Final Cut represents Ridley Scott&#39;s complete creative vision with modern technical capabilities to properly realize it.</td>\n</tr>\n<tr>\n<td>The Lord of the Rings Trilogy (2001-2003)</td>\n<td>Extended Editions</td>\n<td>Each film&#39;s Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir&#39;s backstory, adds Theodred&#39;s funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf&#39;s staff, Saruman&#39;s fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions.</td>\n</tr>\n<tr>\n<td>Batman v Superman: Dawn of Justice (2016)</td>\n<td>Ultimate Edition</td>\n<td>The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex&#39;s manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists&#39; perspectives.</td>\n</tr>\n<tr>\n<td>The Abyss (1989)</td>\n<td>Special Edition</td>\n<td>The extended version restores a crucial tidal wave sequence that better explains the aliens&#39; motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended.</td>\n</tr>\n<tr>\n<td>Midsommar (2019)</td>\n<td>Director&#39;s Cut</td>\n<td>The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian&#39;s gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful.</td>\n</tr>\n<tr>\n<td>I Am Legend (2007)</td>\n<td>Alternate Version</td>\n<td>This version&#39;s different ending completely changes the meaning of the title and stays truer to Richard Matheson&#39;s novel. Instead of Smith&#39;s character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their &quot;legend.&quot; This ending better serves the film&#39;s themes about humanity and perspective.</td>\n</tr>\n<tr>\n<td>Watchmen (2009)</td>\n<td>Director&#39;s Cut</td>\n<td>The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director&#39;s Cut is the most widely preferred version.</td>\n</tr>\n<tr>\n<td>Superman II (1980/2006)</td>\n<td>The Richard Donner Cut</td>\n<td>Released 26 years after the theatrical version, Donner&#39;s cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando&#39;s scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans.</td>\n</tr>\n</tbody></table>\n<p>However, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here&#39;s why some prefer theatrical versions:</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Preferred Version</th>\n<th>Key Reasons</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Terminator 2: Judgment Day (1991)</td>\n<td>Theatrical</td>\n<td>The theatrical cut is nearly perfect in pacing and storytelling. The extended cut&#39;s additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the &quot;happy ending&quot; playground scene in the theatrical cut is preferred to the extended cut&#39;s darker alternate ending.</td>\n</tr>\n<tr>\n<td>Alien (1979)</td>\n<td>Theatrical</td>\n<td>The theatrical version is considered a masterpiece of pacing. The Director&#39;s Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut.</td>\n</tr>\n<tr>\n<td>Star Wars (1977)</td>\n<td>Theatrical</td>\n<td>The original theatrical cut is considered more pure and less cluttered than later &quot;Special Editions&quot;. Fans particularly dislike added CGI elements and the infamous &quot;Han shot first&quot; change. The pacing of the theatrical cut is also tighter.</td>\n</tr>\n<tr>\n<td>The Empire Strikes Back (1980)</td>\n<td>Theatrical</td>\n<td>Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition&#39;s added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior.</td>\n</tr>\n<tr>\n<td>Return of the Jedi (1983)</td>\n<td>Theatrical</td>\n<td>The theatrical version is preferred over the Special Edition&#39;s controversial additions, particularly the changed ending music and added CGI celebration scenes. The &quot;Jedi Rocks&quot; musical number in Jabba&#39;s Palace is one of the most criticized Special Edition changes. The original Ewok celebration song &quot;Yub Nub&quot; is often preferred to the new ending.</td>\n</tr>\n<tr>\n<td>Apocalypse Now (1979)</td>\n<td>Theatrical</td>\n<td>While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum.</td>\n</tr>\n<tr>\n<td>The Exorcist (1973)</td>\n<td>Theatrical</td>\n<td>&quot;The Version You&#39;ve Never Seen&quot; adds the famous &quot;spider walk&quot; scene and several other moments, but the theatrical cut&#39;s pacing is superior. The original version better maintains its sense of building dread.</td>\n</tr>\n<tr>\n<td>Donnie Darko (2001)</td>\n<td>Theatrical</td>\n<td>The Director&#39;s Cut over-explains the film&#39;s mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut&#39;s ambiguity encourages viewer interpretation.</td>\n</tr>\n<tr>\n<td>Amadeus (1984)</td>\n<td>Theatrical</td>\n<td>The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director&#39;s Cut adds 20 minutes of historical context and servant relationships that, while interesting, don&#39;t enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative.</td>\n</tr>\n<tr>\n<td>Payback (1999)</td>\n<td>Theatrical</td>\n<td>The theatrical version&#39;s blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director&#39;s Cut (&quot;Straight Up&quot; version&quot;). Mel Gibson&#39;s voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film&#39;s edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful.</td>\n</tr>\n<tr>\n<td>Almost Famous (2000)</td>\n<td>Theatrical</td>\n<td>While the &quot;Untitled: The Bootleg Cut&quot; adds interesting character moments and music scenes, the theatrical cut&#39;s tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe&#39;s theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely.</td>\n</tr>\n</tbody></table>\n<p>A <a href=\"https://dictionarry.dev/formats/special-edition-(unwanted)\">Custom Format: Special Edition (Unwanted)</a> has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr&#39;s parsing of release titles. The parsed &#39;Title&#39; is removed from the release title, so you can&#39;t actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones.</p>\n<p>To mimic this behaviour in the current system, you have to copy the profile you want to use and set it&#39;s <code>Special Edition</code> score to the negative of whatever it was. Then apply the profile to whatever movie you want in it&#39;s theatrical version.</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "By default, Dictionarry&#39;s profiles prefer the <a href=\"https://dictionarry.dev/formats/special-edition\">&#39;Special&#39; Edition</a> of each movie. This is because these editions are often considered the more &#39;definitive&#39; version of the movie because they contain the director&#39;s complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Preferred Version",
+            "Reasons"
+          ],
+          "rows": [
+            [
+              "Aliens (1986)",
+              "Special",
+              "James Cameron&#39;s Special Edition enhances the film with crucial character development, particularly the scenes about Ripley&#39;s daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story."
+            ],
+            [
+              "Blade Runner (1982)",
+              "Final Cut",
+              "The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director&#39;s Cut releases. It removes the theatrical&#39;s controversial voice-over narration and &quot;happy ending&quot; that were studio-mandated and disliked by cast and crew. It preserves the original&#39;s ambiguous ending about Deckard&#39;s nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora&#39;s death scene, digital correction of the obvious stunt double&#39;s face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene&#39;s obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth&#39;s original cinematography, and restoration of the full unicorn dream sequence that better supports the film&#39;s central mysteries. While some defend elements of other versions (particularly the 1992 Director&#39;s Cut), the Final Cut represents Ridley Scott&#39;s complete creative vision with modern technical capabilities to properly realize it."
+            ],
+            [
+              "The Lord of the Rings Trilogy (2001-2003)",
+              "Extended Editions",
+              "Each film&#39;s Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir&#39;s backstory, adds Theodred&#39;s funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf&#39;s staff, Saruman&#39;s fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions."
+            ],
+            [
+              "Batman v Superman: Dawn of Justice (2016)",
+              "Ultimate Edition",
+              "The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex&#39;s manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists&#39; perspectives."
+            ],
+            [
+              "The Abyss (1989)",
+              "Special Edition",
+              "The extended version restores a crucial tidal wave sequence that better explains the aliens&#39; motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended."
+            ],
+            [
+              "Midsommar (2019)",
+              "Director&#39;s Cut",
+              "The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian&#39;s gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful."
+            ],
+            [
+              "I Am Legend (2007)",
+              "Alternate Version",
+              "This version&#39;s different ending completely changes the meaning of the title and stays truer to Richard Matheson&#39;s novel. Instead of Smith&#39;s character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their &quot;legend.&quot; This ending better serves the film&#39;s themes about humanity and perspective."
+            ],
+            [
+              "Watchmen (2009)",
+              "Director&#39;s Cut",
+              "The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director&#39;s Cut is the most widely preferred version."
+            ],
+            [
+              "Superman II (1980/2006)",
+              "The Richard Donner Cut",
+              "Released 26 years after the theatrical version, Donner&#39;s cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando&#39;s scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "However, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here&#39;s why some prefer theatrical versions:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Preferred Version",
+            "Key Reasons"
+          ],
+          "rows": [
+            [
+              "Terminator 2: Judgment Day (1991)",
+              "Theatrical",
+              "The theatrical cut is nearly perfect in pacing and storytelling. The extended cut&#39;s additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the &quot;happy ending&quot; playground scene in the theatrical cut is preferred to the extended cut&#39;s darker alternate ending."
+            ],
+            [
+              "Alien (1979)",
+              "Theatrical",
+              "The theatrical version is considered a masterpiece of pacing. The Director&#39;s Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut."
+            ],
+            [
+              "Star Wars (1977)",
+              "Theatrical",
+              "The original theatrical cut is considered more pure and less cluttered than later &quot;Special Editions&quot;. Fans particularly dislike added CGI elements and the infamous &quot;Han shot first&quot; change. The pacing of the theatrical cut is also tighter."
+            ],
+            [
+              "The Empire Strikes Back (1980)",
+              "Theatrical",
+              "Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition&#39;s added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior."
+            ],
+            [
+              "Return of the Jedi (1983)",
+              "Theatrical",
+              "The theatrical version is preferred over the Special Edition&#39;s controversial additions, particularly the changed ending music and added CGI celebration scenes. The &quot;Jedi Rocks&quot; musical number in Jabba&#39;s Palace is one of the most criticized Special Edition changes. The original Ewok celebration song &quot;Yub Nub&quot; is often preferred to the new ending."
+            ],
+            [
+              "Apocalypse Now (1979)",
+              "Theatrical",
+              "While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum."
+            ],
+            [
+              "The Exorcist (1973)",
+              "Theatrical",
+              "&quot;The Version You&#39;ve Never Seen&quot; adds the famous &quot;spider walk&quot; scene and several other moments, but the theatrical cut&#39;s pacing is superior. The original version better maintains its sense of building dread."
+            ],
+            [
+              "Donnie Darko (2001)",
+              "Theatrical",
+              "The Director&#39;s Cut over-explains the film&#39;s mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut&#39;s ambiguity encourages viewer interpretation."
+            ],
+            [
+              "Amadeus (1984)",
+              "Theatrical",
+              "The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director&#39;s Cut adds 20 minutes of historical context and servant relationships that, while interesting, don&#39;t enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative."
+            ],
+            [
+              "Payback (1999)",
+              "Theatrical",
+              "The theatrical version&#39;s blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director&#39;s Cut (&quot;Straight Up&quot; version&quot;). Mel Gibson&#39;s voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film&#39;s edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful."
+            ],
+            [
+              "Almost Famous (2000)",
+              "Theatrical",
+              "While the &quot;Untitled: The Bootleg Cut&quot; adds interesting character moments and music scenes, the theatrical cut&#39;s tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe&#39;s theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "A <a href=\"https://dictionarry.dev/formats/special-edition-(unwanted)\">Custom Format: Special Edition (Unwanted)</a> has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr&#39;s parsing of release titles. The parsed &#39;Title&#39; is removed from the release title, so you can&#39;t actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones."
+        },
+        {
+          "type": "paragraph",
+          "content": "To mimic this behaviour in the current system, you have to copy the profile you want to use and set it&#39;s <code>Special Edition</code> score to the negative of whatever it was. Then apply the profile to whatever movie you want in it&#39;s theatrical version."
+        }
+      ],
       "markdown": "\nBy default, Dictionarry's profiles prefer the ['Special' Edition](https://dictionarry.dev/formats/special-edition) of each movie. This is because these editions are often considered the more 'definitive' version of the movie because they contain the director's complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts.\n\n| Movie                                     | Preferred Version      | Reasons                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n| ----------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Aliens (1986)                             | Special                | James Cameron's Special Edition enhances the film with crucial character development, particularly the scenes about Ripley's daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| Blade Runner (1982)                       | Final Cut              | The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director's Cut releases. It removes the theatrical's controversial voice-over narration and \"happy ending\" that were studio-mandated and disliked by cast and crew. It preserves the original's ambiguous ending about Deckard's nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora's death scene, digital correction of the obvious stunt double's face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene's obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth's original cinematography, and restoration of the full unicorn dream sequence that better supports the film's central mysteries. While some defend elements of other versions (particularly the 1992 Director's Cut), the Final Cut represents Ridley Scott's complete creative vision with modern technical capabilities to properly realize it. |\n| The Lord of the Rings Trilogy (2001-2003) | Extended Editions      | Each film's Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir's backstory, adds Theodred's funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf's staff, Saruman's fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n| Batman v Superman: Dawn of Justice (2016) | Ultimate Edition       | The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex's manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists' perspectives.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\n| The Abyss (1989)                          | Special Edition        | The extended version restores a crucial tidal wave sequence that better explains the aliens' motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| Midsommar (2019)                          | Director's Cut         | The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian's gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| I Am Legend (2007)                        | Alternate Version      | This version's different ending completely changes the meaning of the title and stays truer to Richard Matheson's novel. Instead of Smith's character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their \"legend.\" This ending better serves the film's themes about humanity and perspective.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| Watchmen (2009)                           | Director's Cut         | The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director's Cut is the most widely preferred version.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n| Superman II (1980/2006)                   | The Richard Donner Cut | Released 26 years after the theatrical version, Donner's cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando's scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n\nHowever, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here's why some prefer theatrical versions:\n\n| Movie                             | Preferred Version | Key Reasons                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| --------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Terminator 2: Judgment Day (1991) | Theatrical        | The theatrical cut is nearly perfect in pacing and storytelling. The extended cut's additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the \"happy ending\" playground scene in the theatrical cut is preferred to the extended cut's darker alternate ending.                                                               |\n| Alien (1979)                      | Theatrical        | The theatrical version is considered a masterpiece of pacing. The Director's Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut.                                                                                                                                                                                             |\n| Star Wars (1977)                  | Theatrical        | The original theatrical cut is considered more pure and less cluttered than later \"Special Editions\". Fans particularly dislike added CGI elements and the infamous \"Han shot first\" change. The pacing of the theatrical cut is also tighter.                                                                                                                                                                                                                              |\n| The Empire Strikes Back (1980)    | Theatrical        | Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition's added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior.                                                                                                                                           |\n| Return of the Jedi (1983)         | Theatrical        | The theatrical version is preferred over the Special Edition's controversial additions, particularly the changed ending music and added CGI celebration scenes. The \"Jedi Rocks\" musical number in Jabba's Palace is one of the most criticized Special Edition changes. The original Ewok celebration song \"Yub Nub\" is often preferred to the new ending.                                                                                                                 |\n| Apocalypse Now (1979)             | Theatrical        | While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum.                                                                                                                                                                                                                         |\n| The Exorcist (1973)               | Theatrical        | \"The Version You've Never Seen\" adds the famous \"spider walk\" scene and several other moments, but the theatrical cut's pacing is superior. The original version better maintains its sense of building dread.                                                                                                                                                                                                                                                              |\n| Donnie Darko (2001)               | Theatrical        | The Director's Cut over-explains the film's mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut's ambiguity encourages viewer interpretation.                                                                                                                                                                                                                                                |\n| Amadeus (1984)                    | Theatrical        | The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director's Cut adds 20 minutes of historical context and servant relationships that, while interesting, don't enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative.                                                                                                                                 |\n| Payback (1999)                    | Theatrical        | The theatrical version's blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director's Cut (\"Straight Up\" version\"). Mel Gibson's voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film's edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful. |\n| Almost Famous (2000)              | Theatrical        | While the \"Untitled: The Bootleg Cut\" adds interesting character moments and music scenes, the theatrical cut's tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe's theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely.                                                             |\n\nA [Custom Format: Special Edition (Unwanted)](<https://dictionarry.dev/formats/special-edition-(unwanted)>) has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr's parsing of release titles. The parsed 'Title' is removed from the release title, so you can't actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones.\n\nTo mimic this behaviour in the current system, you have to copy the profile you want to use and set it's `Special Edition` score to the negative of whatever it was. Then apply the profile to whatever movie you want in it's theatrical version.\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
       "searchWeight": 0.8,
       "tags": [
@@ -58417,9 +58557,548 @@ export const contentDatabase = {
           "encode"
         ],
         "blurb": "A data-driven metric that measures how well release groups balance file size and quality in their encodes, helping users find releases that match their storage and quality preferences.",
-        "featured": true
+        "featured": true,
+        "readingTime": 11
       },
-      "html": "<p>This metric is aimed at identifying and ranking release groups based on their propensity to release <strong>encodes that meet certain compression ratios</strong>, with particular focus on <strong>HEVC</strong> releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC&#39;s compression capabilities while maintaining quality at minimal file sizes.</p>\n<h2 id=\"what-is-a-compression-ratio\">What is a Compression Ratio?</h2>\n<p>A compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the <strong>encoded file size as a percentage of its source size</strong> (typically a <strong>remux</strong> or <strong>WEB-DL</strong>).</p>\n<p>For example:</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Source (Remux)</th>\n<th>Encode</th>\n<th>Compression Ratio</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Movie A</td>\n<td>40 GB</td>\n<td>10 GB</td>\n<td>25%</td>\n</tr>\n<tr>\n<td>Movie B</td>\n<td>30 GB</td>\n<td>6 GB</td>\n<td>20%</td>\n</tr>\n<tr>\n<td>Movie C</td>\n<td>50 GB</td>\n<td>15 GB</td>\n<td>30%</td>\n</tr>\n</tbody></table>\n<h2 id=\"why-is-this-important\">Why Is This Important?</h2>\n<p>Understanding compression ratios helps balance two competing needs: <strong>maintaining high video quality while minimizing file size</strong>. Modern codecs like <strong>HEVC</strong> have a <strong>&quot;sweet spot&quot;</strong> where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:</p>\n<ul>\n<li>Storage and bandwidth are always <strong>limited resources</strong></li>\n<li>Going beyond certain bitrates provides <strong>diminishing quality returns</strong></li>\n<li>Different codecs have different <strong>efficiency curves</strong></li>\n<li>Release groups need clear standards for <strong>quality vs. size trade-offs</strong></li>\n</ul>\n<h2 id=\"what-ratio-is-best\">What Ratio is Best?</h2>\n<p>There&#39;s no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The &quot;best&quot; ratio <strong>depends entirely on your specific needs</strong>. At 1080p:</p>\n<ul>\n<li>Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs</li>\n<li>Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency</li>\n<li>Most users find a sweet spot in the middle</li>\n</ul>\n<p>However, there are technical limits - files larger than <strong>40% for 1080p</strong> and <strong>60% for 2160p</strong> provide no meaningful benefits.</p>\n<h2 id=\"why-set-maximum-ratios-of-40-and-60\">Why Set Maximum Ratios of 40% and 60%?</h2>\n<p>The compression ratio ceilings are set based on different factors for 1080p and 2160p content:</p>\n<h3 id=\"1080p-40-maximum\">1080p (40% Maximum)</h3>\n<p>The 40% ceiling for 1080p exists because we can roughly measure where <strong>HEVC stops being efficient compared to AVC</strong>. We do this using two key video quality metrics:</p>\n<ul>\n<li><strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100</li>\n<li><strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level</li>\n</ul>\n<p>Using these tools together shows us that:</p>\n<ul>\n<li>HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)</li>\n<li>These space savings are consistent across different quality levels</li>\n<li>Beyond this point, both codecs achieve <strong>near identical quality</strong></li>\n<li>At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control</li>\n</ul>\n<h3 id=\"2160p-60-maximum\">2160p (60% Maximum)</h3>\n<p>The 60% ceiling for 2160p content is based on different considerations:</p>\n<ul>\n<li>This is approximately where <strong>visual transparency</strong> becomes achievable</li>\n<li>Higher ratios provide <strong>diminishing returns</strong></li>\n<li>At this compression level, content achieves <strong>VMAF scores above 95</strong></li>\n<li><strong>Storage efficiency</strong> becomes critical due to larger base file sizes</li>\n<li>Quality improvements become <strong>increasingly subtle</strong> beyond this point</li>\n</ul>\n<p>Read these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is[^1][^2]:</p>\n<h2 id=\"how-do-we-apply-this-index\">How Do We Apply This Index?</h2>\n<p>The ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user&#39;s desired compression ratio. This is done through a few key steps:</p>\n<ol>\n<li><p><strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points.</p>\n</li>\n<li><p><strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:</p>\n<ul>\n<li>Starting with k random cluster centers</li>\n<li>Assigning each group to its nearest center</li>\n<li>Recalculating centers based on group assignments</li>\n<li>Repeating until stable</li>\n</ul>\n</li>\n</ol>\n<h1 id=\"example-rankings\">Example Rankings</h1>\n<h2 id=\"1080p-examples\">1080p Examples</h2>\n<h3 id=\"example-1-users-prioritizing-storage-efficiency-10-target\">Example 1: Users prioritizing storage efficiency (10% target)</h3>\n<p>Users might choose this very aggressive compression target when:</p>\n<ul>\n<li>Managing large libraries on limited storage</li>\n<li>Collecting complete series where total size is a major concern</li>\n<li>Primarily viewing on mobile devices or smaller screens</li>\n<li>Dealing with bandwidth caps or slow internet connections</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>Tier</th>\n<th>Group</th>\n<th>Efficiency</th>\n<th>Delta</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>iVy</td>\n<td>9.37%</td>\n<td>0.63</td>\n</tr>\n<tr>\n<td>1</td>\n<td>PSA</td>\n<td>7.89%</td>\n<td>2.11</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Vyndros</td>\n<td>16.08%</td>\n<td>6.08</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Chivaman</td>\n<td>16.80%</td>\n<td>6.80</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Amazon Prime (H.265)</td>\n<td>16.15%</td>\n<td>6.15</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Disney+ (H.265)</td>\n<td>20.32%</td>\n<td>10.32</td>\n</tr>\n<tr>\n<td>3</td>\n<td>TAoE</td>\n<td>22.78%</td>\n<td>12.78</td>\n</tr>\n<tr>\n<td>3</td>\n<td>QxR</td>\n<td>23.25%</td>\n<td>13.25</td>\n</tr>\n<tr>\n<td>3</td>\n<td>BRiAN</td>\n<td>25.16%</td>\n<td>15.16</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Movies Anywhere (H.265)</td>\n<td>26.05%</td>\n<td>16.05</td>\n</tr>\n<tr>\n<td>4</td>\n<td>MainFrame</td>\n<td>37.63%</td>\n<td>27.63</td>\n</tr>\n<tr>\n<td>4</td>\n<td>NAN0</td>\n<td>37.71%</td>\n<td>27.71</td>\n</tr>\n</tbody></table>\n<h3 id=\"example-2-users-seeking-balanced-quality-and-size-25-target\">Example 2: Users seeking balanced quality and size (25% target)</h3>\n<p>This moderate compression target appeals to users who:</p>\n<ul>\n<li>Have reasonable storage capacity but still want efficiency</li>\n<li>Watch on mid to large screens where quality becomes more noticeable</li>\n<li>Want a good balance between visual quality and practical file sizes</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>Tier</th>\n<th>Group</th>\n<th>Efficiency</th>\n<th>Delta</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>BRiAN</td>\n<td>25.16%</td>\n<td>0.16</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Movies Anywhere (H.265)</td>\n<td>26.05%</td>\n<td>1.05</td>\n</tr>\n<tr>\n<td>1</td>\n<td>QxR</td>\n<td>23.25%</td>\n<td>1.75</td>\n</tr>\n<tr>\n<td>1</td>\n<td>TAoE</td>\n<td>22.78%</td>\n<td>2.22</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Disney+ (H.265)</td>\n<td>20.32%</td>\n<td>4.68</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Amazon Prime (H.265)</td>\n<td>16.15%</td>\n<td>8.85</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Chivaman</td>\n<td>16.80%</td>\n<td>8.20</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Vyndros</td>\n<td>16.08%</td>\n<td>8.92</td>\n</tr>\n<tr>\n<td>3</td>\n<td>MainFrame</td>\n<td>37.63%</td>\n<td>12.63</td>\n</tr>\n<tr>\n<td>3</td>\n<td>NAN0</td>\n<td>37.71%</td>\n<td>12.71</td>\n</tr>\n<tr>\n<td>4</td>\n<td>iVy</td>\n<td>9.37%</td>\n<td>15.63</td>\n</tr>\n<tr>\n<td>4</td>\n<td>PSA</td>\n<td>7.89%</td>\n<td>17.11</td>\n</tr>\n</tbody></table>\n<h2 id=\"2160p-examples\">2160p Examples</h2>\n<h3 id=\"example-3-extreme-space-saving-20-target\">Example 3: Extreme Space Saving (20% target)</h3>\n<p>This aggressive 2160p compression appeals to users who:</p>\n<ul>\n<li>Want to maintain a 4K library on limited storage</li>\n<li>Primarily view content at typical viewing distances where subtle quality differences are less noticeable</li>\n<li>Need to conserve bandwidth while still enjoying 4K resolution</li>\n<li>Have a large collection of 4K content and need to balance quality with practical storage constraints</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<h3 id=\"example-4-balanced-4k-40-target\">Example 4: Balanced 4K (40% target)</h3>\n<p>This middle-ground approach is ideal for users who:</p>\n<ul>\n<li>Have decent storage capacity but still want reasonable efficiency</li>\n<li>Watch on larger screens where quality differences become more apparent</li>\n<li>Want to maintain high quality while still keeping files manageable</li>\n<li>Need reliable HDR performance without excessive file sizes</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<h3 id=\"example-5-near-transparent-quality-60-target\">Example 5: Near Transparent Quality (60% target)</h3>\n<p>This higher bitrate target is chosen by users who:</p>\n<ul>\n<li>Have ample storage and prioritize maximum quality consciously</li>\n<li>Watch on high-end displays where subtle quality differences are noticeable</li>\n<li>Want to maintain archive-quality collections</li>\n<li>Focus on difficult-to-encode content where compression artifacts are more visible</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<p>These examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements.</p>\n<h2 id=\"frequently-asked-questions\">Frequently Asked Questions</h2>\n<table>\n<thead>\n<tr>\n<th>Question</th>\n<th>Answer</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Why not just detect h265/x265 releases? Isn&#39;t that simpler?</td>\n<td>This is a common misconception that &quot;HEVC = smaller = better&quot;. While it&#39;s true that HEVC/x265 <em>can</em> achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 &gt; HEVC &gt; AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don&#39;t actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy.</td>\n</tr>\n<tr>\n<td>But doesn&#39;t this ignore quality?</td>\n<td>The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - &quot;quality above all&quot; or &quot;smaller is always better&quot; - we focus on <em>efficiency</em>: getting the best practical quality for any given file size target. This approach <strong>will not</strong> satisfy quality enthusiasts, but it better serves the needs of most users.</td>\n</tr>\n<tr>\n<td>What if the source is not a 1080p remux? How do you tell?</td>\n<td>This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices.</td>\n</tr>\n<tr>\n<td>How do you prefer HEVC?</td>\n<td>We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases.</td>\n</tr>\n<tr>\n<td>Why not consider releases above 40% efficiency?</td>\n<td>For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC&#39;s key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There&#39;s simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content.</td>\n</tr>\n<tr>\n<td>What about animated content?</td>\n<td>Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target.</td>\n</tr>\n<tr>\n<td>Why does transparency require 60% at 2160p compared to 40% at 1080p?</td>\n<td>The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. <strong>Increased Color Depth</strong>: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. <strong>HDR Requirements</strong>: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. <strong>Resolution Scaling</strong>: While 2160p has 4x the pixels of 1080p, compression efficiency doesn&#39;t scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency.</td>\n</tr>\n<tr>\n<td>Do all 2160p releases need 60% for transparency?</td>\n<td>No, the actual requirements vary significantly based on several factors:<br><br>1. <strong>Content Type</strong>:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. <strong>HDR Implementation</strong>:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. <strong>Source Quality</strong>:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master&#39;s bit depth and color space<br><br>4. <strong>Scene Complexity</strong>:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding</td>\n</tr>\n</tbody></table>\n<p>[^1]: Shen, Y. (2020). &quot;Bjontegaard Delta Rate Metric&quot;. Medium Innovation Labs Blog. <a href=\"https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\">https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c</a><br>[^2]: Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). &quot;Video Quality Assessment: From FR to NR&quot;. Electronics, 13(5), 953. <a href=\"https://www.mdpi.com/2079-9292/13/5/953\">https://www.mdpi.com/2079-9292/13/5/953</a></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This metric is aimed at identifying and ranking release groups based on their propensity to release <strong>encodes that meet certain compression ratios</strong>, with particular focus on <strong>HEVC</strong> releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC&#39;s compression capabilities while maintaining quality at minimal file sizes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What is a Compression Ratio?",
+          "id": "what-is-a-compression-ratio"
+        },
+        {
+          "type": "paragraph",
+          "content": "A compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the <strong>encoded file size as a percentage of its source size</strong> (typically a <strong>remux</strong> or <strong>WEB-DL</strong>)."
+        },
+        {
+          "type": "paragraph",
+          "content": "For example:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Source (Remux)",
+            "Encode",
+            "Compression Ratio"
+          ],
+          "rows": [
+            [
+              "Movie A",
+              "40 GB",
+              "10 GB",
+              "25%"
+            ],
+            [
+              "Movie B",
+              "30 GB",
+              "6 GB",
+              "20%"
+            ],
+            [
+              "Movie C",
+              "50 GB",
+              "15 GB",
+              "30%"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Why Is This Important?",
+          "id": "why-is-this-important"
+        },
+        {
+          "type": "paragraph",
+          "content": "Understanding compression ratios helps balance two competing needs: <strong>maintaining high video quality while minimizing file size</strong>. Modern codecs like <strong>HEVC</strong> have a <strong>&quot;sweet spot&quot;</strong> where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Storage and bandwidth are always <strong>limited resources</strong>",
+            "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>",
+            "Different codecs have different <strong>efficiency curves</strong>",
+            "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What Ratio is Best?",
+          "id": "what-ratio-is-best"
+        },
+        {
+          "type": "paragraph",
+          "content": "There&#39;s no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The &quot;best&quot; ratio <strong>depends entirely on your specific needs</strong>. At 1080p:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs",
+            "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency",
+            "Most users find a sweet spot in the middle"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "However, there are technical limits - files larger than <strong>40% for 1080p</strong> and <strong>60% for 2160p</strong> provide no meaningful benefits."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Why Set Maximum Ratios of 40% and 60%?",
+          "id": "why-set-maximum-ratios-of-40-and-60"
+        },
+        {
+          "type": "paragraph",
+          "content": "The compression ratio ceilings are set based on different factors for 1080p and 2160p content:"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "1080p (40% Maximum)",
+          "id": "1080p-40-maximum"
+        },
+        {
+          "type": "paragraph",
+          "content": "The 40% ceiling for 1080p exists because we can roughly measure where <strong>HEVC stops being efficient compared to AVC</strong>. We do this using two key video quality metrics:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100",
+            "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Using these tools together shows us that:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)",
+            "These space savings are consistent across different quality levels",
+            "Beyond this point, both codecs achieve <strong>near identical quality</strong>",
+            "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "2160p (60% Maximum)",
+          "id": "2160p-60-maximum"
+        },
+        {
+          "type": "paragraph",
+          "content": "The 60% ceiling for 2160p content is based on different considerations:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "This is approximately where <strong>visual transparency</strong> becomes achievable",
+            "Higher ratios provide <strong>diminishing returns</strong>",
+            "At this compression level, content achieves <strong>VMAF scores above 95</strong>",
+            "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes",
+            "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Read these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is<sup><a href=\"#fn-1\" class=\"footnote-ref\">[1]</a></sup><sup><a href=\"#fn-2\" class=\"footnote-ref\">[2]</a></sup>:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "How Do We Apply This Index?",
+          "id": "how-do-we-apply-this-index"
+        },
+        {
+          "type": "paragraph",
+          "content": "The ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user&#39;s desired compression ratio. This is done through a few key steps:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by: - Starting with k random cluster centers - Assigning each group to its nearest center - Recalculating centers based on group assignments - Repeating until stable"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Example Rankings",
+          "id": "example-rankings"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "1080p Examples",
+          "id": "1080p-examples"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 1: Users prioritizing storage efficiency (10% target)",
+          "id": "example-1-users-prioritizing-storage-efficiency-10-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "Users might choose this very aggressive compression target when:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Managing large libraries on limited storage",
+            "Collecting complete series where total size is a major concern",
+            "Primarily viewing on mobile devices or smaller screens",
+            "Dealing with bandwidth caps or slow internet connections"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tier",
+            "Group",
+            "Efficiency",
+            "Delta"
+          ],
+          "rows": [
+            [
+              "1",
+              "iVy",
+              "9.37%",
+              "0.63"
+            ],
+            [
+              "1",
+              "PSA",
+              "7.89%",
+              "2.11"
+            ],
+            [
+              "2",
+              "Vyndros",
+              "16.08%",
+              "6.08"
+            ],
+            [
+              "2",
+              "Chivaman",
+              "16.80%",
+              "6.80"
+            ],
+            [
+              "2",
+              "Amazon Prime (H.265)",
+              "16.15%",
+              "6.15"
+            ],
+            [
+              "3",
+              "Disney+ (H.265)",
+              "20.32%",
+              "10.32"
+            ],
+            [
+              "3",
+              "TAoE",
+              "22.78%",
+              "12.78"
+            ],
+            [
+              "3",
+              "QxR",
+              "23.25%",
+              "13.25"
+            ],
+            [
+              "3",
+              "BRiAN",
+              "25.16%",
+              "15.16"
+            ],
+            [
+              "3",
+              "Movies Anywhere (H.265)",
+              "26.05%",
+              "16.05"
+            ],
+            [
+              "4",
+              "MainFrame",
+              "37.63%",
+              "27.63"
+            ],
+            [
+              "4",
+              "NAN0",
+              "37.71%",
+              "27.71"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 2: Users seeking balanced quality and size (25% target)",
+          "id": "example-2-users-seeking-balanced-quality-and-size-25-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This moderate compression target appeals to users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have reasonable storage capacity but still want efficiency",
+            "Watch on mid to large screens where quality becomes more noticeable",
+            "Want a good balance between visual quality and practical file sizes"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tier",
+            "Group",
+            "Efficiency",
+            "Delta"
+          ],
+          "rows": [
+            [
+              "1",
+              "BRiAN",
+              "25.16%",
+              "0.16"
+            ],
+            [
+              "1",
+              "Movies Anywhere (H.265)",
+              "26.05%",
+              "1.05"
+            ],
+            [
+              "1",
+              "QxR",
+              "23.25%",
+              "1.75"
+            ],
+            [
+              "1",
+              "TAoE",
+              "22.78%",
+              "2.22"
+            ],
+            [
+              "2",
+              "Disney+ (H.265)",
+              "20.32%",
+              "4.68"
+            ],
+            [
+              "3",
+              "Amazon Prime (H.265)",
+              "16.15%",
+              "8.85"
+            ],
+            [
+              "3",
+              "Chivaman",
+              "16.80%",
+              "8.20"
+            ],
+            [
+              "3",
+              "Vyndros",
+              "16.08%",
+              "8.92"
+            ],
+            [
+              "3",
+              "MainFrame",
+              "37.63%",
+              "12.63"
+            ],
+            [
+              "3",
+              "NAN0",
+              "37.71%",
+              "12.71"
+            ],
+            [
+              "4",
+              "iVy",
+              "9.37%",
+              "15.63"
+            ],
+            [
+              "4",
+              "PSA",
+              "7.89%",
+              "17.11"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "2160p Examples",
+          "id": "2160p-examples"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 3: Extreme Space Saving (20% target)",
+          "id": "example-3-extreme-space-saving-20-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This aggressive 2160p compression appeals to users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Want to maintain a 4K library on limited storage",
+            "Primarily view content at typical viewing distances where subtle quality differences are less noticeable",
+            "Need to conserve bandwidth while still enjoying 4K resolution",
+            "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 4: Balanced 4K (40% target)",
+          "id": "example-4-balanced-4k-40-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This middle-ground approach is ideal for users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have decent storage capacity but still want reasonable efficiency",
+            "Watch on larger screens where quality differences become more apparent",
+            "Want to maintain high quality while still keeping files manageable",
+            "Need reliable HDR performance without excessive file sizes"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 5: Near Transparent Quality (60% target)",
+          "id": "example-5-near-transparent-quality-60-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This higher bitrate target is chosen by users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have ample storage and prioritize maximum quality consciously",
+            "Watch on high-end displays where subtle quality differences are noticeable",
+            "Want to maintain archive-quality collections",
+            "Focus on difficult-to-encode content where compression artifacts are more visible"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "paragraph",
+          "content": "These examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Frequently Asked Questions",
+          "id": "frequently-asked-questions"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Why not just detect h265/x265 releases? Isn&#39;t that simpler?",
+              "This is a common misconception that &quot;HEVC = smaller = better&quot;. While it&#39;s true that HEVC/x265 <em>can</em> achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 &gt; HEVC &gt; AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don&#39;t actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy."
+            ],
+            [
+              "But doesn&#39;t this ignore quality?",
+              "The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - &quot;quality above all&quot; or &quot;smaller is always better&quot; - we focus on <em>efficiency</em>: getting the best practical quality for any given file size target. This approach <strong>will not</strong> satisfy quality enthusiasts, but it better serves the needs of most users."
+            ],
+            [
+              "What if the source is not a 1080p remux? How do you tell?",
+              "This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices."
+            ],
+            [
+              "How do you prefer HEVC?",
+              "We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases."
+            ],
+            [
+              "Why not consider releases above 40% efficiency?",
+              "For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC&#39;s key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There&#39;s simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content."
+            ],
+            [
+              "What about animated content?",
+              "Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target."
+            ],
+            [
+              "Why does transparency require 60% at 2160p compared to 40% at 1080p?",
+              "The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. <strong>Increased Color Depth</strong>: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. <strong>HDR Requirements</strong>: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. <strong>Resolution Scaling</strong>: While 2160p has 4x the pixels of 1080p, compression efficiency doesn&#39;t scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency."
+            ],
+            [
+              "Do all 2160p releases need 60% for transparency?",
+              "No, the actual requirements vary significantly based on several factors:<br><br>1. <strong>Content Type</strong>:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. <strong>HDR Implementation</strong>:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. <strong>Source Quality</strong>:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master&#39;s bit depth and color space<br><br>4. <strong>Scene Complexity</strong>:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding"
+            ]
+          ]
+        },
+        {
+          "type": "footnote",
+          "id": "1",
+          "content": "Shen, Y. (2020). &quot;Bjontegaard Delta Rate Metric&quot;. Medium Innovation Labs Blog. <a href=\"https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\">https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c</a>"
+        },
+        {
+          "type": "footnote",
+          "id": "2",
+          "content": "Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). &quot;Video Quality Assessment: From FR to NR&quot;. Electronics, 13(5), 953. <a href=\"https://www.mdpi.com/2079-9292/13/5/953\">https://www.mdpi.com/2079-9292/13/5/953</a>"
+        }
+      ],
       "markdown": "\nThis metric is aimed at identifying and ranking release groups based on their propensity to release **encodes that meet certain compression ratios**, with particular focus on **HEVC** releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC's compression capabilities while maintaining quality at minimal file sizes.\n\n## What is a Compression Ratio?\n\nA compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the **encoded file size as a percentage of its source size** (typically a **remux** or **WEB-DL**).\n\nFor example:\n\n| Movie   | Source (Remux) | Encode | Compression Ratio |\n| ------- | -------------- | ------ | ----------------- |\n| Movie A | 40 GB          | 10 GB  | 25%               |\n| Movie B | 30 GB          | 6 GB   | 20%               |\n| Movie C | 50 GB          | 15 GB  | 30%               |\n\n## Why Is This Important?\n\nUnderstanding compression ratios helps balance two competing needs: **maintaining high video quality while minimizing file size**. Modern codecs like **HEVC** have a **\"sweet spot\"** where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:\n\n- Storage and bandwidth are always **limited resources**\n- Going beyond certain bitrates provides **diminishing quality returns**\n- Different codecs have different **efficiency curves**\n- Release groups need clear standards for **quality vs. size trade-offs**\n\n## What Ratio is Best?\n\nThere's no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The \"best\" ratio **depends entirely on your specific needs**. At 1080p:\n\n- Space-conscious users might prefer **smaller files (5-10% of source)** with quality trade-offs\n- Quality-focused users might push towards **higher quality (30-40% of source)** for transparency\n- Most users find a sweet spot in the middle\n\nHowever, there are technical limits - files larger than **40% for 1080p** and **60% for 2160p** provide no meaningful benefits.\n\n## Why Set Maximum Ratios of 40% and 60%?\n\nThe compression ratio ceilings are set based on different factors for 1080p and 2160p content:\n\n### 1080p (40% Maximum)\n\nThe 40% ceiling for 1080p exists because we can roughly measure where **HEVC stops being efficient compared to AVC**. We do this using two key video quality metrics:\n\n- **VMAF** - analyzes how humans perceive video quality and scores it from 0-100\n- **BD-Rate** - tells us how much smaller one encode is compared to another while maintaining the same quality level\n\nUsing these tools together shows us that:\n\n- HEVC achieves **20-40% smaller files** in the mid-bitrate range (~2-10 Mbps for 1080p)\n- These space savings are consistent across different quality levels\n- Beyond this point, both codecs achieve **near identical quality**\n- At ratios above 40%, **AVC becomes preferred** due to better tooling and quality control\n\n### 2160p (60% Maximum)\n\nThe 60% ceiling for 2160p content is based on different considerations:\n\n- This is approximately where **visual transparency** becomes achievable\n- Higher ratios provide **diminishing returns**\n- At this compression level, content achieves **VMAF scores above 95**\n- **Storage efficiency** becomes critical due to larger base file sizes\n- Quality improvements become **increasingly subtle** beyond this point\n\nRead these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is[^1][^2]:\n\n## How Do We Apply This Index?\n\nThe ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user's desired compression ratio. This is done through a few key steps:\n\n1. **Delta Calculation**: We calculate the absolute difference (delta) between a group's average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points.\n\n2. **K-means Clustering**: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:\n   - Starting with k random cluster centers\n   - Assigning each group to its nearest center\n   - Recalculating centers based on group assignments\n   - Repeating until stable\n\n# Example Rankings\n\n## 1080p Examples\n\n### Example 1: Users prioritizing storage efficiency (10% target)\n\nUsers might choose this very aggressive compression target when:\n\n- Managing large libraries on limited storage\n- Collecting complete series where total size is a major concern\n- Primarily viewing on mobile devices or smaller screens\n- Dealing with bandwidth caps or slow internet connections\n\n| Tier | Group                   | Efficiency | Delta |\n| ---- | ----------------------- | ---------- | ----- |\n| 1    | iVy                     | 9.37%      | 0.63  |\n| 1    | PSA                     | 7.89%      | 2.11  |\n| 2    | Vyndros                 | 16.08%     | 6.08  |\n| 2    | Chivaman                | 16.80%     | 6.80  |\n| 2    | Amazon Prime (H.265)    | 16.15%     | 6.15  |\n| 3    | Disney+ (H.265)         | 20.32%     | 10.32 |\n| 3    | TAoE                    | 22.78%     | 12.78 |\n| 3    | QxR                     | 23.25%     | 13.25 |\n| 3    | BRiAN                   | 25.16%     | 15.16 |\n| 3    | Movies Anywhere (H.265) | 26.05%     | 16.05 |\n| 4    | MainFrame               | 37.63%     | 27.63 |\n| 4    | NAN0                    | 37.71%     | 27.71 |\n\n### Example 2: Users seeking balanced quality and size (25% target)\n\nThis moderate compression target appeals to users who:\n\n- Have reasonable storage capacity but still want efficiency\n- Watch on mid to large screens where quality becomes more noticeable\n- Want a good balance between visual quality and practical file sizes\n\n| Tier | Group                   | Efficiency | Delta |\n| ---- | ----------------------- | ---------- | ----- |\n| 1    | BRiAN                   | 25.16%     | 0.16  |\n| 1    | Movies Anywhere (H.265) | 26.05%     | 1.05  |\n| 1    | QxR                     | 23.25%     | 1.75  |\n| 1    | TAoE                    | 22.78%     | 2.22  |\n| 2    | Disney+ (H.265)         | 20.32%     | 4.68  |\n| 3    | Amazon Prime (H.265)    | 16.15%     | 8.85  |\n| 3    | Chivaman                | 16.80%     | 8.20  |\n| 3    | Vyndros                 | 16.08%     | 8.92  |\n| 3    | MainFrame               | 37.63%     | 12.63 |\n| 3    | NAN0                    | 37.71%     | 12.71 |\n| 4    | iVy                     | 9.37%      | 15.63 |\n| 4    | PSA                     | 7.89%      | 17.11 |\n\n## 2160p Examples\n\n### Example 3: Extreme Space Saving (20% target)\n\nThis aggressive 2160p compression appeals to users who:\n\n- Want to maintain a 4K library on limited storage\n- Primarily view content at typical viewing distances where subtle quality differences are less noticeable\n- Need to conserve bandwidth while still enjoying 4K resolution\n- Have a large collection of 4K content and need to balance quality with practical storage constraints\n\nTODO: EXAMPLES\n\n### Example 4: Balanced 4K (40% target)\n\nThis middle-ground approach is ideal for users who:\n\n- Have decent storage capacity but still want reasonable efficiency\n- Watch on larger screens where quality differences become more apparent\n- Want to maintain high quality while still keeping files manageable\n- Need reliable HDR performance without excessive file sizes\n\nTODO: EXAMPLES\n\n### Example 5: Near Transparent Quality (60% target)\n\nThis higher bitrate target is chosen by users who:\n\n- Have ample storage and prioritize maximum quality consciously\n- Watch on high-end displays where subtle quality differences are noticeable\n- Want to maintain archive-quality collections\n- Focus on difficult-to-encode content where compression artifacts are more visible\n\nTODO: EXAMPLES\n\nThese examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements.\n\n## Frequently Asked Questions\n\n| Question                                                             | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Why not just detect h265/x265 releases? Isn't that simpler?          | This is a common misconception that \"HEVC = smaller = better\". While it's true that HEVC/x265 _can_ achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 > HEVC > AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don't actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy. |\n| But doesn't this ignore quality?                                     | The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - \"quality above all\" or \"smaller is always better\" - we focus on _efficiency_: getting the best practical quality for any given file size target. This approach **will not** satisfy quality enthusiasts, but it better serves the needs of most users.                                                                                                                                                                                                                                                                                                                                                                                    |\n| What if the source is not a 1080p remux? How do you tell?            | This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| How do you prefer HEVC?                                              | We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\n| Why not consider releases above 40% efficiency?                      | For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC's key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There's simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| What about animated content?                                         | Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target.                                                                                                                                                                                                                                                                     |\n| Why does transparency require 60% at 2160p compared to 40% at 1080p? | The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. **Increased Color Depth**: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. **HDR Requirements**: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. **Resolution Scaling**: While 2160p has 4x the pixels of 1080p, compression efficiency doesn't scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency.                                                                         |\n| Do all 2160p releases need 60% for transparency?                     | No, the actual requirements vary significantly based on several factors:<br><br>1. **Content Type**:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. **HDR Implementation**:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. **Source Quality**:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master's bit depth and color space<br><br>4. **Scene Complexity**:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding                                                                                                                                                                                                                                                                                                      |\n\n[^1]: Shen, Y. (2020). \"Bjontegaard Delta Rate Metric\". Medium Innovation Labs Blog. https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\n[^2]: Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). \"Video Quality Assessment: From FR to NR\". Electronics, 13(5), 953. https://www.mdpi.com/2079-9292/13/5/953\n",
       "navigation": [
         {
@@ -58494,11 +59173,44 @@ export const contentDatabase = {
           "wiki",
           "faq"
         ],
-        "blurb": "Frequently asked questions pertaining to Dictionarry / Profillar and all of its tooling."
+        "blurb": "Frequently asked questions pertaining to Dictionarry / Profillar and all of its tooling.",
+        "readingTime": 2
       },
-      "html": "<p>This entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr.</p>\n<table>\n<thead>\n<tr>\n<th>Question</th>\n<th>Answer</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Why isn&#39;t the highest scored release being grabbed?</td>\n<td>You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it&#39;s Custom Format score is not the highest. To turn it off, navigate to Settings &gt; Media Management &gt; File Management and set Prefer Propers / Repacks to Do Not Prefer.</td>\n</tr>\n<tr>\n<td>What&#39;s the difference between h264, x264, AVC, h265, x265 and HEVC?</td>\n<td><strong>H.264 (AVC)</strong>: A video compression standard.<br><strong>x264</strong>: An open source encoder that produces H.264 videos.<br><strong>H.265 (HEVC)</strong>: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br><strong>x265</strong>: An open source encoder that produces H.265 videos.<br><br><strong>Key Points</strong>:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br><em>Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone.</em></td>\n</tr>\n<tr>\n<td>What quality settings should I use?</td>\n<td>It&#39;s suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in.</td>\n</tr>\n<tr>\n<td>What does &quot;Transparency&quot; mean?</td>\n<td>Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term &quot;transparency&quot; stems from the idea that the encoding and decoding processes are imperceptible, as if the system were <em>transparent</em>.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as <a href=\"https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion\">VMAF (Video Multi-Method Assessment Fusion)</a>, are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency.</td>\n</tr>\n</tbody></table>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Why isn&#39;t the highest scored release being grabbed?",
+              "You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it&#39;s Custom Format score is not the highest. To turn it off, navigate to Settings &gt; Media Management &gt; File Management and set Prefer Propers / Repacks to Do Not Prefer."
+            ],
+            [
+              "What&#39;s the difference between h264, x264, AVC, h265, x265 and HEVC?",
+              "<strong>H.264 (AVC)</strong>: A video compression standard.<br><strong>x264</strong>: An open source encoder that produces H.264 videos.<br><strong>H.265 (HEVC)</strong>: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br><strong>x265</strong>: An open source encoder that produces H.265 videos.<br><br><strong>Key Points</strong>:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br><em>Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone.</em>"
+            ],
+            [
+              "What quality settings should I use?",
+              "It&#39;s suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in."
+            ],
+            [
+              "What does &quot;Transparency&quot; mean?",
+              "Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term &quot;transparency&quot; stems from the idea that the encoding and decoding processes are imperceptible, as if the system were <em>transparent</em>.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as <a href=\"https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion\">VMAF (Video Multi-Method Assessment Fusion)</a>, are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency."
+            ]
+          ]
+        }
+      ],
       "markdown": "\nThis entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr.\n\n| Question                                                            | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\n| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Why isn't the highest scored release being grabbed?                 | You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it's Custom Format score is not the highest. To turn it off, navigate to Settings > Media Management > File Management and set Prefer Propers / Repacks to Do Not Prefer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| What's the difference between h264, x264, AVC, h265, x265 and HEVC? | **H.264 (AVC)**: A video compression standard.<br>**x264**: An open source encoder that produces H.264 videos.<br>**H.265 (HEVC)**: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br>**x265**: An open source encoder that produces H.265 videos.<br><br>**Key Points**:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br>_Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone._                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| What quality settings should I use?                                 | It's suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| What does \"Transparency\" mean?                                      | Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term \"transparency\" stems from the idea that the encoding and decoding processes are imperceptible, as if the system were _transparent_.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as [VMAF (Video Multi-Method Assessment Fusion)](https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion), are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency. |\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
       "searchWeight": 0.8,
       "tags": [
@@ -58527,9 +59239,71 @@ export const contentDatabase = {
           "encode"
         ],
         "blurb": "A data-driven metric that identifies high-quality release groups by analyzing their Golden Popcorn track record.",
-        "featured": true
+        "featured": true,
+        "readingTime": 2
       },
-      "html": "<h2 id=\"what-are-golden-popcorns\">What are Golden Popcorns?</h2>\n<p><strong><em>Golden Popcorns</em></strong> are <em>very high quality encodes</em>, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of <em>Golden Popcorn</em> checkers. Golden Popcorns are the simplest way to quantify a subjective <em>best</em> encode.</p>\n<h2 id=\"the-decision-engine\">The Decision Engine</h2>\n<p>The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the <a href=\"../Profiles/1080p%20Transparent.md\">Transparent</a> profile&#39;s decision-making process. It&#39;s engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.</p>\n<h2 id=\"formula\">Formula</h2>\n<p>On first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution <em>r</em>.</p>\n<p>However, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio.</p>\n<p>So instead, we multiply the number of Golden Popcorns at resolution $r$ for a given release group, by a factor of said release group&#39;s Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other.</p>\n<p>For any given resolution <em>r</em>, the GPPI is defined as:</p>\n<p>$$<br>\\begin{aligned}<br>\\text{GPPI}_r &amp;= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\<br>              &amp;= \\frac{GPE_r^2}{E_r}<br>\\end{aligned}<br>$$</p>\n<p>Where:</p>\n<ul>\n<li>$\\text{GPPI}_r$ is the Golden Popcorn Performance Index at resolution $r$</li>\n<li>$GPE_r$ is the number of Golden Popcorns at resolution $r$</li>\n<li>$E_r$ is the total number of encodes at resolution $r$</li>\n</ul>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What are Golden Popcorns?",
+          "id": "what-are-golden-popcorns"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong><em>Golden Popcorns</em></strong> are <em>very high quality encodes</em>, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of <em>Golden Popcorn</em> checkers. Golden Popcorns are the simplest way to quantify a subjective <em>best</em> encode."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "The Decision Engine",
+          "id": "the-decision-engine"
+        },
+        {
+          "type": "paragraph",
+          "content": "The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the <a href=\"../Profiles/1080p%20Transparent.md\">Transparent</a> profile&#39;s decision-making process. It&#39;s engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution <math-inline>r</math-inline>."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Formula",
+          "id": "formula"
+        },
+        {
+          "type": "paragraph",
+          "content": "On first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution <em>r</em>."
+        },
+        {
+          "type": "paragraph",
+          "content": "However, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio."
+        },
+        {
+          "type": "paragraph",
+          "content": "So instead, we multiply the number of Golden Popcorns at resolution <math-inline>r</math-inline> for a given release group, by a factor of said release group&#39;s Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other."
+        },
+        {
+          "type": "paragraph",
+          "content": "For any given resolution <em>r</em>, the GPPI is defined as:"
+        },
+        {
+          "type": "math",
+          "display": true,
+          "content": "\\begin{aligned}\n\\text{GPPI}_r &= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\\\\n              &= \\frac{GPE_r^2}{E_r}\n\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "content": "Where:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>",
+            "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>",
+            "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+          ]
+        }
+      ],
       "markdown": "\n## What are Golden Popcorns?\n\n**_Golden Popcorns_** are _very high quality encodes_, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of _Golden Popcorn_ checkers. Golden Popcorns are the simplest way to quantify a subjective _best_ encode.\n\n## The Decision Engine\n\nThe Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the [Transparent](../Profiles/1080p%20Transparent.md) profile's decision-making process. It's engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.\n\n## Formula\n\nOn first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution _r_.\n\nHowever, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio.\n\nSo instead, we multiply the number of Golden Popcorns at resolution $r$ for a given release group, by a factor of said release group's Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other.\n\nFor any given resolution _r_, the GPPI is defined as:\n\n$$\n\\begin{aligned}\n\\text{GPPI}_r &= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\\\\n              &= \\frac{GPE_r^2}{E_r}\n\\end{aligned}\n$$\n\nWhere:\n\n- $\\text{GPPI}_r$ is the Golden Popcorn Performance Index at resolution $r$\n- $GPE_r$ is the number of Golden Popcorns at resolution $r$\n- $E_r$ is the total number of encodes at resolution $r$\n",
       "navigation": [
         "What are Golden Popcorns?",
@@ -58567,9 +59341,48 @@ export const contentDatabase = {
           "docker",
           "containers"
         ],
-        "blurb": "A simple guide to install Profilarr in Casa OS as a custom app."
+        "blurb": "A simple guide to install Profilarr in Casa OS as a custom app.",
+        "readingTime": 2
       },
-      "html": "<p>This guide will walk you through the process of installing Profilarr as a custom app in Casa OS.</p>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<ul>\n<li>A working Casa OS installation (this guide uses v0.4.15).</li>\n<li>Basic knowledge of using the Casa OS interface.</li>\n<li>Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file.</li>\n</ul>\n<h2 id=\"step-by-step-installation\">Step-by-Step Installation</h2>\n<ol>\n<li><strong>Add a Custom App to Casa OS:</strong><ul>\n<li>Open your web browser and navigate to your Casa OS dashboard.</li>\n<li>Find and click on the &quot;+&quot; icon in the top right corner of the App section.</li>\n<li>Select “Install a customized app”</li>\n<li>Select “Import” in the top right corner of the Settings page</li>\n</ul>\n</li>\n<li><strong>Import Docker Compose File:</strong><ul>\n<li>Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a></li>\n<li>Scroll down to the “Installation” section</li>\n<li>You will see a **Docker Compose (recommended) **code block</li>\n<li>Copy the Docker Compose file code</li>\n<li>Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box<ul>\n<li>Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:<ul>\n<li><code>env_file:</code></li>\n<li><code>- .env # Optional: Only needed if contributing to a database</code></li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Click on “Submit” and click “OK” to the warning</li>\n</ul>\n</li>\n<li><strong>Profilarr App Details:</strong><ul>\n<li>You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables</li>\n<li><strong>Name:</strong> “Profilarr” - but you can change it if you want</li>\n<li><strong>Icon:</strong> (Optional) You can upload an icon for the app.</li>\n<li><strong>Web UI:</strong> Should be your host device IP address</li>\n<li><strong>Network:</strong> Should be bridge</li>\n<li><strong>Port:</strong> Should be 6868 TCP</li>\n<li><strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location</li>\n<li><strong>Environment Variables:</strong> (Only TZ is required, the others are optional)<ul>\n<li>TZ = Your Timezone (e.g., America/New_York)</li>\n<li>GIT_USER_NAME = GitHub username for contributing</li>\n<li>GIT_USER_EMAIL = GitHub email for contributing</li>\n<li>PROFILARR_PAT = GitHub Personal Access Token for contributing</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Install the App:</strong><ul>\n<li>Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.</li>\n</ul>\n</li>\n<li><strong>Wait for Installation:</strong><ul>\n<li>Casa OS will now download and install the app. This might take a few minutes.</li>\n</ul>\n</li>\n<li><strong>Access Profilarr:</strong><ul>\n<li>After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.</li>\n</ul>\n</li>\n</ol>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Prerequisites",
+          "id": "prerequisites"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A working Casa OS installation (this guide uses v0.4.15).",
+            "Basic knowledge of using the Casa OS interface.",
+            "Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Step-by-Step Installation",
+          "id": "step-by-step-installation"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>Add a Custom App to Casa OS:</strong> - Open your web browser and navigate to your Casa OS dashboard. - Find and click on the &quot;+&quot; icon in the top right corner of the App section. - Select “Install a customized app” - Select “Import” in the top right corner of the Settings page",
+            "<strong>Import Docker Compose File:</strong> - Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> - Scroll down to the “Installation” section - You will see a **Docker Compose (recommended) **code block - Copy the Docker Compose file code - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code> - Click on “Submit” and click “OK” to the warning",
+            "<strong>Profilarr App Details:</strong> - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables - <strong>Name:</strong> “Profilarr” - but you can change it if you want - <strong>Icon:</strong> (Optional) You can upload an icon for the app. - <strong>Web UI:</strong> Should be your host device IP address - <strong>Network:</strong> Should be bridge - <strong>Port:</strong> Should be 6868 TCP - <strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location - <strong>Environment Variables:</strong> (Only TZ is required, the others are optional) - TZ = Your Timezone (e.g., America/New_York) - GIT_USER_NAME = GitHub username for contributing - GIT_USER_EMAIL = GitHub email for contributing - PROFILARR_PAT = GitHub Personal Access Token for contributing",
+            "<strong>Install the App:</strong> - Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.",
+            "<strong>Wait for Installation:</strong> - Casa OS will now download and install the app. This might take a few minutes.",
+            "<strong>Access Profilarr:</strong> - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app."
+          ]
+        }
+      ],
       "markdown": "\nThis guide will walk you through the process of installing Profilarr as a custom app in Casa OS.\n\n## Prerequisites\n\n- A working Casa OS installation (this guide uses v0.4.15).\n- Basic knowledge of using the Casa OS interface.\n- Access to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr) for install file.\n\n## Step-by-Step Installation\n\n1. **Add a Custom App to Casa OS:**\n   - Open your web browser and navigate to your Casa OS dashboard.\n   - Find and click on the \"+\" icon in the top right corner of the App section.\n   - Select “Install a customized app”\n   - Select “Import” in the top right corner of the Settings page\n2. **Import Docker Compose File:**\n   - Navigate to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr)\n   - Scroll down to the “Installation” section\n   - You will see a **Docker Compose (recommended) **code block\n   - Copy the Docker Compose file code\n   - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box\n     - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:\n       - `env_file:`\n       - `- .env # Optional: Only needed if contributing to a database`\n   - Click on “Submit” and click “OK” to the warning\n3. **Profilarr App Details:**\n   - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables\n   - **Name:** “Profilarr” - but you can change it if you want\n   - **Icon:** (Optional) You can upload an icon for the app.\n   - **Web UI:** Should be your host device IP address\n   - **Network:** Should be bridge\n   - **Port:** Should be 6868 TCP\n   - **Volumes:** Leave this as default unless you want to change the host path to a specific location\n   - **Environment Variables:** (Only TZ is required, the others are optional)\n     - TZ = Your Timezone (e.g., America/New_York)\n     - GIT_USER_NAME = GitHub username for contributing\n     - GIT_USER_EMAIL = GitHub email for contributing\n     - PROFILARR_PAT = GitHub Personal Access Token for contributing\n4. **Install the App:**\n   - Once you've filled in all the necessary details, click on the \"Install\" button.\n5. **Wait for Installation:**\n   - Casa OS will now download and install the app. This might take a few minutes.\n6. **Access Profilarr:**\n   - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.\n",
       "navigation": [
         "Prerequisites",
@@ -58608,9 +59421,66 @@ export const contentDatabase = {
           "philosophy"
         ],
         "blurb": "Explore Dictionarry's release group abstraction philosophy and what it actually means to simplify media automation.",
-        "featured": true
+        "featured": true,
+        "readingTime": 2
       },
-      "html": "<h2 id=\"so-how-does-dictionarry-_actually-simplify-media-automation_\">So, how does Dictionarry _actually simplify media automation?_</h2>\n<p>Well, first we need to understand that we&#39;re trying to <strong>automate the subjective analysis of how &quot;good&quot; a release is</strong>. To do that, we need to first define <strong>what &quot;good&quot; even means</strong>. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as <em>quality</em>. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as <em>efficiency</em>.</p>\n<p>So, that leads us to a new question - <em>how do we measure quality and efficiency</em>? You might think we&#39;d want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc.</p>\n<pre><code class=\"hljs\"><span class=\"hljs-attribute\">Release</span> <span class=\"hljs-number\">1</span> (<span class=\"hljs-number\">25</span>.<span class=\"hljs-number\">2</span> GiB): Blockbuster Movie A <span class=\"hljs-number\">2022</span> Hybrid <span class=\"hljs-number\">1080</span>p WEBRip DDPA5.<span class=\"hljs-number\">1</span> x264-group A\n\n<span class=\"hljs-attribute\">Release</span> <span class=\"hljs-number\">2</span> (<span class=\"hljs-number\">27</span>.<span class=\"hljs-number\">3</span> GiB): Blockbuster Movie A.<span class=\"hljs-number\">1080</span>p.WEBRip.DD+<span class=\"hljs-number\">7</span>.<span class=\"hljs-number\">1</span>.x264-group B\n</code></pre>\n<p>Looking at these two releases, you&#39;ll notice that they both have the EXACT same technical specification and would rank equally. But they&#39;re different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely <strong>limited by the information that they convey</strong>. You can&#39;t adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we <em>extrapolate information that isn&#39;t already there?</em></p>\n<h3 id=\"group-tags\">Group Tags</h3>\n<p>Our answer lies in the little bit of information at the end of every release - it&#39;s <strong>group tag</strong>. Dictionarry tracks historic release group data in order to <strong>rank groups based on their propensity to reach quantifiable levels of quality and efficiency</strong>. We do this using two metrics:</p>\n<ol>\n<li>Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases</li>\n<li>Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source.</li>\n</ol>\n<p>These metrics are <strong>evidence based, data driven and objective</strong>.</p>\n<h3 id=\"tldr\">TL;DR</h3>\n<p>TL;DR: Dictionarry <strong>simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement</strong>. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below.</p>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 2,
+          "text": "So, how does Dictionarry _actually simplify media automation?_",
+          "id": "so-how-does-dictionarry-_actually-simplify-media-automation_"
+        },
+        {
+          "type": "paragraph",
+          "content": "Well, first we need to understand that we&#39;re trying to <strong>automate the subjective analysis of how &quot;good&quot; a release is</strong>. To do that, we need to first define <strong>what &quot;good&quot; even means</strong>. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as <em>quality</em>. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as <em>efficiency</em>."
+        },
+        {
+          "type": "paragraph",
+          "content": "So, that leads us to a new question - <em>how do we measure quality and efficiency</em>? You might think we&#39;d want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc."
+        },
+        {
+          "type": "code",
+          "language": "plaintext",
+          "code": "Release 1 (25.2 GiB): Blockbuster Movie A 2022 Hybrid 1080p WEBRip DDPA5.1 x264-group A\n\nRelease 2 (27.3 GiB): Blockbuster Movie A.1080p.WEBRip.DD+7.1.x264-group B"
+        },
+        {
+          "type": "paragraph",
+          "content": "Looking at these two releases, you&#39;ll notice that they both have the EXACT same technical specification and would rank equally. But they&#39;re different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely <strong>limited by the information that they convey</strong>. You can&#39;t adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we <em>extrapolate information that isn&#39;t already there?</em>"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Group Tags",
+          "id": "group-tags"
+        },
+        {
+          "type": "paragraph",
+          "content": "Our answer lies in the little bit of information at the end of every release - it&#39;s <strong>group tag</strong>. Dictionarry tracks historic release group data in order to <strong>rank groups based on their propensity to reach quantifiable levels of quality and efficiency</strong>. We do this using two metrics:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases",
+            "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "These metrics are <strong>evidence based, data driven and objective</strong>."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "TL;DR",
+          "id": "tldr"
+        },
+        {
+          "type": "paragraph",
+          "content": "TL;DR: Dictionarry <strong>simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement</strong>. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below."
+        }
+      ],
       "markdown": "\n## So, how does Dictionarry _actually simplify media automation?_\n\nWell, first we need to understand that we're trying to **automate the subjective analysis of how \"good\" a release is**. To do that, we need to first define **what \"good\" even means**. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as _quality_. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as _efficiency_.\n\nSo, that leads us to a new question - _how do we measure quality and efficiency_? You might think we'd want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc.\n\n```\nRelease 1 (25.2 GiB): Blockbuster Movie A 2022 Hybrid 1080p WEBRip DDPA5.1 x264-group A\n\nRelease 2 (27.3 GiB): Blockbuster Movie A.1080p.WEBRip.DD+7.1.x264-group B\n```\n\nLooking at these two releases, you'll notice that they both have the EXACT same technical specification and would rank equally. But they're different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely **limited by the information that they convey**. You can't adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we _extrapolate information that isn't already there?_\n\n### Group Tags\n\nOur answer lies in the little bit of information at the end of every release - it's **group tag**. Dictionarry tracks historic release group data in order to **rank groups based on their propensity to reach quantifiable levels of quality and efficiency**. We do this using two metrics:\n\n1. Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases\n2. Encode Efficiency Index (EEi): The average size of a release group's encode compared to it's likely source.\n\nThese metrics are **evidence based, data driven and objective**.\n\n### TL;DR\n\nTL;DR: Dictionarry **simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement**. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below.\n",
       "navigation": [
         {
@@ -58648,9 +59518,53 @@ export const contentDatabase = {
         "tags": [
           "devlog",
           "architecture"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:</p>\n<p>As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.</p>\n<p>Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.</p>\n<p>Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.</p>\n<p>Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!</p>\n<p>Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:</p>\n<p><img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\"></p>\n<h1 id=\"profile-selector\">Profile Selector</h1>\n<p>Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is.</p>\n<p><img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:"
+        },
+        {
+          "type": "paragraph",
+          "content": "As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool."
+        },
+        {
+          "type": "paragraph",
+          "content": "Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences."
+        },
+        {
+          "type": "paragraph",
+          "content": "Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups."
+        },
+        {
+          "type": "paragraph",
+          "content": "Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\">"
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Profile Selector",
+          "id": "profile-selector"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is."
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\">"
+        }
+      ],
       "markdown": "\nHey @everyone, here's a small update on what I've been working on lately:\n\nAs the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I've planned a complete overhaul of Dictionarry's architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.\n\nNext up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.\n\nWorking in this system is extremely error prone and time consuming. To fix this, I'm creating a standard unique to dictionarry based on a **single definition format**, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don't know exactly _how_ this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.\n\nNow, the problem with this new and improved standard is - the arrs won't be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!\n\nHere's a canvas page I made in Obsidian which visualizes this architecture:\n\n![Archiecture Diagram](https://i.imgur.com/HcXFNHU.png)\n\n# Profile Selector\n\nHere's an updated look at the new profile selector (WIP) in action. I'll leave explaining the selection algorithm for another day (because I'm still not quite happy with it), but I think it's still pretty cool to look at as is.\n\n![Selection Algorithm v1](https://streamable.com/bhi7h6)\n",
       "navigation": [
         "Profile Selector"
@@ -58675,9 +59589,274 @@ export const contentDatabase = {
       "frontmatter": {
         "title": "Markdown Formatting Test",
         "date": "2024-12-30",
-        "description": "A comprehensive test of all markdown formatting features"
+        "description": "A comprehensive test of all markdown formatting features",
+        "readingTime": 3
       },
-      "html": "<h1 id=\"h1-header---main-title\">H1 Header - Main Title</h1>\n<p>This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.</p>\n<h2 id=\"h2-header---section-title\">H2 Header - Section Title</h2>\n<p>Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.</p>\n<h3 id=\"h3-header---subsection\">H3 Header - Subsection</h3>\n<p>Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.</p>\n<h4 id=\"h4-header---subsubsection\">H4 Header - SubSubsection</h4>\n<p>Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.</p>\n<h2 id=\"paragraph-and-text-formatting\">Paragraph and Text Formatting</h2>\n<p>This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text.</p>\n<p>Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font.</p>\n<h2 id=\"lists\">Lists</h2>\n<h3 id=\"unordered-list\">Unordered List</h3>\n<ul>\n<li>First item in the list</li>\n<li>Second item with more text</li>\n<li>Third item<ul>\n<li>Nested item</li>\n<li>Another nested item</li>\n</ul>\n</li>\n<li>Back to main levels</li>\n</ul>\n<h3 id=\"ordered-list\">Ordered List</h3>\n<ol>\n<li>First numbered item</li>\n<li>Second numbered item</li>\n<li>Third numbered item<ol>\n<li>Nested numbered item</li>\n<li>Another nested numbered item</li>\n</ol>\n</li>\n<li>Back to main level</li>\n</ol>\n<h2 id=\"code-blocks\">Code Blocks</h2>\n<p>Here&#39;s a code block with syntax:</p>\n<pre><code class=\"hljs language-javascript\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">testFunction</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">const</span> message = <span class=\"hljs-string\">&quot;Hello, world!&quot;</span>;\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(message);\n  \n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-literal\">true</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&quot;This is a test&quot;</span>;\n  }\n}\n</code></pre>\n<p>And here&#39;s a simple code block:</p>\n<pre><code class=\"hljs\">This is just plain <span class=\"hljs-keyword\">text</span>\n<span class=\"hljs-keyword\">in</span> <span class=\"hljs-keyword\">a</span> code block\n<span class=\"hljs-keyword\">with</span> multiple <span class=\"hljs-keyword\">lines</span>\n</code></pre>\n<h2 id=\"blockquotes\">Blockquotes</h2>\n<blockquote>\n<p>This is a blockquote. It should have a left border and italic styling.</p>\n<p>It can span multiple lines and should look distinct from regular paragraphs.</p>\n</blockquote>\n<blockquote>\n<p>Here&#39;s another blockquote to test spacing between them.</p>\n</blockquote>\n<h2 id=\"links\">Links</h2>\n<p>Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>.</p>\n<h2 id=\"images\">Images</h2>\n<p>Here&#39;s an image (this will show as broken since it&#39;s a placeholder):<br><img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\"></p>\n<h2 id=\"tables-github-flavored-markdown\">Tables (GitHub Flavored Markdown)</h2>\n<table>\n<thead>\n<tr>\n<th>Header 1</th>\n<th>Header 2</th>\n<th>Header 3</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Row 1, Col 1</td>\n<td>Row 1, Col 2</td>\n<td>Row 1, Col 3</td>\n</tr>\n<tr>\n<td>Row 2, Col 1</td>\n<td>Row 2, Col 2</td>\n<td>Row 2, Col 3</td>\n</tr>\n<tr>\n<td>Row 3, Col 1</td>\n<td>Row 3, Col 2</td>\n<td>Row 3, Col 3</td>\n</tr>\n</tbody></table>\n<h2 id=\"horizontal-rule\">Horizontal Rule</h2>\n<p>Here&#39;s text before a horizontal rule.</p>\n<hr>\n<p>And here&#39;s text after the horizontal rule.</p>\n<h2 id=\"line-breaks\">Line Breaks</h2>\n<p>This line should break<br>right here (two spaces at end of line).</p>\n<p>This is a new paragraph after the line break test.</p>\n<h2 id=\"mixed-content-test\">Mixed Content Test</h2>\n<p>Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle.</p>\n<h3 id=\"list-with-code-and-links\">List with Code and Links</h3>\n<ol>\n<li>First item with <code>inline code</code></li>\n<li>Second item with <a href=\"https://example.com\">a link</a></li>\n<li>Third item with <strong>bold text</strong></li>\n<li>Fourth item with <em>italic text</em></li>\n</ol>\n<h3 id=\"blockquote-with-formatting\">Blockquote with Formatting</h3>\n<blockquote>\n<p>This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.</p>\n<p>It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test<br>complex formatting within blockquotes.</p>\n</blockquote>\n<h2 id=\"final-notes\">Final Notes</h2>\n<p>This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.</p>\n<p>The styling should be consistent and readable across all elements.</p>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 1,
+          "text": "H1 Header - Main Title",
+          "id": "h1-header---main-title"
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "H2 Header - Section Title",
+          "id": "h2-header---section-title"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "H3 Header - Subsection",
+          "id": "h3-header---subsection"
+        },
+        {
+          "type": "paragraph",
+          "content": "Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "H4 Header - SubSubsection",
+          "id": "h4-header---subsubsection"
+        },
+        {
+          "type": "paragraph",
+          "content": "Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Paragraph and Text Formatting",
+          "id": "paragraph-and-text-formatting"
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text."
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Lists",
+          "id": "lists"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Unordered List",
+          "id": "unordered-list"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "First item in the list",
+            "Second item with more text",
+            "Third item - Nested item - Another nested item",
+            "Back to main levels"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Ordered List",
+          "id": "ordered-list"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "First numbered item",
+            "Second numbered item",
+            "Third numbered item 1. Nested numbered item 2. Another nested numbered item",
+            "Back to main level"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Code Blocks",
+          "id": "code-blocks"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a code block with syntax:"
+        },
+        {
+          "type": "code",
+          "language": "javascript",
+          "code": "function testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}"
+        },
+        {
+          "type": "paragraph",
+          "content": "And here&#39;s a simple code block:"
+        },
+        {
+          "type": "code",
+          "language": "plaintext",
+          "code": "This is just plain text\nin a code block\nwith multiple lines"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Blockquotes",
+          "id": "blockquotes"
+        },
+        {
+          "type": "blockquote",
+          "content": "This is a blockquote. It should have a left border and italic styling.  It can span multiple lines and should look distinct from regular paragraphs."
+        },
+        {
+          "type": "blockquote",
+          "content": "Here&#39;s another blockquote to test spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Links",
+          "id": "links"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Images",
+          "id": "images"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s an image (this will show as broken since it&#39;s a placeholder): <img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\">"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Tables (GitHub Flavored Markdown)",
+          "id": "tables-github-flavored-markdown"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Header 1",
+            "Header 2",
+            "Header 3"
+          ],
+          "rows": [
+            [
+              "Row 1, Col 1",
+              "Row 1, Col 2",
+              "Row 1, Col 3"
+            ],
+            [
+              "Row 2, Col 1",
+              "Row 2, Col 2",
+              "Row 2, Col 3"
+            ],
+            [
+              "Row 3, Col 1",
+              "Row 3, Col 2",
+              "Row 3, Col 3"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Horizontal Rule",
+          "id": "horizontal-rule"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s text before a horizontal rule."
+        },
+        {
+          "type": "paragraph",
+          "content": "---"
+        },
+        {
+          "type": "paragraph",
+          "content": "And here&#39;s text after the horizontal rule."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Line Breaks",
+          "id": "line-breaks"
+        },
+        {
+          "type": "paragraph",
+          "content": "This line should break right here (two spaces at end of line)."
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a new paragraph after the line break test."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Mixed Content Test",
+          "id": "mixed-content-test"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "List with Code and Links",
+          "id": "list-with-code-and-links"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "First item with <code>inline code</code>",
+            "Second item with <a href=\"https://example.com\">a link</a>",
+            "Third item with <strong>bold text</strong>",
+            "Fourth item with <em>italic text</em>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Blockquote with Formatting",
+          "id": "blockquote-with-formatting"
+        },
+        {
+          "type": "blockquote",
+          "content": "This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.  It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test complex formatting within blockquotes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Final Notes",
+          "id": "final-notes"
+        },
+        {
+          "type": "paragraph",
+          "content": "This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes."
+        },
+        {
+          "type": "paragraph",
+          "content": "The styling should be consistent and readable across all elements."
+        }
+      ],
       "markdown": "\n# H1 Header - Main Title\n\nThis is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.\n\n## H2 Header - Section Title\n\nHere's another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.\n\n### H3 Header - Subsection\n\nEven more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.\n\n#### H4 Header - SubSubsection\n\nEven more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.\n\n## Paragraph and Text Formatting\n\nThis is a **bold text** example and this is *italic text*. You can also combine them like ***bold and italic*** text.\n\nHere's a new paragraph with some inline `code` formatting. The code should have a background color and monospace font.\n\n## Lists\n\n### Unordered List\n- First item in the list\n- Second item with more text\n- Third item\n  - Nested item\n  - Another nested item\n- Back to main levels\n\n### Ordered List\n1. First numbered item\n2. Second numbered item\n3. Third numbered item\n   1. Nested numbered item\n   2. Another nested numbered item\n4. Back to main level\n\n## Code Blocks\n\nHere's a code block with syntax:\n\n```javascript\nfunction testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}\n```\n\nAnd here's a simple code block:\n\n```\nThis is just plain text\nin a code block\nwith multiple lines\n```\n\n## Blockquotes\n\n> This is a blockquote. It should have a left border and italic styling.\n> \n> It can span multiple lines and should look distinct from regular paragraphs.\n\n> Here's another blockquote to test spacing between them.\n\n## Links\n\nHere's a [link to example.com](https://example.com) and another [link with title](https://example.com \"Example Site\").\n\n## Images\n\nHere's an image (this will show as broken since it's a placeholder):\n![Alt text for image](https://via.placeholder.com/300x200.png?text=Test+Image)\n\n## Tables (GitHub Flavored Markdown)\n\n| Header 1 | Header 2 | Header 3 |\n|----------|----------|----------|\n| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |\n| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |\n| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |\n\n## Horizontal Rule\n\nHere's text before a horizontal rule.\n\n---\n\nAnd here's text after the horizontal rule.\n\n## Line Breaks\n\nThis line should break  \nright here (two spaces at end of line).\n\nThis is a new paragraph after the line break test.\n\n## Mixed Content Test\n\nHere's a paragraph with **bold**, *italic*, and `inline code` all together. It also has a [link](https://example.com) in the middle.\n\n### List with Code and Links\n\n1. First item with `inline code`\n2. Second item with [a link](https://example.com)\n3. Third item with **bold text**\n4. Fourth item with *italic text*\n\n### Blockquote with Formatting\n\n> This blockquote contains **bold text**, *italic text*, and `inline code`.\n> \n> It also has a [link](https://example.com) and multiple paragraphs to test\n> complex formatting within blockquotes.\n\n## Final Notes\n\nThis test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.\n\nThe styling should be consistent and readable across all elements.",
       "navigation": [
         {
@@ -58769,9 +59948,74 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "user_choice"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, here&#39;s a small (but very important) post on the new update system!</p>\n<h2 id=\"current-profilarr\">Current Profilarr</h2>\n<p>Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.</p>\n<h2 id=\"profilarr-v1\">Profilarr v1</h2>\n<p>Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.</p>\n<ul>\n<li>As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.</li>\n<li>In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.</li>\n</ul>\n<h3 id=\"settings-page\">Settings Page</h3>\n<p>Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously).</p>\n<h1 id=\"beta-release\">Beta Release</h1>\n<ul>\n<li>Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:</li>\n</ul>\n<p>Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)</p>\n<p><img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, here&#39;s a small (but very important) post on the new update system!"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Current Profilarr",
+          "id": "current-profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr v1",
+          "id": "profilarr-v1"
+        },
+        {
+          "type": "paragraph",
+          "content": "Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.",
+            "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Settings Page",
+          "id": "settings-page"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously)."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Beta Release",
+          "id": "beta-release"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\">"
+        }
+      ],
       "markdown": "\nHey @everyone, here's a small (but very important) post on the new update system!\n\n## Current Profilarr\n\nCurrently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.\n\n## Profilarr v1\n\nUsers will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git's merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.\n\n- As an example, let's say you've made the Dolby Vision custom formats negative because your TV doesn't support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.\n- In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will 'remember' your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.\n\n### Settings Page\n\nProfilarr now includes a dedicated page for 'Sync Settings'. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr's database (not to stable, obviously).\n\n# Beta Release\n\n- Still not quite ready yet, but I'm working hard to get it out! Stay tuned :hearts:\n\nHere's a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)\n\n![Conflict Resolver](https://i.imgur.com/0EZrumU.png)\n",
       "navigation": [
         {
@@ -58814,9 +60058,164 @@ export const contentDatabase = {
           "profilarr",
           "database",
           "housekeeping"
-        ]
+        ],
+        "readingTime": 6
       },
-      "html": "<p>hey @everyone, long awaited dev log :)</p>\n<h2 id=\"whats-new\">What's New? 👈</h2>\n<p>Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :) </p>\n<p>You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.</p>\n<h3 id=\"database\">Database 💾</h3>\n<p>Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: </p>\n<ul>\n<li>@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.</li>\n<li>I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future.</li>\n</ul>\n<h3 id=\"tweaks\">Tweaks 🔧</h3>\n<p>I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up. </p>\n<h2 id=\"whats-next\">What's Next? 👉</h2>\n<p>Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. </p>\n<h3 id=\"profilarr\">Profilarr</h3>\n<ul>\n<li>Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them</li>\n<li>Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). </li>\n<li>Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a></li>\n</ul>\n<h3 id=\"database\">Database</h3>\n<ul>\n<li>Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. </li>\n<li>Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)</li>\n<li>Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources.</li>\n</ul>\n<h2 id=\"housekeeping\">Housekeeping 🧹</h2>\n<p>We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already. </p>\n<h3 id=\"moderation-wiki-support\">Moderation, Wiki, Support 🤝</h3>\n<ul>\n<li>I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. </li>\n<li>The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. </li>\n<li>I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a></li>\n</ul>\n<h3 id=\"donations\">Donations 💸</h3>\n<p>If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM. </p>\n<h3 id=\"taking-a-break\">Taking a Break ⏸️</h3>\n<p>I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:</p>\n<ul>\n<li>I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. </li>\n<li>I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break.</li>\n</ul>\n<h3 id=\"thank-you\">Thank You 🙏</h3>\n<p>This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head. </p>\n<p>Cheers, everyone. </p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone, long awaited dev log :)"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What's New? 👈",
+          "id": "whats-new"
+        },
+        {
+          "type": "paragraph",
+          "content": "Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :)"
+        },
+        {
+          "type": "paragraph",
+          "content": "You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Database 💾",
+          "id": "database"
+        },
+        {
+          "type": "paragraph",
+          "content": "Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.",
+            "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Tweaks 🔧",
+          "id": "tweaks"
+        },
+        {
+          "type": "paragraph",
+          "content": "I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What's Next? 👉",
+          "id": "whats-next"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profilarr",
+          "id": "profilarr"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them",
+            "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). ",
+            "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Database",
+          "id": "database"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. ",
+            "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)",
+            "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Housekeeping 🧹",
+          "id": "housekeeping"
+        },
+        {
+          "type": "paragraph",
+          "content": "We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Moderation, Wiki, Support 🤝",
+          "id": "moderation-wiki-support"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. ",
+            "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. ",
+            "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Donations 💸",
+          "id": "donations"
+        },
+        {
+          "type": "paragraph",
+          "content": "If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Taking a Break ⏸️",
+          "id": "taking-a-break"
+        },
+        {
+          "type": "paragraph",
+          "content": "I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. ",
+            "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Thank You 🙏",
+          "id": "thank-you"
+        },
+        {
+          "type": "paragraph",
+          "content": "This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cheers, everyone."
+        }
+      ],
       "markdown": "\nhey @everyone, long awaited dev log :)\n\n## What's New? 👈\n\nMany people are already aware, but I thought I should formally announce here on discord that **Profilarr is out in beta!** I've been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it's not nearly as stable as I would like it to be, it implements the core architecture I first talked about [here](https://dictionarry.dev/devlog/architecture_overhaul). There is still so (x10) much to be done in terms of bugs & polish & new features, but I'm happy sharing it as is. Hopefully you can all find some benefit in using it too :) \n\nYou can read our setup guide [here](https://dictionarry.dev/wiki/profilarr-setup). It's available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.\n### Database 💾\n\nAlong with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: \n- @Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It's a huge change that I haven't been able to fully test myself, but I've merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the `scoring-refactor` branch in Profilarr. Please direct any issues / improvements to the database's [Issue Tracker](https://github.com/Dictionarry-Hub/database).\n- I'm personally not too happy with the state of the current database - poorly named files and renames/imports weren't taken into enough consideration and it's causing way too many download loops. I'm still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. \n\n### Tweaks 🔧\n\nI talked about tweaks in detail [here](https://dictionarry.dev/devlog/profile_tweaks) and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it's an interesting system. In practice, it's confusing and really hard to program for. It's meant to be a database agnostic feature, but was hardcoded into Profilarr's profile system. I'm going to keep this feature on the roadmap as a maybe for now, but I'm going to have to completely rethink how to implement it from the ground up. \n\n## What's Next? 👉\n\nHere's a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. \n\n### Profilarr\n\n- Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them\n- Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you'll be able to connect to multiple at once and build off them as you please (or just link a complete one). \n- Everything on the issue tracker: https://github.com/Dictionarry-Hub/profilarr/issues\n\n### Database\n\n- Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the [Encode Efficiency Index](https://dictionarry.dev/wiki/EEi) to prioritise HEVC releases. \n- Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer & better sources. I'm not personally into that much anime, so I'm going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I'll get back to you when I can!)\n- Better Streaming Service Grab Logic - This is already partially improved in Seraphys' refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. \n\n## Housekeeping 🧹\n\nWe've had an influx of new members over the past couple weeks, so I'd like to welcome you all to our discord 👋 Come say hey in #general if you haven't already. \n\n### Moderation, Wiki, Support 🤝\n\n- I'd like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. \n- The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. \n- I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. [here](https://github.com/Dictionarry-Hub/profilarr/issues) and [here](https://github.com/Dictionarry-Hub/database)\n\n### Donations 💸\n\nIf you've donated and would like a special 'Donor' role badge here on discord, please shoot me a PM. \n\n### Taking a Break ⏸️\n\nI want to let everyone know that I'll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I'm quite burnt out. I'm trying very hard to balance full time study with development, but they unfortunately just don't mesh the way I hoped they would. I can't not work at 100% for either, so something had to give and for the past month or so, that's been my sleep and sanity. I unfortunately can't delay my semester (as much as I want to), so I'm going to have to dial down the time I spend on Dictionarry/Profilarr. I think I'm going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I'll slowly pick up speed again. Couple of specific points I want to mention here:\n- I'm going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn't happen on time. The defacto answer to any ETA questions from now on will be \"when it's ready\". \n- I've been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven't forgotten about you and will get back when I have the time. If it's been a while, shoot me a PM or something as a reminder ~ I'll still be active on discord during my break. \n\n### Thank You 🙏\n\nThis project has grown tremendously in scope in the last year and that's not possible without a community, so big thanks from me to all of you. I'm still figuring all of this out as I go along so it's kind of unbelievable how many people are using a tool that once only existed in my head. \n\nCheers, everyone. \n\n",
       "navigation": [
         {
@@ -58871,11 +60270,55 @@ export const contentDatabase = {
           "devlog",
           "profile_selector",
           "website"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>hey @everyone , thought I&#39;d make a channel to share some development logs.</p>\n<p>I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break...</p>\n<p>Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder.</p>\n<p>The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.</p>\n<p>Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):</p>\n<p><img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\"></p>\n<p>Here&#39;s a funny tidbit from development:</p>\n<p>I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work..</p>\n<p>Behold: Frankenstein&#39;s Triangle.</p>\n<p><img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone , thought I&#39;d make a channel to share some development logs."
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break..."
+        },
+        {
+          "type": "paragraph",
+          "content": "Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder."
+        },
+        {
+          "type": "paragraph",
+          "content": "The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc."
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a funny tidbit from development:"
+        },
+        {
+          "type": "paragraph",
+          "content": "I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work.."
+        },
+        {
+          "type": "paragraph",
+          "content": "Behold: Frankenstein&#39;s Triangle."
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\">"
+        }
+      ],
       "markdown": "\nhey @everyone , thought I'd make a channel to share some development logs.\n\nI've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would take a break...\n\nAnyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It's not hooked up to the database yet, so random strings are being used as a placeholder.\n\nThe good thing about this design is that it's really modular. Once I finish the 'beginner' version of it, I'll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.\n\nHere's how it looks right now (obvious disclaimer that final version will look much much better):\n\n![Selector Proof of Concept](https://streamable.com/2uprnl)\n\nHere's a funny tidbit from development:\n\nI tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn't quite work..\n\nBehold: Frankenstein's Triangle.\n\n![Frankenstein's Triangle](https://streamable.com/z70sj8)\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "profile selector v3 hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would tak hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would take a break anyways after designing profile selector v3 in figma for the past couple months i started work on actually implementing it let me tell you that drawing shapes is much much easier than coding them after a couple days of regretting not paying attention in high school trigonometry i have the basic functionality in place we have three data points which represent each of the requirements quality efficiency compatibility the user can select points on each of the axes and each combination is used to recommend a profile it s not hooked up to the database yet so random strings are being used as a placeholder the good thing about this design is that it s really modular once i finish the beginner version of it i ll be able to add an advanced mode which can be used to select any kind of requirement resolution hdr audio etc here s how it looks right now obvious disclaimer that final version will look much much better selector proof of concept here s a funny tidbit from development i tried writing some animation styling to make the inner polygon look like its stretching as opposed to instant static movement it didn t quite work behold frankenstein s triangle frankenstein s triangle",
       "searchWeight": 0.6,
       "tags": [
@@ -58903,9 +60346,68 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "user_choice"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!</p>\n<p>The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with.</p>\n<p>Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:</p>\n<ul>\n<li>Prefer Freeleech</li>\n<li>Allow Prereleases (CAMS, Screeners, etc)</li>\n<li>Language Strictness</li>\n<li>Allow Lossless audio</li>\n<li>Allow Dolby Vision without Fallback</li>\n<li>Allow bleeding edge codecs (AV-1, H266)</li>\n</ul>\n<p>(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).</p>\n<p>If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:</p>\n<h2 id=\"profilarr-progress\">Profilarr Progress</h2>\n<ul>\n<li>Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.</li>\n<li>Git integration is complete and working, but needs lots of testing.</li>\n<li>Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.</li>\n<li>I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.</li>\n<li>Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can.</li>\n</ul>\n<p>If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:</p>\n<p><img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!"
+        },
+        {
+          "type": "paragraph",
+          "content": "The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with."
+        },
+        {
+          "type": "paragraph",
+          "content": "Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Prefer Freeleech",
+            "Allow Prereleases (CAMS, Screeners, etc)",
+            "Language Strictness",
+            "Allow Lossless audio",
+            "Allow Dolby Vision without Fallback",
+            "Allow bleeding edge codecs (AV-1, H266)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles)."
+        },
+        {
+          "type": "paragraph",
+          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr Progress",
+          "id": "profilarr-progress"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.",
+            "Git integration is complete and working, but needs lots of testing.",
+            "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.",
+            "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.",
+            "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\">"
+        }
+      ],
       "markdown": "\nHey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!\n\nThe profiles we make are meant to be (really good) starting points, not a strict standard on what you _should_ be grabbing. Up until now, profiles existed as singular entities that don't respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it's a bit more hands on, and not something I expect most people to engage with.\n\nEnter 'Profile Tweaks'. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:\n\n- Prefer Freeleech\n- Allow Prereleases (CAMS, Screeners, etc)\n- Language Strictness\n- Allow Lossless audio\n- Allow Dolby Vision without Fallback\n- Allow bleeding edge codecs (AV-1, H266)\n\n(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n## Profilarr Progress\n\n- Progress is steady, I've been working on it every day since my semester ended. It's taken way, way longer than I've expected (sorry!) but I'm happy with how it's starting to look.\n- Git integration is complete and working, but needs lots of testing.\n- Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.\n- I am currently in the progress of porting existing data to the new database (https://github.com/Dictionarry-Hub/database/tree/stable) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.\n- Finally, I am starting to work on the compilation engine (https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049) and the import module. Once these things are complete, and I'm confident we won't run into massive bugs, I'll release a beta docker image. ETA? I really don't know, but I'm working as hard as I can.\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n![Profile Tweaks](https://i.imgur.com/fzbmJSn.png)\n",
       "navigation": [
         "Profilarr Progress"
@@ -58936,9 +60438,150 @@ export const contentDatabase = {
         "tags": [
           "devlog",
           "architecture"
-        ]
+        ],
+        "readingTime": 5
       },
-      "html": "<p>hey @everyone, hope you guys are well. Here&#39;s another update!</p>\n<h1 id=\"motivation\">Motivation</h1>\n<p>I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in.</p>\n<h1 id=\"profilarr-v2-not-really-v2-but-it-sounded-cool\">Profilarr v2 (not really v2 but it sounded cool)</h1>\n<p>Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:</p>\n<h2 id=\"its-now-a-full-stack-application\">It's now a full stack application.</h2>\n<p>This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:</p>\n<ul>\n<li><strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.</li>\n<li><strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.</li>\n<li><strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.</li>\n<li><strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.</li>\n<li><strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.</li>\n<li><strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!</li>\n<li><strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.</li>\n<li><strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does.</li>\n</ul>\n<h2 id=\"backend-improvements\">Backend Improvements</h2>\n<p>The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:</p>\n<ul>\n<li><strong>Git integration</strong>: You can select a remote repository to connect to and:<ul>\n<li>Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded.</li>\n<li><strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.</li>\n<li><strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.</li>\n<li><strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now.</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"containerisation\">Containerisation</h2>\n<p>Profilarr will FINALLY be dockerised.</p>\n<h1 id=\"development\">Development</h1>\n<p>With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.</p>\n<h2 id=\"machine-learning\">Machine Learning</h2>\n<p>This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI.</p>\n<p>I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry.</p>\n<p>Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!</p>\n<p>Anyway, here&#39;s some images of profilarr v2.</p>\n<p><strong>Regex Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\"></p>\n<p><strong>Custom Format Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\"></p>\n<p><strong>Status Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\"></p>\n<p>Of course, everything is still a heavy work in progress.</p>\n<p>That&#39;s all for today!</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone, hope you guys are well. Here&#39;s another update!"
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Motivation",
+          "id": "motivation"
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Profilarr v2 (not really v2 but it sounded cool)",
+          "id": "profilarr-v2-not-really-v2-but-it-sounded-cool"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "It's now a full stack application.",
+          "id": "its-now-a-full-stack-application"
+        },
+        {
+          "type": "paragraph",
+          "content": "This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.",
+            "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.",
+            "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.",
+            "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.",
+            "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.",
+            "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!",
+            "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.",
+            "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Backend Improvements",
+          "id": "backend-improvements"
+        },
+        {
+          "type": "paragraph",
+          "content": "The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>Git integration</strong>: You can select a remote repository to connect to and: - Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded. - <strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches. - <strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop. - <strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Containerisation",
+          "id": "containerisation"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr will FINALLY be dockerised."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Development",
+          "id": "development"
+        },
+        {
+          "type": "paragraph",
+          "content": "With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Machine Learning",
+          "id": "machine-learning"
+        },
+        {
+          "type": "paragraph",
+          "content": "This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI."
+        },
+        {
+          "type": "paragraph",
+          "content": "I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry."
+        },
+        {
+          "type": "paragraph",
+          "content": "Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!"
+        },
+        {
+          "type": "paragraph",
+          "content": "Anyway, here&#39;s some images of profilarr v2."
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Regex Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Custom Format Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Status Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "Of course, everything is still a heavy work in progress."
+        },
+        {
+          "type": "paragraph",
+          "content": "That&#39;s all for today!"
+        }
+      ],
       "markdown": "\nhey @everyone, hope you guys are well. Here's another update!\n\n# Motivation\n\nI've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I've felt especially motivated to dive back in.\n\n# Profilarr v2 (not really v2 but it sounded cool)\n\nProfilarr is getting some really nice upgrades. Here's an outline of the most important ones:\n\n## It's now a full stack application.\n\nThis means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It's built in a way that aims to 'remaster' how it's implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:\n\n- **Single definition format**: As outlined in the previous dev log, Profilarr's version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.\n- **Sorting and Filtering**: You can now sort and filter items by title, date modified, etc.\n- **Exporting/Importing**: The standard format now allows _everyone_ to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.\n- **Syncing**: Instead of clogging up everyone's arrs with unused custom formats, the sync functionality now only imports _used_ items.\n- **Mass selection**: You can mass select items to import/export/sync/delete.\n- **Tags**: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!\n- **Testing**: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.\n- **Descriptions**: You can now explain what specific items are for. No need to look it up on the website to see what it does.\n\n## Backend Improvements\n\nThe backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:\n\n- **Git integration**: You can select a remote repository to connect to and:\n  - Add, commit, and push files; branch off; merge into. This isn't that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I've ever coded.\n  - **Branching**: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.\n  - **Pulling**: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.\n  - **External sources**: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I'll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It'll probably take some tweaking, but I know it's definitely possible now.\n\n## Containerisation\n\nProfilarr will FINALLY be dockerised.\n\n# Development\n\nWith these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.\n\n## Machine Learning\n\nThis part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I've read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. \"How do I write a custom format that matches x265 releases under size x?\" It's so easily solved using AI.\n\nI want to implement this one day, I just don't have enough knowledge or experience to do it yet. The best I've come up with is something that sends a request to OpenAI's API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people's needs. Who knows if it ever gets to that point, but that's my vision for Dictionarry.\n\nRamble over, as you can tell I've been feeling pretty motivated lately!\n\nAnyway, here's some images of profilarr v2.\n\n**Regex Page**:\n\n![Regex Page](https://i.imgur.com/kMZ9qII.png)\n\n**Custom Format Page**:\n\n![Custom Format Page](https://i.imgur.com/mCyDxId.png)\n\n**Status Page**:\n\n![Status Page](https://i.imgur.com/ZleeOEF.png)\n\nOf course, everything is still a heavy work in progress.\n\nThat's all for today!\n",
       "navigation": [
         {
@@ -58986,9 +60629,76 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "gppi"
-        ]
+        ],
+        "readingTime": 3
       },
-      "html": "<p>Hey @everyone, small log for today!</p>\n<pre><code class=\"hljs language-bash\">$ python profile_compile.py &amp;#39;profiles/1080p Encode.yml&amp;#39; &amp;#39;1080p Encode (sonarr - master).json&amp;#39; -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating &amp;#39;1080p Encode&amp;#39; quality profile : SUCCESS\n</code></pre>\n<p>These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.</p>\n<p>I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.</p>\n<p>It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.</p>\n<h2 id=\"golden-popcorn-performance-index-changes\">Golden Popcorn Performance Index Changes</h2>\n<p>The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?</p>\n<h3 id=\"popularity\">Popularity</h3>\n<p>For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)</p>\n<p>This process will be completely automatic and will hopefully solve the problem of new good release groups.</p>\n<h3 id=\"grouping\">Grouping</h3>\n<p>The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.</p>\n<h2 id=\"thank-you\">Thank You!</h2>\n<p>That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, small log for today!"
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "code": "$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS"
+        },
+        {
+          "type": "paragraph",
+          "content": "These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times."
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop."
+        },
+        {
+          "type": "paragraph",
+          "content": "It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Golden Popcorn Performance Index Changes",
+          "id": "golden-popcorn-performance-index-changes"
+        },
+        {
+          "type": "paragraph",
+          "content": "The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Popularity",
+          "id": "popularity"
+        },
+        {
+          "type": "paragraph",
+          "content": "For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)"
+        },
+        {
+          "type": "paragraph",
+          "content": "This process will be completely automatic and will hopefully solve the problem of new good release groups."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Grouping",
+          "id": "grouping"
+        },
+        {
+          "type": "paragraph",
+          "content": "The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Thank You!",
+          "id": "thank-you"
+        },
+        {
+          "type": "paragraph",
+          "content": "That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:"
+        }
+      ],
       "markdown": "\nHey @everyone, small log for today!\n\n```bash\n$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS\n```\n\nThese two commands are the culmination of the architecture overhaul I talked about in August: https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049. The Profilarr standard format _**works**_. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.\n\nI'm currently in the process of hooking up the database to the new website, and that's looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.\n\nIt's taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I'm fairly happy with how it's turned out. The changes won't be all that evident right away for you guys, but it's going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.\n\n## Golden Popcorn Performance Index Changes\n\nThe current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren't simply because they have no data. How do we fix this?\n\n### Popularity\n\nFor every encode at a specific resolution for a movie / tv show that is currently _popular_, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)\n\nThis process will be completely automatic and will hopefully solve the problem of new good release groups.\n\n### Grouping\n\nThe previous 'tiers' for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter 'K Means Clustering'. Essentially it's just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I've dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.\n\n## Thank You!\n\nThat's all for today, I hope everyone's doing alright and enjoying the holidays :grinning:\n",
       "navigation": [
         {
@@ -59030,9 +60740,172 @@ export const contentDatabase = {
           "eei",
           "2160p",
           "quality"
-        ]
+        ],
+        "readingTime": 4
       },
-      "html": "<p>Hey everyone, medium-ish update today.</p>\n<h2 id=\"website-20\">Website 2.0</h2>\n<p>I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:</p>\n<ul>\n<li>Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything</li>\n</ul>\n<p>This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is.</p>\n<p><a href=\"https://dictionarry.dev/\">Website 2.0</a></p>\n<p><img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\"></p>\n<p>The old site will go down soon, sorry if I broke anyone&#39;s workflows D:</p>\n<h3 id=\"profile-selector\">Profile Selector?</h3>\n<p>This idea has gone through many iterations since i started Dictionarry last year.</p>\n<ol>\n<li>A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a></li>\n<li>The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a></li>\n<li>Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a></li>\n</ol>\n<p>Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed.</p>\n<p>Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it.</p>\n<h3 id=\"profile-builder\">Profile Builder!</h3>\n<p>In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a></p>\n<p><img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\"></p>\n<h2 id=\"encode-efficiency-index\">Encode Efficiency Index</h2>\n<p>Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:</p>\n<ul>\n<li>It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.</li>\n<li>It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;</li>\n<li>It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;</li>\n</ul>\n<p>This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.</p>\n<h4 id=\"no-more-parsing-codecs\">No More Parsing Codecs!!!!</h4>\n<p>If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable</p>\n<h4 id=\"2160p-quality-encode-profile-release-group-tierlist\">2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!</h4>\n<p>Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic.</p>\n<p>This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:</p>\n<ul>\n<li><a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a></li>\n<li><a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a></li>\n</ul>\n<h4 id=\"thanks\">Thanks</h4>\n<ul>\n<li>Thanks to @seraphys for helping out with the profile creation / giving constant feedback.</li>\n<li>Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.</li>\n</ul>\n<p>Show them some love.</p>\n<h2 id=\"profilarr\">Profilarr</h2>\n<p>Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey everyone, medium-ish update today."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Website 2.0",
+          "id": "website-20"
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is."
+        },
+        {
+          "type": "paragraph",
+          "content": "<a href=\"https://dictionarry.dev/\">Website 2.0</a>"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "The old site will go down soon, sorry if I broke anyone&#39;s workflows D:"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profile Selector?",
+          "id": "profile-selector"
+        },
+        {
+          "type": "paragraph",
+          "content": "This idea has gone through many iterations since i started Dictionarry last year."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>",
+            "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>",
+            "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed."
+        },
+        {
+          "type": "paragraph",
+          "content": "Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profile Builder!",
+          "id": "profile-builder"
+        },
+        {
+          "type": "paragraph",
+          "content": "In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a>"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\">"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Encode Efficiency Index",
+          "id": "encode-efficiency-index"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.",
+            "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;",
+            "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it."
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "No More Parsing Codecs!!!!",
+          "id": "no-more-parsing-codecs"
+        },
+        {
+          "type": "paragraph",
+          "content": "If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable"
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
+          "id": "2160p-quality-encode-profile-release-group-tierlist"
+        },
+        {
+          "type": "paragraph",
+          "content": "Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic."
+        },
+        {
+          "type": "paragraph",
+          "content": "This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>",
+            "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Thanks",
+          "id": "thanks"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Thanks to @seraphys for helping out with the profile creation / giving constant feedback.",
+            "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Show them some love."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr",
+          "id": "profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)"
+        }
+      ],
       "markdown": "\nHey everyone, medium-ish update today.\n\n## Website 2.0\n\nI've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:\n\n- Database gets an update -> Website sees its data is stale -> Website rebuilds itself with new data -> Santiago smiles in not needing to do anything\n\nThis all ties into the whole \"write once\" philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I'm happy to share it with you guys as it is.\n\n[Website 2.0](https://dictionarry.dev/)\n\n![website2.0](https://i.imgur.com/eORTwml.png)\n\nThe old site will go down soon, sorry if I broke anyone's workflows D:\n\n### Profile Selector?\n\nThis idea has gone through many iterations since i started Dictionarry last year.\n\n1. A static flowchart with not nearly enough information / choice: https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\n2. The \"Profile Selector\" (terrible name): https://selectarr.pages.dev/\n3. Frankenstein's triangle: [Discord Link](https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925)\n\nFrankenstein's triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the \"score\" of each profile on each of it's axes and finding the best fitting triangle that used the axis that was changed.\n\nResults were pretty good but I felt that it abstracted _too much_ of what made any user choice meaningful so I decided to scrap it.\n\n### Profile Builder!\n\nIn it's place is the \"Profile Builder\" (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It's pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -> resolution -> compression -> encode type -> codec -> HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the \"trying to get the profile I want\" issue as it starts pretty broad and gets increasingly more specific the more things you choose. It's up now, give it a playwith; let me know if its good / bad / needs changes: [Profile Buider](https://dictionarry.dev/builder)\n\n![Profile Builder](https://i.imgur.com/ka8KSHl.png)\n\n## Encode Efficiency Index\n\nHere we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres's the play-by-play:\n\n- It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.\n- It can discern transparency by targeting ratios at which a codec begins to \"saturate\"\n- It can discern efficiency by targeting ratios at which a codec reaches it's \"efficiency apex\"\n\nThis is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail [here](https://dictionarry.dev/wiki/EEi). Months of research and iteration has gone into this, and I really think this is Dictionarry's biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.\n\n#### No More Parsing Codecs!!!!\n\nIf you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don't have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable\n\n#### 2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!\n\nUsing EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No \"popular\" vote. Whenever something isn't documented, we simply add that movie / tv show to the data source and groupings update automatically. It's almost like magic.\n\nThis metric has made the 2160p Quality profile possible and i dare say it's the most comprehensive one I've worked on thus far. Give the quality profile and tier lists a read here:\n\n- [216p Quality Profile](https://dictionarry.dev/profiles/2160p-quality)\n- [2160p Quality Release Group Tiers](https://dictionarry.dev/tiers/2160p/quality)\n\n#### Thanks\n\n- Thanks to @seraphys for helping out with the profile creation / giving constant feedback.\n- Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn't been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.\n\nShow them some love.\n\n## Profilarr\n\nAlmost done, I took a break for a couple weeks to finish up the website but I'm gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It's hard to say how long this is gonna take since I'm basically learning it all on the fly so bare with me on this. But, it's almost done and a beta test will be out soon (hopefully)\n",
       "navigation": [
         {
@@ -117079,11 +118952,151 @@ export const contentDatabase = {
           "extras"
         ],
         "blurb": "A comparison of theatrical vs. special edition cuts and which movies benefit from each format.",
-        "featured": true
+        "featured": true,
+        "readingTime": 7
       },
-      "html": "<p>By default, Dictionarry&#39;s profiles prefer the <a href=\"https://dictionarry.dev/formats/special-edition\">&#39;Special&#39; Edition</a> of each movie. This is because these editions are often considered the more &#39;definitive&#39; version of the movie because they contain the director&#39;s complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts.</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Preferred Version</th>\n<th>Reasons</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Aliens (1986)</td>\n<td>Special</td>\n<td>James Cameron&#39;s Special Edition enhances the film with crucial character development, particularly the scenes about Ripley&#39;s daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story.</td>\n</tr>\n<tr>\n<td>Blade Runner (1982)</td>\n<td>Final Cut</td>\n<td>The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director&#39;s Cut releases. It removes the theatrical&#39;s controversial voice-over narration and &quot;happy ending&quot; that were studio-mandated and disliked by cast and crew. It preserves the original&#39;s ambiguous ending about Deckard&#39;s nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora&#39;s death scene, digital correction of the obvious stunt double&#39;s face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene&#39;s obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth&#39;s original cinematography, and restoration of the full unicorn dream sequence that better supports the film&#39;s central mysteries. While some defend elements of other versions (particularly the 1992 Director&#39;s Cut), the Final Cut represents Ridley Scott&#39;s complete creative vision with modern technical capabilities to properly realize it.</td>\n</tr>\n<tr>\n<td>The Lord of the Rings Trilogy (2001-2003)</td>\n<td>Extended Editions</td>\n<td>Each film&#39;s Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir&#39;s backstory, adds Theodred&#39;s funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf&#39;s staff, Saruman&#39;s fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions.</td>\n</tr>\n<tr>\n<td>Batman v Superman: Dawn of Justice (2016)</td>\n<td>Ultimate Edition</td>\n<td>The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex&#39;s manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists&#39; perspectives.</td>\n</tr>\n<tr>\n<td>The Abyss (1989)</td>\n<td>Special Edition</td>\n<td>The extended version restores a crucial tidal wave sequence that better explains the aliens&#39; motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended.</td>\n</tr>\n<tr>\n<td>Midsommar (2019)</td>\n<td>Director&#39;s Cut</td>\n<td>The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian&#39;s gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful.</td>\n</tr>\n<tr>\n<td>I Am Legend (2007)</td>\n<td>Alternate Version</td>\n<td>This version&#39;s different ending completely changes the meaning of the title and stays truer to Richard Matheson&#39;s novel. Instead of Smith&#39;s character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their &quot;legend.&quot; This ending better serves the film&#39;s themes about humanity and perspective.</td>\n</tr>\n<tr>\n<td>Watchmen (2009)</td>\n<td>Director&#39;s Cut</td>\n<td>The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director&#39;s Cut is the most widely preferred version.</td>\n</tr>\n<tr>\n<td>Superman II (1980/2006)</td>\n<td>The Richard Donner Cut</td>\n<td>Released 26 years after the theatrical version, Donner&#39;s cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando&#39;s scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans.</td>\n</tr>\n</tbody></table>\n<p>However, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here&#39;s why some prefer theatrical versions:</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Preferred Version</th>\n<th>Key Reasons</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Terminator 2: Judgment Day (1991)</td>\n<td>Theatrical</td>\n<td>The theatrical cut is nearly perfect in pacing and storytelling. The extended cut&#39;s additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the &quot;happy ending&quot; playground scene in the theatrical cut is preferred to the extended cut&#39;s darker alternate ending.</td>\n</tr>\n<tr>\n<td>Alien (1979)</td>\n<td>Theatrical</td>\n<td>The theatrical version is considered a masterpiece of pacing. The Director&#39;s Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut.</td>\n</tr>\n<tr>\n<td>Star Wars (1977)</td>\n<td>Theatrical</td>\n<td>The original theatrical cut is considered more pure and less cluttered than later &quot;Special Editions&quot;. Fans particularly dislike added CGI elements and the infamous &quot;Han shot first&quot; change. The pacing of the theatrical cut is also tighter.</td>\n</tr>\n<tr>\n<td>The Empire Strikes Back (1980)</td>\n<td>Theatrical</td>\n<td>Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition&#39;s added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior.</td>\n</tr>\n<tr>\n<td>Return of the Jedi (1983)</td>\n<td>Theatrical</td>\n<td>The theatrical version is preferred over the Special Edition&#39;s controversial additions, particularly the changed ending music and added CGI celebration scenes. The &quot;Jedi Rocks&quot; musical number in Jabba&#39;s Palace is one of the most criticized Special Edition changes. The original Ewok celebration song &quot;Yub Nub&quot; is often preferred to the new ending.</td>\n</tr>\n<tr>\n<td>Apocalypse Now (1979)</td>\n<td>Theatrical</td>\n<td>While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum.</td>\n</tr>\n<tr>\n<td>The Exorcist (1973)</td>\n<td>Theatrical</td>\n<td>&quot;The Version You&#39;ve Never Seen&quot; adds the famous &quot;spider walk&quot; scene and several other moments, but the theatrical cut&#39;s pacing is superior. The original version better maintains its sense of building dread.</td>\n</tr>\n<tr>\n<td>Donnie Darko (2001)</td>\n<td>Theatrical</td>\n<td>The Director&#39;s Cut over-explains the film&#39;s mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut&#39;s ambiguity encourages viewer interpretation.</td>\n</tr>\n<tr>\n<td>Amadeus (1984)</td>\n<td>Theatrical</td>\n<td>The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director&#39;s Cut adds 20 minutes of historical context and servant relationships that, while interesting, don&#39;t enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative.</td>\n</tr>\n<tr>\n<td>Payback (1999)</td>\n<td>Theatrical</td>\n<td>The theatrical version&#39;s blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director&#39;s Cut (&quot;Straight Up&quot; version&quot;). Mel Gibson&#39;s voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film&#39;s edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful.</td>\n</tr>\n<tr>\n<td>Almost Famous (2000)</td>\n<td>Theatrical</td>\n<td>While the &quot;Untitled: The Bootleg Cut&quot; adds interesting character moments and music scenes, the theatrical cut&#39;s tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe&#39;s theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely.</td>\n</tr>\n</tbody></table>\n<p>A <a href=\"https://dictionarry.dev/formats/special-edition-(unwanted)\">Custom Format: Special Edition (Unwanted)</a> has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr&#39;s parsing of release titles. The parsed &#39;Title&#39; is removed from the release title, so you can&#39;t actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones.</p>\n<p>To mimic this behaviour in the current system, you have to copy the profile you want to use and set it&#39;s <code>Special Edition</code> score to the negative of whatever it was. Then apply the profile to whatever movie you want in it&#39;s theatrical version.</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "By default, Dictionarry&#39;s profiles prefer the <a href=\"https://dictionarry.dev/formats/special-edition\">&#39;Special&#39; Edition</a> of each movie. This is because these editions are often considered the more &#39;definitive&#39; version of the movie because they contain the director&#39;s complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Preferred Version",
+            "Reasons"
+          ],
+          "rows": [
+            [
+              "Aliens (1986)",
+              "Special",
+              "James Cameron&#39;s Special Edition enhances the film with crucial character development, particularly the scenes about Ripley&#39;s daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story."
+            ],
+            [
+              "Blade Runner (1982)",
+              "Final Cut",
+              "The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director&#39;s Cut releases. It removes the theatrical&#39;s controversial voice-over narration and &quot;happy ending&quot; that were studio-mandated and disliked by cast and crew. It preserves the original&#39;s ambiguous ending about Deckard&#39;s nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora&#39;s death scene, digital correction of the obvious stunt double&#39;s face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene&#39;s obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth&#39;s original cinematography, and restoration of the full unicorn dream sequence that better supports the film&#39;s central mysteries. While some defend elements of other versions (particularly the 1992 Director&#39;s Cut), the Final Cut represents Ridley Scott&#39;s complete creative vision with modern technical capabilities to properly realize it."
+            ],
+            [
+              "The Lord of the Rings Trilogy (2001-2003)",
+              "Extended Editions",
+              "Each film&#39;s Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir&#39;s backstory, adds Theodred&#39;s funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf&#39;s staff, Saruman&#39;s fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions."
+            ],
+            [
+              "Batman v Superman: Dawn of Justice (2016)",
+              "Ultimate Edition",
+              "The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex&#39;s manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists&#39; perspectives."
+            ],
+            [
+              "The Abyss (1989)",
+              "Special Edition",
+              "The extended version restores a crucial tidal wave sequence that better explains the aliens&#39; motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended."
+            ],
+            [
+              "Midsommar (2019)",
+              "Director&#39;s Cut",
+              "The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian&#39;s gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful."
+            ],
+            [
+              "I Am Legend (2007)",
+              "Alternate Version",
+              "This version&#39;s different ending completely changes the meaning of the title and stays truer to Richard Matheson&#39;s novel. Instead of Smith&#39;s character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their &quot;legend.&quot; This ending better serves the film&#39;s themes about humanity and perspective."
+            ],
+            [
+              "Watchmen (2009)",
+              "Director&#39;s Cut",
+              "The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director&#39;s Cut is the most widely preferred version."
+            ],
+            [
+              "Superman II (1980/2006)",
+              "The Richard Donner Cut",
+              "Released 26 years after the theatrical version, Donner&#39;s cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando&#39;s scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "However, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here&#39;s why some prefer theatrical versions:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Preferred Version",
+            "Key Reasons"
+          ],
+          "rows": [
+            [
+              "Terminator 2: Judgment Day (1991)",
+              "Theatrical",
+              "The theatrical cut is nearly perfect in pacing and storytelling. The extended cut&#39;s additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the &quot;happy ending&quot; playground scene in the theatrical cut is preferred to the extended cut&#39;s darker alternate ending."
+            ],
+            [
+              "Alien (1979)",
+              "Theatrical",
+              "The theatrical version is considered a masterpiece of pacing. The Director&#39;s Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut."
+            ],
+            [
+              "Star Wars (1977)",
+              "Theatrical",
+              "The original theatrical cut is considered more pure and less cluttered than later &quot;Special Editions&quot;. Fans particularly dislike added CGI elements and the infamous &quot;Han shot first&quot; change. The pacing of the theatrical cut is also tighter."
+            ],
+            [
+              "The Empire Strikes Back (1980)",
+              "Theatrical",
+              "Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition&#39;s added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior."
+            ],
+            [
+              "Return of the Jedi (1983)",
+              "Theatrical",
+              "The theatrical version is preferred over the Special Edition&#39;s controversial additions, particularly the changed ending music and added CGI celebration scenes. The &quot;Jedi Rocks&quot; musical number in Jabba&#39;s Palace is one of the most criticized Special Edition changes. The original Ewok celebration song &quot;Yub Nub&quot; is often preferred to the new ending."
+            ],
+            [
+              "Apocalypse Now (1979)",
+              "Theatrical",
+              "While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum."
+            ],
+            [
+              "The Exorcist (1973)",
+              "Theatrical",
+              "&quot;The Version You&#39;ve Never Seen&quot; adds the famous &quot;spider walk&quot; scene and several other moments, but the theatrical cut&#39;s pacing is superior. The original version better maintains its sense of building dread."
+            ],
+            [
+              "Donnie Darko (2001)",
+              "Theatrical",
+              "The Director&#39;s Cut over-explains the film&#39;s mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut&#39;s ambiguity encourages viewer interpretation."
+            ],
+            [
+              "Amadeus (1984)",
+              "Theatrical",
+              "The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director&#39;s Cut adds 20 minutes of historical context and servant relationships that, while interesting, don&#39;t enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative."
+            ],
+            [
+              "Payback (1999)",
+              "Theatrical",
+              "The theatrical version&#39;s blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director&#39;s Cut (&quot;Straight Up&quot; version&quot;). Mel Gibson&#39;s voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film&#39;s edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful."
+            ],
+            [
+              "Almost Famous (2000)",
+              "Theatrical",
+              "While the &quot;Untitled: The Bootleg Cut&quot; adds interesting character moments and music scenes, the theatrical cut&#39;s tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe&#39;s theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "A <a href=\"https://dictionarry.dev/formats/special-edition-(unwanted)\">Custom Format: Special Edition (Unwanted)</a> has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr&#39;s parsing of release titles. The parsed &#39;Title&#39; is removed from the release title, so you can&#39;t actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones."
+        },
+        {
+          "type": "paragraph",
+          "content": "To mimic this behaviour in the current system, you have to copy the profile you want to use and set it&#39;s <code>Special Edition</code> score to the negative of whatever it was. Then apply the profile to whatever movie you want in it&#39;s theatrical version."
+        }
+      ],
       "markdown": "\nBy default, Dictionarry's profiles prefer the ['Special' Edition](https://dictionarry.dev/formats/special-edition) of each movie. This is because these editions are often considered the more 'definitive' version of the movie because they contain the director's complete creative vision without studio interference or runtime constraints, and are often recommended over their theatrical counterparts.\n\n| Movie                                     | Preferred Version      | Reasons                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n| ----------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Aliens (1986)                             | Special                | James Cameron's Special Edition enhances the film with crucial character development, particularly the scenes about Ripley's daughter which add emotional depth to her relationship with Newt. While the theatrical cut has tighter pacing, the added content like the sentry gun sequences adds valuable world-building and tension. The colony scenes provide important context that enriches rather than spoils the story.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| Blade Runner (1982)                       | Final Cut              | The Final Cut (2007) is considered the definitive version over theatrical, workprint, and Director's Cut releases. It removes the theatrical's controversial voice-over narration and \"happy ending\" that were studio-mandated and disliked by cast and crew. It preserves the original's ambiguous ending about Deckard's nature while fixing numerous continuity errors and technical issues. Key improvements include: cleaned up wire removal in spinner scenes, fixed lip sync in Zhora's death scene, digital correction of the obvious stunt double's face, properly matching the number of replicants mentioned to those shown, correction of the dove release scene's obvious day-for-night shooting, improved color timing that better matches Jordan Cronenweth's original cinematography, and restoration of the full unicorn dream sequence that better supports the film's central mysteries. While some defend elements of other versions (particularly the 1992 Director's Cut), the Final Cut represents Ridley Scott's complete creative vision with modern technical capabilities to properly realize it. |\n| The Lord of the Rings Trilogy (2001-2003) | Extended Editions      | Each film's Extended Edition adds crucial character development, world-building and plot points that enrich the story: Fellowship adds the gift-giving scene and more Lothlorien. Two Towers expands Boromir/Faramir's backstory, adds Theodred's funeral for deeper Rohan culture. Return of the King adds the Witch King destroying Gandalf's staff, Saruman's fate, and House of Healing. The additional 30-50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n| Batman v Superman: Dawn of Justice (2016) | Ultimate Edition       | The 3-hour cut restores crucial plot threads that explain character motivations and fill plot holes. Added scenes show Superman actually helping people, Lex's manipulation of both heroes, and clearer reasons for the African incident blamed on Superman. The extended cut makes the story more coherent while better developing both protagonists' perspectives.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\n| The Abyss (1989)                          | Special Edition        | The extended version restores a crucial tidal wave sequence that better explains the aliens' motivations and adds a stronger environmental message to the ending. Additional scenes provide more context for the NTIs (non-terrestrial intelligence) and their purpose, while expanding character relationships. Most notably, the restored ending gives the film a more impactful and complete conclusion that Cameron originally intended.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| Midsommar (2019)                          | Director's Cut         | The 171-minute version adds key scenes that provide deeper insight into the relationship dynamics, particularly Christian's gaslighting of Dani. Additional folk-horror rituals and customs make the Hårga community feel more developed and their practices more grounded. The added character moments make the emotional climax more impactful.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| I Am Legend (2007)                        | Alternate Version      | This version's different ending completely changes the meaning of the title and stays truer to Richard Matheson's novel. Instead of Smith's character killing himself to stop the creatures, he realizes they are actually intelligent beings protecting their own, making him the monster of their legends - their \"legend.\" This ending better serves the film's themes about humanity and perspective.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| Watchmen (2009)                           | Director's Cut         | The 186-minute version adds essential character depth and crucial plot elements from the graphic novel, including more of Hollis Mason and his death scene. The extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters. The Ultimate Cut, which adds the Tales of the Black Freighter animation, is considered by some fans to be even more complete, though the Director's Cut is the most widely preferred version.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n| Superman II (1980/2006)                   | The Richard Donner Cut | Released 26 years after the theatrical version, Donner's cut restores his original vision before he was replaced by Richard Lester. It removes the slapstick comedy, restores Marlon Brando's scenes as Jor-El, and features a different ending that ties better to the first film. The more serious tone and stronger character development make it the preferred version for most fans.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n\nHowever, while special editions often expand and enrich films, theatrical versions have their own merits that many cinephiles and critics prefer. Theatrical cuts typically offer tighter pacing, maintain the mystery of intentional ambiguity, and preserve the historical significance of films as they were originally experienced by audiences. Here's why some prefer theatrical versions:\n\n| Movie                             | Preferred Version | Key Reasons                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| --------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Terminator 2: Judgment Day (1991) | Theatrical        | The theatrical cut is nearly perfect in pacing and storytelling. The extended cut's additional scenes (like T-1000 glitching after freezing, John reprogramming the T-800) are interesting but unnecessary. The theatrical version maintains better tension and momentum. Most notably, the \"happy ending\" playground scene in the theatrical cut is preferred to the extended cut's darker alternate ending.                                                               |\n| Alien (1979)                      | Theatrical        | The theatrical version is considered a masterpiece of pacing. The Director's Cut adds scenes that, while interesting (like Ripley finding Dallas in the cocoon), actually harm the rapid-fire tension of the final act. Scott himself has stated he prefers the theatrical cut.                                                                                                                                                                                             |\n| Star Wars (1977)                  | Theatrical        | The original theatrical cut is considered more pure and less cluttered than later \"Special Editions\". Fans particularly dislike added CGI elements and the infamous \"Han shot first\" change. The pacing of the theatrical cut is also tighter.                                                                                                                                                                                                                              |\n| The Empire Strikes Back (1980)    | Theatrical        | Like A New Hope, fans strongly prefer the unaltered theatrical version. The Special Edition's added CGI and altered effects (like the Emperor hologram replacement, added windows in Cloud City) are considered unnecessary changes to a perfect film. The original practical effects and cinematography are considered superior.                                                                                                                                           |\n| Return of the Jedi (1983)         | Theatrical        | The theatrical version is preferred over the Special Edition's controversial additions, particularly the changed ending music and added CGI celebration scenes. The \"Jedi Rocks\" musical number in Jabba's Palace is one of the most criticized Special Edition changes. The original Ewok celebration song \"Yub Nub\" is often preferred to the new ending.                                                                                                                 |\n| Apocalypse Now (1979)             | Theatrical        | While Redux (2001) and the Final Cut add interesting material, many feel the additions (especially the French plantation sequence) harm the pacing and dilute the core narrative. The theatrical cut maintains better tension and forward momentum.                                                                                                                                                                                                                         |\n| The Exorcist (1973)               | Theatrical        | \"The Version You've Never Seen\" adds the famous \"spider walk\" scene and several other moments, but the theatrical cut's pacing is superior. The original version better maintains its sense of building dread.                                                                                                                                                                                                                                                              |\n| Donnie Darko (2001)               | Theatrical        | The Director's Cut over-explains the film's mythology through added scenes and graphics, removing much of the mystery that made the original so compelling. The theatrical cut's ambiguity encourages viewer interpretation.                                                                                                                                                                                                                                                |\n| Amadeus (1984)                    | Theatrical        | The theatrical cut maintains better pacing and tighter focus on the central Salieri-Mozart conflict. Director's Cut adds 20 minutes of historical context and servant relationships that, while interesting, don't enhance the core psychological drama. The theatrical version better preserves the opera-like structure of the narrative.                                                                                                                                 |\n| Payback (1999)                    | Theatrical        | The theatrical version's blue-tinted color scheme better fits the neo-noir tone. The original ending with Kris Kristofferson provides a more satisfying conclusion than the Director's Cut (\"Straight Up\" version\"). Mel Gibson's voice-over is more engaging, and the slightly lighter tone makes Porter more sympathetic while maintaining the film's edge. Despite extensive studio interference, the theatrical cut became more commercially and critically successful. |\n| Almost Famous (2000)              | Theatrical        | While the \"Untitled: The Bootleg Cut\" adds interesting character moments and music scenes, the theatrical cut's tighter 122-minute runtime provides better pacing and more focused storytelling. Cameron Crowe's theatrical version better captures the whirlwind feeling of being on tour, while the 40 extra minutes in the extended cut, though enjoyable for fans, can make the journey feel too leisurely.                                                             |\n\nA [Custom Format: Special Edition (Unwanted)](<https://dictionarry.dev/formats/special-edition-(unwanted)>) has been created to negate special editions for these specific movies, but does not yet work due to radarr/sonarr's parsing of release titles. The parsed 'Title' is removed from the release title, so you can't actually identify movies from custom formats (yet). Once this becomes possible, a single profile will be able to selectively prefer theatrical releases over special ones.\n\nTo mimic this behaviour in the current system, you have to copy the profile you want to use and set it's `Special Edition` score to the negative of whatever it was. Then apply the profile to whatever movie you want in it's theatrical version.\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "edition philosophy by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the d by default dictionarry s profiles prefer the special edition of each movie this is because these editions are often considered the more definitive version of the movie because they contain the director s complete creative vision without studio interference or runtime constraints and are often recommended over their theatrical counterparts movie preferred version reasons aliens 1986 special james cameron s special edition enhances the film with crucial character development particularly the scenes about ripley s daughter which add emotional depth to her relationship with newt while the theatrical cut has tighter pacing the added content like the sentry gun sequences adds valuable world building and tension the colony scenes provide important context that enriches rather than spoils the story blade runner 1982 final cut the final cut 2007 is considered the definitive version over theatrical workprint and director s cut releases it removes the theatrical s controversial voice over narration and happy ending that were studio mandated and disliked by cast and crew it preserves the original s ambiguous ending about deckard s nature while fixing numerous continuity errors and technical issues key improvements include cleaned up wire removal in spinner scenes fixed lip sync in zhora s death scene digital correction of the obvious stunt double s face properly matching the number of replicants mentioned to those shown correction of the dove release scene s obvious day for night shooting improved color timing that better matches jordan cronenweth s original cinematography and restoration of the full unicorn dream sequence that better supports the film s central mysteries while some defend elements of other versions particularly the 1992 director s cut the final cut represents ridley scott s complete creative vision with modern technical capabilities to properly realize it the lord of the rings trilogy 2001 2003 extended editions each film s extended edition adds crucial character development world building and plot points that enrich the story fellowship adds the gift giving scene and more lothlorien two towers expands boromir faramir s backstory adds theodred s funeral for deeper rohan culture return of the king adds the witch king destroying gandalf s staff saruman s fate and house of healing the additional 30 50 minutes per film are so seamlessly integrated that many fans consider these the definitive versions batman v superman dawn of justice 2016 ultimate edition the 3 hour cut restores crucial plot threads that explain character motivations and fill plot holes added scenes show superman actually helping people lex s manipulation of both heroes and clearer reasons for the african incident blamed on superman the extended cut makes the story more coherent while better developing both protagonists perspectives the abyss 1989 special edition the extended version restores a crucial tidal wave sequence that better explains the aliens motivations and adds a stronger environmental message to the ending additional scenes provide more context for the ntis non terrestrial intelligence and their purpose while expanding character relationships most notably the restored ending gives the film a more impactful and complete conclusion that cameron originally intended midsommar 2019 director s cut the 171 minute version adds key scenes that provide deeper insight into the relationship dynamics particularly christian s gaslighting of dani additional folk horror rituals and customs make the h rga community feel more developed and their practices more grounded the added character moments make the emotional climax more impactful i am legend 2007 alternate version this version s different ending completely changes the meaning of the title and stays truer to richard matheson s novel instead of smith s character killing himself to stop the creatures he realizes they are actually intelligent beings protecting their own making him the monster of their legends their legend this ending better serves the film s themes about humanity and perspective watchmen 2009 director s cut the 186 minute version adds essential character depth and crucial plot elements from the graphic novel including more of hollis mason and his death scene the extended cut better develops the complexity of the alternate 1985 setting and the moral ambiguity of its characters the ultimate cut which adds the tales of the black freighter animation is considered by some fans to be even more complete though the director s cut is the most widely preferred version superman ii 1980 2006 the richard donner cut released 26 years after the theatrical version donner s cut restores his original vision before he was replaced by richard lester it removes the slapstick comedy restores marlon brando s scenes as jor el and features a different ending that ties better to the first film the more serious tone and stronger character development make it the preferred version for most fans however while special editions often expand and enrich films theatrical versions have their own merits that many cinephiles and critics prefer theatrical cuts typically offer tighter pacing maintain the mystery of intentional ambiguity and preserve the historical significance of films as they were originally experienced by audiences here s why some prefer theatrical versions movie preferred version key reasons terminator 2 judgment day 1991 theatrical the theatrical cut is nearly perfect in pacing and storytelling the extended cut s additional scenes like t 1000 glitching after freezing john reprogramming the t 800 are interesting but unnecessary the theatrical version maintains better tension and momentum most notably the happy ending playground scene in the theatrical cut is preferred to the extended cut s darker alternate ending alien 1979 theatrical the theatrical version is considered a masterpiece of pacing the director s cut adds scenes that while interesting like ripley finding dallas in the cocoon actually harm the rapid fire tension of the final act scott himself has stated he prefers the theatrical cut star wars 1977 theatrical the original theatrical cut is considered more pure and less cluttered than later special editions fans particularly dislike added cgi elements and the infamous han shot first change the pacing of the theatrical cut is also tighter the empire strikes back 1980 theatrical like a new hope fans strongly prefer the unaltered theatrical version the special edition s added cgi and altered effects like the emperor hologram replacement added windows in cloud city are considered unnecessary changes to a perfect film the original practical effects and cinematography are considered superior return of the jedi 1983 theatrical the theatrical version is preferred over the special edition s controversial additions particularly the changed ending music and added cgi celebration scenes the jedi rocks musical number in jabba s palace is one of the most criticized special edition changes the original ewok celebration song yub nub is often preferred to the new ending apocalypse now 1979 theatrical while redux 2001 and the final cut add interesting material many feel the additions especially the french plantation sequence harm the pacing and dilute the core narrative the theatrical cut maintains better tension and forward momentum the exorcist 1973 theatrical the version you ve never seen adds the famous spider walk scene and several other moments but the theatrical cut s pacing is superior the original version better maintains its sense of building dread donnie darko 2001 theatrical the director s cut over explains the film s mythology through added scenes and graphics removing much of the mystery that made the original so compelling the theatrical cut s ambiguity encourages viewer interpretation amadeus 1984 theatrical the theatrical cut maintains better pacing and tighter focus on the central salieri mozart conflict director s cut adds 20 minutes of historical context and servant relationships that while interesting don t enhance the core psychological drama the theatrical version better preserves the opera like structure of the narrative payback 1999 theatrical the theatrical version s blue tinted color scheme better fits the neo noir tone the original ending with kris kristofferson provides a more satisfying conclusion than the director s cut straight up version mel gibson s voice over is more engaging and the slightly lighter tone makes porter more sympathetic while maintaining the film s edge despite extensive studio interference the theatrical cut became more commercially and critically successful almost famous 2000 theatrical while the untitled the bootleg cut adds interesting character moments and music scenes the theatrical cut s tighter 122 minute runtime provides better pacing and more focused storytelling cameron crowe s theatrical version better captures the whirlwind feeling of being on tour while the 40 extra minutes in the extended cut though enjoyable for fans can make the journey feel too leisurely a custom format special edition unwanted has been created to negate special editions for these specific movies but does not yet work due to radarr sonarr s parsing of release titles the parsed title is removed from the release title so you can t actually identify movies from custom formats yet once this becomes possible a single profile will be able to selectively prefer theatrical releases over special ones to mimic this behaviour in the current system you have to copy the profile you want to use and set it s special edition score to the negative of whatever it was then apply the profile to whatever movie you want in it s theatrical version",
       "searchWeight": 0.8,
       "tags": [
@@ -117113,9 +119126,548 @@ export const contentDatabase = {
           "encode"
         ],
         "blurb": "A data-driven metric that measures how well release groups balance file size and quality in their encodes, helping users find releases that match their storage and quality preferences.",
-        "featured": true
+        "featured": true,
+        "readingTime": 11
       },
-      "html": "<p>This metric is aimed at identifying and ranking release groups based on their propensity to release <strong>encodes that meet certain compression ratios</strong>, with particular focus on <strong>HEVC</strong> releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC&#39;s compression capabilities while maintaining quality at minimal file sizes.</p>\n<h2 id=\"what-is-a-compression-ratio\">What is a Compression Ratio?</h2>\n<p>A compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the <strong>encoded file size as a percentage of its source size</strong> (typically a <strong>remux</strong> or <strong>WEB-DL</strong>).</p>\n<p>For example:</p>\n<table>\n<thead>\n<tr>\n<th>Movie</th>\n<th>Source (Remux)</th>\n<th>Encode</th>\n<th>Compression Ratio</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Movie A</td>\n<td>40 GB</td>\n<td>10 GB</td>\n<td>25%</td>\n</tr>\n<tr>\n<td>Movie B</td>\n<td>30 GB</td>\n<td>6 GB</td>\n<td>20%</td>\n</tr>\n<tr>\n<td>Movie C</td>\n<td>50 GB</td>\n<td>15 GB</td>\n<td>30%</td>\n</tr>\n</tbody></table>\n<h2 id=\"why-is-this-important\">Why Is This Important?</h2>\n<p>Understanding compression ratios helps balance two competing needs: <strong>maintaining high video quality while minimizing file size</strong>. Modern codecs like <strong>HEVC</strong> have a <strong>&quot;sweet spot&quot;</strong> where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:</p>\n<ul>\n<li>Storage and bandwidth are always <strong>limited resources</strong></li>\n<li>Going beyond certain bitrates provides <strong>diminishing quality returns</strong></li>\n<li>Different codecs have different <strong>efficiency curves</strong></li>\n<li>Release groups need clear standards for <strong>quality vs. size trade-offs</strong></li>\n</ul>\n<h2 id=\"what-ratio-is-best\">What Ratio is Best?</h2>\n<p>There&#39;s no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The &quot;best&quot; ratio <strong>depends entirely on your specific needs</strong>. At 1080p:</p>\n<ul>\n<li>Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs</li>\n<li>Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency</li>\n<li>Most users find a sweet spot in the middle</li>\n</ul>\n<p>However, there are technical limits - files larger than <strong>40% for 1080p</strong> and <strong>60% for 2160p</strong> provide no meaningful benefits.</p>\n<h2 id=\"why-set-maximum-ratios-of-40-and-60\">Why Set Maximum Ratios of 40% and 60%?</h2>\n<p>The compression ratio ceilings are set based on different factors for 1080p and 2160p content:</p>\n<h3 id=\"1080p-40-maximum\">1080p (40% Maximum)</h3>\n<p>The 40% ceiling for 1080p exists because we can roughly measure where <strong>HEVC stops being efficient compared to AVC</strong>. We do this using two key video quality metrics:</p>\n<ul>\n<li><strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100</li>\n<li><strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level</li>\n</ul>\n<p>Using these tools together shows us that:</p>\n<ul>\n<li>HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)</li>\n<li>These space savings are consistent across different quality levels</li>\n<li>Beyond this point, both codecs achieve <strong>near identical quality</strong></li>\n<li>At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control</li>\n</ul>\n<h3 id=\"2160p-60-maximum\">2160p (60% Maximum)</h3>\n<p>The 60% ceiling for 2160p content is based on different considerations:</p>\n<ul>\n<li>This is approximately where <strong>visual transparency</strong> becomes achievable</li>\n<li>Higher ratios provide <strong>diminishing returns</strong></li>\n<li>At this compression level, content achieves <strong>VMAF scores above 95</strong></li>\n<li><strong>Storage efficiency</strong> becomes critical due to larger base file sizes</li>\n<li>Quality improvements become <strong>increasingly subtle</strong> beyond this point</li>\n</ul>\n<p>Read these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is[^1][^2]:</p>\n<h2 id=\"how-do-we-apply-this-index\">How Do We Apply This Index?</h2>\n<p>The ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user&#39;s desired compression ratio. This is done through a few key steps:</p>\n<ol>\n<li><p><strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points.</p>\n</li>\n<li><p><strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:</p>\n<ul>\n<li>Starting with k random cluster centers</li>\n<li>Assigning each group to its nearest center</li>\n<li>Recalculating centers based on group assignments</li>\n<li>Repeating until stable</li>\n</ul>\n</li>\n</ol>\n<h1 id=\"example-rankings\">Example Rankings</h1>\n<h2 id=\"1080p-examples\">1080p Examples</h2>\n<h3 id=\"example-1-users-prioritizing-storage-efficiency-10-target\">Example 1: Users prioritizing storage efficiency (10% target)</h3>\n<p>Users might choose this very aggressive compression target when:</p>\n<ul>\n<li>Managing large libraries on limited storage</li>\n<li>Collecting complete series where total size is a major concern</li>\n<li>Primarily viewing on mobile devices or smaller screens</li>\n<li>Dealing with bandwidth caps or slow internet connections</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>Tier</th>\n<th>Group</th>\n<th>Efficiency</th>\n<th>Delta</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>iVy</td>\n<td>9.37%</td>\n<td>0.63</td>\n</tr>\n<tr>\n<td>1</td>\n<td>PSA</td>\n<td>7.89%</td>\n<td>2.11</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Vyndros</td>\n<td>16.08%</td>\n<td>6.08</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Chivaman</td>\n<td>16.80%</td>\n<td>6.80</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Amazon Prime (H.265)</td>\n<td>16.15%</td>\n<td>6.15</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Disney+ (H.265)</td>\n<td>20.32%</td>\n<td>10.32</td>\n</tr>\n<tr>\n<td>3</td>\n<td>TAoE</td>\n<td>22.78%</td>\n<td>12.78</td>\n</tr>\n<tr>\n<td>3</td>\n<td>QxR</td>\n<td>23.25%</td>\n<td>13.25</td>\n</tr>\n<tr>\n<td>3</td>\n<td>BRiAN</td>\n<td>25.16%</td>\n<td>15.16</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Movies Anywhere (H.265)</td>\n<td>26.05%</td>\n<td>16.05</td>\n</tr>\n<tr>\n<td>4</td>\n<td>MainFrame</td>\n<td>37.63%</td>\n<td>27.63</td>\n</tr>\n<tr>\n<td>4</td>\n<td>NAN0</td>\n<td>37.71%</td>\n<td>27.71</td>\n</tr>\n</tbody></table>\n<h3 id=\"example-2-users-seeking-balanced-quality-and-size-25-target\">Example 2: Users seeking balanced quality and size (25% target)</h3>\n<p>This moderate compression target appeals to users who:</p>\n<ul>\n<li>Have reasonable storage capacity but still want efficiency</li>\n<li>Watch on mid to large screens where quality becomes more noticeable</li>\n<li>Want a good balance between visual quality and practical file sizes</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>Tier</th>\n<th>Group</th>\n<th>Efficiency</th>\n<th>Delta</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>BRiAN</td>\n<td>25.16%</td>\n<td>0.16</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Movies Anywhere (H.265)</td>\n<td>26.05%</td>\n<td>1.05</td>\n</tr>\n<tr>\n<td>1</td>\n<td>QxR</td>\n<td>23.25%</td>\n<td>1.75</td>\n</tr>\n<tr>\n<td>1</td>\n<td>TAoE</td>\n<td>22.78%</td>\n<td>2.22</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Disney+ (H.265)</td>\n<td>20.32%</td>\n<td>4.68</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Amazon Prime (H.265)</td>\n<td>16.15%</td>\n<td>8.85</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Chivaman</td>\n<td>16.80%</td>\n<td>8.20</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Vyndros</td>\n<td>16.08%</td>\n<td>8.92</td>\n</tr>\n<tr>\n<td>3</td>\n<td>MainFrame</td>\n<td>37.63%</td>\n<td>12.63</td>\n</tr>\n<tr>\n<td>3</td>\n<td>NAN0</td>\n<td>37.71%</td>\n<td>12.71</td>\n</tr>\n<tr>\n<td>4</td>\n<td>iVy</td>\n<td>9.37%</td>\n<td>15.63</td>\n</tr>\n<tr>\n<td>4</td>\n<td>PSA</td>\n<td>7.89%</td>\n<td>17.11</td>\n</tr>\n</tbody></table>\n<h2 id=\"2160p-examples\">2160p Examples</h2>\n<h3 id=\"example-3-extreme-space-saving-20-target\">Example 3: Extreme Space Saving (20% target)</h3>\n<p>This aggressive 2160p compression appeals to users who:</p>\n<ul>\n<li>Want to maintain a 4K library on limited storage</li>\n<li>Primarily view content at typical viewing distances where subtle quality differences are less noticeable</li>\n<li>Need to conserve bandwidth while still enjoying 4K resolution</li>\n<li>Have a large collection of 4K content and need to balance quality with practical storage constraints</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<h3 id=\"example-4-balanced-4k-40-target\">Example 4: Balanced 4K (40% target)</h3>\n<p>This middle-ground approach is ideal for users who:</p>\n<ul>\n<li>Have decent storage capacity but still want reasonable efficiency</li>\n<li>Watch on larger screens where quality differences become more apparent</li>\n<li>Want to maintain high quality while still keeping files manageable</li>\n<li>Need reliable HDR performance without excessive file sizes</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<h3 id=\"example-5-near-transparent-quality-60-target\">Example 5: Near Transparent Quality (60% target)</h3>\n<p>This higher bitrate target is chosen by users who:</p>\n<ul>\n<li>Have ample storage and prioritize maximum quality consciously</li>\n<li>Watch on high-end displays where subtle quality differences are noticeable</li>\n<li>Want to maintain archive-quality collections</li>\n<li>Focus on difficult-to-encode content where compression artifacts are more visible</li>\n</ul>\n<p>TODO: EXAMPLES</p>\n<p>These examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements.</p>\n<h2 id=\"frequently-asked-questions\">Frequently Asked Questions</h2>\n<table>\n<thead>\n<tr>\n<th>Question</th>\n<th>Answer</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Why not just detect h265/x265 releases? Isn&#39;t that simpler?</td>\n<td>This is a common misconception that &quot;HEVC = smaller = better&quot;. While it&#39;s true that HEVC/x265 <em>can</em> achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 &gt; HEVC &gt; AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don&#39;t actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy.</td>\n</tr>\n<tr>\n<td>But doesn&#39;t this ignore quality?</td>\n<td>The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - &quot;quality above all&quot; or &quot;smaller is always better&quot; - we focus on <em>efficiency</em>: getting the best practical quality for any given file size target. This approach <strong>will not</strong> satisfy quality enthusiasts, but it better serves the needs of most users.</td>\n</tr>\n<tr>\n<td>What if the source is not a 1080p remux? How do you tell?</td>\n<td>This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices.</td>\n</tr>\n<tr>\n<td>How do you prefer HEVC?</td>\n<td>We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases.</td>\n</tr>\n<tr>\n<td>Why not consider releases above 40% efficiency?</td>\n<td>For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC&#39;s key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There&#39;s simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content.</td>\n</tr>\n<tr>\n<td>What about animated content?</td>\n<td>Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target.</td>\n</tr>\n<tr>\n<td>Why does transparency require 60% at 2160p compared to 40% at 1080p?</td>\n<td>The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. <strong>Increased Color Depth</strong>: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. <strong>HDR Requirements</strong>: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. <strong>Resolution Scaling</strong>: While 2160p has 4x the pixels of 1080p, compression efficiency doesn&#39;t scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency.</td>\n</tr>\n<tr>\n<td>Do all 2160p releases need 60% for transparency?</td>\n<td>No, the actual requirements vary significantly based on several factors:<br><br>1. <strong>Content Type</strong>:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. <strong>HDR Implementation</strong>:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. <strong>Source Quality</strong>:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master&#39;s bit depth and color space<br><br>4. <strong>Scene Complexity</strong>:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding</td>\n</tr>\n</tbody></table>\n<p>[^1]: Shen, Y. (2020). &quot;Bjontegaard Delta Rate Metric&quot;. Medium Innovation Labs Blog. <a href=\"https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\">https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c</a><br>[^2]: Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). &quot;Video Quality Assessment: From FR to NR&quot;. Electronics, 13(5), 953. <a href=\"https://www.mdpi.com/2079-9292/13/5/953\">https://www.mdpi.com/2079-9292/13/5/953</a></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This metric is aimed at identifying and ranking release groups based on their propensity to release <strong>encodes that meet certain compression ratios</strong>, with particular focus on <strong>HEVC</strong> releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC&#39;s compression capabilities while maintaining quality at minimal file sizes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What is a Compression Ratio?",
+          "id": "what-is-a-compression-ratio"
+        },
+        {
+          "type": "paragraph",
+          "content": "A compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the <strong>encoded file size as a percentage of its source size</strong> (typically a <strong>remux</strong> or <strong>WEB-DL</strong>)."
+        },
+        {
+          "type": "paragraph",
+          "content": "For example:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Movie",
+            "Source (Remux)",
+            "Encode",
+            "Compression Ratio"
+          ],
+          "rows": [
+            [
+              "Movie A",
+              "40 GB",
+              "10 GB",
+              "25%"
+            ],
+            [
+              "Movie B",
+              "30 GB",
+              "6 GB",
+              "20%"
+            ],
+            [
+              "Movie C",
+              "50 GB",
+              "15 GB",
+              "30%"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Why Is This Important?",
+          "id": "why-is-this-important"
+        },
+        {
+          "type": "paragraph",
+          "content": "Understanding compression ratios helps balance two competing needs: <strong>maintaining high video quality while minimizing file size</strong>. Modern codecs like <strong>HEVC</strong> have a <strong>&quot;sweet spot&quot;</strong> where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Storage and bandwidth are always <strong>limited resources</strong>",
+            "Going beyond certain bitrates provides <strong>diminishing quality returns</strong>",
+            "Different codecs have different <strong>efficiency curves</strong>",
+            "Release groups need clear standards for <strong>quality vs. size trade-offs</strong>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What Ratio is Best?",
+          "id": "what-ratio-is-best"
+        },
+        {
+          "type": "paragraph",
+          "content": "There&#39;s no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The &quot;best&quot; ratio <strong>depends entirely on your specific needs</strong>. At 1080p:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Space-conscious users might prefer <strong>smaller files (5-10% of source)</strong> with quality trade-offs",
+            "Quality-focused users might push towards <strong>higher quality (30-40% of source)</strong> for transparency",
+            "Most users find a sweet spot in the middle"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "However, there are technical limits - files larger than <strong>40% for 1080p</strong> and <strong>60% for 2160p</strong> provide no meaningful benefits."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Why Set Maximum Ratios of 40% and 60%?",
+          "id": "why-set-maximum-ratios-of-40-and-60"
+        },
+        {
+          "type": "paragraph",
+          "content": "The compression ratio ceilings are set based on different factors for 1080p and 2160p content:"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "1080p (40% Maximum)",
+          "id": "1080p-40-maximum"
+        },
+        {
+          "type": "paragraph",
+          "content": "The 40% ceiling for 1080p exists because we can roughly measure where <strong>HEVC stops being efficient compared to AVC</strong>. We do this using two key video quality metrics:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>VMAF</strong> - analyzes how humans perceive video quality and scores it from 0-100",
+            "<strong>BD-Rate</strong> - tells us how much smaller one encode is compared to another while maintaining the same quality level"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Using these tools together shows us that:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "HEVC achieves <strong>20-40% smaller files</strong> in the mid-bitrate range (~2-10 Mbps for 1080p)",
+            "These space savings are consistent across different quality levels",
+            "Beyond this point, both codecs achieve <strong>near identical quality</strong>",
+            "At ratios above 40%, <strong>AVC becomes preferred</strong> due to better tooling and quality control"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "2160p (60% Maximum)",
+          "id": "2160p-60-maximum"
+        },
+        {
+          "type": "paragraph",
+          "content": "The 60% ceiling for 2160p content is based on different considerations:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "This is approximately where <strong>visual transparency</strong> becomes achievable",
+            "Higher ratios provide <strong>diminishing returns</strong>",
+            "At this compression level, content achieves <strong>VMAF scores above 95</strong>",
+            "<strong>Storage efficiency</strong> becomes critical due to larger base file sizes",
+            "Quality improvements become <strong>increasingly subtle</strong> beyond this point"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Read these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is<sup><a href=\"#fn-1\" class=\"footnote-ref\">[1]</a></sup><sup><a href=\"#fn-2\" class=\"footnote-ref\">[2]</a></sup>:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "How Do We Apply This Index?",
+          "id": "how-do-we-apply-this-index"
+        },
+        {
+          "type": "paragraph",
+          "content": "The ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user&#39;s desired compression ratio. This is done through a few key steps:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>Delta Calculation</strong>: We calculate the absolute difference (delta) between a group&#39;s average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points."
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>K-means Clustering</strong>: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by: - Starting with k random cluster centers - Assigning each group to its nearest center - Recalculating centers based on group assignments - Repeating until stable"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Example Rankings",
+          "id": "example-rankings"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "1080p Examples",
+          "id": "1080p-examples"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 1: Users prioritizing storage efficiency (10% target)",
+          "id": "example-1-users-prioritizing-storage-efficiency-10-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "Users might choose this very aggressive compression target when:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Managing large libraries on limited storage",
+            "Collecting complete series where total size is a major concern",
+            "Primarily viewing on mobile devices or smaller screens",
+            "Dealing with bandwidth caps or slow internet connections"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tier",
+            "Group",
+            "Efficiency",
+            "Delta"
+          ],
+          "rows": [
+            [
+              "1",
+              "iVy",
+              "9.37%",
+              "0.63"
+            ],
+            [
+              "1",
+              "PSA",
+              "7.89%",
+              "2.11"
+            ],
+            [
+              "2",
+              "Vyndros",
+              "16.08%",
+              "6.08"
+            ],
+            [
+              "2",
+              "Chivaman",
+              "16.80%",
+              "6.80"
+            ],
+            [
+              "2",
+              "Amazon Prime (H.265)",
+              "16.15%",
+              "6.15"
+            ],
+            [
+              "3",
+              "Disney+ (H.265)",
+              "20.32%",
+              "10.32"
+            ],
+            [
+              "3",
+              "TAoE",
+              "22.78%",
+              "12.78"
+            ],
+            [
+              "3",
+              "QxR",
+              "23.25%",
+              "13.25"
+            ],
+            [
+              "3",
+              "BRiAN",
+              "25.16%",
+              "15.16"
+            ],
+            [
+              "3",
+              "Movies Anywhere (H.265)",
+              "26.05%",
+              "16.05"
+            ],
+            [
+              "4",
+              "MainFrame",
+              "37.63%",
+              "27.63"
+            ],
+            [
+              "4",
+              "NAN0",
+              "37.71%",
+              "27.71"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 2: Users seeking balanced quality and size (25% target)",
+          "id": "example-2-users-seeking-balanced-quality-and-size-25-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This moderate compression target appeals to users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have reasonable storage capacity but still want efficiency",
+            "Watch on mid to large screens where quality becomes more noticeable",
+            "Want a good balance between visual quality and practical file sizes"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Tier",
+            "Group",
+            "Efficiency",
+            "Delta"
+          ],
+          "rows": [
+            [
+              "1",
+              "BRiAN",
+              "25.16%",
+              "0.16"
+            ],
+            [
+              "1",
+              "Movies Anywhere (H.265)",
+              "26.05%",
+              "1.05"
+            ],
+            [
+              "1",
+              "QxR",
+              "23.25%",
+              "1.75"
+            ],
+            [
+              "1",
+              "TAoE",
+              "22.78%",
+              "2.22"
+            ],
+            [
+              "2",
+              "Disney+ (H.265)",
+              "20.32%",
+              "4.68"
+            ],
+            [
+              "3",
+              "Amazon Prime (H.265)",
+              "16.15%",
+              "8.85"
+            ],
+            [
+              "3",
+              "Chivaman",
+              "16.80%",
+              "8.20"
+            ],
+            [
+              "3",
+              "Vyndros",
+              "16.08%",
+              "8.92"
+            ],
+            [
+              "3",
+              "MainFrame",
+              "37.63%",
+              "12.63"
+            ],
+            [
+              "3",
+              "NAN0",
+              "37.71%",
+              "12.71"
+            ],
+            [
+              "4",
+              "iVy",
+              "9.37%",
+              "15.63"
+            ],
+            [
+              "4",
+              "PSA",
+              "7.89%",
+              "17.11"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "2160p Examples",
+          "id": "2160p-examples"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 3: Extreme Space Saving (20% target)",
+          "id": "example-3-extreme-space-saving-20-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This aggressive 2160p compression appeals to users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Want to maintain a 4K library on limited storage",
+            "Primarily view content at typical viewing distances where subtle quality differences are less noticeable",
+            "Need to conserve bandwidth while still enjoying 4K resolution",
+            "Have a large collection of 4K content and need to balance quality with practical storage constraints"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 4: Balanced 4K (40% target)",
+          "id": "example-4-balanced-4k-40-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This middle-ground approach is ideal for users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have decent storage capacity but still want reasonable efficiency",
+            "Watch on larger screens where quality differences become more apparent",
+            "Want to maintain high quality while still keeping files manageable",
+            "Need reliable HDR performance without excessive file sizes"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Example 5: Near Transparent Quality (60% target)",
+          "id": "example-5-near-transparent-quality-60-target"
+        },
+        {
+          "type": "paragraph",
+          "content": "This higher bitrate target is chosen by users who:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Have ample storage and prioritize maximum quality consciously",
+            "Watch on high-end displays where subtle quality differences are noticeable",
+            "Want to maintain archive-quality collections",
+            "Focus on difficult-to-encode content where compression artifacts are more visible"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "TODO: EXAMPLES"
+        },
+        {
+          "type": "paragraph",
+          "content": "These examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Frequently Asked Questions",
+          "id": "frequently-asked-questions"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Why not just detect h265/x265 releases? Isn&#39;t that simpler?",
+              "This is a common misconception that &quot;HEVC = smaller = better&quot;. While it&#39;s true that HEVC/x265 <em>can</em> achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 &gt; HEVC &gt; AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don&#39;t actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy."
+            ],
+            [
+              "But doesn&#39;t this ignore quality?",
+              "The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - &quot;quality above all&quot; or &quot;smaller is always better&quot; - we focus on <em>efficiency</em>: getting the best practical quality for any given file size target. This approach <strong>will not</strong> satisfy quality enthusiasts, but it better serves the needs of most users."
+            ],
+            [
+              "What if the source is not a 1080p remux? How do you tell?",
+              "This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices."
+            ],
+            [
+              "How do you prefer HEVC?",
+              "We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases."
+            ],
+            [
+              "Why not consider releases above 40% efficiency?",
+              "For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC&#39;s key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There&#39;s simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content."
+            ],
+            [
+              "What about animated content?",
+              "Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target."
+            ],
+            [
+              "Why does transparency require 60% at 2160p compared to 40% at 1080p?",
+              "The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. <strong>Increased Color Depth</strong>: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. <strong>HDR Requirements</strong>: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. <strong>Resolution Scaling</strong>: While 2160p has 4x the pixels of 1080p, compression efficiency doesn&#39;t scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency."
+            ],
+            [
+              "Do all 2160p releases need 60% for transparency?",
+              "No, the actual requirements vary significantly based on several factors:<br><br>1. <strong>Content Type</strong>:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. <strong>HDR Implementation</strong>:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. <strong>Source Quality</strong>:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master&#39;s bit depth and color space<br><br>4. <strong>Scene Complexity</strong>:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding"
+            ]
+          ]
+        },
+        {
+          "type": "footnote",
+          "id": "1",
+          "content": "Shen, Y. (2020). &quot;Bjontegaard Delta Rate Metric&quot;. Medium Innovation Labs Blog. <a href=\"https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\">https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c</a>"
+        },
+        {
+          "type": "footnote",
+          "id": "2",
+          "content": "Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). &quot;Video Quality Assessment: From FR to NR&quot;. Electronics, 13(5), 953. <a href=\"https://www.mdpi.com/2079-9292/13/5/953\">https://www.mdpi.com/2079-9292/13/5/953</a>"
+        }
+      ],
       "markdown": "\nThis metric is aimed at identifying and ranking release groups based on their propensity to release **encodes that meet certain compression ratios**, with particular focus on **HEVC** releases where optimal efficiency occurs in specific bitrate ranges. By ranking these groups, we effectively prioritize releases that maximize HEVC's compression capabilities while maintaining quality at minimal file sizes.\n\n## What is a Compression Ratio?\n\nA compression ratio is a (made up) metric that evaluates encodes against their sources. We express this as the **encoded file size as a percentage of its source size** (typically a **remux** or **WEB-DL**).\n\nFor example:\n\n| Movie   | Source (Remux) | Encode | Compression Ratio |\n| ------- | -------------- | ------ | ----------------- |\n| Movie A | 40 GB          | 10 GB  | 25%               |\n| Movie B | 30 GB          | 6 GB   | 20%               |\n| Movie C | 50 GB          | 15 GB  | 30%               |\n\n## Why Is This Important?\n\nUnderstanding compression ratios helps balance two competing needs: **maintaining high video quality while minimizing file size**. Modern codecs like **HEVC** have a **\"sweet spot\"** where they deliver excellent quality with significant size savings. Finding this optimal point is crucial because:\n\n- Storage and bandwidth are always **limited resources**\n- Going beyond certain bitrates provides **diminishing quality returns**\n- Different codecs have different **efficiency curves**\n- Release groups need clear standards for **quality vs. size trade-offs**\n\n## What Ratio is Best?\n\nThere's no one-size-fits-all answer when it comes to choosing the perfect compression ratio. The \"best\" ratio **depends entirely on your specific needs**. At 1080p:\n\n- Space-conscious users might prefer **smaller files (5-10% of source)** with quality trade-offs\n- Quality-focused users might push towards **higher quality (30-40% of source)** for transparency\n- Most users find a sweet spot in the middle\n\nHowever, there are technical limits - files larger than **40% for 1080p** and **60% for 2160p** provide no meaningful benefits.\n\n## Why Set Maximum Ratios of 40% and 60%?\n\nThe compression ratio ceilings are set based on different factors for 1080p and 2160p content:\n\n### 1080p (40% Maximum)\n\nThe 40% ceiling for 1080p exists because we can roughly measure where **HEVC stops being efficient compared to AVC**. We do this using two key video quality metrics:\n\n- **VMAF** - analyzes how humans perceive video quality and scores it from 0-100\n- **BD-Rate** - tells us how much smaller one encode is compared to another while maintaining the same quality level\n\nUsing these tools together shows us that:\n\n- HEVC achieves **20-40% smaller files** in the mid-bitrate range (~2-10 Mbps for 1080p)\n- These space savings are consistent across different quality levels\n- Beyond this point, both codecs achieve **near identical quality**\n- At ratios above 40%, **AVC becomes preferred** due to better tooling and quality control\n\n### 2160p (60% Maximum)\n\nThe 60% ceiling for 2160p content is based on different considerations:\n\n- This is approximately where **visual transparency** becomes achievable\n- Higher ratios provide **diminishing returns**\n- At this compression level, content achieves **VMAF scores above 95**\n- **Storage efficiency** becomes critical due to larger base file sizes\n- Quality improvements become **increasingly subtle** beyond this point\n\nRead these articles to better understand how VMAF and BD-Rate tell us how efficient a codec is[^1][^2]:\n\n## How Do We Apply This Index?\n\nThe ranking system works by calculating how close each Release Group / Streaming Service comes to achieving a user's desired compression ratio. This is done through a few key steps:\n\n1. **Delta Calculation**: We calculate the absolute difference (delta) between a group's average compression ratio and the target ratio. For example, if a group averages 25% compression and our target is 20%, their delta would be |25 - 20| = 5 percentage points.\n\n2. **K-means Clustering**: We use k-means clustering to automatically group release groups into tiers based on their deltas. K-means works by:\n   - Starting with k random cluster centers\n   - Assigning each group to its nearest center\n   - Recalculating centers based on group assignments\n   - Repeating until stable\n\n# Example Rankings\n\n## 1080p Examples\n\n### Example 1: Users prioritizing storage efficiency (10% target)\n\nUsers might choose this very aggressive compression target when:\n\n- Managing large libraries on limited storage\n- Collecting complete series where total size is a major concern\n- Primarily viewing on mobile devices or smaller screens\n- Dealing with bandwidth caps or slow internet connections\n\n| Tier | Group                   | Efficiency | Delta |\n| ---- | ----------------------- | ---------- | ----- |\n| 1    | iVy                     | 9.37%      | 0.63  |\n| 1    | PSA                     | 7.89%      | 2.11  |\n| 2    | Vyndros                 | 16.08%     | 6.08  |\n| 2    | Chivaman                | 16.80%     | 6.80  |\n| 2    | Amazon Prime (H.265)    | 16.15%     | 6.15  |\n| 3    | Disney+ (H.265)         | 20.32%     | 10.32 |\n| 3    | TAoE                    | 22.78%     | 12.78 |\n| 3    | QxR                     | 23.25%     | 13.25 |\n| 3    | BRiAN                   | 25.16%     | 15.16 |\n| 3    | Movies Anywhere (H.265) | 26.05%     | 16.05 |\n| 4    | MainFrame               | 37.63%     | 27.63 |\n| 4    | NAN0                    | 37.71%     | 27.71 |\n\n### Example 2: Users seeking balanced quality and size (25% target)\n\nThis moderate compression target appeals to users who:\n\n- Have reasonable storage capacity but still want efficiency\n- Watch on mid to large screens where quality becomes more noticeable\n- Want a good balance between visual quality and practical file sizes\n\n| Tier | Group                   | Efficiency | Delta |\n| ---- | ----------------------- | ---------- | ----- |\n| 1    | BRiAN                   | 25.16%     | 0.16  |\n| 1    | Movies Anywhere (H.265) | 26.05%     | 1.05  |\n| 1    | QxR                     | 23.25%     | 1.75  |\n| 1    | TAoE                    | 22.78%     | 2.22  |\n| 2    | Disney+ (H.265)         | 20.32%     | 4.68  |\n| 3    | Amazon Prime (H.265)    | 16.15%     | 8.85  |\n| 3    | Chivaman                | 16.80%     | 8.20  |\n| 3    | Vyndros                 | 16.08%     | 8.92  |\n| 3    | MainFrame               | 37.63%     | 12.63 |\n| 3    | NAN0                    | 37.71%     | 12.71 |\n| 4    | iVy                     | 9.37%      | 15.63 |\n| 4    | PSA                     | 7.89%      | 17.11 |\n\n## 2160p Examples\n\n### Example 3: Extreme Space Saving (20% target)\n\nThis aggressive 2160p compression appeals to users who:\n\n- Want to maintain a 4K library on limited storage\n- Primarily view content at typical viewing distances where subtle quality differences are less noticeable\n- Need to conserve bandwidth while still enjoying 4K resolution\n- Have a large collection of 4K content and need to balance quality with practical storage constraints\n\nTODO: EXAMPLES\n\n### Example 4: Balanced 4K (40% target)\n\nThis middle-ground approach is ideal for users who:\n\n- Have decent storage capacity but still want reasonable efficiency\n- Watch on larger screens where quality differences become more apparent\n- Want to maintain high quality while still keeping files manageable\n- Need reliable HDR performance without excessive file sizes\n\nTODO: EXAMPLES\n\n### Example 5: Near Transparent Quality (60% target)\n\nThis higher bitrate target is chosen by users who:\n\n- Have ample storage and prioritize maximum quality consciously\n- Watch on high-end displays where subtle quality differences are noticeable\n- Want to maintain archive-quality collections\n- Focus on difficult-to-encode content where compression artifacts are more visible\n\nTODO: EXAMPLES\n\nThese examples demonstrate how different groups excel at different target ratios, and how streaming services tend to maintain consistent compression approaches regardless of user preferences. The rankings help users quickly identify which releases will best match their specific quality and size requirements.\n\n## Frequently Asked Questions\n\n| Question                                                             | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Why not just detect h265/x265 releases? Isn't that simpler?          | This is a common misconception that \"HEVC = smaller = better\". While it's true that HEVC/x265 _can_ achieve better compression than AVC/x264, simply detecting the codec tells us nothing about the actual efficiency of the specific encode. A poorly encoded HEVC release can be larger and lower quality than a well-tuned x264 encode. By focusing on compression ratio instead of codec detection, we measure what actually matters - how efficiently the release uses storage space while maintaining quality. This approach has several advantages:<br><br>- It rewards efficient encodes regardless of codec choice<br>- It catches inefficient HEVC encodes that waste space<br>- It avoids the complexity of parsing inconsistent HEVC labeling (h265/x265)<br>- It future-proofs the system for newer codecs like AV1, where we can simply adjust our codec ranking priorities (AV1 > HEVC > AVC) while still maintaining the core efficiency metric<br><br>Think of it this way: users don't actually care what codec is used - they care about getting high quality video at reasonable file sizes. Our metric measures this directly instead of using codec choice as an unreliable proxy. |\n| But doesn't this ignore quality?                                     | The current encoding landscape places tremendous emphasis on maximizing absolute quality, often treating file size as a secondary concern. This metric aims to challenge that, or at least find a middle ground - we care about quality (hence why we use proper sources as our baseline and consider VMAF scores), but we acknowledge that most users only care about getting file sizes they actually want, and not the marginal quality improvements you get from encoding from a remux, compared to a web-dl. Rather than taking either extreme position - \"quality above all\" or \"smaller is always better\" - we focus on _efficiency_: getting the best practical quality for any given file size target. This approach **will not** satisfy quality enthusiasts, but it better serves the needs of most users.                                                                                                                                                                                                                                                                                                                                                                                    |\n| What if the source is not a 1080p remux? How do you tell?            | This metric, like any data-driven system, will never achieve 100% accuracy. However, we can parse various indicators beyond just the release group or streaming service to identify non-remux sources. For example, we can identify when a non-DS4K WEB-DL or non-webrip from a reputable group is likely sourced from another lossy encode rather than a remux. We also maintain a manual tagging system to downrank certain release groups known for reencoding from non-high-quality sources. Groups like PSA and MeGusta will be ranked lower in the system, regardless of their efficiency scores, due to their known practices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| How do you prefer HEVC?                                              | We actually approach this from the opposite direction - instead of preferring HEVC, we downrank AVC. This is because HEVC naming conventions are inconsistent (groups use x265 and h265 interchangeably), making them difficult to parse reliably. In contrast, AVC is almost always labeled consistently as either x264 or h264, making it much easier to identify and downrank these releases.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\n| Why not consider releases above 40% efficiency?                      | For standard 1080p non-HDR content, above 40% compression ratio, x264 and x265 perform nearly identically in terms of VMAF scores, eliminating HEVC's key advantages. At this point, x264 becomes the preferred choice across all metrics - the encodes are easier to produce, far more common, and typically undergo more rigorous quality control. There's simply no compelling reason to use HEVC at these higher bitrates for standard 1080p content.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| What about animated content?                                         | Animated content typically has different compression characteristics than live action - it often achieves excellent quality at much lower bitrates due to its unique properties (flat colors, sharp edges, less grain). Ideally, we would use higher target ratios for live action and lower ones for animation. However, reliably detecting animated content programmatically is extremely challenging. While we can sometimes identify anime by certain keywords or release group patterns, western animation, partial animation, and CGI-heavy content create too many edge cases for reliable detection. For now, we treat all content with the same metric, acknowledging this as a known limitation of the system. Users seeking optimal results for animated content may want to target lower compression ratios than they would for live action material, perhaps via a duplicate profile at a different compression target.                                                                                                                                                                                                                                                                     |\n| Why does transparency require 60% at 2160p compared to 40% at 1080p? | The higher ratio requirement for 2160p content stems from several technical factors that compound to demand more data for achieving transparency:<br><br>1. **Increased Color Depth**: Most 2160p content uses 10-bit color depth compared to 8-bit for standard 1080p content. This 25% increase in bit depth requires more data to maintain precision in color gradients and prevent banding.<br><br>2. **HDR Requirements**: 2160p content often includes HDR metadata, which demands more precise encoding of brightness levels and color information. The expanded dynamic range means we need to preserve more subtle variations in both very bright and very dark scenes.<br><br>3. **Resolution Scaling**: While 2160p has 4x the pixels of 1080p, compression efficiency doesn't scale linearly. Higher resolution reveals more subtle details and film grain, which require more data to preserve accurately.<br><br>These factors combine multiplicatively rather than additively, which is why we need a 50% increase in the compression ratio ceiling (from 40% to 60%) to achieve similar perceptual transparency.                                                                         |\n| Do all 2160p releases need 60% for transparency?                     | No, the actual requirements vary significantly based on several factors:<br><br>1. **Content Type**:<br>- Animation might achieve transparency at 30-40%<br>- Digital source material (like CGI-heavy films) often requires less<br>- Film-based content with heavy grain needs the full 60%<br><br>2. **HDR Implementation**:<br>- SDR 2160p content can often achieve transparency at lower ratios<br>- Dolby Vision adds additional overhead compared to HDR10<br>- Some HDR grades are more demanding than others<br><br>3. **Source Quality**:<br>- Digital intermediate resolution (2K vs 4K)<br>- Film scan quality and grain structure<br>- Original master's bit depth and color space<br><br>4. **Scene Complexity**:<br>- High motion scenes need more data<br>- Complex textures and patterns require higher bitrates<br>- Dark scenes with subtle gradients are particularly demanding                                                                                                                                                                                                                                                                                                      |\n\n[^1]: Shen, Y. (2020). \"Bjontegaard Delta Rate Metric\". Medium Innovation Labs Blog. https://medium.com/innovation-labs-blog/bjontegaard-delta-rate-metric-c8c82c1bc42c\n[^2]: Ling, N.; Antier, M.; Liu, Y.; Yang, X.; Li, Z. (2024). \"Video Quality Assessment: From FR to NR\". Electronics, 13(5), 953. https://www.mdpi.com/2079-9292/13/5/953\n",
       "navigation": [
         {
@@ -117190,11 +119742,44 @@ export const contentDatabase = {
           "wiki",
           "faq"
         ],
-        "blurb": "Frequently asked questions pertaining to Dictionarry / Profillar and all of its tooling."
+        "blurb": "Frequently asked questions pertaining to Dictionarry / Profillar and all of its tooling.",
+        "readingTime": 2
       },
-      "html": "<p>This entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr.</p>\n<table>\n<thead>\n<tr>\n<th>Question</th>\n<th>Answer</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Why isn&#39;t the highest scored release being grabbed?</td>\n<td>You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it&#39;s Custom Format score is not the highest. To turn it off, navigate to Settings &gt; Media Management &gt; File Management and set Prefer Propers / Repacks to Do Not Prefer.</td>\n</tr>\n<tr>\n<td>What&#39;s the difference between h264, x264, AVC, h265, x265 and HEVC?</td>\n<td><strong>H.264 (AVC)</strong>: A video compression standard.<br><strong>x264</strong>: An open source encoder that produces H.264 videos.<br><strong>H.265 (HEVC)</strong>: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br><strong>x265</strong>: An open source encoder that produces H.265 videos.<br><br><strong>Key Points</strong>:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br><em>Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone.</em></td>\n</tr>\n<tr>\n<td>What quality settings should I use?</td>\n<td>It&#39;s suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in.</td>\n</tr>\n<tr>\n<td>What does &quot;Transparency&quot; mean?</td>\n<td>Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term &quot;transparency&quot; stems from the idea that the encoding and decoding processes are imperceptible, as if the system were <em>transparent</em>.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as <a href=\"https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion\">VMAF (Video Multi-Method Assessment Fusion)</a>, are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency.</td>\n</tr>\n</tbody></table>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question",
+            "Answer"
+          ],
+          "rows": [
+            [
+              "Why isn&#39;t the highest scored release being grabbed?",
+              "You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it&#39;s Custom Format score is not the highest. To turn it off, navigate to Settings &gt; Media Management &gt; File Management and set Prefer Propers / Repacks to Do Not Prefer."
+            ],
+            [
+              "What&#39;s the difference between h264, x264, AVC, h265, x265 and HEVC?",
+              "<strong>H.264 (AVC)</strong>: A video compression standard.<br><strong>x264</strong>: An open source encoder that produces H.264 videos.<br><strong>H.265 (HEVC)</strong>: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br><strong>x265</strong>: An open source encoder that produces H.265 videos.<br><br><strong>Key Points</strong>:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br><em>Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone.</em>"
+            ],
+            [
+              "What quality settings should I use?",
+              "It&#39;s suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in."
+            ],
+            [
+              "What does &quot;Transparency&quot; mean?",
+              "Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term &quot;transparency&quot; stems from the idea that the encoding and decoding processes are imperceptible, as if the system were <em>transparent</em>.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as <a href=\"https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion\">VMAF (Video Multi-Method Assessment Fusion)</a>, are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency."
+            ]
+          ]
+        }
+      ],
       "markdown": "\nThis entry is dedicated to providing answers to the most frequently asked questions about Dictionarry / Profilarr.\n\n| Question                                                            | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\n| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Why isn't the highest scored release being grabbed?                 | You may have prefer propers and repacks on. This option forces releases with a proper / repack flag to be grabbed, even if it's Custom Format score is not the highest. To turn it off, navigate to Settings > Media Management > File Management and set Prefer Propers / Repacks to Do Not Prefer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| What's the difference between h264, x264, AVC, h265, x265 and HEVC? | **H.264 (AVC)**: A video compression standard.<br>**x264**: An open source encoder that produces H.264 videos.<br>**H.265 (HEVC)**: A more advanced video compression standard than H.264, offering better compression and quality for 4K and higher resolutions.<br>**x265**: An open source encoder that produces H.265 videos.<br><br>**Key Points**:<br>- HEVC/AVC refers to the codec in general<br>- H.264/5 refers to a lossless rip (WEB-DL or remux)<br>- x264/5 refers to encoded content (WEBRip or Blu-ray encode)<br><br>_Note: Many HEVC files are mislabeled, making it challenging to distinguish between lossless and lossy releases based on release names alone._                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| What quality settings should I use?                                 | It's suggested that you should set everything to min / max since Profilarr uses custom formats to do the major selections. However you might run into the occasional sample download if you use lots of usenet indexers. If you do find that these are being grabbed, then you can set the minimum to be 1-2gb per hour for whatever quality you need it in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| What does \"Transparency\" mean?                                      | Audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal. The term \"transparency\" stems from the idea that the encoding and decoding processes are imperceptible, as if the system were _transparent_.<br><br>- An audio codec with high transparency will produce an encoded signal that, when decoded, is identical to the original audio source, without any discernible differences in frequency response, dynamic range, or noise floor.<br><br>- A video codec exhibiting transparency will generate an encoded signal that, upon decoding, results in a picture that is visually indistinguishable from the source video in terms of resolution, color space, and pixel-level detail.<br><br>Objective metrics, such as [VMAF (Video Multi-Method Assessment Fusion)](https://en.wikipedia.org/wiki/Video_Multimethod_Assessment_Fusion), are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two, with higher scores indicating greater transparency. |\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "faq this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer this entry is dedicated to providing answers to the most frequently asked questions about dictionarry profilarr question answer why isn t the highest scored release being grabbed you may have prefer propers and repacks on this option forces releases with a proper repack flag to be grabbed even if it s custom format score is not the highest to turn it off navigate to settings media management file management and set prefer propers repacks to do not prefer what s the difference between h264 x264 avc h265 x265 and hevc h 264 avc a video compression standard br x264 an open source encoder that produces h 264 videos br h 265 hevc a more advanced video compression standard than h 264 offering better compression and quality for 4k and higher resolutions br x265 an open source encoder that produces h 265 videos br br key points br hevc avc refers to the codec in general br h 264 5 refers to a lossless rip web dl or remux br x264 5 refers to encoded content webrip or blu ray encode br br note many hevc files are mislabeled making it challenging to distinguish between lossless and lossy releases based on release names alone what quality settings should i use it s suggested that you should set everything to min max since profilarr uses custom formats to do the major selections however you might run into the occasional sample download if you use lots of usenet indexers if you do find that these are being grabbed then you can set the minimum to be 1 2gb per hour for whatever quality you need it in what does transparency mean audiovisual transparency refers to the degree to which an encoded audio or video signal is indistinguishable from the original source signal the term transparency stems from the idea that the encoding and decoding processes are imperceptible as if the system were transparent br br an audio codec with high transparency will produce an encoded signal that when decoded is identical to the original audio source without any discernible differences in frequency response dynamic range or noise floor br br a video codec exhibiting transparency will generate an encoded signal that upon decoding results in a picture that is visually indistinguishable from the source video in terms of resolution color space and pixel level detail br br objective metrics such as vmaf video multi method assessment fusion are sometimes used to measure transparency by comparing the encoded signal to the original source and calculating a numerical score that quantifies the perceptual similarity between the two with higher scores indicating greater transparency",
       "searchWeight": 0.8,
       "tags": [
@@ -117223,9 +119808,71 @@ export const contentDatabase = {
           "encode"
         ],
         "blurb": "A data-driven metric that identifies high-quality release groups by analyzing their Golden Popcorn track record.",
-        "featured": true
+        "featured": true,
+        "readingTime": 2
       },
-      "html": "<h2 id=\"what-are-golden-popcorns\">What are Golden Popcorns?</h2>\n<p><strong><em>Golden Popcorns</em></strong> are <em>very high quality encodes</em>, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of <em>Golden Popcorn</em> checkers. Golden Popcorns are the simplest way to quantify a subjective <em>best</em> encode.</p>\n<h2 id=\"the-decision-engine\">The Decision Engine</h2>\n<p>The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the <a href=\"../Profiles/1080p%20Transparent.md\">Transparent</a> profile&#39;s decision-making process. It&#39;s engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.</p>\n<h2 id=\"formula\">Formula</h2>\n<p>On first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution <em>r</em>.</p>\n<p>However, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio.</p>\n<p>So instead, we multiply the number of Golden Popcorns at resolution $r$ for a given release group, by a factor of said release group&#39;s Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other.</p>\n<p>For any given resolution <em>r</em>, the GPPI is defined as:</p>\n<p>$$<br>\\begin{aligned}<br>\\text{GPPI}_r &amp;= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\<br>              &amp;= \\frac{GPE_r^2}{E_r}<br>\\end{aligned}<br>$$</p>\n<p>Where:</p>\n<ul>\n<li>$\\text{GPPI}_r$ is the Golden Popcorn Performance Index at resolution $r$</li>\n<li>$GPE_r$ is the number of Golden Popcorns at resolution $r$</li>\n<li>$E_r$ is the total number of encodes at resolution $r$</li>\n</ul>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What are Golden Popcorns?",
+          "id": "what-are-golden-popcorns"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong><em>Golden Popcorns</em></strong> are <em>very high quality encodes</em>, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of <em>Golden Popcorn</em> checkers. Golden Popcorns are the simplest way to quantify a subjective <em>best</em> encode."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "The Decision Engine",
+          "id": "the-decision-engine"
+        },
+        {
+          "type": "paragraph",
+          "content": "The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the <a href=\"../Profiles/1080p%20Transparent.md\">Transparent</a> profile&#39;s decision-making process. It&#39;s engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution <math-inline>r</math-inline>."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Formula",
+          "id": "formula"
+        },
+        {
+          "type": "paragraph",
+          "content": "On first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution <em>r</em>."
+        },
+        {
+          "type": "paragraph",
+          "content": "However, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio."
+        },
+        {
+          "type": "paragraph",
+          "content": "So instead, we multiply the number of Golden Popcorns at resolution <math-inline>r</math-inline> for a given release group, by a factor of said release group&#39;s Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other."
+        },
+        {
+          "type": "paragraph",
+          "content": "For any given resolution <em>r</em>, the GPPI is defined as:"
+        },
+        {
+          "type": "math",
+          "display": true,
+          "content": "\\begin{aligned}\n\\text{GPPI}_r &= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\\\\n              &= \\frac{GPE_r^2}{E_r}\n\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "content": "Where:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<math-inline>\\text{GPPI}_r</math-inline> is the Golden Popcorn Performance Index at resolution <math-inline>r</math-inline>",
+            "<math-inline>GPE_r</math-inline> is the number of Golden Popcorns at resolution <math-inline>r</math-inline>",
+            "<math-inline>E_r</math-inline> is the total number of encodes at resolution <math-inline>r</math-inline>"
+          ]
+        }
+      ],
       "markdown": "\n## What are Golden Popcorns?\n\n**_Golden Popcorns_** are _very high quality encodes_, marked as such by one of the best private torrent trackers. These releases are manually reviewed by a dedicated, experienced team of _Golden Popcorn_ checkers. Golden Popcorns are the simplest way to quantify a subjective _best_ encode.\n\n## The Decision Engine\n\nThe Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the [Transparent](../Profiles/1080p%20Transparent.md) profile's decision-making process. It's engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.\n\n## Formula\n\nOn first glance, it seems the most obvious way to determine which release groups are most likely to release golden popcorns is to find their Golden Popcorn Ratio, i.e. The number of Golden Popcorns divided by the total number of encodes for any given resolution _r_.\n\nHowever, If we were to take Golden Popcorn ratio at face value, we might incorrectly prioritise a release group who has a high GP ratio, but a low number of encodes. On the opposite spectrum, if we take the raw number of Golden Popcorns for any group, we might incorrectly prioritise a group with a low GP ratio.\n\nSo instead, we multiply the number of Golden Popcorns at resolution $r$ for a given release group, by a factor of said release group's Golden Popcorn Ratio. This essentially limits both metrics as a factor of each other.\n\nFor any given resolution _r_, the GPPI is defined as:\n\n$$\n\\begin{aligned}\n\\text{GPPI}_r &= GPE_r \\cdot \\left( \\frac{GPE_r}{E_r} \\right) \\\\\n              &= \\frac{GPE_r^2}{E_r}\n\\end{aligned}\n$$\n\nWhere:\n\n- $\\text{GPPI}_r$ is the Golden Popcorn Performance Index at resolution $r$\n- $GPE_r$ is the number of Golden Popcorns at resolution $r$\n- $E_r$ is the total number of encodes at resolution $r$\n",
       "navigation": [
         "What are Golden Popcorns?",
@@ -117263,9 +119910,48 @@ export const contentDatabase = {
           "docker",
           "containers"
         ],
-        "blurb": "A simple guide to install Profilarr in Casa OS as a custom app."
+        "blurb": "A simple guide to install Profilarr in Casa OS as a custom app.",
+        "readingTime": 2
       },
-      "html": "<p>This guide will walk you through the process of installing Profilarr as a custom app in Casa OS.</p>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<ul>\n<li>A working Casa OS installation (this guide uses v0.4.15).</li>\n<li>Basic knowledge of using the Casa OS interface.</li>\n<li>Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file.</li>\n</ul>\n<h2 id=\"step-by-step-installation\">Step-by-Step Installation</h2>\n<ol>\n<li><strong>Add a Custom App to Casa OS:</strong><ul>\n<li>Open your web browser and navigate to your Casa OS dashboard.</li>\n<li>Find and click on the &quot;+&quot; icon in the top right corner of the App section.</li>\n<li>Select “Install a customized app”</li>\n<li>Select “Import” in the top right corner of the Settings page</li>\n</ul>\n</li>\n<li><strong>Import Docker Compose File:</strong><ul>\n<li>Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a></li>\n<li>Scroll down to the “Installation” section</li>\n<li>You will see a **Docker Compose (recommended) **code block</li>\n<li>Copy the Docker Compose file code</li>\n<li>Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box<ul>\n<li>Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:<ul>\n<li><code>env_file:</code></li>\n<li><code>- .env # Optional: Only needed if contributing to a database</code></li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Click on “Submit” and click “OK” to the warning</li>\n</ul>\n</li>\n<li><strong>Profilarr App Details:</strong><ul>\n<li>You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables</li>\n<li><strong>Name:</strong> “Profilarr” - but you can change it if you want</li>\n<li><strong>Icon:</strong> (Optional) You can upload an icon for the app.</li>\n<li><strong>Web UI:</strong> Should be your host device IP address</li>\n<li><strong>Network:</strong> Should be bridge</li>\n<li><strong>Port:</strong> Should be 6868 TCP</li>\n<li><strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location</li>\n<li><strong>Environment Variables:</strong> (Only TZ is required, the others are optional)<ul>\n<li>TZ = Your Timezone (e.g., America/New_York)</li>\n<li>GIT_USER_NAME = GitHub username for contributing</li>\n<li>GIT_USER_EMAIL = GitHub email for contributing</li>\n<li>PROFILARR_PAT = GitHub Personal Access Token for contributing</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Install the App:</strong><ul>\n<li>Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.</li>\n</ul>\n</li>\n<li><strong>Wait for Installation:</strong><ul>\n<li>Casa OS will now download and install the app. This might take a few minutes.</li>\n</ul>\n</li>\n<li><strong>Access Profilarr:</strong><ul>\n<li>After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.</li>\n</ul>\n</li>\n</ol>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "This guide will walk you through the process of installing Profilarr as a custom app in Casa OS."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Prerequisites",
+          "id": "prerequisites"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A working Casa OS installation (this guide uses v0.4.15).",
+            "Basic knowledge of using the Casa OS interface.",
+            "Access to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> for install file."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Step-by-Step Installation",
+          "id": "step-by-step-installation"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "<strong>Add a Custom App to Casa OS:</strong> - Open your web browser and navigate to your Casa OS dashboard. - Find and click on the &quot;+&quot; icon in the top right corner of the App section. - Select “Install a customized app” - Select “Import” in the top right corner of the Settings page",
+            "<strong>Import Docker Compose File:</strong> - Navigate to <a href=\"https://github.com/Dictionarry-Hub/Profilarr\">https://github.com/Dictionarry-Hub/Profilarr</a> - Scroll down to the “Installation” section - You will see a **Docker Compose (recommended) **code block - Copy the Docker Compose file code - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing: - <code>env_file:</code> - <code>- .env # Optional: Only needed if contributing to a database</code> - Click on “Submit” and click “OK” to the warning",
+            "<strong>Profilarr App Details:</strong> - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables - <strong>Name:</strong> “Profilarr” - but you can change it if you want - <strong>Icon:</strong> (Optional) You can upload an icon for the app. - <strong>Web UI:</strong> Should be your host device IP address - <strong>Network:</strong> Should be bridge - <strong>Port:</strong> Should be 6868 TCP - <strong>Volumes:</strong> Leave this as default unless you want to change the host path to a specific location - <strong>Environment Variables:</strong> (Only TZ is required, the others are optional) - TZ = Your Timezone (e.g., America/New_York) - GIT_USER_NAME = GitHub username for contributing - GIT_USER_EMAIL = GitHub email for contributing - PROFILARR_PAT = GitHub Personal Access Token for contributing",
+            "<strong>Install the App:</strong> - Once you&#39;ve filled in all the necessary details, click on the &quot;Install&quot; button.",
+            "<strong>Wait for Installation:</strong> - Casa OS will now download and install the app. This might take a few minutes.",
+            "<strong>Access Profilarr:</strong> - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app."
+          ]
+        }
+      ],
       "markdown": "\nThis guide will walk you through the process of installing Profilarr as a custom app in Casa OS.\n\n## Prerequisites\n\n- A working Casa OS installation (this guide uses v0.4.15).\n- Basic knowledge of using the Casa OS interface.\n- Access to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr) for install file.\n\n## Step-by-Step Installation\n\n1. **Add a Custom App to Casa OS:**\n   - Open your web browser and navigate to your Casa OS dashboard.\n   - Find and click on the \"+\" icon in the top right corner of the App section.\n   - Select “Install a customized app”\n   - Select “Import” in the top right corner of the Settings page\n2. **Import Docker Compose File:**\n   - Navigate to [https://github.com/Dictionarry-Hub/Profilarr](https://github.com/Dictionarry-Hub/Profilarr)\n   - Scroll down to the “Installation” section\n   - You will see a **Docker Compose (recommended) **code block\n   - Copy the Docker Compose file code\n   - Navigate back to Casa OS to the Import Docker Compose page and paste the code into the empty text box\n     - Note: if you are not contributing to a database, delete the following section or Casa OS will throw an error that the file is missing:\n       - `env_file:`\n       - `- .env # Optional: Only needed if contributing to a database`\n   - Click on “Submit” and click “OK” to the warning\n3. **Profilarr App Details:**\n   - You can leave most settings as default unless you have a specific reason to change them, like customizing to your network/system (Network, Port, Volumes, etc..) otherwise just change your Time Zone in Environmental Variables\n   - **Name:** “Profilarr” - but you can change it if you want\n   - **Icon:** (Optional) You can upload an icon for the app.\n   - **Web UI:** Should be your host device IP address\n   - **Network:** Should be bridge\n   - **Port:** Should be 6868 TCP\n   - **Volumes:** Leave this as default unless you want to change the host path to a specific location\n   - **Environment Variables:** (Only TZ is required, the others are optional)\n     - TZ = Your Timezone (e.g., America/New_York)\n     - GIT_USER_NAME = GitHub username for contributing\n     - GIT_USER_EMAIL = GitHub email for contributing\n     - PROFILARR_PAT = GitHub Personal Access Token for contributing\n4. **Install the App:**\n   - Once you've filled in all the necessary details, click on the \"Install\" button.\n5. **Wait for Installation:**\n   - Casa OS will now download and install the app. This might take a few minutes.\n6. **Access Profilarr:**\n   - After installation is complete, you should be able to find Profilarr on your Casa OS dashboard. Click on it to launch the app.\n",
       "navigation": [
         "Prerequisites",
@@ -117304,9 +119990,66 @@ export const contentDatabase = {
           "philosophy"
         ],
         "blurb": "Explore Dictionarry's release group abstraction philosophy and what it actually means to simplify media automation.",
-        "featured": true
+        "featured": true,
+        "readingTime": 2
       },
-      "html": "<h2 id=\"so-how-does-dictionarry-_actually-simplify-media-automation_\">So, how does Dictionarry _actually simplify media automation?_</h2>\n<p>Well, first we need to understand that we&#39;re trying to <strong>automate the subjective analysis of how &quot;good&quot; a release is</strong>. To do that, we need to first define <strong>what &quot;good&quot; even means</strong>. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as <em>quality</em>. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as <em>efficiency</em>.</p>\n<p>So, that leads us to a new question - <em>how do we measure quality and efficiency</em>? You might think we&#39;d want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc.</p>\n<pre><code class=\"hljs\"><span class=\"hljs-attribute\">Release</span> <span class=\"hljs-number\">1</span> (<span class=\"hljs-number\">25</span>.<span class=\"hljs-number\">2</span> GiB): Blockbuster Movie A <span class=\"hljs-number\">2022</span> Hybrid <span class=\"hljs-number\">1080</span>p WEBRip DDPA5.<span class=\"hljs-number\">1</span> x264-group A\n\n<span class=\"hljs-attribute\">Release</span> <span class=\"hljs-number\">2</span> (<span class=\"hljs-number\">27</span>.<span class=\"hljs-number\">3</span> GiB): Blockbuster Movie A.<span class=\"hljs-number\">1080</span>p.WEBRip.DD+<span class=\"hljs-number\">7</span>.<span class=\"hljs-number\">1</span>.x264-group B\n</code></pre>\n<p>Looking at these two releases, you&#39;ll notice that they both have the EXACT same technical specification and would rank equally. But they&#39;re different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely <strong>limited by the information that they convey</strong>. You can&#39;t adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we <em>extrapolate information that isn&#39;t already there?</em></p>\n<h3 id=\"group-tags\">Group Tags</h3>\n<p>Our answer lies in the little bit of information at the end of every release - it&#39;s <strong>group tag</strong>. Dictionarry tracks historic release group data in order to <strong>rank groups based on their propensity to reach quantifiable levels of quality and efficiency</strong>. We do this using two metrics:</p>\n<ol>\n<li>Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases</li>\n<li>Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source.</li>\n</ol>\n<p>These metrics are <strong>evidence based, data driven and objective</strong>.</p>\n<h3 id=\"tldr\">TL;DR</h3>\n<p>TL;DR: Dictionarry <strong>simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement</strong>. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below.</p>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 2,
+          "text": "So, how does Dictionarry _actually simplify media automation?_",
+          "id": "so-how-does-dictionarry-_actually-simplify-media-automation_"
+        },
+        {
+          "type": "paragraph",
+          "content": "Well, first we need to understand that we&#39;re trying to <strong>automate the subjective analysis of how &quot;good&quot; a release is</strong>. To do that, we need to first define <strong>what &quot;good&quot; even means</strong>. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as <em>quality</em>. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as <em>efficiency</em>."
+        },
+        {
+          "type": "paragraph",
+          "content": "So, that leads us to a new question - <em>how do we measure quality and efficiency</em>? You might think we&#39;d want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc."
+        },
+        {
+          "type": "code",
+          "language": "plaintext",
+          "code": "Release 1 (25.2 GiB): Blockbuster Movie A 2022 Hybrid 1080p WEBRip DDPA5.1 x264-group A\n\nRelease 2 (27.3 GiB): Blockbuster Movie A.1080p.WEBRip.DD+7.1.x264-group B"
+        },
+        {
+          "type": "paragraph",
+          "content": "Looking at these two releases, you&#39;ll notice that they both have the EXACT same technical specification and would rank equally. But they&#39;re different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely <strong>limited by the information that they convey</strong>. You can&#39;t adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we <em>extrapolate information that isn&#39;t already there?</em>"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Group Tags",
+          "id": "group-tags"
+        },
+        {
+          "type": "paragraph",
+          "content": "Our answer lies in the little bit of information at the end of every release - it&#39;s <strong>group tag</strong>. Dictionarry tracks historic release group data in order to <strong>rank groups based on their propensity to reach quantifiable levels of quality and efficiency</strong>. We do this using two metrics:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases",
+            "Encode Efficiency Index (EEi): The average size of a release group&#39;s encode compared to it&#39;s likely source."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "These metrics are <strong>evidence based, data driven and objective</strong>."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "TL;DR",
+          "id": "tldr"
+        },
+        {
+          "type": "paragraph",
+          "content": "TL;DR: Dictionarry <strong>simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement</strong>. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below."
+        }
+      ],
       "markdown": "\n## So, how does Dictionarry _actually simplify media automation?_\n\nWell, first we need to understand that we're trying to **automate the subjective analysis of how \"good\" a release is**. To do that, we need to first define **what \"good\" even means**. To some people, it could mean how well something looks on their screen, or sounds through speakers; we define this as _quality_. To others, it means how many releases they can download while still maintaining some kind of quality standard; we define this as _efficiency_.\n\nSo, that leads us to a new question - _how do we measure quality and efficiency_? You might think we'd want to parse releases and find their technical properties; resolution, bitrate, video / audio codecs, hdr, etc.\n\n```\nRelease 1 (25.2 GiB): Blockbuster Movie A 2022 Hybrid 1080p WEBRip DDPA5.1 x264-group A\n\nRelease 2 (27.3 GiB): Blockbuster Movie A.1080p.WEBRip.DD+7.1.x264-group B\n```\n\nLooking at these two releases, you'll notice that they both have the EXACT same technical specification and would rank equally. But they're different sizes... so which is better? Using audio / video properties to measure quality / efficiency can be effective, but is largely **limited by the information that they convey**. You can't adequately answer which is better just by looking at these releases in isolation. So how do we not look at these releases in isolation? Or rather, how do we _extrapolate information that isn't already there?_\n\n### Group Tags\n\nOur answer lies in the little bit of information at the end of every release - it's **group tag**. Dictionarry tracks historic release group data in order to **rank groups based on their propensity to reach quantifiable levels of quality and efficiency**. We do this using two metrics:\n\n1. Golden Popcorn Performance Index (GPPi): How many golden popcorns a release group has, as a ratio of their total number of releases\n2. Encode Efficiency Index (EEi): The average size of a release group's encode compared to it's likely source.\n\nThese metrics are **evidence based, data driven and objective**.\n\n### TL;DR\n\nTL;DR: Dictionarry **simplifies media automation by prioritizing release groups that achieve quantifiable levels of quality and efficiency through objective measurement**. These release group rankings are built and maintained as custom formats to be scored in their respective quality profiles. You can review these group rankings below.\n",
       "navigation": [
         {
@@ -117344,9 +120087,53 @@ export const contentDatabase = {
         "tags": [
           "devlog",
           "architecture"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:</p>\n<p>As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.</p>\n<p>Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.</p>\n<p>Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.</p>\n<p>Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!</p>\n<p>Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:</p>\n<p><img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\"></p>\n<h1 id=\"profile-selector\">Profile Selector</h1>\n<p>Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is.</p>\n<p><img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, here&#39;s a small update on what I&#39;ve been working on lately:"
+        },
+        {
+          "type": "paragraph",
+          "content": "As the project has grown bigger, it&#39;s gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I&#39;ve planned a complete overhaul of Dictionarry&#39;s architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool."
+        },
+        {
+          "type": "paragraph",
+          "content": "Next up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences."
+        },
+        {
+          "type": "paragraph",
+          "content": "Working in this system is extremely error prone and time consuming. To fix this, I&#39;m creating a standard unique to dictionarry based on a <strong>single definition format</strong>, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don&#39;t know exactly <em>how</em> this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups."
+        },
+        {
+          "type": "paragraph",
+          "content": "Now, the problem with this new and improved standard is - the arrs won&#39;t be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a canvas page I made in Obsidian which visualizes this architecture:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/HcXFNHU.png\" alt=\"Archiecture Diagram\">"
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Profile Selector",
+          "id": "profile-selector"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s an updated look at the new profile selector (WIP) in action. I&#39;ll leave explaining the selection algorithm for another day (because I&#39;m still not quite happy with it), but I think it&#39;s still pretty cool to look at as is."
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/bhi7h6\" alt=\"Selection Algorithm v1\">"
+        }
+      ],
       "markdown": "\nHey @everyone, here's a small update on what I've been working on lately:\n\nAs the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, quality profiles, etc. To help improve development productivity, I've planned a complete overhaul of Dictionarry's architecture. This starts with separating things into modules - namely a separate database which powers the website and the profilarr tool.\n\nNext up is standardizing the actual entries inside the database. The biggest issue in development right now is making / editing / updating the same thing multiple times. If you have the same regex pattern for multiple CFs, it needs to be updated for each one of them. Quality profiles across different apps have miniscule differences in syntax (eg. web-dl in radarr vs web in sonarr), which means we need multiple files with tiny differences.\n\nWorking in this system is extremely error prone and time consuming. To fix this, I'm creating a standard unique to dictionarry based on a **single definition format**, i.e. Regex patterns, Custom Formats and Quality Profiles are defined once, and repeated in other places using foreign keys. I don't know exactly _how_ this will look, but the plan is simplicity above all. Outside of improving productivity, I hope this standard helps encourage people who feel less confident with custom formats / quality profiles make more intuitive changes to their own setups.\n\nNow, the problem with this new and improved standard is - the arrs won't be able to read the files anymore. Solution: A compiler! This is where the fun begins; we take our simple, easy-to-develop-for files and push them through the compiler. Out pops the required syntax, with those weird naming rules (web-dl for radarr, web for sonarr), without the developer needing to ever worry about it!\n\nHere's a canvas page I made in Obsidian which visualizes this architecture:\n\n![Archiecture Diagram](https://i.imgur.com/HcXFNHU.png)\n\n# Profile Selector\n\nHere's an updated look at the new profile selector (WIP) in action. I'll leave explaining the selection algorithm for another day (because I'm still not quite happy with it), but I think it's still pretty cool to look at as is.\n\n![Selection Algorithm v1](https://streamable.com/bhi7h6)\n",
       "navigation": [
         "Profile Selector"
@@ -117371,9 +120158,274 @@ export const contentDatabase = {
       "frontmatter": {
         "title": "Markdown Formatting Test",
         "date": "2024-12-30",
-        "description": "A comprehensive test of all markdown formatting features"
+        "description": "A comprehensive test of all markdown formatting features",
+        "readingTime": 3
       },
-      "html": "<h1 id=\"h1-header---main-title\">H1 Header - Main Title</h1>\n<p>This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.</p>\n<h2 id=\"h2-header---section-title\">H2 Header - Section Title</h2>\n<p>Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.</p>\n<h3 id=\"h3-header---subsection\">H3 Header - Subsection</h3>\n<p>Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.</p>\n<h4 id=\"h4-header---subsubsection\">H4 Header - SubSubsection</h4>\n<p>Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.</p>\n<h2 id=\"paragraph-and-text-formatting\">Paragraph and Text Formatting</h2>\n<p>This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text.</p>\n<p>Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font.</p>\n<h2 id=\"lists\">Lists</h2>\n<h3 id=\"unordered-list\">Unordered List</h3>\n<ul>\n<li>First item in the list</li>\n<li>Second item with more text</li>\n<li>Third item<ul>\n<li>Nested item</li>\n<li>Another nested item</li>\n</ul>\n</li>\n<li>Back to main levels</li>\n</ul>\n<h3 id=\"ordered-list\">Ordered List</h3>\n<ol>\n<li>First numbered item</li>\n<li>Second numbered item</li>\n<li>Third numbered item<ol>\n<li>Nested numbered item</li>\n<li>Another nested numbered item</li>\n</ol>\n</li>\n<li>Back to main level</li>\n</ol>\n<h2 id=\"code-blocks\">Code Blocks</h2>\n<p>Here&#39;s a code block with syntax:</p>\n<pre><code class=\"hljs language-javascript\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">testFunction</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">const</span> message = <span class=\"hljs-string\">&quot;Hello, world!&quot;</span>;\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(message);\n  \n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-literal\">true</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&quot;This is a test&quot;</span>;\n  }\n}\n</code></pre>\n<p>And here&#39;s a simple code block:</p>\n<pre><code class=\"hljs\">This is just plain <span class=\"hljs-keyword\">text</span>\n<span class=\"hljs-keyword\">in</span> <span class=\"hljs-keyword\">a</span> code block\n<span class=\"hljs-keyword\">with</span> multiple <span class=\"hljs-keyword\">lines</span>\n</code></pre>\n<h2 id=\"blockquotes\">Blockquotes</h2>\n<blockquote>\n<p>This is a blockquote. It should have a left border and italic styling.</p>\n<p>It can span multiple lines and should look distinct from regular paragraphs.</p>\n</blockquote>\n<blockquote>\n<p>Here&#39;s another blockquote to test spacing between them.</p>\n</blockquote>\n<h2 id=\"links\">Links</h2>\n<p>Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>.</p>\n<h2 id=\"images\">Images</h2>\n<p>Here&#39;s an image (this will show as broken since it&#39;s a placeholder):<br><img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\"></p>\n<h2 id=\"tables-github-flavored-markdown\">Tables (GitHub Flavored Markdown)</h2>\n<table>\n<thead>\n<tr>\n<th>Header 1</th>\n<th>Header 2</th>\n<th>Header 3</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Row 1, Col 1</td>\n<td>Row 1, Col 2</td>\n<td>Row 1, Col 3</td>\n</tr>\n<tr>\n<td>Row 2, Col 1</td>\n<td>Row 2, Col 2</td>\n<td>Row 2, Col 3</td>\n</tr>\n<tr>\n<td>Row 3, Col 1</td>\n<td>Row 3, Col 2</td>\n<td>Row 3, Col 3</td>\n</tr>\n</tbody></table>\n<h2 id=\"horizontal-rule\">Horizontal Rule</h2>\n<p>Here&#39;s text before a horizontal rule.</p>\n<hr>\n<p>And here&#39;s text after the horizontal rule.</p>\n<h2 id=\"line-breaks\">Line Breaks</h2>\n<p>This line should break<br>right here (two spaces at end of line).</p>\n<p>This is a new paragraph after the line break test.</p>\n<h2 id=\"mixed-content-test\">Mixed Content Test</h2>\n<p>Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle.</p>\n<h3 id=\"list-with-code-and-links\">List with Code and Links</h3>\n<ol>\n<li>First item with <code>inline code</code></li>\n<li>Second item with <a href=\"https://example.com\">a link</a></li>\n<li>Third item with <strong>bold text</strong></li>\n<li>Fourth item with <em>italic text</em></li>\n</ol>\n<h3 id=\"blockquote-with-formatting\">Blockquote with Formatting</h3>\n<blockquote>\n<p>This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.</p>\n<p>It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test<br>complex formatting within blockquotes.</p>\n</blockquote>\n<h2 id=\"final-notes\">Final Notes</h2>\n<p>This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.</p>\n<p>The styling should be consistent and readable across all elements.</p>\n",
+      "blocks": [
+        {
+          "type": "header",
+          "level": 1,
+          "text": "H1 Header - Main Title",
+          "id": "h1-header---main-title"
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "H2 Header - Section Title",
+          "id": "h2-header---section-title"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "H3 Header - Subsection",
+          "id": "h3-header---subsection"
+        },
+        {
+          "type": "paragraph",
+          "content": "Even more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "H4 Header - SubSubsection",
+          "id": "h4-header---subsubsection"
+        },
+        {
+          "type": "paragraph",
+          "content": "Even more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Paragraph and Text Formatting",
+          "id": "paragraph-and-text-formatting"
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a <strong>bold text</strong> example and this is <em>italic text</em>. You can also combine them like <em><strong>bold and italic</strong></em> text."
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a new paragraph with some inline <code>code</code> formatting. The code should have a background color and monospace font."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Lists",
+          "id": "lists"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Unordered List",
+          "id": "unordered-list"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "First item in the list",
+            "Second item with more text",
+            "Third item - Nested item - Another nested item",
+            "Back to main levels"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Ordered List",
+          "id": "ordered-list"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "First numbered item",
+            "Second numbered item",
+            "Third numbered item 1. Nested numbered item 2. Another nested numbered item",
+            "Back to main level"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Code Blocks",
+          "id": "code-blocks"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a code block with syntax:"
+        },
+        {
+          "type": "code",
+          "language": "javascript",
+          "code": "function testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}"
+        },
+        {
+          "type": "paragraph",
+          "content": "And here&#39;s a simple code block:"
+        },
+        {
+          "type": "code",
+          "language": "plaintext",
+          "code": "This is just plain text\nin a code block\nwith multiple lines"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Blockquotes",
+          "id": "blockquotes"
+        },
+        {
+          "type": "blockquote",
+          "content": "This is a blockquote. It should have a left border and italic styling.  It can span multiple lines and should look distinct from regular paragraphs."
+        },
+        {
+          "type": "blockquote",
+          "content": "Here&#39;s another blockquote to test spacing between them."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Links",
+          "id": "links"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a <a href=\"https://example.com\">link to example.com</a> and another <a href=\"https://example.com\" title=\"Example Site\">link with title</a>."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Images",
+          "id": "images"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s an image (this will show as broken since it&#39;s a placeholder): <img src=\"https://via.placeholder.com/300x200.png?text=Test+Image\" alt=\"Alt text for image\">"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Tables (GitHub Flavored Markdown)",
+          "id": "tables-github-flavored-markdown"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Header 1",
+            "Header 2",
+            "Header 3"
+          ],
+          "rows": [
+            [
+              "Row 1, Col 1",
+              "Row 1, Col 2",
+              "Row 1, Col 3"
+            ],
+            [
+              "Row 2, Col 1",
+              "Row 2, Col 2",
+              "Row 2, Col 3"
+            ],
+            [
+              "Row 3, Col 1",
+              "Row 3, Col 2",
+              "Row 3, Col 3"
+            ]
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Horizontal Rule",
+          "id": "horizontal-rule"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s text before a horizontal rule."
+        },
+        {
+          "type": "paragraph",
+          "content": "---"
+        },
+        {
+          "type": "paragraph",
+          "content": "And here&#39;s text after the horizontal rule."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Line Breaks",
+          "id": "line-breaks"
+        },
+        {
+          "type": "paragraph",
+          "content": "This line should break right here (two spaces at end of line)."
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a new paragraph after the line break test."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Mixed Content Test",
+          "id": "mixed-content-test"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a paragraph with <strong>bold</strong>, <em>italic</em>, and <code>inline code</code> all together. It also has a <a href=\"https://example.com\">link</a> in the middle."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "List with Code and Links",
+          "id": "list-with-code-and-links"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "First item with <code>inline code</code>",
+            "Second item with <a href=\"https://example.com\">a link</a>",
+            "Third item with <strong>bold text</strong>",
+            "Fourth item with <em>italic text</em>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Blockquote with Formatting",
+          "id": "blockquote-with-formatting"
+        },
+        {
+          "type": "blockquote",
+          "content": "This blockquote contains <strong>bold text</strong>, <em>italic text</em>, and <code>inline code</code>.  It also has a <a href=\"https://example.com\">link</a> and multiple paragraphs to test complex formatting within blockquotes."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Final Notes",
+          "id": "final-notes"
+        },
+        {
+          "type": "paragraph",
+          "content": "This test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes."
+        },
+        {
+          "type": "paragraph",
+          "content": "The styling should be consistent and readable across all elements."
+        }
+      ],
       "markdown": "\n# H1 Header - Main Title\n\nThis is a paragraph under the main header. It should have proper spacing and use the neutral color palette for both light and dark modes.\n\n## H2 Header - Section Title\n\nHere's another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text should wrap nicely and have good line height for readability.\n\n### H3 Header - Subsection\n\nEven more text here to test the h3 styling. The headers should have proper hierarchy and spacing between them.\n\n#### H4 Header - SubSubsection\n\nEven more text here to test the h4 styling. The headers should have proper hierarchy and spacing between them.\n\n## Paragraph and Text Formatting\n\nThis is a **bold text** example and this is *italic text*. You can also combine them like ***bold and italic*** text.\n\nHere's a new paragraph with some inline `code` formatting. The code should have a background color and monospace font.\n\n## Lists\n\n### Unordered List\n- First item in the list\n- Second item with more text\n- Third item\n  - Nested item\n  - Another nested item\n- Back to main levels\n\n### Ordered List\n1. First numbered item\n2. Second numbered item\n3. Third numbered item\n   1. Nested numbered item\n   2. Another nested numbered item\n4. Back to main level\n\n## Code Blocks\n\nHere's a code block with syntax:\n\n```javascript\nfunction testFunction() {\n  const message = \"Hello, world!\";\n  console.log(message);\n  \n  if (true) {\n    return \"This is a test\";\n  }\n}\n```\n\nAnd here's a simple code block:\n\n```\nThis is just plain text\nin a code block\nwith multiple lines\n```\n\n## Blockquotes\n\n> This is a blockquote. It should have a left border and italic styling.\n> \n> It can span multiple lines and should look distinct from regular paragraphs.\n\n> Here's another blockquote to test spacing between them.\n\n## Links\n\nHere's a [link to example.com](https://example.com) and another [link with title](https://example.com \"Example Site\").\n\n## Images\n\nHere's an image (this will show as broken since it's a placeholder):\n![Alt text for image](https://via.placeholder.com/300x200.png?text=Test+Image)\n\n## Tables (GitHub Flavored Markdown)\n\n| Header 1 | Header 2 | Header 3 |\n|----------|----------|----------|\n| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |\n| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |\n| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |\n\n## Horizontal Rule\n\nHere's text before a horizontal rule.\n\n---\n\nAnd here's text after the horizontal rule.\n\n## Line Breaks\n\nThis line should break  \nright here (two spaces at end of line).\n\nThis is a new paragraph after the line break test.\n\n## Mixed Content Test\n\nHere's a paragraph with **bold**, *italic*, and `inline code` all together. It also has a [link](https://example.com) in the middle.\n\n### List with Code and Links\n\n1. First item with `inline code`\n2. Second item with [a link](https://example.com)\n3. Third item with **bold text**\n4. Fourth item with *italic text*\n\n### Blockquote with Formatting\n\n> This blockquote contains **bold text**, *italic text*, and `inline code`.\n> \n> It also has a [link](https://example.com) and multiple paragraphs to test\n> complex formatting within blockquotes.\n\n## Final Notes\n\nThis test file should demonstrate all the major markdown formatting features. Each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes.\n\nThe styling should be consistent and readable across all elements.",
       "navigation": [
         {
@@ -117465,9 +120517,74 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "user_choice"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, here&#39;s a small (but very important) post on the new update system!</p>\n<h2 id=\"current-profilarr\">Current Profilarr</h2>\n<p>Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.</p>\n<h2 id=\"profilarr-v1\">Profilarr v1</h2>\n<p>Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.</p>\n<ul>\n<li>As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.</li>\n<li>In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.</li>\n</ul>\n<h3 id=\"settings-page\">Settings Page</h3>\n<p>Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously).</p>\n<h1 id=\"beta-release\">Beta Release</h1>\n<ul>\n<li>Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:</li>\n</ul>\n<p>Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)</p>\n<p><img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, here&#39;s a small (but very important) post on the new update system!"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Current Profilarr",
+          "id": "current-profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it&#39;s a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr v1",
+          "id": "profilarr-v1"
+        },
+        {
+          "type": "paragraph",
+          "content": "Users will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git&#39;s merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "As an example, let&#39;s say you&#39;ve made the Dolby Vision custom formats negative because your TV doesn&#39;t support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.",
+            "In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will &#39;remember&#39; your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Settings Page",
+          "id": "settings-page"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr now includes a dedicated page for &#39;Sync Settings&#39;. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr&#39;s database (not to stable, obviously)."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Beta Release",
+          "id": "beta-release"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Still not quite ready yet, but I&#39;m working hard to get it out! Stay tuned :hearts:"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/0EZrumU.png\" alt=\"Conflict Resolver\">"
+        }
+      ],
       "markdown": "\nHey @everyone, here's a small (but very important) post on the new update system!\n\n## Current Profilarr\n\nCurrently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmare to keep up to date with changes and almost certainly breaks any custom changes you make.\n\n## Profilarr v1\n\nUsers will be able to view incoming and outgoing changes, as well as resolve any conflicts between the two. To achieve this, a user friendly GUI has been built on top of Git's merge functionality and allows fine control over what should be merged / ignored. More specifically, this functionality allows us to make custom changes and choose to retain them once a new update comes around.\n\n- As an example, let's say you've made the Dolby Vision custom formats negative because your TV doesn't support it. A new update has come out which shuffles around HDR scores, and this leads to a merge conflict between the two custom format scores.\n- In the settings page, you can choose to accept the incoming change or retain your local changes. Profilarr will 'remember' your choice and stop prompting you to update this custom format until a new update comes out, in which case, the situation repeats. Keep local or accept incoming.\n\n### Settings Page\n\nProfilarr now includes a dedicated page for 'Sync Settings'. It allows you to link / unlink a database repository, view and change branches as well as deal with incoming / outgoing changes and their conflicts. This page has been planned for developers too; you can add an authenticated github dev token to your environment and you have the ability to make changes directly to Profilarr's database (not to stable, obviously).\n\n# Beta Release\n\n- Still not quite ready yet, but I'm working hard to get it out! Stay tuned :hearts:\n\nHere's a screenshot of this new Conflict Resolver in action (Ignore the date modified row, it will be removed for actual use)\n\n![Conflict Resolver](https://i.imgur.com/0EZrumU.png)\n",
       "navigation": [
         {
@@ -117510,9 +120627,164 @@ export const contentDatabase = {
           "profilarr",
           "database",
           "housekeeping"
-        ]
+        ],
+        "readingTime": 6
       },
-      "html": "<p>hey @everyone, long awaited dev log :)</p>\n<h2 id=\"whats-new\">What's New? 👈</h2>\n<p>Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :) </p>\n<p>You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.</p>\n<h3 id=\"database\">Database 💾</h3>\n<p>Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: </p>\n<ul>\n<li>@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.</li>\n<li>I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future.</li>\n</ul>\n<h3 id=\"tweaks\">Tweaks 🔧</h3>\n<p>I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up. </p>\n<h2 id=\"whats-next\">What's Next? 👉</h2>\n<p>Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. </p>\n<h3 id=\"profilarr\">Profilarr</h3>\n<ul>\n<li>Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them</li>\n<li>Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). </li>\n<li>Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a></li>\n</ul>\n<h3 id=\"database\">Database</h3>\n<ul>\n<li>Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. </li>\n<li>Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)</li>\n<li>Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources.</li>\n</ul>\n<h2 id=\"housekeeping\">Housekeeping 🧹</h2>\n<p>We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already. </p>\n<h3 id=\"moderation-wiki-support\">Moderation, Wiki, Support 🤝</h3>\n<ul>\n<li>I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. </li>\n<li>The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. </li>\n<li>I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a></li>\n</ul>\n<h3 id=\"donations\">Donations 💸</h3>\n<p>If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM. </p>\n<h3 id=\"taking-a-break\">Taking a Break ⏸️</h3>\n<p>I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:</p>\n<ul>\n<li>I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. </li>\n<li>I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break.</li>\n</ul>\n<h3 id=\"thank-you\">Thank You 🙏</h3>\n<p>This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head. </p>\n<p>Cheers, everyone. </p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone, long awaited dev log :)"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What's New? 👈",
+          "id": "whats-new"
+        },
+        {
+          "type": "paragraph",
+          "content": "Many people are already aware, but I thought I should formally announce here on discord that <strong>Profilarr is out in beta!</strong> I&#39;ve been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it&#39;s not nearly as stable as I would like it to be, it implements the core architecture I first talked about <a href=\"https://dictionarry.dev/devlog/architecture_overhaul\">here</a>. There is still so (x10) much to be done in terms of bugs &amp; polish &amp; new features, but I&#39;m happy sharing it as is. Hopefully you can all find some benefit in using it too :)"
+        },
+        {
+          "type": "paragraph",
+          "content": "You can read our setup guide <a href=\"https://dictionarry.dev/wiki/profilarr-setup\">here</a>. It&#39;s available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Database 💾",
+          "id": "database"
+        },
+        {
+          "type": "paragraph",
+          "content": "Along with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "@Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It&#39;s a huge change that I haven&#39;t been able to fully test myself, but I&#39;ve merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the <code>scoring-refactor</code> branch in Profilarr. Please direct any issues / improvements to the database&#39;s <a href=\"https://github.com/Dictionarry-Hub/database\">Issue Tracker</a>.",
+            "I&#39;m personally not too happy with the state of the current database - poorly named files and renames/imports weren&#39;t taken into enough consideration and it&#39;s causing way too many download loops. I&#39;m still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Tweaks 🔧",
+          "id": "tweaks"
+        },
+        {
+          "type": "paragraph",
+          "content": "I talked about tweaks in detail <a href=\"https://dictionarry.dev/devlog/profile_tweaks\">here</a> and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it&#39;s an interesting system. In practice, it&#39;s confusing and really hard to program for. It&#39;s meant to be a database agnostic feature, but was hardcoded into Profilarr&#39;s profile system. I&#39;m going to keep this feature on the roadmap as a maybe for now, but I&#39;m going to have to completely rethink how to implement it from the ground up."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "What's Next? 👉",
+          "id": "whats-next"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profilarr",
+          "id": "profilarr"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them",
+            "Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you&#39;ll be able to connect to multiple at once and build off them as you please (or just link a complete one). ",
+            "Everything on the issue tracker: <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">https://github.com/Dictionarry-Hub/profilarr/issues</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Database",
+          "id": "database"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the <a href=\"https://dictionarry.dev/wiki/EEi\">Encode Efficiency Index</a> to prioritise HEVC releases. ",
+            "Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer &amp; better sources. I&#39;m not personally into that much anime, so I&#39;m going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I&#39;ll get back to you when I can!)",
+            "Better Streaming Service Grab Logic - This is already partially improved in Seraphys&#39; refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Housekeeping 🧹",
+          "id": "housekeeping"
+        },
+        {
+          "type": "paragraph",
+          "content": "We&#39;ve had an influx of new members over the past couple weeks, so I&#39;d like to welcome you all to our discord 👋 Come say hey in #general if you haven&#39;t already."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Moderation, Wiki, Support 🤝",
+          "id": "moderation-wiki-support"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "I&#39;d like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. ",
+            "The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. ",
+            "I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. <a href=\"https://github.com/Dictionarry-Hub/profilarr/issues\">here</a> and <a href=\"https://github.com/Dictionarry-Hub/database\">here</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Donations 💸",
+          "id": "donations"
+        },
+        {
+          "type": "paragraph",
+          "content": "If you&#39;ve donated and would like a special &#39;Donor&#39; role badge here on discord, please shoot me a PM."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Taking a Break ⏸️",
+          "id": "taking-a-break"
+        },
+        {
+          "type": "paragraph",
+          "content": "I want to let everyone know that I&#39;ll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I&#39;m quite burnt out. I&#39;m trying very hard to balance full time study with development, but they unfortunately just don&#39;t mesh the way I hoped they would. I can&#39;t not work at 100% for either, so something had to give and for the past month or so, that&#39;s been my sleep and sanity. I unfortunately can&#39;t delay my semester (as much as I want to), so I&#39;m going to have to dial down the time I spend on Dictionarry/Profilarr. I think I&#39;m going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I&#39;ll slowly pick up speed again. Couple of specific points I want to mention here:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "I&#39;m going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn&#39;t happen on time. The defacto answer to any ETA questions from now on will be &quot;when it&#39;s ready&quot;. ",
+            "I&#39;ve been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven&#39;t forgotten about you and will get back when I have the time. If it&#39;s been a while, shoot me a PM or something as a reminder ~ I&#39;ll still be active on discord during my break. "
+          ]
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Thank You 🙏",
+          "id": "thank-you"
+        },
+        {
+          "type": "paragraph",
+          "content": "This project has grown tremendously in scope in the last year and that&#39;s not possible without a community, so big thanks from me to all of you. I&#39;m still figuring all of this out as I go along so it&#39;s kind of unbelievable how many people are using a tool that once only existed in my head."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cheers, everyone."
+        }
+      ],
       "markdown": "\nhey @everyone, long awaited dev log :)\n\n## What's New? 👈\n\nMany people are already aware, but I thought I should formally announce here on discord that **Profilarr is out in beta!** I've been working on it since around July last year and put in a massive effort over the Christmas break to get it working. Even though it's not nearly as stable as I would like it to be, it implements the core architecture I first talked about [here](https://dictionarry.dev/devlog/architecture_overhaul). There is still so (x10) much to be done in terms of bugs & polish & new features, but I'm happy sharing it as is. Hopefully you can all find some benefit in using it too :) \n\nYou can read our setup guide [here](https://dictionarry.dev/wiki/profilarr-setup). It's available as a community app on Unraid, and as a Docker image for both ARM (Apple Silicon, Raspberry Pi) and x86.\n### Database 💾\n\nAlong with Profilarr, the Dictionarry database has also got an overhaul. We introduced the new encode efficiency index, 2160p Quality and Balanced profiles as well as other small improvements like editions, repacks and freeleech. Here are some scattered thoughts that you might also be interested in: \n- @Seraphys has been working on a scoring refactor that introduces 720p fallback, fixes streaming service names, and groups similar releases together better. It's a huge change that I haven't been able to fully test myself, but I've merged it into a separate branch because I know people are pretty antsy to start testing themselves. Anyone is free to give it a try, you just have to switch to the `scoring-refactor` branch in Profilarr. Please direct any issues / improvements to the database's [Issue Tracker](https://github.com/Dictionarry-Hub/database).\n- I'm personally not too happy with the state of the current database - poorly named files and renames/imports weren't taken into enough consideration and it's causing way too many download loops. I'm still trying to figure out exactly how I want to tackle these problems but I just want people to know that it is on my mind and it will be improved in future. \n\n### Tweaks 🔧\n\nI talked about tweaks in detail [here](https://dictionarry.dev/devlog/profile_tweaks) and had actually implemented some of them into Profilarr, but decided to remove them at the last minute. On paper, it's an interesting system. In practice, it's confusing and really hard to program for. It's meant to be a database agnostic feature, but was hardcoded into Profilarr's profile system. I'm going to keep this feature on the roadmap as a maybe for now, but I'm going to have to completely rethink how to implement it from the ground up. \n\n## What's Next? 👉\n\nHere's a (non comprehensive) list of what you can expect me to work on now that Profilarr is in beta. \n\n### Profilarr\n\n- Media Management Sync - Databases will be able to implement their own media management settings (quality sliders, rename templates, delay profiles, etc) and use profilarr to sync them\n- Multi Database Support - Refactoring the database to use a dependency system that allows databases to act as layers and depend on layers above them. This lets profile databases exist independently of format databases and that independently of regex databases. This way, you'll be able to connect to multiple at once and build off them as you please (or just link a complete one). \n- Everything on the issue tracker: https://github.com/Dictionarry-Hub/profilarr/issues\n\n### Database\n\n- Efficiency Profiles - 1080p Efficient (10%), 1080p Efficient (22.5%) and 2160p Efficient will use the [Encode Efficiency Index](https://dictionarry.dev/wiki/EEi) to prioritise HEVC releases. \n- Anime Support - Likely just quality profiles, but I also want to explore alternative options that better support dynamic needs. We likely want to make release group tiers, but also figure out a way to prioritise releases from newer & better sources. I'm not personally into that much anime, so I'm going to need as much input as I can get from you guys ~ please start those conversations if you want something to be considered (some have already asked, I'll get back to you when I can!)\n- Better Streaming Service Grab Logic - This is already partially improved in Seraphys' refactor, but I would also like to add support for more streaming services and revise the interaction between release groups and sources. \n\n## Housekeeping 🧹\n\nWe've had an influx of new members over the past couple weeks, so I'd like to welcome you all to our discord 👋 Come say hey in #general if you haven't already. \n\n### Moderation, Wiki, Support 🤝\n\n- I'd like to introduce @Seraphys as our first moderator and designated detail devotee 🤣 Big claps all around. \n- The rules, faq, links (among others) are very out of date and will be getting a refresh soon, stay tuned for those updates. \n- I will likely be closing the support post channels soon and replacing them with a single, simpler text channel and removing the bot integration. For any basic support, please message us over there, but for any major issues please redirect your queries to our issue trackers on GitHub from now on. [here](https://github.com/Dictionarry-Hub/profilarr/issues) and [here](https://github.com/Dictionarry-Hub/database)\n\n### Donations 💸\n\nIf you've donated and would like a special 'Donor' role badge here on discord, please shoot me a PM. \n\n### Taking a Break ⏸️\n\nI want to let everyone know that I'll be taking a break for a little while ~ I spent the majority of the past 4-5 months working on Profilarr and I'm quite burnt out. I'm trying very hard to balance full time study with development, but they unfortunately just don't mesh the way I hoped they would. I can't not work at 100% for either, so something had to give and for the past month or so, that's been my sleep and sanity. I unfortunately can't delay my semester (as much as I want to), so I'm going to have to dial down the time I spend on Dictionarry/Profilarr. I think I'm going to do a proper break (no dev at all) for a couple weeks at least ~ until my easter break, then I'll slowly pick up speed again. Couple of specific points I want to mention here:\n- I'm going to stop giving ETAs for things. They always take longer than I expect them to, which puts pressure on me and probably disappoints you guys when something inevitably doesn't happen on time. The defacto answer to any ETA questions from now on will be \"when it's ready\". \n- I've been pretty scatterbrained lately, so if someone is waiting on a message from me  just know that I haven't forgotten about you and will get back when I have the time. If it's been a while, shoot me a PM or something as a reminder ~ I'll still be active on discord during my break. \n\n### Thank You 🙏\n\nThis project has grown tremendously in scope in the last year and that's not possible without a community, so big thanks from me to all of you. I'm still figuring all of this out as I go along so it's kind of unbelievable how many people are using a tool that once only existed in my head. \n\nCheers, everyone. \n\n",
       "navigation": [
         {
@@ -117567,11 +120839,55 @@ export const contentDatabase = {
           "devlog",
           "profile_selector",
           "website"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>hey @everyone , thought I&#39;d make a channel to share some development logs.</p>\n<p>I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break...</p>\n<p>Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder.</p>\n<p>The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.</p>\n<p>Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):</p>\n<p><img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\"></p>\n<p>Here&#39;s a funny tidbit from development:</p>\n<p>I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work..</p>\n<p>Behold: Frankenstein&#39;s Triangle.</p>\n<p><img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone , thought I&#39;d make a channel to share some development logs."
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve been feeling pretty inspired code wise the past few days, so I&#39;ve actually made some progress despite saying I would take a break..."
+        },
+        {
+          "type": "paragraph",
+          "content": "Anyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It&#39;s not hooked up to the database yet, so random strings are being used as a placeholder."
+        },
+        {
+          "type": "paragraph",
+          "content": "The good thing about this design is that it&#39;s really modular. Once I finish the &#39;beginner&#39; version of it, I&#39;ll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc."
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s how it looks right now (obvious disclaimer that final version will look much much better):"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/2uprnl\" alt=\"Selector Proof of Concept\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here&#39;s a funny tidbit from development:"
+        },
+        {
+          "type": "paragraph",
+          "content": "I tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn&#39;t quite work.."
+        },
+        {
+          "type": "paragraph",
+          "content": "Behold: Frankenstein&#39;s Triangle."
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://streamable.com/z70sj8\" alt=\"Frankenstein's Triangle\">"
+        }
+      ],
       "markdown": "\nhey @everyone , thought I'd make a channel to share some development logs.\n\nI've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would take a break...\n\nAnyways, after designing Profile Selector v3 in Figma for the past couple months, I started work on actually implementing it. Let me tell you that drawing shapes is much, much easier than coding them. After a couple days of regretting not paying attention in high school trigonometry, I have the basic functionality in place! We have three data points which represent each of the requirements - quality, efficiency, compatibility. The user can select points on each of the axes, and each combination is used to recommend a profile. It's not hooked up to the database yet, so random strings are being used as a placeholder.\n\nThe good thing about this design is that it's really modular. Once I finish the 'beginner' version of it, I'll be able to add an advanced mode which can be used to select any kind of requirement. Resolution, HDR, Audio, etc.\n\nHere's how it looks right now (obvious disclaimer that final version will look much much better):\n\n![Selector Proof of Concept](https://streamable.com/2uprnl)\n\nHere's a funny tidbit from development:\n\nI tried writing some animation styling to make the inner polygon look like its stretching (as opposed to instant, static movement). It didn't quite work..\n\nBehold: Frankenstein's Triangle.\n\n![Frankenstein's Triangle](https://streamable.com/z70sj8)\n",
-      "navigation": [],
+      "navigation": [
+        "Overview"
+      ],
       "searchText": "profile selector v3 hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would tak hey everyone thought i d make a channel to share some development logs i ve been feeling pretty inspired code wise the past few days so i ve actually made some progress despite saying i would take a break anyways after designing profile selector v3 in figma for the past couple months i started work on actually implementing it let me tell you that drawing shapes is much much easier than coding them after a couple days of regretting not paying attention in high school trigonometry i have the basic functionality in place we have three data points which represent each of the requirements quality efficiency compatibility the user can select points on each of the axes and each combination is used to recommend a profile it s not hooked up to the database yet so random strings are being used as a placeholder the good thing about this design is that it s really modular once i finish the beginner version of it i ll be able to add an advanced mode which can be used to select any kind of requirement resolution hdr audio etc here s how it looks right now obvious disclaimer that final version will look much much better selector proof of concept here s a funny tidbit from development i tried writing some animation styling to make the inner polygon look like its stretching as opposed to instant static movement it didn t quite work behold frankenstein s triangle frankenstein s triangle",
       "searchWeight": 0.6,
       "tags": [
@@ -117599,9 +120915,68 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "user_choice"
-        ]
+        ],
+        "readingTime": 2
       },
-      "html": "<p>Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!</p>\n<p>The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with.</p>\n<p>Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:</p>\n<ul>\n<li>Prefer Freeleech</li>\n<li>Allow Prereleases (CAMS, Screeners, etc)</li>\n<li>Language Strictness</li>\n<li>Allow Lossless audio</li>\n<li>Allow Dolby Vision without Fallback</li>\n<li>Allow bleeding edge codecs (AV-1, H266)</li>\n</ul>\n<p>(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).</p>\n<p>If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:</p>\n<h2 id=\"profilarr-progress\">Profilarr Progress</h2>\n<ul>\n<li>Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.</li>\n<li>Git integration is complete and working, but needs lots of testing.</li>\n<li>Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.</li>\n<li>I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.</li>\n<li>Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can.</li>\n</ul>\n<p>If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:</p>\n<p><img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\"></p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, I&#39;ve been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!"
+        },
+        {
+          "type": "paragraph",
+          "content": "The profiles we make are meant to be (really good) starting points, not a strict standard on what you <em>should</em> be grabbing. Up until now, profiles existed as singular entities that don&#39;t respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it&#39;s a bit more hands on, and not something I expect most people to engage with."
+        },
+        {
+          "type": "paragraph",
+          "content": "Enter &#39;Profile Tweaks&#39;. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Prefer Freeleech",
+            "Allow Prereleases (CAMS, Screeners, etc)",
+            "Language Strictness",
+            "Allow Lossless audio",
+            "Allow Dolby Vision without Fallback",
+            "Allow bleeding edge codecs (AV-1, H266)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles)."
+        },
+        {
+          "type": "paragraph",
+          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr Progress",
+          "id": "profilarr-progress"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Progress is steady, I&#39;ve been working on it every day since my semester ended. It&#39;s taken way, way longer than I&#39;ve expected (sorry!) but I&#39;m happy with how it&#39;s starting to look.",
+            "Git integration is complete and working, but needs lots of testing.",
+            "Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.",
+            "I am currently in the progress of porting existing data to the new database (<a href=\"https://github.com/Dictionarry-Hub/database/tree/stable\">https://github.com/Dictionarry-Hub/database/tree/stable</a>) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.",
+            "Finally, I am starting to work on the compilation engine (<a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>) and the import module. Once these things are complete, and I&#39;m confident we won&#39;t run into massive bugs, I&#39;ll release a beta docker image. ETA? I really don&#39;t know, but I&#39;m working as hard as I can."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "If anyone has any tweak ideas (even super specific ones), please let me know and I&#39;ll work on getting it integrated! Here&#39;s an image of the Tweaks Tab:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/fzbmJSn.png\" alt=\"Profile Tweaks\">"
+        }
+      ],
       "markdown": "\nHey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off!\n\nThe profiles we make are meant to be (really good) starting points, not a strict standard on what you _should_ be grabbing. Up until now, profiles existed as singular entities that don't respect custom changes. Merge conflict resolution was a big step in the right direction for this (read more in the last dev log), but it's a bit more hands on, and not something I expect most people to engage with.\n\nEnter 'Profile Tweaks'. These are simple check boxes you can enable / disable and are unique to YOUR profiles. They will ALWAYS be respected, regardless of what updates we make to the base profile. For now, these tweaks include:\n\n- Prefer Freeleech\n- Allow Prereleases (CAMS, Screeners, etc)\n- Language Strictness\n- Allow Lossless audio\n- Allow Dolby Vision without Fallback\n- Allow bleeding edge codecs (AV-1, H266)\n\n(Some are only available for specific profiles, eg lossless audio for 1080p Encode profiles).\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n## Profilarr Progress\n\n- Progress is steady, I've been working on it every day since my semester ended. It's taken way, way longer than I've expected (sorry!) but I'm happy with how it's starting to look.\n- Git integration is complete and working, but needs lots of testing.\n- Data modules (custom formats, regex patterns, quality profiles) are complete and fully implement the existing logic from Radarr / Sonarr.\n- I am currently in the progress of porting existing data to the new database (https://github.com/Dictionarry-Hub/database/tree/stable) in the new profilarr standard format. This is going to take a while, as I have to write descriptions, add tags, test cases, etc.\n- Finally, I am starting to work on the compilation engine (https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049) and the import module. Once these things are complete, and I'm confident we won't run into massive bugs, I'll release a beta docker image. ETA? I really don't know, but I'm working as hard as I can.\n\nIf anyone has any tweak ideas (even super specific ones), please let me know and I'll work on getting it integrated! Here's an image of the Tweaks Tab:\n\n![Profile Tweaks](https://i.imgur.com/fzbmJSn.png)\n",
       "navigation": [
         "Profilarr Progress"
@@ -117632,9 +121007,150 @@ export const contentDatabase = {
         "tags": [
           "devlog",
           "architecture"
-        ]
+        ],
+        "readingTime": 5
       },
-      "html": "<p>hey @everyone, hope you guys are well. Here&#39;s another update!</p>\n<h1 id=\"motivation\">Motivation</h1>\n<p>I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in.</p>\n<h1 id=\"profilarr-v2-not-really-v2-but-it-sounded-cool\">Profilarr v2 (not really v2 but it sounded cool)</h1>\n<p>Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:</p>\n<h2 id=\"its-now-a-full-stack-application\">It's now a full stack application.</h2>\n<p>This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:</p>\n<ul>\n<li><strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.</li>\n<li><strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.</li>\n<li><strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.</li>\n<li><strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.</li>\n<li><strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.</li>\n<li><strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!</li>\n<li><strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.</li>\n<li><strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does.</li>\n</ul>\n<h2 id=\"backend-improvements\">Backend Improvements</h2>\n<p>The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:</p>\n<ul>\n<li><strong>Git integration</strong>: You can select a remote repository to connect to and:<ul>\n<li>Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded.</li>\n<li><strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.</li>\n<li><strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.</li>\n<li><strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now.</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"containerisation\">Containerisation</h2>\n<p>Profilarr will FINALLY be dockerised.</p>\n<h1 id=\"development\">Development</h1>\n<p>With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.</p>\n<h2 id=\"machine-learning\">Machine Learning</h2>\n<p>This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI.</p>\n<p>I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry.</p>\n<p>Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!</p>\n<p>Anyway, here&#39;s some images of profilarr v2.</p>\n<p><strong>Regex Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\"></p>\n<p><strong>Custom Format Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\"></p>\n<p><strong>Status Page</strong>:</p>\n<p><img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\"></p>\n<p>Of course, everything is still a heavy work in progress.</p>\n<p>That&#39;s all for today!</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "hey @everyone, hope you guys are well. Here&#39;s another update!"
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Motivation",
+          "id": "motivation"
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve been really struggling to work on this project for a few months now - I&#39;ll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I&#39;ve felt especially motivated to dive back in."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Profilarr v2 (not really v2 but it sounded cool)",
+          "id": "profilarr-v2-not-really-v2-but-it-sounded-cool"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr is getting some really nice upgrades. Here&#39;s an outline of the most important ones:"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "It's now a full stack application.",
+          "id": "its-now-a-full-stack-application"
+        },
+        {
+          "type": "paragraph",
+          "content": "This means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It&#39;s built in a way that aims to &#39;remaster&#39; how it&#39;s implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>Single definition format</strong>: As outlined in the previous dev log, Profilarr&#39;s version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.",
+            "<strong>Sorting and Filtering</strong>: You can now sort and filter items by title, date modified, etc.",
+            "<strong>Exporting/Importing</strong>: The standard format now allows <em>everyone</em> to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.",
+            "<strong>Syncing</strong>: Instead of clogging up everyone&#39;s arrs with unused custom formats, the sync functionality now only imports <em>used</em> items.",
+            "<strong>Mass selection</strong>: You can mass select items to import/export/sync/delete.",
+            "<strong>Tags</strong>: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!",
+            "<strong>Testing</strong>: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.",
+            "<strong>Descriptions</strong>: You can now explain what specific items are for. No need to look it up on the website to see what it does."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Backend Improvements",
+          "id": "backend-improvements"
+        },
+        {
+          "type": "paragraph",
+          "content": "The backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<strong>Git integration</strong>: You can select a remote repository to connect to and: - Add, commit, and push files; branch off; merge into. This isn&#39;t that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I&#39;ve ever coded. - <strong>Branching</strong>: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches. - <strong>Pulling</strong>: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop. - <strong>External sources</strong>: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I&#39;ll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It&#39;ll probably take some tweaking, but I know it&#39;s definitely possible now."
+          ]
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Containerisation",
+          "id": "containerisation"
+        },
+        {
+          "type": "paragraph",
+          "content": "Profilarr will FINALLY be dockerised."
+        },
+        {
+          "type": "header",
+          "level": 1,
+          "text": "Development",
+          "id": "development"
+        },
+        {
+          "type": "paragraph",
+          "content": "With these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Machine Learning",
+          "id": "machine-learning"
+        },
+        {
+          "type": "paragraph",
+          "content": "This part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I&#39;ve read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. &quot;How do I write a custom format that matches x265 releases under size x?&quot; It&#39;s so easily solved using AI."
+        },
+        {
+          "type": "paragraph",
+          "content": "I want to implement this one day, I just don&#39;t have enough knowledge or experience to do it yet. The best I&#39;ve come up with is something that sends a request to OpenAI&#39;s API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people&#39;s needs. Who knows if it ever gets to that point, but that&#39;s my vision for Dictionarry."
+        },
+        {
+          "type": "paragraph",
+          "content": "Ramble over, as you can tell I&#39;ve been feeling pretty motivated lately!"
+        },
+        {
+          "type": "paragraph",
+          "content": "Anyway, here&#39;s some images of profilarr v2."
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Regex Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/kMZ9qII.png\" alt=\"Regex Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Custom Format Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/mCyDxId.png\" alt=\"Custom Format Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "<strong>Status Page</strong>:"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/ZleeOEF.png\" alt=\"Status Page\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "Of course, everything is still a heavy work in progress."
+        },
+        {
+          "type": "paragraph",
+          "content": "That&#39;s all for today!"
+        }
+      ],
       "markdown": "\nhey @everyone, hope you guys are well. Here's another update!\n\n# Motivation\n\nI've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week but feel completely unmotivated to work on it for more than an hour. Well... after cracking the architecture problem last week and seeing all the support from you guys, I've felt especially motivated to dive back in.\n\n# Profilarr v2 (not really v2 but it sounded cool)\n\nProfilarr is getting some really nice upgrades. Here's an outline of the most important ones:\n\n## It's now a full stack application.\n\nThis means we have a frontend: a site that users can visit to adjust, import, and export regexes, custom formats, and quality profiles. It's built in a way that aims to 'remaster' how it's implemented in Radarr/Sonarr. All the existing functionality is there, but with some really nice quality of life features:\n\n- **Single definition format**: As outlined in the previous dev log, Profilarr's version of this system will use a single definition format. Notably, this allows you to set regex patterns ONCE, then add that regex as a condition inside a custom format.\n- **Sorting and Filtering**: You can now sort and filter items by title, date modified, etc.\n- **Exporting/Importing**: The standard format now allows _everyone_ to import/export regexes, custom formats, and quality profiles freely - no need to query APIs to do this anymore.\n- **Syncing**: Instead of clogging up everyone's arrs with unused custom formats, the sync functionality now only imports _used_ items.\n- **Mass selection**: You can mass select items to import/export/sync/delete.\n- **Tags**: Instead of manual selection, you can set tags on specific custom formats/quality profiles that should be synced. This works similar to how Prowlarr uses tags to selectively sync indexers. Since we are also using the same database for the website, tags can also be used for little tidbits of information too. Like where a release group is an internal at!\n- **Testing**: Developers can now permalink regexes to regex101. This makes it really easy to develop and test simultaneously.\n- **Descriptions**: You can now explain what specific items are for. No need to look it up on the website to see what it does.\n\n## Backend Improvements\n\nThe backend is essentially what Profilarr is right now - a tool to sync some JSON files to your arrs. However, this also has some major improvements:\n\n- **Git integration**: You can select a remote repository to connect to and:\n  - Add, commit, and push files; branch off; merge into. This isn't that useful for end users, but I cannot stress enough how much time and suffering this has saved me. Being able to revert regex/custom format/quality profiles to the last commit is my favorite thing I've ever coded.\n  - **Branching**: You can have different branches for different things. Of course, this is useful for development, but it also allows you to do things like: separate setups for Radarr/Sonarr/Lidarr. Most importantly, it allows us developers to set stable, dev, and feature branches.\n  - **Pulling**: You can now pull in changes from specific branches from a remote repository. You can view differences and decide if you want to pull these changes in. You can set it to be automatic and only alert on merge conflicts (you change something, but an incoming change for that item exists as well). You can choose to get the most stable branch or the latest features merged into develop.\n  - **External sources**: You can set your own repo of regexes, custom formats, and quality profiles and share it with whoever you want. As I mentioned in my last dev log, I'll be working on a compiler to convert our standard Profilarr format with the existing arr format. The really cool thing about this is it works both ways. This means the git integration + compiler will allow you to use Profilarr with the trash guides. It'll probably take some tweaking, but I know it's definitely possible now.\n\n## Containerisation\n\nProfilarr will FINALLY be dockerised.\n\n# Development\n\nWith these changes in place, it has massively improved and sped up development. Working in a proprietary tool now allows me the freedom to just implement a feature whenever I want to. Want to filter custom formats with the release tier tag? Boom, implemented. Want to auto-apply scores to custom formats in quality profiles based on tags? Boom, implemented.\n\n## Machine Learning\n\nThis part is mostly speculation and rambling - nothing concrete yet. I really want to incorporate some kind of AI help into Profilarr. A button you can press to auto-generate regex or a custom format. I've read countless Reddit posts of someone unfamiliar with regex/custom formats/profiles asking for help in trying to learn. \"How do I write a custom format that matches x265 releases under size x?\" It's so easily solved using AI.\n\nI want to implement this one day, I just don't have enough knowledge or experience to do it yet. The best I've come up with is something that sends a request to OpenAI's API with a prompt. The results are less than ideal. But just imagine the future where some kind of machine learning tool has access to an entire database of regexes, custom formats, and quality profiles curated by hundreds of people, and can use that knowledge to predict patterns and truly tailor stuff to suit people's needs. Who knows if it ever gets to that point, but that's my vision for Dictionarry.\n\nRamble over, as you can tell I've been feeling pretty motivated lately!\n\nAnyway, here's some images of profilarr v2.\n\n**Regex Page**:\n\n![Regex Page](https://i.imgur.com/kMZ9qII.png)\n\n**Custom Format Page**:\n\n![Custom Format Page](https://i.imgur.com/mCyDxId.png)\n\n**Status Page**:\n\n![Status Page](https://i.imgur.com/ZleeOEF.png)\n\nOf course, everything is still a heavy work in progress.\n\nThat's all for today!\n",
       "navigation": [
         {
@@ -117682,9 +121198,76 @@ export const contentDatabase = {
           "devlog",
           "architecture",
           "gppi"
-        ]
+        ],
+        "readingTime": 3
       },
-      "html": "<p>Hey @everyone, small log for today!</p>\n<pre><code class=\"hljs language-bash\">$ python profile_compile.py &amp;#39;profiles/1080p Encode.yml&amp;#39; &amp;#39;1080p Encode (sonarr - master).json&amp;#39; -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating &amp;#39;1080p Encode&amp;#39; quality profile : SUCCESS\n</code></pre>\n<p>These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.</p>\n<p>I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.</p>\n<p>It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.</p>\n<h2 id=\"golden-popcorn-performance-index-changes\">Golden Popcorn Performance Index Changes</h2>\n<p>The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?</p>\n<h3 id=\"popularity\">Popularity</h3>\n<p>For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)</p>\n<p>This process will be completely automatic and will hopefully solve the problem of new good release groups.</p>\n<h3 id=\"grouping\">Grouping</h3>\n<p>The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.</p>\n<h2 id=\"thank-you\">Thank You!</h2>\n<p>That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey @everyone, small log for today!"
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "code": "$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS"
+        },
+        {
+          "type": "paragraph",
+          "content": "These two commands are the culmination of the architecture overhaul I talked about in August: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049\">https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049</a>. The Profilarr standard format <em><strong>works</strong></em>. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times."
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;m currently in the process of hooking up the database to the new website, and that&#39;s looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop."
+        },
+        {
+          "type": "paragraph",
+          "content": "It&#39;s taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I&#39;m fairly happy with how it&#39;s turned out. The changes won&#39;t be all that evident right away for you guys, but it&#39;s going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Golden Popcorn Performance Index Changes",
+          "id": "golden-popcorn-performance-index-changes"
+        },
+        {
+          "type": "paragraph",
+          "content": "The current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren&#39;t simply because they have no data. How do we fix this?"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Popularity",
+          "id": "popularity"
+        },
+        {
+          "type": "paragraph",
+          "content": "For every encode at a specific resolution for a movie / tv show that is currently <em>popular</em>, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)"
+        },
+        {
+          "type": "paragraph",
+          "content": "This process will be completely automatic and will hopefully solve the problem of new good release groups."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Grouping",
+          "id": "grouping"
+        },
+        {
+          "type": "paragraph",
+          "content": "The previous &#39;tiers&#39; for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter &#39;K Means Clustering&#39;. Essentially it&#39;s just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I&#39;ve dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Thank You!",
+          "id": "thank-you"
+        },
+        {
+          "type": "paragraph",
+          "content": "That&#39;s all for today, I hope everyone&#39;s doing alright and enjoying the holidays :grinning:"
+        }
+      ],
       "markdown": "\nHey @everyone, small log for today!\n\n```bash\n$ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s\nConverted profile saved to: 1080p Encode (sonarr - master).json\n\n$ python importarr.py\nImporting Quality Profiles to sonarr : Master\nUpdating '1080p Encode' quality profile : SUCCESS\n```\n\nThese two commands are the culmination of the architecture overhaul I talked about in August: https://discord.com/channels/1202375791556431892/1246504849265266738/1272756617041154049. The Profilarr standard format _**works**_. A typical profile is now about 300 lines (down from 1000 each for radarr / sonarr), is able to be compiled from PSF to Radarr OR Sonarr (and back!). Regex patterns allow format resolution, so no more editing the same thing 5, 10... 20 times.\n\nI'm currently in the process of hooking up the database to the new website, and that's looking pretty cool too. I cannot even explain how good it feels to be able to edit a profile once inside Profilarr, push those changes directly from Profilarr, have those changes reflected as incoming changes for end users, and as updated information on the website all in one fell swoop.\n\nIt's taken a huge effort the past 4 months, and I still have to actually connect it to the backend, but I'm fairly happy with how it's turned out. The changes won't be all that evident right away for you guys, but it's going to save me (and anyone who wants to contribute) hours upon hours of development time for everything that I have planned.\n\n## Golden Popcorn Performance Index Changes\n\nThe current GPPi algorithm is strong, but fundamentally flawed. It does not take into consideration release groups who have no data. There are terrific new groups (ZoroSenpai for example) who should be tier ~2 at least, but aren't simply because they have no data. How do we fix this?\n\n### Popularity\n\nFor every encode at a specific resolution for a movie / tv show that is currently _popular_, a release group receives +1 score to their GPPi. At the end of every month, the score is reset, and the previous score is normalized (tbd on how) and added to their permanent GPPi score (up to a certain point and probably never past tier ~3)\n\nThis process will be completely automatic and will hopefully solve the problem of new good release groups.\n\n### Grouping\n\nThe previous 'tiers' for release groups was just natural intuitive grouping. Humans are surprisingly very, very good at pattern recognition so it was never really a problem. However, it was manual, and we dont like manual around here. Enter 'K Means Clustering'. Essentially it's just a fancy algorithm that finds natural break points between groups of numbers. Using K means, I've dropped the number of 1080p Tiers from 7 down to 5 which in turn has increased immutability. Small changes, but will be important in the long run.\n\n## Thank You!\n\nThat's all for today, I hope everyone's doing alright and enjoying the holidays :grinning:\n",
       "navigation": [
         {
@@ -117726,9 +121309,172 @@ export const contentDatabase = {
           "eei",
           "2160p",
           "quality"
-        ]
+        ],
+        "readingTime": 4
       },
-      "html": "<p>Hey everyone, medium-ish update today.</p>\n<h2 id=\"website-20\">Website 2.0</h2>\n<p>I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:</p>\n<ul>\n<li>Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything</li>\n</ul>\n<p>This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is.</p>\n<p><a href=\"https://dictionarry.dev/\">Website 2.0</a></p>\n<p><img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\"></p>\n<p>The old site will go down soon, sorry if I broke anyone&#39;s workflows D:</p>\n<h3 id=\"profile-selector\">Profile Selector?</h3>\n<p>This idea has gone through many iterations since i started Dictionarry last year.</p>\n<ol>\n<li>A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a></li>\n<li>The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a></li>\n<li>Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a></li>\n</ol>\n<p>Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed.</p>\n<p>Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it.</p>\n<h3 id=\"profile-builder\">Profile Builder!</h3>\n<p>In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a></p>\n<p><img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\"></p>\n<h2 id=\"encode-efficiency-index\">Encode Efficiency Index</h2>\n<p>Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:</p>\n<ul>\n<li>It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.</li>\n<li>It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;</li>\n<li>It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;</li>\n</ul>\n<p>This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.</p>\n<h4 id=\"no-more-parsing-codecs\">No More Parsing Codecs!!!!</h4>\n<p>If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable</p>\n<h4 id=\"2160p-quality-encode-profile-release-group-tierlist\">2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!</h4>\n<p>Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic.</p>\n<p>This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:</p>\n<ul>\n<li><a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a></li>\n<li><a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a></li>\n</ul>\n<h4 id=\"thanks\">Thanks</h4>\n<ul>\n<li>Thanks to @seraphys for helping out with the profile creation / giving constant feedback.</li>\n<li>Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.</li>\n</ul>\n<p>Show them some love.</p>\n<h2 id=\"profilarr\">Profilarr</h2>\n<p>Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)</p>\n",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Hey everyone, medium-ish update today."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Website 2.0",
+          "id": "website-20"
+        },
+        {
+          "type": "paragraph",
+          "content": "I&#39;ve wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Database gets an update -&gt; Website sees its data is stale -&gt; Website rebuilds itself with new data -&gt; Santiago smiles in not needing to do anything"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "This all ties into the whole &quot;write once&quot; philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I&#39;m happy to share it with you guys as it is."
+        },
+        {
+          "type": "paragraph",
+          "content": "<a href=\"https://dictionarry.dev/\">Website 2.0</a>"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/eORTwml.png\" alt=\"website2.0\">"
+        },
+        {
+          "type": "paragraph",
+          "content": "The old site will go down soon, sorry if I broke anyone&#39;s workflows D:"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profile Selector?",
+          "id": "profile-selector"
+        },
+        {
+          "type": "paragraph",
+          "content": "This idea has gone through many iterations since i started Dictionarry last year."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "A static flowchart with not nearly enough information / choice: <a href=\"https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\">https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png</a>",
+            "The &quot;Profile Selector&quot; (terrible name): <a href=\"https://selectarr.pages.dev/\">https://selectarr.pages.dev/</a>",
+            "Frankenstein&#39;s triangle: <a href=\"https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925\">Discord Link</a>"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Frankenstein&#39;s triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the &quot;score&quot; of each profile on each of it&#39;s axes and finding the best fitting triangle that used the axis that was changed."
+        },
+        {
+          "type": "paragraph",
+          "content": "Results were pretty good but I felt that it abstracted <em>too much</em> of what made any user choice meaningful so I decided to scrap it."
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Profile Builder!",
+          "id": "profile-builder"
+        },
+        {
+          "type": "paragraph",
+          "content": "In it&#39;s place is the &quot;Profile Builder&quot; (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It&#39;s pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -&gt; resolution -&gt; compression -&gt; encode type -&gt; codec -&gt; HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the &quot;trying to get the profile I want&quot; issue as it starts pretty broad and gets increasingly more specific the more things you choose. It&#39;s up now, give it a playwith; let me know if its good / bad / needs changes: <a href=\"https://dictionarry.dev/builder\">Profile Buider</a>"
+        },
+        {
+          "type": "paragraph",
+          "content": "<img src=\"https://i.imgur.com/ka8KSHl.png\" alt=\"Profile Builder\">"
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Encode Efficiency Index",
+          "id": "encode-efficiency-index"
+        },
+        {
+          "type": "paragraph",
+          "content": "Here we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres&#39;s the play-by-play:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.",
+            "It can discern transparency by targeting ratios at which a codec begins to &quot;saturate&quot;",
+            "It can discern efficiency by targeting ratios at which a codec reaches it&#39;s &quot;efficiency apex&quot;"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail <a href=\"https://dictionarry.dev/wiki/EEi\">here</a>. Months of research and iteration has gone into this, and I really think this is Dictionarry&#39;s biggest asset so far. When AV1 profiles become a thing, this metric is ready for it."
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "No More Parsing Codecs!!!!",
+          "id": "no-more-parsing-codecs"
+        },
+        {
+          "type": "paragraph",
+          "content": "If you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don&#39;t have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable"
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!",
+          "id": "2160p-quality-encode-profile-release-group-tierlist"
+        },
+        {
+          "type": "paragraph",
+          "content": "Using EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No &quot;popular&quot; vote. Whenever something isn&#39;t documented, we simply add that movie / tv show to the data source and groupings update automatically. It&#39;s almost like magic."
+        },
+        {
+          "type": "paragraph",
+          "content": "This metric has made the 2160p Quality profile possible and i dare say it&#39;s the most comprehensive one I&#39;ve worked on thus far. Give the quality profile and tier lists a read here:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "<a href=\"https://dictionarry.dev/profiles/2160p-quality\">216p Quality Profile</a>",
+            "<a href=\"https://dictionarry.dev/tiers/2160p/quality\">2160p Quality Release Group Tiers</a>"
+          ]
+        },
+        {
+          "type": "header",
+          "level": 4,
+          "text": "Thanks",
+          "id": "thanks"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Thanks to @seraphys for helping out with the profile creation / giving constant feedback.",
+            "Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn&#39;t been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Show them some love."
+        },
+        {
+          "type": "header",
+          "level": 2,
+          "text": "Profilarr",
+          "id": "profilarr"
+        },
+        {
+          "type": "paragraph",
+          "content": "Almost done, I took a break for a couple weeks to finish up the website but I&#39;m gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It&#39;s hard to say how long this is gonna take since I&#39;m basically learning it all on the fly so bare with me on this. But, it&#39;s almost done and a beta test will be out soon (hopefully)"
+        }
+      ],
       "markdown": "\nHey everyone, medium-ish update today.\n\n## Website 2.0\n\nI've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a new site using Next.js that uses ISR to rebuild its content using the dictionarry database. Basically this just means:\n\n- Database gets an update -> Website sees its data is stale -> Website rebuilds itself with new data -> Santiago smiles in not needing to do anything\n\nThis all ties into the whole \"write once\" philosophy that I instilled with Profilarr and has made development much easier. There are still quite a few layout issues and perhaps a devlog refactor I need to fit in somewhere, but I'm happy to share it with you guys as it is.\n\n[Website 2.0](https://dictionarry.dev/)\n\n![website2.0](https://i.imgur.com/eORTwml.png)\n\nThe old site will go down soon, sorry if I broke anyone's workflows D:\n\n### Profile Selector?\n\nThis idea has gone through many iterations since i started Dictionarry last year.\n\n1. A static flowchart with not nearly enough information / choice: https://github.com/santiagosayshey/website/blob/030f3631b4f6fffdb7fa9f4696e5d12defc84a46/docs/Profiles/flowchart.png\n2. The \"Profile Selector\" (terrible name): https://selectarr.pages.dev/\n3. Frankenstein's triangle: [Discord Link](https://discord.com/channels/1202375791556431892/1246504849265266738/1246536424925171925)\n\nFrankenstein's triangle was supposed to be what i shipped with the new website (and I actually finished it too!). It worked by calculating the area of the efficiency/quality/compatibility triangle using some formula named after some guy i forget, to guesstimate user choice based on their previous selection. It did this by normalizing the \"score\" of each profile on each of it's axes and finding the best fitting triangle that used the axis that was changed.\n\nResults were pretty good but I felt that it abstracted _too much_ of what made any user choice meaningful so I decided to scrap it.\n\n### Profile Builder!\n\nIn it's place is the \"Profile Builder\" (maybe also a terrible name). It still attempts to abstract audio/video down into more quantifiable groupings, but limits itself to explanations of certain things where more abstraction is detrimental. It's pretty self explanatory once you use it, but basically you choose through increasingly niche groupings -> resolution -> compression -> encode type -> codec -> HDR. At each step, a list of recommended profiles will be shown. I think this new system helps to fix the \"trying to get the profile I want\" issue as it starts pretty broad and gets increasingly more specific the more things you choose. It's up now, give it a playwith; let me know if its good / bad / needs changes: [Profile Buider](https://dictionarry.dev/builder)\n\n![Profile Builder](https://i.imgur.com/ka8KSHl.png)\n\n## Encode Efficiency Index\n\nHere we go, meat and potatoes. This is another release group metric just like the Golden Popcorn Performance Index. Heres's the play-by-play:\n\n- It evaluates release groups on their average compression ratio (how big their encode is compared to a source), to discern quality and/or efficiency.\n- It can discern transparency by targeting ratios at which a codec begins to \"saturate\"\n- It can discern efficiency by targeting ratios at which a codec reaches it's \"efficiency apex\"\n\nThis is a heavily watered down explanation of the metric, you can read about it (with examples), in very heavy detail [here](https://dictionarry.dev/wiki/EEi). Months of research and iteration has gone into this, and I really think this is Dictionarry's biggest asset so far. When AV1 profiles become a thing, this metric is ready for it.\n\n#### No More Parsing Codecs!!!!\n\nIf you parse the efficiency of a release group directly, then you know youre getting something at a file size you want. This means we don't have to use h265 / x265 as a ridiculous proxy baseline to find content we want anymore. We can just downrank all h264 instead which is much more reliable\n\n#### 2160p Quality (Encode) Profile + Release Group Tierlist!!!!!!!!\n\nUsing EEI, we target 4k release groups at 55% target ratio to discern transparency. No golden popcorns needed, no complex trump parsing crap. No \"popular\" vote. Whenever something isn't documented, we simply add that movie / tv show to the data source and groupings update automatically. It's almost like magic.\n\nThis metric has made the 2160p Quality profile possible and i dare say it's the most comprehensive one I've worked on thus far. Give the quality profile and tier lists a read here:\n\n- [216p Quality Profile](https://dictionarry.dev/profiles/2160p-quality)\n- [2160p Quality Release Group Tiers](https://dictionarry.dev/tiers/2160p/quality)\n\n#### Thanks\n\n- Thanks to @seraphys for helping out with the profile creation / giving constant feedback.\n- Thanks to @erphise for being a tester / the catalyst for the creation of this metric. If they hadn't been testing out the HEVC profile, we never would have talked about compression ratios which never meant I got the idea for the metric in the first place.\n\nShow them some love.\n\n## Profilarr\n\nAlmost done, I took a break for a couple weeks to finish up the website but I'm gonna get rolling again soon. I just finalized authentication, database migrations and the pull module. The only major thing left is getting everything ready for production. This means setting up the docker image, unraid template, etc, etc. It's hard to say how long this is gonna take since I'm basically learning it all on the fly so bare with me on this. But, it's almost done and a beta test will be out soon (hopefully)\n",
       "navigation": [
         {
@@ -144388,7 +148134,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-06T14:42:51.382Z",
+  "lastGenerated": "2025-08-06T15:59:54.940Z",
   "version": "1.0.0"
 } as const;
 

@@ -1,0 +1,529 @@
+import { marked } from 'marked';
+
+// Configure marked globally for consistent processing
+marked.use({
+  gfm: true,
+  breaks: false,
+  pedantic: false,
+  smartypants: false
+});
+
+// Block types
+export type Block = 
+  | ParagraphBlock
+  | HeaderBlock
+  | CodeBlock
+  | TableBlock
+  | MathBlock
+  | ListBlock
+  | BlockquoteBlock
+  | FootnoteBlock;
+
+interface ParagraphBlock {
+  type: 'paragraph';
+  content: string;
+}
+
+interface HeaderBlock {
+  type: 'header';
+  level: number;
+  text: string;
+  id: string;
+}
+
+interface CodeBlock {
+  type: 'code';
+  language: string;
+  code: string;
+}
+
+interface TableBlock {
+  type: 'table';
+  headers: string[];
+  rows: string[][];
+}
+
+interface MathBlock {
+  type: 'math';
+  display: boolean; // true for block, false for inline
+  content: string;
+}
+
+interface ListBlock {
+  type: 'list';
+  ordered: boolean;
+  items: string[];
+}
+
+interface BlockquoteBlock {
+  type: 'blockquote';
+  content: string;
+}
+
+interface FootnoteBlock {
+  type: 'footnote';
+  id: string;
+  content: string;
+}
+
+export interface ParsedContent {
+  blocks: Block[];
+  navigation: (string | NavigationItem)[];
+}
+
+interface NavigationItem {
+  title: string;
+  children?: (string | NavigationItem)[];
+}
+
+// Main parser function
+export function parseMarkdown(markdown: string): ParsedContent {
+  const lines = markdown.split('\n');
+  const blocks: Block[] = [];
+  const headers: { title: string; level: number }[] = [];
+  
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    
+    // Skip empty lines
+    if (!line.trim()) {
+      i++;
+      continue;
+    }
+    
+    // Check for math blocks
+    if (line.trim().startsWith('$$')) {
+      const result = parseMathBlock(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Check for code blocks
+    if (line.trim().startsWith('```')) {
+      const result = parseCodeBlock(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Check for tables
+    if (isTableStart(lines, i)) {
+      const result = parseTable(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Check for headers
+    if (line.match(/^#{1,6}\s+/)) {
+      const result = parseHeader(line);
+      headers.push({ title: result.block.text, level: result.block.level });
+      blocks.push(result.block);
+      i++;
+      continue;
+    }
+    
+    // Check for lists
+    if (line.match(/^[\*\-\+]\s+/) || line.match(/^\d+\.\s+/)) {
+      const result = parseList(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Check for blockquotes
+    if (line.startsWith('>')) {
+      const result = parseBlockquote(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Check for footnotes
+    if (line.match(/^\[\^[\w\d]+\]:/)) {
+      const result = parseFootnote(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+    
+    // Parse as paragraph
+    const result = parseParagraph(lines, i);
+    blocks.push(result.block);
+    i = result.nextIndex;
+  }
+  
+  // Build navigation from headers
+  const navigation = headers.length === 0 
+    ? ['Overview'] 
+    : buildNavigation(headers);
+  
+  return {
+    blocks,
+    navigation
+  };
+}
+
+// Parse math block ($$...$$)
+function parseMathBlock(lines: string[], startIndex: number): { block: MathBlock; nextIndex: number } {
+  const endIndex = findClosingDelimiter(lines, startIndex, '$$');
+  // Preserve the exact content including line breaks and formatting
+  const mathContent = lines.slice(startIndex + 1, endIndex).join('\n');
+  
+  return {
+    block: {
+      type: 'math',
+      display: true,
+      content: mathContent
+    },
+    nextIndex: endIndex + 1
+  };
+}
+
+// Parse code block with language
+function parseCodeBlock(lines: string[], startIndex: number): { block: CodeBlock; nextIndex: number } {
+  const openingLine = lines[startIndex];
+  const language = openingLine.slice(3).trim() || 'plaintext';
+  const endIndex = findClosingDelimiter(lines, startIndex, '```');
+  
+  const codeLines = lines.slice(startIndex + 1, endIndex);
+  const code = codeLines.join('\n');
+  
+  return {
+    block: {
+      type: 'code',
+      language,
+      code
+    },
+    nextIndex: endIndex + 1
+  };
+}
+
+// Parse table
+function parseTable(lines: string[], startIndex: number): { block: TableBlock; nextIndex: number } {
+  const headers: string[] = [];
+  const rows: string[][] = [];
+  
+  let i = startIndex;
+  
+  // Parse header row
+  if (lines[i].includes('|')) {
+    headers.push(...parseTableRow(lines[i]));
+    i++;
+  }
+  
+  // Skip separator row (|---|---|)
+  if (lines[i] && lines[i].match(/^\|?\s*:?-+:?\s*\|/)) {
+    i++;
+  }
+  
+  // Parse data rows
+  while (i < lines.length && lines[i].includes('|')) {
+    rows.push(parseTableRow(lines[i]));
+    i++;
+  }
+  
+  return {
+    block: {
+      type: 'table',
+      headers,
+      rows
+    },
+    nextIndex: i
+  };
+}
+
+// Parse a single table row
+function parseTableRow(line: string): string[] {
+  return line
+    .split('|')
+    .map(cell => {
+      const trimmed = cell.trim();
+      // Process inline markdown in table cells (bold, italic, links, etc.)
+      return trimmed ? processInlineElements(trimmed) : '';
+    })
+    .filter((cell, index, arr) => {
+      // Remove empty first and last elements from pipe delimiters
+      return !(index === 0 && cell === '') && !(index === arr.length - 1 && cell === '');
+    });
+}
+
+// Parse header
+function parseHeader(line: string): { block: HeaderBlock } {
+  const match = line.match(/^(#{1,6})\s+(.+)$/);
+  if (!match) {
+    return {
+      block: {
+        type: 'header',
+        level: 1,
+        text: line,
+        id: sanitizeForAnchor(line)
+      }
+    };
+  }
+  
+  const level = match[1].length;
+  const text = match[2].trim();
+  const id = sanitizeForAnchor(text);
+  
+  return {
+    block: {
+      type: 'header',
+      level,
+      text,
+      id
+    }
+  };
+}
+
+// Parse list
+function parseList(lines: string[], startIndex: number): { block: ListBlock; nextIndex: number } {
+  const items: string[] = [];
+  const firstLine = lines[startIndex];
+  const ordered = /^\d+\.\s+/.test(firstLine);
+  
+  let i = startIndex;
+  while (i < lines.length) {
+    const line = lines[i];
+    const unorderedMatch = line.match(/^[\*\-\+]\s+(.+)/);
+    const orderedMatch = line.match(/^\d+\.\s+(.+)/);
+    
+    if (ordered && orderedMatch) {
+      // Process inline elements for list items
+      items.push(processInlineElements(orderedMatch[1]));
+      i++;
+    } else if (!ordered && unorderedMatch) {
+      // Process inline elements for list items
+      items.push(processInlineElements(unorderedMatch[1]));
+      i++;
+    } else if (line.trim() === '') {
+      // Empty line might separate lists
+      i++;
+      break;
+    } else if (line.startsWith('  ') || line.startsWith('\t')) {
+      // Continuation of previous item
+      if (items.length > 0) {
+        items[items.length - 1] += ' ' + processInlineElements(line.trim());
+      }
+      i++;
+    } else {
+      // Different content type
+      break;
+    }
+  }
+  
+  return {
+    block: {
+      type: 'list',
+      ordered,
+      items
+    },
+    nextIndex: i
+  };
+}
+
+// Parse blockquote
+function parseBlockquote(lines: string[], startIndex: number): { block: BlockquoteBlock; nextIndex: number } {
+  const contentLines: string[] = [];
+  
+  let i = startIndex;
+  while (i < lines.length && lines[i].startsWith('>')) {
+    const content = lines[i].replace(/^>\s?/, '');
+    contentLines.push(content);
+    i++;
+  }
+  
+  // Process inline elements in the blockquote content
+  const fullContent = contentLines.join(' ').trim();
+  const processedContent = processInlineElements(fullContent);
+  
+  return {
+    block: {
+      type: 'blockquote',
+      content: processedContent
+    },
+    nextIndex: i
+  };
+}
+
+// Parse footnote
+function parseFootnote(lines: string[], startIndex: number): { block: FootnoteBlock; nextIndex: number } {
+  const line = lines[startIndex];
+  const match = line.match(/^\[\^([\w\d]+)\]:\s*(.+)/);
+  
+  if (!match) {
+    // Shouldn't happen but handle gracefully
+    return {
+      block: {
+        type: 'footnote',
+        id: 'unknown',
+        content: line
+      },
+      nextIndex: startIndex + 1
+    };
+  }
+  
+  const id = match[1];
+  const content = match[2];
+  
+  // Process inline elements in the footnote content
+  const processedContent = processInlineElements(content);
+  
+  return {
+    block: {
+      type: 'footnote',
+      id,
+      content: processedContent
+    },
+    nextIndex: startIndex + 1
+  };
+}
+
+// Parse paragraph
+function parseParagraph(lines: string[], startIndex: number): { block: ParagraphBlock; nextIndex: number } {
+  const paragraphLines: string[] = [];
+  
+  let i = startIndex;
+  while (i < lines.length) {
+    const line = lines[i];
+    
+    // Stop at special markers
+    if (!line.trim() || 
+        line.match(/^#{1,6}\s+/) ||
+        line.trim().startsWith('```') ||
+        line.trim().startsWith('$$') ||
+        line.startsWith('>') ||
+        line.match(/^[\*\-\+]\s+/) ||
+        line.match(/^\d+\.\s+/) ||
+        isTableStart(lines, i)) {
+      break;
+    }
+    
+    paragraphLines.push(line);
+    i++;
+  }
+  
+  // Preserve line breaks - join with space but keep double line breaks
+  const content = paragraphLines
+    .map(line => line.trim())
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  // Process inline elements (links, bold, italic, inline math, etc.)
+  const processedContent = processInlineElements(content);
+  
+  return {
+    block: {
+      type: 'paragraph',
+      content: processedContent
+    },
+    nextIndex: i
+  };
+}
+
+// Process inline elements in text
+function processInlineElements(text: string): string {
+  // Store math expressions to restore later
+  const mathExpressions: string[] = [];
+  
+  // Replace inline math with numbered placeholders
+  text = text.replace(/\$([^$]+)\$/g, (match, math) => {
+    const index = mathExpressions.length;
+    mathExpressions.push(math);
+    // Use a placeholder that won't be interpreted as markdown
+    return `MATHBLOCK${index}MATHBLOCK`;
+  });
+  
+  // Handle footnote references [^1], [^2], etc.
+  text = text.replace(/\[\^([\w\d]+)\]/g, (match, id) => {
+    return `<sup><a href="#fn-${id}" class="footnote-ref">[${id}]</a></sup>`;
+  });
+  
+  // Use marked for inline processing (bold, italic, links, etc.)
+  let processed = marked.parseInline(text);
+  
+  // Restore math expressions
+  mathExpressions.forEach((math, index) => {
+    const placeholder = `MATHBLOCK${index}MATHBLOCK`;
+    const replacement = `<math-inline>${math}</math-inline>`;
+    // Use a loop to ensure all instances are replaced
+    while (processed.includes(placeholder)) {
+      processed = processed.replace(placeholder, replacement);
+    }
+  });
+  
+  return processed;
+}
+
+// Check if current position starts a table
+function isTableStart(lines: string[], index: number): boolean {
+  if (index >= lines.length) return false;
+  
+  const currentLine = lines[index];
+  const nextLine = lines[index + 1];
+  
+  // Check if current line has pipes and next line is a separator
+  return currentLine.includes('|') && 
+         nextLine && 
+         nextLine.match(/^\|?\s*:?-+:?\s*\|/);
+}
+
+// Find closing delimiter for blocks
+function findClosingDelimiter(lines: string[], startIndex: number, delimiter: string): number {
+  for (let i = startIndex + 1; i < lines.length; i++) {
+    if (lines[i].trim().startsWith(delimiter)) {
+      return i;
+    }
+  }
+  return lines.length - 1;
+}
+
+// Build navigation from headers
+function buildNavigation(headers: { title: string; level: number }[]): (string | NavigationItem)[] {
+  const result: (string | NavigationItem)[] = [];
+  const stack: { item: NavigationItem; level: number }[] = [];
+  
+  for (const header of headers) {
+    while (stack.length > 0 && stack[stack.length - 1].level >= header.level) {
+      stack.pop();
+    }
+    
+    const currentIndex = headers.indexOf(header);
+    const hasChildren = headers.slice(currentIndex + 1).some(h => h.level === header.level + 1);
+    
+    if (hasChildren) {
+      const navItem: NavigationItem = {
+        title: header.title,
+        children: []
+      };
+      
+      if (stack.length === 0) {
+        result.push(navItem);
+      } else {
+        stack[stack.length - 1].item.children!.push(navItem);
+      }
+      
+      stack.push({ item: navItem, level: header.level });
+    } else {
+      if (stack.length === 0) {
+        result.push(header.title);
+      } else {
+        stack[stack.length - 1].item.children!.push(header.title);
+      }
+    }
+  }
+  
+  return result;
+}
+
+// Utility function
+function sanitizeForAnchor(text: string): string {
+  return text
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '-');
+}

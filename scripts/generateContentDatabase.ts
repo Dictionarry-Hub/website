@@ -1,46 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import { marked } from 'marked';
 import matter from 'gray-matter';
-import hljs from 'highlight.js';
 import { execSync } from 'child_process';
+import { parseMarkdown } from './parseMarkdown';
 
-// Configure marked to generate header IDs
-marked.setOptions({
-  gfm: true,
-  breaks: true,
-  headerIds: true,
-  mangle: false
-});
-
-// Add extension to ensure header IDs are generated
-marked.use({
-  extensions: [
-    {
-      name: 'heading',
-      level: 'block',
-      start(src) { return src.match(/^#{1,6}\s/)?.index; },
-      tokenizer(src) {
-        const match = src.match(/^(#{1,6})\s+(.+?)(?:\n|$)/);
-        if (match) {
-          const level = match[1].length;
-          const text = match[2].trim();
-          return {
-            type: 'heading',
-            raw: match[0],
-            depth: level,
-            text: text
-          };
-        }
-      },
-      renderer(token) {
-        const id = sanitizeForAnchor(token.text);
-        return `<h${token.depth} id="${id}">${token.text}</h${token.depth}>\n`;
-      }
-    }
-  ]
-});
+// Keep configuration minimal as parseMarkdown handles most processing
 
 // Unified content entry interface
 interface ContentEntry {
@@ -55,7 +20,7 @@ interface ContentEntry {
   description?: string;
   data?: any; // For YAML content
   frontmatter?: any; // For markdown frontmatter
-  html?: string; // Processed HTML for markdown
+  blocks?: any[]; // Structured blocks for markdown
   markdown?: string; // Raw markdown content
   
   // Navigation
@@ -77,10 +42,6 @@ interface NavigationItem {
   level?: number;
 }
 
-interface HeaderInfo {
-  title: string;
-  level: number;
-}
 
 interface ContentDatabase {
   entries: ContentEntry[];
@@ -441,6 +402,14 @@ async function processYamlFile(
   }
 }
 
+function calculateReadingTime(text: string): number {
+  // Average reading speed is 200-250 words per minute
+  const wordsPerMinute = 225;
+  const words = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return minutes;
+}
+
 function processMarkdownFile(
   filePath: string,
   basePath: string,
@@ -453,34 +422,14 @@ function processMarkdownFile(
     const filename = path.basename(filePath);
     const slug = slugify(filename.replace('.md', ''));
     
-    // Process markdown to HTML
-    let html = marked(markdown);
+    // Calculate reading time
+    const plainText = stripMarkdown(markdown);
+    const readingTime = calculateReadingTime(plainText);
     
-    // Extract headers and build navigation
-    const headers = extractHeaders(markdown);
-    const navigation = buildNestedNavigation(headers);
-    
-    // Add syntax highlighting
-    html = html.replace(/<pre><code class="language-(\w+)">([\s\S]*?)<\/code><\/pre>/g, (match, lang, code) => {
-      try {
-        const decodedCode = code.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-        const highlighted = hljs.highlight(decodedCode, { language: lang }).value;
-        return `<pre><code class="hljs language-${lang}">${highlighted}</code></pre>`;
-      } catch (err) {
-        return match;
-      }
-    });
-    
-    // Handle code blocks without language
-    html = html.replace(/<pre><code>([\s\S]*?)<\/code><\/pre>/g, (match, code) => {
-      try {
-        const decodedCode = code.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-        const highlighted = hljs.highlightAuto(decodedCode).value;
-        return `<pre><code class="hljs">${highlighted}</code></pre>`;
-      } catch (err) {
-        return match;
-      }
-    });
+    // Process markdown with our custom parser to get structured blocks
+    const parsed = parseMarkdown(markdown);
+    const blocks = parsed.blocks;
+    const navigation = parsed.navigation;
     
     // Determine route
     const route = slug === 'home' ? '/' : `${basePath}/${slug}`;
@@ -497,8 +446,11 @@ function processMarkdownFile(
       category,
       title,
       description,
-      frontmatter,
-      html,
+      frontmatter: {
+        ...frontmatter,
+        readingTime
+      },
+      blocks,
       markdown,
       navigation,
       searchText: sanitizeForSearch(`${title} ${description} ${stripMarkdown(markdown)}`),
