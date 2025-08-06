@@ -127,23 +127,25 @@
         {#if regexUrl}
           <a 
             href={regexUrl}
-            class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg p-3 relative block hover:border-neutral-400 dark:hover:border-neutral-500 transition-colors cursor-pointer"
+            class="group bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg p-3 relative block hover:border-blue-500 dark:hover:border-blue-500 hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-all duration-200 cursor-pointer"
           >
-            <!-- Required/Negate badges in top right -->
-            {#if condition.required || condition.negate}
-              <div class="absolute top-2 right-2 flex items-center gap-1">
-                {#if condition.required}
-                  <span class="w-5 h-5 bg-green-100 dark:bg-green-900/30 rounded flex items-center justify-center" title="Required">
-                    <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
-                  </span>
-                {/if}
-                {#if condition.negate}
-                  <span class="w-5 h-5 bg-red-100 dark:bg-red-900/30 rounded flex items-center justify-center" title="Negate">
-                    <X class="w-3 h-3 text-red-600 dark:text-red-400" />
-                  </span>
-                {/if}
-              </div>
-            {/if}
+            <!-- Badges in top right -->
+            <div class="absolute top-2 right-2 flex items-center gap-1">
+              <!-- Regex Icon -->
+              <span class="w-5 h-5 bg-blue-100 dark:bg-blue-900/30 rounded flex items-center justify-center" title="Regex Pattern">
+                <Code2 class="w-3 h-3 text-blue-600 dark:text-blue-400" />
+              </span>
+              {#if condition.required}
+                <span class="w-5 h-5 bg-green-100 dark:bg-green-900/30 rounded flex items-center justify-center" title="Required">
+                  <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
+                </span>
+              {/if}
+              {#if condition.negate}
+                <span class="w-5 h-5 bg-red-100 dark:bg-red-900/30 rounded flex items-center justify-center" title="Negate">
+                  <X class="w-3 h-3 text-red-600 dark:text-red-400" />
+                </span>
+              {/if}
+            </div>
 
             <!-- Content -->
             <div>
@@ -151,7 +153,7 @@
               <div class="flex items-start gap-2">
                 <svelte:component 
                   this={conditionIcons[condition.type] || AlertCircle} 
-                  class="w-4 h-4 text-neutral-500 dark:text-neutral-400 mt-0.5 flex-shrink-0" 
+                  class="w-4 h-4 text-neutral-500 dark:text-neutral-400 mt-0.5 flex-shrink-0 group-hover:scale-105 transition-transform duration-200" 
                 />
                 <h3 class="text-sm font-medium text-neutral-900 dark:text-white pr-8 flex-1">
                   {condition.name || typeLabels[condition.type] || 'Unknown'}

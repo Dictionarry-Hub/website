@@ -25,6 +25,7 @@
   import NamingPage from './mediaManagement/namingPage.svelte'
   import QualityDefinitionsPage from './mediaManagement/qualityDefinitionsPage.svelte'
   import MiscSettingsPage from './mediaManagement/miscSettingsPage.svelte'
+  import WikiPage from './wiki/landing/page.svelte'
   import NotFound from '@shared/components/notFound.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
@@ -52,6 +53,7 @@
     '/media-management/naming': NamingPage,
     '/media-management/qualitydefinitions': QualityDefinitionsPage,
     '/media-management/misc': MiscSettingsPage,
+    '/wiki': WikiPage,
   }
   
   // Dynamic route patterns
