@@ -1,6 +1,6 @@
 <script>
   import { router } from 'tinro';
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '@db';
   import NotFound from '@shared/components/notFound.svelte';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onDestroy } from 'svelte';

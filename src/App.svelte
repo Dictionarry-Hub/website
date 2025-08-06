@@ -17,7 +17,7 @@
   import DevLogPage from './devLogs/devLogPage.svelte'
   import QualityProfilePage from './qualityProfile/landing/page.svelte'
   import QualityProfileSlug from './qualityProfile/slug/page.svelte'
-  import CustomFormatSlug from './customFormat/[slug].svelte'
+  import CustomFormatSlug from './customFormat/slug/page.svelte'
   import RegexPatternPage from './regexPattern/landing/page.svelte'
   import RegexPatternSlug from './regexPattern/slug/page.svelte'
   import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
@@ -30,9 +30,6 @@
   import { initAnchorScrolling } from '@shared/utils/scrollToAnchor'
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
-  
-  // Import generated content database at build time
-  import { contentDatabase } from './generated/contentDatabase'
   
   // Route configuration - single source of truth for all routes
   const routeConfig = {

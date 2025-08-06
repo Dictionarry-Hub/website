@@ -1,7 +1,7 @@
 <script>
   import SidebarSection from './sidebarSection.svelte';
   import SidebarItem from './sidebarItem.svelte';
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '@db';
   import { router } from 'tinro';
   
   // Get current path for active state

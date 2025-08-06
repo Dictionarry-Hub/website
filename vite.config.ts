@@ -48,6 +48,7 @@ export default defineConfig({
       '@pages': resolve(__dirname, './src/pages'),
       '@shared': resolve(__dirname, './src/shared'),
       '@ui': resolve(__dirname, './src/shared/ui'),
+      '@db': resolve(__dirname, './src/generated/contentDatabase.ts'),
     }
   },
   base: './' // For static site deployment

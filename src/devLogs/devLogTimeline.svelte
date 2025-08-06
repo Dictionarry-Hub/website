@@ -1,5 +1,5 @@
 <script>
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '@db';
   import { onMount } from 'svelte';
   import { clearNavigation } from '@shared/stores/navigation';
   import VerticalTimeline from './verticalTimeline.svelte';

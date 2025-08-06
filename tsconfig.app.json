@@ -14,7 +14,8 @@
       "@/*": ["src/*"],
       "@pages/*": ["src/pages/*"],
       "@shared/*": ["src/shared/*"],
-      "@ui/*": ["src/shared/ui/*"]
+      "@ui/*": ["src/shared/ui/*"],
+      "@db": ["src/generated/contentDatabase.ts"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.ts"]

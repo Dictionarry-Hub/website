@@ -1,6 +1,6 @@
 import { writable, derived, get } from 'svelte/store';
 import { filterStore } from './filter';
-import { contentDatabase } from '../../generated/contentDatabase';
+import { contentDatabase } from '@db';
 
 // Store for current search term
 export const searchTerm = writable<string>('');

@@ -1,10 +1,10 @@
 <script>
   import { router } from 'tinro';
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '@db';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
-  import Overview from './components/overview.svelte';
-  import Conditions from './components/conditions.svelte';
+  import Overview from './overview/overview.svelte';
+  import Conditions from './conditions/conditions.svelte';
   
   let formatEntry = null;
   

@@ -1,5 +1,5 @@
 <script>
-  import { contentDatabase } from '../generated/contentDatabase';
+  import { contentDatabase } from '@db';
 
   // Filter and sort dev log entries by date (newest first)
   const devLogEntries = contentDatabase.entries
