@@ -13,8 +13,8 @@
   import Sync from './gettingStarted/syncing.svelte'
   import Updates from './gettingStarted/updates.svelte'
   import Customizations from './gettingStarted/customizations.svelte'
-  import DevLogTimeline from './devLogs/devLogTimeline.svelte'
-  import DevLogPage from './devLogs/devLogPage.svelte'
+  import DevlogsLanding from './devlogs/landing/page.svelte'
+  import DevlogsSlug from './devlogs/slug/page.svelte'
   import QualityProfilePage from './qualityProfile/landing/page.svelte'
   import QualityProfileSlug from './qualityProfile/slug/page.svelte'
   import CustomFormatPage from './customFormat/landing/page.svelte'
@@ -47,7 +47,7 @@
     '/profilarr-setup/updates': Updates,
     '/profilarr-setup/customizations': Customizations,
     '/development': Development,
-    '/dev-logs': DevLogTimeline,
+    '/devlogs': DevlogsLanding,
     '/quality-profile': QualityProfilePage,
     '/custom-format': CustomFormatPage,
     '/regex-pattern': RegexPatternPage,
@@ -60,7 +60,7 @@
   
   // Dynamic route patterns
   const dynamicRoutes = [
-    { pattern: /^\/dev-logs\//, component: DevLogPage },
+    { pattern: /^\/devlogs\//, component: DevlogsSlug },
     { pattern: /^\/quality-profile\//, component: QualityProfileSlug },
     { pattern: /^\/custom-format\//, component: CustomFormatSlug },
     { pattern: /^\/regex-pattern\//, component: RegexPatternSlug },

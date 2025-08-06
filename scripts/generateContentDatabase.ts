@@ -527,11 +527,11 @@ function createStaticEntries(): ContentEntry[] {
       tags: ['media', 'management', 'settings', 'index']
     },
     {
-      id: 'dev-logs-index',
-      path: '/dev-logs',
+      id: 'devlogs-index',
+      path: '/devlogs',
       title: 'Development Logs',
       description: 'Timeline of development progress and updates',
-      category: 'dev-logs',
+      category: 'devlogs',
       tags: ['development', 'logs', 'timeline']
     }
   ];
@@ -579,7 +579,7 @@ async function generateContentDatabase(): Promise<void> {
   // Process markdown directories
   const markdownDirs = [
     { dir: './public/database/wiki', basePath: '/wiki', category: 'wiki' },
-    { dir: './public/database/dev_logs', basePath: '/dev-logs', category: 'dev-logs' }
+    { dir: './public/database/dev_logs', basePath: '/devlogs', category: 'devlogs' }
   ];
   
   for (const { dir, basePath, category } of markdownDirs) {

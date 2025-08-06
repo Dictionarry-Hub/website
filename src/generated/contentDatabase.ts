@@ -120,11 +120,11 @@ export const contentDatabase = {
       "navigation": []
     },
     {
-      "id": "dev-logs-index",
-      "path": "/dev-logs",
+      "id": "devlogs-index",
+      "path": "/devlogs",
       "title": "Development Logs",
       "description": "Timeline of development progress and updates",
-      "category": "dev-logs",
+      "category": "devlogs",
       "tags": [
         "development",
         "logs",
@@ -59830,11 +59830,11 @@ export const contentDatabase = {
       "lastModified": "2025-08-06T14:42:08.168Z"
     },
     {
-      "id": "dev-logs-architecture-overhaul",
-      "path": "/dev-logs/architecture-overhaul",
+      "id": "devlogs-architecture-overhaul",
+      "path": "/devlogs/architecture-overhaul",
       "type": "markdown",
       "slug": "architecture-overhaul",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Architecture Overhaul",
       "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
       "frontmatter": {
@@ -59906,11 +59906,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-markdown-test",
-      "path": "/dev-logs/markdown-test",
+      "id": "devlogs-markdown-test",
+      "path": "/devlogs/markdown-test",
       "type": "markdown",
       "slug": "markdown-test",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Markdown Formatting Test",
       "description": "A comprehensive test of all markdown formatting features",
       "frontmatter": {
@@ -60293,17 +60293,17 @@ export const contentDatabase = {
       "searchText": "markdown formatting test a comprehensive test of all markdown formatting features h1 header main title this is a paragraph under the main header it should have proper spacing and use the neutral color palette for both light and dark modes h2 header section title here s another paragraph lorem ipsum dolor sit amet consectetur adipiscing elit this text should wrap nicely and have good line height for readability h3 header subsection even more text here to test the h3 styling the headers should have proper hierarchy and spacing between them h4 header subsubsection even more text here to test the h4 styling the headers should have proper hierarchy and spacing between them paragraph and text formatting this is a bold text example and this is italic text you can also combine them like bold and italic text here s a new paragraph with some inline code formatting the code should have a background color and monospace font lists unordered list first item in the list second item with more text third item nested item another nested item back to main levels ordered list 1 first numbered item 2 second numbered item 3 third numbered item 1 nested numbered item 2 another nested numbered item 4 back to main level code blocks here s a code block with syntax javascript function testfunction const message hello world console log message if true return this is a test and here s a simple code block this is just plain text in a code block with multiple lines blockquotes this is a blockquote it should have a left border and italic styling it can span multiple lines and should look distinct from regular paragraphs here s another blockquote to test spacing between them links here s a link to example com and another link with title images here s an image this will show as broken since it s a placeholder alt text for image tables github flavored markdown header 1 header 2 header 3 row 1 col 1 row 1 col 2 row 1 col 3 row 2 col 1 row 2 col 2 row 2 col 3 row 3 col 1 row 3 col 2 row 3 col 3 horizontal rule here s text before a horizontal rule and here s text after the horizontal rule line breaks this line should break right here two spaces at end of line this is a new paragraph after the line break test mixed content test here s a paragraph with bold italic and inline code all together it also has a link in the middle list with code and links 1 first item with inline code 2 second item with a link 3 third item with bold text 4 fourth item with italic text blockquote with formatting this blockquote contains bold text italic text and inline code it also has a link and multiple paragraphs to test complex formatting within blockquotes final notes this test file should demonstrate all the major markdown formatting features each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes the styling should be consistent and readable across all elements",
       "searchWeight": 0.6,
       "tags": [
-        "dev-logs"
+        "devlogs"
       ],
       "filename": "Markdown Test.md",
       "lastModified": "2025-07-01T14:00:22.253Z"
     },
     {
-      "id": "dev-logs-modular-choices",
-      "path": "/dev-logs/modular-choices",
+      "id": "devlogs-modular-choices",
+      "path": "/devlogs/modular-choices",
       "type": "markdown",
       "slug": "modular-choices",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Modular Choices",
       "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
       "frontmatter": {
@@ -60414,11 +60414,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-profilarr-is-in-beta",
-      "path": "/dev-logs/profilarr-is-in-beta",
+      "id": "devlogs-profilarr-is-in-beta",
+      "path": "/devlogs/profilarr-is-in-beta",
       "type": "markdown",
       "slug": "profilarr-is-in-beta",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profilarr is in Beta 🚀",
       "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
       "frontmatter": {
@@ -60653,11 +60653,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-30T18:13:38.032Z"
     },
     {
-      "id": "dev-logs-profile-selector-v3",
-      "path": "/dev-logs/profile-selector-v3",
+      "id": "devlogs-profile-selector-v3",
+      "path": "/devlogs/profile-selector-v3",
       "type": "markdown",
       "slug": "profile-selector-v3",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profile Selector v3",
       "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
       "frontmatter": {
@@ -60729,11 +60729,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-profile-tweaks",
-      "path": "/dev-logs/profile-tweaks",
+      "id": "devlogs-profile-tweaks",
+      "path": "/devlogs/profile-tweaks",
       "type": "markdown",
       "slug": "profile-tweaks",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profile Tweaks",
       "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
       "frontmatter": {
@@ -60844,11 +60844,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-shiny-new-stuff",
-      "path": "/dev-logs/shiny-new-stuff",
+      "id": "devlogs-shiny-new-stuff",
+      "path": "/devlogs/shiny-new-stuff",
       "type": "markdown",
       "slug": "shiny-new-stuff",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Shiny New Stuff",
       "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
       "frontmatter": {
@@ -61066,11 +61066,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-vision-almost-realised",
-      "path": "/dev-logs/vision-almost-realised",
+      "id": "devlogs-vision-almost-realised",
+      "path": "/devlogs/vision-almost-realised",
       "type": "markdown",
       "slug": "vision-almost-realised",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Vision (Almost) Realised",
       "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
       "frontmatter": {
@@ -61174,11 +61174,11 @@ export const contentDatabase = {
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
     {
-      "id": "dev-logs-website-20",
-      "path": "/dev-logs/website-20",
+      "id": "devlogs-website-20",
+      "path": "/devlogs/website-20",
       "type": "markdown",
       "slug": "website-20",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Website 2.0",
       "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
       "frontmatter": {
@@ -61535,12 +61535,12 @@ export const contentDatabase = {
       "searchWeight": 0.7,
       "navigation": []
     },
-    "/dev-logs": {
-      "id": "dev-logs-index",
-      "path": "/dev-logs",
+    "/devlogs": {
+      "id": "devlogs-index",
+      "path": "/devlogs",
       "title": "Development Logs",
       "description": "Timeline of development progress and updates",
-      "category": "dev-logs",
+      "category": "devlogs",
       "tags": [
         "development",
         "logs",
@@ -120873,12 +120873,12 @@ export const contentDatabase = {
       "filename": "release-group-philosophy.md",
       "lastModified": "2025-08-06T14:42:08.168Z"
     },
-    "/dev-logs/architecture-overhaul": {
-      "id": "dev-logs-architecture-overhaul",
-      "path": "/dev-logs/architecture-overhaul",
+    "/devlogs/architecture-overhaul": {
+      "id": "devlogs-architecture-overhaul",
+      "path": "/devlogs/architecture-overhaul",
       "type": "markdown",
       "slug": "architecture-overhaul",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Architecture Overhaul",
       "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
       "frontmatter": {
@@ -120949,12 +120949,12 @@ export const contentDatabase = {
       "filename": "Architecture Overhaul.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/markdown-test": {
-      "id": "dev-logs-markdown-test",
-      "path": "/dev-logs/markdown-test",
+    "/devlogs/markdown-test": {
+      "id": "devlogs-markdown-test",
+      "path": "/devlogs/markdown-test",
       "type": "markdown",
       "slug": "markdown-test",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Markdown Formatting Test",
       "description": "A comprehensive test of all markdown formatting features",
       "frontmatter": {
@@ -121337,17 +121337,17 @@ export const contentDatabase = {
       "searchText": "markdown formatting test a comprehensive test of all markdown formatting features h1 header main title this is a paragraph under the main header it should have proper spacing and use the neutral color palette for both light and dark modes h2 header section title here s another paragraph lorem ipsum dolor sit amet consectetur adipiscing elit this text should wrap nicely and have good line height for readability h3 header subsection even more text here to test the h3 styling the headers should have proper hierarchy and spacing between them h4 header subsubsection even more text here to test the h4 styling the headers should have proper hierarchy and spacing between them paragraph and text formatting this is a bold text example and this is italic text you can also combine them like bold and italic text here s a new paragraph with some inline code formatting the code should have a background color and monospace font lists unordered list first item in the list second item with more text third item nested item another nested item back to main levels ordered list 1 first numbered item 2 second numbered item 3 third numbered item 1 nested numbered item 2 another nested numbered item 4 back to main level code blocks here s a code block with syntax javascript function testfunction const message hello world console log message if true return this is a test and here s a simple code block this is just plain text in a code block with multiple lines blockquotes this is a blockquote it should have a left border and italic styling it can span multiple lines and should look distinct from regular paragraphs here s another blockquote to test spacing between them links here s a link to example com and another link with title images here s an image this will show as broken since it s a placeholder alt text for image tables github flavored markdown header 1 header 2 header 3 row 1 col 1 row 1 col 2 row 1 col 3 row 2 col 1 row 2 col 2 row 2 col 3 row 3 col 1 row 3 col 2 row 3 col 3 horizontal rule here s text before a horizontal rule and here s text after the horizontal rule line breaks this line should break right here two spaces at end of line this is a new paragraph after the line break test mixed content test here s a paragraph with bold italic and inline code all together it also has a link in the middle list with code and links 1 first item with inline code 2 second item with a link 3 third item with bold text 4 fourth item with italic text blockquote with formatting this blockquote contains bold text italic text and inline code it also has a link and multiple paragraphs to test complex formatting within blockquotes final notes this test file should demonstrate all the major markdown formatting features each element should be properly styled with the neutral color palette and appropriate spacing for both light and dark modes the styling should be consistent and readable across all elements",
       "searchWeight": 0.6,
       "tags": [
-        "dev-logs"
+        "devlogs"
       ],
       "filename": "Markdown Test.md",
       "lastModified": "2025-07-01T14:00:22.253Z"
     },
-    "/dev-logs/modular-choices": {
-      "id": "dev-logs-modular-choices",
-      "path": "/dev-logs/modular-choices",
+    "/devlogs/modular-choices": {
+      "id": "devlogs-modular-choices",
+      "path": "/devlogs/modular-choices",
       "type": "markdown",
       "slug": "modular-choices",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Modular Choices",
       "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
       "frontmatter": {
@@ -121457,12 +121457,12 @@ export const contentDatabase = {
       "filename": "Modular Choices.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/profilarr-is-in-beta": {
-      "id": "dev-logs-profilarr-is-in-beta",
-      "path": "/dev-logs/profilarr-is-in-beta",
+    "/devlogs/profilarr-is-in-beta": {
+      "id": "devlogs-profilarr-is-in-beta",
+      "path": "/devlogs/profilarr-is-in-beta",
       "type": "markdown",
       "slug": "profilarr-is-in-beta",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profilarr is in Beta 🚀",
       "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
       "frontmatter": {
@@ -121696,12 +121696,12 @@ export const contentDatabase = {
       "filename": "Profilarr is in Beta 🚀.md",
       "lastModified": "2025-06-30T18:13:38.032Z"
     },
-    "/dev-logs/profile-selector-v3": {
-      "id": "dev-logs-profile-selector-v3",
-      "path": "/dev-logs/profile-selector-v3",
+    "/devlogs/profile-selector-v3": {
+      "id": "devlogs-profile-selector-v3",
+      "path": "/devlogs/profile-selector-v3",
       "type": "markdown",
       "slug": "profile-selector-v3",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profile Selector v3",
       "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
       "frontmatter": {
@@ -121772,12 +121772,12 @@ export const contentDatabase = {
       "filename": "Profile Selector v3.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/profile-tweaks": {
-      "id": "dev-logs-profile-tweaks",
-      "path": "/dev-logs/profile-tweaks",
+    "/devlogs/profile-tweaks": {
+      "id": "devlogs-profile-tweaks",
+      "path": "/devlogs/profile-tweaks",
       "type": "markdown",
       "slug": "profile-tweaks",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Profile Tweaks",
       "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
       "frontmatter": {
@@ -121887,12 +121887,12 @@ export const contentDatabase = {
       "filename": "Profile Tweaks.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/shiny-new-stuff": {
-      "id": "dev-logs-shiny-new-stuff",
-      "path": "/dev-logs/shiny-new-stuff",
+    "/devlogs/shiny-new-stuff": {
+      "id": "devlogs-shiny-new-stuff",
+      "path": "/devlogs/shiny-new-stuff",
       "type": "markdown",
       "slug": "shiny-new-stuff",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Shiny New Stuff",
       "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
       "frontmatter": {
@@ -122109,12 +122109,12 @@ export const contentDatabase = {
       "filename": "Shiny New Stuff.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/vision-almost-realised": {
-      "id": "dev-logs-vision-almost-realised",
-      "path": "/dev-logs/vision-almost-realised",
+    "/devlogs/vision-almost-realised": {
+      "id": "devlogs-vision-almost-realised",
+      "path": "/devlogs/vision-almost-realised",
       "type": "markdown",
       "slug": "vision-almost-realised",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Vision (Almost) Realised",
       "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
       "frontmatter": {
@@ -122217,12 +122217,12 @@ export const contentDatabase = {
       "filename": "Vision Almost Realised.md",
       "lastModified": "2025-06-29T12:42:25.554Z"
     },
-    "/dev-logs/website-20": {
-      "id": "dev-logs-website-20",
-      "path": "/dev-logs/website-20",
+    "/devlogs/website-20": {
+      "id": "devlogs-website-20",
+      "path": "/devlogs/website-20",
       "type": "markdown",
       "slug": "website-20",
-      "category": "dev-logs",
+      "category": "devlogs",
       "title": "Website 2.0",
       "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
       "frontmatter": {
@@ -122467,7 +122467,7 @@ export const contentDatabase = {
         "regex-pattern-full-disc",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "122": [
         "wiki-edition-philosophy"
@@ -122510,7 +122510,7 @@ export const contentDatabase = {
         "regex-pattern-vvc"
       ],
       "300": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "400": [
         "regex-pattern-roku"
@@ -122527,7 +122527,7 @@ export const contentDatabase = {
       ],
       "1000": [
         "wiki-edition-philosophy",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "1080": [
         "regex-pattern-peacock-tv"
@@ -122672,7 +122672,7 @@ export const contentDatabase = {
       "welcome": [
         "getting-started-welcome",
         "getting-started-welcome",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "dictionarry": [
         "getting-started-welcome",
@@ -122689,16 +122689,16 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "your": [
         "getting-started-welcome",
@@ -122709,14 +122709,14 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "media": [
         "getting-started-welcome",
@@ -122748,8 +122748,8 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "automation": [
         "getting-started-welcome",
@@ -122767,8 +122767,8 @@ export const contentDatabase = {
       ],
       "hub": [
         "getting-started-welcome",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "profilarr": [
         "getting-started-profilarr",
@@ -122785,50 +122785,50 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "setup": [
         "getting-started-profilarr",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "set": [
         "getting-started-profilarr",
@@ -122839,11 +122839,11 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "and": [
         "getting-started-profilarr",
@@ -122851,7 +122851,7 @@ export const contentDatabase = {
         "quality-profile-index",
         "custom-format-index",
         "regex-pattern-index",
-        "dev-logs-index",
+        "devlogs-index",
         "quality-profile-1080p-balanced",
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality-hdr",
@@ -123099,132 +123099,132 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "configure": [
         "getting-started-profilarr",
@@ -123340,72 +123340,72 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "automated": [
         "getting-started-profilarr",
@@ -123557,32 +123557,32 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "profile": [
         "getting-started-profilarr",
@@ -123614,36 +123614,36 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "management": [
         "getting-started-profilarr",
@@ -123655,35 +123655,35 @@ export const contentDatabase = {
         "media-management-qualitydefinitions",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "development": [
         "getting-started-development",
         "getting-started-development",
-        "dev-logs-index",
-        "dev-logs-index",
+        "devlogs-index",
+        "devlogs-index",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "guide": [
         "getting-started-development",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "contribution": [
         "getting-started-development"
@@ -123699,35 +123699,35 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "browse": [
         "quality-profile-index",
@@ -123738,8 +123738,8 @@ export const contentDatabase = {
         "quality-profile-index",
         "custom-format-index",
         "regex-pattern-index",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "custom": [
         "custom-format-index",
@@ -123908,32 +123908,32 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "formats": [
         "custom-format-index",
@@ -123955,21 +123955,21 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "matching": [
         "custom-format-index",
@@ -124401,18 +124401,18 @@ export const contentDatabase = {
         "regex-pattern-x264",
         "regex-pattern-x265",
         "regex-pattern-xander",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "patterns": [
         "regex-pattern-index",
@@ -124420,16 +124420,16 @@ export const contentDatabase = {
         "custom-format-uhdbits",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "advanced": [
         "regex-pattern-index",
         "wiki-faq",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "settings": [
         "media-management-index",
@@ -124443,34 +124443,34 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "logs": [
-        "dev-logs-index",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-index",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "timeline": [
-        "dev-logs-index"
+        "devlogs-index"
       ],
       "progress": [
-        "dev-logs-index",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-index",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "updates": [
-        "dev-logs-index",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-index",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "1080p": [
         "quality-profile-1080p-balanced",
@@ -124547,17 +124547,17 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "balanced": [
         "quality-profile-1080p-balanced",
@@ -124577,7 +124577,7 @@ export const contentDatabase = {
         "custom-format-2160p-balanced-tier-2",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "targets": [
         "quality-profile-1080p-balanced",
@@ -124588,7 +124588,7 @@ export const contentDatabase = {
         "quality-profile-2160p-balanced",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "immutable": [
         "quality-profile-1080p-balanced",
@@ -124678,10 +124678,10 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "dls": [
         "quality-profile-1080p-balanced",
@@ -124790,52 +124790,52 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "fallback": [
         "quality-profile-1080p-balanced",
@@ -124849,8 +124849,8 @@ export const contentDatabase = {
         "custom-format-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision-without-fallback",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "transparent": [
         "quality-profile-1080p-balanced",
@@ -124961,16 +124961,16 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "the": [
         "quality-profile-1080p-balanced",
@@ -125375,187 +125375,187 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "golden": [
         "quality-profile-1080p-balanced",
@@ -125588,9 +125588,9 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "popcorn": [
         "quality-profile-1080p-balanced",
@@ -125609,8 +125609,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "performance": [
         "quality-profile-1080p-balanced",
@@ -125622,8 +125622,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "index": [
         "quality-profile-1080p-balanced",
@@ -125638,11 +125638,11 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "special": [
         "quality-profile-1080p-balanced",
@@ -125673,7 +125673,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "considerations": [
         "quality-profile-1080p-balanced",
@@ -125742,30 +125742,30 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "given": [
         "quality-profile-1080p-balanced",
@@ -125851,15 +125851,15 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "who": [
         "quality-profile-1080p-balanced",
@@ -125907,11 +125907,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "prioritize": [
         "quality-profile-1080p-balanced",
@@ -125964,9 +125964,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "optimisation": [
         "quality-profile-1080p-balanced",
@@ -126008,13 +126008,13 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "falling": [
         "quality-profile-1080p-balanced",
@@ -126023,16 +126023,16 @@ export const contentDatabase = {
       "somewhere": [
         "quality-profile-1080p-balanced",
         "quality-profile-2160p-balanced",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "around": [
         "quality-profile-1080p-balanced",
         "quality-profile-2160p-balanced",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "tier": [
         "quality-profile-1080p-balanced",
@@ -126104,10 +126104,10 @@ export const contentDatabase = {
         "custom-format-web-dl-tier-4",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "this": [
         "quality-profile-1080p-balanced",
@@ -126178,77 +126178,77 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "includes": [
         "quality-profile-1080p-balanced",
@@ -126258,7 +126258,7 @@ export const contentDatabase = {
         "regex-pattern-showtime-rename",
         "regex-pattern-showtime",
         "wiki-eei",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "like": [
         "quality-profile-1080p-balanced",
@@ -126284,19 +126284,19 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "bhdstudio": [
         "quality-profile-1080p-balanced",
@@ -126425,22 +126425,22 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "can": [
         "quality-profile-1080p-balanced",
@@ -126473,42 +126473,42 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "found": [
         "quality-profile-1080p-balanced",
@@ -126548,29 +126548,29 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "fall": [
         "quality-profile-1080p-balanced",
@@ -126625,12 +126625,12 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "releases": [
         "quality-profile-1080p-balanced",
@@ -126698,10 +126698,10 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "dvd": [
         "quality-profile-1080p-balanced",
@@ -126785,9 +126785,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "utilizes": [
         "quality-profile-1080p-quality-hdr",
@@ -126805,27 +126805,27 @@ export const contentDatabase = {
         "custom-format-special-edition-unwanted",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "dev": [
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality",
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "wiki": [
         "quality-profile-1080p-quality-hdr",
@@ -126834,7 +126834,7 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "regex-pattern-wiki",
         "regex-pattern-wiki",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "gppi": [
         "quality-profile-1080p-quality-hdr",
@@ -126856,9 +126856,9 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "target": [
         "quality-profile-1080p-quality-hdr",
@@ -126882,8 +126882,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "x265": [
         "quality-profile-1080p-quality-hdr",
@@ -126910,8 +126910,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "tiers": [
         "quality-profile-1080p-quality-hdr",
@@ -126920,10 +126920,10 @@ export const contentDatabase = {
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "prioritise": [
         "quality-profile-1080p-quality-hdr",
@@ -126933,8 +126933,8 @@ export const contentDatabase = {
         "quality-profile-720p-quality",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "high": [
         "quality-profile-1080p-quality-hdr",
@@ -126962,7 +126962,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "scores": [
         "quality-profile-1080p-quality-hdr",
@@ -126974,15 +126974,15 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff"
       ],
       "regular": [
         "quality-profile-1080p-quality-hdr",
         "custom-format-not-only-english-missing",
         "regex-pattern-dolby-vision-without-fallback",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "non": [
         "quality-profile-1080p-quality-hdr",
@@ -127005,7 +127005,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "then": [
         "quality-profile-1080p-quality-hdr",
@@ -127013,9 +127013,9 @@ export const contentDatabase = {
         "regex-pattern-bw",
         "wiki-edition-philosophy",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "optimised": [
         "quality-profile-1080p-quality-hdr",
@@ -127044,48 +127044,48 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "allowed": [
         "quality-profile-1080p-quality-hdr",
@@ -127114,11 +127114,11 @@ export const contentDatabase = {
         "regex-pattern-repack1",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "reputable": [
         "quality-profile-1080p-quality-hdr",
@@ -127183,13 +127183,13 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "has": [
         "quality-profile-1080p-quality-hdr",
@@ -127203,27 +127203,27 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "encoded": [
         "quality-profile-1080p-quality-hdr",
@@ -127287,25 +127287,25 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "uhd": [
         "quality-profile-1080p-quality-hdr",
@@ -127373,8 +127373,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "strictly": [
         "quality-profile-1080p-quality-hdr"
@@ -127475,22 +127475,22 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "tags": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "media-management-naming",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "lossless": [
         "quality-profile-1080p-remux",
@@ -127503,8 +127503,8 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "copies": [
         "quality-profile-1080p-remux",
@@ -127569,21 +127569,21 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "which": [
         "quality-profile-1080p-remux",
@@ -127609,19 +127609,19 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "based": [
         "quality-profile-1080p-remux",
@@ -127644,9 +127644,9 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "metric": [
         "quality-profile-1080p-remux",
@@ -127663,12 +127663,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "avoids": [
         "quality-profile-1080p-remux",
@@ -127679,8 +127679,8 @@ export const contentDatabase = {
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "circular": [
         "quality-profile-1080p-remux",
@@ -127711,10 +127711,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "discernable": [
         "quality-profile-1080p-remux",
@@ -127733,9 +127733,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "metrics": [
         "quality-profile-1080p-remux",
@@ -127821,14 +127821,14 @@ export const contentDatabase = {
         "regex-pattern-hdr",
         "regex-pattern-upscaled",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "used": [
         "quality-profile-1080p-remux",
@@ -127853,12 +127853,12 @@ export const contentDatabase = {
         "regex-pattern-xvid",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "indicate": [
         "quality-profile-1080p-remux",
@@ -127904,34 +127904,34 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "should": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "upgraded": [
         "quality-profile-1080p-remux",
@@ -127953,32 +127953,32 @@ export const contentDatabase = {
         "regex-pattern-wetv",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "helps": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "regex-pattern-mkv",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20"
       ],
       "grab": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "tagged": [
         "quality-profile-1080p-remux",
@@ -127988,7 +127988,7 @@ export const contentDatabase = {
       "fairly": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "common": [
         "quality-profile-1080p-remux",
@@ -127999,34 +127999,34 @@ export const contentDatabase = {
       "quite": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "few": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-eei",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "trackers": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "often": [
         "quality-profile-1080p-remux",
@@ -128064,35 +128064,35 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "best": [
         "quality-profile-1080p-remux",
@@ -128104,8 +128104,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "available": [
         "quality-profile-1080p-remux",
@@ -128115,15 +128115,15 @@ export const contentDatabase = {
         "regex-pattern-netflix",
         "regex-pattern-roku",
         "regex-pattern-viki",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "cannot": [
         "quality-profile-1080p-remux",
         "quality-profile-2160p-remux",
         "quality-profile-2160p-remux",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "falls": [
         "quality-profile-1080p-remux",
@@ -128190,11 +128190,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "lossy": [
         "quality-profile-2160p-balanced",
@@ -128239,36 +128239,36 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "since": [
         "quality-profile-2160p-balanced",
         "custom-format-unknown-lossless-audio",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "they": [
         "quality-profile-2160p-balanced",
@@ -128291,12 +128291,12 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "comparatively": [
         "quality-profile-2160p-balanced"
@@ -128307,18 +128307,18 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "larger": [
         "quality-profile-2160p-balanced",
@@ -128347,11 +128347,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "efficiency": [
         "quality-profile-2160p-quality",
@@ -128377,21 +128377,21 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "eei": [
         "quality-profile-2160p-quality",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "ratio": [
         "quality-profile-2160p-quality",
@@ -128416,8 +128416,8 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "additional": [
         "quality-profile-2160p-quality",
@@ -128451,24 +128451,24 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "help": [
         "quality-profile-2160p-quality",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "push": [
         "quality-profile-2160p-quality",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "lower": [
         "quality-profile-2160p-quality",
@@ -128503,14 +128503,14 @@ export const contentDatabase = {
         "quality-profile-2160p-quality",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "cases": [
         "quality-profile-2160p-quality",
         "wiki-eei",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "better": [
         "quality-profile-2160p-quality",
@@ -128542,11 +128542,11 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3"
       ],
       "sources": [
         "quality-profile-2160p-quality",
@@ -128556,9 +128556,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "video": [
         "quality-profile-2160p-remux",
@@ -128629,7 +128629,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "dolby": [
         "quality-profile-2160p-remux",
@@ -128662,8 +128662,8 @@ export const contentDatabase = {
         "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-formats",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks"
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks"
       ],
       "vision": [
         "quality-profile-2160p-remux",
@@ -128689,10 +128689,10 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "hdr10": [
         "quality-profile-2160p-remux",
@@ -128820,50 +128820,50 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "some": [
         "quality-profile-2160p-remux",
@@ -128878,30 +128878,30 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "dovi": [
         "quality-profile-2160p-remux",
@@ -128957,21 +128957,21 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "regardless": [
         "quality-profile-2160p-remux",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "720p": [
         "quality-profile-720p-quality",
@@ -128999,7 +128999,7 @@ export const contentDatabase = {
         "custom-format-720p-webrip",
         "custom-format-720p-webrip",
         "custom-format-720p",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "matches": [
         "custom-format-1080p-balanced-tier-1",
@@ -129169,7 +129169,7 @@ export const contentDatabase = {
         "regex-pattern-mkv",
         "regex-pattern-monkee",
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "under": [
         "custom-format-1080p-balanced-tier-1",
@@ -129203,8 +129203,8 @@ export const contentDatabase = {
         "custom-format-web-dl-tier-2",
         "custom-format-web-dl-tier-3",
         "custom-format-web-dl-tier-4",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff"
       ],
       "format": [
         "custom-format-1080p-balanced-tier-1",
@@ -129373,24 +129373,24 @@ export const contentDatabase = {
         "regex-pattern-vvc",
         "wiki-edition-philosophy",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "blurays": [
         "custom-format-1080p-bluray",
@@ -129414,7 +129414,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "works": [
         "custom-format-1080p-golden-popcorn",
@@ -129422,9 +129422,9 @@ export const contentDatabase = {
         "custom-format-sd-golden-popcorn",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "passthepopcorn": [
         "custom-format-1080p-golden-popcorn",
@@ -129472,8 +129472,8 @@ export const contentDatabase = {
         "media-management-naming",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "definition": [
         "custom-format-1080p",
@@ -129483,9 +129483,9 @@ export const contentDatabase = {
         "custom-format-576p",
         "custom-format-720p",
         "custom-format-720p",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "resolution": [
         "custom-format-1080p",
@@ -129512,11 +129512,11 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "providing": [
         "custom-format-1080p",
@@ -129533,9 +129533,9 @@ export const contentDatabase = {
         "custom-format-1080p",
         "custom-format-2160p",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "clarity": [
         "custom-format-1080p",
@@ -129654,9 +129654,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "pattern": [
         "custom-format-3d",
@@ -130076,8 +130076,8 @@ export const contentDatabase = {
         "regex-pattern-x264",
         "regex-pattern-x265",
         "regex-pattern-xander",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "480p": [
         "custom-format-480p-web-dl",
@@ -130123,7 +130123,7 @@ export const contentDatabase = {
       ],
       "save": [
         "custom-format-540p",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "space": [
         "custom-format-540p",
@@ -130175,11 +130175,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "maintaining": [
         "custom-format-540p",
@@ -130219,16 +130219,16 @@ export const contentDatabase = {
       ],
       "compatibility": [
         "custom-format-576p",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "improved": [
         "custom-format-720p",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "amzn": [
         "custom-format-amzn",
@@ -130341,16 +130341,16 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "atvp": [
         "custom-format-atvp",
@@ -130365,7 +130365,7 @@ export const contentDatabase = {
         "regex-pattern-apple-tv",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "av1": [
         "custom-format-av1",
@@ -130375,7 +130375,7 @@ export const contentDatabase = {
         "regex-pattern-av1",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "missing": [
         "custom-format-atmos-missing",
@@ -130402,7 +130402,7 @@ export const contentDatabase = {
         "custom-format-truehd-missing",
         "custom-format-uhd-bluray-missing",
         "custom-format-x265-missing",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "match": [
         "custom-format-atmos-missing",
@@ -130435,12 +130435,12 @@ export const contentDatabase = {
         "regex-pattern-uhd-bluray-missing-groups",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "label": [
         "custom-format-atmos-missing"
@@ -130479,7 +130479,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "digital": [
         "custom-format-bluray",
@@ -130565,9 +130565,9 @@ export const contentDatabase = {
       ],
       "gets": [
         "custom-format-bluray",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "its": [
         "custom-format-bluray",
@@ -130583,18 +130583,18 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "name": [
         "custom-format-bluray",
         "wiki-profilarr-casaos",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "blue": [
         "custom-format-bluray",
@@ -130610,12 +130610,12 @@ export const contentDatabase = {
       "read": [
         "custom-format-bluray",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "shorter": [
         "custom-format-bluray"
@@ -130679,22 +130679,22 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "data": [
         "custom-format-bluray",
@@ -130706,14 +130706,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "same": [
         "custom-format-bluray",
@@ -130721,10 +130721,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "physical": [
         "custom-format-bluray",
@@ -130753,10 +130753,10 @@ export const contentDatabase = {
         "custom-format-dvd",
         "custom-format-special-edition",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "dual": [
         "custom-format-bluray",
@@ -130840,9 +130840,9 @@ export const contentDatabase = {
         "regex-pattern-roku",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "dsnp": [
         "custom-format-dsnp",
@@ -130889,8 +130889,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta"
       ],
       "types": [
         "custom-format-dts-hd-ma",
@@ -130917,7 +130917,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "conflict": [
         "custom-format-dts-hd-ma",
@@ -130928,15 +130928,15 @@ export const contentDatabase = {
         "custom-format-flac",
         "custom-format-truehd",
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks"
       ],
       "direct": [
         "custom-format-dvd-remux",
         "custom-format-webrip",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "rip": [
         "custom-format-dvd-remux",
@@ -130972,9 +130972,9 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "encoding": [
         "custom-format-dvd-remux",
@@ -131067,7 +131067,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "versatile": [
         "custom-format-dvd",
@@ -131077,8 +131077,8 @@ export const contentDatabase = {
         "custom-format-dvd",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "widely": [
         "custom-format-dvd",
@@ -131116,7 +131116,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "suitable": [
         "custom-format-dvd",
@@ -131172,17 +131172,17 @@ export const contentDatabase = {
       "support": [
         "custom-format-dvd",
         "custom-format-uhd-bluray",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "sound": [
         "custom-format-dvd"
@@ -131215,7 +131215,7 @@ export const contentDatabase = {
         "custom-format-dvd",
         "regex-pattern-stan-rename",
         "regex-pattern-stan",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "accessibility": [
         "custom-format-dvd"
@@ -131246,8 +131246,8 @@ export const contentDatabase = {
         "custom-format-free25",
         "custom-format-free50",
         "custom-format-free75",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "free25": [
         "custom-format-free25"
@@ -131311,14 +131311,14 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "does": [
         "custom-format-hdr10-missing",
@@ -131328,32 +131328,32 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "work": [
         "custom-format-hdr10-missing",
         "custom-format-special-edition-unwanted",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "properly": [
         "custom-format-hdr10-missing",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "sonarr": [
         "custom-format-hdr10-missing",
@@ -131361,18 +131361,18 @@ export const contentDatabase = {
         "media-management-naming",
         "media-management-qualitydefinitions",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "hlg": [
         "custom-format-hlg",
@@ -131480,8 +131480,8 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "regex-pattern-dual-audio",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "anywhere": [
         "custom-format-ma",
@@ -131515,32 +131515,32 @@ export const contentDatabase = {
         "regex-pattern-tving",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "retail": [
         "custom-format-non-retail-hdr",
@@ -131571,7 +131571,7 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "wiki-edition-philosophy",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "language": [
         "custom-format-not-english",
@@ -131580,7 +131580,7 @@ export const contentDatabase = {
         "regex-pattern-dual-audio",
         "regex-pattern-kcw",
         "regex-pattern-viu",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "mutliple": [
         "custom-format-not-only-english-missing"
@@ -131603,7 +131603,7 @@ export const contentDatabase = {
         "regex-pattern-kcw",
         "regex-pattern-nahom",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "langauge": [
         "custom-format-not-only-english-missing"
@@ -131615,8 +131615,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "expressions": [
         "custom-format-not-only-english-missing"
@@ -131683,9 +131683,9 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "either": [
         "custom-format-remux",
@@ -131695,7 +131695,7 @@ export const contentDatabase = {
         "regex-pattern-repack3",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "h265": [
         "custom-format-remux",
@@ -131706,13 +131706,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "h264": [
         "custom-format-remux",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "repack1": [
         "custom-format-repack1",
@@ -131730,16 +131730,16 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "specific": [
         "custom-format-repack1",
@@ -131756,15 +131756,15 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "terms": [
         "custom-format-repack1",
@@ -131777,7 +131777,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "fixing": [
         "custom-format-repack1",
@@ -131798,10 +131798,10 @@ export const contentDatabase = {
         "custom-format-special-edition-unwanted",
         "regex-pattern-d3g",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "scene": [
         "custom-format-repack1",
@@ -131835,11 +131835,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "slot": [
         "custom-format-repack1",
@@ -131851,7 +131851,7 @@ export const contentDatabase = {
         "custom-format-repack2",
         "custom-format-repack3",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "two": [
         "custom-format-repack1",
@@ -131864,10 +131864,10 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-vision-almost-realised"
       ],
       "different": [
         "custom-format-repack1",
@@ -131891,11 +131891,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "proper": [
         "custom-format-repack1",
@@ -131919,10 +131919,10 @@ export const contentDatabase = {
         "regex-pattern-repack3",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta"
       ],
       "fixes": [
         "custom-format-repack1",
@@ -131934,7 +131934,7 @@ export const contentDatabase = {
         "custom-format-repack3",
         "custom-format-repack3",
         "custom-format-repack3",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "another": [
         "custom-format-repack1",
@@ -131943,15 +131943,15 @@ export const contentDatabase = {
         "custom-format-it-missing",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "repack": [
         "custom-format-repack1",
@@ -131974,9 +131974,9 @@ export const contentDatabase = {
         "custom-format-repack3",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "p2p": [
         "custom-format-repack1",
@@ -131988,14 +131988,14 @@ export const contentDatabase = {
         "custom-format-repack2",
         "custom-format-repack3",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "whenever": [
         "custom-format-repack1",
         "custom-format-repack2",
         "custom-format-repack3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "fixed": [
         "custom-format-repack1",
@@ -132034,11 +132034,11 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "real": [
         "custom-format-repack1",
@@ -132076,20 +132076,20 @@ export const contentDatabase = {
         "regex-pattern-remux",
         "regex-pattern-viki",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "things": [
         "custom-format-repack1",
         "custom-format-repack2",
         "custom-format-repack3",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "meaning": [
         "custom-format-repack1",
@@ -132120,8 +132120,8 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3"
       ],
       "level": [
         "custom-format-repack1",
@@ -132130,7 +132130,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "number": [
         "custom-format-repack1",
@@ -132146,7 +132146,7 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "suffixes": [
         "custom-format-repack1"
@@ -132184,7 +132184,7 @@ export const contentDatabase = {
         "regex-pattern-sdr",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "range": [
         "custom-format-sdr",
@@ -132261,7 +132261,7 @@ export const contentDatabase = {
         "regex-pattern-special-edition",
         "regex-pattern-theatrical-edition",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "edition": [
         "custom-format-special-edition-unwanted",
@@ -132369,8 +132369,8 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision-without-fallback",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "because": [
         "custom-format-special-edition-unwanted",
@@ -132383,10 +132383,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "titles": [
         "custom-format-special-edition-unwanted",
@@ -132402,12 +132402,12 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "movie": [
         "custom-format-special-edition-unwanted",
@@ -132428,8 +132428,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "title": [
         "custom-format-special-edition-unwanted",
@@ -132439,10 +132439,10 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff"
       ],
       "github": [
         "custom-format-special-edition-unwanted",
@@ -132451,24 +132451,24 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "com": [
         "custom-format-special-edition-unwanted",
         "wiki-eei",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "radarr": [
         "custom-format-special-edition-unwanted",
@@ -132476,13 +132476,13 @@ export const contentDatabase = {
         "media-management-naming",
         "media-management-qualitydefinitions",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "editions": [
         "custom-format-special-edition",
@@ -132493,12 +132493,12 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "modified": [
         "custom-format-special-edition",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff"
       ],
       "versions": [
         "custom-format-special-edition",
@@ -132510,7 +132510,7 @@ export const contentDatabase = {
       "exist": [
         "custom-format-special-edition",
         "custom-format-unknown-lossless-audio",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "filmmakers": [
         "custom-format-special-edition"
@@ -132529,24 +132529,24 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "present": [
         "custom-format-special-edition"
@@ -132559,17 +132559,17 @@ export const contentDatabase = {
         "media-management-naming",
         "media-management-naming",
         "wiki-eei",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "fix": [
         "custom-format-special-edition",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "problems": [
         "custom-format-special-edition",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "studios": [
         "custom-format-special-edition",
@@ -132586,17 +132586,17 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "money": [
         "custom-format-special-edition"
@@ -132626,100 +132626,100 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "see": [
         "custom-format-special-edition",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "them": [
         "custom-format-special-edition",
         "regex-pattern-remux",
         "regex-pattern-uhd-blu-ray",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "names": [
         "custom-format-special-edition",
         "regex-pattern-mkv",
         "regex-pattern-mkv",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "director": [
         "custom-format-special-edition",
@@ -132833,13 +132833,13 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "regex-pattern-full-disc",
         "regex-pattern-netflix",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta"
       ],
       "technology": [
         "custom-format-special-edition"
@@ -132931,8 +132931,8 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "128mbps": [
         "custom-format-uhd-bluray"
@@ -132948,26 +132948,26 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "adding": [
         "custom-format-uhd-bluray",
@@ -132980,8 +132980,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "color": [
         "custom-format-uhd-bluray",
@@ -132997,9 +132997,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "bit": [
         "custom-format-uhd-bluray",
@@ -133009,7 +133009,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "depth": [
         "custom-format-uhd-bluray",
@@ -133049,12 +133049,12 @@ export const contentDatabase = {
       "show": [
         "custom-format-uhd-bluray",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "uhdbits": [
         "custom-format-uhdbits",
@@ -133063,8 +133063,8 @@ export const contentDatabase = {
       "unique": [
         "custom-format-uhdbits",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks"
       ],
       "indexer": [
         "custom-format-uhdbits"
@@ -133077,12 +133077,12 @@ export const contentDatabase = {
         "regex-pattern-ipt-internals",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "remove": [
         "custom-format-uhdbits",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "due": [
         "custom-format-uhdbits",
@@ -133096,14 +133096,14 @@ export const contentDatabase = {
       ],
       "bad": [
         "custom-format-uhdbits",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "parsing": [
         "custom-format-uhdbits",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "banned": [
         "custom-format-unwanted-release-groups",
@@ -133158,8 +133158,8 @@ export const contentDatabase = {
       ],
       "named": [
         "custom-format-unknown-lossless-audio",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "safe": [
         "custom-format-unknown-lossless-audio"
@@ -133172,30 +133172,30 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "isn": [
         "custom-format-unknown-lossless-audio",
         "wiki-eei",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "upscaled": [
         "custom-format-upscaled",
@@ -133261,8 +133261,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-website-20"
       ],
       "created": [
         "custom-format-webrip",
@@ -133280,7 +133280,7 @@ export const contentDatabase = {
         "regex-pattern-movies-anywhere",
         "regex-pattern-viki",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "platforms": [
         "custom-format-webrip",
@@ -133301,9 +133301,9 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "several": [
         "custom-format-webrip",
@@ -133329,12 +133329,12 @@ export const contentDatabase = {
       ],
       "down": [
         "custom-format-webrip",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "resulting": [
         "custom-format-webrip"
@@ -133384,8 +133384,8 @@ export const contentDatabase = {
         "regex-pattern-colourisation",
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "affect": [
         "custom-format-webrip"
@@ -133405,8 +133405,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "depending": [
         "custom-format-webrip"
@@ -133490,16 +133490,16 @@ export const contentDatabase = {
         "regex-pattern-iqiyi",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "comes": [
         "custom-format-it-missing",
         "regex-pattern-theatrical-edition",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "ipt": [
         "custom-format-it-missing",
@@ -133520,7 +133520,7 @@ export const contentDatabase = {
       ],
       "aren": [
         "custom-format-x265-missing",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "related": [
         "regex-pattern-3d",
@@ -133619,8 +133619,8 @@ export const contentDatabase = {
       ],
       "start": [
         "regex-pattern-4k4u",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "string": [
         "regex-pattern-4k4u"
@@ -133671,20 +133671,20 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "part": [
         "regex-pattern-4k4u",
         "regex-pattern-amazon-prime",
         "regex-pattern-xvid",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "longer": [
         "regex-pattern-4k4u",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "4kdvs": [
         "regex-pattern-4kdvs",
@@ -133732,7 +133732,7 @@ export const contentDatabase = {
       "apex": [
         "regex-pattern-apex",
         "regex-pattern-apex",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "aroma": [
         "regex-pattern-aroma",
@@ -133753,7 +133753,7 @@ export const contentDatabase = {
         "regex-pattern-vp9",
         "regex-pattern-vvc",
         "regex-pattern-vvc",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "compresses": [
         "regex-pattern-av1",
@@ -133769,12 +133769,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "streams": [
         "regex-pattern-av1",
@@ -133796,8 +133796,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "american": [
         "regex-pattern-amazon-prime",
@@ -133885,7 +133885,7 @@ export const contentDatabase = {
         "regex-pattern-iqiyi",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "rental": [
         "regex-pattern-amazon-prime"
@@ -133946,15 +133946,15 @@ export const contentDatabase = {
       ],
       "selection": [
         "regex-pattern-apple-tv",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "production": [
         "regex-pattern-apple-tv",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "television": [
         "regex-pattern-apple-tv",
@@ -134052,23 +134052,23 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta"
       ],
       "detects": [
         "regex-pattern-bw"
@@ -134091,7 +134091,7 @@ export const contentDatabase = {
       ],
       "spaces": [
         "regex-pattern-bw",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "well": [
         "regex-pattern-bw",
@@ -134102,13 +134102,13 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "shorthand": [
         "regex-pattern-bw"
@@ -134171,7 +134171,7 @@ export const contentDatabase = {
         "media-management-naming",
         "media-management-naming",
         "wiki-eei",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "convention": [
         "regex-pattern-btn-atmos"
@@ -134206,7 +134206,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "subjectively": [
         "regex-pattern-better-theatricals"
@@ -134227,10 +134227,10 @@ export const contentDatabase = {
         "regex-pattern-better-theatricals",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "opinion": [
         "regex-pattern-better-theatricals"
@@ -134262,9 +134262,9 @@ export const contentDatabase = {
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "alien": [
         "regex-pattern-better-theatricals",
@@ -134325,11 +134325,11 @@ export const contentDatabase = {
         "regex-pattern-better-theatricals",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "famous": [
         "regex-pattern-better-theatricals",
@@ -134365,7 +134365,7 @@ export const contentDatabase = {
       ],
       "doing": [
         "regex-pattern-beyondhd",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "bitor": [
         "regex-pattern-bitor",
@@ -134395,18 +134395,18 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition",
         "media-management-naming",
         "media-management-naming",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "moniker": [
         "regex-pattern-bracketed-year"
       ],
       "inside": [
         "regex-pattern-bracketed-year",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "square": [
         "regex-pattern-bracketed-year"
@@ -134555,8 +134555,8 @@ export const contentDatabase = {
       ],
       "images": [
         "regex-pattern-colourisation",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff"
       ],
       "british": [
         "regex-pattern-colourisation"
@@ -134577,7 +134577,7 @@ export const contentDatabase = {
       "base": [
         "regex-pattern-colourisation",
         "wiki-eei",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "forms": [
         "regex-pattern-colourisation",
@@ -134587,16 +134587,16 @@ export const contentDatabase = {
       "past": [
         "regex-pattern-colourisation",
         "regex-pattern-colourisation",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "tense": [
         "regex-pattern-colourisation"
@@ -134678,11 +134678,11 @@ export const contentDatabase = {
         "regex-pattern-peacock-tv-rename",
         "regex-pattern-peacock-tv",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "rich": [
         "regex-pattern-criterion-channel"
@@ -134709,7 +134709,7 @@ export const contentDatabase = {
       "curated": [
         "regex-pattern-criterion-channel",
         "regex-pattern-criterion-channel",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "playlists": [
         "regex-pattern-criterion-channel"
@@ -134740,10 +134740,10 @@ export const contentDatabase = {
         "regex-pattern-criterion-channel",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "maintains": [
         "regex-pattern-criterion-channel",
@@ -134805,7 +134805,7 @@ export const contentDatabase = {
       "experience": [
         "regex-pattern-criterion-channel",
         "regex-pattern-full-disc",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "ctrlhd": [
         "regex-pattern-ctrlhd",
@@ -134881,7 +134881,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "hubs": [
         "regex-pattern-disney"
@@ -134930,9 +134930,9 @@ export const contentDatabase = {
       ],
       "come": [
         "regex-pattern-dolby-vision-without-fallback",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "ision": [
         "regex-pattern-dolby-vision-without-fallback"
@@ -134981,14 +134981,14 @@ export const contentDatabase = {
       ],
       "log": [
         "regex-pattern-dolby-vision",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "gamma": [
         "regex-pattern-dolby-vision"
@@ -135015,8 +135015,8 @@ export const contentDatabase = {
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "dub": [
         "regex-pattern-dual-audio"
@@ -135026,7 +135026,7 @@ export const contentDatabase = {
       ],
       "switch": [
         "regex-pattern-dual-audio",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "between": [
         "regex-pattern-dual-audio",
@@ -135039,13 +135039,13 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "watching": [
         "regex-pattern-dual-audio"
@@ -135060,11 +135060,11 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "edph": [
         "regex-pattern-edph",
@@ -135080,7 +135080,7 @@ export const contentDatabase = {
       ],
       "internal": [
         "regex-pattern-evo",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "releasing": [
         "regex-pattern-evo"
@@ -135095,15 +135095,15 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "anyone": [
         "regex-pattern-evo",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "else": [
         "regex-pattern-evo"
@@ -135159,10 +135159,10 @@ export const contentDatabase = {
         "regex-pattern-extras",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "fff": [
         "regex-pattern-fff",
@@ -135243,8 +135243,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "structure": [
         "regex-pattern-full-disc",
@@ -135291,21 +135291,21 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "ideal": [
         "regex-pattern-full-disc",
         "regex-pattern-h265",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff"
       ],
       "users": [
         "regex-pattern-full-disc",
@@ -135330,10 +135330,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "seeking": [
         "regex-pattern-full-disc",
@@ -135452,7 +135452,7 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "media-management-naming",
         "media-management-naming",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "programming": [
         "regex-pattern-hbo-max-rename",
@@ -135715,19 +135715,19 @@ export const contentDatabase = {
         "regex-pattern-wetv",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "introduced": [
         "regex-pattern-hotstar",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "carrying": [
         "regex-pattern-hotstar"
@@ -135741,8 +135741,8 @@ export const contentDatabase = {
         "regex-pattern-stan-rename",
         "regex-pattern-stan",
         "regex-pattern-viu",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "networks": [
         "regex-pattern-hotstar",
@@ -135776,22 +135776,22 @@ export const contentDatabase = {
         "regex-pattern-hotstar",
         "regex-pattern-peacock-tv-rename",
         "regex-pattern-peacock-tv",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "parties": [
         "regex-pattern-hotstar"
       ],
       "among": [
         "regex-pattern-hotstar",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "others": [
         "regex-pattern-hotstar",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "recent": [
         "regex-pattern-hulu"
@@ -135807,9 +135807,9 @@ export const contentDatabase = {
       "channels": [
         "regex-pattern-hulu",
         "regex-pattern-roku",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "december": [
         "regex-pattern-hulu"
@@ -135817,8 +135817,8 @@ export const contentDatabase = {
       "integrated": [
         "regex-pattern-hulu",
         "wiki-edition-philosophy",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "into": [
         "regex-pattern-hulu",
@@ -135829,20 +135829,20 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "accessible": [
         "regex-pattern-hulu"
@@ -135897,7 +135897,7 @@ export const contentDatabase = {
       ],
       "mind": [
         "regex-pattern-imax",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "henceforth": [
         "regex-pattern-imax"
@@ -135952,7 +135952,7 @@ export const contentDatabase = {
       "three": [
         "regex-pattern-kcw",
         "regex-pattern-wavve",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "korean": [
         "regex-pattern-kcw",
@@ -136101,17 +136101,17 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "libraries": [
         "regex-pattern-max-rename",
@@ -136162,15 +136162,15 @@ export const contentDatabase = {
       "allows": [
         "regex-pattern-movies-anywhere",
         "regex-pattern-viki",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "stream": [
         "regex-pattern-movies-anywhere"
@@ -136180,7 +136180,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-profilarr-casaos",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "purchased": [
         "regex-pattern-movies-anywhere"
@@ -136257,8 +136257,8 @@ export const contentDatabase = {
       ],
       "layers": [
         "regex-pattern-non-retail-hdr-formats",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "vector": [
         "regex-pattern-non-retail-hdr-groups",
@@ -136551,7 +136551,7 @@ export const contentDatabase = {
       "request": [
         "regex-pattern-request",
         "regex-pattern-request",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "realhd": [
         "regex-pattern-realhd",
@@ -136563,21 +136563,21 @@ export const contentDatabase = {
       "essentially": [
         "regex-pattern-remux",
         "wiki-gppi",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "creating": [
         "regex-pattern-remux",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "think": [
         "regex-pattern-remux",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "carefully": [
         "regex-pattern-remux"
@@ -136600,7 +136600,7 @@ export const contentDatabase = {
       ],
       "fine": [
         "regex-pattern-remux",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "wine": [
         "regex-pattern-remux",
@@ -136617,8 +136617,8 @@ export const contentDatabase = {
       ],
       "itself": [
         "regex-pattern-remux",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "appear": [
         "regex-pattern-repack1",
@@ -136630,14 +136630,14 @@ export const contentDatabase = {
       "look": [
         "regex-pattern-repack1",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "proper2": [
         "regex-pattern-repack2",
@@ -136669,7 +136669,7 @@ export const contentDatabase = {
         "regex-pattern-roku",
         "regex-pattern-roku",
         "regex-pattern-vp9",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "linear": [
         "regex-pattern-roku",
@@ -136684,7 +136684,7 @@ export const contentDatabase = {
         "regex-pattern-roku",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "paid": [
         "regex-pattern-roku"
@@ -136871,13 +136871,13 @@ export const contentDatabase = {
         "regex-pattern-tving",
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "softcore": [
         "regex-pattern-showtime-rename",
@@ -136898,9 +136898,9 @@ export const contentDatabase = {
       "simple": [
         "regex-pattern-simple",
         "regex-pattern-simple",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-profile-tweaks"
       ],
       "sing": [
         "regex-pattern-sing-along",
@@ -136936,7 +136936,7 @@ export const contentDatabase = {
       "foreign": [
         "regex-pattern-stan-rename",
         "regex-pattern-stan",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "productions": [
         "regex-pattern-stan-rename",
@@ -137116,7 +137116,7 @@ export const contentDatabase = {
       ],
       "put": [
         "regex-pattern-uhd-bluray-missing-groups",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "uhdclubremux": [
         "regex-pattern-uhdclubremux",
@@ -137234,12 +137234,12 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "company": [
         "regex-pattern-wavve"
@@ -137272,7 +137272,7 @@ export const contentDatabase = {
       ],
       "outside": [
         "regex-pattern-wetv",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "china": [
         "regex-pattern-wetv",
@@ -137285,20 +137285,20 @@ export const contentDatabase = {
       "website": [
         "regex-pattern-wetv",
         "regex-pattern-wetv",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "largest": [
         "regex-pattern-wetv"
@@ -137323,9 +137323,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "compression": [
         "regex-pattern-xvid",
@@ -137359,9 +137359,9 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "good": [
         "regex-pattern-xvid",
@@ -137369,15 +137369,15 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "visual": [
         "regex-pattern-xvid",
@@ -137386,7 +137386,7 @@ export const contentDatabase = {
       ],
       "sharing": [
         "regex-pattern-xvid",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "paired": [
         "regex-pattern-xvid"
@@ -137417,7 +137417,7 @@ export const contentDatabase = {
       "zorosenpai": [
         "regex-pattern-zorosenpai",
         "regex-pattern-zorosenpai",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "zurako": [
         "regex-pattern-zurako",
@@ -137499,8 +137499,8 @@ export const contentDatabase = {
       "popular": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "abc": [
         "regex-pattern-itunes-rename",
@@ -137519,9 +137519,9 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff"
       ],
       "desperate": [
         "regex-pattern-itunes-rename",
@@ -137546,7 +137546,7 @@ export const contentDatabase = {
       "life": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "zack": [
         "regex-pattern-itunes-rename",
@@ -137560,10 +137560,10 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
         "wiki-profilarr-casaos",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "obtain": [
         "regex-pattern-itunes-rename",
@@ -137572,15 +137572,15 @@ export const contentDatabase = {
       "time": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "expanded": [
         "regex-pattern-itunes-rename",
@@ -137824,12 +137824,12 @@ export const contentDatabase = {
       ],
       "date": [
         "media-management-naming",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "animeepisodeformat": [
         "media-management-naming"
@@ -137871,7 +137871,7 @@ export const contentDatabase = {
         "media-management-qualitydefinitions",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "qualities": [
         "media-management-qualitydefinitions"
@@ -137885,7 +137885,7 @@ export const contentDatabase = {
       "philosophy": [
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "prefer": [
         "wiki-edition-philosophy",
@@ -137899,7 +137899,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "each": [
         "wiki-edition-philosophy",
@@ -137908,15 +137908,15 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "definitive": [
         "wiki-edition-philosophy",
@@ -137944,7 +137944,7 @@ export const contentDatabase = {
       "recommended": [
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "counterparts": [
         "wiki-edition-philosophy"
@@ -138005,16 +138005,16 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "ripley": [
         "wiki-edition-philosophy",
@@ -138026,13 +138026,13 @@ export const contentDatabase = {
       "add": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "emotional": [
         "wiki-edition-philosophy",
@@ -138071,7 +138071,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "sentry": [
         "wiki-edition-philosophy"
@@ -138104,7 +138104,7 @@ export const contentDatabase = {
       "world": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "building": [
         "wiki-edition-philosophy",
@@ -138123,10 +138123,10 @@ export const contentDatabase = {
       "important": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "context": [
         "wiki-edition-philosophy",
@@ -138163,8 +138163,8 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3"
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3"
       ],
       "workprint": [
         "wiki-edition-philosophy"
@@ -138187,12 +138187,12 @@ export const contentDatabase = {
       "happy": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "ending": [
         "wiki-edition-philosophy",
@@ -138213,7 +138213,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-gppi",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "mandated": [
         "wiki-edition-philosophy"
@@ -138271,10 +138271,10 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "cleaned": [
         "wiki-edition-philosophy"
@@ -138293,13 +138293,13 @@ export const contentDatabase = {
       ],
       "sync": [
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "zhora": [
         "wiki-edition-philosophy"
@@ -138316,7 +138316,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-gppi",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "stunt": [
         "wiki-edition-philosophy"
@@ -138333,19 +138333,19 @@ export const contentDatabase = {
       ],
       "mentioned": [
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "those": [
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "shown": [
         "wiki-edition-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "dove": [
         "wiki-edition-philosophy"
@@ -138397,7 +138397,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "represents": [
         "wiki-edition-philosophy"
@@ -138436,12 +138436,12 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "enrich": [
         "wiki-edition-philosophy",
@@ -138455,8 +138455,8 @@ export const contentDatabase = {
       ],
       "giving": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "lothlorien": [
         "wiki-edition-philosophy"
@@ -138496,7 +138496,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "king": [
         "wiki-edition-philosophy",
@@ -138547,11 +138547,11 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "fans": [
         "wiki-edition-philosophy",
@@ -138584,7 +138584,7 @@ export const contentDatabase = {
       "hour": [
         "wiki-edition-philosophy",
         "wiki-faq",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "restores": [
         "wiki-edition-philosophy",
@@ -138597,8 +138597,8 @@ export const contentDatabase = {
       ],
       "explain": [
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "motivations": [
         "wiki-edition-philosophy",
@@ -138621,29 +138621,29 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "helping": [
         "wiki-edition-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "people": [
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "lex": [
         "wiki-edition-philosophy"
@@ -138669,7 +138669,7 @@ export const contentDatabase = {
       "makes": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "coherent": [
         "wiki-edition-philosophy"
@@ -138702,10 +138702,10 @@ export const contentDatabase = {
       ],
       "message": [
         "wiki-edition-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "ntis": [
         "wiki-edition-philosophy"
@@ -138738,16 +138738,16 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-profilarr-casaos",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "notably": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "gives": [
         "wiki-edition-philosophy"
@@ -138774,7 +138774,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "insight": [
         "wiki-edition-philosophy"
@@ -138808,15 +138808,15 @@ export const contentDatabase = {
       ],
       "community": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "feel": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff"
       ],
       "practices": [
         "wiki-edition-philosophy",
@@ -138844,33 +138844,33 @@ export const contentDatabase = {
       ],
       "completely": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "changes": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "stays": [
         "wiki-edition-philosophy"
@@ -138968,7 +138968,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "moral": [
         "wiki-edition-philosophy"
@@ -138993,23 +138993,23 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "even": [
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "though": [
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "donner": [
         "wiki-edition-philosophy",
@@ -139038,7 +139038,7 @@ export const contentDatabase = {
       ],
       "ties": [
         "wiki-edition-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "serious": [
         "wiki-edition-philosophy"
@@ -139055,8 +139055,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-gppi",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "expand": [
         "wiki-edition-philosophy"
@@ -139099,49 +139099,49 @@ export const contentDatabase = {
       ],
       "here": [
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "why": [
         "wiki-edition-philosophy",
@@ -139160,8 +139160,8 @@ export const contentDatabase = {
       "nearly": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "storytelling": [
         "wiki-edition-philosophy",
@@ -139185,7 +139185,7 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "unnecessary": [
         "wiki-edition-philosophy",
@@ -139207,7 +139207,7 @@ export const contentDatabase = {
       "finding": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "dallas": [
         "wiki-edition-philosophy"
@@ -139227,7 +139227,7 @@ export const contentDatabase = {
       ],
       "act": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "stated": [
         "wiki-edition-philosophy"
@@ -139243,8 +139243,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff"
       ],
       "cluttered": [
         "wiki-edition-philosophy"
@@ -139270,11 +139270,11 @@ export const contentDatabase = {
       ],
       "change": [
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "empire": [
         "wiki-edition-philosophy"
@@ -139283,40 +139283,40 @@ export const contentDatabase = {
         "wiki-edition-philosophy",
         "wiki-edition-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "hope": [
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "strongly": [
         "wiki-edition-philosophy"
@@ -139355,7 +139355,7 @@ export const contentDatabase = {
       ],
       "changed": [
         "wiki-edition-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "music": [
         "wiki-edition-philosophy",
@@ -139402,7 +139402,7 @@ export const contentDatabase = {
       ],
       "especially": [
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "french": [
         "wiki-edition-philosophy"
@@ -139423,10 +139423,10 @@ export const contentDatabase = {
       "never": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "seen": [
         "wiki-edition-philosophy"
@@ -139451,7 +139451,7 @@ export const contentDatabase = {
       ],
       "removing": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "compelling": [
         "wiki-edition-philosophy",
@@ -139548,12 +139548,12 @@ export const contentDatabase = {
       "edge": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "despite": [
         "wiki-edition-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "extensive": [
         "wiki-edition-philosophy"
@@ -139588,9 +139588,9 @@ export const contentDatabase = {
       ],
       "feeling": [
         "wiki-edition-philosophy",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff"
       ],
       "tour": [
         "wiki-edition-philosophy"
@@ -139607,47 +139607,47 @@ export const contentDatabase = {
       "too": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "leisurely": [
         "wiki-edition-philosophy"
       ],
       "been": [
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "negate": [
         "wiki-edition-philosophy"
       ],
       "removed": [
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "identify": [
         "wiki-edition-philosophy",
@@ -139660,16 +139660,16 @@ export const contentDatabase = {
       "once": [
         "wiki-edition-philosophy",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "becomes": [
         "wiki-edition-philosophy",
@@ -139681,25 +139681,25 @@ export const contentDatabase = {
       ],
       "possible": [
         "wiki-edition-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "able": [
         "wiki-edition-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "selectively": [
         "wiki-edition-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "behaviour": [
         "wiki-edition-philosophy"
@@ -139707,10 +139707,10 @@ export const contentDatabase = {
       "current": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "system": [
         "wiki-edition-philosophy",
@@ -139721,28 +139721,28 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "score": [
         "wiki-edition-philosophy",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "negative": [
         "wiki-edition-philosophy",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "whatever": [
         "wiki-edition-philosophy",
@@ -139752,7 +139752,7 @@ export const contentDatabase = {
       "apply": [
         "wiki-edition-philosophy",
         "wiki-eei",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "aimed": [
         "wiki-eei",
@@ -139785,8 +139785,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "ratios": [
         "wiki-eei",
@@ -139799,9 +139799,9 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "particular": [
         "wiki-eei",
@@ -139841,24 +139841,24 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "evaluates": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "against": [
         "wiki-eei"
@@ -139882,10 +139882,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-vision-almost-realised"
       ],
       "understanding": [
         "wiki-eei"
@@ -139894,7 +139894,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "competing": [
         "wiki-eei"
@@ -139904,11 +139904,11 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "minimizing": [
         "wiki-eei"
@@ -139919,8 +139919,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "sweet": [
         "wiki-eei",
@@ -139943,8 +139943,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "bandwidth": [
         "wiki-eei",
@@ -139955,8 +139955,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "limited": [
         "wiki-eei",
@@ -139969,14 +139969,14 @@ export const contentDatabase = {
       ],
       "going": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "beyond": [
         "wiki-eei",
@@ -140009,11 +140009,11 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "clear": [
         "wiki-eei"
@@ -140034,13 +140034,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "answer": [
         "wiki-eei",
@@ -140049,7 +140049,7 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "choosing": [
         "wiki-eei"
@@ -140082,18 +140082,18 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "middle": [
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "meaningful": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "benefits": [
         "wiki-eei"
@@ -140114,7 +140114,7 @@ export const contentDatabase = {
       ],
       "exists": [
         "wiki-eei",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "roughly": [
         "wiki-eei"
@@ -140162,26 +140162,26 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "humans": [
         "wiki-eei",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "perceive": [
         "wiki-eei"
@@ -140201,8 +140201,8 @@ export const contentDatabase = {
       ],
       "together": [
         "wiki-eei",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta"
       ],
       "achieves": [
         "wiki-eei",
@@ -140215,15 +140215,15 @@ export const contentDatabase = {
       "across": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test"
       ],
       "levels": [
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "achieve": [
         "wiki-eei",
@@ -140233,7 +140233,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "near": [
         "wiki-eei",
@@ -140245,8 +140245,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta"
       ],
       "tooling": [
         "wiki-eei"
@@ -140254,7 +140254,7 @@ export const contentDatabase = {
       "control": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "approximately": [
         "wiki-eei"
@@ -140268,12 +140268,12 @@ export const contentDatabase = {
       "become": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "increasingly": [
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "subtle": [
         "wiki-eei",
@@ -140294,13 +140294,13 @@ export const contentDatabase = {
       "tell": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff"
       ],
       "calculating": [
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "close": [
         "wiki-eei"
@@ -140312,19 +140312,19 @@ export const contentDatabase = {
       "user": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "desired": [
         "wiki-eei"
       ],
       "done": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "steps": [
         "wiki-eei"
@@ -140351,7 +140351,7 @@ export const contentDatabase = {
       "average": [
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "averages": [
         "wiki-eei"
@@ -140362,25 +140362,25 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "would": [
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "means": [
         "wiki-eei",
@@ -140389,23 +140389,23 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "clustering": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "automatically": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "deltas": [
         "wiki-eei"
@@ -140414,14 +140414,14 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "random": [
         "wiki-eei",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "cluster": [
         "wiki-eei"
@@ -140450,17 +140450,17 @@ export const contentDatabase = {
       ],
       "until": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "stable": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "rankings": [
         "wiki-eei",
@@ -140475,7 +140475,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "prioritizing": [
         "wiki-eei",
@@ -140483,11 +140483,11 @@ export const contentDatabase = {
       ],
       "choose": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "very": [
         "wiki-eei",
@@ -140495,13 +140495,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "aggressive": [
         "wiki-eei",
@@ -140606,7 +140606,7 @@ export const contentDatabase = {
       ],
       "typical": [
         "wiki-eei",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "distances": [
         "wiki-eei"
@@ -140616,16 +140616,16 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff"
       ],
       "conserve": [
         "wiki-eei"
       ],
       "enjoying": [
         "wiki-eei",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "todo": [
         "wiki-eei",
@@ -140635,7 +140635,7 @@ export const contentDatabase = {
       "ground": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "approach": [
         "wiki-eei",
@@ -140658,7 +140658,7 @@ export const contentDatabase = {
       "reliable": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "excessive": [
         "wiki-eei"
@@ -140673,12 +140673,12 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "archive": [
         "wiki-eei"
@@ -140689,8 +140689,8 @@ export const contentDatabase = {
       "difficult": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "artifacts": [
         "wiki-eei"
@@ -140700,7 +140700,7 @@ export const contentDatabase = {
       ],
       "demonstrate": [
         "wiki-eei",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "excel": [
         "wiki-eei"
@@ -140718,7 +140718,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "frequently": [
         "wiki-eei",
@@ -140729,13 +140729,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "questions": [
         "wiki-eei",
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "question": [
         "wiki-eei",
@@ -140755,22 +140755,22 @@ export const contentDatabase = {
       ],
       "nothing": [
         "wiki-eei",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "actual": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices"
       ],
       "poorly": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "tuned": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "focusing": [
         "wiki-eei"
@@ -140796,10 +140796,10 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "catches": [
         "wiki-eei"
@@ -140819,20 +140819,20 @@ export const contentDatabase = {
       ],
       "future": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "proofs": [
         "wiki-eei"
       ],
       "newer": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "adjust": [
         "wiki-eei",
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "priorities": [
         "wiki-eei"
@@ -140841,13 +140841,13 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "care": [
         "wiki-eei",
@@ -140859,39 +140859,39 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "measures": [
         "wiki-eei"
       ],
       "directly": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "unreliable": [
         "wiki-eei"
       ],
       "proxy": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "ignore": [
         "wiki-eei",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "landscape": [
         "wiki-eei"
       ],
       "places": [
         "wiki-eei",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "tremendous": [
         "wiki-eei"
@@ -140910,22 +140910,22 @@ export const contentDatabase = {
       ],
       "aims": [
         "wiki-eei",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "challenge": [
         "wiki-eei"
       ],
       "least": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "hence": [
         "wiki-eei"
       ],
       "baseline": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "acknowledge": [
         "wiki-eei",
@@ -140936,21 +140936,21 @@ export const contentDatabase = {
       ],
       "get": [
         "wiki-eei",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "taking": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "position": [
         "wiki-eei"
@@ -140972,7 +140972,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "indicators": [
         "wiki-eei"
@@ -140984,18 +140984,18 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-gppi",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "sourced": [
         "wiki-eei"
       ],
       "manual": [
         "wiki-eei",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "tagging": [
         "wiki-eei"
@@ -141004,7 +141004,7 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "reencoding": [
         "wiki-eei"
@@ -141021,7 +141021,7 @@ export const contentDatabase = {
       ],
       "direction": [
         "wiki-eei",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "preferring": [
         "wiki-eei"
@@ -141045,8 +141045,8 @@ export const contentDatabase = {
       "easier": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "perform": [
         "wiki-eei"
@@ -141059,8 +141059,8 @@ export const contentDatabase = {
       ],
       "far": [
         "wiki-eei",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "undergo": [
         "wiki-eei"
@@ -141084,8 +141084,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices"
       ],
       "properties": [
         "wiki-eei",
@@ -141115,7 +141115,7 @@ export const contentDatabase = {
       ],
       "extremely": [
         "wiki-eei",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "challenging": [
         "wiki-eei",
@@ -141127,8 +141127,8 @@ export const contentDatabase = {
       ],
       "anime": [
         "wiki-eei",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "keywords": [
         "wiki-eei"
@@ -141143,8 +141143,8 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "treat": [
         "wiki-eei"
@@ -141158,8 +141158,8 @@ export const contentDatabase = {
       "results": [
         "wiki-eei",
         "wiki-faq",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "may": [
         "wiki-eei",
@@ -141167,14 +141167,14 @@ export const contentDatabase = {
       ],
       "perhaps": [
         "wiki-eei",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "duplicate": [
         "wiki-eei"
       ],
       "requirement": [
         "wiki-eei",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "stems": [
         "wiki-eei",
@@ -141185,7 +141185,7 @@ export const contentDatabase = {
       ],
       "increased": [
         "wiki-eei",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "increase": [
         "wiki-eei",
@@ -141219,9 +141219,9 @@ export const contentDatabase = {
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "bright": [
         "wiki-eei"
@@ -141229,8 +141229,8 @@ export const contentDatabase = {
       "dark": [
         "wiki-eei",
         "wiki-eei",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "scaling": [
         "wiki-eei"
@@ -141252,7 +141252,7 @@ export const contentDatabase = {
       ],
       "combine": [
         "wiki-eei",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "multiplicatively": [
         "wiki-eei"
@@ -141285,16 +141285,16 @@ export const contentDatabase = {
       ],
       "master": [
         "wiki-eei",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "complex": [
         "wiki-eei",
-        "dev-logs-markdown-test",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-website-20"
       ],
       "textures": [
         "wiki-eei"
@@ -141345,7 +141345,7 @@ export const contentDatabase = {
       ],
       "faq": [
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "entry": [
         "wiki-faq",
@@ -141375,7 +141375,7 @@ export const contentDatabase = {
       "repacks": [
         "wiki-faq",
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "option": [
         "wiki-faq"
@@ -141388,14 +141388,14 @@ export const contentDatabase = {
       ],
       "turn": [
         "wiki-faq",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "off": [
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "navigate": [
         "wiki-faq",
@@ -141403,7 +141403,7 @@ export const contentDatabase = {
       ],
       "general": [
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "mislabeled": [
         "wiki-faq"
@@ -141416,12 +141416,12 @@ export const contentDatabase = {
       ],
       "everything": [
         "wiki-faq",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "min": [
         "wiki-faq"
@@ -141431,22 +141431,22 @@ export const contentDatabase = {
       ],
       "run": [
         "wiki-faq",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "sample": [
         "wiki-faq"
       ],
       "lots": [
         "wiki-faq",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "usenet": [
         "wiki-faq"
       ],
       "indexers": [
         "wiki-faq",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "minimum": [
         "wiki-faq"
@@ -141480,8 +141480,8 @@ export const contentDatabase = {
       ],
       "idea": [
         "wiki-faq",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "decoding": [
         "wiki-faq",
@@ -141516,11 +141516,11 @@ export const contentDatabase = {
       ],
       "generate": [
         "wiki-faq",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "upon": [
         "wiki-faq",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "visually": [
         "wiki-faq"
@@ -141593,7 +141593,7 @@ export const contentDatabase = {
       ],
       "engine": [
         "wiki-gppi",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "calculated": [
         "wiki-gppi"
@@ -141611,7 +141611,7 @@ export const contentDatabase = {
       ],
       "formula": [
         "wiki-gppi",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "glance": [
         "wiki-gppi"
@@ -141628,13 +141628,13 @@ export const contentDatabase = {
       "take": [
         "wiki-gppi",
         "wiki-gppi",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "value": [
         "wiki-gppi",
@@ -141663,7 +141663,7 @@ export const contentDatabase = {
       ],
       "defined": [
         "wiki-gppi",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "begin": [
         "wiki-gppi"
@@ -141682,8 +141682,8 @@ export const contentDatabase = {
       ],
       "left": [
         "wiki-gppi",
-        "dev-logs-markdown-test",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-website-20"
       ],
       "frac": [
         "wiki-gppi",
@@ -141693,12 +141693,12 @@ export const contentDatabase = {
         "wiki-gppi",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "gpe_r": [
         "wiki-gppi"
@@ -141739,7 +141739,7 @@ export const contentDatabase = {
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "prerequisites": [
         "wiki-profilarr-casaos",
@@ -141774,9 +141774,9 @@ export const contentDatabase = {
       "repository": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "dashboard": [
         "wiki-profilarr-casaos",
@@ -141806,12 +141806,12 @@ export const contentDatabase = {
       "app": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "section": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "install": [
         "wiki-profilarr-casaos",
@@ -141823,38 +141823,38 @@ export const contentDatabase = {
       "import": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "page": [
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "importing": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "docker": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "compose": [
         "wiki-profilarr-casaos",
@@ -141863,7 +141863,7 @@ export const contentDatabase = {
       ],
       "visit": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "locate": [
         "wiki-profilarr-casaos"
@@ -141871,28 +141871,28 @@ export const contentDatabase = {
       "code": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "block": [
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "entire": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "paste": [
         "wiki-profilarr-casaos"
@@ -141909,33 +141909,33 @@ export const contentDatabase = {
       "database": [
         "wiki-profilarr-casaos",
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "lines": [
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-vision-almost-realised"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-vision-almost-realised"
       ],
       "avoid": [
         "wiki-profilarr-casaos"
@@ -141967,7 +141967,7 @@ export const contentDatabase = {
       ],
       "notes": [
         "wiki-profilarr-casaos",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "customizable": [
         "wiki-profilarr-casaos"
@@ -141984,8 +141984,8 @@ export const contentDatabase = {
       ],
       "auto": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "detected": [
         "wiki-profilarr-casaos"
@@ -142002,7 +142002,7 @@ export const contentDatabase = {
       ],
       "mode": [
         "wiki-profilarr-casaos",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "port": [
         "wiki-profilarr-casaos",
@@ -142026,7 +142026,7 @@ export const contentDatabase = {
       ],
       "environment": [
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "variables": [
         "wiki-profilarr-casaos"
@@ -142036,7 +142036,7 @@ export const contentDatabase = {
       ],
       "required": [
         "wiki-profilarr-casaos",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "yes": [
         "wiki-profilarr-casaos"
@@ -142070,7 +142070,7 @@ export const contentDatabase = {
       ],
       "token": [
         "wiki-profilarr-casaos",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "ghpxxxxxxxxxxxx": [
         "wiki-profilarr-casaos"
@@ -142080,7 +142080,7 @@ export const contentDatabase = {
       ],
       "button": [
         "wiki-profilarr-casaos",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "wait": [
         "wiki-profilarr-casaos"
@@ -142095,10 +142095,10 @@ export const contentDatabase = {
       "trying": [
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "automate": [
         "wiki-release-group-philosophy",
@@ -142115,19 +142115,19 @@ export const contentDatabase = {
       ],
       "something": [
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "looks": [
         "wiki-release-group-philosophy",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "screen": [
         "wiki-release-group-philosophy"
@@ -142140,10 +142140,10 @@ export const contentDatabase = {
       ],
       "kind": [
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "gib": [
         "wiki-release-group-philosophy",
@@ -142159,7 +142159,7 @@ export const contentDatabase = {
       "looking": [
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "notice": [
         "wiki-release-group-philosophy"
@@ -142191,29 +142191,29 @@ export const contentDatabase = {
       ],
       "already": [
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "lies": [
         "wiki-release-group-philosophy"
       ],
       "little": [
         "wiki-release-group-philosophy",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "every": [
         "wiki-release-group-philosophy",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "tag": [
         "wiki-release-group-philosophy",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "historic": [
         "wiki-release-group-philosophy"
@@ -142227,7 +142227,7 @@ export const contentDatabase = {
       "quantifiable": [
         "wiki-release-group-philosophy",
         "wiki-release-group-philosophy",
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "evidence": [
         "wiki-release-group-philosophy"
@@ -142240,10 +142240,10 @@ export const contentDatabase = {
       ],
       "built": [
         "wiki-release-group-philosophy",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "maintained": [
         "wiki-release-group-philosophy"
@@ -142255,2875 +142255,2875 @@ export const contentDatabase = {
         "wiki-release-group-philosophy"
       ],
       "architecture": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "overhaul": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "hey": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "everyone": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "small": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "update": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "working": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "lately": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "project": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "grown": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta"
       ],
       "bigger": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "gotten": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "keep": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "billion": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "improve": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "productivity": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul"
       ],
       "planned": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-vision-almost-realised"
       ],
       "starts": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20"
       ],
       "separating": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "modules": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks"
       ],
       "namely": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "separate": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "powers": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "tool": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "next": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "standardizing": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "entries": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "biggest": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20"
       ],
       "issue": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "editing": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "updating": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "thing": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "times": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "cfs": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "updated": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "apps": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "miniscule": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "syntax": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-markdown-test"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-markdown-test"
       ],
       "tiny": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "error": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "prone": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "consuming": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "repeated": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "keys": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "know": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "exactly": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta"
       ],
       "plan": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "simplicity": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "improving": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "encourage": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "confident": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks"
       ],
       "intuitive": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised"
       ],
       "setups": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff"
       ],
       "problem": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "arrs": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "won": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "anymore": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "solution": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "compiler": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "fun": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "begins": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20"
       ],
       "easy": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff"
       ],
       "develop": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "out": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "pops": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "weird": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "rules": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta"
       ],
       "developer": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "needing": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-website-20"
       ],
       "ever": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "worry": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "canvas": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "obsidian": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "visualizes": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "archiecture": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "diagram": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "selector": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "wip": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "leave": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "explaining": [
-        "dev-logs-architecture-overhaul"
+        "devlogs-architecture-overhaul"
       ],
       "algorithm": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-architecture-overhaul",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "pretty": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-architecture-overhaul",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "cool": [
-        "dev-logs-architecture-overhaul",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-architecture-overhaul",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "markdown": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "formatting": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "test": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "comprehensive": [
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "header": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "main": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "paragraph": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "spacing": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "neutral": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "palette": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "light": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "modes": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "lorem": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "ipsum": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "dolor": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "sit": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "amet": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "consectetur": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "adipiscing": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "elit": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "wrap": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "nicely": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "line": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "height": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "readability": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "subsection": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "styling": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3"
       ],
       "headers": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "hierarchy": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "subsubsection": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "bold": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "italic": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "inline": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "background": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "monospace": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "font": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "lists": [
-        "dev-logs-markdown-test",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-website-20"
       ],
       "unordered": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "list": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "item": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-shiny-new-stuff"
       ],
       "second": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "nested": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "ordered": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "numbered": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "blocks": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "javascript": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "function": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "testfunction": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "const": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "hello": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "console": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "plain": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "blockquotes": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "blockquote": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "border": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "span": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "distinct": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "paragraphs": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "links": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta"
       ],
       "link": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "image": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "broken": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "placeholder": [
-        "dev-logs-markdown-test",
-        "dev-logs-profile-selector-v3"
+        "devlogs-markdown-test",
+        "devlogs-profile-selector-v3"
       ],
       "alt": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "tables": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "flavored": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "row": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-modular-choices"
       ],
       "col": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "horizontal": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "rule": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-markdown-test"
       ],
       "breaks": [
-        "dev-logs-markdown-test",
-        "dev-logs-modular-choices"
+        "devlogs-markdown-test",
+        "devlogs-modular-choices"
       ],
       "break": [
-        "dev-logs-markdown-test",
-        "dev-logs-markdown-test",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-markdown-test",
+        "devlogs-markdown-test",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "mixed": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "fourth": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "contains": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "within": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "element": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "styled": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "appropriate": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "readable": [
-        "dev-logs-markdown-test"
+        "devlogs-markdown-test"
       ],
       "modular": [
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3"
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3"
       ],
       "choices": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "post": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "currently": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "obviously": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "nightmar": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "nightmare": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "certainly": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "incoming": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "outgoing": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "resolve": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "conflicts": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff"
       ],
       "friendly": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "gui": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "git": [
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "merge": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "functionality": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "merged": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "ignored": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "specifically": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "retain": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "let": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "say": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "shuffles": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "accept": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "remember": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "prompting": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "case": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "situation": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "repeats": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "unlink": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "branches": [
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "deal": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "developers": [
-        "dev-logs-modular-choices",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-modular-choices",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "authenticated": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "ability": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "beta": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "ready": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "hard": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "stay": [
-        "dev-logs-modular-choices",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-modular-choices",
+        "devlogs-profilarr-is-in-beta"
       ],
       "hearts": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "screenshot": [
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices"
       ],
       "resolver": [
-        "dev-logs-modular-choices",
-        "dev-logs-modular-choices"
+        "devlogs-modular-choices",
+        "devlogs-modular-choices"
       ],
       "long": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "awaited": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "aware": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "thought": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "formally": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "announce": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "discord": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "sin": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "july": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "last": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "massive": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "effort": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "christmas": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "implements": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "talked": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "x10": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "bugs": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "polish": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "hopefully": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "benefit": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "unraid": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "arm": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "silicon": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "raspberry": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "x86": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "got": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "scattered": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "thoughts": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "interested": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "seraphys": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "scoring": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "refactor": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "introduces": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "huge": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "haven": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "fully": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "myself": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "branch": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "antsy": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "testing": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "themselves": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "give": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "try": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "please": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "tracker": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "personally": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "state": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "renames": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "imports": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "weren": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "taken": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "enough": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "consideration": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "causing": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "loops": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "figure": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "tackle": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "tweaks": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "had": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "implemented": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "decided": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "paper": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "practice": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "confusing": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "really": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "program": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "meant": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "agnostic": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "hardcoded": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "roadmap": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "maybe": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "rethink": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "implement": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "expect": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "databases": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "sliders": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "templates": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "delay": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "refactoring": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "dependency": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "depend": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "lets": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "independently": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "connect": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "build": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "explore": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "alternative": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "options": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "input": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "guys": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "conversations": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "logic": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "partially": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "revise": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "interaction": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "housekeeping": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "influx": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "members": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "couple": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "weeks": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "moderation": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "introduce": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "moderator": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "designated": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "devotee": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "big": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "claps": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "refresh": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "soon": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "closing": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "replacing": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "bot": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "integration": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "redirect": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "queries": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "donations": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "donated": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "donor": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "role": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "badge": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "shoot": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "spent": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "majority": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "months": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "burnt": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "study": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "unfortunately": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profilarr-is-in-beta"
       ],
       "mesh": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "hoped": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "month": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "sleep": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "sanity": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "semester": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "dial": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "spend": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "easter": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "slowly": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "pick": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "speed": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "again": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20"
       ],
       "mention": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "etas": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "puts": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "pressure": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "probably": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "disappoints": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "inevitably": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "happen": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "defacto": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "eta": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "scatterbrained": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "someone": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-shiny-new-stuff"
       ],
       "waiting": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "forgotten": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "reminder": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "active": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "during": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "thank": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-vision-almost-realised"
       ],
       "tremendously": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "scope": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "thanks": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "figuring": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "unbelievable": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "existed": [
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks"
+        "devlogs-profilarr-is-in-beta",
+        "devlogs-profile-tweaks"
       ],
       "head": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "cheers": [
-        "dev-logs-profilarr-is-in-beta"
+        "devlogs-profilarr-is-in-beta"
       ],
       "share": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "inspired": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "wise": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "days": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "saying": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3"
       ],
       "tak": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "anyways": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "designing": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "figma": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "started": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "implementing": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "drawing": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "shapes": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "regretting": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "paying": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "attention": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "school": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "trigonometry": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "place": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "represent": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "axes": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "combination": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "recommend": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "hooked": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "strings": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "design": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "finish": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "beginner": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "disclaimer": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "proof": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "concept": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "funny": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "tidbit": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "tried": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "writing": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "inner": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "polygon": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "stretching": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "opposed": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "instant": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "static": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20"
       ],
       "movement": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "didn": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "behold": [
-        "dev-logs-profile-selector-v3"
+        "devlogs-profile-selector-v3"
       ],
       "frankenstein": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "triangle": [
-        "dev-logs-profile-selector-v3",
-        "dev-logs-profile-selector-v3",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-profile-selector-v3",
+        "devlogs-profile-selector-v3",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "stuff": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "strict": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "grabbing": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "singular": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "entities": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "respect": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "step": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "hands": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "engage": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "enter": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "check": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "boxes": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "enable": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "disable": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "respected": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "allow": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "prereleases": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "cams": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "screeners": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "strictness": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "bleeding": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "h266": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "tweak": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "ideas": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "super": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "tab": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks"
       ],
       "steady": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "ended": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "expected": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "sorry": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "existing": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "porting": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "tree": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "write": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "descriptions": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff"
       ],
       "finally": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-profile-tweaks",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "compilation": [
-        "dev-logs-profile-tweaks"
+        "devlogs-profile-tweaks"
       ],
       "1202375791556431892": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "1246504849265266738": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "1272756617041154049": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-vision-almost-realised"
+        "devlogs-profile-tweaks",
+        "devlogs-vision-almost-realised"
       ],
       "module": [
-        "dev-logs-profile-tweaks",
-        "dev-logs-website-20"
+        "devlogs-profile-tweaks",
+        "devlogs-website-20"
       ],
       "shiny": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "motivation": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "struggling": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "week": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "unmotivated": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "cracking": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "seeing": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "felt": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "motivated": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "dive": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "sounded": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "nice": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "upgrades": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "outline": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "stack": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "frontend": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "site": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "export": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "regexes": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "remaster": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "outlined": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "previous": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20"
       ],
       "condition": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "sorting": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "filtering": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "sort": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "filter": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "items": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "exporting": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "freely": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "query": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "apis": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "syncing": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "clogging": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "unused": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "mass": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "delete": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "synced": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "prowlarr": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "tidbits": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "permalink": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "regex101": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "simultaneously": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "backend": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "json": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "remote": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "commit": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "useful": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "stress": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "suffering": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "saved": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "revert": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "favorite": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "coded": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "branching": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "course": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "lidarr": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "importantly": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "pulling": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "pull": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "decide": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "automatic": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised"
       ],
       "alert": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "latest": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "external": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "repo": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "whoever": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "convert": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "arr": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "ways": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "trash": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "guides": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "tweaking": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "definitely": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "containerisation": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "dockerised": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "massively": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "sped": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "proprietary": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "freedom": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "boom": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "machine": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "learning": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff",
+        "devlogs-website-20"
       ],
       "mostly": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "speculation": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "rambling": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "concrete": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "incorporate": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "press": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "countless": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "reddit": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "posts": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "unfamiliar": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "asking": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "learn": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "easily": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "solved": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "knowledge": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "sends": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "openai": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "api": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "prompt": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "imagine": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "hundreds": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "predict": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "truly": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "tailor": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "suit": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "knows": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "ramble": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "anyway": [
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff"
       ],
       "status": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
+        "devlogs-shiny-new-stuff",
+        "devlogs-shiny-new-stuff"
       ],
       "today": [
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-shiny-new-stuff",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "realised": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "bash": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "python": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "profile_compile": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "yml": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "converted": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "importarr": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "success": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "commands": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "culmination": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "august": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "compiled": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "psf": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "hooking": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "feels": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "edit": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "reflected": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "fell": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "swoop": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "turned": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "evident": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "away": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-vision-almost-realised",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "wants": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "contribute": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "hours": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "strong": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "fundamentally": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "flawed": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "terrific": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "popularity": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "receives": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "reset": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "normalized": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "tbd": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "permanent": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "solve": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "grouping": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "natural": [
-        "dev-logs-vision-almost-realised",
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised",
+        "devlogs-vision-almost-realised"
       ],
       "surprisingly": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "recognition": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "dont": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "fancy": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "finds": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "numbers": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "dropped": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "immutability": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "alright": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "holidays": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "grinning": [
-        "dev-logs-vision-almost-realised"
+        "devlogs-vision-almost-realised"
       ],
       "ish": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "wanted": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "transition": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "old": [
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "mkdocs": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "isr": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "rebuild": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "basically": [
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "sees": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "stale": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "rebuilds": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "santiago": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "smiles": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "anything": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "whole": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "instilled": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "layout": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "devlog": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "fit": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "website2": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "broke": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "workflows": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "gone": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "iterations": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "flowchart": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "santiagosayshey": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "blob": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "030f3631b4f6fffdb7fa9f4696e5d12defc84a46": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "docs": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "png": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "terrible": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "selectarr": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "pages": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "supposed": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "shipped": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "finished": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "worked": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "area": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "guy": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "forget": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "guesstimate": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "did": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "normalizing": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "fitting": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "axis": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "abstracted": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "scrap": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "builder": [
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "abstract": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "groupings": [
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "explanations": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "abstraction": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "detrimental": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "self": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "explanatory": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "niche": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "playwith": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "buider": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "meat": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "potatoes": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "heres": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "play": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "discern": [
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "targeting": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "saturate": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "reaches": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "heavily": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "watered": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "explanation": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "research": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "iteration": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "asset": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "youre": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "ridiculous": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "tierlist": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "trump": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "crap": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "vote": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "documented": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "magic": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "dare": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "thus": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "216p": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "creation": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "constant": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "feedback": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "erphise": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "tester": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "catalyst": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "hadn": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "love": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "took": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "gonna": [
-        "dev-logs-website-20",
-        "dev-logs-website-20"
+        "devlogs-website-20",
+        "devlogs-website-20"
       ],
       "rolling": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "finalized": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "authentication": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "migrations": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "template": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "fly": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ],
       "bare": [
-        "dev-logs-website-20"
+        "devlogs-website-20"
       ]
     },
     "entries": {
@@ -145176,10 +145176,10 @@ export const contentDatabase = {
         "type": "static",
         "weight": 0.7
       },
-      "dev-logs-index": {
+      "devlogs-index": {
         "title": "Development Logs",
         "description": "Timeline of development progress and updates",
-        "route": "/dev-logs",
+        "route": "/devlogs",
         "type": "static",
         "weight": 0.7
       },
@@ -148991,66 +148991,66 @@ export const contentDatabase = {
         "type": "markdown",
         "weight": 0.8
       },
-      "dev-logs-architecture-overhaul": {
+      "devlogs-architecture-overhaul": {
         "title": "Architecture Overhaul",
         "description": "Hey @everyone, here's a small update on what I've been working on lately: As the project has grown bigger, it's gotten quite difficult to keep track of and manage a billion different custom formats, q...",
-        "route": "/dev-logs/architecture-overhaul",
+        "route": "/devlogs/architecture-overhaul",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-markdown-test": {
+      "devlogs-markdown-test": {
         "title": "Markdown Formatting Test",
         "description": "A comprehensive test of all markdown formatting features",
-        "route": "/dev-logs/markdown-test",
+        "route": "/devlogs/markdown-test",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-modular-choices": {
+      "devlogs-modular-choices": {
         "title": "Modular Choices",
         "description": "Hey @everyone, here's a small (but very important) post on the new update system! Current Profilarr Currently, there is 0 support for updates in Profilarr. This is obviously not ideal; it's a nightmar...",
-        "route": "/dev-logs/modular-choices",
+        "route": "/devlogs/modular-choices",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-profilarr-is-in-beta": {
+      "devlogs-profilarr-is-in-beta": {
         "title": "Profilarr is in Beta 🚀",
         "description": "hey @everyone, long awaited dev log :) What's New? 👈 Many people are already aware, but I thought I should formally announce here on discord that Profilarr is out in beta! I've been working on it sin...",
-        "route": "/dev-logs/profilarr-is-in-beta",
+        "route": "/devlogs/profilarr-is-in-beta",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-profile-selector-v3": {
+      "devlogs-profile-selector-v3": {
         "title": "Profile Selector v3",
         "description": "hey @everyone , thought I'd make a channel to share some development logs. I've been feeling pretty inspired code wise the past few days, so I've actually made some progress despite saying I would tak...",
-        "route": "/dev-logs/profile-selector-v3",
+        "route": "/devlogs/profile-selector-v3",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-profile-tweaks": {
+      "devlogs-profile-tweaks": {
         "title": "Profile Tweaks",
         "description": "Hey @everyone, I've been hard at work on the next Profilarr version over the past few weeks and have new stuff to show off! The profiles we make are meant to be (really good) starting points, not a st...",
-        "route": "/dev-logs/profile-tweaks",
+        "route": "/devlogs/profile-tweaks",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-shiny-new-stuff": {
+      "devlogs-shiny-new-stuff": {
         "title": "Shiny New Stuff",
         "description": "hey @everyone, hope you guys are well. Here's another update! Motivation I've been really struggling to work on this project for a few months now - I'll finally get some time at the end of the week bu...",
-        "route": "/dev-logs/shiny-new-stuff",
+        "route": "/devlogs/shiny-new-stuff",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-vision-almost-realised": {
+      "devlogs-vision-almost-realised": {
         "title": "Vision (Almost) Realised",
         "description": "Hey @everyone, small log for today! ``bash $ python profile_compile.py 'profiles/1080p Encode.yml' '1080p Encode (sonarr - master).json' -s Converted profile saved to: 1080p Encode (sonarr - master).j...",
-        "route": "/dev-logs/vision-almost-realised",
+        "route": "/devlogs/vision-almost-realised",
         "type": "markdown",
         "weight": 0.6
       },
-      "dev-logs-website-20": {
+      "devlogs-website-20": {
         "title": "Website 2.0",
         "description": "Hey everyone, medium-ish update today. Website 2.0 I've wanted to transition away from the old site / mkdocs for a while now as its quite hard to maintain and keep everything up to date, so I built a ...",
-        "route": "/dev-logs/website-20",
+        "route": "/devlogs/website-20",
         "type": "markdown",
         "weight": 0.6
       }
@@ -149058,13 +149058,13 @@ export const contentDatabase = {
   },
   "categories": [
     "custom-format",
-    "dev-logs",
+    "devlogs",
     "media-management",
     "quality-profile",
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-06T16:15:12.089Z",
+  "lastGenerated": "2025-08-06T16:23:07.283Z",
   "version": "1.0.0"
 } as const;
 

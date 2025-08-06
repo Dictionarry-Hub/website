@@ -9,8 +9,13 @@
   
   // Filter entries by category/type at build time
   const devLogEntries = contentDatabase.entries
-    .filter(entry => entry.category === 'dev-logs' && entry.type !== 'static')
-    .sort((a, b) => a.slug.localeCompare(b.slug));
+    .filter(entry => entry.category === 'devlogs' && entry.type !== 'static')
+    .sort((a, b) => {
+      // Sort by date descending (newest first)
+      const dateA = new Date(a.frontmatter?.created || 0);
+      const dateB = new Date(b.frontmatter?.created || 0);
+      return dateB - dateA;
+    });
   
   const wikiEntries = contentDatabase.entries
     .filter(entry => entry.category === 'wiki')
@@ -65,7 +70,7 @@
     </SidebarSection>
 
     <!-- Development Log Section -->
-    <SidebarSection title="📝 Development Log" href="/dev-logs" isActive={currentPath === "/dev-logs"} isOpen={false}>
+    <SidebarSection title="📝 Development Log" href="/devlogs" isActive={currentPath === "/devlogs"} isOpen={false}>
       {#each devLogEntries as entry}
         <SidebarItem 
           href={entry.path} 
