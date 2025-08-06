@@ -59914,53 +59914,6 @@ export const contentDatabase = {
       ],
       "filename": "rebirth.md",
       "lastModified": "2025-08-06T17:34:01.420Z"
-    },
-    {
-      "id": "devlogs-zzz",
-      "path": "/devlogs/zzz",
-      "type": "markdown",
-      "slug": "zzz",
-      "category": "devlogs",
-      "title": "zzz",
-      "description": "z z...",
-      "frontmatter": {
-        "title": "zzz",
-        "slug": "zzz",
-        "blurb": "zzz",
-        "author": "santiagosayshey",
-        "created": "2025-08-020",
-        "tags": [
-          "website",
-          "personal",
-          "milestone"
-        ],
-        "readingTime": 1
-      },
-      "blocks": [
-        {
-          "type": "header",
-          "level": 1,
-          "text": "z",
-          "id": "z"
-        },
-        {
-          "type": "paragraph",
-          "content": "z"
-        }
-      ],
-      "markdown": "\n\n# z\nz\n",
-      "navigation": [
-        "z"
-      ],
-      "searchText": "zzz z z zzz z z",
-      "searchWeight": 0.6,
-      "tags": [
-        "website",
-        "personal",
-        "milestone"
-      ],
-      "filename": "zzz.md",
-      "lastModified": "2025-08-06T17:36:04.616Z"
     }
   ],
   "routeMap": {
@@ -119505,53 +119458,6 @@ export const contentDatabase = {
       ],
       "filename": "rebirth.md",
       "lastModified": "2025-08-06T17:34:01.420Z"
-    },
-    "/devlogs/zzz": {
-      "id": "devlogs-zzz",
-      "path": "/devlogs/zzz",
-      "type": "markdown",
-      "slug": "zzz",
-      "category": "devlogs",
-      "title": "zzz",
-      "description": "z z...",
-      "frontmatter": {
-        "title": "zzz",
-        "slug": "zzz",
-        "blurb": "zzz",
-        "author": "santiagosayshey",
-        "created": "2025-08-020",
-        "tags": [
-          "website",
-          "personal",
-          "milestone"
-        ],
-        "readingTime": 1
-      },
-      "blocks": [
-        {
-          "type": "header",
-          "level": 1,
-          "text": "z",
-          "id": "z"
-        },
-        {
-          "type": "paragraph",
-          "content": "z"
-        }
-      ],
-      "markdown": "\n\n# z\nz\n",
-      "navigation": [
-        "z"
-      ],
-      "searchText": "zzz z z zzz z z",
-      "searchWeight": 0.6,
-      "tags": [
-        "website",
-        "personal",
-        "milestone"
-      ],
-      "filename": "zzz.md",
-      "lastModified": "2025-08-06T17:36:04.616Z"
     }
   },
   "searchIndex": {
@@ -136882,10 +136788,6 @@ export const contentDatabase = {
       ],
       "next": [
         "devlogs-rebirth"
-      ],
-      "zzz": [
-        "devlogs-zzz",
-        "devlogs-zzz"
       ]
     },
     "entries": {
@@ -140752,13 +140654,6 @@ export const contentDatabase = {
         "route": "/devlogs/rebirth",
         "type": "markdown",
         "weight": 0.6
-      },
-      "devlogs-zzz": {
-        "title": "zzz",
-        "description": "z z...",
-        "route": "/devlogs/zzz",
-        "type": "markdown",
-        "weight": 0.6
       }
     }
   },
@@ -140770,7 +140665,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-06T17:36:15.396Z",
+  "lastGenerated": "2025-08-06T18:01:06.414Z",
   "version": "1.0.0"
 } as const;
 

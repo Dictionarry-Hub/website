@@ -183,26 +183,26 @@
   }
   
   /* Links - including in tables */
-  :global(.prose a),
-  :global(td a) {
+  :global(.prose a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"])),
+  :global(td a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"])) {
     color: rgb(37 99 235) !important;
     text-decoration: none;
     transition: all 0.2s;
   }
   
-  :global(.prose a:hover),
-  :global(td a:hover) {
+  :global(.prose a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"]):hover),
+  :global(td a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"]):hover) {
     text-decoration: underline;
     color: rgb(29 78 216) !important;
   }
   
-  :global(.dark .prose a),
-  :global(.dark td a) {
+  :global(.dark .prose a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"])),
+  :global(.dark td a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"])) {
     color: rgb(96 165 250) !important;
   }
   
-  :global(.dark .prose a:hover),
-  :global(.dark td a:hover) {
+  :global(.dark .prose a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"]):hover),
+  :global(.dark td a:not([class*="text-neutral"]):not([class*="text-blue"]):not([class*="bg-"]):not([class*="hover:"]):not([class*="no-underline"]):hover) {
     color: rgb(147 197 253) !important;
   }
   
