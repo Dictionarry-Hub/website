@@ -18,6 +18,7 @@
   import QualityProfilePage from './qualityProfile/landing/page.svelte'
   import QualityProfileSlug from './qualityProfile/slug/page.svelte'
   import CustomFormatSlug from './customFormat/[slug].svelte'
+  import RegexPatternSlug from './regexPattern/slug/page.svelte'
   import MediaManagementPage from './mediaManagement/mediaManagementPage.svelte'
   import NamingPage from './mediaManagement/namingPage.svelte'
   import QualityDefinitionsPage from './mediaManagement/qualityDefinitionsPage.svelte'
@@ -57,6 +58,7 @@
     { pattern: /^\/dev-logs\//, component: DevLogPage },
     { pattern: /^\/quality-profile\//, component: QualityProfileSlug },
     { pattern: /^\/custom-format\//, component: CustomFormatSlug },
+    { pattern: /^\/regex-pattern\//, component: RegexPatternSlug },
     // Add more dynamic patterns here as needed
   ]
   

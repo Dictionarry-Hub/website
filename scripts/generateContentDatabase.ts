@@ -4,6 +4,7 @@ import yaml from 'js-yaml';
 import { marked } from 'marked';
 import matter from 'gray-matter';
 import hljs from 'highlight.js';
+import { execSync } from 'child_process';
 
 // Configure marked to generate header IDs
 marked.setOptions({
@@ -197,13 +198,149 @@ function buildNestedNavigation(headers: HeaderInfo[]): (string | NavigationItem)
   return result;
 }
 
+// Regex101 API interface
+interface Regex101Test {
+  testString: string;
+  compareString: string;
+  description: string;
+  criteria: 'DOES_MATCH' | 'DOES_NOT_MATCH';
+  target: 'REGEX';
+}
+
+interface Regex101Response {
+  permalinkFragment: string;
+  version: number;
+  dateCreated: string;
+  regex: string;
+  testString: string;
+  flags: string;
+  delimiter: string;
+  flavor: string;
+  substitution: null;
+  listSubstitution: null;
+  title: string | null;
+  unitTests: Regex101Test[];
+}
+
+interface Regex101VersionResponse {
+  permalinkFragment: string;
+  versions: number[];
+}
+
+// Fetch regex101 data
+async function fetchRegex101Data(url: string): Promise<Regex101Response | null> {
+  try {
+    // Extract the ID from the URL
+    const match = url.match(/regex101\.com\/r\/([a-zA-Z0-9]+)/);
+    if (!match) {
+      console.warn(`Invalid regex101 URL: ${url}`);
+      return null;
+    }
+    
+    const id = match[1];
+    
+    // First, get the available versions using curl
+    const versionsCommand = `curl -s https://regex101.com/api/regex/${id}`;
+    const versionsResult = execSync(versionsCommand, { encoding: 'utf-8' });
+    const versionsData = JSON.parse(versionsResult) as Regex101VersionResponse;
+    
+    // Get the latest version
+    const latestVersion = versionsData.versions && versionsData.versions.length > 0 
+      ? Math.max(...versionsData.versions)
+      : 1;
+    
+    // Fetch the specific version using curl
+    const dataCommand = `curl -s https://regex101.com/api/regex/${id}/${latestVersion}`;
+    const dataResult = execSync(dataCommand, { encoding: 'utf-8' });
+    const data = JSON.parse(dataResult) as Regex101Response;
+    
+    return data;
+  } catch (error: any) {
+    console.warn(`Error fetching regex101 data for ${url}: ${error.message}`);
+    return null;
+  }
+}
+
+// Run PowerShell regex tests
+function runRegexTests(pattern: string, tests: Regex101Test[]): { passed: number; failed: number; results: any[] } {
+  const scriptPath = path.join(process.cwd(), 'scripts', 'testRegex.ps1');
+  
+  // Ensure the PowerShell script exists
+  if (!fs.existsSync(scriptPath)) {
+    console.warn('PowerShell test script not found. Creating it...');
+    createPowerShellTestScript(scriptPath);
+  }
+  
+  const results = [];
+  let passed = 0;
+  let failed = 0;
+  
+  for (const test of tests) {
+    try {
+      // Escape the pattern and test string for PowerShell
+      const escapedPattern = pattern.replace(/'/g, "''");
+      const escapedTestString = test.testString.replace(/'/g, "''");
+      
+      // Run the PowerShell script (use pwsh for PowerShell Core on Linux/Mac)
+      const command = `pwsh -NoProfile -ExecutionPolicy Bypass -File "${scriptPath}" '${escapedPattern}' '${escapedTestString}'`;
+      const result = execSync(command, { encoding: 'utf-8' }).trim();
+      
+      const matches = result === 'True';
+      const shouldMatch = test.criteria === 'DOES_MATCH';
+      const testPassed = matches === shouldMatch;
+      
+      if (testPassed) passed++;
+      else failed++;
+      
+      results.push({
+        testString: test.testString,
+        description: test.description,
+        criteria: test.criteria,
+        matches,
+        passed: testPassed
+      });
+    } catch (error) {
+      console.warn(`Error running regex test for pattern "${pattern}" with test "${test.testString}":`, error);
+      failed++;
+      results.push({
+        testString: test.testString,
+        description: test.description,
+        criteria: test.criteria,
+        matches: false,
+        passed: false,
+        error: true
+      });
+    }
+  }
+  
+  return { passed, failed, results };
+}
+
+// Create PowerShell test script
+function createPowerShellTestScript(scriptPath: string): void {
+  const scriptContent = `param(
+    [string]$Pattern,
+    [string]$TestString
+)
+
+try {
+    $regex = [regex]::new($Pattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor [System.Text.RegularExpressions.RegexOptions]::Multiline)
+    $matches = $regex.IsMatch($TestString)
+    Write-Output $matches
+} catch {
+    Write-Output "False"
+}`;
+  
+  fs.writeFileSync(scriptPath, scriptContent);
+}
+
 // Content processors
-function processYamlFile(
+async function processYamlFile(
   filePath: string, 
   type: ContentEntry['type'], 
   basePath: string,
   category: string
-): ContentEntry | null {
+): Promise<ContentEntry | null> {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
     const data = yaml.load(content) as any;
@@ -228,8 +365,29 @@ function processYamlFile(
         tags = [...tags, 'quality-profile'];
         break;
       case 'regex-pattern':
-        searchContent = `${title} ${description} ${data.regex || ''} regex pattern`;
+        searchContent = `${title} ${description} ${data.pattern || ''} regex pattern`;
         tags = [...tags, 'regex'];
+        
+        // Process regex101 link if present
+        if (data.tests && typeof data.tests === 'string' && data.tests.includes('regex101.com')) {
+          const regex101Data = await fetchRegex101Data(data.tests);
+          if (regex101Data) {
+            // Store the regex101 data
+            data.regex101 = {
+              url: data.tests,
+              pattern: regex101Data.regex,
+              flags: regex101Data.flags,
+              flavor: regex101Data.flavor,
+              unitTests: regex101Data.unitTests
+            };
+            
+            // Run tests if we have unit tests
+            if (regex101Data.unitTests && regex101Data.unitTests.length > 0) {
+              const testResults = runRegexTests(data.pattern || regex101Data.regex, regex101Data.unitTests);
+              data.testResults = testResults;
+            }
+          }
+        }
         break;
       case 'media-management':
         const searchableContent = Object.entries(data)
@@ -437,7 +595,7 @@ function createStaticEntries(): ContentEntry[] {
 }
 
 // Main generator
-function generateContentDatabase(): void {
+async function generateContentDatabase(): Promise<void> {
   console.log('🔨 Generating unified content database...');
   
   const entries: ContentEntry[] = [];
@@ -460,7 +618,7 @@ function generateContentDatabase(): void {
       const files = fs.readdirSync(dir).filter(f => f.endsWith('.yml') || f.endsWith('.yaml'));
       
       for (const file of files) {
-        const entry = processYamlFile(path.join(dir, file), type, basePath, category);
+        const entry = await processYamlFile(path.join(dir, file), type, basePath, category);
         if (entry) entries.push(entry);
       }
     }
@@ -580,7 +738,7 @@ export type ContentCategory = typeof contentDatabase.categories[number];
 
 // Run if called directly
 if (import.meta.url === `file://${process.argv[1]}`) {
-  generateContentDatabase();
+  generateContentDatabase().catch(console.error);
 }
 
 export { generateContentDatabase };

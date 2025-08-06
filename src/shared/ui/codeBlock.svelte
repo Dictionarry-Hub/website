@@ -16,7 +16,7 @@
   import 'prismjs/themes/prism-tomorrow.css';
   
   export let items = [];
-  // Each item should have: { title: string, code: string, language: string }
+  // Each item should have: { title: string, code: string, language: string, icon?: Component }
   
   let activeTab = 0;
   let copied = {};
@@ -63,11 +63,14 @@
         {#each items as item, index}
           <button
             on:click={() => activeTab = index}
-            class="px-4 py-3 text-sm font-medium transition-colors duration-200
+            class="px-4 py-3 text-sm font-medium transition-colors duration-200 flex items-center gap-2
                    {activeTab === index 
                      ? 'text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800 border-b-2 border-blue-500' 
                      : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-neutral-800/50'}"
           >
+            {#if item.icon}
+              <svelte:component this={item.icon} class="w-4 h-4" />
+            {/if}
             {item.title}
           </button>
         {/each}
@@ -75,7 +78,12 @@
     {:else if items.length === 1}
       <!-- Single item header -->
       <div class="flex items-center justify-between px-4 py-3 border-b border-neutral-200 dark:border-neutral-800">
-        <span class="text-xs text-neutral-600 dark:text-neutral-500 font-medium">{items[0].title}</span>
+        <span class="text-xs text-neutral-600 dark:text-neutral-500 font-medium flex items-center gap-2">
+          {#if items[0].icon}
+            <svelte:component this={items[0].icon} class="w-3.5 h-3.5" />
+          {/if}
+          {items[0].title}
+        </span>
       </div>
     {/if}
     

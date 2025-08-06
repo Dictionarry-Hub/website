@@ -42141,58 +42141,65 @@ export const contentDatabase = {
           "Enhancement",
           "UnWanted"
         ],
-        "tests": [
-          {
-            "expected": true,
-            "id": 1,
-            "input": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 55,
-              "start": 53
+        "tests": "https://regex101.com/r/FbKZWt",
+        "regex101": {
+          "url": "https://regex101.com/r/FbKZWt",
+          "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b((bluray|bd)?3d|sbs|half[ .-]ou|half[ .-]sbs)\\b",
+          "flags": "gmi",
+          "flavor": "pcre2",
+          "unitTests": [
+            {
+              "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": true
-          },
-          {
-            "expected": true,
-            "id": 2,
-            "input": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 35,
-              "start": 33
+            {
+              "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": true
-          },
-          {
-            "expected": false,
-            "id": 3,
-            "input": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 10,
-              "start": 8
+            {
+              "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
+            }
+          ]
+        },
+        "testResults": {
+          "passed": 2,
+          "failed": 1,
+          "results": [
+            {
+              "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": true,
+              "passed": true
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": false
-          }
-        ]
+            {
+              "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": true,
+              "passed": true
+            },
+            {
+              "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": false,
+              "passed": false
+            }
+          ]
+        }
       },
-      "searchText": "3d matches terms related to 3d video formats bluray3d or bd3d optional bluray or bd followed by 3d sbs side by side half ou or half sbs with space dot or hyphen as separators regex pattern",
+      "searchText": "3d matches terms related to 3d video formats bluray3d or bd3d optional bluray or bd followed by 3d sbs side by side half ou or half sbs with space dot or hyphen as separators b 12 d 3 b b bluray bd 3d sbs half ou half sbs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -42200,7 +42207,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-06-29T18:57:01.292Z"
+      "lastModified": "2025-08-06T05:02:22.759Z"
     },
     {
       "id": "regex-pattern-3l",
@@ -42220,7 +42227,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "3l regex pattern",
+      "searchText": "3l s 3l b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42248,7 +42255,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word regex pattern",
+      "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word s 4k4u b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42276,7 +42283,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot s 4kdvs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42304,7 +42311,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "7 1 surround regex pattern",
+      "searchText": "7 1 surround 7 1 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -42332,7 +42339,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "9volt regex pattern",
+      "searchText": "9volt s 9volt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42360,7 +42367,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aaauhd regex pattern",
+      "searchText": "aaauhd s aaauhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42387,7 +42394,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aac regex pattern",
+      "searchText": "aac baac b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -42414,7 +42421,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "abbie regex pattern",
+      "searchText": "abbie s abbie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42442,7 +42449,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ac regex pattern",
+      "searchText": "ac s ac b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42470,7 +42477,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ade regex pattern",
+      "searchText": "ade s ade b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42498,7 +42505,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ajp69 regex pattern",
+      "searchText": "ajp69 s ajp69 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42526,7 +42533,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ane regex pattern",
+      "searchText": "ane s ane b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42554,7 +42561,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aomundson regex pattern",
+      "searchText": "aomundson s aomundson b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42582,7 +42589,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "apex regex pattern",
+      "searchText": "apex s apex b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42610,7 +42617,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aroma banned for retagging regex pattern",
+      "searchText": "aroma banned for retagging s aroma b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42668,7 +42675,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "av1 av1 or aomedia video 1 is a video coding format that compresses video files and streams while maintaining high quality regex pattern",
+      "searchText": "av1 av1 or aomedia video 1 is a video coding format that compresses video files and streams while maintaining high quality b av1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -42695,7 +42702,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aviator regex pattern",
+      "searchText": "aviator s aviator b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42723,7 +42730,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "absinth regex pattern",
+      "searchText": "absinth s absinth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42808,7 +42815,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "amazon prime amazon prime video or simply prime video is an american subscription video on demand over the top streaming and rental service of amazon offered both as a stand alone service and as part of amazon s prime subscription regex pattern",
+      "searchText": "amazon prime amazon prime video or simply prime video is an american subscription video on demand over the top streaming and rental service of amazon offered both as a stand alone service and as part of amazon s prime subscription b amzn amzn amazon s web dl hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -42865,7 +42872,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "apple tv apple tv is an american subscription ott streaming service owned and operated by apple inc launched on november 1 2019 it offers a selection of original production film and television series called apple originals regex pattern",
+      "searchText": "apple tv apple tv is an american subscription ott streaming service owned and operated by apple inc launched on november 1 2019 it offers a selection of original production film and television series called apple originals b atvp aptv apple tv s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -42893,7 +42900,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "arid regex pattern",
+      "searchText": "arid s arid b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -42921,7 +42928,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "asakura regex pattern",
+      "searchText": "asakura s asakura b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43000,7 +43007,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "atmos regex pattern",
+      "searchText": "atmos batmos b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -43135,7 +43142,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "b w black and white colour grading this regex matches a 4 digit number optionally surrounded by parentheses followed by any amount of text and then detects references to black and white in various formats it supports blackwhite no spaces black and white black white black white black white as well as shorthand bw and b w while excluding invalid variations like b w b w or b w regex pattern",
+      "searchText": "b w black and white colour grading this regex matches a 4 digit number optionally surrounded by parentheses followed by any amount of text and then detects references to black and white in various formats it supports blackwhite no spaces black and white black white black white black white as well as shorthand bw and b w while excluding invalid variations like b w b w or b w d 4 bblack b s and s bwhite b bb w b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -43164,7 +43171,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bhdstudio regex pattern",
+      "searchText": "bhdstudio s bhdstudio b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43192,7 +43199,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluebird regex pattern",
+      "searchText": "bluebird s bluebird b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43220,7 +43227,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluranium regex pattern",
+      "searchText": "bluranium s bluranium b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43248,7 +43255,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "blutonium regex pattern",
+      "searchText": "blutonium s blutonium b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43277,7 +43284,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bmf regex pattern",
+      "searchText": "bmf s bmf b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43306,7 +43313,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bols banned for retagging regex pattern",
+      "searchText": "bols banned for retagging s bols b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43334,7 +43341,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "boredor regex pattern",
+      "searchText": "boredor s boredor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43362,7 +43369,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bstd regex pattern",
+      "searchText": "bstd s bstd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43449,7 +43456,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "btn atmos matches broadcastthenet atmos naming convention regex pattern",
+      "searchText": "btn atmos matches broadcastthenet atmos naming convention btrue hda 57 1 ddpa 57 1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -43476,7 +43483,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "btn regex pattern",
+      "searchText": "btn s btn b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43504,7 +43511,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bv regex pattern",
+      "searchText": "bv s bv b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43532,7 +43539,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "byndr regex pattern",
+      "searchText": "byndr s byndr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -43690,7 +43697,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "basic hdr formats matches dolby vision or hdr10 needed to better match uhd blurays regex pattern",
+      "searchText": "basic hdr formats matches dolby vision or hdr10 needed to better match uhd blurays b hlg pq sdr b d hdr b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -43719,7 +43726,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "beitai regex pattern",
+      "searchText": "beitai s beitai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44140,7 +44147,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "better theatricals matches movies where the theatrical cut is considered the better version subjectively chosen based on dictionarry s personal preferences and major opinion needed to override the default special edition preference matches terminator 2 judgement day 1991 alien 1979 star wars ot 1977 1983 apocalypse now 1979 the exorcist 1973 donnie darko 2001 amadeus 1984 payback 1999 almost famous 2000 regex pattern",
+      "searchText": "better theatricals matches movies where the theatrical cut is considered the better version subjectively chosen based on dictionarry s personal preferences and major opinion needed to override the default special edition preference matches terminator 2 judgement day 1991 alien 1979 star wars ot 1977 1983 apocalypse now 1979 the exorcist 1973 donnie darko 2001 amadeus 1984 payback 1999 almost famous 2000 b terminator 2 alien s 1979 star wars 4k 19 77 bempire strikes back breturn of the jedi apocalypse now the exorcist 1973 donnie darko amadeus payback 1999 payback straight up 2006 almost famous b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -44181,7 +44188,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "beyondhd banned due to only doing full discs regex pattern",
+      "searchText": "beyondhd banned due to only doing full discs s beyondhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44209,7 +44216,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bitor banned for fake dv hdr layer regex pattern",
+      "searchText": "bitor banned for fake dv hdr layer s bitor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44237,7 +44244,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bizkit regex pattern",
+      "searchText": "bizkit s bizkit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44265,7 +44272,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluraydesuyo regex pattern",
+      "searchText": "bluraydesuyo s bluraydesuyo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44293,7 +44300,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "blzt regex pattern",
+      "searchText": "blzt s blzt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44332,7 +44339,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "bracketed year match a year moniker inside square brackets regex pattern",
+      "searchText": "bracketed year match a year moniker inside square brackets d 4 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -44358,7 +44365,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bravia core sony pictures core formerly known as bravia core is a video on demand service from sony for its televisions and smartphones launched in april 2021 the service offers the streaming of movies at up to 4k resolution provided by sony pictures entertainment core stands for centre of real entertainment regex pattern",
+      "searchText": "bravia core sony pictures core formerly known as bravia core is a video on demand service from sony for its televisions and smartphones launched in april 2021 the service offers the streaming of movies at up to 4k resolution provided by sony pictures entertainment core stands for centre of real entertainment b bcore b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -44386,7 +44393,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bunny apocalypse regex pattern",
+      "searchText": "bunny apocalypse s bunny apocalypse b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44414,7 +44421,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cbt regex pattern",
+      "searchText": "cbt s cbt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44442,7 +44449,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chaos regex pattern",
+      "searchText": "chaos s chaos b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44470,7 +44477,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chd regex pattern",
+      "searchText": "chd s chd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44498,7 +44505,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cj regex pattern",
+      "searchText": "cj s cj b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44526,7 +44533,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cmct regex pattern",
+      "searchText": "cmct s cmct b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44587,7 +44594,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "cmrg prolific web dl group regex pattern",
+      "searchText": "cmrg prolific web dl group s cm a r io g b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44615,7 +44622,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "creative24 banned for bloated garbage regex pattern",
+      "searchText": "creative24 banned for bloated garbage s creative24 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44643,7 +44650,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crfw regex pattern",
+      "searchText": "crfw s crfw b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44671,7 +44678,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crx regex pattern",
+      "searchText": "crx s crx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44699,7 +44706,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crisc regex pattern",
+      "searchText": "crisc s crisc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44727,7 +44734,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ctr regex pattern",
+      "searchText": "ctr s ctr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44755,7 +44762,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cait sidhe regex pattern",
+      "searchText": "cait sidhe s cait sidhe b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44783,7 +44790,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chihiro regex pattern",
+      "searchText": "chihiro s chihiro b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44811,7 +44818,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chotab regex pattern",
+      "searchText": "chotab s chotab b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44839,7 +44846,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cinephiles regex pattern",
+      "searchText": "cinephiles s cinephiles b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44867,7 +44874,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot s cinefeel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -44895,7 +44902,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "coalgirls regex pattern",
+      "searchText": "coalgirls s coalgirls b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45009,7 +45016,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "colourisation colourisation or colorization in american english is the process of adding colour to black and white sepia or other monochrome images matches variations of color in both american and british spellings including base forms color colour past tense adjective forms colored coloured verb forms colorize colourize colorise colourise past participles colorized coloured colourized colourised regex pattern",
+      "searchText": "colourisation colourisation or colorization in american english is the process of adding colour to black and white sepia or other monochrome images matches variations of color in both american and british spellings including base forms color colour past tense adjective forms colored coloured verb forms colorize colourize colorise colourise past participles colorized coloured colourized colourised bcolou r i sz ed ed b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Colour Grade",
@@ -45037,7 +45044,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "commie regex pattern",
+      "searchText": "commie s commie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45115,7 +45122,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space regex pattern",
+      "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space b crit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -45143,7 +45150,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ctrlhd regex pattern",
+      "searchText": "ctrlhd s ctrlhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45171,7 +45178,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "d z0n3 regex pattern",
+      "searchText": "d z0n3 s d z0n3 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45199,7 +45206,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "deflate regex pattern",
+      "searchText": "deflate s deflate b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45227,7 +45234,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "depth regex pattern",
+      "searchText": "depth s depth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45255,7 +45262,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "don regex pattern",
+      "searchText": "don s don b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45282,7 +45289,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd hra es regex pattern",
+      "searchText": "dts hd hra es dts es hd hr hi regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45308,7 +45315,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd ma regex pattern",
+      "searchText": "dts hd ma b dts _ ma hd _ ma xll b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45334,7 +45341,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd regex pattern",
+      "searchText": "dts hd b dts _ ma hd _ ma xll b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45391,7 +45398,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dts x regex pattern",
+      "searchText": "dts x b dts _ x b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45417,7 +45424,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts regex pattern",
+      "searchText": "dts bdts b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45444,7 +45451,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "darq regex pattern",
+      "searchText": "darq s darq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45472,7 +45479,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dariush regex pattern",
+      "searchText": "dariush s dariush b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45500,7 +45507,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dekinai regex pattern",
+      "searchText": "dekinai s dekinai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45528,7 +45535,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "depraved banned for fake dv hdr layer regex pattern",
+      "searchText": "depraved banned for fake dv hdr layer s depraved b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45599,7 +45606,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "disney disney is an american subscription video on demand over the top streaming media service that primarily distributes films and television shows produced by walt disney studios and disney television studios with dedicated content hubs for disney s flagship brands disney pixar marvel star wars national geographic espn hulu and star regex pattern",
+      "searchText": "disney disney is an american subscription video on demand over the top streaming media service that primarily distributes films and television shows produced by walt disney studios and disney television studios with dedicated content hubs for disney s flagship brands disney pixar marvel star wars national geographic espn hulu and star b dsnp dsny p disney s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -45627,7 +45634,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "doki regex pattern",
+      "searchText": "doki s doki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -45654,7 +45661,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dolby digital regex pattern",
+      "searchText": "dolby digital bdd p b e _ ac3 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45680,7 +45687,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dolby digital regex pattern",
+      "searchText": "dolby digital bdd a z e ac3 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -45773,7 +45780,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dolby vision without fallback matches dolby vision when it doesn t come with regular hdr fallback a bluray remux or a hulu web dl regex pattern",
+      "searchText": "dolby vision without fallback matches dolby vision when it doesn t come with regular hdr fallback a bluray remux or a hulu web dl hdr hulu remux bluray b dv dovi dolby v ision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -45952,7 +45959,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dolby vision dolby vision is a high dynamic range hdr video format that uses dynamic metadata to deliver enhanced brightness contrast and color on a scene by scene or frame by frame basis providing superior picture quality this pattern excludes matches where dolby vision is associated with sdr standard dynamic range or hlg hybrid log gamma ensuring it focuses on dolby vision specific terms regex pattern",
+      "searchText": "dolby vision dolby vision is a high dynamic range hdr video format that uses dynamic metadata to deliver enhanced brightness contrast and color on a scene by scene or frame by frame basis providing superior picture quality this pattern excludes matches where dolby vision is associated with sdr standard dynamic range or hlg hybrid log gamma ensuring it focuses on dolby vision specific terms b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -45981,7 +45988,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "drag regex pattern",
+      "searchText": "drag s drag b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46145,7 +46152,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dual audio matches releases with dual audio media releases that contain two language tracks typically the original language such as japanese along with an english dub allowing viewers to switch between either audio track while watching the same video content regex pattern",
+      "searchText": "dual audio matches releases with dual audio media releases that contain two language tracks typically the original language such as japanese along with an english dub allowing viewers to switch between either audio track while watching the same video content b multi a za z dual s audio complete b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -46171,7 +46178,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "e n d regex pattern",
+      "searchText": "e n d s e n d b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46199,7 +46206,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "e1 regex pattern",
+      "searchText": "e1 s e1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46227,7 +46234,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ea regex pattern",
+      "searchText": "ea s ea b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46255,7 +46262,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "edph regex pattern",
+      "searchText": "edph s edph b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46283,7 +46290,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "emerald regex pattern",
+      "searchText": "emerald s emerald b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46311,7 +46318,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "epsilon regex pattern",
+      "searchText": "epsilon s epsilon b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46339,7 +46346,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "esir regex pattern",
+      "searchText": "esir s esir b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46394,7 +46401,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "evo ipt internal known for releasing pre releases before anyone else also releases encodes of varying quality regex pattern",
+      "searchText": "evo ipt internal known for releasing pre releases before anyone else also releases encodes of varying quality s evo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46422,7 +46429,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "excision regex pattern",
+      "searchText": "excision s excision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46450,7 +46457,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "exp regex pattern",
+      "searchText": "exp s exp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46478,7 +46485,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ebp regex pattern",
+      "searchText": "ebp s ebp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46506,7 +46513,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "erai raws regex pattern",
+      "searchText": "erai raws s erai raws b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46534,7 +46541,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "exiled destiny regex pattern",
+      "searchText": "exiled destiny s exiled destiny b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46593,7 +46600,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "extended clip matches preview releases labelled as extended clip regex pattern",
+      "searchText": "extended clip matches preview releases labelled as extended clip b extended clip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Preview",
@@ -46631,7 +46638,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "extras extras special features featurettes etc regex pattern",
+      "searchText": "extras extras special features featurettes etc i b 12 d 3 b b b extras bonus extended _ clip special feature s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "UnWanted",
@@ -46658,7 +46665,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "fff regex pattern",
+      "searchText": "fff s fff b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46686,7 +46693,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "fgt banned for retagging regex pattern",
+      "searchText": "fgt banned for retagging s fgt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46713,7 +46720,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flac regex pattern",
+      "searchText": "flac bflac b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -46740,7 +46747,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flame regex pattern",
+      "searchText": "flame s flame b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46768,7 +46775,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flux regex pattern",
+      "searchText": "flux s flux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46796,7 +46803,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "frds regex pattern",
+      "searchText": "frds s frds b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46824,7 +46831,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ftw hd regex pattern",
+      "searchText": "ftw hd s ftw hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46852,7 +46859,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "filmhd regex pattern",
+      "searchText": "filmhd s filmhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46880,7 +46887,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "final8 regex pattern",
+      "searchText": "final8 s final8 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46908,7 +46915,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flights banned for fake dv hdr layer regex pattern",
+      "searchText": "flights banned for fake dv hdr layer s flights b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46936,7 +46943,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flugel regex pattern",
+      "searchText": "flugel s flugel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46964,7 +46971,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "form regex pattern",
+      "searchText": "form s form b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -46992,7 +46999,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "framestor regex pattern",
+      "searchText": "framestor s framestor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47218,7 +47225,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "full disc a full disc release refers to a complete copy of a physical media disc such as a dvd or blu ray preserving all original content including menus bonus features and multiple audio or subtitle tracks unlike compressed or re encoded formats full disc files maintain the full structure and quality of the original disc often stored as iso files or folders like bdmv for blu rays these releases are ideal for users seeking an authentic unaltered experience identical to using the physical disc regex pattern",
+      "searchText": "full disc a full disc release refers to a complete copy of a physical media disc such as a dvd or blu ray preserving all original content including menus bonus features and multiple audio or subtitle tracks unlike compressed or re encoded formats full disc files maintain the full structure and quality of the original disc often stored as iso files or folders like bdmv for blu rays these releases are ideal for users seeking an authentic unaltered experience identical to using the physical disc b hd _ hd dvd bdrip mkv xvid wmv d3g bdremux remux 1080p hevc xh _ 26 45 german dl d 4 german dl b avc hevc vc _ 1 mvc mpeg _ 2 b b b blu _ ray bd hd _ dvd b b avc hevc vc _ 1 mvc mpeg _ 2 bdmv iso b b b _ complete dis ck b blu _ ray hd _ dvd 3d _ bd br _ disk full _ blu _ ray bd uhd _ 25 50 66 100 iso i dvd9 dvd5 ntsc pal vob ifo vc 1 avc mpeg 2 bcomplete s uhd s blu s ray b bcomplete bluray b bbr disk b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Storage",
@@ -47245,7 +47252,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "galaxy regex pattern",
+      "searchText": "galaxy s galaxy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47273,7 +47280,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "gnome matches gnome when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "gnome matches gnome when preceded by whitespace a hyphen or dot s gnome b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47301,7 +47308,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "grimm regex pattern",
+      "searchText": "grimm s grimm b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47329,7 +47336,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "gs88 regex pattern",
+      "searchText": "gs88 s gs88 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47357,7 +47364,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "guhzer regex pattern",
+      "searchText": "guhzer s guhzer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47385,7 +47392,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "geek regex pattern",
+      "searchText": "geek s geek b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47414,7 +47421,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "handjob regex pattern",
+      "searchText": "handjob s handjob b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47528,7 +47535,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hbo max rename hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max regex pattern",
+      "searchText": "hbo max rename hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max hmax b b hmax regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -47641,7 +47648,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hbo max hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max regex pattern",
+      "searchText": "hbo max hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max b hmax hbom hbo _ max b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -47669,7 +47676,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hd77 regex pattern",
+      "searchText": "hd77 s hd77 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47697,7 +47704,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdchina regex pattern",
+      "searchText": "hdchina s hdchina b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47725,7 +47732,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdmaniacs regex pattern",
+      "searchText": "hdmaniacs s hdmaniacs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -47860,7 +47867,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr this regex matches a hdr generalisation this can be hdr10 hdr10 etc regex pattern",
+      "searchText": "hdr this regex matches a hdr generalisation this can be hdr10 hdr10 etc b hdr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -47938,7 +47945,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr10 missing groups matches groups who mislabel hdr10 regex pattern",
+      "searchText": "hdr10 missing groups matches groups who mislabel hdr10 b 3l cinephiles c0ke edv elneekster framestor hdh hqmux kenobi mimic ntb playbd ryu sicfoi strikes tekmux triton w4nk3r b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48150,7 +48157,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr10 this regex matches hdr10 when followed by either a plus sign p or plus regex pattern",
+      "searchText": "hdr10 this regex matches hdr10 when followed by either a plus sign p or plus bhdr10 p lus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -48310,7 +48317,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr10 this regex matches hdr10 only when it is not followed by any hdr format specifiers like or plus regex pattern",
+      "searchText": "hdr10 this regex matches hdr10 only when it is not followed by any hdr format specifiers like or plus bhdr10 plus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -48339,7 +48346,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hds regex pattern",
+      "searchText": "hds s hds b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48367,7 +48374,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdmux regex pattern",
+      "searchText": "hdmux s hdmux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48444,7 +48451,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hevc an open source encoder that produces hevc videos regex pattern",
+      "searchText": "hevc an open source encoder that produces hevc videos b hevc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -48472,7 +48479,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hhweb regex pattern",
+      "searchText": "hhweb s hhweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48501,7 +48508,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hlg this regex matches a hlg generalisation this is a basic hdr format regex pattern",
+      "searchText": "hlg this regex matches a hlg generalisation this is a basic hdr format b hlg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -48530,7 +48537,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hone regex pattern",
+      "searchText": "hone s hone b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48558,7 +48565,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hqmux regex pattern",
+      "searchText": "hqmux s hqmux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48586,7 +48593,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "huntjr regex pattern",
+      "searchText": "huntjr s huntjr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48614,7 +48621,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hares regex pattern",
+      "searchText": "hares s hares b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48642,7 +48649,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hidt regex pattern",
+      "searchText": "hidt s hidt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48670,7 +48677,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hifi regex pattern",
+      "searchText": "hifi s hifi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48698,7 +48705,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hip regex pattern",
+      "searchText": "hip s hip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48726,7 +48733,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "horriblesubs regex pattern",
+      "searchText": "horriblesubs s horriblesubs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48754,7 +48761,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hotstar disney hotstar also known as jiohotstar or simply hotstar is an indian subscription video on demand over the top streaming service owned by disney star the brand was introduced as hotstar for a streaming service carrying content from disney star s formerly star india local networks including films television series live sports and original programming as well as featuring content licensed from third parties such as showtime among others regex pattern",
+      "searchText": "hotstar disney hotstar also known as jiohotstar or simply hotstar is an indian subscription video on demand over the top streaming service owned by disney star the brand was introduced as hotstar for a streaming service carrying content from disney star s formerly star india local networks including films television series live sports and original programming as well as featuring content licensed from third parties such as showtime among others b htsr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -48813,7 +48820,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hulu hulu an american subscription streaming service owned by disney offers recent tv episodes full seasons of shows original content and live tv channels as of december 2023 hulu content is being integrated into disney making its library accessible to disney subscribers regex pattern",
+      "searchText": "hulu hulu an american subscription streaming service owned by disney offers recent tv episodes full seasons of shows original content and live tv channels as of december 2023 hulu content is being integrated into disney making its library accessible to disney subscribers b hulu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -48841,7 +48848,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hypstu regex pattern",
+      "searchText": "hypstu s hypstu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48869,7 +48876,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iamable regex pattern",
+      "searchText": "iamable s iamable b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48897,7 +48904,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ide regex pattern",
+      "searchText": "ide s ide b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -48925,7 +48932,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ik regex pattern",
+      "searchText": "ik s ik b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49042,7 +49049,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "imax enhanced matches imax releases from specific digital sources checks for webs from disney or bravia core ensures imax appears with optional enhanced suffix but not when preceded by non regex pattern",
+      "searchText": "imax enhanced matches imax releases from specific digital sources checks for webs from disney or bravia core ensures imax appears with optional enhanced suffix but not when preceded by non b dsnp disney bc b core web dl rip b b non imax enhanced b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -49111,7 +49118,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "imax matches any imax release this includes any movie shot with imax in mind and henceforth tagged as imax imax enchanced digital releases found on disney bravia core regex pattern",
+      "searchText": "imax matches any imax release this includes any movie shot with imax in mind and henceforth tagged as imax imax enchanced digital releases found on disney bravia core b non imax b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -49139,7 +49146,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iznjie biznjie regex pattern",
+      "searchText": "iznjie biznjie s iznjie biznjie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49167,7 +49174,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "justwatch regex pattern",
+      "searchText": "justwatch s justwatch b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49195,7 +49202,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kan3d2m regex pattern",
+      "searchText": "kan3d2m s kan3d2m b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49223,7 +49230,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kashmir regex pattern",
+      "searchText": "kashmir s kashmir b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49251,7 +49258,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kc banned for ai upscales regex pattern",
+      "searchText": "kc banned for ai upscales s kc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49279,7 +49286,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kcw kocowa is an american over the top streaming service headquartered in los angeles as a joint venture between the top three korean broadcast networks to provide korean entertainment including k dramas k reality k variety and k pop to the americas and all with multi language subtitles regex pattern",
+      "searchText": "kcw kocowa is an american over the top streaming service headquartered in los angeles as a joint venture between the top three korean broadcast networks to provide korean entertainment including k dramas k reality k variety and k pop to the americas and all with multi language subtitles b kcw kocowa b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -49307,7 +49314,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kh regex pattern",
+      "searchText": "kh s kh b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49335,7 +49342,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "knives regex pattern",
+      "searchText": "knives s knives b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49363,7 +49370,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kralimarko regex pattern",
+      "searchText": "kralimarko s kralimarko b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49391,7 +49398,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kaleido regex pattern",
+      "searchText": "kaleido s kaleido b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49419,7 +49426,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kametsu regex pattern",
+      "searchText": "kametsu s kametsu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49447,7 +49454,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kings regex pattern",
+      "searchText": "kings s kings b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49475,7 +49482,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kitsune regex pattern",
+      "searchText": "kitsune s kitsune b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49503,7 +49510,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "koten_gars regex pattern",
+      "searchText": "koten_gars s koten_gars b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49531,7 +49538,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lama banned for retagging regex pattern",
+      "searchText": "lama banned for retagging s lama b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49559,7 +49566,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazarus regex pattern",
+      "searchText": "lazarus s lazarus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49587,7 +49594,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot s lazy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49615,7 +49622,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "legi0n regex pattern",
+      "searchText": "legi0n s legi0n b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49643,7 +49650,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lm regex pattern",
+      "searchText": "lm s lm b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49671,7 +49678,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lst regex pattern",
+      "searchText": "lst s lst b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49699,7 +49706,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lys1th3a regex pattern",
+      "searchText": "lys1th3a s lys1th3a b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49727,7 +49734,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazyremux regex pattern",
+      "searchText": "lazyremux s lazyremux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49755,7 +49762,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ling regex pattern",
+      "searchText": "ling s ling b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49783,7 +49790,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "littlebakas regex pattern",
+      "searchText": "littlebakas s littlebakas b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49811,7 +49818,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lord regex pattern",
+      "searchText": "lord s lord b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49839,7 +49846,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lolhd regex pattern",
+      "searchText": "lolhd s lolhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49867,7 +49874,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lucifer regex pattern",
+      "searchText": "lucifer s lucifer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49895,7 +49902,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lulu regex pattern",
+      "searchText": "lulu s lulu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49923,7 +49930,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "malus regex pattern",
+      "searchText": "malus s malus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49951,7 +49958,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mtbb regex pattern",
+      "searchText": "mtbb s mtbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -49979,7 +49986,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mteam regex pattern",
+      "searchText": "mteam s mteam b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50007,7 +50014,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mzabi regex pattern",
+      "searchText": "mzabi s mzabi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50035,7 +50042,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mainframe regex pattern",
+      "searchText": "mainframe s mainframe b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50126,7 +50133,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "max rename max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands regex pattern",
+      "searchText": "max rename max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands max b b max regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -50217,7 +50224,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "max max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands regex pattern",
+      "searchText": "max max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands b hbo _ max b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -50245,7 +50252,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mimic regex pattern",
+      "searchText": "mimic s mimic b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50287,7 +50294,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "movieman regex pattern",
+      "searchText": "movieman s movieman b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50421,7 +50428,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "movies anywhere movies anywhere ma is a cloud based digital rights locker and over the top streaming platform that allows users to stream and download purchased films including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services regex pattern",
+      "searchText": "movies anywhere movies anywhere ma is a cloud based digital rights locker and over the top streaming platform that allows users to stream and download purchased films including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services b dts hd ma b bweb _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -50449,7 +50456,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mysteria regex pattern",
+      "searchText": "mysteria s mysteria b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50477,7 +50484,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nahom banned for poor quality multi regex pattern",
+      "searchText": "nahom banned for poor quality multi s nahom b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50506,7 +50513,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ncmt regex pattern",
+      "searchText": "ncmt s ncmt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50535,7 +50542,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nosivid regex pattern",
+      "searchText": "nosivid s nosivid b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50563,7 +50570,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ntg regex pattern",
+      "searchText": "ntg s ntg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50618,7 +50625,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "ntb regex pattern",
+      "searchText": "ntb s ntb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50646,7 +50653,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "netaro regex pattern",
+      "searchText": "netaro s netaro b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50730,7 +50737,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "netflix netflix is an american subscription video on demand over the top streaming service the service primarily distributes original and acquired films and television shows from various genres and it is available internationally in multiple languages regex pattern",
+      "searchText": "netflix netflix is an american subscription video on demand over the top streaming service the service primarily distributes original and acquired films and television shows from various genres and it is available internationally in multiple languages b nf netflix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -50758,7 +50765,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nogroup regex pattern",
+      "searchText": "nogroup s nogr ou p b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50888,7 +50895,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "non retail hdr formats matches dolby vision or hdr10 needed to match release groups who create custom hdr layers regex pattern",
+      "searchText": "non retail hdr formats matches dolby vision or hdr10 needed to match release groups who create custom hdr layers b hlg pq sdr b d hdr10 p lus b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -50945,7 +50952,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "non retail hdr groups matches groups that produce non retail hdr regex pattern",
+      "searchText": "non retail hdr groups matches groups that produce non retail hdr s vector bitor depraved sasukeduck tarunk9c jennaortegauhd visionxpert flights b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -50974,7 +50981,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "now rename now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast regex pattern",
+      "searchText": "now rename now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast now b b now regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -51002,7 +51009,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "now now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast regex pattern",
+      "searchText": "now now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast b now b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -51030,7 +51037,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nyhd regex pattern",
+      "searchText": "nyhd s nyhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51058,7 +51065,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "oeplus banned for automated encodes regex pattern",
+      "searchText": "oeplus banned for automated encodes s oeplus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51086,7 +51093,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "origen regex pattern",
+      "searchText": "origen s origen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51114,7 +51121,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ozr regex pattern",
+      "searchText": "ozr s ozr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51142,7 +51149,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "okay subs regex pattern",
+      "searchText": "okay subs s okay subs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51216,7 +51223,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "open matte matches releases with restored widescreen aspect ratio labelled as open matte regex pattern",
+      "searchText": "open matte matches releases with restored widescreen aspect ratio labelled as open matte b open matte b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Aspect Ratio",
@@ -51244,7 +51251,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "p0w4hd regex pattern",
+      "searchText": "p0w4hd s p0w4hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51271,7 +51278,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pcm regex pattern",
+      "searchText": "pcm b l pcm b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -51298,7 +51305,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "phocis regex pattern",
+      "searchText": "phocis s phocis b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51325,7 +51332,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "phoenix matches phoenix when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "phoenix matches phoenix when preceded by whitespace a hyphen or dot s phoenix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51352,7 +51359,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pp regex pattern",
+      "searchText": "pp s pp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51381,7 +51388,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pq this regex matches a pq generalisation this is a basic hdr format regex pattern",
+      "searchText": "pq this regex matches a pq generalisation this is a basic hdr format b pq pq10 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -51410,7 +51417,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pth regex pattern",
+      "searchText": "pth s pth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51438,7 +51445,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ptp regex pattern",
+      "searchText": "ptp s ptp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51490,7 +51497,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "pter regex pattern",
+      "searchText": "pter s pter b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51542,7 +51549,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "pterweb regex pattern",
+      "searchText": "pterweb s pterweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51611,7 +51618,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "paramount paramount is an american subscription video on demand over the top streaming service owned that offers content primarily from the libraries of cbs media ventures cbs studios paramount media networks and paramount pictures while also including original series and films live streaming sports coverage and in the united states live streaming of local cbs broadcast stations regex pattern",
+      "searchText": "paramount paramount is an american subscription video on demand over the top streaming service owned that offers content primarily from the libraries of cbs media ventures cbs studios paramount media networks and paramount pictures while also including original series and films live streaming sports coverage and in the united states live streaming of local cbs broadcast stations b pmtp paramount plus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -51735,7 +51742,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "peacock tv rename peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel regex pattern",
+      "searchText": "peacock tv rename peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel pcok b b pcok regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -51859,7 +51866,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "peacock tv peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel regex pattern",
+      "searchText": "peacock tv peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel b 1080 2160 720 p pcok peacock web dl web dl peacock b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -51887,7 +51894,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "penumbra regex pattern",
+      "searchText": "penumbra s penumbra b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51915,7 +51922,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pirates banned for mislabeling web dls as webrips regex pattern",
+      "searchText": "pirates banned for mislabeling web dls as webrips s pirates b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51943,7 +51950,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pmp regex pattern",
+      "searchText": "pmp s pmp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51971,7 +51978,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pookie regex pattern",
+      "searchText": "pookie s pookie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -51999,7 +52006,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "positive regex pattern",
+      "searchText": "positive s positive b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52027,7 +52034,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pussyfoot regex pattern",
+      "searchText": "pussyfoot s pussyfoot b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52055,7 +52062,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot s qoq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52083,7 +52090,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "quetzal regex pattern",
+      "searchText": "quetzal s quetzal b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52111,7 +52118,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "qxr regex pattern",
+      "searchText": "qxr s qxr tigole freethefish sampa afm72 silence r00t yogi monolith panda kappa t3nzin rcvr ime rzerox garshasp ghost bandi natty b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52140,7 +52147,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rargb regex pattern",
+      "searchText": "rargb s rargb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52169,7 +52176,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "reborn regex pattern",
+      "searchText": "reborn s reborn b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52197,7 +52204,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "raizel regex pattern",
+      "searchText": "raizel s raizel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52225,7 +52232,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rasetsu regex pattern",
+      "searchText": "rasetsu s rasetsu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52253,7 +52260,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "request regex pattern",
+      "searchText": "request s request b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52281,7 +52288,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "realhd regex pattern",
+      "searchText": "realhd s realhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52353,7 +52360,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "remux a remux is a digital video file that maintains the exact quality of the original source like a blu ray or dvd by copying the video and audio streams without re encoding them essentially creating a perfect 1 1 copy think of it like carefully transferring the contents of a blu ray disc into a more convenient container file format typically mkv similar to pouring fine wine from its bottle into a decanter without changing the wine itself regex pattern",
+      "searchText": "remux a remux is a digital video file that maintains the exact quality of the original source like a blu ray or dvd by copying the video and audio streams without re encoding them essentially creating a perfect 1 1 copy think of it like carefully transferring the contents of a blu ray disc into a more convenient container file format typically mkv similar to pouring fine wine from its bottle into a decanter without changing the wine itself remux regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -52480,7 +52487,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack1 matches proper or repack or rerip only when they appear after a year 4 digits but not before one d 4 look for a 4 digit number before b re pack rip proper b match proper repack rerip regex pattern",
+      "searchText": "repack1 matches proper or repack or rerip only when they appear after a year 4 digits but not before one d 4 look for a 4 digit number before b re pack rip proper b match proper repack rerip b re pack rip proper b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -52653,7 +52660,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack2 matches either real with optional space dot followed by proper repack rerip or proper2 repack2 rerip2 b real s re pack rip proper match real followed by proper repack rerip re pack rip proper 2 b or match proper2 repack2 rerip2 regex pattern",
+      "searchText": "repack2 matches either real with optional space dot followed by proper repack rerip or proper2 repack2 rerip2 b real s re pack rip proper match real followed by proper repack rerip re pack rip proper 2 b or match proper2 repack2 rerip2 b real s re pack rip proper re pack rip proper 2 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -52826,7 +52833,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack3 matches either real real with optional space dot between words followed by proper repack rerip or proper3 repack3 rerip3 b real s real s re pack rip proper match real real followed by proper repack rerip re pack rip proper 3 b or match proper3 repack3 rerip3 regex pattern",
+      "searchText": "repack3 matches either real real with optional space dot between words followed by proper repack rerip or proper3 repack3 rerip3 b real s real s re pack rip proper match real real followed by proper repack rerip re pack rip proper 3 b or match proper3 repack3 rerip3 b real s real s re pack rip proper re pack rip proper 3 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -52905,7 +52912,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "roku the roku channel is an over the top video streaming service available in the u s canada mexico and the u k launched in september 2017 the roku channel offers over 400 free live linear tv channels more than 80 000 free movies and shows and access to paid content regex pattern",
+      "searchText": "roku the roku channel is an over the top video streaming service available in the u s canada mexico and the u k launched in september 2017 the roku channel offers over 400 free live linear tv channels more than 80 000 free movies and shows and access to paid content b 12 d 3 b b roku b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -52933,7 +52940,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sa89 regex pattern",
+      "searchText": "sa89 s sa89 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -52961,7 +52968,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "scy regex pattern",
+      "searchText": "scy s scy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53019,7 +53026,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sdr explicitly matches labelled standard dynamic range i e sdr regex pattern",
+      "searchText": "sdr explicitly matches labelled standard dynamic range i e sdr b sdr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "HDR",
@@ -53060,7 +53067,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sm737 regex pattern",
+      "searchText": "sm737 s sm737 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53088,7 +53095,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smahawug regex pattern",
+      "searchText": "smahawug s smahawug b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53116,7 +53123,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smurf regex pattern",
+      "searchText": "smurf s smurf b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53158,7 +53165,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sop regex pattern",
+      "searchText": "sop s sop b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53186,7 +53193,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "spectacle regex pattern",
+      "searchText": "spectacle s spectacle b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53214,7 +53221,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sphd regex pattern",
+      "searchText": "sphd s sphd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53242,7 +53249,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "strikes regex pattern",
+      "searchText": "strikes s strikes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53270,7 +53277,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stuttershit regex pattern",
+      "searchText": "stuttershit s stuttershit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53298,7 +53305,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "surcode regex pattern",
+      "searchText": "surcode s surcode b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53326,7 +53333,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "swaggeruhd regex pattern",
+      "searchText": "swaggeruhd s swaggeruhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53354,7 +53361,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "swtyblz regex pattern",
+      "searchText": "swtyblz s swtyblz b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53382,7 +53389,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sancti regex pattern",
+      "searchText": "sancti s sancti b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53410,7 +53417,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "saizen regex pattern",
+      "searchText": "saizen s saizen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53438,7 +53445,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sallysubs regex pattern",
+      "searchText": "sallysubs s sallysubs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53466,7 +53473,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sasukeduck banned for fake dv hdr layer regex pattern",
+      "searchText": "sasukeduck banned for fake dv hdr layer s sasukeduck b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53494,7 +53501,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sbr regex pattern",
+      "searchText": "sbr s sbr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53519,7 +53526,7 @@ export const contentDatabase = {
         "tags": [],
         "tests": []
       },
-      "searchText": "scene matches scene groups regex pattern",
+      "searchText": "scene matches scene groups s sparks drones rovers sprinter geckos shortbrehd edith filmhd pow4hd hd4u teneighty ethel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -53545,7 +53552,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "senjou regex pattern",
+      "searchText": "senjou s senjou b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53573,7 +53580,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "shieldbearer banned for ai upscale regex pattern",
+      "searchText": "shieldbearer banned for ai upscale s shieldbearer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53601,7 +53608,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "showtime rename showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming regex pattern",
+      "searchText": "showtime rename showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming sho b b sho regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -53629,7 +53636,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "showtime showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming regex pattern",
+      "searchText": "showtime showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming b sho showtime b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -53657,7 +53664,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sic regex pattern",
+      "searchText": "sic s sic b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53685,7 +53692,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sicfoi regex pattern",
+      "searchText": "sicfoi s sicfoi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53727,7 +53734,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sigla regex pattern",
+      "searchText": "sigla s sigla b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53755,7 +53762,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sigma regex pattern",
+      "searchText": "sigma s sigma b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53783,7 +53790,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "simple regex pattern",
+      "searchText": "simple s simple b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -53826,7 +53833,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sing along matches sing along releases when sing along is preceded by a year ensures that sing along is not matched in the movie title regex pattern",
+      "searchText": "sing along matches sing along releases when sing along is preceded by a year ensures that sing along is not matched in the movie title b 12 d 3 b b sing _ along b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -53853,7 +53860,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "solar regex pattern",
+      "searchText": "solar s solar b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54241,7 +54248,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "special edition matches any type of non theatrical edition regex pattern",
+      "searchText": "special edition matches any type of non theatrical edition b extended uncut directors special unrated uncensored cut version edition b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -54268,7 +54275,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stan rename stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom regex pattern",
+      "searchText": "stan rename stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom stan b b stan regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -54296,7 +54303,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stan stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom regex pattern",
+      "searchText": "stan stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom b stan b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -54324,7 +54331,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "subsplease regex pattern",
+      "searchText": "subsplease s subsplease b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54352,7 +54359,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "subsplus regex pattern",
+      "searchText": "subsplus s subsplus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54380,7 +54387,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sumvision regex pattern",
+      "searchText": "sumvision s sumvision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54408,7 +54415,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "taoe regex pattern",
+      "searchText": "taoe s taoe goki frys jbent dnu ainz thesickle anonaz species180 r0b0t xtrem3x hxd arcx wem nostradamus erie duhit jb2049 drainedday ajjmin b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54436,7 +54443,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tbb regex pattern",
+      "searchText": "tbb s tbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54464,7 +54471,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tdd regex pattern",
+      "searchText": "tdd s tdd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54492,7 +54499,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tekno3d banned for fake dv hdr layer regex pattern",
+      "searchText": "tekno3d banned for fake dv hdr layer s tekno3d b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54520,7 +54527,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tepes regex pattern",
+      "searchText": "tepes s tepes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54548,7 +54555,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "terminal regex pattern",
+      "searchText": "terminal s terminal b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54576,7 +54583,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "thora regex pattern",
+      "searchText": "thora s thora b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54604,7 +54611,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "threesome regex pattern",
+      "searchText": "threesome s threesome b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54632,7 +54639,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tombcruise regex pattern",
+      "searchText": "tombcruise s tombcruise b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54660,7 +54667,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot s tommy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54688,7 +54695,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "triton regex pattern",
+      "searchText": "triton s triton b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54716,7 +54723,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ttga regex pattern",
+      "searchText": "ttga s ttga b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54744,7 +54751,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tving tving is a south korean subscription video on demand over the top streaming service operated by tving corporation a joint venture made of cj enm entertainment division naver and jtbc by its jtbc studios now called sll regex pattern",
+      "searchText": "tving tving is a south korean subscription video on demand over the top streaming service operated by tving corporation a joint venture made of cj enm entertainment division naver and jtbc by its jtbc studios now called sll b tving b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -54772,7 +54779,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tayto regex pattern",
+      "searchText": "tayto s tayto b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54800,7 +54807,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "telly banned for retagging regex pattern",
+      "searchText": "telly banned for retagging s telly b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54874,7 +54881,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "theatrical edition matches any type of theatrical edition ensures that theatrical comes after the year so that movies with theatrical in the title are not matched regex pattern",
+      "searchText": "theatrical edition matches any type of theatrical edition ensures that theatrical comes after the year so that movies with theatrical in the title are not matched d 4 b theatrical b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -54901,7 +54908,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tnp regex pattern",
+      "searchText": "tnp s tnp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54929,7 +54936,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tron regex pattern",
+      "searchText": "tron s tron b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -54956,7 +54963,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "truehd missing groups matches groups who mislabel truehd regex pattern",
+      "searchText": "truehd missing groups matches groups who mislabel truehd s triton epsilon nogroup pmp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -54983,7 +54990,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "truehd regex pattern",
+      "searchText": "truehd true hd regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -55011,7 +55018,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tsundere regex pattern",
+      "searchText": "tsundere s tsundere b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55050,7 +55057,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "uhd blu ray matches uhd bluray or uhd blu ray with a hyphen space dot or underscore between them regex pattern",
+      "searchText": "uhd blu ray matches uhd bluray or uhd blu ray with a hyphen space dot or underscore between them buhd _ s blu ray b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -55087,7 +55094,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes regex pattern",
+      "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes s legi0n b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -55113,7 +55120,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "uhdclubremux regex pattern",
+      "searchText": "uhdclubremux s uhdclubremux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55141,7 +55148,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ultrahdclub regex pattern",
+      "searchText": "ultrahdclub s ultrahdclub b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55360,7 +55367,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "upscaled matches upscales regrades ai enhancements etc regex pattern",
+      "searchText": "upscaled matches upscales regrades ai enhancements etc up s scale re s grade baius b ai s enhanced regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -55388,7 +55395,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "valis regex pattern",
+      "searchText": "valis s valis b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55416,7 +55423,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "varyg regex pattern",
+      "searchText": "varyg s varyg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55444,7 +55451,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vector banned for fake dv hdr layer regex pattern",
+      "searchText": "vector banned for fake dv hdr layer s vector b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55472,7 +55479,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vlad regex pattern",
+      "searchText": "vlad s vlad b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55530,7 +55537,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "vp9 vp9 is an open and royalty free video coding format developed by google regex pattern",
+      "searchText": "vp9 vp9 is an open and royalty free video coding format developed by google b vp9 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -55570,7 +55577,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "vvc vvc or versatile video coding h 266 is a video coding format that compresses video files and streams to significantly smaller sizes than h 265 while maintaining high quality regex pattern",
+      "searchText": "vvc vvc or versatile video coding h 266 is a video coding format that compresses video files and streams to significantly smaller sizes than h 265 while maintaining high quality s vvc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -55597,7 +55604,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "viethd regex pattern",
+      "searchText": "viethd s viethd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55651,7 +55658,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "viki rakuten viki is an american over the top subscription video on demand streaming service it streams videos similar to other services but also allows users to subtitle content available in 200 languages as well as providing original programming regex pattern",
+      "searchText": "viki rakuten viki is an american over the top subscription video on demand streaming service it streams videos similar to other services but also allows users to subtitle content available in 200 languages as well as providing original programming b viki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -55679,7 +55686,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "visionxpert banned for fake dv hdr layer regex pattern",
+      "searchText": "visionxpert banned for fake dv hdr layer s visionxpert b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55707,7 +55714,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "viu viu is a hong kong based over the top video on demand streaming service from pccw media group s viu international ltd viu delivers content in different genres from asia s top content providers with local language subtitles regex pattern",
+      "searchText": "viu viu is a hong kong based over the top video on demand streaming service from pccw media group s viu international ltd viu delivers content in different genres from asia s top content providers with local language subtitles b viu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -55735,7 +55742,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vodes regex pattern",
+      "searchText": "vodes s vodes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55763,7 +55770,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vyndros regex pattern",
+      "searchText": "vyndros s vyndros b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55791,7 +55798,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "w4nk3r regex pattern",
+      "searchText": "w4nk3r s w4nk3r b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55819,7 +55826,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "watchable regex pattern",
+      "searchText": "watchable s watchable b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55847,7 +55854,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wbdp regex pattern",
+      "searchText": "wbdp s wbdp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55875,7 +55882,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wming regex pattern",
+      "searchText": "wming s wming b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55903,7 +55910,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wou regex pattern",
+      "searchText": "wou s wou b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -55931,7 +55938,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wavve wavve is an online streaming platform that was first launched on september 18 2019 the company was founded as a joint venture between sk telecom and south korea s three terrestrial broadcasters kbs mbc sbs regex pattern",
+      "searchText": "wavve wavve is an online streaming platform that was first launched on september 18 2019 the company was founded as a joint venture between sk telecom and south korea s three terrestrial broadcasters kbs mbc sbs b wavve b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -55959,7 +55966,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wetv tencent video also called wetv outside of china is a chinese video streaming website owned by tencent the website was launched in april 2011 and is one of china s largest online video platforms regex pattern",
+      "searchText": "wetv tencent video also called wetv outside of china is a chinese video streaming website owned by tencent the website was launched in april 2011 and is one of china s largest online video platforms b wetv b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -55987,7 +55994,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "whiterhino regex pattern",
+      "searchText": "whiterhino s whiterhino b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56015,7 +56022,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wiki regex pattern",
+      "searchText": "wiki s wiki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56043,7 +56050,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wildcat regex pattern",
+      "searchText": "wildcat s wildcat b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56071,7 +56078,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "xebec regex pattern",
+      "searchText": "xebec s xebec b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56125,7 +56132,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "xvid xvid is a video codec based on the mpeg 4 part 2 standard designed for efficient compression while maintaining good visual quality it is commonly used for encoding videos into smaller file sizes suitable for online sharing or storage often paired with mp3 or aac audio regex pattern",
+      "searchText": "xvid xvid is a video codec based on the mpeg 4 part 2 standard designed for efficient compression while maintaining good visual quality it is commonly used for encoding videos into smaller file sizes suitable for online sharing or storage often paired with mp3 or aac audio i xvid regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -56152,7 +56159,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yawnix regex pattern",
+      "searchText": "yawnix s yawnix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56180,7 +56187,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yello regex pattern",
+      "searchText": "yello s yello b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56208,7 +56215,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yuri regex pattern",
+      "searchText": "yuri s yuri b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56236,7 +56243,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yuki regex pattern",
+      "searchText": "yuki s yuki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56264,7 +56271,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zimbo regex pattern",
+      "searchText": "zimbo s zimbo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56293,7 +56300,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zq regex pattern",
+      "searchText": "zq s zq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56322,7 +56329,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zr regex pattern",
+      "searchText": "zr s zr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56350,7 +56357,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zorosenpai regex pattern",
+      "searchText": "zorosenpai s zorosenpai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56378,7 +56385,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zurako regex pattern",
+      "searchText": "zurako s zurako b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56406,7 +56413,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "b0mbardiers regex pattern",
+      "searchText": "b0mbardiers s b0mbardiers b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56434,7 +56441,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "beast regex pattern",
+      "searchText": "beast s beast b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56462,7 +56469,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "c0ke regex pattern",
+      "searchText": "c0ke s c0ke b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56490,7 +56497,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "d3g banned for lq and various encode issues regex pattern",
+      "searchText": "d3g banned for lq and various encode issues s d3g b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56518,7 +56525,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "db regex pattern",
+      "searchText": "db s db b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56546,7 +56553,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "de 42 regex pattern",
+      "searchText": "de 42 s de 42 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56574,7 +56581,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "deanzel regex pattern",
+      "searchText": "deanzel s deanzel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56602,7 +56609,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "decibel regex pattern",
+      "searchText": "decibel s decibel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56630,7 +56637,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dkore regex pattern",
+      "searchText": "dkore s dkore b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56658,7 +56665,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "edge2020 banned for lq mislabeling and upscale regex pattern",
+      "searchText": "edge2020 banned for lq mislabeling and upscale s edge2020 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56732,7 +56739,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "h265 a video compression standard that delivers higher efficiency than h 264 enabling better quality at lower bitrates ideal for 4k and hdr content regex pattern",
+      "searchText": "h265 a video compression standard that delivers higher efficiency than h 264 enabling better quality at lower bitrates ideal for 4k and hdr content i h s s 265 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -56773,7 +56780,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hallowed regex pattern",
+      "searchText": "hallowed s hallowed b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56801,7 +56808,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hchcsen regex pattern",
+      "searchText": "hchcsen s hchcsen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56829,7 +56836,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdalx regex pattern",
+      "searchText": "hdalx s hdalx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56857,7 +56864,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "icandy regex pattern",
+      "searchText": "icandy s icandy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56885,7 +56892,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ift regex pattern",
+      "searchText": "ift s ift b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56913,7 +56920,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "invandraren regex pattern",
+      "searchText": "invandraren s invandraren b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -56941,7 +56948,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ion regex pattern",
+      "searchText": "ion s ion b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57017,7 +57024,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf regex pattern",
+      "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf s cm a r io g evo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57044,7 +57051,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iqiyi iqiyi is a chinese subscription video on demand over the top streaming service owned by baidu headquartered in beijing iqiyi primarily produces and distributes films and television series regex pattern",
+      "searchText": "iqiyi iqiyi is a chinese subscription video on demand over the top streaming service owned by baidu headquartered in beijing iqiyi primarily produces and distributes films and television series b iqiyi iq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -57141,7 +57148,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "itunes rename itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows regex pattern",
+      "searchText": "itunes rename itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows it b b it regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -57238,7 +57245,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "itunes itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows regex pattern",
+      "searchText": "itunes itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows b it itunes b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -57266,7 +57273,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "jennaortegauhd banned for fake dv hdr layer regex pattern",
+      "searchText": "jennaortegauhd banned for fake dv hdr layer s jennaortega uhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57294,7 +57301,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "k00kie regex pattern",
+      "searchText": "k00kie s k00kie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57322,7 +57329,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kmplx regex pattern",
+      "searchText": "kmplx s kmplx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57350,7 +57357,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kuchikirukia regex pattern",
+      "searchText": "kuchikirukia s kuchikirukia b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57378,7 +57385,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "luvbb regex pattern",
+      "searchText": "luvbb s luvbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57406,7 +57413,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "micius regex pattern",
+      "searchText": "micius s micius b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57460,7 +57467,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "mkv matches mkv and mp4 containers helps to differentiate file names from torrent names regex pattern",
+      "searchText": "mkv matches mkv and mp4 containers helps to differentiate file names from torrent names mkv mp4 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Container",
@@ -57487,7 +57494,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "monkee matches monkee when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "monkee matches monkee when preceded by whitespace a hyphen or dot s monkee b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57515,7 +57522,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nmd regex pattern",
+      "searchText": "nmd s nmd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57543,7 +57550,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playbd regex pattern",
+      "searchText": "playbd s playbd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57571,7 +57578,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playhd regex pattern",
+      "searchText": "playhd s playhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57599,7 +57606,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playweb regex pattern",
+      "searchText": "playweb s playweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57627,7 +57634,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pog42 regex pattern",
+      "searchText": "pog42 s pog42 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57655,7 +57662,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rightsize regex pattern",
+      "searchText": "rightsize s rightsize b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57683,7 +57690,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rttr regex pattern",
+      "searchText": "rttr s rttr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57711,7 +57718,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sam regex pattern",
+      "searchText": "sam s sam b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57739,7 +57746,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smol regex pattern",
+      "searchText": "smol s smol b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57767,7 +57774,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tarunk9c banned for fake dv hdr layer regex pattern",
+      "searchText": "tarunk9c banned for fake dv hdr layer s tarunk9c b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -57892,7 +57899,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "x264 an open source encoder that produces h 264 videos regex pattern",
+      "searchText": "x264 an open source encoder that produces h 264 videos i remux xh 264 dvdrip regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -57969,7 +57976,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "x265 an open source encoder that produces h 265 videos regex pattern",
+      "searchText": "x265 an open source encoder that produces h 265 videos i remux x s 265 b hevc bds4k b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -57997,7 +58004,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "xander regex pattern",
+      "searchText": "xander s xander b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101313,58 +101320,65 @@ export const contentDatabase = {
           "Enhancement",
           "UnWanted"
         ],
-        "tests": [
-          {
-            "expected": true,
-            "id": 1,
-            "input": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 55,
-              "start": 53
+        "tests": "https://regex101.com/r/FbKZWt",
+        "regex101": {
+          "url": "https://regex101.com/r/FbKZWt",
+          "pattern": "(?<=\\b[12]\\d{3}\\b).*\\b((bluray|bd)?3d|sbs|half[ .-]ou|half[ .-]sbs)\\b",
+          "flags": "gmi",
+          "flavor": "pcre2",
+          "unitTests": [
+            {
+              "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": true
-          },
-          {
-            "expected": true,
-            "id": 2,
-            "input": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 35,
-              "start": 33
+            {
+              "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": true
-          },
-          {
-            "expected": false,
-            "id": 3,
-            "input": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
-            "lastRun": "2025-04-25T14:15:46.876957",
-            "matchSpan": {
-              "end": 10,
-              "start": 8
+            {
+              "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+              "compareString": "",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "target": "REGEX"
+            }
+          ]
+        },
+        "testResults": {
+          "passed": 2,
+          "failed": 1,
+          "results": [
+            {
+              "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": true,
+              "passed": true
             },
-            "matchedContent": "3D",
-            "matchedGroups": [
-              "3D",
-              null
-            ],
-            "passes": false
-          }
-        ]
+            {
+              "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": true,
+              "passed": true
+            },
+            {
+              "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+              "description": "",
+              "criteria": "DOES_MATCH",
+              "matches": false,
+              "passed": false
+            }
+          ]
+        }
       },
-      "searchText": "3d matches terms related to 3d video formats bluray3d or bd3d optional bluray or bd followed by 3d sbs side by side half ou or half sbs with space dot or hyphen as separators regex pattern",
+      "searchText": "3d matches terms related to 3d video formats bluray3d or bd3d optional bluray or bd followed by 3d sbs side by side half ou or half sbs with space dot or hyphen as separators b 12 d 3 b b bluray bd 3d sbs half ou half sbs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -101372,7 +101386,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-06-29T18:57:01.292Z"
+      "lastModified": "2025-08-06T05:02:22.759Z"
     },
     "/regex-pattern/3l": {
       "id": "regex-pattern-3l",
@@ -101392,7 +101406,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "3l regex pattern",
+      "searchText": "3l s 3l b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101420,7 +101434,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word regex pattern",
+      "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word s 4k4u b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101448,7 +101462,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot s 4kdvs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101476,7 +101490,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "7 1 surround regex pattern",
+      "searchText": "7 1 surround 7 1 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -101504,7 +101518,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "9volt regex pattern",
+      "searchText": "9volt s 9volt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101532,7 +101546,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aaauhd regex pattern",
+      "searchText": "aaauhd s aaauhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101559,7 +101573,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aac regex pattern",
+      "searchText": "aac baac b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -101586,7 +101600,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "abbie regex pattern",
+      "searchText": "abbie s abbie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101614,7 +101628,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ac regex pattern",
+      "searchText": "ac s ac b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101642,7 +101656,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ade regex pattern",
+      "searchText": "ade s ade b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101670,7 +101684,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ajp69 regex pattern",
+      "searchText": "ajp69 s ajp69 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101698,7 +101712,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ane regex pattern",
+      "searchText": "ane s ane b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101726,7 +101740,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aomundson regex pattern",
+      "searchText": "aomundson s aomundson b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101754,7 +101768,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "apex regex pattern",
+      "searchText": "apex s apex b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101782,7 +101796,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aroma banned for retagging regex pattern",
+      "searchText": "aroma banned for retagging s aroma b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101840,7 +101854,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "av1 av1 or aomedia video 1 is a video coding format that compresses video files and streams while maintaining high quality regex pattern",
+      "searchText": "av1 av1 or aomedia video 1 is a video coding format that compresses video files and streams while maintaining high quality b av1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -101867,7 +101881,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "aviator regex pattern",
+      "searchText": "aviator s aviator b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101895,7 +101909,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "absinth regex pattern",
+      "searchText": "absinth s absinth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -101980,7 +101994,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "amazon prime amazon prime video or simply prime video is an american subscription video on demand over the top streaming and rental service of amazon offered both as a stand alone service and as part of amazon s prime subscription regex pattern",
+      "searchText": "amazon prime amazon prime video or simply prime video is an american subscription video on demand over the top streaming and rental service of amazon offered both as a stand alone service and as part of amazon s prime subscription b amzn amzn amazon s web dl hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -102037,7 +102051,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "apple tv apple tv is an american subscription ott streaming service owned and operated by apple inc launched on november 1 2019 it offers a selection of original production film and television series called apple originals regex pattern",
+      "searchText": "apple tv apple tv is an american subscription ott streaming service owned and operated by apple inc launched on november 1 2019 it offers a selection of original production film and television series called apple originals b atvp aptv apple tv s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -102065,7 +102079,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "arid regex pattern",
+      "searchText": "arid s arid b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102093,7 +102107,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "asakura regex pattern",
+      "searchText": "asakura s asakura b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102172,7 +102186,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "atmos regex pattern",
+      "searchText": "atmos batmos b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -102307,7 +102321,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "b w black and white colour grading this regex matches a 4 digit number optionally surrounded by parentheses followed by any amount of text and then detects references to black and white in various formats it supports blackwhite no spaces black and white black white black white black white as well as shorthand bw and b w while excluding invalid variations like b w b w or b w regex pattern",
+      "searchText": "b w black and white colour grading this regex matches a 4 digit number optionally surrounded by parentheses followed by any amount of text and then detects references to black and white in various formats it supports blackwhite no spaces black and white black white black white black white as well as shorthand bw and b w while excluding invalid variations like b w b w or b w d 4 bblack b s and s bwhite b bb w b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -102336,7 +102350,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bhdstudio regex pattern",
+      "searchText": "bhdstudio s bhdstudio b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102364,7 +102378,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluebird regex pattern",
+      "searchText": "bluebird s bluebird b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102392,7 +102406,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluranium regex pattern",
+      "searchText": "bluranium s bluranium b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102420,7 +102434,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "blutonium regex pattern",
+      "searchText": "blutonium s blutonium b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102449,7 +102463,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bmf regex pattern",
+      "searchText": "bmf s bmf b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102478,7 +102492,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bols banned for retagging regex pattern",
+      "searchText": "bols banned for retagging s bols b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102506,7 +102520,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "boredor regex pattern",
+      "searchText": "boredor s boredor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102534,7 +102548,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bstd regex pattern",
+      "searchText": "bstd s bstd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102621,7 +102635,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "btn atmos matches broadcastthenet atmos naming convention regex pattern",
+      "searchText": "btn atmos matches broadcastthenet atmos naming convention btrue hda 57 1 ddpa 57 1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -102648,7 +102662,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "btn regex pattern",
+      "searchText": "btn s btn b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102676,7 +102690,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bv regex pattern",
+      "searchText": "bv s bv b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102704,7 +102718,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "byndr regex pattern",
+      "searchText": "byndr s byndr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -102862,7 +102876,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "basic hdr formats matches dolby vision or hdr10 needed to better match uhd blurays regex pattern",
+      "searchText": "basic hdr formats matches dolby vision or hdr10 needed to better match uhd blurays b hlg pq sdr b d hdr b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -102891,7 +102905,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "beitai regex pattern",
+      "searchText": "beitai s beitai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103312,7 +103326,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "better theatricals matches movies where the theatrical cut is considered the better version subjectively chosen based on dictionarry s personal preferences and major opinion needed to override the default special edition preference matches terminator 2 judgement day 1991 alien 1979 star wars ot 1977 1983 apocalypse now 1979 the exorcist 1973 donnie darko 2001 amadeus 1984 payback 1999 almost famous 2000 regex pattern",
+      "searchText": "better theatricals matches movies where the theatrical cut is considered the better version subjectively chosen based on dictionarry s personal preferences and major opinion needed to override the default special edition preference matches terminator 2 judgement day 1991 alien 1979 star wars ot 1977 1983 apocalypse now 1979 the exorcist 1973 donnie darko 2001 amadeus 1984 payback 1999 almost famous 2000 b terminator 2 alien s 1979 star wars 4k 19 77 bempire strikes back breturn of the jedi apocalypse now the exorcist 1973 donnie darko amadeus payback 1999 payback straight up 2006 almost famous b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -103353,7 +103367,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "beyondhd banned due to only doing full discs regex pattern",
+      "searchText": "beyondhd banned due to only doing full discs s beyondhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103381,7 +103395,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bitor banned for fake dv hdr layer regex pattern",
+      "searchText": "bitor banned for fake dv hdr layer s bitor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103409,7 +103423,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bizkit regex pattern",
+      "searchText": "bizkit s bizkit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103437,7 +103451,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bluraydesuyo regex pattern",
+      "searchText": "bluraydesuyo s bluraydesuyo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103465,7 +103479,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "blzt regex pattern",
+      "searchText": "blzt s blzt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103504,7 +103518,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "bracketed year match a year moniker inside square brackets regex pattern",
+      "searchText": "bracketed year match a year moniker inside square brackets d 4 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -103530,7 +103544,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bravia core sony pictures core formerly known as bravia core is a video on demand service from sony for its televisions and smartphones launched in april 2021 the service offers the streaming of movies at up to 4k resolution provided by sony pictures entertainment core stands for centre of real entertainment regex pattern",
+      "searchText": "bravia core sony pictures core formerly known as bravia core is a video on demand service from sony for its televisions and smartphones launched in april 2021 the service offers the streaming of movies at up to 4k resolution provided by sony pictures entertainment core stands for centre of real entertainment b bcore b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -103558,7 +103572,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "bunny apocalypse regex pattern",
+      "searchText": "bunny apocalypse s bunny apocalypse b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103586,7 +103600,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cbt regex pattern",
+      "searchText": "cbt s cbt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103614,7 +103628,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chaos regex pattern",
+      "searchText": "chaos s chaos b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103642,7 +103656,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chd regex pattern",
+      "searchText": "chd s chd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103670,7 +103684,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cj regex pattern",
+      "searchText": "cj s cj b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103698,7 +103712,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cmct regex pattern",
+      "searchText": "cmct s cmct b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103759,7 +103773,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "cmrg prolific web dl group regex pattern",
+      "searchText": "cmrg prolific web dl group s cm a r io g b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103787,7 +103801,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "creative24 banned for bloated garbage regex pattern",
+      "searchText": "creative24 banned for bloated garbage s creative24 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103815,7 +103829,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crfw regex pattern",
+      "searchText": "crfw s crfw b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103843,7 +103857,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crx regex pattern",
+      "searchText": "crx s crx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103871,7 +103885,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "crisc regex pattern",
+      "searchText": "crisc s crisc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103899,7 +103913,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ctr regex pattern",
+      "searchText": "ctr s ctr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103927,7 +103941,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cait sidhe regex pattern",
+      "searchText": "cait sidhe s cait sidhe b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103955,7 +103969,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chihiro regex pattern",
+      "searchText": "chihiro s chihiro b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -103983,7 +103997,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "chotab regex pattern",
+      "searchText": "chotab s chotab b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104011,7 +104025,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cinephiles regex pattern",
+      "searchText": "cinephiles s cinephiles b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104039,7 +104053,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot s cinefeel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104067,7 +104081,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "coalgirls regex pattern",
+      "searchText": "coalgirls s coalgirls b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104181,7 +104195,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "colourisation colourisation or colorization in american english is the process of adding colour to black and white sepia or other monochrome images matches variations of color in both american and british spellings including base forms color colour past tense adjective forms colored coloured verb forms colorize colourize colorise colourise past participles colorized coloured colourized colourised regex pattern",
+      "searchText": "colourisation colourisation or colorization in american english is the process of adding colour to black and white sepia or other monochrome images matches variations of color in both american and british spellings including base forms color colour past tense adjective forms colored coloured verb forms colorize colourize colorise colourise past participles colorized coloured colourized colourised bcolou r i sz ed ed b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Colour Grade",
@@ -104209,7 +104223,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "commie regex pattern",
+      "searchText": "commie s commie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104287,7 +104301,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space regex pattern",
+      "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space b crit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -104315,7 +104329,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ctrlhd regex pattern",
+      "searchText": "ctrlhd s ctrlhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104343,7 +104357,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "d z0n3 regex pattern",
+      "searchText": "d z0n3 s d z0n3 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104371,7 +104385,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "deflate regex pattern",
+      "searchText": "deflate s deflate b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104399,7 +104413,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "depth regex pattern",
+      "searchText": "depth s depth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104427,7 +104441,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "don regex pattern",
+      "searchText": "don s don b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104454,7 +104468,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd hra es regex pattern",
+      "searchText": "dts hd hra es dts es hd hr hi regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104480,7 +104494,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd ma regex pattern",
+      "searchText": "dts hd ma b dts _ ma hd _ ma xll b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104506,7 +104520,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts hd regex pattern",
+      "searchText": "dts hd b dts _ ma hd _ ma xll b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104563,7 +104577,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dts x regex pattern",
+      "searchText": "dts x b dts _ x b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104589,7 +104603,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dts regex pattern",
+      "searchText": "dts bdts b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104616,7 +104630,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "darq regex pattern",
+      "searchText": "darq s darq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104644,7 +104658,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dariush regex pattern",
+      "searchText": "dariush s dariush b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104672,7 +104686,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dekinai regex pattern",
+      "searchText": "dekinai s dekinai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104700,7 +104714,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "depraved banned for fake dv hdr layer regex pattern",
+      "searchText": "depraved banned for fake dv hdr layer s depraved b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104771,7 +104785,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "disney disney is an american subscription video on demand over the top streaming media service that primarily distributes films and television shows produced by walt disney studios and disney television studios with dedicated content hubs for disney s flagship brands disney pixar marvel star wars national geographic espn hulu and star regex pattern",
+      "searchText": "disney disney is an american subscription video on demand over the top streaming media service that primarily distributes films and television shows produced by walt disney studios and disney television studios with dedicated content hubs for disney s flagship brands disney pixar marvel star wars national geographic espn hulu and star b dsnp dsny p disney s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -104799,7 +104813,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "doki regex pattern",
+      "searchText": "doki s doki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -104826,7 +104840,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dolby digital regex pattern",
+      "searchText": "dolby digital bdd a z e ac3 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -104919,7 +104933,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dolby vision without fallback matches dolby vision when it doesn t come with regular hdr fallback a bluray remux or a hulu web dl regex pattern",
+      "searchText": "dolby vision without fallback matches dolby vision when it doesn t come with regular hdr fallback a bluray remux or a hulu web dl hdr hulu remux bluray b dv dovi dolby v ision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -105098,7 +105112,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dolby vision dolby vision is a high dynamic range hdr video format that uses dynamic metadata to deliver enhanced brightness contrast and color on a scene by scene or frame by frame basis providing superior picture quality this pattern excludes matches where dolby vision is associated with sdr standard dynamic range or hlg hybrid log gamma ensuring it focuses on dolby vision specific terms regex pattern",
+      "searchText": "dolby vision dolby vision is a high dynamic range hdr video format that uses dynamic metadata to deliver enhanced brightness contrast and color on a scene by scene or frame by frame basis providing superior picture quality this pattern excludes matches where dolby vision is associated with sdr standard dynamic range or hlg hybrid log gamma ensuring it focuses on dolby vision specific terms b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -105127,7 +105141,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "drag regex pattern",
+      "searchText": "drag s drag b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105291,7 +105305,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "dual audio matches releases with dual audio media releases that contain two language tracks typically the original language such as japanese along with an english dub allowing viewers to switch between either audio track while watching the same video content regex pattern",
+      "searchText": "dual audio matches releases with dual audio media releases that contain two language tracks typically the original language such as japanese along with an english dub allowing viewers to switch between either audio track while watching the same video content b multi a za z dual s audio complete b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -105317,7 +105331,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "e n d regex pattern",
+      "searchText": "e n d s e n d b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105345,7 +105359,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "e1 regex pattern",
+      "searchText": "e1 s e1 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105373,7 +105387,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ea regex pattern",
+      "searchText": "ea s ea b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105401,7 +105415,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "edph regex pattern",
+      "searchText": "edph s edph b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105429,7 +105443,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "emerald regex pattern",
+      "searchText": "emerald s emerald b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105457,7 +105471,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "epsilon regex pattern",
+      "searchText": "epsilon s epsilon b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105485,7 +105499,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "esir regex pattern",
+      "searchText": "esir s esir b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105540,7 +105554,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "evo ipt internal known for releasing pre releases before anyone else also releases encodes of varying quality regex pattern",
+      "searchText": "evo ipt internal known for releasing pre releases before anyone else also releases encodes of varying quality s evo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105568,7 +105582,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "excision regex pattern",
+      "searchText": "excision s excision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105596,7 +105610,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "exp regex pattern",
+      "searchText": "exp s exp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105624,7 +105638,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ebp regex pattern",
+      "searchText": "ebp s ebp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105652,7 +105666,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "erai raws regex pattern",
+      "searchText": "erai raws s erai raws b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105680,7 +105694,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "exiled destiny regex pattern",
+      "searchText": "exiled destiny s exiled destiny b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105739,7 +105753,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "extended clip matches preview releases labelled as extended clip regex pattern",
+      "searchText": "extended clip matches preview releases labelled as extended clip b extended clip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Preview",
@@ -105777,7 +105791,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "extras extras special features featurettes etc regex pattern",
+      "searchText": "extras extras special features featurettes etc i b 12 d 3 b b b extras bonus extended _ clip special feature s b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "UnWanted",
@@ -105804,7 +105818,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "fff regex pattern",
+      "searchText": "fff s fff b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105832,7 +105846,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "fgt banned for retagging regex pattern",
+      "searchText": "fgt banned for retagging s fgt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105859,7 +105873,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flac regex pattern",
+      "searchText": "flac bflac b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -105886,7 +105900,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flame regex pattern",
+      "searchText": "flame s flame b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105914,7 +105928,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flux regex pattern",
+      "searchText": "flux s flux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105942,7 +105956,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "frds regex pattern",
+      "searchText": "frds s frds b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105970,7 +105984,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ftw hd regex pattern",
+      "searchText": "ftw hd s ftw hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -105998,7 +106012,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "filmhd regex pattern",
+      "searchText": "filmhd s filmhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106026,7 +106040,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "final8 regex pattern",
+      "searchText": "final8 s final8 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106054,7 +106068,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flights banned for fake dv hdr layer regex pattern",
+      "searchText": "flights banned for fake dv hdr layer s flights b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106082,7 +106096,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "flugel regex pattern",
+      "searchText": "flugel s flugel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106110,7 +106124,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "form regex pattern",
+      "searchText": "form s form b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106138,7 +106152,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "framestor regex pattern",
+      "searchText": "framestor s framestor b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106364,7 +106378,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "full disc a full disc release refers to a complete copy of a physical media disc such as a dvd or blu ray preserving all original content including menus bonus features and multiple audio or subtitle tracks unlike compressed or re encoded formats full disc files maintain the full structure and quality of the original disc often stored as iso files or folders like bdmv for blu rays these releases are ideal for users seeking an authentic unaltered experience identical to using the physical disc regex pattern",
+      "searchText": "full disc a full disc release refers to a complete copy of a physical media disc such as a dvd or blu ray preserving all original content including menus bonus features and multiple audio or subtitle tracks unlike compressed or re encoded formats full disc files maintain the full structure and quality of the original disc often stored as iso files or folders like bdmv for blu rays these releases are ideal for users seeking an authentic unaltered experience identical to using the physical disc b hd _ hd dvd bdrip mkv xvid wmv d3g bdremux remux 1080p hevc xh _ 26 45 german dl d 4 german dl b avc hevc vc _ 1 mvc mpeg _ 2 b b b blu _ ray bd hd _ dvd b b avc hevc vc _ 1 mvc mpeg _ 2 bdmv iso b b b _ complete dis ck b blu _ ray hd _ dvd 3d _ bd br _ disk full _ blu _ ray bd uhd _ 25 50 66 100 iso i dvd9 dvd5 ntsc pal vob ifo vc 1 avc mpeg 2 bcomplete s uhd s blu s ray b bcomplete bluray b bbr disk b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Storage",
@@ -106391,7 +106405,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "galaxy regex pattern",
+      "searchText": "galaxy s galaxy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106419,7 +106433,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "gnome matches gnome when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "gnome matches gnome when preceded by whitespace a hyphen or dot s gnome b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106447,7 +106461,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "grimm regex pattern",
+      "searchText": "grimm s grimm b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106475,7 +106489,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "gs88 regex pattern",
+      "searchText": "gs88 s gs88 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106503,7 +106517,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "guhzer regex pattern",
+      "searchText": "guhzer s guhzer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106531,7 +106545,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "geek regex pattern",
+      "searchText": "geek s geek b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106560,7 +106574,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "handjob regex pattern",
+      "searchText": "handjob s handjob b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106674,7 +106688,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hbo max rename hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max regex pattern",
+      "searchText": "hbo max rename hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max hmax b b hmax regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -106787,7 +106801,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hbo max hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max regex pattern",
+      "searchText": "hbo max hbo max is an american subscription video on demand streaming service that offers a range of original programming and content from warnermedia s vast library encompassing brands such as warner bros cnn cartoon network tbs and turner classic movies in mid to late 2023 hbo max underwent a rebranding to max b hmax hbom hbo _ max b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -106815,7 +106829,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hd77 regex pattern",
+      "searchText": "hd77 s hd77 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106843,7 +106857,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdchina regex pattern",
+      "searchText": "hdchina s hdchina b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -106871,7 +106885,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdmaniacs regex pattern",
+      "searchText": "hdmaniacs s hdmaniacs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107006,7 +107020,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr this regex matches a hdr generalisation this can be hdr10 hdr10 etc regex pattern",
+      "searchText": "hdr this regex matches a hdr generalisation this can be hdr10 hdr10 etc b hdr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -107084,7 +107098,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr10 missing groups matches groups who mislabel hdr10 regex pattern",
+      "searchText": "hdr10 missing groups matches groups who mislabel hdr10 b 3l cinephiles c0ke edv elneekster framestor hdh hqmux kenobi mimic ntb playbd ryu sicfoi strikes tekmux triton w4nk3r b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107243,7 +107257,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hdr10 this regex matches hdr10 only when it is not followed by any hdr format specifiers like or plus regex pattern",
+      "searchText": "hdr10 this regex matches hdr10 only when it is not followed by any hdr format specifiers like or plus bhdr10 plus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -107272,7 +107286,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hds regex pattern",
+      "searchText": "hds s hds b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107300,7 +107314,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdmux regex pattern",
+      "searchText": "hdmux s hdmux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107377,7 +107391,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hevc an open source encoder that produces hevc videos regex pattern",
+      "searchText": "hevc an open source encoder that produces hevc videos b hevc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -107405,7 +107419,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hhweb regex pattern",
+      "searchText": "hhweb s hhweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107434,7 +107448,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hlg this regex matches a hlg generalisation this is a basic hdr format regex pattern",
+      "searchText": "hlg this regex matches a hlg generalisation this is a basic hdr format b hlg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -107463,7 +107477,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hone regex pattern",
+      "searchText": "hone s hone b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107491,7 +107505,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hqmux regex pattern",
+      "searchText": "hqmux s hqmux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107519,7 +107533,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "huntjr regex pattern",
+      "searchText": "huntjr s huntjr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107547,7 +107561,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hares regex pattern",
+      "searchText": "hares s hares b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107575,7 +107589,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hidt regex pattern",
+      "searchText": "hidt s hidt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107603,7 +107617,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hifi regex pattern",
+      "searchText": "hifi s hifi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107631,7 +107645,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hip regex pattern",
+      "searchText": "hip s hip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107659,7 +107673,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "horriblesubs regex pattern",
+      "searchText": "horriblesubs s horriblesubs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107687,7 +107701,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hotstar disney hotstar also known as jiohotstar or simply hotstar is an indian subscription video on demand over the top streaming service owned by disney star the brand was introduced as hotstar for a streaming service carrying content from disney star s formerly star india local networks including films television series live sports and original programming as well as featuring content licensed from third parties such as showtime among others regex pattern",
+      "searchText": "hotstar disney hotstar also known as jiohotstar or simply hotstar is an indian subscription video on demand over the top streaming service owned by disney star the brand was introduced as hotstar for a streaming service carrying content from disney star s formerly star india local networks including films television series live sports and original programming as well as featuring content licensed from third parties such as showtime among others b htsr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -107746,7 +107760,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hulu hulu an american subscription streaming service owned by disney offers recent tv episodes full seasons of shows original content and live tv channels as of december 2023 hulu content is being integrated into disney making its library accessible to disney subscribers regex pattern",
+      "searchText": "hulu hulu an american subscription streaming service owned by disney offers recent tv episodes full seasons of shows original content and live tv channels as of december 2023 hulu content is being integrated into disney making its library accessible to disney subscribers b hulu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -107774,7 +107788,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hypstu regex pattern",
+      "searchText": "hypstu s hypstu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107802,7 +107816,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iamable regex pattern",
+      "searchText": "iamable s iamable b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107830,7 +107844,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ide regex pattern",
+      "searchText": "ide s ide b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107858,7 +107872,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ik regex pattern",
+      "searchText": "ik s ik b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -107975,7 +107989,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "imax enhanced matches imax releases from specific digital sources checks for webs from disney or bravia core ensures imax appears with optional enhanced suffix but not when preceded by non regex pattern",
+      "searchText": "imax enhanced matches imax releases from specific digital sources checks for webs from disney or bravia core ensures imax appears with optional enhanced suffix but not when preceded by non b dsnp disney bc b core web dl rip b b non imax enhanced b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -108044,7 +108058,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "imax matches any imax release this includes any movie shot with imax in mind and henceforth tagged as imax imax enchanced digital releases found on disney bravia core regex pattern",
+      "searchText": "imax matches any imax release this includes any movie shot with imax in mind and henceforth tagged as imax imax enchanced digital releases found on disney bravia core b non imax b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -108072,7 +108086,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iznjie biznjie regex pattern",
+      "searchText": "iznjie biznjie s iznjie biznjie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108100,7 +108114,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "justwatch regex pattern",
+      "searchText": "justwatch s justwatch b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108128,7 +108142,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kan3d2m regex pattern",
+      "searchText": "kan3d2m s kan3d2m b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108156,7 +108170,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kashmir regex pattern",
+      "searchText": "kashmir s kashmir b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108184,7 +108198,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kc banned for ai upscales regex pattern",
+      "searchText": "kc banned for ai upscales s kc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108212,7 +108226,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kcw kocowa is an american over the top streaming service headquartered in los angeles as a joint venture between the top three korean broadcast networks to provide korean entertainment including k dramas k reality k variety and k pop to the americas and all with multi language subtitles regex pattern",
+      "searchText": "kcw kocowa is an american over the top streaming service headquartered in los angeles as a joint venture between the top three korean broadcast networks to provide korean entertainment including k dramas k reality k variety and k pop to the americas and all with multi language subtitles b kcw kocowa b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -108240,7 +108254,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kh regex pattern",
+      "searchText": "kh s kh b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108268,7 +108282,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "knives regex pattern",
+      "searchText": "knives s knives b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108296,7 +108310,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kralimarko regex pattern",
+      "searchText": "kralimarko s kralimarko b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108324,7 +108338,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kaleido regex pattern",
+      "searchText": "kaleido s kaleido b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108352,7 +108366,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kametsu regex pattern",
+      "searchText": "kametsu s kametsu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108380,7 +108394,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kings regex pattern",
+      "searchText": "kings s kings b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108408,7 +108422,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kitsune regex pattern",
+      "searchText": "kitsune s kitsune b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108436,7 +108450,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "koten_gars regex pattern",
+      "searchText": "koten_gars s koten_gars b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108464,7 +108478,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lama banned for retagging regex pattern",
+      "searchText": "lama banned for retagging s lama b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108492,7 +108506,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazarus regex pattern",
+      "searchText": "lazarus s lazarus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108520,7 +108534,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot s lazy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108548,7 +108562,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "legi0n regex pattern",
+      "searchText": "legi0n s legi0n b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108576,7 +108590,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lm regex pattern",
+      "searchText": "lm s lm b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108604,7 +108618,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lst regex pattern",
+      "searchText": "lst s lst b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108632,7 +108646,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lys1th3a regex pattern",
+      "searchText": "lys1th3a s lys1th3a b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108660,7 +108674,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lazyremux regex pattern",
+      "searchText": "lazyremux s lazyremux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108688,7 +108702,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ling regex pattern",
+      "searchText": "ling s ling b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108716,7 +108730,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "littlebakas regex pattern",
+      "searchText": "littlebakas s littlebakas b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108744,7 +108758,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lord regex pattern",
+      "searchText": "lord s lord b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108772,7 +108786,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lolhd regex pattern",
+      "searchText": "lolhd s lolhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108800,7 +108814,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lucifer regex pattern",
+      "searchText": "lucifer s lucifer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108828,7 +108842,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "lulu regex pattern",
+      "searchText": "lulu s lulu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108856,7 +108870,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "malus regex pattern",
+      "searchText": "malus s malus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108884,7 +108898,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mtbb regex pattern",
+      "searchText": "mtbb s mtbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108912,7 +108926,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mteam regex pattern",
+      "searchText": "mteam s mteam b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108940,7 +108954,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mzabi regex pattern",
+      "searchText": "mzabi s mzabi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -108968,7 +108982,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mainframe regex pattern",
+      "searchText": "mainframe s mainframe b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109059,7 +109073,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "max rename max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands regex pattern",
+      "searchText": "max rename max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands max b b max regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109150,7 +109164,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "max max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands regex pattern",
+      "searchText": "max max formerly and in some regions still known as hbo max is an american subscription video on demand over the top streaming service the platform offers content from the libraries of warner bros discovery hbo cnn cartoon network adult swim animal planet tbs tnt eurosport and their related brands b hbo _ max b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109178,7 +109192,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mimic regex pattern",
+      "searchText": "mimic s mimic b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109220,7 +109234,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "movieman regex pattern",
+      "searchText": "movieman s movieman b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109354,7 +109368,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "movies anywhere movies anywhere ma is a cloud based digital rights locker and over the top streaming platform that allows users to stream and download purchased films including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services regex pattern",
+      "searchText": "movies anywhere movies anywhere ma is a cloud based digital rights locker and over the top streaming platform that allows users to stream and download purchased films including digital copies redeemed from codes found in home video releases as well as digital purchases from participating services b dts hd ma b bweb _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109382,7 +109396,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "mysteria regex pattern",
+      "searchText": "mysteria s mysteria b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109410,7 +109424,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nahom banned for poor quality multi regex pattern",
+      "searchText": "nahom banned for poor quality multi s nahom b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109439,7 +109453,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ncmt regex pattern",
+      "searchText": "ncmt s ncmt b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109468,7 +109482,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nosivid regex pattern",
+      "searchText": "nosivid s nosivid b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109496,7 +109510,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ntg regex pattern",
+      "searchText": "ntg s ntg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109551,7 +109565,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "ntb regex pattern",
+      "searchText": "ntb s ntb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109579,7 +109593,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "netaro regex pattern",
+      "searchText": "netaro s netaro b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109663,7 +109677,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "netflix netflix is an american subscription video on demand over the top streaming service the service primarily distributes original and acquired films and television shows from various genres and it is available internationally in multiple languages regex pattern",
+      "searchText": "netflix netflix is an american subscription video on demand over the top streaming service the service primarily distributes original and acquired films and television shows from various genres and it is available internationally in multiple languages b nf netflix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109691,7 +109705,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nogroup regex pattern",
+      "searchText": "nogroup s nogr ou p b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109821,7 +109835,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "non retail hdr formats matches dolby vision or hdr10 needed to match release groups who create custom hdr layers regex pattern",
+      "searchText": "non retail hdr formats matches dolby vision or hdr10 needed to match release groups who create custom hdr layers b hlg pq sdr b d hdr10 p lus b dv hlg sdr dovi dolby vision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -109878,7 +109892,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "non retail hdr groups matches groups that produce non retail hdr regex pattern",
+      "searchText": "non retail hdr groups matches groups that produce non retail hdr s vector bitor depraved sasukeduck tarunk9c jennaortegauhd visionxpert flights b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109907,7 +109921,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "now rename now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast regex pattern",
+      "searchText": "now rename now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast now b b now regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109935,7 +109949,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "now now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast regex pattern",
+      "searchText": "now now formerly now tv and often stylised as now is a subscription over the top streaming television service launched in the united kingdom in 2012 it is operated by sky group in europe and xfinity in the us both owned by the american media conglomerate comcast b now b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -109963,7 +109977,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nyhd regex pattern",
+      "searchText": "nyhd s nyhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -109991,7 +110005,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "oeplus banned for automated encodes regex pattern",
+      "searchText": "oeplus banned for automated encodes s oeplus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110019,7 +110033,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "origen regex pattern",
+      "searchText": "origen s origen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110047,7 +110061,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ozr regex pattern",
+      "searchText": "ozr s ozr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110075,7 +110089,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "okay subs regex pattern",
+      "searchText": "okay subs s okay subs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110149,7 +110163,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "open matte matches releases with restored widescreen aspect ratio labelled as open matte regex pattern",
+      "searchText": "open matte matches releases with restored widescreen aspect ratio labelled as open matte b open matte b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Aspect Ratio",
@@ -110177,7 +110191,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "p0w4hd regex pattern",
+      "searchText": "p0w4hd s p0w4hd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110204,7 +110218,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pcm regex pattern",
+      "searchText": "pcm b l pcm b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -110231,7 +110245,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "phocis regex pattern",
+      "searchText": "phocis s phocis b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110258,7 +110272,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "phoenix matches phoenix when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "phoenix matches phoenix when preceded by whitespace a hyphen or dot s phoenix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110285,7 +110299,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pp regex pattern",
+      "searchText": "pp s pp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110314,7 +110328,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pq this regex matches a pq generalisation this is a basic hdr format regex pattern",
+      "searchText": "pq this regex matches a pq generalisation this is a basic hdr format b pq pq10 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -110343,7 +110357,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pth regex pattern",
+      "searchText": "pth s pth b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110371,7 +110385,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ptp regex pattern",
+      "searchText": "ptp s ptp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110423,7 +110437,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "pter regex pattern",
+      "searchText": "pter s pter b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110475,7 +110489,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "pterweb regex pattern",
+      "searchText": "pterweb s pterweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110544,7 +110558,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "paramount paramount is an american subscription video on demand over the top streaming service owned that offers content primarily from the libraries of cbs media ventures cbs studios paramount media networks and paramount pictures while also including original series and films live streaming sports coverage and in the united states live streaming of local cbs broadcast stations regex pattern",
+      "searchText": "paramount paramount is an american subscription video on demand over the top streaming service owned that offers content primarily from the libraries of cbs media ventures cbs studios paramount media networks and paramount pictures while also including original series and films live streaming sports coverage and in the united states live streaming of local cbs broadcast stations b pmtp paramount plus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -110668,7 +110682,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "peacock tv rename peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel regex pattern",
+      "searchText": "peacock tv rename peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel pcok b b pcok regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -110792,7 +110806,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "peacock tv peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel regex pattern",
+      "searchText": "peacock tv peacock is an american over the top subscription streaming service owned and operated by peacock tv llc a subsidiary of nbcuniversal media group the service primarily features series and film content from nbcuniversal studios and other third party content providers such as wwe and hallmark channel b 1080 2160 720 p pcok peacock web dl web dl peacock b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -110820,7 +110834,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "penumbra regex pattern",
+      "searchText": "penumbra s penumbra b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110848,7 +110862,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pirates banned for mislabeling web dls as webrips regex pattern",
+      "searchText": "pirates banned for mislabeling web dls as webrips s pirates b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110876,7 +110890,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pmp regex pattern",
+      "searchText": "pmp s pmp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110904,7 +110918,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pookie regex pattern",
+      "searchText": "pookie s pookie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110932,7 +110946,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "positive regex pattern",
+      "searchText": "positive s positive b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110960,7 +110974,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pussyfoot regex pattern",
+      "searchText": "pussyfoot s pussyfoot b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -110988,7 +111002,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot s qoq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111016,7 +111030,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "quetzal regex pattern",
+      "searchText": "quetzal s quetzal b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111044,7 +111058,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "qxr regex pattern",
+      "searchText": "qxr s qxr tigole freethefish sampa afm72 silence r00t yogi monolith panda kappa t3nzin rcvr ime rzerox garshasp ghost bandi natty b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111073,7 +111087,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rargb regex pattern",
+      "searchText": "rargb s rargb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111102,7 +111116,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "reborn regex pattern",
+      "searchText": "reborn s reborn b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111130,7 +111144,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "raizel regex pattern",
+      "searchText": "raizel s raizel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111158,7 +111172,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rasetsu regex pattern",
+      "searchText": "rasetsu s rasetsu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111186,7 +111200,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "request regex pattern",
+      "searchText": "request s request b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111214,7 +111228,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "realhd regex pattern",
+      "searchText": "realhd s realhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111286,7 +111300,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "remux a remux is a digital video file that maintains the exact quality of the original source like a blu ray or dvd by copying the video and audio streams without re encoding them essentially creating a perfect 1 1 copy think of it like carefully transferring the contents of a blu ray disc into a more convenient container file format typically mkv similar to pouring fine wine from its bottle into a decanter without changing the wine itself regex pattern",
+      "searchText": "remux a remux is a digital video file that maintains the exact quality of the original source like a blu ray or dvd by copying the video and audio streams without re encoding them essentially creating a perfect 1 1 copy think of it like carefully transferring the contents of a blu ray disc into a more convenient container file format typically mkv similar to pouring fine wine from its bottle into a decanter without changing the wine itself remux regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -111413,7 +111427,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack1 matches proper or repack or rerip only when they appear after a year 4 digits but not before one d 4 look for a 4 digit number before b re pack rip proper b match proper repack rerip regex pattern",
+      "searchText": "repack1 matches proper or repack or rerip only when they appear after a year 4 digits but not before one d 4 look for a 4 digit number before b re pack rip proper b match proper repack rerip b re pack rip proper b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -111586,7 +111600,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack2 matches either real with optional space dot followed by proper repack rerip or proper2 repack2 rerip2 b real s re pack rip proper match real followed by proper repack rerip re pack rip proper 2 b or match proper2 repack2 rerip2 regex pattern",
+      "searchText": "repack2 matches either real with optional space dot followed by proper repack rerip or proper2 repack2 rerip2 b real s re pack rip proper match real followed by proper repack rerip re pack rip proper 2 b or match proper2 repack2 rerip2 b real s re pack rip proper re pack rip proper 2 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -111759,7 +111773,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "repack3 matches either real real with optional space dot between words followed by proper repack rerip or proper3 repack3 rerip3 b real s real s re pack rip proper match real real followed by proper repack rerip re pack rip proper 3 b or match proper3 repack3 rerip3 regex pattern",
+      "searchText": "repack3 matches either real real with optional space dot between words followed by proper repack rerip or proper3 repack3 rerip3 b real s real s re pack rip proper match real real followed by proper repack rerip re pack rip proper 3 b or match proper3 repack3 rerip3 b real s real s re pack rip proper re pack rip proper 3 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Repack",
@@ -111838,7 +111852,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "roku the roku channel is an over the top video streaming service available in the u s canada mexico and the u k launched in september 2017 the roku channel offers over 400 free live linear tv channels more than 80 000 free movies and shows and access to paid content regex pattern",
+      "searchText": "roku the roku channel is an over the top video streaming service available in the u s canada mexico and the u k launched in september 2017 the roku channel offers over 400 free live linear tv channels more than 80 000 free movies and shows and access to paid content b 12 d 3 b b roku b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -111866,7 +111880,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sa89 regex pattern",
+      "searchText": "sa89 s sa89 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111894,7 +111908,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "scy regex pattern",
+      "searchText": "scy s scy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -111952,7 +111966,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sdr explicitly matches labelled standard dynamic range i e sdr regex pattern",
+      "searchText": "sdr explicitly matches labelled standard dynamic range i e sdr b sdr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "HDR",
@@ -111993,7 +112007,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sm737 regex pattern",
+      "searchText": "sm737 s sm737 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112021,7 +112035,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smahawug regex pattern",
+      "searchText": "smahawug s smahawug b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112049,7 +112063,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smurf regex pattern",
+      "searchText": "smurf s smurf b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112091,7 +112105,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sop regex pattern",
+      "searchText": "sop s sop b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112119,7 +112133,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "spectacle regex pattern",
+      "searchText": "spectacle s spectacle b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112147,7 +112161,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sphd regex pattern",
+      "searchText": "sphd s sphd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112175,7 +112189,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "strikes regex pattern",
+      "searchText": "strikes s strikes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112203,7 +112217,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stuttershit regex pattern",
+      "searchText": "stuttershit s stuttershit b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112231,7 +112245,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "surcode regex pattern",
+      "searchText": "surcode s surcode b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112259,7 +112273,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "swaggeruhd regex pattern",
+      "searchText": "swaggeruhd s swaggeruhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112287,7 +112301,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "swtyblz regex pattern",
+      "searchText": "swtyblz s swtyblz b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112315,7 +112329,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sancti regex pattern",
+      "searchText": "sancti s sancti b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112343,7 +112357,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "saizen regex pattern",
+      "searchText": "saizen s saizen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112371,7 +112385,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sallysubs regex pattern",
+      "searchText": "sallysubs s sallysubs b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112399,7 +112413,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sasukeduck banned for fake dv hdr layer regex pattern",
+      "searchText": "sasukeduck banned for fake dv hdr layer s sasukeduck b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112427,7 +112441,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sbr regex pattern",
+      "searchText": "sbr s sbr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112452,7 +112466,7 @@ export const contentDatabase = {
         "tags": [],
         "tests": []
       },
-      "searchText": "scene matches scene groups regex pattern",
+      "searchText": "scene matches scene groups s sparks drones rovers sprinter geckos shortbrehd edith filmhd pow4hd hd4u teneighty ethel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -112478,7 +112492,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "senjou regex pattern",
+      "searchText": "senjou s senjou b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112506,7 +112520,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "shieldbearer banned for ai upscale regex pattern",
+      "searchText": "shieldbearer banned for ai upscale s shieldbearer b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112534,7 +112548,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "showtime rename showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming regex pattern",
+      "searchText": "showtime rename showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming sho b b sho regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -112562,7 +112576,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "showtime showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming regex pattern",
+      "searchText": "showtime showtime also known as paramount with showtime is an american premium television network and the flagship property of showtime networks a sub division of the paramount media networks division of paramount global showtime s programming includes original television series produced exclusively for the linear network and developed for the co owned paramount streaming service theatrically released and independent motion pictures documentaries and occasional stand up comedy specials made for tv movies and softcore adult programming b sho showtime b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -112590,7 +112604,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sic regex pattern",
+      "searchText": "sic s sic b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112618,7 +112632,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sicfoi regex pattern",
+      "searchText": "sicfoi s sicfoi b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112660,7 +112674,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sigla regex pattern",
+      "searchText": "sigla s sigla b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112688,7 +112702,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sigma regex pattern",
+      "searchText": "sigma s sigma b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112716,7 +112730,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "simple regex pattern",
+      "searchText": "simple s simple b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -112759,7 +112773,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "sing along matches sing along releases when sing along is preceded by a year ensures that sing along is not matched in the movie title regex pattern",
+      "searchText": "sing along matches sing along releases when sing along is preceded by a year ensures that sing along is not matched in the movie title b 12 d 3 b b sing _ along b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -112786,7 +112800,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "solar regex pattern",
+      "searchText": "solar s solar b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113174,7 +113188,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "special edition matches any type of non theatrical edition regex pattern",
+      "searchText": "special edition matches any type of non theatrical edition b extended uncut directors special unrated uncensored cut version edition b d regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -113201,7 +113215,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stan rename stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom regex pattern",
+      "searchText": "stan rename stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom stan b b stan regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -113229,7 +113243,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "stan stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom regex pattern",
+      "searchText": "stan stan is an australian over the top streaming service the service offers a broad range of film and television content from both local and foreign productions particularly from the united states and united kingdom b stan b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -113257,7 +113271,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "subsplease regex pattern",
+      "searchText": "subsplease s subsplease b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113285,7 +113299,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "subsplus regex pattern",
+      "searchText": "subsplus s subsplus b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113313,7 +113327,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sumvision regex pattern",
+      "searchText": "sumvision s sumvision b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113341,7 +113355,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "taoe regex pattern",
+      "searchText": "taoe s taoe goki frys jbent dnu ainz thesickle anonaz species180 r0b0t xtrem3x hxd arcx wem nostradamus erie duhit jb2049 drainedday ajjmin b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113369,7 +113383,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tbb regex pattern",
+      "searchText": "tbb s tbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113397,7 +113411,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tdd regex pattern",
+      "searchText": "tdd s tdd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113425,7 +113439,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tekno3d banned for fake dv hdr layer regex pattern",
+      "searchText": "tekno3d banned for fake dv hdr layer s tekno3d b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113453,7 +113467,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tepes regex pattern",
+      "searchText": "tepes s tepes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113481,7 +113495,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "terminal regex pattern",
+      "searchText": "terminal s terminal b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113509,7 +113523,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "thora regex pattern",
+      "searchText": "thora s thora b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113537,7 +113551,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "threesome regex pattern",
+      "searchText": "threesome s threesome b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113565,7 +113579,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tombcruise regex pattern",
+      "searchText": "tombcruise s tombcruise b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113593,7 +113607,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot s tommy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113621,7 +113635,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "triton regex pattern",
+      "searchText": "triton s triton b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113649,7 +113663,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ttga regex pattern",
+      "searchText": "ttga s ttga b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113677,7 +113691,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tving tving is a south korean subscription video on demand over the top streaming service operated by tving corporation a joint venture made of cj enm entertainment division naver and jtbc by its jtbc studios now called sll regex pattern",
+      "searchText": "tving tving is a south korean subscription video on demand over the top streaming service operated by tving corporation a joint venture made of cj enm entertainment division naver and jtbc by its jtbc studios now called sll b tving b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -113705,7 +113719,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tayto regex pattern",
+      "searchText": "tayto s tayto b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113733,7 +113747,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "telly banned for retagging regex pattern",
+      "searchText": "telly banned for retagging s telly b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113807,7 +113821,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "theatrical edition matches any type of theatrical edition ensures that theatrical comes after the year so that movies with theatrical in the title are not matched regex pattern",
+      "searchText": "theatrical edition matches any type of theatrical edition ensures that theatrical comes after the year so that movies with theatrical in the title are not matched d 4 b theatrical b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Edition",
@@ -113834,7 +113848,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tnp regex pattern",
+      "searchText": "tnp s tnp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113862,7 +113876,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tron regex pattern",
+      "searchText": "tron s tron b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113889,7 +113903,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "truehd missing groups matches groups who mislabel truehd regex pattern",
+      "searchText": "truehd missing groups matches groups who mislabel truehd s triton epsilon nogroup pmp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -113916,7 +113930,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "truehd regex pattern",
+      "searchText": "truehd true hd regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Audio",
@@ -113944,7 +113958,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tsundere regex pattern",
+      "searchText": "tsundere s tsundere b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -113983,7 +113997,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "uhd blu ray matches uhd bluray or uhd blu ray with a hyphen space dot or underscore between them regex pattern",
+      "searchText": "uhd blu ray matches uhd bluray or uhd blu ray with a hyphen space dot or underscore between them buhd _ s blu ray b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -114020,7 +114034,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes regex pattern",
+      "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes s legi0n b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "regex"
@@ -114046,7 +114060,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "uhdclubremux regex pattern",
+      "searchText": "uhdclubremux s uhdclubremux b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114074,7 +114088,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ultrahdclub regex pattern",
+      "searchText": "ultrahdclub s ultrahdclub b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114293,7 +114307,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "upscaled matches upscales regrades ai enhancements etc regex pattern",
+      "searchText": "upscaled matches upscales regrades ai enhancements etc up s scale re s grade baius b ai s enhanced regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Enhancement",
@@ -114321,7 +114335,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "valis regex pattern",
+      "searchText": "valis s valis b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114349,7 +114363,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "varyg regex pattern",
+      "searchText": "varyg s varyg b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114377,7 +114391,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vector banned for fake dv hdr layer regex pattern",
+      "searchText": "vector banned for fake dv hdr layer s vector b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114405,7 +114419,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vlad regex pattern",
+      "searchText": "vlad s vlad b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114463,7 +114477,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "vp9 vp9 is an open and royalty free video coding format developed by google regex pattern",
+      "searchText": "vp9 vp9 is an open and royalty free video coding format developed by google b vp9 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -114503,7 +114517,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "vvc vvc or versatile video coding h 266 is a video coding format that compresses video files and streams to significantly smaller sizes than h 265 while maintaining high quality regex pattern",
+      "searchText": "vvc vvc or versatile video coding h 266 is a video coding format that compresses video files and streams to significantly smaller sizes than h 265 while maintaining high quality s vvc b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -114530,7 +114544,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "viethd regex pattern",
+      "searchText": "viethd s viethd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114584,7 +114598,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "viki rakuten viki is an american over the top subscription video on demand streaming service it streams videos similar to other services but also allows users to subtitle content available in 200 languages as well as providing original programming regex pattern",
+      "searchText": "viki rakuten viki is an american over the top subscription video on demand streaming service it streams videos similar to other services but also allows users to subtitle content available in 200 languages as well as providing original programming b viki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -114612,7 +114626,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "visionxpert banned for fake dv hdr layer regex pattern",
+      "searchText": "visionxpert banned for fake dv hdr layer s visionxpert b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114640,7 +114654,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "viu viu is a hong kong based over the top video on demand streaming service from pccw media group s viu international ltd viu delivers content in different genres from asia s top content providers with local language subtitles regex pattern",
+      "searchText": "viu viu is a hong kong based over the top video on demand streaming service from pccw media group s viu international ltd viu delivers content in different genres from asia s top content providers with local language subtitles b viu b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -114668,7 +114682,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vodes regex pattern",
+      "searchText": "vodes s vodes b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114696,7 +114710,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "vyndros regex pattern",
+      "searchText": "vyndros s vyndros b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114724,7 +114738,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "w4nk3r regex pattern",
+      "searchText": "w4nk3r s w4nk3r b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114752,7 +114766,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "watchable regex pattern",
+      "searchText": "watchable s watchable b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114780,7 +114794,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wbdp regex pattern",
+      "searchText": "wbdp s wbdp b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114808,7 +114822,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wming regex pattern",
+      "searchText": "wming s wming b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114836,7 +114850,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wou regex pattern",
+      "searchText": "wou s wou b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114864,7 +114878,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wavve wavve is an online streaming platform that was first launched on september 18 2019 the company was founded as a joint venture between sk telecom and south korea s three terrestrial broadcasters kbs mbc sbs regex pattern",
+      "searchText": "wavve wavve is an online streaming platform that was first launched on september 18 2019 the company was founded as a joint venture between sk telecom and south korea s three terrestrial broadcasters kbs mbc sbs b wavve b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -114892,7 +114906,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wetv tencent video also called wetv outside of china is a chinese video streaming website owned by tencent the website was launched in april 2011 and is one of china s largest online video platforms regex pattern",
+      "searchText": "wetv tencent video also called wetv outside of china is a chinese video streaming website owned by tencent the website was launched in april 2011 and is one of china s largest online video platforms b wetv b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -114920,7 +114934,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "whiterhino regex pattern",
+      "searchText": "whiterhino s whiterhino b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114948,7 +114962,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wiki regex pattern",
+      "searchText": "wiki s wiki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -114976,7 +114990,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "wildcat regex pattern",
+      "searchText": "wildcat s wildcat b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115004,7 +115018,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "xebec regex pattern",
+      "searchText": "xebec s xebec b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115058,7 +115072,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "xvid xvid is a video codec based on the mpeg 4 part 2 standard designed for efficient compression while maintaining good visual quality it is commonly used for encoding videos into smaller file sizes suitable for online sharing or storage often paired with mp3 or aac audio regex pattern",
+      "searchText": "xvid xvid is a video codec based on the mpeg 4 part 2 standard designed for efficient compression while maintaining good visual quality it is commonly used for encoding videos into smaller file sizes suitable for online sharing or storage often paired with mp3 or aac audio i xvid regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -115085,7 +115099,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yawnix regex pattern",
+      "searchText": "yawnix s yawnix b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115113,7 +115127,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yello regex pattern",
+      "searchText": "yello s yello b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115141,7 +115155,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yuri regex pattern",
+      "searchText": "yuri s yuri b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115169,7 +115183,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "yuki regex pattern",
+      "searchText": "yuki s yuki b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115197,7 +115211,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zimbo regex pattern",
+      "searchText": "zimbo s zimbo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115226,7 +115240,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zq regex pattern",
+      "searchText": "zq s zq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115255,7 +115269,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zr regex pattern",
+      "searchText": "zr s zr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115283,7 +115297,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zorosenpai regex pattern",
+      "searchText": "zorosenpai s zorosenpai b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115311,7 +115325,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "zurako regex pattern",
+      "searchText": "zurako s zurako b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115339,7 +115353,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "b0mbardiers regex pattern",
+      "searchText": "b0mbardiers s b0mbardiers b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115367,7 +115381,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "beast regex pattern",
+      "searchText": "beast s beast b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115395,7 +115409,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "c0ke regex pattern",
+      "searchText": "c0ke s c0ke b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115423,7 +115437,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "d3g banned for lq and various encode issues regex pattern",
+      "searchText": "d3g banned for lq and various encode issues s d3g b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115451,7 +115465,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "db regex pattern",
+      "searchText": "db s db b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115479,7 +115493,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "de 42 regex pattern",
+      "searchText": "de 42 s de 42 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115507,7 +115521,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "deanzel regex pattern",
+      "searchText": "deanzel s deanzel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115535,7 +115549,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "decibel regex pattern",
+      "searchText": "decibel s decibel b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115563,7 +115577,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "dkore regex pattern",
+      "searchText": "dkore s dkore b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115591,7 +115605,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "edge2020 banned for lq mislabeling and upscale regex pattern",
+      "searchText": "edge2020 banned for lq mislabeling and upscale s edge2020 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115665,7 +115679,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "h265 a video compression standard that delivers higher efficiency than h 264 enabling better quality at lower bitrates ideal for 4k and hdr content regex pattern",
+      "searchText": "h265 a video compression standard that delivers higher efficiency than h 264 enabling better quality at lower bitrates ideal for 4k and hdr content i h s s 265 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Codec",
@@ -115706,7 +115720,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "hallowed regex pattern",
+      "searchText": "hallowed s hallowed b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115734,7 +115748,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hchcsen regex pattern",
+      "searchText": "hchcsen s hchcsen b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115762,7 +115776,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "hdalx regex pattern",
+      "searchText": "hdalx s hdalx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115790,7 +115804,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "icandy regex pattern",
+      "searchText": "icandy s icandy b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115818,7 +115832,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ift regex pattern",
+      "searchText": "ift s ift b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115846,7 +115860,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "invandraren regex pattern",
+      "searchText": "invandraren s invandraren b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115874,7 +115888,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "ion regex pattern",
+      "searchText": "ion s ion b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115950,7 +115964,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf regex pattern",
+      "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf s cm a r io g evo b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -115977,7 +115991,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "iqiyi iqiyi is a chinese subscription video on demand over the top streaming service owned by baidu headquartered in beijing iqiyi primarily produces and distributes films and television series regex pattern",
+      "searchText": "iqiyi iqiyi is a chinese subscription video on demand over the top streaming service owned by baidu headquartered in beijing iqiyi primarily produces and distributes films and television series b iqiyi iq b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -116074,7 +116088,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "itunes rename itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows regex pattern",
+      "searchText": "itunes rename itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows it b b it regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -116171,7 +116185,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "itunes itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows regex pattern",
+      "searchText": "itunes itunes began offering video content in october 2005 with the release of itunes 6 at launch the itunes store provided popular tv shows from abc disney channel and other networks users could purchase and view video content such as episodes of desperate housewives lost that s so raven and the suite life of zack cody in 2008 apple introduced itunes digital copy a feature on select dvds and blu ray discs that allowed users to obtain a digital copy of the video content in itunes and associated media players over time itunes expanded its video offerings and became a significant platform for purchasing organizing and viewing movies and tv shows b it itunes b _ web _ dl rip b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Streaming Service",
@@ -116199,7 +116213,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "jennaortegauhd banned for fake dv hdr layer regex pattern",
+      "searchText": "jennaortegauhd banned for fake dv hdr layer s jennaortega uhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116227,7 +116241,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "k00kie regex pattern",
+      "searchText": "k00kie s k00kie b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116255,7 +116269,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kmplx regex pattern",
+      "searchText": "kmplx s kmplx b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116283,7 +116297,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "kuchikirukia regex pattern",
+      "searchText": "kuchikirukia s kuchikirukia b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116311,7 +116325,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "luvbb regex pattern",
+      "searchText": "luvbb s luvbb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116339,7 +116353,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "micius regex pattern",
+      "searchText": "micius s micius b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116393,7 +116407,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "mkv matches mkv and mp4 containers helps to differentiate file names from torrent names regex pattern",
+      "searchText": "mkv matches mkv and mp4 containers helps to differentiate file names from torrent names mkv mp4 regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Container",
@@ -116420,7 +116434,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "monkee matches monkee when preceded by whitespace a hyphen or dot regex pattern",
+      "searchText": "monkee matches monkee when preceded by whitespace a hyphen or dot s monkee b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116448,7 +116462,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "nmd regex pattern",
+      "searchText": "nmd s nmd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116476,7 +116490,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playbd regex pattern",
+      "searchText": "playbd s playbd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116504,7 +116518,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playhd regex pattern",
+      "searchText": "playhd s playhd b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116532,7 +116546,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "playweb regex pattern",
+      "searchText": "playweb s playweb b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116560,7 +116574,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "pog42 regex pattern",
+      "searchText": "pog42 s pog42 b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116588,7 +116602,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rightsize regex pattern",
+      "searchText": "rightsize s rightsize b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116616,7 +116630,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "rttr regex pattern",
+      "searchText": "rttr s rttr b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116644,7 +116658,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "sam regex pattern",
+      "searchText": "sam s sam b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116672,7 +116686,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "smol regex pattern",
+      "searchText": "smol s smol b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116700,7 +116714,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "tarunk9c banned for fake dv hdr layer regex pattern",
+      "searchText": "tarunk9c banned for fake dv hdr layer s tarunk9c b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -116825,7 +116839,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "x264 an open source encoder that produces h 264 videos regex pattern",
+      "searchText": "x264 an open source encoder that produces h 264 videos i remux xh 264 dvdrip regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -116902,7 +116916,7 @@ export const contentDatabase = {
           }
         ]
       },
-      "searchText": "x265 an open source encoder that produces h 265 videos regex pattern",
+      "searchText": "x265 an open source encoder that produces h 265 videos i remux x s 265 b hevc bds4k b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Encoder",
@@ -116930,7 +116944,7 @@ export const contentDatabase = {
         ],
         "tests": []
       },
-      "searchText": "xander regex pattern",
+      "searchText": "xander s xander b regex pattern",
       "searchWeight": 0.8,
       "tags": [
         "Release Group",
@@ -118181,6 +118195,7 @@ export const contentDatabase = {
     "terms": {
       "100": [
         "custom-format-free100",
+        "regex-pattern-full-disc",
         "wiki-eei",
         "wiki-eei",
         "dev-logs-profilarr-is-in-beta"
@@ -118201,6 +118216,7 @@ export const contentDatabase = {
         "custom-format-bluray",
         "regex-pattern-h265",
         "regex-pattern-x264",
+        "regex-pattern-x264",
         "wiki-faq",
         "wiki-faq",
         "wiki-faq",
@@ -118209,6 +118225,8 @@ export const contentDatabase = {
       "265": [
         "custom-format-uhd-bluray",
         "regex-pattern-vvc",
+        "regex-pattern-h265",
+        "regex-pattern-x265",
         "regex-pattern-x265",
         "wiki-eei",
         "wiki-eei",
@@ -118228,6 +118246,9 @@ export const contentDatabase = {
       "400": [
         "regex-pattern-roku"
       ],
+      "720": [
+        "regex-pattern-peacock-tv"
+      ],
       "800": [
         "wiki-edition"
       ],
@@ -118239,7 +118260,11 @@ export const contentDatabase = {
         "wiki-edition",
         "dev-logs-vision-almost-realised"
       ],
+      "1080": [
+        "regex-pattern-peacock-tv"
+      ],
       "1973": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
@@ -118248,6 +118273,7 @@ export const contentDatabase = {
         "wiki-edition"
       ],
       "1979": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-edition",
@@ -118286,6 +118312,7 @@ export const contentDatabase = {
       ],
       "1999": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "2000": [
@@ -118306,6 +118333,7 @@ export const contentDatabase = {
         "regex-pattern-itunes"
       ],
       "2006": [
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "2007": [
@@ -118367,6 +118395,9 @@ export const contentDatabase = {
       ],
       "2079": [
         "wiki-eei"
+      ],
+      "2160": [
+        "regex-pattern-peacock-tv"
       ],
       "4859": [
         "custom-format-special-edition-unwanted"
@@ -118886,6 +118917,7 @@ export const contentDatabase = {
         "regex-pattern-amazon-prime",
         "regex-pattern-apple-tv",
         "regex-pattern-apple-tv",
+        "regex-pattern-bw",
         "regex-pattern-bw",
         "regex-pattern-bw",
         "regex-pattern-bw",
@@ -120831,6 +120863,7 @@ export const contentDatabase = {
         "custom-format-lossless-audio-1080p",
         "custom-format-lossless-audio-1080p",
         "custom-format-webrip",
+        "regex-pattern-full-disc",
         "regex-pattern-uhd-bluray-missing-groups",
         "wiki-eei",
         "wiki-eei",
@@ -120962,9 +120995,19 @@ export const contentDatabase = {
         "custom-format-it",
         "custom-format-x265-web",
         "custom-format-x265-web-dl",
+        "regex-pattern-amazon-prime",
         "regex-pattern-cmrg",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-hbo-max",
+        "regex-pattern-imax-enhanced",
+        "regex-pattern-max",
+        "regex-pattern-now",
+        "regex-pattern-peacock-tv",
+        "regex-pattern-peacock-tv",
         "regex-pattern-pirates",
+        "regex-pattern-showtime",
+        "regex-pattern-stan",
+        "regex-pattern-itunes",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -121383,6 +121426,8 @@ export const contentDatabase = {
         "regex-pattern-4k4u",
         "regex-pattern-4k4u",
         "regex-pattern-amazon-prime",
+        "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
@@ -122158,6 +122203,8 @@ export const contentDatabase = {
         "regex-pattern-better-theatricals",
         "regex-pattern-criterion-channel",
         "regex-pattern-extras",
+        "regex-pattern-extras",
+        "regex-pattern-special-edition",
         "regex-pattern-special-edition",
         "wiki-edition",
         "wiki-edition",
@@ -122894,6 +122941,7 @@ export const contentDatabase = {
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality",
         "quality-profile-2160p-balanced",
+        "regex-pattern-bhdstudio",
         "regex-pattern-bhdstudio"
       ],
       "hallowed": [
@@ -122901,6 +122949,7 @@ export const contentDatabase = {
         "quality-profile-1080p-quality-hdr",
         "quality-profile-1080p-quality",
         "quality-profile-2160p-balanced",
+        "regex-pattern-hallowed",
         "regex-pattern-hallowed"
       ],
       "release": [
@@ -123285,6 +123334,7 @@ export const contentDatabase = {
         "quality-profile-2160p-remux",
         "quality-profile-2160p-remux",
         "quality-profile-720p-quality",
+        "regex-pattern-better-theatricals",
         "wiki-development",
         "wiki-development",
         "wiki-edition",
@@ -123394,6 +123444,9 @@ export const contentDatabase = {
         "custom-format-dvd",
         "custom-format-dvd",
         "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-remux"
       ],
       "remuxes": [
@@ -123425,11 +123478,14 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-unwanted-remux-groups",
         "regex-pattern-basic-hdr-formats",
+        "regex-pattern-basic-hdr-formats",
         "regex-pattern-bitor",
         "regex-pattern-depraved",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision",
         "regex-pattern-flights",
+        "regex-pattern-hdr",
         "regex-pattern-hdr",
         "regex-pattern-hdr",
         "regex-pattern-hdr10",
@@ -123522,6 +123578,7 @@ export const contentDatabase = {
         "quality-profile-1080p-quality",
         "quality-profile-2160p-quality",
         "quality-profile-720p-quality",
+        "regex-pattern-wiki",
         "regex-pattern-wiki",
         "wiki-home",
         "wiki-home",
@@ -123688,6 +123745,8 @@ export const contentDatabase = {
         "custom-format-non-retail-hdr",
         "custom-format-non-retail-hdr",
         "regex-pattern-imax-enhanced",
+        "regex-pattern-imax-enhanced",
+        "regex-pattern-imax",
         "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-groups",
         "regex-pattern-non-retail-hdr-groups",
@@ -124061,11 +124120,14 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "regex-pattern-basic-hdr-formats",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-bluray-missing-groups",
-        "regex-pattern-uhd-bluray-missing-groups"
+        "regex-pattern-uhd-bluray-missing-groups",
+        "regex-pattern-jennaortegauhd"
       ],
       "bluray": [
         "quality-profile-1080p-quality-hdr",
@@ -124079,7 +124141,10 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-x265-bluray",
         "regex-pattern-3d",
+        "regex-pattern-3d",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-full-disc",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-bluray-missing-groups",
         "regex-pattern-uhd-bluray-missing-groups"
@@ -124156,8 +124221,13 @@ export const contentDatabase = {
         "custom-format-unwanted-remux-groups",
         "custom-format-unknown-lossless-audio",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-full-disc",
         "regex-pattern-remux",
         "regex-pattern-remux",
+        "regex-pattern-remux",
+        "regex-pattern-x264",
+        "regex-pattern-x265",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -124199,6 +124269,7 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
         "custom-format-unknown-lossless-audio",
+        "regex-pattern-dual-audio",
         "regex-pattern-dual-audio",
         "regex-pattern-dual-audio",
         "regex-pattern-dual-audio",
@@ -124266,8 +124337,13 @@ export const contentDatabase = {
         "custom-format-unknown-lossless-audio",
         "regex-pattern-full-disc",
         "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-remux",
         "regex-pattern-remux",
+        "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-itunes-rename",
@@ -124566,10 +124642,15 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-uhd-bluray",
         "regex-pattern-dts-hd-hra-es",
+        "regex-pattern-dts-hd-hra-es",
+        "regex-pattern-dts-hd-ma",
         "regex-pattern-dts-hd-ma",
         "regex-pattern-dts-hd",
+        "regex-pattern-dts-hd",
+        "regex-pattern-dts-x",
         "regex-pattern-dts-x",
         "regex-pattern-dts",
+        "regex-pattern-movies-anywhere",
         "wiki-home"
       ],
       "etc": [
@@ -125046,6 +125127,7 @@ export const contentDatabase = {
       ],
       "hone": [
         "quality-profile-2160p-balanced",
+        "regex-pattern-hone",
         "regex-pattern-hone"
       ],
       "not": [
@@ -125554,14 +125636,18 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-uhd-bluray",
         "regex-pattern-basic-hdr-formats",
+        "regex-pattern-basic-hdr-formats",
         "regex-pattern-dolby-digital",
         "regex-pattern-dolby-digital",
         "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
+        "regex-pattern-dolby-vision",
+        "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-formats",
         "wiki-eei",
         "wiki-home",
@@ -125580,12 +125666,15 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "custom-format-uhd-bluray",
         "regex-pattern-basic-hdr-formats",
+        "regex-pattern-basic-hdr-formats",
         "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision-without-fallback",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
+        "regex-pattern-dolby-vision",
+        "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-formats",
         "wiki-eei",
         "wiki-edition",
@@ -125621,6 +125710,7 @@ export const contentDatabase = {
         "regex-pattern-hdr10",
         "regex-pattern-hdr10",
         "regex-pattern-hdr10",
+        "regex-pattern-non-retail-hdr-formats",
         "regex-pattern-non-retail-hdr-formats",
         "wiki-eei"
       ],
@@ -125846,7 +125936,11 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "dovi": [
-        "quality-profile-2160p-remux"
+        "quality-profile-2160p-remux",
+        "regex-pattern-basic-hdr-formats",
+        "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision",
+        "regex-pattern-non-retail-hdr-formats"
       ],
       "layer": [
         "quality-profile-2160p-remux",
@@ -126413,6 +126507,7 @@ export const contentDatabase = {
         "custom-format-full-disc",
         "custom-format-full-disc",
         "regex-pattern-beyondhd",
+        "regex-pattern-full-disc",
         "regex-pattern-full-disc",
         "regex-pattern-full-disc",
         "regex-pattern-full-disc",
@@ -127074,8 +127169,13 @@ export const contentDatabase = {
         "custom-format-uhd-bluray",
         "custom-format-uhd-bluray",
         "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-remux",
         "regex-pattern-remux",
+        "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-uhd-blu-ray",
         "regex-pattern-itunes-rename",
@@ -127182,7 +127282,8 @@ export const contentDatabase = {
       ],
       "pal": [
         "custom-format-576p",
-        "custom-format-dvd"
+        "custom-format-dvd",
+        "regex-pattern-full-disc"
       ],
       "european": [
         "custom-format-576p"
@@ -127214,10 +127315,13 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff"
       ],
       "amzn": [
-        "custom-format-amzn"
+        "custom-format-amzn",
+        "regex-pattern-amazon-prime",
+        "regex-pattern-amazon-prime"
       ],
       "amazon": [
         "custom-format-amzn",
+        "regex-pattern-amazon-prime",
         "regex-pattern-amazon-prime",
         "regex-pattern-amazon-prime",
         "regex-pattern-amazon-prime",
@@ -127345,10 +127449,12 @@ export const contentDatabase = {
         "dev-logs-website-20"
       ],
       "atvp": [
-        "custom-format-atvp"
+        "custom-format-atvp",
+        "regex-pattern-apple-tv"
       ],
       "apple": [
         "custom-format-atvp",
+        "regex-pattern-apple-tv",
         "regex-pattern-apple-tv",
         "regex-pattern-apple-tv",
         "regex-pattern-apple-tv",
@@ -127360,6 +127466,7 @@ export const contentDatabase = {
       "av1": [
         "custom-format-av1",
         "custom-format-av1",
+        "regex-pattern-av1",
         "regex-pattern-av1",
         "regex-pattern-av1",
         "wiki-eei",
@@ -127427,6 +127534,7 @@ export const contentDatabase = {
         "custom-format-not-only-english",
         "custom-format-unknown-lossless-audio",
         "regex-pattern-don",
+        "regex-pattern-don",
         "regex-pattern-uhd-bluray-missing-groups",
         "wiki-eei",
         "wiki-edition",
@@ -127466,7 +127574,8 @@ export const contentDatabase = {
         "regex-pattern-colourisation"
       ],
       "bcore": [
-        "custom-format-bcore"
+        "custom-format-bcore",
+        "regex-pattern-bravia-core"
       ],
       "bravia": [
         "custom-format-bcore",
@@ -127481,6 +127590,7 @@ export const contentDatabase = {
         "regex-pattern-bravia-core",
         "regex-pattern-bravia-core",
         "regex-pattern-bravia-core",
+        "regex-pattern-imax-enhanced",
         "regex-pattern-imax-enhanced",
         "regex-pattern-imax",
         "wiki-eei",
@@ -127812,6 +127922,7 @@ export const contentDatabase = {
         "custom-format-not-only-english",
         "regex-pattern-dual-audio",
         "regex-pattern-dual-audio",
+        "regex-pattern-dual-audio",
         "wiki-profilarr-setup"
       ],
       "25gb": [
@@ -127831,6 +127942,9 @@ export const contentDatabase = {
       ],
       "avc": [
         "custom-format-bluray",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -127865,7 +127979,8 @@ export const contentDatabase = {
         "custom-format-bluray"
       ],
       "crit": [
-        "custom-format-crit"
+        "custom-format-crit",
+        "regex-pattern-criterion-channel"
       ],
       "criterion": [
         "custom-format-crit",
@@ -127890,7 +128005,9 @@ export const contentDatabase = {
         "dev-logs-profile-selector-v3"
       ],
       "dsnp": [
-        "custom-format-dsnp"
+        "custom-format-dsnp",
+        "regex-pattern-disney",
+        "regex-pattern-imax-enhanced"
       ],
       "disney": [
         "custom-format-dsnp",
@@ -127900,12 +128017,14 @@ export const contentDatabase = {
         "regex-pattern-disney",
         "regex-pattern-disney",
         "regex-pattern-disney",
+        "regex-pattern-disney",
         "regex-pattern-hotstar",
         "regex-pattern-hotstar",
         "regex-pattern-hotstar",
         "regex-pattern-hulu",
         "regex-pattern-hulu",
         "regex-pattern-hulu",
+        "regex-pattern-imax-enhanced",
         "regex-pattern-imax-enhanced",
         "regex-pattern-imax",
         "regex-pattern-itunes-rename",
@@ -128005,11 +128124,24 @@ export const contentDatabase = {
       ],
       "rip": [
         "custom-format-dvd-remux",
+        "regex-pattern-hbo-max",
+        "regex-pattern-imax-enhanced",
+        "regex-pattern-max",
+        "regex-pattern-movies-anywhere",
+        "regex-pattern-now",
+        "regex-pattern-repack1",
         "regex-pattern-repack1",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack2",
         "regex-pattern-repack3",
         "regex-pattern-repack3",
+        "regex-pattern-repack3",
+        "regex-pattern-repack3",
+        "regex-pattern-showtime",
+        "regex-pattern-stan",
+        "regex-pattern-itunes",
         "wiki-faq"
       ],
       "without": [
@@ -128234,7 +128366,8 @@ export const contentDatabase = {
         "custom-format-dvd"
       ],
       "ntsc": [
-        "custom-format-dvd"
+        "custom-format-dvd",
+        "regex-pattern-full-disc"
       ],
       "720x576": [
         "custom-format-dvd"
@@ -128302,6 +128435,7 @@ export const contentDatabase = {
       "extras": [
         "custom-format-extras",
         "custom-format-extras",
+        "regex-pattern-extras",
         "regex-pattern-extras",
         "regex-pattern-extras"
       ],
@@ -128472,12 +128606,21 @@ export const contentDatabase = {
       "hlg": [
         "custom-format-hlg",
         "custom-format-hlg",
+        "regex-pattern-basic-hdr-formats",
+        "regex-pattern-basic-hdr-formats",
+        "regex-pattern-dolby-vision",
         "regex-pattern-dolby-vision",
         "regex-pattern-hlg",
-        "regex-pattern-hlg"
+        "regex-pattern-hlg",
+        "regex-pattern-hlg",
+        "regex-pattern-non-retail-hdr-formats",
+        "regex-pattern-non-retail-hdr-formats"
       ],
       "hmax": [
-        "custom-format-hmax"
+        "custom-format-hmax",
+        "regex-pattern-hbo-max-rename",
+        "regex-pattern-hbo-max-rename",
+        "regex-pattern-hbo-max"
       ],
       "hbo": [
         "custom-format-hmax",
@@ -128487,8 +128630,10 @@ export const contentDatabase = {
         "regex-pattern-hbo-max",
         "regex-pattern-hbo-max",
         "regex-pattern-hbo-max",
+        "regex-pattern-hbo-max",
         "regex-pattern-max-rename",
         "regex-pattern-max-rename",
+        "regex-pattern-max",
         "regex-pattern-max",
         "regex-pattern-max"
       ],
@@ -128505,9 +128650,13 @@ export const contentDatabase = {
         "regex-pattern-hbo-max",
         "regex-pattern-hbo-max",
         "regex-pattern-hbo-max",
+        "regex-pattern-hbo-max",
         "regex-pattern-max-rename",
         "regex-pattern-max-rename",
         "regex-pattern-max-rename",
+        "regex-pattern-max-rename",
+        "regex-pattern-max-rename",
+        "regex-pattern-max",
         "regex-pattern-max",
         "regex-pattern-max",
         "regex-pattern-max",
@@ -128515,7 +128664,8 @@ export const contentDatabase = {
         "wiki-profilarr-setup"
       ],
       "htsr": [
-        "custom-format-htsr"
+        "custom-format-htsr",
+        "regex-pattern-hotstar"
       ],
       "hotstar": [
         "custom-format-htsr",
@@ -128529,6 +128679,8 @@ export const contentDatabase = {
         "custom-format-hulu",
         "regex-pattern-disney",
         "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-dolby-vision-without-fallback",
+        "regex-pattern-hulu",
         "regex-pattern-hulu",
         "regex-pattern-hulu",
         "regex-pattern-hulu"
@@ -128538,14 +128690,17 @@ export const contentDatabase = {
         "custom-format-iqiyi",
         "regex-pattern-iqiyi",
         "regex-pattern-iqiyi",
+        "regex-pattern-iqiyi",
         "regex-pattern-iqiyi"
       ],
       "kcw": [
         "custom-format-kcw",
+        "regex-pattern-kcw",
         "regex-pattern-kcw"
       ],
       "kocowa": [
         "custom-format-kcw",
+        "regex-pattern-kcw",
         "regex-pattern-kcw"
       ],
       "track": [
@@ -128572,16 +128727,21 @@ export const contentDatabase = {
       "netflix": [
         "custom-format-nf",
         "regex-pattern-netflix",
+        "regex-pattern-netflix",
         "regex-pattern-netflix"
       ],
       "now": [
         "custom-format-now",
         "custom-format-now",
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "regex-pattern-now-rename",
         "regex-pattern-now-rename",
         "regex-pattern-now-rename",
         "regex-pattern-now-rename",
+        "regex-pattern-now-rename",
+        "regex-pattern-now-rename",
+        "regex-pattern-now",
         "regex-pattern-now",
         "regex-pattern-now",
         "regex-pattern-now",
@@ -128693,6 +128853,7 @@ export const contentDatabase = {
       ],
       "multi": [
         "custom-format-not-only-english-missing",
+        "regex-pattern-dual-audio",
         "regex-pattern-kcw",
         "regex-pattern-nahom",
         "wiki-faq",
@@ -128721,7 +128882,10 @@ export const contentDatabase = {
         "custom-format-not-only-english-missing"
       ],
       "pcok": [
-        "custom-format-pcok"
+        "custom-format-pcok",
+        "regex-pattern-peacock-tv-rename",
+        "regex-pattern-peacock-tv-rename",
+        "regex-pattern-peacock-tv"
       ],
       "peacock": [
         "custom-format-pcok",
@@ -128730,13 +128894,17 @@ export const contentDatabase = {
         "regex-pattern-peacock-tv-rename",
         "regex-pattern-peacock-tv",
         "regex-pattern-peacock-tv",
+        "regex-pattern-peacock-tv",
+        "regex-pattern-peacock-tv",
         "regex-pattern-peacock-tv"
       ],
       "pmtp": [
-        "custom-format-pmtp"
+        "custom-format-pmtp",
+        "regex-pattern-paramount"
       ],
       "paramount": [
         "custom-format-pmtp",
+        "regex-pattern-paramount",
         "regex-pattern-paramount",
         "regex-pattern-paramount",
         "regex-pattern-paramount",
@@ -128753,6 +128921,7 @@ export const contentDatabase = {
       "roku": [
         "custom-format-roku",
         "custom-format-roku",
+        "regex-pattern-roku",
         "regex-pattern-roku",
         "regex-pattern-roku",
         "regex-pattern-roku"
@@ -129047,10 +129216,15 @@ export const contentDatabase = {
         "regex-pattern-repack1",
         "regex-pattern-repack1",
         "regex-pattern-repack1",
+        "regex-pattern-repack1",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack3",
+        "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-repack3",
@@ -129154,6 +129328,7 @@ export const contentDatabase = {
         "custom-format-repack3",
         "custom-format-special-edition",
         "regex-pattern-better-theatricals",
+        "regex-pattern-special-edition",
         "wiki-edition",
         "wiki-edition",
         "wiki-edition",
@@ -129200,6 +129375,9 @@ export const contentDatabase = {
         "regex-pattern-repack2",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack3",
+        "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-repack3",
@@ -129319,7 +129497,13 @@ export const contentDatabase = {
       ],
       "sdr": [
         "custom-format-sdr",
+        "regex-pattern-basic-hdr-formats",
+        "regex-pattern-basic-hdr-formats",
         "regex-pattern-dolby-vision",
+        "regex-pattern-dolby-vision",
+        "regex-pattern-non-retail-hdr-formats",
+        "regex-pattern-non-retail-hdr-formats",
+        "regex-pattern-sdr",
         "regex-pattern-sdr",
         "regex-pattern-sdr",
         "wiki-eei"
@@ -129351,7 +129535,10 @@ export const contentDatabase = {
         "custom-format-sdr"
       ],
       "sho": [
-        "custom-format-sho"
+        "custom-format-sho",
+        "regex-pattern-showtime-rename",
+        "regex-pattern-showtime-rename",
+        "regex-pattern-showtime"
       ],
       "showtime": [
         "custom-format-sho",
@@ -129365,6 +129552,7 @@ export const contentDatabase = {
         "regex-pattern-showtime",
         "regex-pattern-showtime",
         "regex-pattern-showtime",
+        "regex-pattern-showtime",
         "regex-pattern-showtime"
       ],
       "stan": [
@@ -129372,6 +129560,9 @@ export const contentDatabase = {
         "custom-format-stan",
         "regex-pattern-stan-rename",
         "regex-pattern-stan-rename",
+        "regex-pattern-stan-rename",
+        "regex-pattern-stan-rename",
+        "regex-pattern-stan",
         "regex-pattern-stan",
         "regex-pattern-stan"
       ],
@@ -129387,8 +129578,13 @@ export const contentDatabase = {
         "custom-format-season-pack",
         "custom-format-season-pack",
         "regex-pattern-repack1",
+        "regex-pattern-repack1",
         "regex-pattern-repack2",
         "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack2",
+        "regex-pattern-repack3",
+        "regex-pattern-repack3",
         "regex-pattern-repack3",
         "regex-pattern-repack3"
       ],
@@ -129407,6 +129603,7 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "custom-format-special-edition",
         "regex-pattern-better-theatricals",
+        "regex-pattern-special-edition",
         "regex-pattern-special-edition",
         "regex-pattern-special-edition",
         "regex-pattern-theatrical-edition",
@@ -129442,6 +129639,7 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "regex-pattern-better-theatricals",
         "regex-pattern-special-edition",
+        "regex-pattern-theatrical-edition",
         "regex-pattern-theatrical-edition",
         "regex-pattern-theatrical-edition",
         "regex-pattern-theatrical-edition",
@@ -129782,6 +129980,7 @@ export const contentDatabase = {
       ],
       "true": [
         "custom-format-special-edition",
+        "regex-pattern-truehd",
         "media-management-misc",
         "media-management-misc",
         "media-management-naming",
@@ -130123,6 +130322,7 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "custom-format-special-edition",
         "regex-pattern-better-theatricals",
+        "regex-pattern-special-edition",
         "wiki-edition",
         "wiki-edition",
         "wiki-edition",
@@ -130164,6 +130364,9 @@ export const contentDatabase = {
         "custom-format-special-edition",
         "regex-pattern-extended-clip",
         "regex-pattern-extended-clip",
+        "regex-pattern-extended-clip",
+        "regex-pattern-extras",
+        "regex-pattern-special-edition",
         "wiki-edition",
         "wiki-edition",
         "wiki-edition",
@@ -130243,15 +130446,21 @@ export const contentDatabase = {
         "custom-format-tving",
         "regex-pattern-tving",
         "regex-pattern-tving",
+        "regex-pattern-tving",
         "regex-pattern-tving"
       ],
       "triton": [
         "custom-format-truehd-missing",
-        "regex-pattern-triton"
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-triton",
+        "regex-pattern-triton",
+        "regex-pattern-truehd-missing-groups"
       ],
       "epsilon": [
         "custom-format-truehd-missing",
-        "regex-pattern-epsilon"
+        "regex-pattern-epsilon",
+        "regex-pattern-epsilon",
+        "regex-pattern-truehd-missing-groups"
       ],
       "included": [
         "custom-format-uhd-bluray-missing",
@@ -130285,8 +130494,13 @@ export const contentDatabase = {
       ],
       "hevc": [
         "custom-format-uhd-bluray",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-hevc",
         "regex-pattern-hevc",
+        "regex-pattern-hevc",
+        "regex-pattern-x265",
         "wiki-eei",
         "wiki-eei",
         "wiki-eei",
@@ -130406,6 +130620,7 @@ export const contentDatabase = {
       ],
       "depth": [
         "custom-format-uhd-bluray",
+        "regex-pattern-depth",
         "regex-pattern-depth",
         "wiki-eei",
         "wiki-eei",
@@ -130625,11 +130840,13 @@ export const contentDatabase = {
         "custom-format-viki",
         "custom-format-viki",
         "regex-pattern-viki",
+        "regex-pattern-viki",
         "regex-pattern-viki"
       ],
       "viu": [
         "custom-format-viu",
         "custom-format-viu",
+        "regex-pattern-viu",
         "regex-pattern-viu",
         "regex-pattern-viu",
         "regex-pattern-viu",
@@ -130639,17 +130856,20 @@ export const contentDatabase = {
         "custom-format-vp9",
         "custom-format-vp9",
         "regex-pattern-vp9",
+        "regex-pattern-vp9",
         "regex-pattern-vp9"
       ],
       "vvc": [
         "custom-format-vvc",
         "custom-format-vvc",
         "regex-pattern-vvc",
+        "regex-pattern-vvc",
         "regex-pattern-vvc"
       ],
       "wavve": [
         "custom-format-wavve",
         "custom-format-wavve",
+        "regex-pattern-wavve",
         "regex-pattern-wavve",
         "regex-pattern-wavve"
       ],
@@ -130823,6 +131043,7 @@ export const contentDatabase = {
       ],
       "form": [
         "custom-format-webrip",
+        "regex-pattern-form",
         "regex-pattern-form"
       ],
       "conversion": [
@@ -130881,11 +131102,14 @@ export const contentDatabase = {
         "custom-format-wetv",
         "custom-format-wetv",
         "regex-pattern-wetv",
+        "regex-pattern-wetv",
         "regex-pattern-wetv"
       ],
       "xvid": [
         "custom-format-xvid",
         "custom-format-xvid",
+        "regex-pattern-full-disc",
+        "regex-pattern-xvid",
         "regex-pattern-xvid",
         "regex-pattern-xvid"
       ],
@@ -130900,6 +131124,7 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes-rename",
+        "regex-pattern-itunes",
         "regex-pattern-itunes",
         "regex-pattern-itunes",
         "regex-pattern-itunes",
@@ -130967,6 +131192,8 @@ export const contentDatabase = {
       "evo": [
         "custom-format-it-missing",
         "regex-pattern-evo",
+        "regex-pattern-evo",
+        "regex-pattern-ipt-internals",
         "regex-pattern-ipt-internals"
       ],
       "cmrg": [
@@ -131015,6 +131242,8 @@ export const contentDatabase = {
       "sbs": [
         "regex-pattern-3d",
         "regex-pattern-3d",
+        "regex-pattern-3d",
+        "regex-pattern-3d",
         "regex-pattern-wavve"
       ],
       "side": [
@@ -131024,6 +131253,8 @@ export const contentDatabase = {
         "wiki-profilarr-setup"
       ],
       "half": [
+        "regex-pattern-3d",
+        "regex-pattern-3d",
         "regex-pattern-3d",
         "regex-pattern-3d"
       ],
@@ -131058,6 +131289,7 @@ export const contentDatabase = {
         "regex-pattern-3d"
       ],
       "4k4u": [
+        "regex-pattern-4k4u",
         "regex-pattern-4k4u",
         "regex-pattern-4k4u"
       ],
@@ -131153,41 +131385,54 @@ export const contentDatabase = {
       ],
       "4kdvs": [
         "regex-pattern-4kdvs",
+        "regex-pattern-4kdvs",
         "regex-pattern-4kdvs"
       ],
       "surround": [
         "regex-pattern-71-surround"
       ],
       "9volt": [
+        "regex-pattern-9volt",
         "regex-pattern-9volt"
       ],
       "aaauhd": [
+        "regex-pattern-aaauhd",
         "regex-pattern-aaauhd"
       ],
       "aac": [
         "regex-pattern-aac",
         "regex-pattern-xvid"
       ],
+      "baac": [
+        "regex-pattern-aac"
+      ],
       "abbie": [
+        "regex-pattern-abbie",
         "regex-pattern-abbie"
       ],
       "ade": [
+        "regex-pattern-ade",
         "regex-pattern-ade"
       ],
       "ajp69": [
+        "regex-pattern-ajp69",
         "regex-pattern-ajp69"
       ],
       "ane": [
+        "regex-pattern-ane",
         "regex-pattern-ane"
       ],
       "aomundson": [
+        "regex-pattern-aomundson",
         "regex-pattern-aomundson"
       ],
       "apex": [
         "regex-pattern-apex",
+        "regex-pattern-apex",
         "dev-logs-website-20"
       ],
       "aroma": [
+        "regex-pattern-aroma",
         "regex-pattern-aroma"
       ],
       "retagging": [
@@ -131261,9 +131506,11 @@ export const contentDatabase = {
         "regex-pattern-viki"
       ],
       "aviator": [
+        "regex-pattern-aviator",
         "regex-pattern-aviator"
       ],
       "absinth": [
+        "regex-pattern-absinth",
         "regex-pattern-absinth"
       ],
       "simply": [
@@ -131478,11 +131725,19 @@ export const contentDatabase = {
       "originals": [
         "regex-pattern-apple-tv"
       ],
+      "aptv": [
+        "regex-pattern-apple-tv"
+      ],
       "arid": [
+        "regex-pattern-arid",
         "regex-pattern-arid"
       ],
       "asakura": [
+        "regex-pattern-asakura",
         "regex-pattern-asakura"
+      ],
+      "batmos": [
+        "regex-pattern-atmos"
       ],
       "black": [
         "regex-pattern-bw",
@@ -131603,29 +131858,43 @@ export const contentDatabase = {
         "regex-pattern-colourisation",
         "wiki-eei"
       ],
+      "bblack": [
+        "regex-pattern-bw"
+      ],
+      "bwhite": [
+        "regex-pattern-bw"
+      ],
       "bluebird": [
+        "regex-pattern-bluebird",
         "regex-pattern-bluebird"
       ],
       "bluranium": [
+        "regex-pattern-bluranium",
         "regex-pattern-bluranium"
       ],
       "blutonium": [
+        "regex-pattern-blutonium",
         "regex-pattern-blutonium"
       ],
       "bmf": [
+        "regex-pattern-bmf",
         "regex-pattern-bmf"
       ],
       "bols": [
+        "regex-pattern-bols",
         "regex-pattern-bols"
       ],
       "boredor": [
+        "regex-pattern-boredor",
         "regex-pattern-boredor"
       ],
       "bstd": [
+        "regex-pattern-bstd",
         "regex-pattern-bstd"
       ],
       "btn": [
         "regex-pattern-btn-atmos",
+        "regex-pattern-btn",
         "regex-pattern-btn"
       ],
       "broadcastthenet": [
@@ -131641,10 +131910,21 @@ export const contentDatabase = {
       "convention": [
         "regex-pattern-btn-atmos"
       ],
+      "btrue": [
+        "regex-pattern-btn-atmos"
+      ],
+      "hda": [
+        "regex-pattern-btn-atmos"
+      ],
+      "ddpa": [
+        "regex-pattern-btn-atmos"
+      ],
       "byndr": [
+        "regex-pattern-byndr",
         "regex-pattern-byndr"
       ],
       "beitai": [
+        "regex-pattern-beitai",
         "regex-pattern-beitai"
       ],
       "theatricals": [
@@ -131715,6 +131995,7 @@ export const contentDatabase = {
       ],
       "terminator": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "judgement": [
@@ -131730,9 +132011,11 @@ export const contentDatabase = {
       ],
       "alien": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "star": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "regex-pattern-disney",
         "regex-pattern-disney",
@@ -131743,35 +132026,45 @@ export const contentDatabase = {
       ],
       "wars": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "regex-pattern-disney",
         "wiki-edition"
       ],
       "apocalypse": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
+        "regex-pattern-bunny-apocalypse",
         "regex-pattern-bunny-apocalypse",
         "wiki-edition"
       ],
       "exorcist": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "donnie": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "darko": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "amadeus": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "payback": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition"
       ],
       "almost": [
+        "regex-pattern-better-theatricals",
         "regex-pattern-better-theatricals",
         "wiki-eei",
         "wiki-edition",
@@ -131783,10 +132076,34 @@ export const contentDatabase = {
       ],
       "famous": [
         "regex-pattern-better-theatricals",
+        "regex-pattern-better-theatricals",
         "wiki-edition",
         "wiki-edition"
       ],
+      "bempire": [
+        "regex-pattern-better-theatricals"
+      ],
+      "strikes": [
+        "regex-pattern-better-theatricals",
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-strikes",
+        "regex-pattern-strikes",
+        "wiki-edition"
+      ],
+      "breturn": [
+        "regex-pattern-better-theatricals"
+      ],
+      "jedi": [
+        "regex-pattern-better-theatricals",
+        "wiki-edition",
+        "wiki-edition"
+      ],
+      "straight": [
+        "regex-pattern-better-theatricals",
+        "wiki-edition"
+      ],
       "beyondhd": [
+        "regex-pattern-beyondhd",
         "regex-pattern-beyondhd"
       ],
       "doing": [
@@ -131794,15 +132111,20 @@ export const contentDatabase = {
         "dev-logs-vision-almost-realised"
       ],
       "bitor": [
-        "regex-pattern-bitor"
+        "regex-pattern-bitor",
+        "regex-pattern-bitor",
+        "regex-pattern-non-retail-hdr-groups"
       ],
       "bizkit": [
+        "regex-pattern-bizkit",
         "regex-pattern-bizkit"
       ],
       "bluraydesuyo": [
+        "regex-pattern-bluraydesuyo",
         "regex-pattern-bluraydesuyo"
       ],
       "blzt": [
+        "regex-pattern-blzt",
         "regex-pattern-blzt"
       ],
       "bracketed": [
@@ -131888,63 +132210,81 @@ export const contentDatabase = {
         "regex-pattern-bravia-core"
       ],
       "bunny": [
+        "regex-pattern-bunny-apocalypse",
         "regex-pattern-bunny-apocalypse"
       ],
       "cbt": [
+        "regex-pattern-cbt",
         "regex-pattern-cbt"
       ],
       "chaos": [
+        "regex-pattern-chaos",
         "regex-pattern-chaos"
       ],
       "chd": [
+        "regex-pattern-chd",
         "regex-pattern-chd"
       ],
       "cmct": [
+        "regex-pattern-cmct",
         "regex-pattern-cmct"
       ],
       "prolific": [
         "regex-pattern-cmrg"
       ],
       "creative24": [
+        "regex-pattern-creative24",
         "regex-pattern-creative24"
       ],
       "garbage": [
         "regex-pattern-creative24"
       ],
       "crfw": [
+        "regex-pattern-crfw",
         "regex-pattern-crfw"
       ],
       "crx": [
+        "regex-pattern-crx",
         "regex-pattern-crx"
       ],
       "crisc": [
+        "regex-pattern-crisc",
         "regex-pattern-crisc"
       ],
       "ctr": [
+        "regex-pattern-ctr",
         "regex-pattern-ctr"
       ],
       "cait": [
+        "regex-pattern-cait-sidhe",
         "regex-pattern-cait-sidhe"
       ],
       "sidhe": [
+        "regex-pattern-cait-sidhe",
         "regex-pattern-cait-sidhe"
       ],
       "chihiro": [
+        "regex-pattern-chihiro",
         "regex-pattern-chihiro"
       ],
       "chotab": [
+        "regex-pattern-chotab",
         "regex-pattern-chotab"
       ],
       "cinephiles": [
         "regex-pattern-cinephiles",
+        "regex-pattern-cinephiles",
         "regex-pattern-criterion-channel",
+        "regex-pattern-hdr10-missing-groups",
         "wiki-edition"
       ],
       "cinefeel": [
         "regex-pattern-cinefeel",
+        "regex-pattern-cinefeel",
         "regex-pattern-cinefeel"
       ],
       "coalgirls": [
+        "regex-pattern-coalgirls",
         "regex-pattern-coalgirls"
       ],
       "colourisation": [
@@ -132045,7 +132385,11 @@ export const contentDatabase = {
       "colourised": [
         "regex-pattern-colourisation"
       ],
+      "bcolou": [
+        "regex-pattern-colourisation"
+      ],
       "commie": [
+        "regex-pattern-commie",
         "regex-pattern-commie"
       ],
       "collection": [
@@ -132226,28 +132570,43 @@ export const contentDatabase = {
         "dev-logs-shiny-new-stuff"
       ],
       "ctrlhd": [
+        "regex-pattern-ctrlhd",
         "regex-pattern-ctrlhd"
       ],
       "z0n3": [
+        "regex-pattern-d-z0n3",
         "regex-pattern-d-z0n3"
       ],
       "deflate": [
+        "regex-pattern-deflate",
         "regex-pattern-deflate"
       ],
       "hra": [
         "regex-pattern-dts-hd-hra-es"
       ],
+      "xll": [
+        "regex-pattern-dts-hd-ma",
+        "regex-pattern-dts-hd"
+      ],
+      "bdts": [
+        "regex-pattern-dts"
+      ],
       "darq": [
+        "regex-pattern-darq",
         "regex-pattern-darq"
       ],
       "dariush": [
+        "regex-pattern-dariush",
         "regex-pattern-dariush"
       ],
       "dekinai": [
+        "regex-pattern-dekinai",
         "regex-pattern-dekinai"
       ],
       "depraved": [
-        "regex-pattern-depraved"
+        "regex-pattern-depraved",
+        "regex-pattern-depraved",
+        "regex-pattern-non-retail-hdr-groups"
       ],
       "primarily": [
         "regex-pattern-disney",
@@ -132318,14 +132677,29 @@ export const contentDatabase = {
       "espn": [
         "regex-pattern-disney"
       ],
+      "dsny": [
+        "regex-pattern-disney"
+      ],
       "doki": [
+        "regex-pattern-doki",
         "regex-pattern-doki"
+      ],
+      "bdd": [
+        "regex-pattern-dolby-digital",
+        "regex-pattern-dolby-digital"
+      ],
+      "ac3": [
+        "regex-pattern-dolby-digital",
+        "regex-pattern-dolby-digital"
       ],
       "come": [
         "regex-pattern-dolby-vision-without-fallback",
         "dev-logs-modular-choices",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-shiny-new-stuff"
+      ],
+      "ision": [
+        "regex-pattern-dolby-vision-without-fallback"
       ],
       "metadata": [
         "regex-pattern-dolby-vision",
@@ -132341,6 +132715,8 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision",
         "regex-pattern-imax-enhanced",
         "regex-pattern-imax-enhanced",
+        "regex-pattern-imax-enhanced",
+        "regex-pattern-upscaled",
         "wiki-profilarr-setup"
       ],
       "brightness": [
@@ -132393,6 +132769,7 @@ export const contentDatabase = {
         "regex-pattern-dolby-vision"
       ],
       "drag": [
+        "regex-pattern-drag",
         "regex-pattern-drag"
       ],
       "contain": [
@@ -132407,6 +132784,7 @@ export const contentDatabase = {
       ],
       "along": [
         "regex-pattern-dual-audio",
+        "regex-pattern-sing-along",
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
@@ -132451,13 +132829,38 @@ export const contentDatabase = {
       "watching": [
         "regex-pattern-dual-audio"
       ],
+      "complete": [
+        "regex-pattern-dual-audio",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "wiki-eei",
+        "wiki-development",
+        "wiki-development",
+        "wiki-development",
+        "wiki-edition",
+        "wiki-edition",
+        "wiki-edition",
+        "wiki-edition",
+        "wiki-profilarr-casaos",
+        "wiki-profilarr-setup",
+        "wiki-profilarr-setup",
+        "wiki-profilarr-setup",
+        "dev-logs-architecture-overhaul",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profile-tweaks",
+        "dev-logs-profile-tweaks",
+        "dev-logs-profile-tweaks"
+      ],
       "edph": [
+        "regex-pattern-edph",
         "regex-pattern-edph"
       ],
       "emerald": [
+        "regex-pattern-emerald",
         "regex-pattern-emerald"
       ],
       "esir": [
+        "regex-pattern-esir",
         "regex-pattern-esir"
       ],
       "internal": [
@@ -132506,29 +132909,38 @@ export const contentDatabase = {
         "regex-pattern-evo"
       ],
       "excision": [
+        "regex-pattern-excision",
         "regex-pattern-excision"
       ],
       "exp": [
+        "regex-pattern-exp",
         "regex-pattern-exp"
       ],
       "ebp": [
+        "regex-pattern-ebp",
         "regex-pattern-ebp"
       ],
       "erai": [
+        "regex-pattern-erai-raws",
         "regex-pattern-erai-raws"
       ],
       "raws": [
+        "regex-pattern-erai-raws",
         "regex-pattern-erai-raws"
       ],
       "exiled": [
+        "regex-pattern-exiled-destiny",
         "regex-pattern-exiled-destiny"
       ],
       "destiny": [
+        "regex-pattern-exiled-destiny",
         "regex-pattern-exiled-destiny"
       ],
       "clip": [
         "regex-pattern-extended-clip",
-        "regex-pattern-extended-clip"
+        "regex-pattern-extended-clip",
+        "regex-pattern-extended-clip",
+        "regex-pattern-extras"
       ],
       "preview": [
         "regex-pattern-extended-clip",
@@ -132537,38 +132949,72 @@ export const contentDatabase = {
       "featurettes": [
         "regex-pattern-extras"
       ],
+      "bonus": [
+        "regex-pattern-extras",
+        "regex-pattern-full-disc"
+      ],
+      "feature": [
+        "regex-pattern-extras",
+        "regex-pattern-itunes-rename",
+        "regex-pattern-itunes",
+        "wiki-profilarr-setup",
+        "wiki-profilarr-setup",
+        "wiki-profilarr-setup",
+        "wiki-profilarr-setup",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-profilarr-is-in-beta",
+        "dev-logs-shiny-new-stuff",
+        "dev-logs-shiny-new-stuff"
+      ],
       "fff": [
+        "regex-pattern-fff",
         "regex-pattern-fff"
       ],
       "fgt": [
+        "regex-pattern-fgt",
         "regex-pattern-fgt"
       ],
+      "bflac": [
+        "regex-pattern-flac"
+      ],
       "flame": [
+        "regex-pattern-flame",
         "regex-pattern-flame"
       ],
       "flux": [
+        "regex-pattern-flux",
         "regex-pattern-flux"
       ],
       "frds": [
+        "regex-pattern-frds",
         "regex-pattern-frds"
       ],
       "ftw": [
+        "regex-pattern-ftw-hd",
         "regex-pattern-ftw-hd"
       ],
       "filmhd": [
-        "regex-pattern-filmhd"
+        "regex-pattern-filmhd",
+        "regex-pattern-filmhd",
+        "regex-pattern-scene"
       ],
       "final8": [
+        "regex-pattern-final8",
         "regex-pattern-final8"
       ],
       "flights": [
-        "regex-pattern-flights"
+        "regex-pattern-flights",
+        "regex-pattern-flights",
+        "regex-pattern-non-retail-hdr-groups"
       ],
       "flugel": [
+        "regex-pattern-flugel",
         "regex-pattern-flugel"
       ],
       "framestor": [
-        "regex-pattern-framestor"
+        "regex-pattern-framestor",
+        "regex-pattern-framestor",
+        "regex-pattern-hdr10-missing-groups"
       ],
       "refers": [
         "regex-pattern-full-disc",
@@ -132576,26 +133022,6 @@ export const contentDatabase = {
         "wiki-faq",
         "wiki-faq",
         "wiki-faq"
-      ],
-      "complete": [
-        "regex-pattern-full-disc",
-        "wiki-eei",
-        "wiki-development",
-        "wiki-development",
-        "wiki-development",
-        "wiki-edition",
-        "wiki-edition",
-        "wiki-edition",
-        "wiki-edition",
-        "wiki-profilarr-casaos",
-        "wiki-profilarr-setup",
-        "wiki-profilarr-setup",
-        "wiki-profilarr-setup",
-        "dev-logs-architecture-overhaul",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks",
-        "dev-logs-profile-tweaks"
       ],
       "copy": [
         "regex-pattern-full-disc",
@@ -132609,9 +133035,6 @@ export const contentDatabase = {
         "wiki-profilarr-casaos"
       ],
       "menus": [
-        "regex-pattern-full-disc"
-      ],
-      "bonus": [
         "regex-pattern-full-disc"
       ],
       "maintain": [
@@ -132641,6 +133064,8 @@ export const contentDatabase = {
         "wiki-profilarr-setup"
       ],
       "iso": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
         "regex-pattern-full-disc"
       ],
       "folders": [
@@ -132649,6 +133074,7 @@ export const contentDatabase = {
         "wiki-development"
       ],
       "bdmv": [
+        "regex-pattern-full-disc",
         "regex-pattern-full-disc"
       ],
       "these": [
@@ -132770,26 +133196,94 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-faq"
       ],
+      "bdrip": [
+        "regex-pattern-full-disc"
+      ],
+      "mkv": [
+        "regex-pattern-full-disc",
+        "regex-pattern-remux",
+        "regex-pattern-mkv",
+        "regex-pattern-mkv",
+        "regex-pattern-mkv"
+      ],
+      "wmv": [
+        "regex-pattern-full-disc"
+      ],
+      "d3g": [
+        "regex-pattern-full-disc",
+        "regex-pattern-d3g",
+        "regex-pattern-d3g"
+      ],
+      "bdremux": [
+        "regex-pattern-full-disc"
+      ],
+      "german": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc"
+      ],
+      "mvc": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc"
+      ],
+      "mpeg": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc",
+        "regex-pattern-xvid"
+      ],
+      "dis": [
+        "regex-pattern-full-disc"
+      ],
+      "disk": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc"
+      ],
+      "dvd9": [
+        "regex-pattern-full-disc"
+      ],
+      "dvd5": [
+        "regex-pattern-full-disc"
+      ],
+      "vob": [
+        "regex-pattern-full-disc"
+      ],
+      "ifo": [
+        "regex-pattern-full-disc"
+      ],
+      "bcomplete": [
+        "regex-pattern-full-disc",
+        "regex-pattern-full-disc"
+      ],
+      "bbr": [
+        "regex-pattern-full-disc"
+      ],
       "galaxy": [
+        "regex-pattern-galaxy",
         "regex-pattern-galaxy"
       ],
       "gnome": [
         "regex-pattern-gnome",
+        "regex-pattern-gnome",
         "regex-pattern-gnome"
       ],
       "grimm": [
+        "regex-pattern-grimm",
         "regex-pattern-grimm"
       ],
       "gs88": [
+        "regex-pattern-gs88",
         "regex-pattern-gs88"
       ],
       "guhzer": [
+        "regex-pattern-guhzer",
         "regex-pattern-guhzer"
       ],
       "geek": [
+        "regex-pattern-geek",
         "regex-pattern-geek"
       ],
       "handjob": [
+        "regex-pattern-handjob",
         "regex-pattern-handjob"
       ],
       "rename": [
@@ -132885,13 +133379,19 @@ export const contentDatabase = {
         "regex-pattern-hbo-max-rename",
         "regex-pattern-hbo-max"
       ],
+      "hbom": [
+        "regex-pattern-hbo-max"
+      ],
       "hd77": [
+        "regex-pattern-hd77",
         "regex-pattern-hd77"
       ],
       "hdchina": [
+        "regex-pattern-hdchina",
         "regex-pattern-hdchina"
       ],
       "hdmaniacs": [
+        "regex-pattern-hdmaniacs",
         "regex-pattern-hdmaniacs"
       ],
       "generalisation": [
@@ -132899,26 +133399,93 @@ export const contentDatabase = {
         "regex-pattern-hlg",
         "regex-pattern-pq"
       ],
+      "c0ke": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-c0ke",
+        "regex-pattern-c0ke"
+      ],
+      "edv": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "elneekster": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "hdh": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "hqmux": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-hqmux",
+        "regex-pattern-hqmux"
+      ],
+      "kenobi": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "mimic": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-mimic",
+        "regex-pattern-mimic",
+        "wiki-edition"
+      ],
+      "ntb": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-ntb",
+        "regex-pattern-ntb"
+      ],
+      "playbd": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-playbd",
+        "regex-pattern-playbd"
+      ],
+      "ryu": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "sicfoi": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-sicfoi",
+        "regex-pattern-sicfoi"
+      ],
+      "tekmux": [
+        "regex-pattern-hdr10-missing-groups"
+      ],
+      "w4nk3r": [
+        "regex-pattern-hdr10-missing-groups",
+        "regex-pattern-w4nk3r",
+        "regex-pattern-w4nk3r"
+      ],
       "plus": [
         "regex-pattern-hdr10",
         "regex-pattern-hdr10",
-        "regex-pattern-hdr10"
+        "regex-pattern-hdr10",
+        "regex-pattern-hdr10",
+        "regex-pattern-paramount"
       ],
       "sign": [
         "regex-pattern-hdr10",
         "wiki-development"
       ],
+      "bhdr10": [
+        "regex-pattern-hdr10",
+        "regex-pattern-hdr10"
+      ],
+      "lus": [
+        "regex-pattern-hdr10",
+        "regex-pattern-non-retail-hdr-formats"
+      ],
       "specifiers": [
         "regex-pattern-hdr10"
       ],
       "hds": [
+        "regex-pattern-hds",
         "regex-pattern-hds"
       ],
       "hdmux": [
+        "regex-pattern-hdmux",
         "regex-pattern-hdmux"
       ],
       "open": [
         "regex-pattern-hevc",
+        "regex-pattern-open-matte",
         "regex-pattern-open-matte",
         "regex-pattern-open-matte",
         "regex-pattern-vp9",
@@ -132957,27 +133524,31 @@ export const contentDatabase = {
         "wiki-faq"
       ],
       "hhweb": [
+        "regex-pattern-hhweb",
         "regex-pattern-hhweb"
       ],
-      "hqmux": [
-        "regex-pattern-hqmux"
-      ],
       "huntjr": [
+        "regex-pattern-huntjr",
         "regex-pattern-huntjr"
       ],
       "hares": [
+        "regex-pattern-hares",
         "regex-pattern-hares"
       ],
       "hidt": [
+        "regex-pattern-hidt",
         "regex-pattern-hidt"
       ],
       "hifi": [
+        "regex-pattern-hifi",
         "regex-pattern-hifi"
       ],
       "hip": [
+        "regex-pattern-hip",
         "regex-pattern-hip"
       ],
       "horriblesubs": [
+        "regex-pattern-horriblesubs",
         "regex-pattern-horriblesubs"
       ],
       "jiohotstar": [
@@ -133159,12 +133730,15 @@ export const contentDatabase = {
         "regex-pattern-hulu"
       ],
       "hypstu": [
+        "regex-pattern-hypstu",
         "regex-pattern-hypstu"
       ],
       "iamable": [
+        "regex-pattern-iamable",
         "regex-pattern-iamable"
       ],
       "ide": [
+        "regex-pattern-ide",
         "regex-pattern-ide",
         "wiki-development"
       ],
@@ -133172,6 +133746,8 @@ export const contentDatabase = {
         "regex-pattern-imax-enhanced",
         "regex-pattern-imax-enhanced",
         "regex-pattern-imax-enhanced",
+        "regex-pattern-imax-enhanced",
+        "regex-pattern-imax",
         "regex-pattern-imax",
         "regex-pattern-imax",
         "regex-pattern-imax",
@@ -133216,18 +133792,23 @@ export const contentDatabase = {
         "regex-pattern-imax"
       ],
       "iznjie": [
+        "regex-pattern-iznjie-biznjie",
         "regex-pattern-iznjie-biznjie"
       ],
       "biznjie": [
+        "regex-pattern-iznjie-biznjie",
         "regex-pattern-iznjie-biznjie"
       ],
       "justwatch": [
+        "regex-pattern-justwatch",
         "regex-pattern-justwatch"
       ],
       "kan3d2m": [
+        "regex-pattern-kan3d2m",
         "regex-pattern-kan3d2m"
       ],
       "kashmir": [
+        "regex-pattern-kashmir",
         "regex-pattern-kashmir"
       ],
       "upscales": [
@@ -133290,81 +133871,107 @@ export const contentDatabase = {
         "regex-pattern-viu"
       ],
       "knives": [
+        "regex-pattern-knives",
         "regex-pattern-knives"
       ],
       "kralimarko": [
+        "regex-pattern-kralimarko",
         "regex-pattern-kralimarko"
       ],
       "kaleido": [
+        "regex-pattern-kaleido",
         "regex-pattern-kaleido"
       ],
       "kametsu": [
+        "regex-pattern-kametsu",
         "regex-pattern-kametsu"
       ],
       "kings": [
+        "regex-pattern-kings",
         "regex-pattern-kings"
       ],
       "kitsune": [
+        "regex-pattern-kitsune",
         "regex-pattern-kitsune"
       ],
       "koten_gars": [
+        "regex-pattern-kotengars",
         "regex-pattern-kotengars"
       ],
       "lama": [
+        "regex-pattern-lama",
         "regex-pattern-lama"
       ],
       "lazarus": [
+        "regex-pattern-lazarus",
         "regex-pattern-lazarus"
       ],
       "lazy": [
         "regex-pattern-lazy",
+        "regex-pattern-lazy",
         "regex-pattern-lazy"
       ],
       "legi0n": [
-        "regex-pattern-legi0n"
+        "regex-pattern-legi0n",
+        "regex-pattern-legi0n",
+        "regex-pattern-uhd-bluray-missing-groups"
       ],
       "lst": [
+        "regex-pattern-lst",
         "regex-pattern-lst"
       ],
       "lys1th3a": [
+        "regex-pattern-lys1th3a",
         "regex-pattern-lys1th3a"
       ],
       "lazyremux": [
+        "regex-pattern-lazyremux",
         "regex-pattern-lazyremux"
       ],
       "ling": [
         "regex-pattern-ling",
+        "regex-pattern-ling",
         "wiki-eei"
       ],
       "littlebakas": [
+        "regex-pattern-littlebakas",
         "regex-pattern-littlebakas"
       ],
       "lord": [
         "regex-pattern-lord",
+        "regex-pattern-lord",
         "wiki-edition"
       ],
       "lolhd": [
+        "regex-pattern-lolhd",
         "regex-pattern-lolhd"
       ],
       "lucifer": [
+        "regex-pattern-lucifer",
         "regex-pattern-lucifer"
       ],
       "lulu": [
+        "regex-pattern-lulu",
         "regex-pattern-lulu"
       ],
       "malus": [
+        "regex-pattern-malus",
         "regex-pattern-malus"
       ],
       "mtbb": [
+        "regex-pattern-mtbb",
         "regex-pattern-mtbb"
       ],
       "mteam": [
+        "regex-pattern-mteam",
         "regex-pattern-mteam"
       ],
       "mzabi": [
+        "regex-pattern-mzabi",
         "regex-pattern-mzabi"
       ],
       "mainframe": [
+        "regex-pattern-mainframe",
         "regex-pattern-mainframe",
         "wiki-eei",
         "wiki-eei"
@@ -133430,11 +134037,8 @@ export const contentDatabase = {
         "regex-pattern-max-rename",
         "regex-pattern-max"
       ],
-      "mimic": [
-        "regex-pattern-mimic",
-        "wiki-edition"
-      ],
       "movieman": [
+        "regex-pattern-movieman",
         "regex-pattern-movieman"
       ],
       "cloud": [
@@ -133495,10 +134099,15 @@ export const contentDatabase = {
       "participating": [
         "regex-pattern-movies-anywhere"
       ],
+      "bweb": [
+        "regex-pattern-movies-anywhere"
+      ],
       "mysteria": [
+        "regex-pattern-mysteria",
         "regex-pattern-mysteria"
       ],
       "nahom": [
+        "regex-pattern-nahom",
         "regex-pattern-nahom"
       ],
       "poor": [
@@ -133506,18 +134115,19 @@ export const contentDatabase = {
         "wiki-home"
       ],
       "ncmt": [
+        "regex-pattern-ncmt",
         "regex-pattern-ncmt"
       ],
       "nosivid": [
+        "regex-pattern-nosivid",
         "regex-pattern-nosivid"
       ],
       "ntg": [
+        "regex-pattern-ntg",
         "regex-pattern-ntg"
       ],
-      "ntb": [
-        "regex-pattern-ntb"
-      ],
       "netaro": [
+        "regex-pattern-netaro",
         "regex-pattern-netaro"
       ],
       "acquired": [
@@ -133535,6 +134145,10 @@ export const contentDatabase = {
         "regex-pattern-viki"
       ],
       "nogroup": [
+        "regex-pattern-nogroup",
+        "regex-pattern-truehd-missing-groups"
+      ],
+      "nogr": [
         "regex-pattern-nogroup"
       ],
       "create": [
@@ -133553,6 +134167,30 @@ export const contentDatabase = {
         "regex-pattern-non-retail-hdr-formats",
         "dev-logs-profilarr-is-in-beta",
         "dev-logs-profilarr-is-in-beta"
+      ],
+      "vector": [
+        "regex-pattern-non-retail-hdr-groups",
+        "regex-pattern-vector",
+        "regex-pattern-vector"
+      ],
+      "sasukeduck": [
+        "regex-pattern-non-retail-hdr-groups",
+        "regex-pattern-sasukeduck",
+        "regex-pattern-sasukeduck"
+      ],
+      "tarunk9c": [
+        "regex-pattern-non-retail-hdr-groups",
+        "regex-pattern-tarunk9c",
+        "regex-pattern-tarunk9c"
+      ],
+      "jennaortegauhd": [
+        "regex-pattern-non-retail-hdr-groups",
+        "regex-pattern-jennaortegauhd"
+      ],
+      "visionxpert": [
+        "regex-pattern-non-retail-hdr-groups",
+        "regex-pattern-visionxpert",
+        "regex-pattern-visionxpert"
       ],
       "stylised": [
         "regex-pattern-now-rename",
@@ -133585,24 +134223,31 @@ export const contentDatabase = {
         "regex-pattern-now"
       ],
       "nyhd": [
+        "regex-pattern-nyhd",
         "regex-pattern-nyhd"
       ],
       "oeplus": [
+        "regex-pattern-oeplus",
         "regex-pattern-oeplus"
       ],
       "origen": [
+        "regex-pattern-origen",
         "regex-pattern-origen"
       ],
       "ozr": [
+        "regex-pattern-ozr",
         "regex-pattern-ozr"
       ],
       "okay": [
+        "regex-pattern-okay-subs",
         "regex-pattern-okay-subs"
       ],
       "subs": [
+        "regex-pattern-okay-subs",
         "regex-pattern-okay-subs"
       ],
       "matte": [
+        "regex-pattern-open-matte",
         "regex-pattern-open-matte",
         "regex-pattern-open-matte"
       ],
@@ -133617,28 +134262,39 @@ export const contentDatabase = {
         "regex-pattern-open-matte"
       ],
       "p0w4hd": [
+        "regex-pattern-p0w4hd",
         "regex-pattern-p0w4hd"
       ],
       "pcm": [
+        "regex-pattern-pcm",
         "regex-pattern-pcm"
       ],
       "phocis": [
+        "regex-pattern-phocis",
         "regex-pattern-phocis"
       ],
       "phoenix": [
         "regex-pattern-phoenix",
+        "regex-pattern-phoenix",
         "regex-pattern-phoenix"
       ],
+      "pq10": [
+        "regex-pattern-pq"
+      ],
       "pth": [
+        "regex-pattern-pth",
         "regex-pattern-pth"
       ],
       "ptp": [
+        "regex-pattern-ptp",
         "regex-pattern-ptp"
       ],
       "pter": [
+        "regex-pattern-pter",
         "regex-pattern-pter"
       ],
       "pterweb": [
+        "regex-pattern-pterweb",
         "regex-pattern-pterweb"
       ],
       "cbs": [
@@ -133687,9 +134343,11 @@ export const contentDatabase = {
         "regex-pattern-peacock-tv"
       ],
       "penumbra": [
+        "regex-pattern-penumbra",
         "regex-pattern-penumbra"
       ],
       "pirates": [
+        "regex-pattern-pirates",
         "regex-pattern-pirates"
       ],
       "mislabeling": [
@@ -133697,48 +134355,116 @@ export const contentDatabase = {
         "regex-pattern-edge2020"
       ],
       "pmp": [
-        "regex-pattern-pmp"
+        "regex-pattern-pmp",
+        "regex-pattern-pmp",
+        "regex-pattern-truehd-missing-groups"
       ],
       "pookie": [
+        "regex-pattern-pookie",
         "regex-pattern-pookie"
       ],
       "positive": [
+        "regex-pattern-positive",
         "regex-pattern-positive"
       ],
       "pussyfoot": [
+        "regex-pattern-pussyfoot",
         "regex-pattern-pussyfoot"
       ],
       "qoq": [
         "regex-pattern-qoq",
+        "regex-pattern-qoq",
         "regex-pattern-qoq"
       ],
       "quetzal": [
+        "regex-pattern-quetzal",
         "regex-pattern-quetzal"
       ],
       "qxr": [
         "regex-pattern-qxr",
+        "regex-pattern-qxr",
         "wiki-eei",
         "wiki-eei"
       ],
+      "tigole": [
+        "regex-pattern-qxr"
+      ],
+      "freethefish": [
+        "regex-pattern-qxr"
+      ],
+      "sampa": [
+        "regex-pattern-qxr"
+      ],
+      "afm72": [
+        "regex-pattern-qxr"
+      ],
+      "silence": [
+        "regex-pattern-qxr"
+      ],
+      "r00t": [
+        "regex-pattern-qxr"
+      ],
+      "yogi": [
+        "regex-pattern-qxr"
+      ],
+      "monolith": [
+        "regex-pattern-qxr"
+      ],
+      "panda": [
+        "regex-pattern-qxr"
+      ],
+      "kappa": [
+        "regex-pattern-qxr"
+      ],
+      "t3nzin": [
+        "regex-pattern-qxr"
+      ],
+      "rcvr": [
+        "regex-pattern-qxr"
+      ],
+      "ime": [
+        "regex-pattern-qxr"
+      ],
+      "rzerox": [
+        "regex-pattern-qxr"
+      ],
+      "garshasp": [
+        "regex-pattern-qxr"
+      ],
+      "ghost": [
+        "regex-pattern-qxr"
+      ],
+      "bandi": [
+        "regex-pattern-qxr"
+      ],
+      "natty": [
+        "regex-pattern-qxr"
+      ],
       "rargb": [
+        "regex-pattern-rargb",
         "regex-pattern-rargb"
       ],
       "reborn": [
+        "regex-pattern-reborn",
         "regex-pattern-reborn"
       ],
       "raizel": [
+        "regex-pattern-raizel",
         "regex-pattern-raizel"
       ],
       "rasetsu": [
+        "regex-pattern-rasetsu",
         "regex-pattern-rasetsu"
       ],
       "request": [
+        "regex-pattern-request",
         "regex-pattern-request",
         "wiki-development",
         "wiki-development",
         "dev-logs-shiny-new-stuff"
       ],
       "realhd": [
+        "regex-pattern-realhd",
         "regex-pattern-realhd"
       ],
       "copying": [
@@ -133791,11 +134517,6 @@ export const contentDatabase = {
         "wiki-profilarr-setup",
         "wiki-profilarr-setup",
         "wiki-profilarr-setup"
-      ],
-      "mkv": [
-        "regex-pattern-remux",
-        "regex-pattern-mkv",
-        "regex-pattern-mkv"
       ],
       "pouring": [
         "regex-pattern-remux"
@@ -133908,67 +134629,111 @@ export const contentDatabase = {
         "regex-pattern-roku"
       ],
       "sa89": [
+        "regex-pattern-sa89",
         "regex-pattern-sa89"
       ],
       "scy": [
+        "regex-pattern-scy",
         "regex-pattern-scy"
       ],
       "explicitly": [
         "regex-pattern-sdr"
       ],
       "sm737": [
+        "regex-pattern-sm737",
         "regex-pattern-sm737"
       ],
       "smahawug": [
+        "regex-pattern-smahawug",
         "regex-pattern-smahawug"
       ],
       "smurf": [
+        "regex-pattern-smurf",
         "regex-pattern-smurf"
       ],
       "sop": [
+        "regex-pattern-sop",
         "regex-pattern-sop"
       ],
       "spectacle": [
+        "regex-pattern-spectacle",
         "regex-pattern-spectacle"
       ],
       "sphd": [
+        "regex-pattern-sphd",
         "regex-pattern-sphd"
       ],
-      "strikes": [
-        "regex-pattern-strikes",
-        "wiki-edition"
-      ],
       "stuttershit": [
+        "regex-pattern-stuttershit",
         "regex-pattern-stuttershit"
       ],
       "surcode": [
+        "regex-pattern-surcode",
         "regex-pattern-surcode"
       ],
       "swaggeruhd": [
+        "regex-pattern-swaggeruhd",
         "regex-pattern-swaggeruhd"
       ],
       "swtyblz": [
+        "regex-pattern-swtyblz",
         "regex-pattern-swtyblz"
       ],
       "sancti": [
+        "regex-pattern-sancti",
         "regex-pattern-sancti"
       ],
       "saizen": [
+        "regex-pattern-saizen",
         "regex-pattern-saizen"
       ],
       "sallysubs": [
+        "regex-pattern-sallysubs",
         "regex-pattern-sallysubs"
       ],
-      "sasukeduck": [
-        "regex-pattern-sasukeduck"
-      ],
       "sbr": [
+        "regex-pattern-sbr",
         "regex-pattern-sbr"
       ],
+      "sparks": [
+        "regex-pattern-scene"
+      ],
+      "drones": [
+        "regex-pattern-scene"
+      ],
+      "rovers": [
+        "regex-pattern-scene"
+      ],
+      "sprinter": [
+        "regex-pattern-scene"
+      ],
+      "geckos": [
+        "regex-pattern-scene"
+      ],
+      "shortbrehd": [
+        "regex-pattern-scene"
+      ],
+      "edith": [
+        "regex-pattern-scene"
+      ],
+      "pow4hd": [
+        "regex-pattern-scene"
+      ],
+      "hd4u": [
+        "regex-pattern-scene"
+      ],
+      "teneighty": [
+        "regex-pattern-scene"
+      ],
+      "ethel": [
+        "regex-pattern-scene"
+      ],
       "senjou": [
+        "regex-pattern-senjou",
         "regex-pattern-senjou"
       ],
       "shieldbearer": [
+        "regex-pattern-shieldbearer",
         "regex-pattern-shieldbearer"
       ],
       "upscale": [
@@ -134068,18 +134833,19 @@ export const contentDatabase = {
         "regex-pattern-showtime"
       ],
       "sic": [
+        "regex-pattern-sic",
         "regex-pattern-sic"
       ],
-      "sicfoi": [
-        "regex-pattern-sicfoi"
-      ],
       "sigla": [
+        "regex-pattern-sigla",
         "regex-pattern-sigla"
       ],
       "sigma": [
+        "regex-pattern-sigma",
         "regex-pattern-sigma"
       ],
       "simple": [
+        "regex-pattern-simple",
         "regex-pattern-simple",
         "wiki-profilarr-setup",
         "dev-logs-architecture-overhaul",
@@ -134090,6 +134856,7 @@ export const contentDatabase = {
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
         "regex-pattern-sing-along",
+        "regex-pattern-sing-along",
         "regex-pattern-sing-along"
       ],
       "matched": [
@@ -134097,7 +134864,20 @@ export const contentDatabase = {
         "regex-pattern-theatrical-edition"
       ],
       "solar": [
+        "regex-pattern-solar",
         "regex-pattern-solar"
+      ],
+      "uncut": [
+        "regex-pattern-special-edition"
+      ],
+      "directors": [
+        "regex-pattern-special-edition"
+      ],
+      "unrated": [
+        "regex-pattern-special-edition"
+      ],
+      "uncensored": [
+        "regex-pattern-special-edition"
       ],
       "australian": [
         "regex-pattern-stan-rename",
@@ -134123,48 +134903,119 @@ export const contentDatabase = {
         "wiki-edition"
       ],
       "subsplease": [
+        "regex-pattern-subsplease",
         "regex-pattern-subsplease"
       ],
       "subsplus": [
+        "regex-pattern-subsplus",
         "regex-pattern-subsplus"
       ],
       "sumvision": [
+        "regex-pattern-sumvision",
         "regex-pattern-sumvision"
       ],
       "taoe": [
         "regex-pattern-taoe",
+        "regex-pattern-taoe",
         "wiki-eei",
         "wiki-eei"
       ],
+      "goki": [
+        "regex-pattern-taoe"
+      ],
+      "frys": [
+        "regex-pattern-taoe"
+      ],
+      "jbent": [
+        "regex-pattern-taoe"
+      ],
+      "dnu": [
+        "regex-pattern-taoe"
+      ],
+      "ainz": [
+        "regex-pattern-taoe"
+      ],
+      "thesickle": [
+        "regex-pattern-taoe"
+      ],
+      "anonaz": [
+        "regex-pattern-taoe"
+      ],
+      "species180": [
+        "regex-pattern-taoe"
+      ],
+      "r0b0t": [
+        "regex-pattern-taoe"
+      ],
+      "xtrem3x": [
+        "regex-pattern-taoe"
+      ],
+      "hxd": [
+        "regex-pattern-taoe"
+      ],
+      "arcx": [
+        "regex-pattern-taoe"
+      ],
+      "wem": [
+        "regex-pattern-taoe"
+      ],
+      "nostradamus": [
+        "regex-pattern-taoe"
+      ],
+      "erie": [
+        "regex-pattern-taoe"
+      ],
+      "duhit": [
+        "regex-pattern-taoe"
+      ],
+      "jb2049": [
+        "regex-pattern-taoe"
+      ],
+      "drainedday": [
+        "regex-pattern-taoe"
+      ],
+      "ajjmin": [
+        "regex-pattern-taoe"
+      ],
       "tbb": [
+        "regex-pattern-tbb",
         "regex-pattern-tbb"
       ],
       "tdd": [
+        "regex-pattern-tdd",
         "regex-pattern-tdd"
       ],
       "tekno3d": [
+        "regex-pattern-tekno3d",
         "regex-pattern-tekno3d"
       ],
       "tepes": [
+        "regex-pattern-tepes",
         "regex-pattern-tepes"
       ],
       "terminal": [
+        "regex-pattern-terminal",
         "regex-pattern-terminal"
       ],
       "thora": [
+        "regex-pattern-thora",
         "regex-pattern-thora"
       ],
       "threesome": [
+        "regex-pattern-threesome",
         "regex-pattern-threesome"
       ],
       "tombcruise": [
+        "regex-pattern-tombcruise",
         "regex-pattern-tombcruise"
       ],
       "tommy": [
         "regex-pattern-tommy",
+        "regex-pattern-tommy",
         "regex-pattern-tommy"
       ],
       "ttga": [
+        "regex-pattern-ttga",
         "regex-pattern-ttga"
       ],
       "south": [
@@ -134188,21 +135039,29 @@ export const contentDatabase = {
         "regex-pattern-tving"
       ],
       "tayto": [
+        "regex-pattern-tayto",
         "regex-pattern-tayto"
       ],
       "telly": [
+        "regex-pattern-telly",
         "regex-pattern-telly"
       ],
       "tnp": [
+        "regex-pattern-tnp",
         "regex-pattern-tnp"
       ],
       "tron": [
+        "regex-pattern-tron",
         "regex-pattern-tron"
       ],
       "tsundere": [
+        "regex-pattern-tsundere",
         "regex-pattern-tsundere"
       ],
       "underscore": [
+        "regex-pattern-uhd-blu-ray"
+      ],
+      "buhd": [
         "regex-pattern-uhd-blu-ray"
       ],
       "put": [
@@ -134211,9 +135070,11 @@ export const contentDatabase = {
         "dev-logs-profilarr-is-in-beta"
       ],
       "uhdclubremux": [
+        "regex-pattern-uhdclubremux",
         "regex-pattern-uhdclubremux"
       ],
       "ultrahdclub": [
+        "regex-pattern-ultrahdclub",
         "regex-pattern-ultrahdclub"
       ],
       "regrades": [
@@ -134222,16 +135083,26 @@ export const contentDatabase = {
       "enhancements": [
         "regex-pattern-upscaled"
       ],
+      "scale": [
+        "regex-pattern-upscaled",
+        "wiki-eei"
+      ],
+      "grade": [
+        "regex-pattern-upscaled"
+      ],
+      "baius": [
+        "regex-pattern-upscaled"
+      ],
       "valis": [
+        "regex-pattern-valis",
         "regex-pattern-valis"
       ],
       "varyg": [
+        "regex-pattern-varyg",
         "regex-pattern-varyg"
       ],
-      "vector": [
-        "regex-pattern-vector"
-      ],
       "vlad": [
+        "regex-pattern-vlad",
         "regex-pattern-vlad"
       ],
       "royalty": [
@@ -134252,13 +135123,11 @@ export const contentDatabase = {
         "wiki-profilarr-setup"
       ],
       "viethd": [
+        "regex-pattern-viethd",
         "regex-pattern-viethd"
       ],
       "rakuten": [
         "regex-pattern-viki"
-      ],
-      "visionxpert": [
-        "regex-pattern-visionxpert"
       ],
       "hong": [
         "regex-pattern-viu"
@@ -134279,26 +135148,29 @@ export const contentDatabase = {
         "regex-pattern-viu"
       ],
       "vodes": [
+        "regex-pattern-vodes",
         "regex-pattern-vodes"
       ],
       "vyndros": [
         "regex-pattern-vyndros",
+        "regex-pattern-vyndros",
         "wiki-eei",
         "wiki-eei"
       ],
-      "w4nk3r": [
-        "regex-pattern-w4nk3r"
-      ],
       "watchable": [
+        "regex-pattern-watchable",
         "regex-pattern-watchable"
       ],
       "wbdp": [
+        "regex-pattern-wbdp",
         "regex-pattern-wbdp"
       ],
       "wming": [
+        "regex-pattern-wming",
         "regex-pattern-wming"
       ],
       "wou": [
+        "regex-pattern-wou",
         "regex-pattern-wou"
       ],
       "online": [
@@ -134390,16 +135262,16 @@ export const contentDatabase = {
         "regex-pattern-wetv"
       ],
       "whiterhino": [
+        "regex-pattern-whiterhino",
         "regex-pattern-whiterhino"
       ],
       "wildcat": [
+        "regex-pattern-wildcat",
         "regex-pattern-wildcat"
       ],
       "xebec": [
+        "regex-pattern-xebec",
         "regex-pattern-xebec"
-      ],
-      "mpeg": [
-        "regex-pattern-xvid"
       ],
       "designed": [
         "regex-pattern-xvid"
@@ -134486,70 +135358,83 @@ export const contentDatabase = {
         "regex-pattern-xvid"
       ],
       "yawnix": [
+        "regex-pattern-yawnix",
         "regex-pattern-yawnix"
       ],
       "yello": [
+        "regex-pattern-yello",
         "regex-pattern-yello"
       ],
       "yuri": [
+        "regex-pattern-yuri",
         "regex-pattern-yuri"
       ],
       "yuki": [
+        "regex-pattern-yuki",
         "regex-pattern-yuki"
       ],
       "zimbo": [
+        "regex-pattern-zimbo",
         "regex-pattern-zimbo"
       ],
       "zorosenpai": [
         "regex-pattern-zorosenpai",
+        "regex-pattern-zorosenpai",
         "dev-logs-vision-almost-realised"
       ],
       "zurako": [
+        "regex-pattern-zurako",
         "regex-pattern-zurako"
       ],
       "b0mbardiers": [
+        "regex-pattern-b0mbardiers",
         "regex-pattern-b0mbardiers"
       ],
       "beast": [
+        "regex-pattern-beast",
         "regex-pattern-beast"
       ],
-      "c0ke": [
-        "regex-pattern-c0ke"
-      ],
-      "d3g": [
-        "regex-pattern-d3g"
-      ],
       "deanzel": [
+        "regex-pattern-deanzel",
         "regex-pattern-deanzel"
       ],
       "decibel": [
+        "regex-pattern-decibel",
         "regex-pattern-decibel"
       ],
       "dkore": [
+        "regex-pattern-dkore",
         "regex-pattern-dkore"
       ],
       "edge2020": [
+        "regex-pattern-edge2020",
         "regex-pattern-edge2020"
       ],
       "enabling": [
         "regex-pattern-h265"
       ],
       "hchcsen": [
+        "regex-pattern-hchcsen",
         "regex-pattern-hchcsen"
       ],
       "hdalx": [
+        "regex-pattern-hdalx",
         "regex-pattern-hdalx"
       ],
       "icandy": [
+        "regex-pattern-icandy",
         "regex-pattern-icandy"
       ],
       "ift": [
+        "regex-pattern-ift",
         "regex-pattern-ift"
       ],
       "invandraren": [
+        "regex-pattern-invandraren",
         "regex-pattern-invandraren"
       ],
       "ion": [
+        "regex-pattern-ion",
         "regex-pattern-ion"
       ],
       "internals": [
@@ -134643,18 +135528,6 @@ export const contentDatabase = {
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes"
       ],
-      "feature": [
-        "regex-pattern-itunes-rename",
-        "regex-pattern-itunes",
-        "wiki-profilarr-setup",
-        "wiki-profilarr-setup",
-        "wiki-profilarr-setup",
-        "wiki-profilarr-setup",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-profilarr-is-in-beta",
-        "dev-logs-shiny-new-stuff",
-        "dev-logs-shiny-new-stuff"
-      ],
       "select": [
         "regex-pattern-itunes-rename",
         "regex-pattern-itunes",
@@ -134730,25 +135603,31 @@ export const contentDatabase = {
         "wiki-eei",
         "wiki-eei"
       ],
-      "jennaortegauhd": [
+      "jennaortega": [
         "regex-pattern-jennaortegauhd"
       ],
       "k00kie": [
+        "regex-pattern-k00kie",
         "regex-pattern-k00kie"
       ],
       "kmplx": [
+        "regex-pattern-kmplx",
         "regex-pattern-kmplx"
       ],
       "kuchikirukia": [
+        "regex-pattern-kuchikirukia",
         "regex-pattern-kuchikirukia"
       ],
       "luvbb": [
+        "regex-pattern-luvbb",
         "regex-pattern-luvbb"
       ],
       "micius": [
+        "regex-pattern-micius",
         "regex-pattern-micius"
       ],
       "mp4": [
+        "regex-pattern-mkv",
         "regex-pattern-mkv"
       ],
       "containers": [
@@ -134764,39 +135643,49 @@ export const contentDatabase = {
       ],
       "monkee": [
         "regex-pattern-monkee",
+        "regex-pattern-monkee",
         "regex-pattern-monkee"
       ],
       "nmd": [
+        "regex-pattern-nmd",
         "regex-pattern-nmd"
       ],
-      "playbd": [
-        "regex-pattern-playbd"
-      ],
       "playhd": [
+        "regex-pattern-playhd",
         "regex-pattern-playhd"
       ],
       "playweb": [
+        "regex-pattern-playweb",
         "regex-pattern-playweb"
       ],
       "pog42": [
+        "regex-pattern-pog42",
         "regex-pattern-pog42"
       ],
       "rightsize": [
+        "regex-pattern-rightsize",
         "regex-pattern-rightsize"
       ],
       "rttr": [
+        "regex-pattern-rttr",
         "regex-pattern-rttr"
       ],
       "sam": [
+        "regex-pattern-sam",
         "regex-pattern-sam"
       ],
       "smol": [
+        "regex-pattern-smol",
         "regex-pattern-smol"
       ],
-      "tarunk9c": [
-        "regex-pattern-tarunk9c"
+      "dvdrip": [
+        "regex-pattern-x264"
+      ],
+      "bds4k": [
+        "regex-pattern-x265"
       ],
       "xander": [
+        "regex-pattern-xander",
         "regex-pattern-xander"
       ],
       "miscellaneous": [
@@ -137128,9 +138017,6 @@ export const contentDatabase = {
         "wiki-eei"
       ],
       "pixels": [
-        "wiki-eei"
-      ],
-      "scale": [
         "wiki-eei"
       ],
       "linearly": [
@@ -140641,10 +141527,6 @@ export const contentDatabase = {
       "city": [
         "wiki-edition"
       ],
-      "jedi": [
-        "wiki-edition",
-        "wiki-edition"
-      ],
       "additions": [
         "wiki-edition",
         "wiki-edition",
@@ -140792,9 +141674,6 @@ export const contentDatabase = {
         "wiki-edition"
       ],
       "satisfying": [
-        "wiki-edition"
-      ],
-      "straight": [
         "wiki-edition"
       ],
       "mel": [
@@ -148861,7 +149740,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-03T14:10:47.297Z",
+  "lastGenerated": "2025-08-06T05:10:15.077Z",
   "version": "1.0.0"
 } as const;
 
