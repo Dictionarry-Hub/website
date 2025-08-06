@@ -90,12 +90,16 @@
     }
   }
 
-  // Create regex pattern URL
-  function createRegexUrl(pattern) {
-    if (!pattern) return '';
-    // Encode the pattern for URL
-    const encodedPattern = encodeURIComponent(pattern);
-    return `/regex-pattern?search=${encodedPattern}`;
+  // Create regex pattern URL - find the matching pattern in contentDatabase
+  import { contentDatabase } from '@db';
+  
+  function createRegexUrl(regexName) {
+    if (!regexName) return null;
+    // The pattern field in conditions contains the NAME of the regex pattern entity
+    const regexEntry = contentDatabase.entries.find(entry => 
+      entry.type === 'regex-pattern' && entry.data?.name === regexName
+    );
+    return regexEntry ? regexEntry.path : null;
   }
 </script>
 
@@ -119,60 +123,103 @@
   {#if conditions.length > 0}
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       {#each conditions as condition, index}
-        <div class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg p-3 relative">
-          <!-- Required/Negate/Regex badges in top right -->
-          {#if condition.required || condition.negate || (regexConditionTypes.includes(condition.type) && condition.pattern)}
-            <div class="absolute top-2 right-2 flex items-center gap-1">
-              {#if condition.required}
-                <span class="w-5 h-5 bg-green-100 dark:bg-green-900/30 rounded flex items-center justify-center" title="Required">
-                  <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
-                </span>
-              {/if}
-              {#if condition.negate}
-                <span class="w-5 h-5 bg-red-100 dark:bg-red-900/30 rounded flex items-center justify-center" title="Negate">
-                  <X class="w-3 h-3 text-red-600 dark:text-red-400" />
-                </span>
-              {/if}
-              {#if regexConditionTypes.includes(condition.type) && condition.pattern}
-                <a 
-                  href={createRegexUrl(condition.pattern)}
-                  class="w-5 h-5 bg-blue-100 dark:bg-blue-900/30 rounded flex items-center justify-center hover:bg-blue-200 dark:hover:bg-blue-900/50 transition-colors" 
-                  title="View regex pattern"
-                >
-                  <Code2 class="w-3 h-3 text-blue-600 dark:text-blue-400" />
-                </a>
-              {/if}
-            </div>
-          {/if}
-
-          <!-- Content -->
-          <div>
-            <!-- Name with icon -->
-            <div class="flex items-start gap-2">
-              <svelte:component 
-                this={conditionIcons[condition.type] || AlertCircle} 
-                class="w-4 h-4 text-neutral-500 dark:text-neutral-400 mt-0.5 flex-shrink-0" 
-              />
-              <h3 class="text-sm font-medium text-neutral-900 dark:text-white pr-8 flex-1">
-                {condition.name || typeLabels[condition.type] || 'Unknown'}
-              </h3>
-            </div>
-
-            <!-- Type as pill below, not indented -->
-            <div class="mt-1">
-              <span class="text-xs bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-400 inline-block">
-                {typeLabels[condition.type] || condition.type}
-              </span>
-            </div>
-
-            <!-- Special case for except language - make it very compact -->
-            {#if condition.type === 'language' && condition.exceptLanguage}
-              <p class="text-xs text-amber-600 dark:text-amber-400 mt-1">
-                Except mode
-              </p>
+        {@const regexUrl = regexConditionTypes.includes(condition.type) && condition.pattern ? createRegexUrl(condition.pattern) : null}
+        {#if regexUrl}
+          <a 
+            href={regexUrl}
+            class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg p-3 relative block hover:border-neutral-400 dark:hover:border-neutral-500 transition-colors cursor-pointer"
+          >
+            <!-- Required/Negate badges in top right -->
+            {#if condition.required || condition.negate}
+              <div class="absolute top-2 right-2 flex items-center gap-1">
+                {#if condition.required}
+                  <span class="w-5 h-5 bg-green-100 dark:bg-green-900/30 rounded flex items-center justify-center" title="Required">
+                    <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
+                  </span>
+                {/if}
+                {#if condition.negate}
+                  <span class="w-5 h-5 bg-red-100 dark:bg-red-900/30 rounded flex items-center justify-center" title="Negate">
+                    <X class="w-3 h-3 text-red-600 dark:text-red-400" />
+                  </span>
+                {/if}
+              </div>
             {/if}
+
+            <!-- Content -->
+            <div>
+              <!-- Name with icon -->
+              <div class="flex items-start gap-2">
+                <svelte:component 
+                  this={conditionIcons[condition.type] || AlertCircle} 
+                  class="w-4 h-4 text-neutral-500 dark:text-neutral-400 mt-0.5 flex-shrink-0" 
+                />
+                <h3 class="text-sm font-medium text-neutral-900 dark:text-white pr-8 flex-1">
+                  {condition.name || typeLabels[condition.type] || 'Unknown'}
+                </h3>
+              </div>
+
+              <!-- Type as pill below, not indented -->
+              <div class="mt-1">
+                <span class="text-xs bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-400 inline-block">
+                  {typeLabels[condition.type] || condition.type}
+                </span>
+              </div>
+
+              <!-- Special case for except language - make it very compact -->
+              {#if condition.type === 'language' && condition.exceptLanguage}
+                <p class="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                  Except mode
+                </p>
+              {/if}
+            </div>
+          </a>
+        {:else}
+          <div class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg p-3 relative">
+            <!-- Required/Negate badges in top right -->
+            {#if condition.required || condition.negate}
+              <div class="absolute top-2 right-2 flex items-center gap-1">
+                {#if condition.required}
+                  <span class="w-5 h-5 bg-green-100 dark:bg-green-900/30 rounded flex items-center justify-center" title="Required">
+                    <Check class="w-3 h-3 text-green-600 dark:text-green-400" />
+                  </span>
+                {/if}
+                {#if condition.negate}
+                  <span class="w-5 h-5 bg-red-100 dark:bg-red-900/30 rounded flex items-center justify-center" title="Negate">
+                    <X class="w-3 h-3 text-red-600 dark:text-red-400" />
+                  </span>
+                {/if}
+              </div>
+            {/if}
+
+            <!-- Content -->
+            <div>
+              <!-- Name with icon -->
+              <div class="flex items-start gap-2">
+                <svelte:component 
+                  this={conditionIcons[condition.type] || AlertCircle} 
+                  class="w-4 h-4 text-neutral-500 dark:text-neutral-400 mt-0.5 flex-shrink-0" 
+                />
+                <h3 class="text-sm font-medium text-neutral-900 dark:text-white pr-8 flex-1">
+                  {condition.name || typeLabels[condition.type] || 'Unknown'}
+                </h3>
+              </div>
+
+              <!-- Type as pill below, not indented -->
+              <div class="mt-1">
+                <span class="text-xs bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-400 inline-block">
+                  {typeLabels[condition.type] || condition.type}
+                </span>
+              </div>
+
+              <!-- Special case for except language - make it very compact -->
+              {#if condition.type === 'language' && condition.exceptLanguage}
+                <p class="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                  Except mode
+                </p>
+              {/if}
+            </div>
           </div>
-        </div>
+        {/if}
       {/each}
     </div>
   {:else}

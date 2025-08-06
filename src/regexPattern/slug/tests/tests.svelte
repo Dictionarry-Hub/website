@@ -3,7 +3,6 @@
   
   export let tests = '';
   export let testResults = null;
-  export let regex101 = null;
 </script>
 
 <div>
@@ -11,7 +10,7 @@
     <h2 class="text-xl font-semibold text-neutral-900 dark:text-white">
       Tests
     </h2>
-    {#if tests}
+    {#if tests && testResults && testResults.results && testResults.results.length > 0}
       <a 
         href={tests}
         target="_blank"
