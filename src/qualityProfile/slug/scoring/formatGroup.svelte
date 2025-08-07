@@ -1,5 +1,5 @@
 <script>
-  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight, ExternalLink } from 'lucide-svelte';
+  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight } from 'lucide-svelte';
   import { slide } from 'svelte/transition';
   
   export let groupName = '';
@@ -62,13 +62,12 @@
         <tbody>
           {#each formats as format, index}
             <tr class="border-b border-neutral-100 dark:border-neutral-800 last:border-b-0 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors cursor-pointer group">
-              <td class="px-4 py-3">
+              <td class="p-0">
                 <a 
                   href="/custom-format/{format.slug || format.name.toLowerCase().replace(/\s+/g, '-')}"
-                  class="flex items-center gap-2 text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                  class="block px-4 py-3 text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 group-hover:underline transition-colors"
                 >
                   {format.name}
-                  <ExternalLink class="w-3.5 h-3.5 opacity-0 group-hover:opacity-60 transition-opacity" />
                 </a>
               </td>
               <td class="px-4 py-3 text-right">

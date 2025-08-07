@@ -206,12 +206,12 @@
     color: rgb(147 197 253) !important;
   }
   
-  /* Table cell text color */
-  :global(td) {
+  /* Table cell text color - only for tables within prose content */
+  :global(.prose td) {
     color: rgb(55 65 81);
   }
   
-  :global(.dark td) {
+  :global(.dark .prose td) {
     color: rgb(209 213 219) !important;
   }
   

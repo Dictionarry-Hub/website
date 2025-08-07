@@ -9,6 +9,7 @@
     "db": "tsx scripts/db.ts",
     "db:dev": "tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch scoring-refactor",
     "db:stable": "tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch stable",
+    "db:website": "tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch tests-refactor",
     "db:h265": "tsx scripts/db.ts --repo https://github.com/xshatterx/database --branch scoring-refactor",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"

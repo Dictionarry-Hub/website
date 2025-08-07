@@ -87,7 +87,43 @@
 </script>
 
 <div class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg overflow-hidden">
-  <div class="overflow-x-auto">
+  <!-- Mobile view -->
+  <div class="md:hidden">
+    <table class="w-full">
+      <tbody>
+        {#each sortedData as row}
+          <tr class="border-b border-neutral-200 dark:border-neutral-700 last:border-b-0">
+            <td class="p-4">
+              {#each headers as header}
+                <div class="flex justify-between items-start py-1">
+                  <span class="text-xs font-medium text-neutral-500 dark:text-neutral-400 uppercase">{header.label}:</span>
+                  <div class="text-right ml-2">
+                    {#if header.render}
+                      {@html header.render(row)}
+                    {:else if header.link}
+                      <a 
+                        href={getValue(row, header.link)} 
+                        class="font-medium text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        {formatValue(getValue(row, header.key), header.type, header.format)}
+                      </a>
+                    {:else}
+                      <span class="text-sm text-neutral-700 dark:text-neutral-300">
+                        {formatValue(getValue(row, header.key), header.type, header.format)}
+                      </span>
+                    {/if}
+                  </div>
+                </div>
+              {/each}
+            </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Desktop view -->
+  <div class="hidden md:block overflow-x-auto">
     <table class="min-w-full divide-y divide-neutral-200 dark:divide-neutral-700">
       <thead class="bg-neutral-50 dark:bg-neutral-800">
         <tr>

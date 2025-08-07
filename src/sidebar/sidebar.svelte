@@ -45,7 +45,7 @@
 </script>
 
 <aside class="sticky top-16 w-full xl:w-80 h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 border-r border-neutral-200 dark:border-neutral-700 overflow-y-auto">
-  <div class="p-4">
+  <div class="p-4 pb-10">
     <!-- Getting Started Section -->
     <SidebarSection title="🚀 Getting Started" href="/" isActive={currentPath === "/"}>
       <SidebarItem href="/profilarr-setup/installation" label="Installation" isActive={currentPath === "/profilarr-setup/installation"} />

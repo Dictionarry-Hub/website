@@ -17,6 +17,7 @@
   
   export let items = [];
   // Each item should have: { title: string, code: string, language: string, icon?: Component }
+  export let overflow = 'scroll'; // 'scroll' or 'wrap'
   
   let activeTab = 0;
   let copied = {};
@@ -109,9 +110,15 @@
           </button>
           
           <!-- Code display -->
-          <div class="p-4 overflow-x-auto bg-neutral-100 dark:bg-neutral-900">
-            <pre class="text-xs leading-normal font-mono !bg-transparent !p-0 !m-0"><code bind:this={codeElement} class="language-{activeItem.language} !bg-transparent">{activeItem.code}</code></pre>
-          </div>
+          {#if overflow === 'wrap'}
+            <div class="p-4 pr-12 overflow-hidden bg-neutral-100 dark:bg-neutral-900">
+              <pre class="text-xs leading-normal font-mono !bg-transparent !p-0 !m-0" style="white-space: pre-wrap !important; word-break: break-all !important; overflow-wrap: anywhere !important;"><code bind:this={codeElement} class="language-{activeItem.language} !bg-transparent" style="white-space: inherit !important; word-break: inherit !important;">{activeItem.code}</code></pre>
+            </div>
+          {:else}
+            <div class="p-4 overflow-x-auto bg-neutral-100 dark:bg-neutral-900">
+              <pre class="text-xs leading-normal font-mono !bg-transparent !p-0 !m-0"><code bind:this={codeElement} class="language-{activeItem.language} !bg-transparent">{activeItem.code}</code></pre>
+            </div>
+          {/if}
         </div>
       {/key}
     {/if}
@@ -119,6 +126,10 @@
 </div>
 
 <style>
+  .overflow-wrap-anywhere {
+    overflow-wrap: anywhere;
+  }
+  
   /* Base text color for better readability */
   :global(pre[class*="language-"]),
   :global(code[class*="language-"]) {

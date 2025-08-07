@@ -98,6 +98,13 @@
     // Close mobile sidebar on route change
     closeMobileSidebar();
     
+    // Track page view in Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('config', 'G-TN66960SGE', {
+        page_path: window.location.hash
+      });
+    }
+    
     const hash = window.location.hash;
     if (hash.includes('section=')) {
       const sectionMatch = hash.match(/section=([^&]+)/);
@@ -159,10 +166,6 @@
         <Route path="/*" let:meta>
           <svelte:component this={getRouteComponent(meta.url)} />
         </Route>
-      </div>
-      <!-- Footer inside main for mobile only -->
-      <div class="sm:hidden">
-        <Footer />
       </div>
     </main>
     
