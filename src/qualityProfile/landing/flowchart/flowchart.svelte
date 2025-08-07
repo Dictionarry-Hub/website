@@ -32,7 +32,7 @@
     return `button-${columnIndex}-${itemIndex}`;
   }
   
-  function isItemEnabled(columnIndex, itemIndex) {
+  $: isItemEnabled = (columnIndex, itemIndex) => {
     // First column is always enabled
     if (columnIndex === 0) return true;
 

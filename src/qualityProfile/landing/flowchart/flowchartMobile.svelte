@@ -32,7 +32,7 @@
     flowchartStore.reset();
   }
   
-  function isItemEnabled(columnIndex, itemIndex) {
+  $: isItemEnabled = (columnIndex, itemIndex) => {
     // First column is always enabled
     if (columnIndex === 0) return true;
 
@@ -211,7 +211,7 @@
   
   <!-- Current column options -->
   {#if currentColumn && activeColumnIndex < flowchartColumns.length && !state.selections[5]}
-    {#key activeColumnIndex}
+    {#key JSON.stringify(state.selections)}
       <div class="grid grid-cols-1 gap-3">
         {#each currentColumn.items as item, itemIndex}
           <div class="option-animate" style="animation-delay: {itemIndex * 60}ms">
