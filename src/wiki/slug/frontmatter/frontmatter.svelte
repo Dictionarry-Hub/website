@@ -1,10 +1,10 @@
 <script>
   export let entry;
   
-  const tags = entry.frontmatter?.tags || [];
-  const author = entry.frontmatter?.author || 'Unknown';
-  const date = entry.frontmatter?.created;
-  const formattedDate = date ? new Date(date).toLocaleDateString('en-US', { 
+  $: tags = entry.frontmatter?.tags || [];
+  $: author = entry.frontmatter?.author || 'Unknown';
+  $: date = entry.frontmatter?.created;
+  $: formattedDate = date ? new Date(date).toLocaleDateString('en-US', { 
     year: 'numeric', 
     month: 'long', 
     day: 'numeric' 
