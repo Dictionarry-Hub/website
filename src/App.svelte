@@ -2,6 +2,7 @@
   import 'highlight.js/styles/atom-one-dark.css'
   import { Route, router } from 'tinro'
   import Navbar from './navbar/navbar.svelte'
+  import Footer from './footer/footer.svelte'
   import Sidebar from './sidebar/sidebar.svelte'
   import Navigation from './shared/navigation.svelte'
   import Welcome from './gettingStarted/welcome.svelte'
@@ -159,11 +160,19 @@
           <svelte:component this={getRouteComponent(meta.url)} />
         </Route>
       </div>
+      <!-- Footer inside main for mobile only -->
+      <div class="sm:hidden">
+        <Footer />
+      </div>
     </main>
     
     <!-- Navigation -->
     <div class="hidden xl:block">
       <Navigation />
     </div>
+  </div>
+  <!-- Footer only on desktop -->
+  <div class="hidden sm:block">
+    <Footer />
   </div>
 </div>
