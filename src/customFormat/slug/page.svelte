@@ -6,6 +6,7 @@
   import Overview from './overview/overview.svelte';
   import Conditions from './conditions/conditions.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
   
   let formatEntry = null;
   
@@ -26,10 +27,11 @@
   $: tags = formatEntry?.data?.tags || [];
   $: conditions = formatEntry?.data?.conditions || [];
   $: tests = formatEntry?.data?.tests || [];
+  $: commitLog = formatEntry?.commitLog || null;
   
   // Set up navigation when format is loaded
   $: if (formatEntry) {
-    const navItems = ['Overview', 'Conditions', 'Tests', 'Related Formats', 'Discussion'];
+    const navItems = ['Overview', 'Conditions', 'Tests', 'Related Formats', 'Changelog', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -62,6 +64,11 @@
       <section id="related-formats" class="mb-12">
         <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Related Formats</h2>
         <p class="text-neutral-600 dark:text-neutral-400">Related formats section coming soon...</p>
+      </section>
+      
+      <!-- Changelog Section -->
+      <section id="changelog" class="mb-12">
+        <Changelog {commitLog} />
       </section>
       
       <!-- Discussion Section -->

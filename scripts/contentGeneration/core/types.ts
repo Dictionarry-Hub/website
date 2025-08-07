@@ -1,3 +1,20 @@
+export interface CommitInfo {
+  hash: string;
+  date: string;
+  author: string;
+  message: string;
+}
+
+export interface CommitLog {
+  commits: CommitInfo[];
+  totalCommits: number;
+  firstCommit?: { date: string; hash: string };
+  lastCommit?: { date: string; hash: string };
+  repoUrl?: string;
+  branch?: string;
+  filePath?: string;
+}
+
 export interface ContentEntry {
   id: string;
   path: string;
@@ -20,6 +37,7 @@ export interface ContentEntry {
   
   filename?: string;
   lastModified?: string;
+  commitLog?: CommitLog;
 }
 
 export interface NavigationItem {

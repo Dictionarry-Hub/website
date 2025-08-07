@@ -6,6 +6,7 @@ import { ContentEntry, RawContent, ProcessorConfig, ContentProcessor } from '../
 import { DataSource } from '../core/DataSource';
 import { slugify, sanitizeForSearch } from '../utils/text';
 import { Regex101Cache } from '../utils/regex101Cache';
+import { TestResultsCache } from '../utils/testResultsCache';
 
 interface Regex101Test {
   testString: string;
@@ -34,6 +35,7 @@ export class RegexPatternProcessor extends ContentProcessor {
   name = 'regex-pattern';
   supportedPaths = ['regex_patterns'];
   private regex101Cache = new Regex101Cache();
+  private testResultsCache = new TestResultsCache();
 
   canProcess(path: string): boolean {
     return path.includes('regex_patterns') && (path.endsWith('.yml') || path.endsWith('.yaml'));
@@ -68,7 +70,7 @@ export class RegexPatternProcessor extends ContentProcessor {
           // Run tests if we have unit tests
           if (regex101Data.unitTests && regex101Data.unitTests.length > 0) {
             console.log(`    🏃 Running ${regex101Data.unitTests.length} tests...`);
-            const testResults = this.runRegexTests(data.pattern || regex101Data.regex, regex101Data.unitTests);
+            const testResults = await this.runRegexTests(data.pattern || regex101Data.regex, regex101Data.unitTests);
             data.testResults = testResults;
             console.log(`    ✅ Results: ${testResults.passed} passed, ${testResults.failed} failed`);
           } else {
@@ -129,7 +131,13 @@ export class RegexPatternProcessor extends ContentProcessor {
     }
   }
 
-  private runRegexTests(pattern: string, tests: Regex101Test[]) {
+  private async runRegexTests(pattern: string, tests: Regex101Test[]) {
+    // Check cache first
+    const cachedResults = this.testResultsCache.getCachedResults(pattern, tests);
+    if (cachedResults) {
+      return cachedResults;
+    }
+    
     const scriptPath = path.join(process.cwd(), 'scripts', 'testRegex.ps1');
     
     if (!fs.existsSync(scriptPath)) {
@@ -137,62 +145,70 @@ export class RegexPatternProcessor extends ContentProcessor {
       return { passed: 0, failed: tests.length, results: [] };
     }
     
-    const results: Array<{
-      testString: string;
-      description: string;
-      criteria: string;
-      matches: boolean;
-      passed: boolean;
-      error?: boolean;
-    }> = [];
-    let passed = 0;
-    let failed = 0;
+    const { exec } = await import('child_process');
+    const { promisify } = await import('util');
+    const execAsync = promisify(exec);
     
-    for (const test of tests) {
+    // Run all tests in parallel
+    const testPromises = tests.map(async (test, index) => {
       try {
         const escapedPattern = pattern.replace(/'/g, "''");
         const escapedTestString = test.testString.replace(/'/g, "''");
         
         const command = `pwsh -NoProfile -ExecutionPolicy Bypass -File "${scriptPath}" '${escapedPattern}' '${escapedTestString}'`;
-        const result = execSync(command, { encoding: 'utf-8' }).trim();
+        const { stdout } = await execAsync(command, { encoding: 'utf-8' });
         
-        const matches = result === 'True';
+        const matches = stdout.trim() === 'True';
         const shouldMatch = test.criteria === 'DOES_MATCH';
         const testPassed = matches === shouldMatch;
         
-        if (testPassed) passed++;
-        else failed++;
-        
-        results.push({
+        return {
           testString: test.testString,
           description: test.description,
           criteria: test.criteria,
           matches,
-          passed: testPassed
-        });
+          passed: testPassed,
+          error: false
+        };
       } catch (error) {
-        console.warn(`Error running regex test: ${error}`);
-        failed++;
-        results.push({
+        return {
           testString: test.testString,
           description: test.description,
           criteria: test.criteria,
           matches: false,
           passed: false,
           error: true
-        });
+        };
       }
+    });
+    
+    const results = await Promise.all(testPromises);
+    
+    let passed = 0;
+    let failed = 0;
+    
+    for (const result of results) {
+      if (result.passed) passed++;
+      else failed++;
     }
     
-    return { passed, failed, results };
+    const testResults = { passed, failed, results };
+    
+    // Cache the results
+    this.testResultsCache.setCachedResults(pattern, tests, testResults);
+    
+    return testResults;
   }
 
   async processAll(source: DataSource): Promise<ContentEntry[]> {
     const files = await source.listFiles('regex_patterns', /\.ya?ml$/);
     console.log(`  📂 Processing ${files.length} regex patterns...`);
     
+    // Batch fetch commit logs for all files (get all commits)
+    const commitLogs = await source.getFileCommitLogs(files);
+    
     // First pass: read all files and collect regex101 URLs
-    const fileContents: Array<{ content: RawContent; data: any; regex101Url?: string }> = [];
+    const fileContents: Array<{ content: RawContent; data: any; regex101Url?: string; file: string }> = [];
     const regex101Urls: string[] = [];
     
     for (const file of files) {
@@ -204,7 +220,7 @@ export class RegexPatternProcessor extends ContentProcessor {
             ? data.tests 
             : undefined;
           
-          fileContents.push({ content, data, regex101Url });
+          fileContents.push({ content, data, regex101Url, file });
           if (regex101Url) {
             regex101Urls.push(regex101Url);
           }
@@ -224,23 +240,42 @@ export class RegexPatternProcessor extends ContentProcessor {
     // Second pass: process all files with cached regex101 data
     const entries: ContentEntry[] = [];
     let testsRun = 0;
+    let testsFromCache = 0;
     let totalPassed = 0;
     let totalFailed = 0;
+    let processed = 0;
+    const totalFiles = fileContents.length;
+    const patternsWithTests = fileContents.filter(f => f.regex101Url).length;
     
-    for (const { content, data, regex101Url } of fileContents) {
+    for (const { content, data, regex101Url, file } of fileContents) {
+      // Check if tests would be cached before processing
+      const willUseCachedTests = regex101Url && regex101Data.get(regex101Url)?.unitTests && 
+        this.testResultsCache.getCachedResults(data.pattern || regex101Data.get(regex101Url).regex, regex101Data.get(regex101Url).unitTests);
+      
       const entry = await this.processWithCachedData(content, data, regex101Url ? regex101Data.get(regex101Url) : null);
       if (entry) {
+        // Add commit log if available
+        const commitLog = commitLogs.get(file);
+        if (commitLog) {
+          entry.commitLog = commitLog;
+        }
         entries.push(entry);
         if (entry.data?.testResults) {
           testsRun++;
+          if (willUseCachedTests) testsFromCache++;
           totalPassed += entry.data.testResults.passed || 0;
           totalFailed += entry.data.testResults.failed || 0;
+          const cacheInfo = testsFromCache > 0 ? ` (${testsFromCache} cached)` : '';
+          process.stdout.write(`\r    🧪 Testing patterns: ${testsRun}/${patternsWithTests} completed${cacheInfo}`);
         }
+        processed++;
       }
     }
     
     if (testsRun > 0) {
-      console.log(`  ✅ Ran tests for ${testsRun} patterns: ${totalPassed} passed, ${totalFailed} failed`);
+      process.stdout.write('\r' + ' '.repeat(80) + '\r');
+      const cacheInfo = testsFromCache > 0 ? ` (${testsFromCache} from cache)` : '';
+      console.log(`  ✅ Ran tests for ${testsRun} patterns${cacheInfo}: ${totalPassed} passed, ${totalFailed} failed`);
     }
     
     return entries;
@@ -269,7 +304,7 @@ export class RegexPatternProcessor extends ContentProcessor {
         
         // Run tests if we have unit tests
         if (regex101Data.unitTests && regex101Data.unitTests.length > 0) {
-          const testResults = this.runRegexTests(data.pattern || regex101Data.regex, regex101Data.unitTests);
+          const testResults = await this.runRegexTests(data.pattern || regex101Data.regex, regex101Data.unitTests);
           data.testResults = testResults;
         }
       }

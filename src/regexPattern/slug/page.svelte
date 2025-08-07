@@ -7,6 +7,7 @@
   import Pattern from './pattern/pattern.svelte';
   import Tests from './tests/tests.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
   
   let regexEntry = null;
   
@@ -29,10 +30,11 @@
   $: tests = regexEntry?.data?.tests || '';
   $: testResults = regexEntry?.data?.testResults || null;
   $: regex101 = regexEntry?.data?.regex101 || null;
+  $: commitLog = regexEntry?.commitLog || null;
   
   // Set up navigation when regex pattern is loaded
   $: if (regexEntry) {
-    const navItems = ['Overview', 'Pattern', 'Tests', 'Discussion'];
+    const navItems = ['Overview', 'Pattern', 'Tests', 'Changelog', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -58,6 +60,11 @@
       <!-- Tests Section -->
       <section id="tests" class="mb-12">
         <Tests {tests} {testResults} {regex101} />
+      </section>
+      
+      <!-- Changelog Section -->
+      <section id="changelog" class="mb-12">
+        <Changelog {commitLog} />
       </section>
       
       <!-- Discussion Section -->

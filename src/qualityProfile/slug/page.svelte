@@ -7,6 +7,7 @@
   import Scoring from './scoring/scoring.svelte';
   import Qualities from './qualities/qualities.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
   
   let profileEntry = null;
   
@@ -33,10 +34,11 @@
   $: qualities = profileEntry?.data?.qualities || [];
   $: upgrade_until = profileEntry?.data?.upgrade_until || null;
   $: language = profileEntry?.data?.language || null;
+  $: commitLog = profileEntry?.commitLog || null;
   
   // Set up navigation when profile is loaded
   $: if (profileEntry) {
-    const navItems = ['Overview', 'Custom Formats', 'Qualities', 'Discussion'];
+    const navItems = ['Overview', 'Custom Formats', 'Qualities', 'Changelog', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -62,6 +64,11 @@
       <!-- Qualities Section -->
       <section id="qualities" class="mb-12">
         <Qualities {qualities} {upgrade_until} {upgradesAllowed} />
+      </section>
+      
+      <!-- Changelog Section -->
+      <section id="changelog" class="mb-12">
+        <Changelog {commitLog} />
       </section>
       
       <!-- Discussion Section -->

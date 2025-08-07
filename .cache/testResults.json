@@ -1,0 +1,3696 @@
+{
+  "acba8db4b1d6b268_d9560a850ce7030f": {
+    "patternHash": "acba8db4b1d6b268",
+    "testsHash": "d9560a850ce7030f",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563258816
+  },
+  "6918a4362814ca14_34cac1ea9fe478cf": {
+    "patternHash": "6918a4362814ca14",
+    "testsHash": "34cac1ea9fe478cf",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Arcane S01 2160p UHD BluRay DD 5.1 DV HDR AV1-TiZU",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Up.2009.2160p.Bluray.AC3.HDR.DV.AV1-TiZU.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563259246
+  },
+  "d31d04318a128f63_87c0037cb456513b": {
+    "patternHash": "d31d04318a128f63",
+    "testsHash": "87c0037cb456513b",
+    "results": {
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Futurama.S03E01.Amazon Women in the Mood.1080p.AMZN.WEB-DL.DDP2.0.H.264-Yatogam1.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Futurama.S03E05.Amazon.Women.in.the.Mood.NF.WEB DL.DDP2.0.x264 CtrlSD.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Amazon.Women.on.the.Moon.1987.720p.BluRay.x264-HANDJOB.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "First.Contact.Lost.Tribe.of.the.Amazon.2016.1080p.AMZN.WEB-DL.DDP2.0.H.264-Q0SWeb.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "First.Contact.Lost.Tribe.of.the.Amazon.2016.1080p.WEB-DL.DDP2.0.H.264-Q0SWeb.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563259732
+  },
+  "c979524ff07a1dd7_4eafa955ea0dd244": {
+    "patternHash": "c979524ff07a1dd7",
+    "testsHash": "4eafa955ea0dd244",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Palmer.1080p.APTV.WEB-DL.DDP5.1.Atmos.H.264-EVO.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Fathom.1080p.APTV.WEB-DL.DDP5.1.Atmos.H.264-CMRG.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "You.Are.the.Apple.of.My.Eye.2011.720p.BluRay.DD5.1.x264-EbP.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Men in Black 1997 2160p Apple TV+ WEB-DL DDP 5 1 Atmos DV H 265-CHDWEB",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563260238
+  },
+  "1437eb96cdfef7ad_bfcd2d02ac80a04b": {
+    "patternHash": "1437eb96cdfef7ad",
+    "testsHash": "bfcd2d02ac80a04b",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The.Last.of.Us.S01.2160p.UHD.BluRay.Remux.TrueHDA7.1.H.265-PmP",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Last.of.Us.S01.UHD.BluRay.2160p.TrueHD.Atmos.7.1.DV.HEVC.REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Last of Us S01 2160p MAX WEB-DL DDP 5.1 Atmos DV HDR H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Last.of.Us.S01.DV.HDR.2160p.MAX.WEB-DL.DDPA5.1.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563260709
+  },
+  "c9faa01aef41dedd_dbf5b4cbb794f021": {
+    "patternHash": "c9faa01aef41dedd",
+    "testsHash": "dbf5b4cbb794f021",
+    "results": {
+      "passed": 8,
+      "failed": 1,
+      "results": [
+        {
+          "testString": "The Mist Black and White 2007 2160p USA UHD Blu-ray DV HDR HEVC TrueHD 7.1 Atmos-BeyondHD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Black and White 2002 1080p Blu-ray AVC DTS-HD MA 5.1-CultFilms",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Pokemon the Movie: Black and White-Victini and Reshiram Zekrom 2011 1080p AUS BD50 DTS-HD MA 5.1 AVC-PHOENiX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Madeo 2009 Black & White Version 1080p JPN Blu-ray AVC TrueHD 5.1-kyRLS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Psycho (1960) B&W",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Citizen Kane (1941) Black.and.White",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Dracula (1931) Black-White",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Young Frankenstein (1974) BW DVDRip",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Jack Black & Betty White in a Comedy Special",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563261350
+  },
+  "c77111c8a64c386e_d75ab3934993de24": {
+    "patternHash": "c77111c8a64c386e",
+    "testsHash": "d75ab3934993de24",
+    "results": {
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The.Last.of.Us.S01.2160p.UHD.BluRay.Remux.TrueHDA7.1.H.265-PmP",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Last.of.Us.S01.UHD.BluRay.2160p.TrueHD.Atmos.7.1.DV.HEVC.REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Last of Us S01 2160p MAX WEB-DL DDP 5.1 Atmos DV HDR H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Last.of.Us.S01.DV.HDR.2160p.MAX.WEB-DL.DDPA5.1.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Loki.S01.2160p.UHD.BluRay.Remux.TrueHDA.7.1.H.265-SiCFoI",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563261884
+  },
+  "c450ce07bc481dad_5aaec523f5128584": {
+    "patternHash": "c450ce07bc481dad",
+    "testsHash": "5aaec523f5128584",
+    "results": {
+      "passed": 8,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "MovieName.1080p.DV.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.Dolby Vision.IMAX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.HLG.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.SDR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.DV.SDR.Dovi.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Avatar: The Way of Water 2022 1080p UHD BluRay DDP 7.1 HDR10 x265-GALAXY",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Avatar: The Way of Water [2022] 2160p HEVC WEB-DL HDR10+ -CMRG",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563262500
+  },
+  "19c08bbf8217a504_6f2ed6f0413926e1": {
+    "patternHash": "19c08bbf8217a504",
+    "testsHash": "6f2ed6f0413926e1",
+    "results": {
+      "passed": 26,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Terminator.2.Judgment.Day.Theatrical.Cut.1991.1080p.BluRay.DTS.x264.D-Z0N3",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": " Aliens.1986.Special.Edition.1080p.BluRay.DTS.x264-Geek.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Alien.1979.Directors.Cut.2in1.BluRay.1080p.AVC.DTS-HD.MA5.1-CHDBits",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "star.wars.4K77.2160p.UHD.No-DNR.35mm.x265-v1.4.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star.Wars.Episode.IV.A.New.Hope.1977.COMPLETE.UHD.BLURAY-DIZZKNEE",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star.Wars.1977.Theatrical.Cut.DVDRip.AC3.x264.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "03 Empire.Strikes.Back.4K80.2160p.UHD.no-DNR.35mm.x265-v1.0.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star.Wars.Episode.V.The.Empire.Strikes.Back.1980.2160p.UHD.BluRay.Remux.HDR.HEVC.Atmos-PmP.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Empire.Strikes.Back.1980.35mm.Renegade.Grindhouse.Scan.480p.DD2.0.x264.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Return.of.the.Jedi.4K83.2160p.UHD.35mm.x265-v1.1.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star Wars Episode VI - Return of the Jedi (1983) 2160p UHD BluRay TrueHD 7.1 HDR x265-Chotab.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star.Wars.Episode.IX.The.Rise.of.Skywalker.2019.UHD.BluRay.2160p.TrueHD.Atmos.7.1.HEVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Apocalypse.Now.1979.Final.Cut.UHD.BluRay.2160p.TrueHD.Atmos.7.1.DV.HEVC.HYBRID.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Exorcist.1973.2160p.UHD.Blu-ray.Remux.HDR.HEVC.TrueHD.7.1.Atmos-CiNEPHiLES.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Pope's Exorcist 2023 1080p WEBRip DD+5.1 x264-HiDt.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Exorcist III 1990 Theatrical 1080p BluRay DTS x264-VietHD.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Donnie.Darko.2001.2160p.UHD.Blu-ray.Remux.HEVC.HDR.DoVi.DTS-HD.MA.5.1-ARROW4KDV.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Amadeus.1984.Blu-Ray.1080p.DTSHD-MA.VC-1.Remux-HiFi.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "National Theatre Live- Amadeus (2017).mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Payback.Straight.Up.Directors.Cut.1999.Bluray-PTP",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Payback.1999.Theatrical.Cut.BluRay.1080p.TrueHD.5.1.VC-1.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Payback Straight Up 2006 DC 1080p HDDVD DD5.1 x264-RightSiZE.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Payback.Theatrical.Cut.1999.1080p.BluRay.DD5.1.x264-REPTiLE.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": " Payback.2021.1080p.WEB.h264-RUMOUR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Payback.DVDRip.AVC.AC3.(1995).mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Almost.Famous.2000.Bootleg.Cut.UHD.BluRay.2160p.DTS-HD.MA.5.1.DV.HEVC.HYBRID.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563263890
+  },
+  "d76782383f26e748_f7e1a24a0e58327e": {
+    "patternHash": "d76782383f26e748",
+    "testsHash": "f7e1a24a0e58327e",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Game of Thrones (2012) S02 2160p UHD Blu-ray HEVC DV HDR TrueHD Atmos 7.1 English-BeyondHD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563264339
+  },
+  "755cdc19335155fc_c713757a08d8c9d7": {
+    "patternHash": "755cdc19335155fc",
+    "testsHash": "c713757a08d8c9d7",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Loki S01 [2021] 2160p HEVC Blu-Ray Remux HDR10 -SiCFoI",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563264777
+  },
+  "09c55dc76384aa35_4bd6b2473a420c9f": {
+    "patternHash": "09c55dc76384aa35",
+    "testsHash": "4bd6b2473a420c9f",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "12 Dares of Christmas 2023 1080p AMZN WEB-DL DDP 2.0 H.264-CMRG",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Super.Mario.Bros.Movie.2023.1080p.MA.WEB-DL.DDP5.1.Atmos.H.264-CMaRioG.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563265208
+  },
+  "cae8a0c118955913_fa4698a50c758a47": {
+    "patternHash": "cae8a0c118955913",
+    "testsHash": "fa4698a50c758a47",
+    "results": {
+      "passed": 6,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "colour",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "coloured",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "colourise",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "colourised",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "colored",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "discolor",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563265733
+  },
+  "3b4ee0cbd06ab038_ca324ac7b3131663": {
+    "patternHash": "3b4ee0cbd06ab038",
+    "testsHash": "ca324ac7b3131663",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Wild 90 1968 480p CRiT WEB-DL AAC2 0 x264-AT3N",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Night Mother 1986 1080p CRiT WEB-DL AAC2 0 x264-AT3N",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Please Speak Continuously and Describe Your Experiences as They Come to You 2019 1080p CRIT WEB-DL AAC2 0 x264-SiGLA",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "John Malkovich in The Music Critic 2021 720p WEB H264-LiQUiD",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563266209
+  },
+  "07d04961130134a0_9e664bcaba78aa66": {
+    "patternHash": "07d04961130134a0",
+    "testsHash": "9e664bcaba78aa66",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "2 Fast 2 Furious (2003) 2160p MA WEB-DL H265 HDR DTS:X 7.1 English-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "2.Fast.2.Furious.2003.2160p.MA.WEB-DL.DTS-X.7.1.H.265-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563266664
+  },
+  "4209a2feb48a5596_241f5e139b7d41aa": {
+    "patternHash": "4209a2feb48a5596",
+    "testsHash": "241f5e139b7d41aa",
+    "results": {
+      "passed": 6,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Star Wars - The Clone Wars (2008) S06 (1080p DSNP WEB-DL H264 SDR DDP 5 1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Pupstruction S02E09E10 The Funniest Pup in Petsburg Beddy Bye Build 720p DSNY WEB-DL AAC 2.0 H.264-4f8c4100292",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Once Upon a Snowman 2020 DSNYP 1080p WEBRip X264 Atmos-EVO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "How.Disney.Built.America.S01E01.1080p.WEB.h264-EDITH",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "High School Musical - The Musical - The Series S00E01 The Special 2160p HDR Disney+ WEBRip DD+ 5 1 x265-TrollUHD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Air Crash Investigation S18 2018 Disney+ WEB-DL 1080p H264 DDP-HDCTV",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563267191
+  },
+  "40a947bd35d51fa5_ae0e69382683f056": {
+    "patternHash": "40a947bd35d51fa5",
+    "testsHash": "ae0e69382683f056",
+    "results": {
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Barbie.2023.2160p.MA.WEB-DL.DDP5.1.Atmos.DV.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "\t Barbie (2023) (2160p AMZN WEB-DL Hybrid H265 DV HDR10+ DDP Atmos 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Barbie.2023.2160p.MA.WEB-DL.DDP5.1.Atmos.DV.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Barbie.2023.2160p.MA.WEB-DL.DDP5.1.Atmos.DV.H.265-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Killers of the Flower Moon (2023) {tmdb-466420} [iT][WEBDL-2160p][DV HDR10Plus][EAC3 Atmos 5.1][h265]-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563267718
+  },
+  "ee5b473948b21c5d_46d8ddee24423466": {
+    "patternHash": "ee5b473948b21c5d",
+    "testsHash": "46d8ddee24423466",
+    "results": {
+      "passed": 10,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "MovieName.2023.4K.DV.HDR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.Dovi.HDR10+.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.Dolby.Vision.HDR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DolbyVision.HDR10+.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.1080p.DV.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.Dolby Vision.IMAX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.HLG.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.SDR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.DV.SDR.Dovi.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Killers of the Flower Moon (2023) {tmdb-466420} [iT][WEBDL-2160p][DV HDR10Plus][EAC3 Atmos 5.1][h265]-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563268398
+  },
+  "0b8af8d36da4674b_535a21f301b16d07": {
+    "patternHash": "0b8af8d36da4674b",
+    "testsHash": "535a21f301b16d07",
+    "results": {
+      "passed": 0,
+      "failed": 9,
+      "results": [
+        {
+          "testString": "\t The.Hunger.Games.2012.MULTi.1080p.BluRay.DTS.HD.MA.x264-HeavyWeight",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "The.Hunger.Games.2012.1080p.AMZN.WEB-DL.Multi.DDP5.1.H.264-DHRUB_DXD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "We Don't Die, We Multiply: The Robin Harris Story",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "Cyberpunk 2077 Phantom Liberty MULTi19 v2 2 DINOByTES",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "Attack on Titan S04 2020 1080p USA Blu-ray AVC TrueHD 5.1 Dual Audio -ZR-",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "DanMachi Sword Oratoria Vol 01-04 2017 ANiME DUAL COMPLETE BLURAY-iFPD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "Bleach.S12.1080p.BluRay.REMUX.AVC.Dual-Audio.DTS-HD.MA.2.0-ZR-",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "Dual.2022.1080p.BluRay.DDP5.1.x264-iFT.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "uality.A.Graffiti.Story.2022.1080p.WEB.H264-AEROHOLiCS.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        }
+      ]
+    },
+    "timestamp": 1754563281335
+  },
+  "07b867422e3ee9b4_920b5845d768d856": {
+    "patternHash": "07b867422e3ee9b4",
+    "testsHash": "920b5845d768d856",
+    "results": {
+      "passed": 0,
+      "failed": 2,
+      "results": [
+        {
+          "testString": "Aisha 2022 1080p WEB-DL DDP5 1 H 264-EVO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        },
+        {
+          "testString": "Dune AKA Dune: Part One 2021 1080p EUR Blu-ray AVC TrueHD 7.1 Atmos-EVO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": true
+        }
+      ]
+    },
+    "timestamp": 1754563283588
+  },
+  "8098ea641e8acf94_b857b344df237e08": {
+    "patternHash": "8098ea641e8acf94",
+    "testsHash": "b857b344df237e08",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Killers Of The Flower Moon 2023 Extended Clip 1080p AMZN WEB-DL DDP 5.1 H 264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Killers.of.The.Flower.Moon.2023.Extended.Clip.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563284073
+  },
+  "78b98dc9aaee203e_3cd6c105cced8d0b": {
+    "patternHash": "78b98dc9aaee203e",
+    "testsHash": "3cd6c105cced8d0b",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "E.T..el.ExtraTerrestre.30.Aniversario.1982.mHD.10Bits.1080p.BluRay.DD5.1.HEVC-TMd.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563284493
+  },
+  "0d2ff87144830daf_3d773a1aa9be55e7": {
+    "patternHash": "0d2ff87144830daf",
+    "testsHash": "3d773a1aa9be55e7",
+    "results": {
+      "passed": 6,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Bleach.S14.NTSC.DVD.LPCM2.0-NOGRP",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Prisoner 2009 S01 1080i Blu-ray AVC DTS-HD MA 5.1-CultFilms™",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Scissor.Penis.2018.1080i.Blu-ray.AVC.DTS-HD.MA.2.0",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Heaven's Prisoners 1996 1080p AUS Blu-ray AVC LPCM 2.0-CultFilms™",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Hors-saison.2024.VOF.1080p.FRA.BluRay.AVC.DTS-HD.MA.5.1-RyanHG",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "El.Aviso.2018.SPANiSH.COMPLETE.BLURAY-CEBCOM",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563285016
+  },
+  "434dd2fb7205880d_baf9745a83196bbf": {
+    "patternHash": "434dd2fb7205880d",
+    "testsHash": "baf9745a83196bbf",
+    "results": {
+      "passed": 2,
+      "failed": 4,
+      "results": [
+        {
+          "testString": "The Many Saints of Newark 2021 1080p HBOMAX WEBRiP x264 WAV-CREATiVE24",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Looney Tunes Cartoons S04 1080p HBOM WEB-DL DD5.1 H.264-NTb",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "12 oz Mouse S01 1080p HBOMax WEB-DL DDP2 x264-Mr Lahey",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Silicon Valley S01 1080p HMAX WEB-DL DD5 1 H 264-PHOENiX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "A Discovery of Witches S03 1080p HBO WEB-DL AAC 2.0 H.264",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Yin Yang Master Zero 2024 1080p BluRay REMUX AVC DTS-HD MA 7 1-HBO",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563285547
+  },
+  "e37d5425dfc30b02_baf9745a83196bbf": {
+    "patternHash": "e37d5425dfc30b02",
+    "testsHash": "baf9745a83196bbf",
+    "results": {
+      "passed": 6,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The Many Saints of Newark 2021 1080p HBOMAX WEBRiP x264 WAV-CREATiVE24",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Looney Tunes Cartoons S04 1080p HBOM WEB-DL DD5.1 H.264-NTb",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "12 oz Mouse S01 1080p HBOMax WEB-DL DDP2 x264-Mr Lahey",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Silicon Valley S01 1080p HMAX WEB-DL DD5 1 H 264-PHOENiX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "A Discovery of Witches S03 1080p HBO WEB-DL AAC 2.0 H.264",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Yin Yang Master Zero 2024 1080p BluRay REMUX AVC DTS-HD MA 7 1-HBO",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563286069
+  },
+  "039e3fb4f0312931_62de7fc975cbee5f": {
+    "patternHash": "039e3fb4f0312931",
+    "testsHash": "62de7fc975cbee5f",
+    "results": {
+      "passed": 9,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "HDR+",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10+",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Barbie (2023) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR TrueHD Atmos 7.1 English-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Game of Thrones (2011) S06 2160p UHD BluRay REMUX HEVC DV HDR TrueHD Atmos 7.1 English-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Liu lang di qiu 2 AKA The Wandering Earth II 2023 2160p CHN UHD Blu-ray DoVi HDR10 HEVC TrueHD 7.1 Atmos-ANKO",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10P TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563286719
+  },
+  "9a777826b8b54ddf_6116a27d963fbaf4": {
+    "patternHash": "9a777826b8b54ddf",
+    "testsHash": "6116a27d963fbaf4",
+    "results": {
+      "passed": 1,
+      "failed": 2,
+      "results": [
+        {
+          "testString": "Loki S01 2023 2160p UHD Blu-ray Remux HEVC TrueHD 7 1 Atmos-HDS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "\t Loki S01 REPACK UHD BluRay 2160p TrueHD Atmos 7.1 DV HEVC HYBRID REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Alien Romulus 2024 BluRay 2160p UHD REMUX HEVC (10bit) DV Atmos DTS-HD MA 7 1-Aisha@RFX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563287205
+  },
+  "8f939e24113d068e_89832790d63890c5": {
+    "patternHash": "8f939e24113d068e",
+    "testsHash": "89832790d63890c5",
+    "results": {
+      "passed": 14,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR+",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10+",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HLG HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "SDR HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "PQ HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10P",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10Plus",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "La Maison S01 REPACK 2160p ATVP WEB-DL Dual-Audio DD+ 5.1 Atmos DV HDR10+ H.265-Kitsune",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Liu lang di qiu 2 AKA The Wandering Earth II 2023 2160p CHN UHD Blu-ray DoVi HDR10 HEVC TrueHD 7.1 Atmos-ANKO",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10 Plus TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Killers of the Flower Moon (2023) {tmdb-466420} [iT][WEBDL-2160p][DV HDR10Plus][EAC3 Atmos 5.1][h265]-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563288046
+  },
+  "3c5c792a9f882891_d3dac66e42ee79d9": {
+    "patternHash": "3c5c792a9f882891",
+    "testsHash": "d3dac66e42ee79d9",
+    "results": {
+      "passed": 12,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "HDR+",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10+",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HLG HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "SDR HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "PQ HDR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "HDR10",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Barbie (2023) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR TrueHD Atmos 7.1 English-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Game of Thrones (2011) S06 2160p UHD BluRay REMUX HEVC DV HDR TrueHD Atmos 7.1 English-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Liu lang di qiu 2 AKA The Wandering Earth II 2023 2160p CHN UHD Blu-ray DoVi HDR10 HEVC TrueHD 7.1 Atmos-ANKO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10P TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563288802
+  },
+  "23fb5bb66c294190_e96b0e0fbb080edf": {
+    "patternHash": "23fb5bb66c294190",
+    "testsHash": "e96b0e0fbb080edf",
+    "results": {
+      "passed": 0,
+      "failed": 3,
+      "results": [
+        {
+          "testString": "Aqua Teen Hunger Force (2000) S00E13 (480p DVD x265 SDR AAC 2.0 English - r00t QxR)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Spider-Man Across the Spider-Verse 2023 1080p UHD BluRay DDP7 1 DoVi HDR10x265-c0kE",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563289299
+  },
+  "8025af1a662cd743_a7dc3bc6595bb97d": {
+    "patternHash": "8025af1a662cd743",
+    "testsHash": "a7dc3bc6595bb97d",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Agent Recon 2024 1080p HULU WEB-DL DDP 5 1 H 264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Gullivers Travels 2010 1080p HULU WEB-DL DDP 5 1 H 264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563289779
+  },
+  "c072dcd5e27b9381_c0bd560909f3b03b": {
+    "patternHash": "c072dcd5e27b9381",
+    "testsHash": "c0bd560909f3b03b",
+    "results": {
+      "passed": 7,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "A.Writers.Odyssey.2021.1080p.IMAX.BluRay.REMUX.AVC.TrueHD.7.1.Atmos-BELGiAN.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Transformers Age Of Extinction 2014 NON-IMAX BluRay 1080p DTS AC3 x264-MgB",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Thor Ragnarok 2017 IMAX Enhanced 1080p HFR WEB-DL HDR10 HEVC 10bit DDP 5 1-Robo29",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Oppenheimer (2023) 2160p (UHD BluRay Enhanced IMAX HDR10Plus DoVi HEVC 10Bit TrueHD 5 1Ch and DTS-HD MA 5 1Ch)-ShieldBearer",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Thor Ragnarok 2017 IMAX Enhanced 1080p DSNP WEB-DL HDR10 HEVC 10bit DDP 5 1-Robo29",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Thor Ragnarok 2017 IMAX 1080p DSNP WEB-DL HDR10 HEVC 10bit DDP 5 1-Robo29",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Thor Ragnarok 2017 IMAX Enhanced 1080p WEB-DL HDR10 HEVC 10bit DDP 5 1-Robo29",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563290328
+  },
+  "e450bba236dcaa7b_795ba73d01e4b079": {
+    "patternHash": "e450bba236dcaa7b",
+    "testsHash": "795ba73d01e4b079",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "A.Writers.Odyssey.2021.1080p.IMAX.BluRay.REMUX.AVC.TrueHD.7.1.Atmos-BELGiAN.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Transformers Age Of Extinction 2014 NON-IMAX BluRay 1080p DTS AC3 x264-MgB",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Thor Ragnarok 2017 IMAX Enhanced 1080p HFR WEB-DL HDR10 HEVC 10bit DDP 5 1-Robo29",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563290779
+  },
+  "2f2b40b263d195f6_6caa451a2b187776": {
+    "patternHash": "2f2b40b263d195f6",
+    "testsHash": "6caa451a2b187776",
+    "results": {
+      "passed": 3,
+      "failed": 2,
+      "results": [
+        {
+          "testString": "Dune Prophecy S01E02 Two Wolves 1080p MAX WEB-DL DDP5 1 Atmos H 264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Guardians of the Galaxy Vol. 3 (2023) IMAX (2160p MA WEB-DL Hybrid H265 DV HDR DDP Atmos 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Max.Verstappen.Anatomy.of.a.Champion.S01E01.1080p.WEB.h264-B2B",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Silicon Valley S06 1080p HMAX WEB-DL DD5 1 H 264-PHOENiX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Dune Prophecy S01E01 The Hidden Hand 2160p MAX WEB-DL DDP 5.1 Atmos DV HDR H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563291261
+  },
+  "82049c09fbdf657d_6caa451a2b187776": {
+    "patternHash": "82049c09fbdf657d",
+    "testsHash": "6caa451a2b187776",
+    "results": {
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Dune Prophecy S01E02 Two Wolves 1080p MAX WEB-DL DDP5 1 Atmos H 264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Guardians of the Galaxy Vol. 3 (2023) IMAX (2160p MA WEB-DL Hybrid H265 DV HDR DDP Atmos 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Max.Verstappen.Anatomy.of.a.Champion.S01E01.1080p.WEB.h264-B2B",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Silicon Valley S06 1080p HMAX WEB-DL DD5 1 H 264-PHOENiX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Dune Prophecy S01E01 The Hidden Hand 2160p MAX WEB-DL DDP 5.1 Atmos DV HDR H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563291766
+  },
+  "c2e3f80ddd2792df_329c198e0b1fc030": {
+    "patternHash": "c2e3f80ddd2792df",
+    "testsHash": "329c198e0b1fc030",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Blade.Runner.2049.2017.1080p.UHD.BluRay.HDR.x265.DDP.5.1-MovieMan",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563292185
+  },
+  "f62316dd34fc27c7_67b4cdeca3e8dfc4": {
+    "patternHash": "f62316dd34fc27c7",
+    "testsHash": "67b4cdeca3e8dfc4",
+    "results": {
+      "passed": 8,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Scooby-Doo.In.Wheres.My.Mummy.2005.1080p.MA.WEB-DL.DDP5.1.H264-HHWEB.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Speak.No.Evil.2024.1080p.MA.WEB-DL.DDP5.1.Atmos.H.264-FLUX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Super.Mario.Bros.Movie.2023.1080p.MA.WEB-DL.DDP5.1.Atmos.H.264-CMaRioG.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Interstellar.2014.UHD.BluRay.2160p.DTS-HD.MA.5.1.HEVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Amazing.Spider-Man.2012.1080p.Remastered.BluRay.DTSHD-MA.x264.D-Z0N3.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "[ToonsHub] Orb On the Movements of the Earth S01E01 1080p ABEMA WEB-DL AAC2.0 H.264",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "[ToonsHub] Orb On the Movements of the Earth S01E01 1080p ABE MA WEB-DL AAC2.0 H.264",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "[ToonsHub] Orb On the Movements of the Earth S01E01 1080p ABE.MA WEB-DL AAC2.0 H.264",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563292801
+  },
+  "72b01a0b8ea401c0_cdfa14572aa8fc77": {
+    "patternHash": "72b01a0b8ea401c0",
+    "testsHash": "cdfa14572aa8fc77",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Zen - Grogu and Dust Bunnies (2022) 2160p DSNP WEB-DL H265 HDR DDP 5.1 English-NTb",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Jab.We.Met.2007.1080p.BluRay.DTS.x264-NTb.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563293281
+  },
+  "b411f2ab0a423298_f9f4d6adc50f30de": {
+    "patternHash": "b411f2ab0a423298",
+    "testsHash": "f9f4d6adc50f30de",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The.Roast.of.Tom.Brady.2024.1080p.NF.WEB-DL.DDP5.1.H.264-NTb",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Penn & Teller - Fool Us S01 1080p Netflix WEB-DL DD+ 2 0 x264-TrollHD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Anthony Jeselnik: Bones and All 2024 1080p NF WEB-DL DDP5 1 H 264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Its in the Game Madden NFL S01E02 1080p WEB H264-GloriousMongoose",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563293749
+  },
+  "48b93815e012682a_61b6b156fe11f5d9": {
+    "patternHash": "48b93815e012682a",
+    "testsHash": "61b6b156fe11f5d9",
+    "results": {
+      "passed": 6,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "MovieName.1080p.DV.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.Dolby Vision.IMAX.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.HLG.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.2023.4K.DV.SDR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "MovieName.4K.DV.SDR.Dovi.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Schindler's List (1993) 2160p UHD BluRay Hybrid REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563294291
+  },
+  "76b6eb22c1803f22_5067f056d30dfe1c": {
+    "patternHash": "76b6eb22c1803f22",
+    "testsHash": "5067f056d30dfe1c",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Longlegs 2024 2160p BluRay REMUX DTS-HD MA 5 1 DV HDR H 265-SasukeducK",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Blade Runner 2049 2017 2160p REMUX HEVC DV HDR10+ TrueHD 7.1 Atmos-jennaortegaUHD",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563294746
+  },
+  "b63fa4b7b2a672fb_3938272cdcf2e0e3": {
+    "patternHash": "b63fa4b7b2a672fb",
+    "testsHash": "3938272cdcf2e0e3",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Zombieland.2009.Open.Matte.1080p.WEB-DL.DD+5.1.H.264-spartanec163.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Watchmen 2009 Director's Cut Open Matte 1080p WEB-DL DDP 5.1 H.264",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Tron Legacy 2010 Open Matte Upscale 2160p BluRay DV HDR-X DTS-HD MA 7 1 x265-BiTOR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563295199
+  },
+  "4b2d83abad98182e_c4dd57cc31f64cf8": {
+    "patternHash": "4b2d83abad98182e",
+    "testsHash": "c4dd57cc31f64cf8",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "箱男.Hako.otoko.2024.1080p.NF.WEB-DL.x264.DDP5.1-PTerWEB",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Ying.Hung.Boon.Sik.1986.REPACK.1080p.UHD.BluRay.DD+7.1.DoVi.HDR10.x265-PTer",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563295621
+  },
+  "cbd27bc360c9815d_3b5603ffd05fe12c": {
+    "patternHash": "cbd27bc360c9815d",
+    "testsHash": "3b5603ffd05fe12c",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "箱男.Hako.otoko.2024.1080p.NF.WEB-DL.x264.DDP5.1-PTerWEB",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Ying.Hung.Boon.Sik.1986.REPACK.1080p.UHD.BluRay.DD+7.1.DoVi.HDR10.x265-PTer",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563296037
+  },
+  "329236ffff7db202_79a70b55cd594cb7": {
+    "patternHash": "329236ffff7db202",
+    "testsHash": "79a70b55cd594cb7",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Landman S01E02 Dreamers and Losers 2160p PMTP WEB-DL DDP5 1 H 265-STC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star Trek Lower Decks S05E03 The Best Exotic Nanite Hotel 1080p PMTP WEB-DL DDP5 1 H 264-STC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Gladiator 2000 Paramount Reissue Extended Cut Remastered 1080p BluRay AVC DTS-HD MA 5.1 REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563296483
+  },
+  "7d43ed3b2bfee7a9_786f160d9e573465": {
+    "patternHash": "7d43ed3b2bfee7a9",
+    "testsHash": "786f160d9e573465",
+    "results": {
+      "passed": 3,
+      "failed": 5,
+      "results": [
+        {
+          "testString": "The Day of the Jackal S01E05 1080p PCOK WEB-DL DDP5 1 H 264-STC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Fight Night - The Million Dollar Heist (2024) S01E01 (2160p PCOK WEB-DL H265 SDR DDP 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Halloween Kills 2021 1080p Peacock WebDL H264 AC3 Will1869",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Peacock.S01.1080p.AMZN.WEB-DL.DDP2.0.H.264-Cinefeel",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Peacock.S02.1080p.iP.WEB-DL.AAC2.0.H.264-RNG",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Banana Fish S01E16 Lo The Poor Peacock WEB h264-PLUTONiUM",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Kingsman The Secret Service 2014 1080p PCOK WEB-DL DDP 5 1 H 264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Kingsman.The.Secret.Service.2014.1080p.PCOK.WEB-DL.DDP.5.1.H.264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563297084
+  },
+  "e49b3487cab6a8e3_786f160d9e573465": {
+    "patternHash": "e49b3487cab6a8e3",
+    "testsHash": "786f160d9e573465",
+    "results": {
+      "passed": 8,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The Day of the Jackal S01E05 1080p PCOK WEB-DL DDP5 1 H 264-STC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Fight Night - The Million Dollar Heist (2024) S01E01 (2160p PCOK WEB-DL H265 SDR DDP 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Halloween Kills 2021 1080p Peacock WebDL H264 AC3 Will1869",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Peacock.S01.1080p.AMZN.WEB-DL.DDP2.0.H.264-Cinefeel",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Peacock.S02.1080p.iP.WEB-DL.AAC2.0.H.264-RNG",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Banana Fish S01E16 Lo The Poor Peacock WEB h264-PLUTONiUM",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Kingsman The Secret Service 2014 1080p PCOK WEB-DL DDP 5 1 H 264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Kingsman.The.Secret.Service.2014.1080p.PCOK.WEB-DL.DDP.5.1.H.264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563297699
+  },
+  "4f60ef573dea5437_1f17b6eaeec7896c": {
+    "patternHash": "4f60ef573dea5437",
+    "testsHash": "1f17b6eaeec7896c",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "1917 (2019) 2160p UHD BluRay REMUX HEVC DV HDR10+ TrueHD Atmos 7.1 English-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563298115
+  },
+  "0a3d3b4ca6cd0a2d_7129f6215b46145a": {
+    "patternHash": "0a3d3b4ca6cd0a2d",
+    "testsHash": "7129f6215b46145a",
+    "results": {
+      "passed": 5,
+      "failed": 1,
+      "results": [
+        {
+          "testString": "The Zone of Interest 2023 PROPER 2160p UHD BluRay TrueHD 7.1 Atmos HDR x265-MainFrame",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.PROPER.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Sonic.the.Hedgehog.3.2024.REPACK.2160p.WEB-DL.DDP5.1.Atmos.DoVi.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "roommate.wanted.2015.rerip.720p.bluray.x264-rusted.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Game of Thrones S01 REPACK 2160p MAX WEB-DL TrueHD 7.1 Atmos DV HDR H.265-Kitsune",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563298652
+  },
+  "8814b4dc1a4169a1_397fcfefe7fb1183": {
+    "patternHash": "8814b4dc1a4169a1",
+    "testsHash": "397fcfefe7fb1183",
+    "results": {
+      "passed": 9,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The Zone of Interest 2023 PROPER2 2160p UHD BluRay TrueHD 7.1 Atmos HDR x265-MainFrame",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.PROPER2.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Sonic.the.Hedgehog.3.2024.REPACK2.2160p.WEB-DL.DDP5.1.Atmos.DoVi.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "roommate.wanted.2015.rerip2.720p.bluray.x264-rusted.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Zone of Interest 2023 PROPER 2160p UHD BluRay TrueHD 7.1 Atmos HDR x265-MainFrame",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Sonic.the.Hedgehog.3.2024.REPACK.2160p.WEB-DL.DDP5.1.Atmos.DoVi.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Yo-Kai Watch S02E17 DUBBED REAL REPACK HDTV x264-W4F",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Game of Thrones S01 REPACK2 2160p MAX WEB-DL TrueHD 7.1 Atmos DV HDR H.265-Kitsune",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563299276
+  },
+  "70a1bf7a9187d59e_ba21a174caae873d": {
+    "patternHash": "70a1bf7a9187d59e",
+    "testsHash": "ba21a174caae873d",
+    "results": {
+      "passed": 9,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The Zone of Interest 2023 PROPER3 2160p UHD BluRay TrueHD 7.1 Atmos HDR x265-MainFrame",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Proper.Pronouns.2020.720p.PROPER3.WEB-DL.AAC2.0.x264-ZTR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Sonic.the.Hedgehog.3.2024.REPACK3.2160p.WEB-DL.DDP5.1.Atmos.DoVi.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "roommate.wanted.2015.rerip3.720p.bluray.x264-rusted.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Zone of Interest 2023 PROPER 2160p UHD BluRay TrueHD 7.1 Atmos HDR x265-MainFrame",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Sonic.the.Hedgehog.3.2024.REPACK.2160p.WEB-DL.DDP5.1.Atmos.DoVi.HDR.H.265-FLUX",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Yo-Kai Watch S02E17 DUBBED REAL REAL REPACK HDTV x264-W4F",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Game of Thrones S01 REPACK3 2160p MAX WEB-DL TrueHD 7.1 Atmos DV HDR H.265-Kitsune",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563299915
+  },
+  "9f1f4a3e3e790bd4_96f36178f3680deb": {
+    "patternHash": "9f1f4a3e3e790bd4",
+    "testsHash": "96f36178f3680deb",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "10 Minutes Gone 2019 1080p ROKU WEB-DL DD 5 1 H 264-PiRaTeS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Natsume's Book of Friends S06 AKA Natsume Yuujinchou Roku 1080p BluRay FLAC 2.0 Hi10P x264-CyC",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Natsume's Book of Friends AKA Natsume Yuujinchou Roku S06 1080p CR WEB-DL Dubbed AAC 2.0 H.264-Yameii",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Flower & Garnet 2002 480p ROKU WEB-DL AAC 2.0 H.264-vase",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563300387
+  },
+  "c4b91fcc7acd4906_5a0b78229b693242": {
+    "patternHash": "c4b91fcc7acd4906",
+    "testsHash": "5a0b78229b693242",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Yojimbo.1961.REPACK.2160p.UHD.Blu-ray.Remux.SDR.HEVC.FLAC.1.0-CiNEPHiLES.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "For a Few Dollars More aka Per qualche dollaro in più 1965 UHD BluRay 2160p DTS-HD MA 5.1 SDR HEVC REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563300817
+  },
+  "06f92499453acbec_e6ba4b61e8b17052": {
+    "patternHash": "06f92499453acbec",
+    "testsHash": "e6ba4b61e8b17052",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Training.Day.2001.UHD.BluRay.1080p.DD+Atmos.5.1.DoVi.HDR10.x265-SM737",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563301226
+  },
+  "78a2bb5b5a8aa522_872b7bb43fe1f5d5": {
+    "patternHash": "78a2bb5b5a8aa522",
+    "testsHash": "872b7bb43fe1f5d5",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Interstellar.2014.PROPER.1080p.BluRay.DTS.x264-SoP",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563301654
+  },
+  "db398504ec6a641f_e9df8402beffb318": {
+    "patternHash": "db398504ec6a641f",
+    "testsHash": "e9df8402beffb318",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Full.Metal.Jacket.1987.1080p.HMAX.WEB-DL.DD5.1.HEVC-SiGLA.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563302081
+  },
+  "2dfb879460763e90_0fe2560fb5c5eb0d": {
+    "patternHash": "2dfb879460763e90",
+    "testsHash": "0fe2560fb5c5eb0d",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Wicked 2024 Sing-Along Version 720p MA WEB-DL DDP 5.1 H.264-FLUX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563302504
+  },
+  "bc8794378cabda0e_77f0ca7ae5f75ae5": {
+    "patternHash": "bc8794378cabda0e",
+    "testsHash": "77f0ca7ae5f75ae5",
+    "results": {
+      "passed": 17,
+      "failed": 7,
+      "results": [
+        {
+          "testString": "Zenimation.S01.Extended.Edition.720p.DSNP.WEB-DL.DDP5.1.H.264-LAZY",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Vikings Extended S05 1080p BluRay REMUX AVC DTS-HD MA 5.1-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "My Very Extended Family",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Pente lepta akoma AKA Extended Play",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Uncut.2023.1080p.AMZN.WEB-DL.DDP2.0.H.264-LLL.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Punisher (1989) Remastered Uncut 1080p BluRay x265 SDR DDP 5.1 English-Ralphy",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Naked Director S01 2160p NF WEB-DL Dual-Audio DD+ 5.1 H.265-HONE",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Midsommar.2019.PROPER.Directors.Cut.UHD.BluRay.1080p.DDP.5.1.DoVi.HDR10.x265-SM737.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "George.Michael.Freedom.Uncut.2022.1080p.AMZN.WEB-DL.DDP5.1.H.264-PTP.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Tupac.Uncensored.and.Uncut.The.Lost.Prison.Tapes.2011.DVDRip.x264-HANDJOB.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Friedkin.Uncut.2018.1080p.MUBI.WEB-DL.AAC2.0.H.264-BdC.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Sniper.Special.Ops.2016.720p.BluRay.DD5.1.x264-SpaceHD",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Revhead.Miduga.Special.Edition-SKIDROW",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Pointless.Celebrities.S17E09.Special.720p.WEB-DL.AAC2.0.H.264-BTN",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Land of the Dead 2005 Unrated DC REPACK SHOUT 1080p UHD BluRay DD 5 1 Atmos DV HDR x265-SQS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Unrated: The Movie",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Who Framed Roger Rabbit 1988 Uncensored 1080p HDTV DD5.1 H.264.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Veil Uncensored S01 2021 1080p WEB-DL AAC 2.0 H.264-Solonese",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Uncensored 2018 S06E11 Tamela Mann 720p HDTV x264-CRiMSON",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Zodiac.2007.Directors.Cut.Bluray.1080p.TrueHD.5.1.AVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "X-Men Days of Future Past 2014 The Rogue Cut 2160p MA WEB-DL TrueHD 7 1 DV HDR10+ H 265-DRX",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Wicker.Man.The.Final.Cut.1973.UHD.BluRay.2160p.FLAC.2.0.DV.HEVC.REMUX-FraMeSToR",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Twin Peaks Alternate International Version 1989 720p BluRay DTD 5.1 x264-reward",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Trainspotting.1996.Collectors.Edition.1080P.BluRay.DD.5.1.X265-Ralphy.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563303780
+  },
+  "c4f854bb8b2cafcc_5e112736b8d669a6": {
+    "patternHash": "c4f854bb8b2cafcc",
+    "testsHash": "5e112736b8d669a6",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Zodiac.2007.Theatrical.UHD.BluRay.2160p.TrueHD.5.1.DV.HEVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Theatrical.Movie.2007.Theatrical.UHD.BluRay.2160p.TrueHD.5.1.DV.HEVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Theatrical.Movie.2007.UHD.BluRay.2160p.TrueHD.5.1.DV.HEVC.REMUX-FraMeSToR.mkv",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563304293
+  },
+  "7b18756cf508e62a_d7bf6dabfdb0a0ef": {
+    "patternHash": "7b18756cf508e62a",
+    "testsHash": "d7bf6dabfdb0a0ef",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Avatar: The Way of Water 2022 1080p UHD BluRay DDP 7.1 HDR10 x265-GALAXY",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563304704
+  },
+  "0b218df543f16fbb_11c905a72b054771": {
+    "patternHash": "0b218df543f16fbb",
+    "testsHash": "11c905a72b054771",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Training Day 2001 1080p BluRay DDP 7 1 HDR x265-LEGi0N",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563305121
+  },
+  "aa317484d679803c_2a5dcc50c819efc8": {
+    "patternHash": "aa317484d679803c",
+    "testsHash": "2a5dcc50c819efc8",
+    "results": {
+      "passed": 13,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The.Dukes.Of.Hazzard.Unrated.2005.2160p.Ai-Upscaled.10Bit.H265.DDP.5.1.RIFE.4.15-60fps-DirtyHippie",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "[EG]Mobile Suit Gundam SEED 21 BD[HEVC DualAudio AI-Upscale]",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Death.Proof.2007.2160p.Ai-Upscaled.10Bit.H265.TrueHD.5.1-DirtyHippie RIFE.4.14v2-60fps.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Oi.Aparadektoi.S02E03.[FullHDAIUpscaled][Upload-Ft4U]",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Cash.Out-I.maghi.del.furto.2024.UpScaled.2160p.H265.10.bit.DV.HDR10+.ita.eng.AC3.5.1.sub.ita.eng.Licdom",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "2012 (2009) UHD 4K Upscaled x264 AC3 Soup mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Martian 2015 4K UHD UPSCALED-ETRG",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "WWE Smackdown 1999 S04 1080p (Upscaled) PEACOCK WEB-DL H 264 AAC 2 0",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Venom 023 (2023) (Digital) (Li'l-Empire) (HD-Upscaled)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Natashas.Bondage.Sex.Vol.2.Upscaled",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Star Trek: Deep Space Nine S01 AI Upscale 2160p DVD AAC 2.0 H.263",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Avatar.2009.Extended.UHD.Re-Grade.4000nit.2160p.HEVC.HDR.IVACHS.ENG.ExKinoRay",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Enhanced.2020.1080p.Bluray.DTS-HD.MA.5.1.X264-EVO",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563305908
+  },
+  "8722df357506c305_3a2381ac0f20a743": {
+    "patternHash": "8722df357506c305",
+    "testsHash": "3a2381ac0f20a743",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Kedi 2016 REPACK 2160p WEB-DL DD+ 5.1 VP9-WiLDCAT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Kedi.2016.Repack.2160p.WEB-DL.DDP.5.1.VP9-WiLDCAT.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563306385
+  },
+  "1877a2ca589caff3_2c189ae373003c23": {
+    "patternHash": "1877a2ca589caff3",
+    "testsHash": "2c189ae373003c23",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Aftersun.2022.1080p.BluRay.Opus.5.1.VVC-TayTO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563306816
+  },
+  "4e63b1e3113ee485_27d890c734f6fcea": {
+    "patternHash": "4e63b1e3113ee485",
+    "testsHash": "27d890c734f6fcea",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Make Up with Mud 2024 S01E01 1080p VIKI WEB-DL AAC 2.0 H.264-DUSKLiGHT",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Vikings S06 Part 1 1080p Blu-ray AVC DTS-HD MA 5.1-SLIPSTREAM",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563307248
+  },
+  "cf42deb33901a90b_1591f1f1227461bf": {
+    "patternHash": "cf42deb33901a90b",
+    "testsHash": "1591f1f1227461bf",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "U2.Vertigo.Live.From.Chicago.720p.AC3.5.1ch.Xvid",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Britney Spears-Toxic-Hdtv-720P-Xvid.avi",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563307667
+  },
+  "8aaa926b133704d0_30ff7b2df08c68eb": {
+    "patternHash": "8aaa926b133704d0",
+    "testsHash": "30ff7b2df08c68eb",
+    "results": {
+      "passed": 4,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Aqua Teen Hunger Force (2000) S00E13 (480p DVD x265 SDR AAC 2.0 English - r00t QxR)",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Batman (2022) (1080p HMAX WEB-DL H265 SDR DDP Atmos 5.1 English - HONE)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "\t The Batman (2022) 1080p AMZN WEB-DL H265 SDR DDP 5.1 English-DarQ",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563308131
+  },
+  "652c67ea522506b5_1df0f50715b9aa86": {
+    "patternHash": "652c67ea522506b5",
+    "testsHash": "1df0f50715b9aa86",
+    "results": {
+      "passed": 1,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Contact.1997.BluRay.1080p.DDP.5.1.x264-hallowed",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563308548
+  },
+  "bf1472c1a58b692a_07516299698c6e3e": {
+    "patternHash": "bf1472c1a58b692a",
+    "testsHash": "07516299698c6e3e",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "12 Dares of Christmas 2023 1080p AMZN WEB-DL DDP 2.0 H.264-CMRG",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The.Super.Mario.Bros.Movie.2023.1080p.MA.WEB-DL.DDP5.1.Atmos.H.264-CMaRioG.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Aisha 2022 1080p WEB-DL DDP5 1 H 264-EVO",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563308996
+  },
+  "c0d0e9c0ad0a5b86_e235e02b9a25a6a1": {
+    "patternHash": "c0d0e9c0ad0a5b86",
+    "testsHash": "e235e02b9a25a6a1",
+    "results": {
+      "passed": 2,
+      "failed": 3,
+      "results": [
+        {
+          "testString": "The 1975-iTunes Music Festival London (2013)-CONVERT-1080p-x264-2013-SRPx",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Armour of God 1987 iTunes WEB-DL 4k HEVC HDR AAC-AREY",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "The Celluloid Closet 1995 1080p iTunes WEB-DL H 264 AAC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "752.is.Not.A.Number.2022.2160p.iT.WEB-DL.DD5.1.HEVC-NTb.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": false,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Bring It On All or Nothing 2006 1080p BluRay DDP 5 1 x265-edge2020",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563309484
+  },
+  "611d3d9c8b70a0d3_e235e02b9a25a6a1": {
+    "patternHash": "611d3d9c8b70a0d3",
+    "testsHash": "e235e02b9a25a6a1",
+    "results": {
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "The 1975-iTunes Music Festival London (2013)-CONVERT-1080p-x264-2013-SRPx",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Armour of God 1987 iTunes WEB-DL 4k HEVC HDR AAC-AREY",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "The Celluloid Closet 1995 1080p iTunes WEB-DL H 264 AAC",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "752.is.Not.A.Number.2022.2160p.iT.WEB-DL.DD5.1.HEVC-NTb.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Bring It On All or Nothing 2006 1080p BluRay DDP 5 1 x265-edge2020",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": false,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563309984
+  },
+  "7abcf96e8026a118_82f98cc756382ee4": {
+    "patternHash": "7abcf96e8026a118",
+    "testsHash": "82f98cc756382ee4",
+    "results": {
+      "passed": 2,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Full.Metal.Jacket.1987.1080p.HMAX.WEB-DL.DD5.1.HEVC-SiGLA.mkv",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Don’t Move “Directed by Anthony Melton”_HD_1920x1080_tt2846600.mp4",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563310407
+  },
+  "7a13e6126755e6ab_9829533c274ff1dc": {
+    "patternHash": "7a13e6126755e6ab",
+    "testsHash": "9829533c274ff1dc",
+    "results": {
+      "passed": 3,
+      "failed": 3,
+      "results": [
+        {
+          "testString": "Dan Da Dan AKA Dandadan S01E10 1080p CR WEB-DL AAC 2.0 x264-SubsPlease",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Life of Pi 2012 1080p BluRay x264-SPARKS",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Scrubs (2001) S04 REPACK (1080p AIUS DVDRip x265 10bit AC3 5 1 English - JBENT)[TAoE]",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Wallander UK S01-S04 DVDRip XviD BDRip x264-Scene (2008-2016)",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "Rugrats S05 480p DVDRip Opus 2.0 AV1-Jenkins",
+          "description": "",
+          "criteria": "DOES_NOT_MATCH",
+          "matches": true,
+          "passed": false,
+          "error": false
+        },
+        {
+          "testString": "_Summer S00 JAPANESE 480p DVDRip DD 2.0 x264-Tsundere",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563310929
+  },
+  "edb8876396250c31_e96b0e0fbb080edf": {
+    "patternHash": "edb8876396250c31",
+    "testsHash": "e96b0e0fbb080edf",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Aqua Teen Hunger Force (2000) S00E13 (480p DVD x265 SDR AAC 2.0 English - r00t QxR)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Spider-Man Across the Spider-Verse 2023 1080p UHD BluRay DDP7 1 DoVi HDR10x265-c0kE",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754563311436
+  }
+}
