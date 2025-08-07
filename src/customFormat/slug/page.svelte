@@ -31,7 +31,7 @@
   
   // Set up navigation when format is loaded
   $: if (formatEntry) {
-    const navItems = ['Overview', 'Conditions', 'Tests', 'Related Formats', 'Changelog', 'Discussion'];
+    const navItems = ['Overview', 'Conditions', 'Changelog', 'Discussion'];
     setNavigationItems(navItems, currentPath);
   }
   
@@ -52,18 +52,6 @@
       <!-- Conditions Section -->
       <section id="conditions" class="mb-12">
         <Conditions {conditions} />
-      </section>
-      
-      <!-- Tests Section -->
-      <section id="tests" class="mb-12">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Tests</h2>
-        <p class="text-neutral-600 dark:text-neutral-400">Tests section coming soon...</p>
-      </section>
-      
-      <!-- Related Formats Section -->
-      <section id="related-formats" class="mb-12">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Related Formats</h2>
-        <p class="text-neutral-600 dark:text-neutral-400">Related formats section coming soon...</p>
       </section>
       
       <!-- Changelog Section -->
