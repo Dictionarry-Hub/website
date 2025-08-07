@@ -2,6 +2,7 @@
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { showHoverInfo, hideHoverInfo } from '@shared/stores/hoverInfo';
   import { onMount, onDestroy } from 'svelte';
+  import { WandSparkles, Download, Code, FlaskConical, BookOpen, SlidersHorizontal } from 'lucide-svelte';
   
   // Define hover definitions for this page
   const hoverDefinitions = {
@@ -107,14 +108,74 @@
   </section>
 
   <section id="getting-started" class="mb-8">
-    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🚀 Getting Started</h2>
-    
-    <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      <strong class="text-neutral-900 dark:text-white">Profilarr 1.0.0</strong> is in open beta.
-    </p>
+    <h2 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-6">🚀 Getting Started</h2>
 
-    <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-      <a href="#/profilarr-setup/installation" class="text-blue-600 dark:text-blue-400 hover:underline">-> Profilarr Setup Guide</a>
-    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Installation Card -->
+      <a href="#/profilarr-setup/installation" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-green-500 dark:hover:border-green-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-green-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <Download class="w-6 h-6 text-green-600 dark:text-green-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400">Installation</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Step-by-step guide to set up Profilarr in your environment</p>
+      </a>
+
+      <!-- Profile Wizard Card -->
+      <a href="#/quality-profile#section=profile-wizard" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-blue-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <WandSparkles class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">Profile Wizard</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Get recommended quality profiles based on your preferences and setup</p>
+      </a>
+
+      <!-- Development Card -->
+      <a href="#/development" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-indigo-500 dark:hover:border-indigo-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-indigo-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <Code class="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400">Development</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Develop your own Profilarr Database!</p>
+      </a>
+
+      <!-- Devlog Card -->
+      <a href="#/devlogs" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-orange-500 dark:hover:border-orange-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-orange-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <FlaskConical class="w-6 h-6 text-orange-600 dark:text-orange-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400">Dev Log</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Follow the development journey and latest updates</p>
+      </a>
+
+      <!-- Wiki Card -->
+      <a href="#/wiki" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-purple-500 dark:hover:border-purple-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-purple-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <BookOpen class="w-6 h-6 text-purple-600 dark:text-purple-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">Wiki</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Deep dives into media automation concepts and best practices</p>
+      </a>
+
+      <!-- Media Management Card -->
+      <a href="#/media-management" class="group block p-6 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-200 hover:shadow-lg">
+        <div class="flex items-center mb-3">
+          <div class="w-10 h-10 bg-teal-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center mr-3">
+            <SlidersHorizontal class="w-6 h-6 text-teal-600 dark:text-teal-400" />
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400">Media Management</h3>
+        </div>
+        <p class="text-sm text-neutral-600 dark:text-neutral-400">Configure naming, quality definitions, and misc settings</p>
+      </a>
+    </div>
   </section>
 </div>
