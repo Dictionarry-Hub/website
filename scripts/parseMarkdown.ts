@@ -4,8 +4,7 @@ import { marked } from 'marked';
 marked.use({
   gfm: true,
   breaks: false,
-  pedantic: false,
-  smartypants: false
+  pedantic: false
 });
 
 // Block types
@@ -518,7 +517,20 @@ function processInlineElements(text: string): string {
   });
   
   // Use marked for inline processing (bold, italic, links, etc.)
-  let processed = marked.parseInline(text);
+  const markedResult = marked.parseInline(text);
+  
+  // Handle async result if needed - parseInline can return string or Promise<string>
+  let processed: string;
+  if (typeof markedResult === 'string') {
+    processed = markedResult;
+  } else {
+    // If parseInline returns a Promise, we can't use async here
+    // Fall back to the original text with basic replacements
+    processed = text
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  }
   
   // Restore math expressions
   mathExpressions.forEach((math, index) => {
@@ -542,8 +554,8 @@ function isTableStart(lines: string[], index: number): boolean {
   
   // Check if current line has pipes and next line is a separator
   return currentLine.includes('|') && 
-         nextLine && 
-         nextLine.match(/^\|?\s*:?-+:?\s*\|/);
+         !!nextLine && 
+         nextLine.match(/^\|?\s*:?-+:?\s*\|/) !== null;
 }
 
 // Find closing delimiter for blocks

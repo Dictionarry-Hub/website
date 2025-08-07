@@ -1,0 +1,62 @@
+import * as path from 'path';
+import * as yaml from 'js-yaml';
+import { ContentEntry, RawContent, ProcessorConfig, ContentProcessor } from '../core/types';
+import { DataSource } from '../core/DataSource';
+import { slugify, sanitizeForSearch } from '../utils/text';
+
+export class CustomFormatProcessor extends ContentProcessor {
+  name = 'custom-format';
+  supportedPaths = ['custom_formats'];
+
+  canProcess(path: string): boolean {
+    return path.includes('custom_formats') && (path.endsWith('.yml') || path.endsWith('.yaml'));
+  }
+
+  async process(content: RawContent, config: ProcessorConfig): Promise<ContentEntry | null> {
+    try {
+      const data = yaml.load(content.content) as any;
+      const filename = path.basename(content.path);
+      const slug = slugify(filename.replace(/\.ya?ml$/, ''));
+      
+      const title = data.name || filename.replace(/\.ya?ml$/, '').replace(/[-_]/g, ' ');
+      const description = data.description || '';
+      const tags = [...(data.tags || []), 'custom-format'];
+      
+      const searchContent = `${title} ${description} custom format ${JSON.stringify(data.specifications || [])}`;
+      
+      return {
+        id: `custom-format-${slug}`,
+        path: `/custom-format/${slug}`,
+        type: 'custom-format',
+        slug,
+        category: 'custom-format',
+        title,
+        description,
+        data,
+        searchText: sanitizeForSearch(searchContent),
+        searchWeight: 0.9,
+        tags,
+        filename,
+        lastModified: content.stats?.mtime || new Date().toISOString()
+      };
+    } catch (error: any) {
+      console.warn(`Error processing custom format ${content.path}:`, error.message);
+      return null;
+    }
+  }
+
+  async processAll(source: DataSource): Promise<ContentEntry[]> {
+    const entries: ContentEntry[] = [];
+    const files = await source.listFiles('custom_formats', /\.ya?ml$/);
+    
+    for (const file of files) {
+      const content = await source.readFile(file);
+      if (content) {
+        const entry = await this.process(content, {} as ProcessorConfig);
+        if (entry) entries.push(entry);
+      }
+    }
+    
+    return entries;
+  }
+}

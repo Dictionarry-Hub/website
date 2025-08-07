@@ -18,5 +18,5 @@
       "@db": ["src/generated/contentDatabase.ts"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.ts"]
+  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.ts", "scripts/**/*.ts"]
 }

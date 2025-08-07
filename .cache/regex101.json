@@ -1,0 +1,47 @@
+{
+  "FbKZWt": {
+    "permalinkFragment": "FbKZWt",
+    "version": 2,
+    "dateCreated": "2025-08-06T05:09:55.000Z",
+    "regex": "(?<=\\b[12]\\d{3}\\b).*\\b((bluray|bd)?3d|sbs|half[ .-]ou|half[ .-]sbs)\\b",
+    "testString": "",
+    "flags": "gmi",
+    "delimiter": "/",
+    "flavor": "pcre2",
+    "substitution": null,
+    "listSubstitution": null,
+    "title": null,
+    "regexDeleteCode": null,
+    "versionDeleteCode": null,
+    "isPrivate": 0,
+    "isLocked": 0,
+    "tags": [],
+    "unitTests": [
+      {
+        "testString": "Universal.Soldier.Day.of.Reckoning.2012.1080p.BluRay.3D.H-SBS.DTS.x264-BluRay3D",
+        "compareString": "",
+        "description": "",
+        "criteria": "DOES_MATCH",
+        "target": "REGEX"
+      },
+      {
+        "testString": "Justin.And.The.Knights.Of.Valour.3D.2013.1080p.BluRay.Half-SBS.x264-BluRay3D",
+        "compareString": "",
+        "description": "",
+        "criteria": "DOES_MATCH",
+        "target": "REGEX"
+      },
+      {
+        "testString": "Step Up 3D 2010 1080p BluRay DTS-ES 6.1 x264-xander",
+        "compareString": "",
+        "description": "",
+        "criteria": "DOES_MATCH",
+        "target": "REGEX"
+      }
+    ],
+    "isFavorite": false,
+    "isEditable": true,
+    "isOwner": false,
+    "isLibraryEntry": false
+  }
+}
