@@ -12,7 +12,7 @@ This website is built with Svelte and statically generated from a Profilarr Comp
 
 ### Installation
 ```bash
-git clone <repo-url>
+git clone https://github.com/Dictionarry-Hub/website
 cd website
 npm install
 ```
