@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
       
       - run: npm ci
-      - run: npm run db:stable  # Fetch database
+      - run: npm run db:website  # Fetch database
       - run: npm run build       # Build site
       
       - uses: actions/configure-pages@v4
