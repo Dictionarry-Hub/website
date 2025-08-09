@@ -4,14 +4,19 @@
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv, FolderOpen, FileText, Hash, Calendar, ToggleLeft } from 'lucide-svelte';
   import CodeBlock from '@shared/ui/codeBlock.svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
 
-  // Find the naming data
-  $: namingData = contentDatabase.entries.find(e => e.slug === 'naming' && e.type === 'media-management')?.data;
+  // Find the naming entry
+  $: namingEntry = contentDatabase.entries.find(e => e.slug === 'naming' && e.type === 'media-management');
+  $: namingData = namingEntry?.data;
 
   onMount(() => {
     setNavigationItems([
       'Radarr',
-      'Sonarr'
+      'Sonarr',
+      'Changelog',
+      'Discussion'
     ], '#/media-management/naming');
   });
 
@@ -94,4 +99,19 @@
       </div>
     {/if}
   </div>
+  
+  <!-- Changelog -->
+  <section id="changelog" class="mb-12">
+    <Changelog commitLog={namingEntry?.commitLog} />
+  </section>
+  
+  <!-- Discussion -->
+  {#if namingEntry?.title}
+    <section id="discussion" class="mb-12 pb-12">
+      <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Discussion</h2>
+      {#key namingEntry.title}
+        <Utterances issueTerm={`⚙️ Media Management: ${namingEntry.title}`} />
+      {/key}
+    </section>
+  {/if}
 </div>

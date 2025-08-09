@@ -3,14 +3,19 @@
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv, ToggleLeft } from 'lucide-svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
 
-  // Find the misc settings data
-  $: miscData = contentDatabase.entries.find(e => e.slug === 'misc' && e.type === 'media-management')?.data;
+  // Find the misc settings entry
+  $: miscEntry = contentDatabase.entries.find(e => e.slug === 'misc' && e.type === 'media-management');
+  $: miscData = miscEntry?.data;
 
   onMount(() => {
     setNavigationItems([
       'Radarr',
-      'Sonarr'
+      'Sonarr',
+      'Changelog',
+      'Discussion'
     ], '#/media-management/misc');
   });
 
@@ -102,4 +107,7 @@
       </div>
     {/if}
   </div>
+  
+  <!-- Changelog -->
+  <Changelog commitLog={miscEntry?.commitLog} />
 </div>

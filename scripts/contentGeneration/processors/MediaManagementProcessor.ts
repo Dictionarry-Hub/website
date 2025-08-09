@@ -72,11 +72,21 @@ export class MediaManagementProcessor extends ContentProcessor {
     const entries: ContentEntry[] = [];
     const files = await source.listFiles('media_management', /\.ya?ml$/);
     
+    // Fetch commit logs for all files
+    const commitLogs = await source.getFileCommitLogs(files);
+    
     for (const file of files) {
       const content = await source.readFile(file);
       if (content) {
         const entry = await this.process(content, {} as ProcessorConfig);
-        if (entry) entries.push(entry);
+        if (entry) {
+          // Add commit log if available
+          const commitLog = commitLogs.get(file);
+          if (commitLog) {
+            entry.commitLog = commitLog;
+          }
+          entries.push(entry);
+        }
       }
     }
     

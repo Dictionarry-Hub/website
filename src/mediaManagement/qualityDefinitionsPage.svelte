@@ -4,14 +4,19 @@
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv } from 'lucide-svelte';
   import Table from '@shared/ui/table.svelte';
+  import Changelog from '@shared/ui/changelog.svelte';
+  import Utterances from '@shared/ui/utterances.svelte';
 
-  // Find the quality definitions data
-  $: qualityDefinitionsData = contentDatabase.entries.find(e => e.slug === 'qualitydefinitions' && e.type === 'media-management')?.data;
+  // Find the quality definitions entry
+  $: qualityDefinitionsEntry = contentDatabase.entries.find(e => e.slug === 'qualitydefinitions' && e.type === 'media-management');
+  $: qualityDefinitionsData = qualityDefinitionsEntry?.data;
 
   onMount(() => {
     setNavigationItems([
       'Radarr',
-      'Sonarr'
+      'Sonarr',
+      'Changelog',
+      'Discussion'
     ], '#/media-management/qualitydefinitions');
   });
 
@@ -106,4 +111,19 @@
       </div>
     {/if}
   </div>
+  
+  <!-- Changelog -->
+  <section id="changelog" class="mb-12">
+    <Changelog commitLog={qualityDefinitionsEntry?.commitLog} />
+  </section>
+  
+  <!-- Discussion -->
+  {#if qualityDefinitionsEntry?.title}
+    <section id="discussion" class="mb-12 pb-12">
+      <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Discussion</h2>
+      {#key qualityDefinitionsEntry.title}
+        <Utterances issueTerm={`⚙️ Media Management: ${qualityDefinitionsEntry.title}`} />
+      {/key}
+    </section>
+  {/if}
 </div>
