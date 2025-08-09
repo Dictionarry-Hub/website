@@ -165,8 +165,9 @@ export class DataSource {
         return null;
       }
 
-      // Get commit log with structured format (get all commits)
-      const logFormat = '%H|%aI|%an|%s';
+      // Get commit log with structured format (get all commits including body for co-authors)
+      // Use a unique separator to split commits since %b can contain newlines
+      const logFormat = '%H|%aI|%an|%s|%b%n---COMMIT-SEPARATOR---';
       const gitLogCommand = `git log --follow --format="${logFormat}" -- "${relativePath}"`;
       
       let logOutput: string;
@@ -189,27 +190,55 @@ export class DataSource {
 
       // Parse all commits
       const commits: CommitInfo[] = [];
-      const lines = logOutput.split('\n').filter(line => line.trim());
+      const commitBlocks = logOutput.split('---COMMIT-SEPARATOR---').filter(block => block.trim());
       
-      for (const line of lines) {
-        const [hash, date, author, ...messageParts] = line.split('|');
+      for (const block of commitBlocks) {
+        const parts = block.trim().split('|');
+        const [hash, date, author, subject] = parts.slice(0, 4);
+        const body = parts.slice(4).join('|').trim();
+        
         if (hash && date && author) {
-          // Transform author names
-          let authorName = author.trim();
-          const lowerAuthor = authorName.toLowerCase();
+          // Start with primary author
+          const authors = [author.trim()];
           
-          // Check for variations of Samuel/Sam Chau
-          if (lowerAuthor.includes('samuel') || lowerAuthor.includes('sam')) {
-            if (lowerAuthor.includes('chau')) {
-              authorName = 'santiagosayshey';
+          // Extract co-authors from commit body
+          if (this.config.verbose && body.includes('Co-authored-by')) {
+            console.log(`Debug: Found Co-authored-by in commit ${hash.substring(0, 7)}: "${body}"`);
+          }
+          
+          const coAuthorMatches = body.match(/Co-authored-by:\s*([^<\n]+)(?:\s*<[^>]+>)?/gi);
+          if (coAuthorMatches) {
+            if (this.config.verbose) {
+              console.log(`Debug: Co-author matches for ${hash.substring(0, 7)}:`, coAuthorMatches);
+            }
+            for (const match of coAuthorMatches) {
+              const coAuthor = match.replace(/Co-authored-by:\s*/i, '').replace(/\s*<[^>]+>/, '').trim();
+              if (coAuthor && !authors.includes(coAuthor)) {
+                authors.push(coAuthor);
+                if (this.config.verbose) {
+                  console.log(`Debug: Added co-author "${coAuthor}" to commit ${hash.substring(0, 7)}`);
+                }
+              }
             }
           }
+          
+          // Transform author names for all authors
+          const transformedAuthors = authors.map(authorName => {
+            const lowerAuthor = authorName.toLowerCase();
+            // Check for variations of Samuel/Sam Chau
+            if (lowerAuthor.includes('samuel') || lowerAuthor.includes('sam')) {
+              if (lowerAuthor.includes('chau')) {
+                return 'santiagosayshey';
+              }
+            }
+            return authorName;
+          });
           
           commits.push({
             hash: hash.trim(),
             date: date.trim(),
-            author: authorName,
-            message: messageParts.join('|').trim()
+            authors: transformedAuthors,
+            message: subject ? subject.trim() : ''
           });
         }
       }

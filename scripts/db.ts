@@ -143,7 +143,7 @@ async function main() {
     // Filter processors if --only is specified
     let activeProcessors = processors;
     if (options.only) {
-      const onlyTypes = options.only.map(t => t.trim().toLowerCase());
+      const onlyTypes = options.only.split(',').map(t => t.trim().toLowerCase());
       const typeMap: Record<string, string> = {
         'regex': 'regex-pattern',
         'custom-formats': 'custom-format',

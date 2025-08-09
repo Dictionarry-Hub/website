@@ -115,11 +115,17 @@
             {commit.message}
           </div>
           
-          <!-- Author and Date -->
+          <!-- Authors and Date -->
           <div class="flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
             <span class="flex items-center gap-1">
               <User class="w-3 h-3" />
-              {commit.author}
+              {#if commit.authors && commit.authors.length > 1}
+                {commit.authors.join(', ')}
+              {:else if commit.authors && commit.authors.length === 1}
+                {commit.authors[0]}
+              {:else}
+                {commit.author || 'Unknown'}
+              {/if}
             </span>
             <span title={formatDate(commit.date)}>
               {formatRelativeTime(commit.date)}
