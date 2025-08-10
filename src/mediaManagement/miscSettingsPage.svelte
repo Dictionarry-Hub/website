@@ -1,10 +1,18 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { contentDatabase } from '@db';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import { Film, Tv, ToggleLeft } from 'lucide-svelte';
   import Changelog from '@shared/ui/changelog.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
+
+  const seo = {
+    title: 'Miscellaneous Settings', // Hardcoded title for this fixed page
+    description: getSeoData('/media-management/misc').description
+  };
 
   // Find the misc settings entry
   $: miscEntry = contentDatabase.entries.find(e => e.slug === 'misc' && e.type === 'media-management');
@@ -39,6 +47,13 @@
     return descriptions[key] || '';
   }
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 <div>
   <div class="mb-12">

@@ -1,9 +1,14 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { onMount, onDestroy } from 'svelte';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import FeaturedCard from './featured/featuredCard.svelte';
   import DevlogsList from './list/list.svelte';
   import { contentDatabase } from '@db';
+
+  const seo = getSeoData($router.path);
 
   const devlogEntries = contentDatabase.entries
     .filter(entry => entry.category === 'devlogs')
@@ -29,6 +34,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div>
   <!-- Page Header -->

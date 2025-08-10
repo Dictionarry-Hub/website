@@ -1,4 +1,5 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
   import { router } from 'tinro';
   import { contentDatabase } from '@db';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
@@ -35,6 +36,11 @@
   $: upgrade_until = profileEntry?.data?.upgrade_until || null;
   $: language = profileEntry?.data?.language || null;
   $: commitLog = profileEntry?.commitLog || null;
+
+  $: seo = {
+    title: name,
+    description: description
+  };
   
   // Set up navigation when profile is loaded
   $: if (profileEntry) {
@@ -46,6 +52,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 <div>
   {#if profileEntry}

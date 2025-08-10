@@ -1,4 +1,5 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
   import { router } from 'tinro';
   import { contentDatabase } from '@db';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
@@ -30,6 +31,11 @@
   $: tests = formatEntry?.data?.tests || [];
   $: referencedBy = formatEntry?.data?.referencedBy || [];
   $: commitLog = formatEntry?.commitLog || null;
+
+  $: seo = {
+    title: name,
+    description: description
+  };
   
   // Set up navigation when format is loaded
   $: if (formatEntry) {
@@ -45,6 +51,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 <div>
   {#if formatEntry}

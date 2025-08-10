@@ -31,7 +31,6 @@
   import NotFound from '@shared/components/notFound.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
-  import { initAnchorScrolling } from '@shared/utils/scrollToAnchor'
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
   import { fly } from 'svelte/transition'

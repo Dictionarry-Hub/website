@@ -1,6 +1,8 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
   import { router } from 'tinro';
   import { contentDatabase } from '@db';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onDestroy } from 'svelte';
   import Frontmatter from './frontmatter/frontmatter.svelte';
@@ -8,6 +10,11 @@
   import Utterances from '@shared/ui/utterances.svelte';
   
   let wikiEntry = null;
+
+  $: seo = {
+    title: wikiEntry?.title,
+    description: getSeoData('/wiki').description // Use generic wiki description
+  };
   
   // Get current path and extract slug
   $: currentPath = $router.path;
@@ -35,6 +42,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 {#if wikiEntry}
   <Frontmatter entry={wikiEntry} />

@@ -1,8 +1,13 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import CodeBlock from '@shared/ui/codeBlock.svelte';
+
+  const seo = getSeoData($router.path);
   
   onMount(() => {
     setNavigationItems([
@@ -34,13 +39,13 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
       - .env # This line securely loads your credentials
     restart: unless-stopped`;
   
-  const dockerCliCode = `docker run -d \\
-  --name=profilarr \\
-  -p 6868:6868 \\
-  -v /path/to/your/data:/config \\
-  -e TZ=UTC \\
-  --env-file .env \\
-  --restart unless-stopped \\
+  const dockerCliCode = `docker run -d \
+  --name=profilarr \
+  -p 6868:6868 \
+  -v /path/to/your/data:/config \
+  -e TZ=UTC \
+  --env-file .env \
+  --restart unless-stopped \
   santiagosayshey/profilarr:latest`;
   
   const envItems = [
@@ -64,6 +69,13 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
     }
   ];
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Development</h1>

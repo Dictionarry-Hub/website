@@ -1,6 +1,11 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
+
+  const seo = getSeoData($router.path);
 
   onMount(() => {
     setNavigationItems([
@@ -13,6 +18,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div>
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Custom Formats</h1>

@@ -3,6 +3,11 @@
   import { showHoverInfo, hideHoverInfo } from '@shared/stores/hoverInfo';
   import { onMount, onDestroy } from 'svelte';
   import { WandSparkles, Download, Code, FlaskConical, BookOpen, SlidersHorizontal } from 'lucide-svelte';
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
+
+  const seo = getSeoData($router.path);
   
   // Define hover definitions for this page
   const hoverDefinitions = {
@@ -33,6 +38,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div >
   <h2 id="motivation" class="text-2xl font-semibold text-neutral-900 dark:text-white mb-4">🔥 Motivation</h2>

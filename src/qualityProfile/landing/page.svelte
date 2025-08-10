@@ -1,9 +1,14 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import Overview from './overview/overview.svelte';
   import Flowchart from './flowchart/flowchart.svelte';
   import { flowchartColumns } from '@shared/constants/flowchartOptions';
+
+  const seo = getSeoData($router.path);
   
   // Map selections to profile names
   function getRecommendedProfile(selections) {
@@ -78,6 +83,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div>
   <!-- Overview Section with full-width background -->
