@@ -8,7 +8,7 @@ export interface SeoData {
 export const defaultSeo: SeoData = {
   title: 'Dictionarry',
   description: 'An open standard for media server configurations.',
-  image: '/logo-no-cog.svg',
+  image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d2.png',
 };
 
 // SEO data for specific routes.
