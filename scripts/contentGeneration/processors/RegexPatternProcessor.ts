@@ -329,4 +329,65 @@ export class RegexPatternProcessor extends ContentProcessor {
       return null;
     }
   }
+
+  async postProcess(entries: ContentEntry[], allEntries: ContentEntry[]): Promise<void> {
+    // Find all custom formats
+    const customFormats = allEntries.filter(e => e.type === 'custom-format');
+    
+    // Create a map to track which custom formats reference each regex pattern
+    const patternReferences = new Map<string, Array<{
+      title: string; 
+      slug: string;
+      description?: string;
+      tags?: string[];
+      conditionCount?: number;
+    }>>();
+    
+    for (const format of customFormats) {
+      if (format.data?.conditions) {
+        for (const condition of format.data.conditions) {
+          // Check if this condition references a regex pattern
+          if (condition.type === 'release_group' && condition.pattern) {
+            // Find the regex pattern entry that matches this pattern name
+            const patternEntry = entries.find(e => 
+              e.type === 'regex-pattern' && 
+              (e.data?.name === condition.pattern || e.title === condition.pattern)
+            );
+            
+            if (patternEntry) {
+              if (!patternReferences.has(patternEntry.id)) {
+                patternReferences.set(patternEntry.id, []);
+              }
+              patternReferences.get(patternEntry.id)!.push({
+                title: format.title,
+                slug: format.slug,
+                description: format.description,
+                tags: format.data?.tags,
+                conditionCount: format.data?.conditions?.length
+              });
+            }
+          }
+        }
+      }
+    }
+    
+    // Add the references to each regex pattern entry
+    for (const entry of entries) {
+      if (entry.type === 'regex-pattern') {
+        const references = patternReferences.get(entry.id);
+        if (references && references.length > 0) {
+          entry.data = {
+            ...entry.data,
+            referencedBy: references
+          };
+        }
+      }
+    }
+    
+    // Log statistics
+    const patternsWithReferences = Array.from(patternReferences.keys()).length;
+    if (patternsWithReferences > 0) {
+      console.log(`  🔗 Linked ${patternsWithReferences} regex patterns to custom formats`);
+    }
+  }
 }

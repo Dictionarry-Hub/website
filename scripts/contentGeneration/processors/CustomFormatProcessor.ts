@@ -69,4 +69,60 @@ export class CustomFormatProcessor extends ContentProcessor {
     
     return entries;
   }
+
+  async postProcess(entries: ContentEntry[], allEntries: ContentEntry[]): Promise<void> {
+    // Find all quality profiles
+    const qualityProfiles = allEntries.filter(e => e.type === 'quality-profile');
+    
+    // Create a map to track which profiles reference each custom format
+    const formatReferences = new Map<string, Array<{
+      title: string;
+      slug: string;
+      score: number;
+    }>>();
+    
+    for (const profile of qualityProfiles) {
+      if (profile.data?.custom_formats) {
+        for (const formatRef of profile.data.custom_formats) {
+          // Find the custom format entry that matches this format name
+          const formatEntry = entries.find(e => 
+            e.type === 'custom-format' && 
+            (e.data?.name === formatRef.name || e.title === formatRef.name)
+          );
+          
+          if (formatEntry) {
+            if (!formatReferences.has(formatEntry.id)) {
+              formatReferences.set(formatEntry.id, []);
+            }
+            formatReferences.get(formatEntry.id)!.push({
+              title: profile.title,
+              slug: profile.slug,
+              score: formatRef.score || 0
+            });
+          }
+        }
+      }
+    }
+    
+    // Add the references to each custom format entry
+    for (const entry of entries) {
+      if (entry.type === 'custom-format') {
+        const references = formatReferences.get(entry.id);
+        if (references && references.length > 0) {
+          // Sort by score descending
+          references.sort((a, b) => b.score - a.score);
+          entry.data = {
+            ...entry.data,
+            referencedBy: references
+          };
+        }
+      }
+    }
+    
+    // Log statistics
+    const formatsWithReferences = Array.from(formatReferences.keys()).length;
+    if (formatsWithReferences > 0) {
+      console.log(`  🔗 Linked ${formatsWithReferences} custom formats to quality profiles`);
+    }
+  }
 }

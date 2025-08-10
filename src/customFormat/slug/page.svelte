@@ -5,6 +5,7 @@
   import { onMount, onDestroy } from 'svelte';
   import Overview from './overview/overview.svelte';
   import Conditions from './conditions/conditions.svelte';
+  import ProfileReferences from './profileReferences/profileReferences.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
   import Changelog from '@shared/ui/changelog.svelte';
   
@@ -27,11 +28,16 @@
   $: tags = formatEntry?.data?.tags || [];
   $: conditions = formatEntry?.data?.conditions || [];
   $: tests = formatEntry?.data?.tests || [];
+  $: referencedBy = formatEntry?.data?.referencedBy || [];
   $: commitLog = formatEntry?.commitLog || null;
   
   // Set up navigation when format is loaded
   $: if (formatEntry) {
-    const navItems = ['Overview', 'Conditions', 'Changelog', 'Discussion'];
+    const navItems = ['Overview', 'Conditions'];
+    if (referencedBy.length > 0) {
+      navItems.push('Used In Profiles');
+    }
+    navItems.push('Changelog', 'Discussion');
     setNavigationItems(navItems, currentPath);
   }
   
@@ -53,6 +59,13 @@
       <section id="conditions" class="mb-12">
         <Conditions {conditions} />
       </section>
+      
+      <!-- Used In Profiles Section -->
+      {#if referencedBy.length > 0}
+        <section id="used-in-profiles" class="mb-12">
+          <ProfileReferences {referencedBy} />
+        </section>
+      {/if}
       
       <!-- Changelog Section -->
       <section id="changelog" class="mb-12">

@@ -1,5 +1,5 @@
 // Auto-generated content database
-// Generated at: 2025-08-09T07:00:10.814Z
+// Generated at: 2025-08-10T08:25:04.822Z
 // Version: 2.0.0
 
 export const contentDatabase = {
@@ -89,7 +89,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -165,7 +165,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "3l s 3l b regex pattern",
       "searchWeight": 0.8,
@@ -175,7 +187,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3L.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -234,7 +246,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word s 4k4u b regex pattern",
       "searchWeight": 0.8,
@@ -244,7 +268,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "4K4U.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -303,7 +327,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot s 4kdvs b regex pattern",
       "searchWeight": 0.8,
@@ -313,7 +350,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "4KDVS.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -382,7 +419,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "7.1 Surround.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -442,7 +479,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "9volt.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -485,7 +522,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "aaauhd s aaauhd b regex pattern",
       "searchWeight": 0.8,
@@ -495,7 +545,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AAAUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -554,7 +604,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AAC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -604,7 +654,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "abbie s abbie b regex pattern",
       "searchWeight": 0.8,
@@ -614,7 +686,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ABBIE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -683,7 +755,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -742,7 +814,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "ade s ade b regex pattern",
       "searchWeight": 0.8,
@@ -752,7 +837,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ADE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -803,7 +888,51 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "ajp69 s ajp69 b regex pattern",
       "searchWeight": 0.8,
@@ -813,7 +942,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AJP69.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -874,7 +1003,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ANE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -933,7 +1062,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "aoc banned for excessive audio streams s aoc b regex pattern",
       "searchWeight": 0.8,
@@ -943,7 +1084,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AOC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -996,7 +1137,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AOmundson.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1039,7 +1180,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "apex s apex b regex pattern",
       "searchWeight": 0.8,
@@ -1049,7 +1212,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "APEX.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1108,7 +1271,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "aroma banned for retagging s aroma b regex pattern",
       "searchWeight": 0.8,
@@ -1118,7 +1293,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AROMA.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1222,7 +1397,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AV1.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1281,7 +1456,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "aviator s aviator b regex pattern",
       "searchWeight": 0.8,
@@ -1291,7 +1479,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AViATOR.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1342,7 +1530,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "absinth s absinth b regex pattern",
       "searchWeight": 0.8,
@@ -1352,7 +1553,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Absinth.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1502,7 +1703,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Amazon Prime.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1660,7 +1861,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Apple TV+.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1728,7 +1929,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Arid.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1797,7 +1998,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Asakura.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -1924,7 +2125,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -2143,7 +2344,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "B&W.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2219,7 +2420,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced Tier 1",
+            "slug": "1080p-balanced-tier-1",
+            "description": "Matches release groups who fall under 1080p Balanced Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ],
+            "conditionCount": 3
+          },
+          {
+            "title": "2160p Balanced Tier 2",
+            "slug": "2160p-balanced-tier-2",
+            "description": "Matches release groups who fall under 2160p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "bhdstudio s bhdstudio b regex pattern",
       "searchWeight": 0.8,
@@ -2229,7 +2454,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BHDStudio.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2280,7 +2505,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "bluebird s bluebird b regex pattern",
       "searchWeight": 0.8,
@@ -2290,7 +2528,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLUEBIRD.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2341,7 +2579,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "bluranium s bluranium b regex pattern",
       "searchWeight": 0.8,
@@ -2351,7 +2601,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLURANiUM.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2394,7 +2644,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "blutonium s blutonium b regex pattern",
       "searchWeight": 0.8,
@@ -2404,7 +2676,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLUTONiUM.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2456,7 +2728,53 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "bmf s bmf b regex pattern",
       "searchWeight": 0.8,
@@ -2467,7 +2785,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BMF.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2518,7 +2836,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "bols banned for retagging s bols b regex pattern",
       "searchWeight": 0.8,
@@ -2528,7 +2858,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BOLS.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2580,7 +2910,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "boredor s boredor b regex pattern",
       "searchWeight": 0.8,
@@ -2590,7 +2933,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BOREDOR.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2641,7 +2984,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "bstd s bstd b regex pattern",
       "searchWeight": 0.8,
@@ -2651,7 +3007,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BSTD.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2799,7 +3155,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BTN Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2857,7 +3213,39 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "btn s btn b regex pattern",
       "searchWeight": 0.8,
@@ -2867,7 +3255,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BTN.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2918,7 +3306,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "bv s bv b regex pattern",
       "searchWeight": 0.8,
@@ -2928,7 +3340,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BV.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -2979,7 +3391,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "byndr s byndr b regex pattern",
       "searchWeight": 0.8,
@@ -2989,7 +3413,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BYNDR.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3194,7 +3618,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Basic HDR Formats.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3252,7 +3676,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "beitai s beitai b regex pattern",
       "searchWeight": 0.8,
@@ -3262,7 +3699,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BeiTai.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3725,7 +4162,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Better Theatricals.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3804,7 +4241,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "beyondhd banned due to only doing full discs s beyondhd b regex pattern",
       "searchWeight": 0.8,
@@ -3814,7 +4263,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BeyondHD.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3882,7 +4331,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "bitor banned for fake dv hdr layer s bitor b regex pattern",
       "searchWeight": 0.8,
@@ -3892,7 +4353,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BiTOR.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -3952,7 +4413,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "bizkit s bizkit b regex pattern",
       "searchWeight": 0.8,
@@ -3962,7 +4435,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BiZKiT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4015,7 +4488,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BlurayDesuYo.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4058,7 +4531,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "blzt s blzt b regex pattern",
       "searchWeight": 0.8,
@@ -4068,7 +4554,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BlzT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4153,7 +4639,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bracketed Year.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4213,7 +4699,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bravia Core.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4265,7 +4751,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bunny-Apocalypse.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4318,7 +4804,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CBT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4377,7 +4863,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "chaos s chaos b regex pattern",
       "searchWeight": 0.8,
@@ -4387,7 +4886,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CHAOS.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4438,7 +4937,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "chd s chd b regex pattern",
       "searchWeight": 0.8,
@@ -4448,7 +4960,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CHD.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4499,7 +5011,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "cj s cj b regex pattern",
       "searchWeight": 0.8,
@@ -4509,7 +5045,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CJ.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4560,7 +5096,20 @@ export const contentDatabase = {
           "Release Group",
           "Anime"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "cmct s cmct b regex pattern",
       "searchWeight": 0.8,
@@ -4570,7 +5119,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CMCT.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4665,7 +5214,29 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "cmrg prolific web dl group s cm a r io g b regex pattern",
       "searchWeight": 0.8,
@@ -4675,7 +5246,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CMRG.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4734,7 +5305,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "creative24 banned for bloated garbage s creative24 b regex pattern",
       "searchWeight": 0.8,
@@ -4744,7 +5327,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CREATiVE24.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4787,7 +5370,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "crfw s crfw b regex pattern",
       "searchWeight": 0.8,
@@ -4797,7 +5402,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRFW.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4856,7 +5461,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "crx s crx b regex pattern",
       "searchWeight": 0.8,
@@ -4866,7 +5495,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRX.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -4917,7 +5546,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "crisc s crisc b regex pattern",
       "searchWeight": 0.8,
@@ -4927,7 +5592,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRiSC.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -4988,7 +5653,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CTR.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5057,7 +5722,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Cait-Sidhe.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5110,7 +5775,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Chihiro.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5153,7 +5818,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "chotab s chotab b regex pattern",
       "searchWeight": 0.8,
@@ -5163,7 +5875,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Chotab.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5214,7 +5926,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "cinephiles s cinephiles b regex pattern",
       "searchWeight": 0.8,
@@ -5224,7 +5948,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CiNEPHiLES.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5267,7 +5991,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot s cinefeel b regex pattern",
       "searchWeight": 0.8,
@@ -5277,7 +6013,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Cinefeel.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5330,7 +6066,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CoalGirls.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5487,7 +6223,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Colourisation.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5547,7 +6283,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Commie.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5664,7 +6400,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "iT (Missing)",
+            "slug": "it-missing",
+            "description": "Matches 'iTunes' WEB-DLs that are not labelled correctly. Matches when its not from another streaming service and comes from an iPT release group: EVO or CMRG",
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ],
+            "conditionCount": 16
+          }
+        ]
       },
       "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space b crit b regex pattern",
       "searchWeight": 0.8,
@@ -5674,7 +6422,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Criterion Channel.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5732,7 +6480,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ctrlhd s ctrlhd b regex pattern",
       "searchWeight": 0.8,
@@ -5742,7 +6537,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CtrlHD.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5793,7 +6588,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "d z0n3 s d z0n3 b regex pattern",
       "searchWeight": 0.8,
@@ -5803,7 +6645,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "D-Z0N3.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5854,7 +6696,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "deflate s deflate b regex pattern",
       "searchWeight": 0.8,
@@ -5864,7 +6719,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DEFLATE.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5915,7 +6770,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "depth s depth b regex pattern",
       "searchWeight": 0.8,
@@ -5925,7 +6793,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DEPTH.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -5976,7 +6844,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 1",
+            "slug": "720p-quality-tier-1",
+            "description": "Matches release groups who fall under 720p Quality Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "don s don b regex pattern",
       "searchWeight": 0.8,
@@ -5986,7 +6901,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DON.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6045,7 +6960,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD HRA ES.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6103,7 +7018,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD MA.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6161,7 +7076,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6263,7 +7178,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-X.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6337,7 +7252,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6397,7 +7312,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DarQ.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6456,7 +7371,55 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 1",
+            "slug": "sd-quality-tier-1",
+            "description": "Matches release groups who fall under SD GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "dariush s dariush b regex pattern",
       "searchWeight": 0.8,
@@ -6466,7 +7429,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dariush.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6527,7 +7490,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dekinai.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6570,7 +7533,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "depraved banned for fake dv hdr layer s depraved b regex pattern",
       "searchWeight": 0.8,
@@ -6580,7 +7555,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DepraveD.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6746,7 +7721,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Disney+.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6814,7 +7789,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Doki.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6881,7 +7856,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Digital +.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -6939,7 +7914,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Digital.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -7090,7 +8065,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Vision (Without Fallback).yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -7325,7 +8300,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Vision.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7394,7 +8369,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Drag.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7607,7 +8582,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dual Audio.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7657,7 +8632,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "e n d s e n d b regex pattern",
       "searchWeight": 0.8,
@@ -7667,7 +8678,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "E.N.D.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7718,7 +8729,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "e1 s e1 b regex pattern",
       "searchWeight": 0.8,
@@ -7728,7 +8763,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "E1.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7779,7 +8814,21 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ea s ea b regex pattern",
       "searchWeight": 0.8,
@@ -7789,7 +8838,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EA.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7840,7 +8889,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "edph s edph b regex pattern",
       "searchWeight": 0.8,
@@ -7850,7 +8946,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EDPH.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7901,7 +8997,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "emerald s emerald b regex pattern",
       "searchWeight": 0.8,
@@ -7911,7 +9020,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EMERALD.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -7962,7 +9071,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "epsilon s epsilon b regex pattern",
       "searchWeight": 0.8,
@@ -7972,7 +9093,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EPSiLON.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8015,7 +9136,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "esir s esir b regex pattern",
       "searchWeight": 0.8,
@@ -8025,7 +9193,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ESiR.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8130,7 +9298,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EVO.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8189,7 +9357,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "excision s excision b regex pattern",
       "searchWeight": 0.8,
@@ -8199,7 +9391,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EXCiSION.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8260,7 +9452,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EXP.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8319,7 +9511,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "720p Quality Tier 1",
+            "slug": "720p-quality-tier-1",
+            "description": "Matches release groups who fall under 720p Quality Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ebp s ebp b regex pattern",
       "searchWeight": 0.8,
@@ -8329,7 +9557,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EbP.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8390,7 +9618,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Erai-Raws.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8443,7 +9671,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Exiled-Destiny.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8540,7 +9768,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Extended Clip.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8645,7 +9873,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Extras.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8739,7 +9967,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FFF.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8798,7 +10026,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "fgt banned for retagging s fgt b regex pattern",
       "searchWeight": 0.8,
@@ -8808,7 +10048,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FGT.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8868,7 +10108,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLAC.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8918,7 +10158,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "flame s flame b regex pattern",
       "searchWeight": 0.8,
@@ -8928,7 +10181,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLAME.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -8979,7 +10232,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 1",
+            "slug": "web-dl-tier-1",
+            "description": "Matches release groups who fall under WEB-DL Tier 1",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "flux s flux b regex pattern",
       "searchWeight": 0.8,
@@ -8989,7 +10264,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLUX.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -9048,7 +10323,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "frds s frds b regex pattern",
       "searchWeight": 0.8,
@@ -9058,7 +10346,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FRDS.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -9109,7 +10397,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ftw hd s ftw hd b regex pattern",
       "searchWeight": 0.8,
@@ -9119,7 +10431,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FTW-HD.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -9170,7 +10482,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "filmhd s filmhd b regex pattern",
       "searchWeight": 0.8,
@@ -9180,7 +10516,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FilmHD.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -9241,7 +10577,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Final8.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9284,7 +10620,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "flights banned for fake dv hdr layer s flights b regex pattern",
       "searchWeight": 0.8,
@@ -9294,7 +10642,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Flights.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9356,7 +10704,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Flugel.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9399,7 +10747,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "form s form b regex pattern",
       "searchWeight": 0.8,
@@ -9409,7 +10793,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FoRM.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9460,7 +10844,41 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "framestor s framestor b regex pattern",
       "searchWeight": 0.8,
@@ -9470,7 +10888,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FraMeSToR.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9633,7 +11051,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Full Disc.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9683,7 +11101,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "galaxy s galaxy b regex pattern",
       "searchWeight": 0.8,
@@ -9693,7 +11135,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GALAXY.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9754,7 +11196,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GNOME.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9807,7 +11249,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GRiMM.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9850,7 +11292,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "gs88 s gs88 b regex pattern",
       "searchWeight": 0.8,
@@ -9860,7 +11326,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GS88.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9911,7 +11377,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "guhzer s guhzer b regex pattern",
       "searchWeight": 0.8,
@@ -9921,7 +11400,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GUHZER.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -9972,7 +11451,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "geek s geek b regex pattern",
       "searchWeight": 0.8,
@@ -9982,7 +11497,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Geek.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10034,7 +11549,43 @@ export const contentDatabase = {
           "Bluray",
           "DVD"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 2",
+            "slug": "sd-quality-tier-2",
+            "description": "Matches release groups who fall under SD GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 2
+          }
+        ]
       },
       "searchText": "handjob s handjob b regex pattern",
       "searchWeight": 0.8,
@@ -10045,7 +11596,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HANDJOB.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10210,7 +11761,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HBO Max Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10383,7 +11934,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HBO Max.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10442,7 +11993,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hd77 s hd77 b regex pattern",
       "searchWeight": 0.8,
@@ -10452,7 +12016,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HD77.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10503,7 +12067,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hdchina s hdchina b regex pattern",
       "searchWeight": 0.8,
@@ -10513,7 +12090,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDChina.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10564,7 +12141,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hdmaniacs s hdmaniacs b regex pattern",
       "searchWeight": 0.8,
@@ -10574,7 +12187,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDMaNiAcS.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10786,7 +12399,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -10905,7 +12518,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR10 (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11216,7 +12829,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR10+.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11489,7 +13102,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR10.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11547,7 +13160,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "hds s hds b regex pattern",
       "searchWeight": 0.8,
@@ -11557,7 +13182,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDS.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11608,7 +13233,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hdmux s hdmux b regex pattern",
       "searchWeight": 0.8,
@@ -11618,7 +13256,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDmux.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11738,7 +13376,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HEVC.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11821,7 +13459,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "hhweb s hhweb b regex pattern",
       "searchWeight": 0.8,
@@ -11831,7 +13491,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HHWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -11902,7 +13562,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HLG.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -11945,7 +13605,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "hone s hone b regex pattern",
       "searchWeight": 0.8,
@@ -11955,7 +13637,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HONE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12006,7 +13688,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "hqmux s hqmux b regex pattern",
       "searchWeight": 0.8,
@@ -12016,7 +13711,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HQMUX.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12067,7 +13762,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "huntjr s huntjr b regex pattern",
       "searchWeight": 0.8,
@@ -12077,7 +13785,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HUNTJR.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12128,7 +13836,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "hares s hares b regex pattern",
       "searchWeight": 0.8,
@@ -12138,7 +13859,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hares.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12189,7 +13910,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hidt s hidt b regex pattern",
       "searchWeight": 0.8,
@@ -12199,7 +13956,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiDt.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12250,7 +14007,53 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "hifi s hifi b regex pattern",
       "searchWeight": 0.8,
@@ -12260,7 +14063,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiFi.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12311,7 +14114,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hip s hip b regex pattern",
       "searchWeight": 0.8,
@@ -12321,7 +14148,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiP.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12382,7 +14209,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HorribleSubs.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12435,7 +14262,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hotstar.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12532,7 +14359,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hulu.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12599,7 +14426,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hypstu s hypstu b regex pattern",
       "searchWeight": 0.8,
@@ -12609,7 +14449,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HypStu.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12660,7 +14500,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "iamable s iamable b regex pattern",
       "searchWeight": 0.8,
@@ -12670,7 +14523,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IAMABLE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12721,7 +14574,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ide s ide b regex pattern",
       "searchWeight": 0.8,
@@ -12731,7 +14620,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IDE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12792,7 +14681,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IK.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -12980,7 +14869,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IMAX Enhanced.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13099,7 +14988,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13159,7 +15048,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Iznjie Biznjie.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13202,7 +15091,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "justwatch s justwatch b regex pattern",
       "searchWeight": 0.8,
@@ -13212,7 +15114,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "JustWatch.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13263,7 +15165,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "kan3d2m s kan3d2m b regex pattern",
       "searchWeight": 0.8,
@@ -13273,7 +15188,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KAN3D2M.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13324,7 +15239,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "kashmir s kashmir b regex pattern",
       "searchWeight": 0.8,
@@ -13334,7 +15285,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KASHMiR.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13385,7 +15336,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "kc banned for ai upscales s kc b regex pattern",
       "searchWeight": 0.8,
@@ -13395,7 +15358,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KC.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13457,7 +15420,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KCW.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13517,7 +15480,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KH.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -13576,7 +15539,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "knives s knives b regex pattern",
       "searchWeight": 0.8,
@@ -13586,7 +15562,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KNiVES.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13637,7 +15613,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "kralimarko s kralimarko b regex pattern",
       "searchWeight": 0.8,
@@ -13647,7 +15635,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KRaLiMaRKo.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13700,7 +15688,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kaleido.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13753,7 +15741,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kametsu.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13796,7 +15784,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "kings s kings b regex pattern",
       "searchWeight": 0.8,
@@ -13806,7 +15816,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KiNGS.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13865,7 +15875,40 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "kitsune s kitsune b regex pattern",
       "searchWeight": 0.8,
@@ -13875,7 +15918,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kitsune.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13936,7 +15979,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Koten_Gars.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -13979,7 +16022,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "lama banned for retagging s lama b regex pattern",
       "searchWeight": 0.8,
@@ -13989,7 +16044,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAMA.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14049,7 +16104,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "lazarus s lazarus b regex pattern",
       "searchWeight": 0.8,
@@ -14059,7 +16127,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAZARUS.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14110,7 +16178,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot s lazy b regex pattern",
       "searchWeight": 0.8,
@@ -14120,7 +16200,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAZY.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14163,7 +16243,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned Remux",
+            "slug": "banned-remux",
+            "description": "Matches otherwise unfavourable remux groups - bloated audio tracks, fake HDR, etc.",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "legi0n s legi0n b regex pattern",
       "searchWeight": 0.8,
@@ -14173,7 +16287,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LEGi0N.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14224,7 +16338,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "lm s lm b regex pattern",
       "searchWeight": 0.8,
@@ -14234,7 +16360,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LM.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14303,7 +16429,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LSt.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14364,7 +16490,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LYS1TH3A.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14417,7 +16543,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LazyRemux.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14460,7 +16586,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ling s ling b regex pattern",
       "searchWeight": 0.8,
@@ -14470,7 +16620,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LiNG.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14521,7 +16671,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "littlebakas s littlebakas b regex pattern",
       "searchWeight": 0.8,
@@ -14531,7 +16694,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LittleBakas.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14582,7 +16745,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "lord s lord b regex pattern",
       "searchWeight": 0.8,
@@ -14592,7 +16779,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LoRD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14643,7 +16830,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "lolhd s lolhd b regex pattern",
       "searchWeight": 0.8,
@@ -14653,7 +16876,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LolHD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14704,7 +16927,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "lucifer s lucifer b regex pattern",
       "searchWeight": 0.8,
@@ -14714,7 +16950,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Lucifer.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14775,7 +17011,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Lulu.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14834,7 +17070,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "malus s malus b regex pattern",
       "searchWeight": 0.8,
@@ -14844,7 +17092,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MALUS.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14914,7 +17162,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MTBB.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -14973,7 +17221,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "mteam s mteam b regex pattern",
       "searchWeight": 0.8,
@@ -14983,7 +17267,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MTeam.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -15034,7 +17318,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "mzabi s mzabi b regex pattern",
       "searchWeight": 0.8,
@@ -15044,7 +17350,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MZABI.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15103,7 +17409,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          }
+        ]
       },
       "searchText": "mainframe s mainframe b regex pattern",
       "searchWeight": 0.8,
@@ -15113,7 +17432,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MainFrame.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15263,7 +17582,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Max Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15429,7 +17748,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Max.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15487,7 +17806,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "mimic s mimic b regex pattern",
       "searchWeight": 0.8,
@@ -15497,7 +17829,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MiMiC.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15577,7 +17909,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "movieman s movieman b regex pattern",
       "searchWeight": 0.8,
@@ -15587,7 +17931,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MovieMan.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15799,7 +18143,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Movies Anywhere.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15883,7 +18227,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Mysteria.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15926,7 +18270,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nahom banned for poor quality multi s nahom b regex pattern",
       "searchWeight": 0.8,
@@ -15936,7 +18292,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NAHOM.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -15989,7 +18345,64 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "ncmt s ncmt b regex pattern",
       "searchWeight": 0.8,
@@ -16000,7 +18413,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NCmt.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16051,7 +18464,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "nosivid s nosivid b regex pattern",
       "searchWeight": 0.8,
@@ -16061,7 +18496,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NOSiViD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16120,7 +18555,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "ntg s ntg b regex pattern",
       "searchWeight": 0.8,
@@ -16130,7 +18587,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NTG.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16233,7 +18690,63 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 1",
+            "slug": "web-dl-tier-1",
+            "description": "Matches release groups who fall under WEB-DL Tier 1",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "ntb s ntb b regex pattern",
       "searchWeight": 0.8,
@@ -16243,7 +18756,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NTb.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16328,7 +18841,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Netaro.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16455,7 +18968,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Netflix.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16522,7 +19035,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nhanc3 banned for low mixed quality releases s nhanc3 b regex pattern",
       "searchWeight": 0.8,
@@ -16532,7 +19057,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NhaNc3.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16575,7 +19100,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nogroup s nogr ou p b regex pattern",
       "searchWeight": 0.8,
@@ -16585,7 +19122,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NoGroup.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16753,7 +19290,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Non Retail HDR Formats.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16859,7 +19396,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Non Retail HDR Groups.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -16953,7 +19490,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Now Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -17006,7 +19543,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Now.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -17049,7 +19586,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "nyhd s nyhd b regex pattern",
       "searchWeight": 0.8,
@@ -17059,7 +19632,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NyHD.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -17110,7 +19683,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "oeplus banned for automated encodes s oeplus b regex pattern",
       "searchWeight": 0.8,
@@ -17120,7 +19705,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "OEPlus.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17172,7 +19757,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "origen s origen b regex pattern",
       "searchWeight": 0.8,
@@ -17182,7 +19803,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ORiGEN.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17243,7 +19864,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "OZR.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17312,7 +19933,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Okay-Subs.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17424,7 +20045,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Open Matte.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17474,7 +20095,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "p0w4hd s p0w4hd b regex pattern",
       "searchWeight": 0.8,
@@ -17484,7 +20129,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "P0W4HD.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17543,7 +20188,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PCM.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17603,7 +20248,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PHOCiS.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17662,7 +20307,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PHOENiX.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17705,7 +20350,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "pp s pp b regex pattern",
       "searchWeight": 0.8,
@@ -17715,7 +20372,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PP.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17786,7 +20443,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PQ.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17829,7 +20486,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "pth s pth b regex pattern",
       "searchWeight": 0.8,
@@ -17839,7 +20509,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTH.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -17890,7 +20560,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ptp s ptp b regex pattern",
       "searchWeight": 0.8,
@@ -17900,7 +20582,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTP.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18003,7 +20685,54 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "pter s pter b regex pattern",
       "searchWeight": 0.8,
@@ -18013,7 +20742,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTer.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18134,7 +20863,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTerWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18262,7 +20991,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Paramount+.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18473,7 +21202,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Peacock TV Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18684,7 +21413,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Peacock TV.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18742,7 +21471,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "penumbra s penumbra b regex pattern",
       "searchWeight": 0.8,
@@ -18752,7 +21505,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Penumbra.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18803,7 +21556,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "pirates banned for mislabeling web dls as webrips s pirates b regex pattern",
       "searchWeight": 0.8,
@@ -18813,7 +21578,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PiRaTeS.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18865,7 +21630,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "pmp s pmp b regex pattern",
       "searchWeight": 0.8,
@@ -18875,7 +21652,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PmP.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18944,7 +21721,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Pookie.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -18987,7 +21764,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "positive s positive b regex pattern",
       "searchWeight": 0.8,
@@ -18997,7 +21810,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Positive.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -19048,7 +21861,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "pussyfoot s pussyfoot b regex pattern",
       "searchWeight": 0.8,
@@ -19058,7 +21884,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PussyFoot.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -19109,7 +21935,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot s qoq b regex pattern",
       "searchWeight": 0.8,
@@ -19119,7 +21967,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "QOQ.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -19172,7 +22020,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Quetzal.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -19225,7 +22073,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "QxR.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19269,7 +22117,19 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Remux",
+            "slug": "banned-remux",
+            "description": "Matches otherwise unfavourable remux groups - bloated audio tracks, fake HDR, etc.",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "rargb s rargb b regex pattern",
       "searchWeight": 0.8,
@@ -19280,7 +22140,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "RARGB.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19323,7 +22183,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          }
+        ]
       },
       "searchText": "reborn s reborn b regex pattern",
       "searchWeight": 0.8,
@@ -19333,7 +22206,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "REBORN.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19394,7 +22267,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Raizel.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19447,7 +22320,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Rasetsu.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19490,7 +22363,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "request s request b regex pattern",
       "searchWeight": 0.8,
@@ -19500,7 +22386,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ReQuEsT.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19551,7 +22437,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "realhd s realhd b regex pattern",
       "searchWeight": 0.8,
@@ -19561,7 +22460,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ReaLHD.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19612,7 +22511,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "release group missing regex pattern",
       "searchWeight": 0.8,
@@ -19622,7 +22533,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Release Group (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19717,7 +22628,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -19890,7 +22801,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack1.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20108,7 +23019,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack2.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20326,7 +23237,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack3.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20469,7 +23380,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Roku.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20536,7 +23447,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sa89 s sa89 b regex pattern",
       "searchWeight": 0.8,
@@ -20546,7 +23504,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SA89.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20607,7 +23565,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SCY.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20718,7 +23676,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SDR.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20777,7 +23735,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "shd banned for retagging s shd b regex pattern",
       "searchWeight": 0.8,
@@ -20787,7 +23757,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SHD.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20868,7 +23838,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "sm737 s sm737 b regex pattern",
       "searchWeight": 0.8,
@@ -20878,7 +23860,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SM737.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -20954,7 +23936,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "smahawug s smahawug b regex pattern",
       "searchWeight": 0.8,
@@ -20964,7 +23959,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SMAHAWUG.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21015,7 +24010,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "smurf s smurf b regex pattern",
       "searchWeight": 0.8,
@@ -21025,7 +24042,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SMURF.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21113,7 +24130,31 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sop s sop b regex pattern",
       "searchWeight": 0.8,
@@ -21123,7 +24164,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SOP.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21182,7 +24223,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "spectacle s spectacle b regex pattern",
       "searchWeight": 0.8,
@@ -21192,7 +24246,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SPECTACLE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21243,7 +24297,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "sphd s sphd b regex pattern",
       "searchWeight": 0.8,
@@ -21253,7 +24320,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SPHD.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21304,7 +24371,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "strikes s strikes b regex pattern",
       "searchWeight": 0.8,
@@ -21314,7 +24394,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "STRiKES.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21365,7 +24445,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "stuttershit s stuttershit b regex pattern",
       "searchWeight": 0.8,
@@ -21375,7 +24467,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "STUTTERSHIT.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21418,7 +24510,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "surcode s surcode b regex pattern",
       "searchWeight": 0.8,
@@ -21428,7 +24533,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SURCODE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -21479,7 +24584,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "swaggeruhd s swaggeruhd b regex pattern",
       "searchWeight": 0.8,
@@ -21489,7 +24607,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SWAGGERUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21540,7 +24658,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "swtyblz s swtyblz b regex pattern",
       "searchWeight": 0.8,
@@ -21550,7 +24681,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SWTYBLZ.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21601,7 +24732,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sancti s sancti b regex pattern",
       "searchWeight": 0.8,
@@ -21611,7 +24778,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SaNcTi.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21672,7 +24839,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Saizen.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21725,7 +24892,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SallySubs.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21768,7 +24935,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "sasukeduck banned for fake dv hdr layer s sasukeduck b regex pattern",
       "searchWeight": 0.8,
@@ -21778,7 +24957,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SasukeducK.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21830,7 +25009,63 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "sbr s sbr b regex pattern",
       "searchWeight": 0.8,
@@ -21840,7 +25075,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SbR.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21896,7 +25131,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Scene.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21948,7 +25183,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Senjou.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -21991,7 +25226,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "shieldbearer banned for ai upscale s shieldbearer b regex pattern",
       "searchWeight": 0.8,
@@ -22001,7 +25248,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ShieldBearer.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22063,7 +25310,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Showtime Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22116,7 +25363,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Showtime.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22159,7 +25406,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "sic s sic b regex pattern",
       "searchWeight": 0.8,
@@ -22169,7 +25438,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiC.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22228,7 +25497,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "sicfoi s sicfoi b regex pattern",
       "searchWeight": 0.8,
@@ -22238,7 +25519,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiCFoI.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22320,7 +25601,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiGLA.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22389,7 +25670,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiGMA.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22448,7 +25729,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "simple s simple b regex pattern",
       "searchWeight": 0.8,
@@ -22458,7 +25763,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiMPLE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22546,7 +25851,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Sing Along.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -22596,7 +25901,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "solar s solar b regex pattern",
       "searchWeight": 0.8,
@@ -22606,7 +25924,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SoLaR.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23039,7 +26357,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Special Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23099,7 +26417,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Stan Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23151,7 +26469,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Stan.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23203,7 +26521,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SubsPlease.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23256,7 +26574,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SubsPlus+.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -23309,7 +26627,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SumVision.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23370,7 +26688,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TAoE.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23413,7 +26731,55 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 1",
+            "slug": "sd-quality-tier-1",
+            "description": "Matches release groups who fall under SD GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "tbb s tbb b regex pattern",
       "searchWeight": 0.8,
@@ -23423,7 +26789,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TBB.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23474,7 +26840,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "tdd s tdd b regex pattern",
       "searchWeight": 0.8,
@@ -23484,7 +26897,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TDD.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23535,7 +26948,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "tekno3d banned for fake dv hdr layer s tekno3d b regex pattern",
       "searchWeight": 0.8,
@@ -23545,7 +26970,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TEKNO3D.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23597,7 +27022,39 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "tepes s tepes b regex pattern",
       "searchWeight": 0.8,
@@ -23607,7 +27064,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TEPES.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23666,7 +27123,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "terminal s terminal b regex pattern",
       "searchWeight": 0.8,
@@ -23676,7 +27146,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TERMiNAL.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23737,7 +27207,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "THORA.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23780,7 +27250,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "threesome s threesome b regex pattern",
       "searchWeight": 0.8,
@@ -23790,7 +27273,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "THREESOME.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23849,7 +27332,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "tombcruise s tombcruise b regex pattern",
       "searchWeight": 0.8,
@@ -23859,7 +27355,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TOMBCRUISE.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23910,7 +27406,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot s tommy b regex pattern",
       "searchWeight": 0.8,
@@ -23920,7 +27438,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TOMMY.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -23963,7 +27481,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "triton s triton b regex pattern",
       "searchWeight": 0.8,
@@ -23973,7 +27503,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TRiToN.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24026,7 +27556,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TTGA.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24095,7 +27625,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TVING.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24145,7 +27675,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "tayto s tayto b regex pattern",
       "searchWeight": 0.8,
@@ -24155,7 +27721,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TayTo.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24206,7 +27772,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "telly banned for retagging s telly b regex pattern",
       "searchWeight": 0.8,
@@ -24216,7 +27794,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Telly.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24335,7 +27913,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Theatrical Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24385,7 +27963,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "tnp s tnp b regex pattern",
       "searchWeight": 0.8,
@@ -24395,7 +27986,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TnP.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24446,7 +28037,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "tron s tron b regex pattern",
       "searchWeight": 0.8,
@@ -24456,7 +28060,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Tron.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24515,7 +28119,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TrueHD (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24584,7 +28188,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TrueHD.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24636,7 +28240,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Tsundere.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24713,7 +28317,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHD Blu-ray.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24797,7 +28401,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "UHD Bluray (Missing)",
+            "slug": "uhd-bluray-missing",
+            "description": "Attempts to match UHD Bluray as a source when not included in the release title",
+            "tags": [
+              "2160p",
+              "Storage"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes s legi0n b regex pattern",
       "searchWeight": 0.8,
@@ -24805,7 +28421,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHD Bluray (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24855,7 +28471,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "uhdclubremux s uhdclubremux b regex pattern",
       "searchWeight": 0.8,
@@ -24865,7 +28494,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHDCLUBREMUX.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -24916,7 +28545,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "ultrahdclub s ultrahdclub b regex pattern",
       "searchWeight": 0.8,
@@ -24926,7 +28568,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ULTRAHDCLUB.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25196,7 +28838,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Upscaled.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25264,7 +28906,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "valis s valis b regex pattern",
       "searchWeight": 0.8,
@@ -25274,7 +28929,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VALiS.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25335,7 +28990,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VARYG.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25378,7 +29033,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "vector banned for fake dv hdr layer s vector b regex pattern",
       "searchWeight": 0.8,
@@ -25388,7 +29055,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VECTOR.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25440,7 +29107,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "vlad s vlad b regex pattern",
       "searchWeight": 0.8,
@@ -25450,7 +29141,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VLAD.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25553,7 +29244,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VP9.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25641,7 +29332,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VVC.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25691,7 +29382,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "viethd s viethd b regex pattern",
       "searchWeight": 0.8,
@@ -25701,7 +29428,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VietHD.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25806,7 +29533,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Viki.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25873,7 +29600,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "visionxpert banned for fake dv hdr layer s visionxpert b regex pattern",
       "searchWeight": 0.8,
@@ -25883,7 +29622,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VisionXpert.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -25945,7 +29684,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Viu.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26006,7 +29745,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Vodes.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26059,7 +29798,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Vyndros.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26102,7 +29841,42 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "w4nk3r s w4nk3r b regex pattern",
       "searchWeight": 0.8,
@@ -26112,7 +29886,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "W4NK3R.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26163,7 +29937,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "watchable s watchable b regex pattern",
       "searchWeight": 0.8,
@@ -26173,7 +29960,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WATCHABLE.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26234,7 +30021,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WBDP.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26293,7 +30080,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "wming s wming b regex pattern",
       "searchWeight": 0.8,
@@ -26303,7 +30114,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WMING.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26354,7 +30165,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "wou s wou b regex pattern",
       "searchWeight": 0.8,
@@ -26364,7 +30187,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WOU.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26434,7 +30257,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Wavve.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26494,7 +30317,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WeTV.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26544,7 +30367,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "whiterhino s whiterhino b regex pattern",
       "searchWeight": 0.8,
@@ -26554,7 +30390,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WhiteRhino.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26613,7 +30449,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "wiki banned for upscale s wiki b regex pattern",
       "searchWeight": 0.8,
@@ -26623,7 +30471,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WiKi.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -26683,7 +30531,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "wildcat s wildcat b regex pattern",
       "searchWeight": 0.8,
@@ -26693,7 +30553,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WiLDCAT.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -26736,7 +30596,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "xebec s xebec b regex pattern",
       "searchWeight": 0.8,
@@ -26746,7 +30628,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "XEBEC.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -26857,7 +30739,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Xvid.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -26917,7 +30799,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YAWNiX.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -26970,7 +30852,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YELLO.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27013,7 +30895,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "yify matches yify when preceded by whitespace a hyphen or dot s yify b regex pattern",
       "searchWeight": 0.8,
@@ -27023,7 +30917,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YIFY.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27066,7 +30960,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "yts matches yts when preceded by whitespace a hyphen or dot s yts mx lt ag b regex pattern",
       "searchWeight": 0.8,
@@ -27076,7 +30982,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YTS.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27129,7 +31035,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YURI.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27198,7 +31104,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Yuki.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27257,7 +31163,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "zimbo s zimbo b regex pattern",
       "searchWeight": 0.8,
@@ -27267,7 +31197,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZIMBO.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27319,7 +31249,53 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "zq s zq b regex pattern",
       "searchWeight": 0.8,
@@ -27330,7 +31306,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZQ.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27391,7 +31367,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZR.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27450,7 +31426,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "zorosenpai s zorosenpai b regex pattern",
       "searchWeight": 0.8,
@@ -27460,7 +31470,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZoroSenpai.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27521,7 +31531,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Zurako.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27564,7 +31574,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "b0mbardiers s b0mbardiers b regex pattern",
       "searchWeight": 0.8,
@@ -27574,7 +31597,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "b0mbardiers.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27625,7 +31648,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "beast s beast b regex pattern",
       "searchWeight": 0.8,
@@ -27635,7 +31671,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "beAst.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27686,7 +31722,42 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "c0ke s c0ke b regex pattern",
       "searchWeight": 0.8,
@@ -27696,7 +31767,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "c0kE.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27747,7 +31818,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "d3g banned for lq and various encode issues s d3g b regex pattern",
       "searchWeight": 0.8,
@@ -27757,7 +31840,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "d3g.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27827,7 +31910,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "dB.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27886,7 +31969,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "de 42 s de 42 b regex pattern",
       "searchWeight": 0.8,
@@ -27896,7 +32003,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "de(42).yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -27965,7 +32072,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "deanzel.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -28008,7 +32115,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "decibel s decibel b regex pattern",
       "searchWeight": 0.8,
@@ -28018,7 +32159,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "decibeL.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -28069,7 +32210,20 @@ export const contentDatabase = {
           "Release Group",
           "Anime"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "dkore s dkore b regex pattern",
       "searchWeight": 0.8,
@@ -28079,7 +32233,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "dkore.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -28130,7 +32284,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "edge2020 banned for lq mislabeling and upscale s edge2020 b regex pattern",
       "searchWeight": 0.8,
@@ -28140,7 +32306,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "edge2020.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -28282,7 +32448,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "h265.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28369,7 +32535,31 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Balanced Tier 2",
+            "slug": "1080p-balanced-tier-2",
+            "description": "Matches release groups who fall under 1080p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ],
+            "conditionCount": 3
+          },
+          {
+            "title": "2160p Balanced Tier 2",
+            "slug": "2160p-balanced-tier-2",
+            "description": "Matches release groups who fall under 2160p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "hallowed s hallowed b regex pattern",
       "searchWeight": 0.8,
@@ -28379,7 +32569,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hallowed.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28448,7 +32638,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hchcsen.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28491,7 +32681,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hdalx s hdalx b regex pattern",
       "searchWeight": 0.8,
@@ -28501,7 +32715,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hdalx.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28552,7 +32766,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "icandy s icandy b regex pattern",
       "searchWeight": 0.8,
@@ -28562,7 +32789,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iCandy.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28613,7 +32840,64 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ift s ift b regex pattern",
       "searchWeight": 0.8,
@@ -28623,7 +32907,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iFT.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28674,7 +32958,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "invandraren s invandraren b regex pattern",
       "searchWeight": 0.8,
@@ -28684,7 +32981,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iNVANDRAREN.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28735,7 +33032,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ion s ion b regex pattern",
       "searchWeight": 0.8,
@@ -28745,7 +33066,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iON.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28854,7 +33175,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "iT (Missing)",
+            "slug": "it-missing",
+            "description": "Matches 'iTunes' WEB-DLs that are not labelled correctly. Matches when its not from another streaming service and comes from an iPT release group: EVO or CMRG",
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ],
+            "conditionCount": 16
+          }
+        ]
       },
       "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf s cm a r io g evo b regex pattern",
       "searchWeight": 0.8,
@@ -28863,7 +33196,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iPT Internals.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -28923,7 +33256,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iQIYI.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29081,7 +33414,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iTunes Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29247,7 +33580,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iTunes.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29305,7 +33638,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "jennaortegauhd banned for fake dv hdr layer s jennaortega uhd b regex pattern",
       "searchWeight": 0.8,
@@ -29315,7 +33660,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "jennaortegaUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29367,7 +33712,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "k00kie s k00kie b regex pattern",
       "searchWeight": 0.8,
@@ -29377,7 +33735,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "k00kie.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29438,7 +33796,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "kmplx.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29491,7 +33849,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "kuchikirukia.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29534,7 +33892,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "luvbb s luvbb b regex pattern",
       "searchWeight": 0.8,
@@ -29544,7 +33926,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "luvBB.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29595,7 +33977,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "micius s micius b regex pattern",
       "searchWeight": 0.8,
@@ -29605,7 +34000,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "micius.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29708,7 +34103,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "mkv.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29768,7 +34163,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "monkee.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29811,7 +34206,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "nmd s nmd b regex pattern",
       "searchWeight": 0.8,
@@ -29821,7 +34252,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "nmd.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29872,7 +34303,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "playbd s playbd b regex pattern",
       "searchWeight": 0.8,
@@ -29882,7 +34325,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playBD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -29925,7 +34368,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "playhd s playhd b regex pattern",
       "searchWeight": 0.8,
@@ -29935,7 +34414,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playHD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -29986,7 +34465,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "playweb s playweb b regex pattern",
       "searchWeight": 0.8,
@@ -29996,7 +34497,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30065,7 +34566,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "pog42.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30108,7 +34609,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "rightsize s rightsize b regex pattern",
       "searchWeight": 0.8,
@@ -30118,7 +34643,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "rightSIZE.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30169,7 +34694,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "rttr s rttr b regex pattern",
       "searchWeight": 0.8,
@@ -30179,7 +34728,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "rttr.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30248,7 +34797,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "sam.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30317,7 +34866,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "smol.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30376,7 +34925,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "tarunk9c banned for fake dv hdr layer s tarunk9c b regex pattern",
       "searchWeight": 0.8,
@@ -30386,7 +34947,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "tarunk9c.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30552,7 +35113,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "x264.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30671,7 +35232,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "x265.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30745,7 +35306,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "xander s xander b regex pattern",
       "searchWeight": 0.8,
@@ -30755,7 +35340,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "xander.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -30930,6 +35515,33 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3300
+          }
         ]
       },
       "searchText": "1080p balanced tier 1 matches release groups who fall under 1080p balanced tier 1 custom format",
@@ -30941,7 +35553,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Balanced Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.655Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -31156,6 +35768,33 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3200
+          }
         ]
       },
       "searchText": "1080p balanced tier 2 matches release groups who fall under 1080p balanced tier 2 custom format",
@@ -31167,7 +35806,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Balanced Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -31272,7 +35911,29 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p bluray matches 1080p blurays that are not remuxes custom format",
       "searchWeight": 0.9,
@@ -31281,7 +35942,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -31346,7 +36007,19 @@ export const contentDatabase = {
             "type": "indexer_flag"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 800
+          }
+        ]
       },
       "searchText": "1080p golden popcorn matches 1080p golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -31356,7 +36029,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -31444,7 +36117,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 4100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 4100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 4100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 4100
+          }
+        ]
       },
       "searchText": "1080p quality tier 1 matches release groups who fall under 1080p gppi tier 1 custom format",
       "searchWeight": 0.9,
@@ -31456,7 +36151,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -31579,7 +36274,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 4000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 4000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 4000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 4000
+          }
+        ]
       },
       "searchText": "1080p quality tier 2 matches release groups who fall under 1080p gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -31591,7 +36308,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -31738,7 +36455,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3900
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3900
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3900
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3900
+          }
+        ]
       },
       "searchText": "1080p quality tier 3 matches release groups who fall under 1080p gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -31750,7 +36489,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -31866,7 +36605,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3800
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3800
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3800
+          }
+        ]
       },
       "searchText": "1080p quality tier 4 matches release groups who fall under 1080p gppi tier 4 custom format",
       "searchWeight": 0.9,
@@ -31878,7 +36639,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32267,7 +37028,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3700
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3700
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3700
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3700
+          }
+        ]
       },
       "searchText": "1080p quality tier 5 matches release groups who fall under 1080p gppi tier 5 custom format",
       "searchWeight": 0.9,
@@ -32279,7 +37062,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32359,7 +37142,19 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 10000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 10000
+          }
+        ]
       },
       "searchText": "1080p remux matches 1080p remux custom format",
       "searchWeight": 0.9,
@@ -32368,7 +37163,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32432,7 +37227,44 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 11000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 11000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 11000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 11000
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 8000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p web dl matches 1080p web dls custom format",
       "searchWeight": 0.9,
@@ -32441,7 +37273,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32505,7 +37337,29 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p webrip matches 1080p webrips custom format",
       "searchWeight": 0.9,
@@ -32514,7 +37368,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32582,7 +37436,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32748,6 +37602,18 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13400
+          }
         ]
       },
       "searchText": "2160p balanced tier 1 matches release groups who fall under 2160p balanced tier 1 custom format",
@@ -32759,7 +37625,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Balanced Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -32989,6 +37855,18 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13200
+          }
         ]
       },
       "searchText": "2160p balanced tier 2 matches release groups who fall under 2160p balanced tier 2 custom format",
@@ -33000,7 +37878,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Balanced Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33122,7 +38000,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33246,7 +38124,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20200
+          }
+        ]
       },
       "searchText": "2160p quality tier 1 matches release groups who fall under 2160p quality tier 1 custom format",
       "searchWeight": 0.9,
@@ -33257,7 +38142,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33377,7 +38262,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20100
+          }
+        ]
       },
       "searchText": "2160p quality tier 2 matches release groups who fall under 2160p quality tier 2 custom format",
       "searchWeight": 0.9,
@@ -33388,7 +38280,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33515,7 +38407,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20000
+          }
+        ]
       },
       "searchText": "2160p quality tier 3 matches release groups who fall under 2160p quality tier 3 custom format",
       "searchWeight": 0.9,
@@ -33526,7 +38425,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33660,7 +38559,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 19900
+          }
+        ]
       },
       "searchText": "2160p quality tier 4 matches release groups who fall under 2160p quality tier 4 custom format",
       "searchWeight": 0.9,
@@ -33671,7 +38577,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -33826,7 +38732,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 19800
+          }
+        ]
       },
       "searchText": "2160p quality tier 5 matches release groups who fall under 2160p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -33837,7 +38750,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34224,7 +39137,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 13100
+          }
+        ]
       },
       "searchText": "2160p quality tier 6 matches release groups who fall under 2160p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -34235,7 +39155,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 6.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34434,7 +39354,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 13000
+          }
+        ]
       },
       "searchText": "2160p quality tier 7 matches release groups who fall under 2160p quality tier 6 custom format",
       "searchWeight": 0.9,
@@ -34445,7 +39372,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 7.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34542,7 +39469,14 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 14000
+          }
+        ]
       },
       "searchText": "2160p remux matches 2160p remux custom format",
       "searchWeight": 0.9,
@@ -34551,7 +39485,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34631,7 +39565,24 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 12000
+          }
+        ]
       },
       "searchText": "2160p web dl matches 2160p web dls custom format",
       "searchWeight": 0.9,
@@ -34640,7 +39591,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34729,7 +39680,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34804,7 +39755,14 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "2160p ultra high definition resolution offering maximum detail and clarity custom format",
       "searchWeight": 0.9,
@@ -34815,7 +39773,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34879,7 +39837,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "360p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -34929,7 +39887,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "3d matches the 3d regex pattern custom format",
       "searchWeight": 0.9,
@@ -34939,7 +39939,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35013,7 +40013,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 3000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 3000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 3000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 3000
+          }
+        ]
       },
       "searchText": "480p web dl matches 480p web dls custom format",
       "searchWeight": 0.9,
@@ -35022,7 +40064,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35087,7 +40129,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35151,7 +40193,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35211,7 +40253,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "540p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35271,7 +40313,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "576p.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35327,7 +40369,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 5000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 5000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 5000
+          }
+        ]
       },
       "searchText": "720p bluray matches 720p blurays that are not remuxes custom format",
       "searchWeight": 0.9,
@@ -35336,7 +40410,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35393,7 +40467,29 @@ export const contentDatabase = {
             "type": "indexer_flag"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 600
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 600
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 600
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 600
+          }
+        ]
       },
       "searchText": "720p golden popcorn matches 720p golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -35403,7 +40499,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35484,7 +40580,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2100
+          }
+        ]
       },
       "searchText": "720p quality tier 1 matches release groups who fall under 720p quality tier 1 custom format",
       "searchWeight": 0.9,
@@ -35496,7 +40624,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35643,7 +40771,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
+        ]
       },
       "searchText": "720p quality tier 2 matches release groups who fall under 720p quality tier 2 custom format",
       "searchWeight": 0.9,
@@ -35655,7 +40815,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -35797,7 +40957,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1900
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1900
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1900
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1900
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1900
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1900
+          }
+        ]
       },
       "searchText": "720p quality tier 3 matches release groups who fall under 720p quality tier 3 custom format",
       "searchWeight": 0.9,
@@ -35809,7 +41001,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -35942,7 +41134,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1800
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1800
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1800
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1800
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1800
+          }
+        ]
       },
       "searchText": "720p quality tier 4 matches release groups who fall under 720p quality tier 4 custom format",
       "searchWeight": 0.9,
@@ -35954,7 +41178,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36136,7 +41360,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1700
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1700
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1700
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1700
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1700
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1700
+          }
+        ]
       },
       "searchText": "720p quality tier 5 matches release groups who fall under 720p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -36148,7 +41404,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36245,7 +41501,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 6000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 6000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 6000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 6000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 6000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 6000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 6000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 6000
+          }
+        ]
       },
       "searchText": "720p web dl matches 720p web dls custom format",
       "searchWeight": 0.9,
@@ -36254,7 +41552,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36310,7 +41608,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 5000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 5000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 5000
+          }
+        ]
       },
       "searchText": "720p webrip matches 720p webrips custom format",
       "searchWeight": 0.9,
@@ -36319,7 +41649,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36379,7 +41709,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36487,6 +41817,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:45:16.007149",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "amzn matches amazon prime web dls negates any encodes custom format",
@@ -36497,7 +41869,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "AMZN.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36636,6 +42008,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-03T02:27:03.531343",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "atvp matches apple tv web dls negates any encodes custom format",
@@ -36646,7 +42060,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "ATVP.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36760,7 +42174,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "av1 matches the av1 regex pattern custom format",
       "searchWeight": 0.9,
@@ -36770,7 +42226,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "AV1.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -36965,6 +42421,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T23:15:56.334239",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
         ]
       },
       "searchText": "atmos missing attempts to match releases which have atmos truehd 7 1 that don t label it correctly custom format",
@@ -36975,7 +42473,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Atmos (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -37132,6 +42630,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T23:15:49.211241",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
         ]
       },
       "searchText": "atmos matches atmos regex pattern custom format",
@@ -37142,7 +42682,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -37242,6 +42782,48 @@ export const contentDatabase = {
             "lastRun": "2025-02-13T13:14:54.830866",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "b w matches the b w and colour regex pattern custom format",
@@ -37253,7 +42835,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "B&W.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -37370,7 +42952,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "BCORE.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -37719,7 +43301,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned groups matches release groups that are banned custom format",
       "searchWeight": 0.9,
@@ -37729,7 +43353,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned Groups.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -37810,7 +43434,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned remux matches otherwise unfavourable remux groups bloated audio tracks fake hdr etc custom format",
       "searchWeight": 0.9,
@@ -37820,7 +43456,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -38265,6 +43901,23 @@ export const contentDatabase = {
             "lastRun": "2025-06-01T13:52:35.810829",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
         ]
       },
       "searchText": "banned web dl x265 custom format",
@@ -38275,7 +43928,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned WEB-DL (x265).yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -38832,7 +44485,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned webrip matches webrip releases that are not from a quality tier custom format",
       "searchWeight": 0.9,
@@ -38842,7 +44527,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -38954,7 +44639,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39027,7 +44712,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
+        ]
       },
       "searchText": "crit matches criterion channel web dls negates any encodes custom format",
       "searchWeight": 0.9,
@@ -39037,7 +44764,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "CRIT.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39168,6 +44895,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-03T16:31:38.572151",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "dsnp matches disney web dls negates any encodes custom format",
@@ -39178,7 +44947,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DSNP.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39339,7 +45108,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
+        ]
       },
       "searchText": "dts hd ma matches dts hd ma regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -39348,7 +45139,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS-HD MA.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39446,7 +45237,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 600
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 600
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 150
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 150
+          }
+        ]
       },
       "searchText": "dts x matches dts x regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -39455,7 +45268,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS-X.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39576,7 +45389,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39652,6 +45465,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-08T22:41:50.874176",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
         ]
       },
       "searchText": "dvd remux a dvd remux is a direct rip of a dvd s content without any re encoding preserving the original video audio and subtitle quality it retains the exact resolution bitrate and format of the dvd ensuring no loss in fidelity compared to the source custom format",
@@ -39663,7 +45518,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DVD Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -39713,7 +45568,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
+        ]
       },
       "searchText": "dvd the dvd format or digital versatile disc is an optical disc storage medium widely used for video audio and data storage it offers a standard capacity of 4 7 gb for single layer discs and up to 8 5 gb for dual layer discs making it suitable for movies software and backups dvds provide a resolution of 720x480 ntsc or 720x576 pal for video and support dolby digital or dts audio for high quality sound they are compatible with standalone dvd players computer drives and gaming consoles offering broad accessibility while requiring a physical disc for playback custom format",
       "searchWeight": 0.9,
@@ -39723,7 +45620,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DVD.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -39824,7 +45721,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Digital +.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -39924,7 +45821,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Digital.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -39974,7 +45871,34 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "dolby vision without fallback matches the dolby vision without fallback regex pattern custom format",
       "searchWeight": 0.9,
@@ -39984,7 +45908,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Vision (Without Fallback).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40034,7 +45958,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "dolby vision matches the dolby vision regex pattern custom format",
       "searchWeight": 0.9,
@@ -40044,7 +46010,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Vision.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40094,7 +46060,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "extras matches the extras regex pattern custom format",
       "searchWeight": 0.9,
@@ -40104,7 +46112,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Extras.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40221,7 +46229,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
+        ]
       },
       "searchText": "flac matches flac regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -40230,7 +46260,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "FLAC.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40292,7 +46322,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free100.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40362,7 +46392,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free25.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40432,7 +46462,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free50.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40502,7 +46532,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free75.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40567,7 +46597,49 @@ export const contentDatabase = {
             "qualityModifier": "brdisk"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "full disc quality match matches full discs using a quality modifier custom format",
       "searchWeight": 0.9,
@@ -40576,7 +46648,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Full Disc (Quality Match).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40702,6 +46774,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-08T22:57:56.281360",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "full disc matches the full disc regex pattern and negates any remuxes encodes custom format",
@@ -40711,7 +46825,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Full Disc.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40821,7 +46935,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hdr matches the hdr regex pattern custom format",
       "searchWeight": 0.9,
@@ -40831,7 +46987,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -40953,7 +47109,14 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          }
+        ]
       },
       "searchText": "hdr10 missing 1080p attempts to match hdr10 in 1080p x265 encodes labelled with x265 custom format",
       "searchWeight": 0.9,
@@ -40963,7 +47126,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10 (Missing) (1080p).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41211,6 +47374,23 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T22:58:21.736014",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          }
         ]
       },
       "searchText": "hdr10 missing attempts to match hdr10 to groups that mislabel their releases this does not work properly in sonarr custom format",
@@ -41221,7 +47401,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10 (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41341,7 +47521,89 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hdr10 matches the hdr10 regex pattern custom format",
       "searchWeight": 0.9,
@@ -41351,7 +47613,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10+.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41447,7 +47709,89 @@ export const contentDatabase = {
             "pattern": "HDR10+"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hdr10 matches the hdr10 regex pattern custom format",
       "searchWeight": 0.9,
@@ -41457,7 +47801,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41567,7 +47911,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hlg matches the hlg regex pattern custom format",
       "searchWeight": 0.9,
@@ -41577,7 +47963,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HLG.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41700,6 +48086,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T04:51:30.887518",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "hmax matches hbo max web dls negates any encodes custom format",
@@ -41710,7 +48138,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41866,6 +48294,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:09:07.037575",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "htsr matches hotstar web dls negates any encodes custom format",
@@ -41876,7 +48346,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HTSR.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -41960,6 +48430,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:29:49.598013",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "hulu matches hulu web dls negates any encodes custom format",
@@ -41970,7 +48482,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HULU.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42109,7 +48621,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IMAX Enhanced.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42175,7 +48687,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42269,7 +48781,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IQIYI.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42363,7 +48875,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "KCW.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42441,7 +48953,19 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "lossless audio 1080p matches any lossless audio track in a 1080p release custom format",
       "searchWeight": 0.9,
@@ -42450,7 +48974,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Lossless Audio (1080p).yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -42515,7 +49039,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 500
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 500
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 500
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 500
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 500
+          }
+        ]
       },
       "searchText": "ma matches movies anywhere web dls negates any encodes custom format",
       "searchWeight": 0.9,
@@ -42525,7 +49091,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "MA.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -42655,6 +49221,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T02:59:11.931629",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "max matches max web dls negates any encodes custom format",
@@ -42665,7 +49273,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "MAX.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -42821,6 +49429,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:05:09.422536",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "nf matches netflix web dls negates any encodes custom format",
@@ -42831,7 +49481,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "NF.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -42993,6 +49643,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:24:08.521814",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "now matches now web dls negates any encodes custom format",
@@ -43003,7 +49695,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "NOW.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43122,7 +49814,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Non Retail HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43215,7 +49907,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not English.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43297,7 +49989,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not Only English (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43372,7 +50064,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not Only English.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43470,6 +50162,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T02:45:41.699916",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "pcok matches peacock web dls negates any encodes custom format",
@@ -43480,7 +50214,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PCOK.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43644,6 +50378,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:11:34.055223",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "pmtp matches paramount web dls negates any encodes custom format",
@@ -43654,7 +50430,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PMTP.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43811,7 +50587,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "pq matches the pq regex pattern custom format",
       "searchWeight": 0.9,
@@ -43821,7 +50639,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PQ.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -43937,6 +50755,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:41:18.535555",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "roku matches roku web dls negates any encodes custom format",
@@ -43947,7 +50807,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "ROKU.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44120,7 +50980,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 80
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 80
+          }
+        ]
       },
       "searchText": "remux tier 1 matches release groups who fall under remux tier 1 custom format",
       "searchWeight": 0.9,
@@ -44130,7 +51002,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44270,7 +51142,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 60
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 60
+          }
+        ]
       },
       "searchText": "remux tier 2 matches release groups who fall under remux tier 2 custom format",
       "searchWeight": 0.9,
@@ -44280,7 +51164,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44404,7 +51288,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 40
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 40
+          }
+        ]
       },
       "searchText": "remux tier 3 matches release groups who fall under remux tier 3 custom format",
       "searchWeight": 0.9,
@@ -44414,7 +51310,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44545,7 +51441,19 @@ export const contentDatabase = {
             "pattern": "ZoroSenpai"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 20
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 20
+          }
+        ]
       },
       "searchText": "remux tier 4 matches release groups who fall under remux tier 4 custom format",
       "searchWeight": 0.9,
@@ -44555,7 +51463,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44652,7 +51560,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "remux matches remux as a codec not a source either h265 or h264 custom format",
       "searchWeight": 0.9,
@@ -44661,7 +51601,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44720,7 +51660,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 6
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 6
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 6
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 6
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 6
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 6
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 6
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 6
+          }
+        ]
       },
       "searchText": "repack1 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch basic level fixes no number suffixes custom format",
       "searchWeight": 0.9,
@@ -44730,7 +51712,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44780,7 +51762,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 7
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 7
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 7
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 7
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 7
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 7
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 7
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 7
+          }
+        ]
       },
       "searchText": "repack2 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch level 2 fixes custom format",
       "searchWeight": 0.9,
@@ -44790,7 +51814,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44840,7 +51864,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 8
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 8
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 8
+          }
+        ]
       },
       "searchText": "repack3 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch level 3 fixes custom format",
       "searchWeight": 0.9,
@@ -44850,7 +51916,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack3.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -44921,7 +51987,29 @@ export const contentDatabase = {
             "type": "resolution"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
+        ]
       },
       "searchText": "sd golden popcorn matches sd golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -44931,7 +52019,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45021,7 +52109,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
+        ]
       },
       "searchText": "sd quality tier 1 matches release groups who fall under sd gppi tier 1 custom format",
       "searchWeight": 0.9,
@@ -45033,7 +52153,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45116,7 +52236,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
+        ]
       },
       "searchText": "sd quality tier 2 matches release groups who fall under sd gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -45128,7 +52280,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45253,7 +52405,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SDR.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45376,6 +52528,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:33:55.371437",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "sho matches showtime web dls negates any encodes custom format",
@@ -45386,7 +52580,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SHO.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45477,6 +52671,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:26:28.890603",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "stan matches stan web dls negates any encodes custom format",
@@ -45487,7 +52723,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "STAN.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45601,7 +52837,49 @@ export const contentDatabase = {
             "releaseType": "season_pack"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 10
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 10
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 10
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 10
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 10
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 10
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 10
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 10
+          }
+        ]
       },
       "searchText": "season pack matches season pack release type on sonarr custom format",
       "searchWeight": 0.9,
@@ -45610,7 +52888,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Season Pack.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -45661,7 +52939,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "sing along custom format",
       "searchWeight": 0.9,
@@ -45671,7 +52991,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Sing Along.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46182,7 +53502,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Special Edition (Banned).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46495,6 +53815,48 @@ export const contentDatabase = {
             "lastRun": "2025-02-26T05:09:12.646645",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          }
         ]
       },
       "searchText": "special edition special editions are modified versions of movies released after the original theatrical version they exist because filmmakers want to present their true vision fix problems or because studios want to make more money you ll see them with names like director s cut extended edition or creative marketing labels like ultimate cut a single film can have multiple special editions as technology improves or different creative perspectives emerge custom format",
@@ -46504,7 +53866,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Special Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46597,7 +53959,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TVING.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46689,7 +54051,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          }
+        ]
       },
       "searchText": "truehd missing attempts to match truehd releases which are not labelled correctly triton epsilon groups custom format",
       "searchWeight": 0.9,
@@ -46698,7 +54082,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TrueHD (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46791,7 +54175,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          }
+        ]
       },
       "searchText": "truehd matches truehd regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -46800,7 +54206,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TrueHD.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -46913,6 +54319,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:32:13.794103",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 12000
+          }
         ]
       },
       "searchText": "uhd bluray missing attempts to match uhd bluray as a source when not included in the release title custom format",
@@ -46923,7 +54336,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHD Bluray (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47072,6 +54485,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T08:53:49.334557",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 12000
+          }
         ]
       },
       "searchText": "uhd bluray uhd blu ray is a digital optical disc format released in 2016 it stores 66gb on triple layer discs or 100gb on quad layer discs compared to standard blu ray s 25gb 50gb capacity the format delivers 3840x2160 4k resolution video using hevc h 265 encoding at bitrates up to 128mbps all uhd blu rays include hdr10 support with some releases adding dolby vision or hdr10 the format uses the bt 2020 color space and 10 bit color depth while supporting audio formats like dolby atmos dts x dts hd ma and dolby truehd uhd blu ray players require hdmi 2 0a and hdcp 2 2 compliant displays to show 4k hdr content custom format",
@@ -47082,7 +54502,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHD Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47140,7 +54560,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "uhdbits matches patterns unique to the uhdbits indexer needed to remove remux based releases due to bad parsing custom format",
       "searchWeight": 0.9,
@@ -47150,7 +54592,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHDBits.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47293,7 +54735,29 @@ export const contentDatabase = {
             "pattern": "TrueHD (Missing Groups)"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 50
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 50
+          }
+        ]
       },
       "searchText": "unknown lossless audio matches uhd blu rays remux encode that don t include a named audio track since all uhd blu rays include lossless audio it s safe to assume that some lossless audio track does exist and just isn t labelled custom format",
       "searchWeight": 0.9,
@@ -47302,7 +54766,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Unknown Lossless Audio.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47384,7 +54848,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "upscaled matches the upscaled regex pattern custom format",
       "searchWeight": 0.9,
@@ -47394,7 +54900,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Upscaled.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47513,7 +55019,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VIKI.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47607,7 +55113,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VIU.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47658,7 +55164,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "vp9 matches the vp9 regex pattern custom format",
       "searchWeight": 0.9,
@@ -47668,7 +55216,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VP9.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47727,7 +55275,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "vvc matches the vvc regex pattern custom format",
       "searchWeight": 0.9,
@@ -47737,7 +55327,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VVC.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47838,7 +55428,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WAVVE.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -47903,7 +55493,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 80
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 80
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 80
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 80
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 80
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 80
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 80
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 80
+          }
+        ]
       },
       "searchText": "web dl tier 1 matches release groups who fall under web dl tier 1 custom format",
       "searchWeight": 0.9,
@@ -47913,7 +55545,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48006,7 +55638,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 60
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 60
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 60
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 60
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 60
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 60
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 60
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 60
+          }
+        ]
       },
       "searchText": "web dl tier 2 matches release groups who fall under web dl tier 2 custom format",
       "searchWeight": 0.9,
@@ -48016,7 +55690,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48203,7 +55877,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 40
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 40
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 40
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 40
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 40
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 40
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 40
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 40
+          }
+        ]
       },
       "searchText": "web dl tier 3 matches release groups who fall under web dl tier 3 custom format",
       "searchWeight": 0.9,
@@ -48213,7 +55929,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48325,7 +56041,49 @@ export const contentDatabase = {
             "pattern": "LAZY"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 20
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 20
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 20
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 20
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 20
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 20
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 20
+          }
+        ]
       },
       "searchText": "web dl tier 4 matches release groups who fall under web dl tier 4 custom format",
       "searchWeight": 0.9,
@@ -48335,7 +56093,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48448,7 +56206,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48541,7 +56299,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WeTV.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48600,7 +56358,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Xvid.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -48656,7 +56414,49 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "h265 matches h265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -48665,7 +56465,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "h265.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49364,7 +57164,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "iT (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49486,6 +57286,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:49:21.811162",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "it matches itunes web dls negates any encodes custom format",
@@ -49496,7 +57338,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "iT.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49625,7 +57467,24 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x264 2160p matches x264 regex pattern only when 2160p is also found custom format",
       "searchWeight": 0.9,
@@ -49634,7 +57493,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x264 (2160p).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49723,7 +57582,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x264.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49795,7 +57654,14 @@ export const contentDatabase = {
             "source": "bluray"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -9000
+          }
+        ]
       },
       "searchText": "x265 bluray matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -49804,7 +57670,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (Bluray).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -49924,6 +57790,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:03:52.278761",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "x265 missing attempts to match 2160p x265 encodes that aren t labelled with any codec custom format",
@@ -49933,7 +57806,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -50022,7 +57895,14 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x265 web matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -50031,7 +57911,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (WEB).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -50104,7 +57984,44 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x265 matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -50113,7 +58030,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -53363,7 +61280,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Balanced.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -57920,7 +65837,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Quality (HDR).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -62287,7 +70204,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -65473,7 +73390,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -70342,7 +78259,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Balanced.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -75999,7 +83916,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -79268,7 +87185,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -82507,7 +90424,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "720p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -82568,7 +90485,7 @@ export const contentDatabase = {
         "misc"
       ],
       "filename": "misc.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -82630,7 +90547,7 @@ export const contentDatabase = {
         "naming"
       ],
       "filename": "naming.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -82939,7 +90856,7 @@ export const contentDatabase = {
         "qualitydefinitions"
       ],
       "filename": "quality_definitions.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -83068,7 +90985,7 @@ export const contentDatabase = {
         "philosophy"
       ],
       "filename": "RGP.md",
-      "lastModified": "2025-08-09T07:00:00.680Z"
+      "lastModified": "2025-08-10T08:24:54.727Z"
     },
     {
       "id": "wiki-edtion-philosophy",
@@ -83242,7 +91159,7 @@ export const contentDatabase = {
         "extras"
       ],
       "filename": "edtion-philosophy.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     {
       "id": "wiki-eei",
@@ -83946,7 +91863,7 @@ export const contentDatabase = {
         "encode"
       ],
       "filename": "eei.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     {
       "id": "wiki-faq",
@@ -84011,7 +91928,7 @@ export const contentDatabase = {
         "faq"
       ],
       "filename": "faq.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     {
       "id": "wiki-gppi",
@@ -84117,7 +92034,7 @@ export const contentDatabase = {
         "encode"
       ],
       "filename": "gppi.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     {
       "id": "wiki-profilarr-casaos",
@@ -84319,7 +92236,7 @@ export const contentDatabase = {
         "containers"
       ],
       "filename": "profilarr-casaos.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     {
       "id": "devlogs-rebirth",
@@ -84422,7 +92339,7 @@ export const contentDatabase = {
         "milestone"
       ],
       "filename": "rebirth.md",
-      "lastModified": "2025-08-09T07:00:00.661Z"
+      "lastModified": "2025-08-10T08:24:54.711Z"
     },
     {
       "id": "getting-started-welcome",
@@ -84629,7 +92546,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -84705,7 +92622,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "3l s 3l b regex pattern",
       "searchWeight": 0.8,
@@ -84715,7 +92644,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "3L.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -84774,7 +92703,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "4k4u matches the release group 4k4u only if it is preceded by the start of the string a whitespace character s a period or a hyphen followed by a word boundary b ensuring it ends cleanly without being part of a longer word s 4k4u b regex pattern",
       "searchWeight": 0.8,
@@ -84784,7 +92725,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "4K4U.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -84843,7 +92784,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "4kdvs matches 4kdvs when preceded by whitespace a hyphen or dot s 4kdvs b regex pattern",
       "searchWeight": 0.8,
@@ -84853,7 +92807,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "4KDVS.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -84922,7 +92876,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "7.1 Surround.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -84982,7 +92936,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "9volt.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85025,7 +92979,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "aaauhd s aaauhd b regex pattern",
       "searchWeight": 0.8,
@@ -85035,7 +93002,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AAAUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85094,7 +93061,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AAC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85144,7 +93111,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "abbie s abbie b regex pattern",
       "searchWeight": 0.8,
@@ -85154,7 +93143,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ABBIE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85223,7 +93212,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85282,7 +93271,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "ade s ade b regex pattern",
       "searchWeight": 0.8,
@@ -85292,7 +93294,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ADE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85343,7 +93345,51 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "ajp69 s ajp69 b regex pattern",
       "searchWeight": 0.8,
@@ -85353,7 +93399,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AJP69.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85414,7 +93460,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ANE.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85473,7 +93519,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "aoc banned for excessive audio streams s aoc b regex pattern",
       "searchWeight": 0.8,
@@ -85483,7 +93541,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AOC.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85536,7 +93594,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AOmundson.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85579,7 +93637,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "apex s apex b regex pattern",
       "searchWeight": 0.8,
@@ -85589,7 +93669,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "APEX.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85648,7 +93728,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "aroma banned for retagging s aroma b regex pattern",
       "searchWeight": 0.8,
@@ -85658,7 +93750,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AROMA.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85762,7 +93854,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AV1.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85821,7 +93913,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "aviator s aviator b regex pattern",
       "searchWeight": 0.8,
@@ -85831,7 +93936,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "AViATOR.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -85882,7 +93987,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "absinth s absinth b regex pattern",
       "searchWeight": 0.8,
@@ -85892,7 +94010,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Absinth.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86042,7 +94160,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Amazon Prime.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86200,7 +94318,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Apple TV+.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86268,7 +94386,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Arid.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86337,7 +94455,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Asakura.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86464,7 +94582,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -86683,7 +94801,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "B&W.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -86759,7 +94877,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced Tier 1",
+            "slug": "1080p-balanced-tier-1",
+            "description": "Matches release groups who fall under 1080p Balanced Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ],
+            "conditionCount": 3
+          },
+          {
+            "title": "2160p Balanced Tier 2",
+            "slug": "2160p-balanced-tier-2",
+            "description": "Matches release groups who fall under 2160p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "bhdstudio s bhdstudio b regex pattern",
       "searchWeight": 0.8,
@@ -86769,7 +94911,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BHDStudio.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -86820,7 +94962,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "bluebird s bluebird b regex pattern",
       "searchWeight": 0.8,
@@ -86830,7 +94985,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLUEBIRD.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -86881,7 +95036,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "bluranium s bluranium b regex pattern",
       "searchWeight": 0.8,
@@ -86891,7 +95058,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLURANiUM.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -86934,7 +95101,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "blutonium s blutonium b regex pattern",
       "searchWeight": 0.8,
@@ -86944,7 +95133,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BLUTONiUM.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -86996,7 +95185,53 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "bmf s bmf b regex pattern",
       "searchWeight": 0.8,
@@ -87007,7 +95242,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BMF.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87058,7 +95293,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "bols banned for retagging s bols b regex pattern",
       "searchWeight": 0.8,
@@ -87068,7 +95315,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BOLS.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87120,7 +95367,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "boredor s boredor b regex pattern",
       "searchWeight": 0.8,
@@ -87130,7 +95390,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BOREDOR.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87181,7 +95441,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "bstd s bstd b regex pattern",
       "searchWeight": 0.8,
@@ -87191,7 +95464,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BSTD.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87339,7 +95612,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BTN Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87397,7 +95670,39 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "btn s btn b regex pattern",
       "searchWeight": 0.8,
@@ -87407,7 +95712,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BTN.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87458,7 +95763,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "bv s bv b regex pattern",
       "searchWeight": 0.8,
@@ -87468,7 +95797,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BV.yml",
-      "lastModified": "2025-08-09T07:00:00.663Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87519,7 +95848,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "byndr s byndr b regex pattern",
       "searchWeight": 0.8,
@@ -87529,7 +95870,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BYNDR.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87734,7 +96075,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Basic HDR Formats.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -87792,7 +96133,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "beitai s beitai b regex pattern",
       "searchWeight": 0.8,
@@ -87802,7 +96156,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BeiTai.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88265,7 +96619,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Better Theatricals.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88344,7 +96698,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "beyondhd banned due to only doing full discs s beyondhd b regex pattern",
       "searchWeight": 0.8,
@@ -88354,7 +96720,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BeyondHD.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88422,7 +96788,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "bitor banned for fake dv hdr layer s bitor b regex pattern",
       "searchWeight": 0.8,
@@ -88432,7 +96810,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BiTOR.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88492,7 +96870,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "bizkit s bizkit b regex pattern",
       "searchWeight": 0.8,
@@ -88502,7 +96892,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BiZKiT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88555,7 +96945,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BlurayDesuYo.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88598,7 +96988,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "blzt s blzt b regex pattern",
       "searchWeight": 0.8,
@@ -88608,7 +97011,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "BlzT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88693,7 +97096,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bracketed Year.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88753,7 +97156,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bravia Core.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88805,7 +97208,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Bunny-Apocalypse.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88858,7 +97261,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CBT.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88917,7 +97320,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "chaos s chaos b regex pattern",
       "searchWeight": 0.8,
@@ -88927,7 +97343,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CHAOS.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -88978,7 +97394,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "chd s chd b regex pattern",
       "searchWeight": 0.8,
@@ -88988,7 +97417,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CHD.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89039,7 +97468,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "cj s cj b regex pattern",
       "searchWeight": 0.8,
@@ -89049,7 +97502,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CJ.yml",
-      "lastModified": "2025-08-09T07:00:00.664Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89100,7 +97553,20 @@ export const contentDatabase = {
           "Release Group",
           "Anime"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "cmct s cmct b regex pattern",
       "searchWeight": 0.8,
@@ -89110,7 +97576,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CMCT.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89205,7 +97671,29 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "cmrg prolific web dl group s cm a r io g b regex pattern",
       "searchWeight": 0.8,
@@ -89215,7 +97703,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CMRG.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89274,7 +97762,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "creative24 banned for bloated garbage s creative24 b regex pattern",
       "searchWeight": 0.8,
@@ -89284,7 +97784,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CREATiVE24.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89327,7 +97827,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "crfw s crfw b regex pattern",
       "searchWeight": 0.8,
@@ -89337,7 +97859,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRFW.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89396,7 +97918,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "crx s crx b regex pattern",
       "searchWeight": 0.8,
@@ -89406,7 +97952,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRX.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.713Z",
       "commitLog": {
         "commits": [
           {
@@ -89457,7 +98003,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "crisc s crisc b regex pattern",
       "searchWeight": 0.8,
@@ -89467,7 +98049,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CRiSC.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89528,7 +98110,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CTR.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89597,7 +98179,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Cait-Sidhe.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89650,7 +98232,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Chihiro.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89693,7 +98275,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "chotab s chotab b regex pattern",
       "searchWeight": 0.8,
@@ -89703,7 +98332,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Chotab.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89754,7 +98383,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "cinephiles s cinephiles b regex pattern",
       "searchWeight": 0.8,
@@ -89764,7 +98405,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CiNEPHiLES.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89807,7 +98448,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "cinefeel matches cinefeel when preceded by whitespace a hyphen or dot s cinefeel b regex pattern",
       "searchWeight": 0.8,
@@ -89817,7 +98470,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Cinefeel.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -89870,7 +98523,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CoalGirls.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90027,7 +98680,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Colourisation.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90087,7 +98740,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Commie.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90204,7 +98857,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "iT (Missing)",
+            "slug": "it-missing",
+            "description": "Matches 'iTunes' WEB-DLs that are not labelled correctly. Matches when its not from another streaming service and comes from an iPT release group: EVO or CMRG",
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ],
+            "conditionCount": 16
+          }
+        ]
       },
       "searchText": "criterion channel the criterion channel is a subscription based streaming service launched on april 8 2019 by the criterion collection available in the united states and canada it features a rich library of films including criterion collection releases with special features curated playlists temporarily licensed titles and original content such as academic overviews and introductions the channel also showcases janus owned titles not yet available on physical media and maintains a collaborative relationship with warner bros discovery s max platform perfect for cinephiles the service brings a curated cinematic experience to the digital space b crit b regex pattern",
       "searchWeight": 0.8,
@@ -90214,7 +98879,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Criterion Channel.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90272,7 +98937,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ctrlhd s ctrlhd b regex pattern",
       "searchWeight": 0.8,
@@ -90282,7 +98994,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "CtrlHD.yml",
-      "lastModified": "2025-08-09T07:00:00.665Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90333,7 +99045,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "d z0n3 s d z0n3 b regex pattern",
       "searchWeight": 0.8,
@@ -90343,7 +99102,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "D-Z0N3.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90394,7 +99153,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "deflate s deflate b regex pattern",
       "searchWeight": 0.8,
@@ -90404,7 +99176,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DEFLATE.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90455,7 +99227,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "depth s depth b regex pattern",
       "searchWeight": 0.8,
@@ -90465,7 +99250,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DEPTH.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90516,7 +99301,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 1",
+            "slug": "720p-quality-tier-1",
+            "description": "Matches release groups who fall under 720p Quality Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "don s don b regex pattern",
       "searchWeight": 0.8,
@@ -90526,7 +99358,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DON.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90585,7 +99417,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD HRA ES.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90643,7 +99475,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD MA.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90701,7 +99533,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-HD.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90803,7 +99635,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS-X.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90877,7 +99709,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DTS.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90937,7 +99769,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DarQ.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -90996,7 +99828,55 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 1",
+            "slug": "sd-quality-tier-1",
+            "description": "Matches release groups who fall under SD GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "dariush s dariush b regex pattern",
       "searchWeight": 0.8,
@@ -91006,7 +99886,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dariush.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91067,7 +99947,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dekinai.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91110,7 +99990,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "depraved banned for fake dv hdr layer s depraved b regex pattern",
       "searchWeight": 0.8,
@@ -91120,7 +100012,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "DepraveD.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91286,7 +100178,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Disney+.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91354,7 +100246,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Doki.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91421,7 +100313,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Digital.yml",
-      "lastModified": "2025-08-09T07:00:00.666Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91572,7 +100464,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Vision (Without Fallback).yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.714Z",
       "commitLog": {
         "commits": [
           {
@@ -91807,7 +100699,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dolby Vision.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -91876,7 +100768,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Drag.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92089,7 +100981,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Dual Audio.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92139,7 +101031,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "e n d s e n d b regex pattern",
       "searchWeight": 0.8,
@@ -92149,7 +101077,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "E.N.D.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92200,7 +101128,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "e1 s e1 b regex pattern",
       "searchWeight": 0.8,
@@ -92210,7 +101162,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "E1.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92261,7 +101213,21 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ea s ea b regex pattern",
       "searchWeight": 0.8,
@@ -92271,7 +101237,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EA.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92322,7 +101288,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "edph s edph b regex pattern",
       "searchWeight": 0.8,
@@ -92332,7 +101345,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EDPH.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92383,7 +101396,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "emerald s emerald b regex pattern",
       "searchWeight": 0.8,
@@ -92393,7 +101419,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EMERALD.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92444,7 +101470,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "epsilon s epsilon b regex pattern",
       "searchWeight": 0.8,
@@ -92454,7 +101492,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EPSiLON.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92497,7 +101535,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "esir s esir b regex pattern",
       "searchWeight": 0.8,
@@ -92507,7 +101592,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ESiR.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92612,7 +101697,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EVO.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92671,7 +101756,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "excision s excision b regex pattern",
       "searchWeight": 0.8,
@@ -92681,7 +101790,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EXCiSION.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92742,7 +101851,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EXP.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92801,7 +101910,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 1",
+            "slug": "1080p-quality-tier-1",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "720p Quality Tier 1",
+            "slug": "720p-quality-tier-1",
+            "description": "Matches release groups who fall under 720p Quality Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ebp s ebp b regex pattern",
       "searchWeight": 0.8,
@@ -92811,7 +101956,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "EbP.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92872,7 +102017,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Erai-Raws.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -92925,7 +102070,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Exiled-Destiny.yml",
-      "lastModified": "2025-08-09T07:00:00.667Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93022,7 +102167,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Extended Clip.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93127,7 +102272,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Extras.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93221,7 +102366,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FFF.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93280,7 +102425,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "fgt banned for retagging s fgt b regex pattern",
       "searchWeight": 0.8,
@@ -93290,7 +102447,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FGT.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93350,7 +102507,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLAC.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93400,7 +102557,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "flame s flame b regex pattern",
       "searchWeight": 0.8,
@@ -93410,7 +102580,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLAME.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93461,7 +102631,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 1",
+            "slug": "web-dl-tier-1",
+            "description": "Matches release groups who fall under WEB-DL Tier 1",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "flux s flux b regex pattern",
       "searchWeight": 0.8,
@@ -93471,7 +102663,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FLUX.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93530,7 +102722,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "frds s frds b regex pattern",
       "searchWeight": 0.8,
@@ -93540,7 +102745,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FRDS.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93591,7 +102796,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ftw hd s ftw hd b regex pattern",
       "searchWeight": 0.8,
@@ -93601,7 +102830,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FTW-HD.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93652,7 +102881,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "filmhd s filmhd b regex pattern",
       "searchWeight": 0.8,
@@ -93662,7 +102915,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FilmHD.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.715Z",
       "commitLog": {
         "commits": [
           {
@@ -93723,7 +102976,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Final8.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -93766,7 +103019,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "flights banned for fake dv hdr layer s flights b regex pattern",
       "searchWeight": 0.8,
@@ -93776,7 +103041,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Flights.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -93838,7 +103103,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Flugel.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -93881,7 +103146,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "form s form b regex pattern",
       "searchWeight": 0.8,
@@ -93891,7 +103192,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FoRM.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -93942,7 +103243,41 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "framestor s framestor b regex pattern",
       "searchWeight": 0.8,
@@ -93952,7 +103287,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "FraMeSToR.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94115,7 +103450,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Full Disc.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94165,7 +103500,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "galaxy s galaxy b regex pattern",
       "searchWeight": 0.8,
@@ -94175,7 +103534,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GALAXY.yml",
-      "lastModified": "2025-08-09T07:00:00.668Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94236,7 +103595,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GNOME.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94289,7 +103648,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GRiMM.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94332,7 +103691,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "gs88 s gs88 b regex pattern",
       "searchWeight": 0.8,
@@ -94342,7 +103725,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GS88.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94393,7 +103776,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "guhzer s guhzer b regex pattern",
       "searchWeight": 0.8,
@@ -94403,7 +103799,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "GUHZER.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94454,7 +103850,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "geek s geek b regex pattern",
       "searchWeight": 0.8,
@@ -94464,7 +103896,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Geek.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94516,7 +103948,43 @@ export const contentDatabase = {
           "Bluray",
           "DVD"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 2",
+            "slug": "sd-quality-tier-2",
+            "description": "Matches release groups who fall under SD GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 2
+          }
+        ]
       },
       "searchText": "handjob s handjob b regex pattern",
       "searchWeight": 0.8,
@@ -94527,7 +103995,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HANDJOB.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94692,7 +104160,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HBO Max Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94865,7 +104333,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HBO Max.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94924,7 +104392,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hd77 s hd77 b regex pattern",
       "searchWeight": 0.8,
@@ -94934,7 +104415,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HD77.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -94985,7 +104466,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hdchina s hdchina b regex pattern",
       "searchWeight": 0.8,
@@ -94995,7 +104489,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDChina.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95046,7 +104540,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hdmaniacs s hdmaniacs b regex pattern",
       "searchWeight": 0.8,
@@ -95056,7 +104586,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDMaNiAcS.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95268,7 +104798,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95387,7 +104917,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR10 (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95668,7 +105198,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDR10.yml",
-      "lastModified": "2025-08-09T07:00:00.669Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95726,7 +105256,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "hds s hds b regex pattern",
       "searchWeight": 0.8,
@@ -95736,7 +105278,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDS.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95787,7 +105329,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hdmux s hdmux b regex pattern",
       "searchWeight": 0.8,
@@ -95797,7 +105352,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HDmux.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -95917,7 +105472,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HEVC.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -96000,7 +105555,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "hhweb s hhweb b regex pattern",
       "searchWeight": 0.8,
@@ -96010,7 +105587,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HHWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.716Z",
       "commitLog": {
         "commits": [
           {
@@ -96081,7 +105658,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HLG.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96124,7 +105701,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "hone s hone b regex pattern",
       "searchWeight": 0.8,
@@ -96134,7 +105733,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HONE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96185,7 +105784,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "hqmux s hqmux b regex pattern",
       "searchWeight": 0.8,
@@ -96195,7 +105807,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HQMUX.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96246,7 +105858,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "huntjr s huntjr b regex pattern",
       "searchWeight": 0.8,
@@ -96256,7 +105881,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HUNTJR.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96307,7 +105932,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "hares s hares b regex pattern",
       "searchWeight": 0.8,
@@ -96317,7 +105955,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hares.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96368,7 +106006,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hidt s hidt b regex pattern",
       "searchWeight": 0.8,
@@ -96378,7 +106052,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiDt.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96429,7 +106103,53 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "hifi s hifi b regex pattern",
       "searchWeight": 0.8,
@@ -96439,7 +106159,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiFi.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96490,7 +106210,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hip s hip b regex pattern",
       "searchWeight": 0.8,
@@ -96500,7 +106244,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HiP.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96561,7 +106305,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HorribleSubs.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96614,7 +106358,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hotstar.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96711,7 +106455,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Hulu.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96778,7 +106522,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "hypstu s hypstu b regex pattern",
       "searchWeight": 0.8,
@@ -96788,7 +106545,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "HypStu.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96839,7 +106596,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "iamable s iamable b regex pattern",
       "searchWeight": 0.8,
@@ -96849,7 +106619,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IAMABLE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96900,7 +106670,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ide s ide b regex pattern",
       "searchWeight": 0.8,
@@ -96910,7 +106716,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IDE.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -96971,7 +106777,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IK.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97159,7 +106965,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IMAX Enhanced.yml",
-      "lastModified": "2025-08-09T07:00:00.670Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97278,7 +107084,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "IMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97338,7 +107144,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Iznjie Biznjie.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97381,7 +107187,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "justwatch s justwatch b regex pattern",
       "searchWeight": 0.8,
@@ -97391,7 +107210,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "JustWatch.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97442,7 +107261,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "kan3d2m s kan3d2m b regex pattern",
       "searchWeight": 0.8,
@@ -97452,7 +107284,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KAN3D2M.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97503,7 +107335,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "kashmir s kashmir b regex pattern",
       "searchWeight": 0.8,
@@ -97513,7 +107381,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KASHMiR.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97564,7 +107432,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "kc banned for ai upscales s kc b regex pattern",
       "searchWeight": 0.8,
@@ -97574,7 +107454,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KC.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97636,7 +107516,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KCW.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97696,7 +107576,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KH.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.717Z",
       "commitLog": {
         "commits": [
           {
@@ -97755,7 +107635,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "knives s knives b regex pattern",
       "searchWeight": 0.8,
@@ -97765,7 +107658,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KNiVES.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -97816,7 +107709,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "kralimarko s kralimarko b regex pattern",
       "searchWeight": 0.8,
@@ -97826,7 +107731,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KRaLiMaRKo.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -97879,7 +107784,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kaleido.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -97932,7 +107837,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kametsu.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -97975,7 +107880,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "kings s kings b regex pattern",
       "searchWeight": 0.8,
@@ -97985,7 +107912,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "KiNGS.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98044,7 +107971,40 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "kitsune s kitsune b regex pattern",
       "searchWeight": 0.8,
@@ -98054,7 +108014,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Kitsune.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98115,7 +108075,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Koten_Gars.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98158,7 +108118,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "lama banned for retagging s lama b regex pattern",
       "searchWeight": 0.8,
@@ -98168,7 +108140,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAMA.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98228,7 +108200,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "lazarus s lazarus b regex pattern",
       "searchWeight": 0.8,
@@ -98238,7 +108223,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAZARUS.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98289,7 +108274,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "WEB-DL Tier 4",
+            "slug": "web-dl-tier-4",
+            "description": "Matches release groups who fall under WEB-DL Tier 4",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "lazy matches lazy when preceded by whitespace a hyphen or dot s lazy b regex pattern",
       "searchWeight": 0.8,
@@ -98299,7 +108296,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LAZY.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98342,7 +108339,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned Remux",
+            "slug": "banned-remux",
+            "description": "Matches otherwise unfavourable remux groups - bloated audio tracks, fake HDR, etc.",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 4
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "legi0n s legi0n b regex pattern",
       "searchWeight": 0.8,
@@ -98352,7 +108383,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LEGi0N.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98403,7 +108434,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "lm s lm b regex pattern",
       "searchWeight": 0.8,
@@ -98413,7 +108456,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LM.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98482,7 +108525,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LSt.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98543,7 +108586,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LYS1TH3A.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98596,7 +108639,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LazyRemux.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98639,7 +108682,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ling s ling b regex pattern",
       "searchWeight": 0.8,
@@ -98649,7 +108716,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LiNG.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98700,7 +108767,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "littlebakas s littlebakas b regex pattern",
       "searchWeight": 0.8,
@@ -98710,7 +108790,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LittleBakas.yml",
-      "lastModified": "2025-08-09T07:00:00.671Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98761,7 +108841,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "lord s lord b regex pattern",
       "searchWeight": 0.8,
@@ -98771,7 +108875,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LoRD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98822,7 +108926,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "lolhd s lolhd b regex pattern",
       "searchWeight": 0.8,
@@ -98832,7 +108972,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "LolHD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98883,7 +109023,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "lucifer s lucifer b regex pattern",
       "searchWeight": 0.8,
@@ -98893,7 +109046,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Lucifer.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -98954,7 +109107,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Lulu.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -99013,7 +109166,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "malus s malus b regex pattern",
       "searchWeight": 0.8,
@@ -99023,7 +109188,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MALUS.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -99093,7 +109258,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MTBB.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -99152,7 +109317,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "mteam s mteam b regex pattern",
       "searchWeight": 0.8,
@@ -99162,7 +109363,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MTeam.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.718Z",
       "commitLog": {
         "commits": [
           {
@@ -99213,7 +109414,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "mzabi s mzabi b regex pattern",
       "searchWeight": 0.8,
@@ -99223,7 +109446,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MZABI.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99282,7 +109505,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          }
+        ]
       },
       "searchText": "mainframe s mainframe b regex pattern",
       "searchWeight": 0.8,
@@ -99292,7 +109528,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MainFrame.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99442,7 +109678,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Max Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99608,7 +109844,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Max.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99666,7 +109902,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "mimic s mimic b regex pattern",
       "searchWeight": 0.8,
@@ -99676,7 +109925,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MiMiC.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99756,7 +110005,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "movieman s movieman b regex pattern",
       "searchWeight": 0.8,
@@ -99766,7 +110027,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "MovieMan.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -99978,7 +110239,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Movies Anywhere.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100062,7 +110323,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Mysteria.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100105,7 +110366,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nahom banned for poor quality multi s nahom b regex pattern",
       "searchWeight": 0.8,
@@ -100115,7 +110388,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NAHOM.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100168,7 +110441,64 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "ncmt s ncmt b regex pattern",
       "searchWeight": 0.8,
@@ -100179,7 +110509,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NCmt.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100230,7 +110560,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "nosivid s nosivid b regex pattern",
       "searchWeight": 0.8,
@@ -100240,7 +110592,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NOSiViD.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100299,7 +110651,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "ntg s ntg b regex pattern",
       "searchWeight": 0.8,
@@ -100309,7 +110683,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NTG.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100412,7 +110786,63 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 1",
+            "slug": "web-dl-tier-1",
+            "description": "Matches release groups who fall under WEB-DL Tier 1",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "ntb s ntb b regex pattern",
       "searchWeight": 0.8,
@@ -100422,7 +110852,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NTb.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100507,7 +110937,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Netaro.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100634,7 +111064,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Netflix.yml",
-      "lastModified": "2025-08-09T07:00:00.672Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100701,7 +111131,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nhanc3 banned for low mixed quality releases s nhanc3 b regex pattern",
       "searchWeight": 0.8,
@@ -100711,7 +111153,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NhaNc3.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100754,7 +111196,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "nogroup s nogr ou p b regex pattern",
       "searchWeight": 0.8,
@@ -100764,7 +111218,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NoGroup.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -100932,7 +111386,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Non Retail HDR Formats.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -101038,7 +111492,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Non Retail HDR Groups.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -101132,7 +111586,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Now Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -101185,7 +111639,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Now.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -101228,7 +111682,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "nyhd s nyhd b regex pattern",
       "searchWeight": 0.8,
@@ -101238,7 +111728,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "NyHD.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.719Z",
       "commitLog": {
         "commits": [
           {
@@ -101289,7 +111779,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "oeplus banned for automated encodes s oeplus b regex pattern",
       "searchWeight": 0.8,
@@ -101299,7 +111801,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "OEPlus.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101351,7 +111853,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "origen s origen b regex pattern",
       "searchWeight": 0.8,
@@ -101361,7 +111899,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ORiGEN.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101422,7 +111960,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "OZR.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101491,7 +112029,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Okay-Subs.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101603,7 +112141,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Open Matte.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101653,7 +112191,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "p0w4hd s p0w4hd b regex pattern",
       "searchWeight": 0.8,
@@ -101663,7 +112225,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "P0W4HD.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101722,7 +112284,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PCM.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101782,7 +112344,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PHOCiS.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101841,7 +112403,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PHOENiX.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101884,7 +112446,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "pp s pp b regex pattern",
       "searchWeight": 0.8,
@@ -101894,7 +112468,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PP.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -101965,7 +112539,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PQ.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102008,7 +112582,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "pth s pth b regex pattern",
       "searchWeight": 0.8,
@@ -102018,7 +112605,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTH.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102069,7 +112656,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ptp s ptp b regex pattern",
       "searchWeight": 0.8,
@@ -102079,7 +112678,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTP.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102182,7 +112781,54 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "pter s pter b regex pattern",
       "searchWeight": 0.8,
@@ -102192,7 +112838,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTer.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102313,7 +112959,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PTerWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102441,7 +113087,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Paramount+.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102652,7 +113298,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Peacock TV Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102863,7 +113509,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Peacock TV.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102921,7 +113567,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "penumbra s penumbra b regex pattern",
       "searchWeight": 0.8,
@@ -102931,7 +113601,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Penumbra.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -102982,7 +113652,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "pirates banned for mislabeling web dls as webrips s pirates b regex pattern",
       "searchWeight": 0.8,
@@ -102992,7 +113674,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PiRaTeS.yml",
-      "lastModified": "2025-08-09T07:00:00.673Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103044,7 +113726,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "pmp s pmp b regex pattern",
       "searchWeight": 0.8,
@@ -103054,7 +113748,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PmP.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103123,7 +113817,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Pookie.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103166,7 +113860,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "positive s positive b regex pattern",
       "searchWeight": 0.8,
@@ -103176,7 +113906,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Positive.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103227,7 +113957,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "pussyfoot s pussyfoot b regex pattern",
       "searchWeight": 0.8,
@@ -103237,7 +113980,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "PussyFoot.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103288,7 +114031,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "qoq matches qoq when preceded by whitespace a hyphen or dot s qoq b regex pattern",
       "searchWeight": 0.8,
@@ -103298,7 +114063,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "QOQ.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103351,7 +114116,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Quetzal.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.720Z",
       "commitLog": {
         "commits": [
           {
@@ -103404,7 +114169,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "QxR.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103448,7 +114213,19 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Remux",
+            "slug": "banned-remux",
+            "description": "Matches otherwise unfavourable remux groups - bloated audio tracks, fake HDR, etc.",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "rargb s rargb b regex pattern",
       "searchWeight": 0.8,
@@ -103459,7 +114236,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "RARGB.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103502,7 +114279,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          }
+        ]
       },
       "searchText": "reborn s reborn b regex pattern",
       "searchWeight": 0.8,
@@ -103512,7 +114302,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "REBORN.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103573,7 +114363,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Raizel.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103626,7 +114416,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Rasetsu.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103669,7 +114459,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "request s request b regex pattern",
       "searchWeight": 0.8,
@@ -103679,7 +114482,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ReQuEsT.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103730,7 +114533,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "realhd s realhd b regex pattern",
       "searchWeight": 0.8,
@@ -103740,7 +114556,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ReaLHD.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103791,7 +114607,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "release group missing regex pattern",
       "searchWeight": 0.8,
@@ -103801,7 +114629,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Release Group (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -103896,7 +114724,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104069,7 +114897,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack1.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104287,7 +115115,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack2.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104505,7 +115333,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Repack3.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104648,7 +115476,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Roku.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104715,7 +115543,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 1",
+            "slug": "2160p-quality-tier-1",
+            "description": "Matches release groups who fall under 2160p Quality Tier 1",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sa89 s sa89 b regex pattern",
       "searchWeight": 0.8,
@@ -104725,7 +115600,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SA89.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104786,7 +115661,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SCY.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104897,7 +115772,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SDR.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -104956,7 +115831,19 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "shd banned for retagging s shd b regex pattern",
       "searchWeight": 0.8,
@@ -104966,7 +115853,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SHD.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105047,7 +115934,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "sm737 s sm737 b regex pattern",
       "searchWeight": 0.8,
@@ -105057,7 +115956,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SM737.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105133,7 +116032,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "smahawug s smahawug b regex pattern",
       "searchWeight": 0.8,
@@ -105143,7 +116055,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SMAHAWUG.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105194,7 +116106,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "smurf s smurf b regex pattern",
       "searchWeight": 0.8,
@@ -105204,7 +116138,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SMURF.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105292,7 +116226,31 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sop s sop b regex pattern",
       "searchWeight": 0.8,
@@ -105302,7 +116260,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SOP.yml",
-      "lastModified": "2025-08-09T07:00:00.674Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105361,7 +116319,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "spectacle s spectacle b regex pattern",
       "searchWeight": 0.8,
@@ -105371,7 +116342,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SPECTACLE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105422,7 +116393,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "sphd s sphd b regex pattern",
       "searchWeight": 0.8,
@@ -105432,7 +116416,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SPHD.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105483,7 +116467,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "strikes s strikes b regex pattern",
       "searchWeight": 0.8,
@@ -105493,7 +116490,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "STRiKES.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105544,7 +116541,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "stuttershit s stuttershit b regex pattern",
       "searchWeight": 0.8,
@@ -105554,7 +116563,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "STUTTERSHIT.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105597,7 +116606,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "surcode s surcode b regex pattern",
       "searchWeight": 0.8,
@@ -105607,7 +116629,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SURCODE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.721Z",
       "commitLog": {
         "commits": [
           {
@@ -105658,7 +116680,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "swaggeruhd s swaggeruhd b regex pattern",
       "searchWeight": 0.8,
@@ -105668,7 +116703,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SWAGGERUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -105719,7 +116754,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "swtyblz s swtyblz b regex pattern",
       "searchWeight": 0.8,
@@ -105729,7 +116777,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SWTYBLZ.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -105780,7 +116828,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "sancti s sancti b regex pattern",
       "searchWeight": 0.8,
@@ -105790,7 +116874,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SaNcTi.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -105851,7 +116935,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Saizen.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -105904,7 +116988,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SallySubs.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -105947,7 +117031,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "sasukeduck banned for fake dv hdr layer s sasukeduck b regex pattern",
       "searchWeight": 0.8,
@@ -105957,7 +117053,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SasukeducK.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106009,7 +117105,63 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "sbr s sbr b regex pattern",
       "searchWeight": 0.8,
@@ -106019,7 +117171,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SbR.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106075,7 +117227,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Scene.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106127,7 +117279,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Senjou.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106170,7 +117322,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "shieldbearer banned for ai upscale s shieldbearer b regex pattern",
       "searchWeight": 0.8,
@@ -106180,7 +117344,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ShieldBearer.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106242,7 +117406,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Showtime Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106295,7 +117459,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Showtime.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106338,7 +117502,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "sic s sic b regex pattern",
       "searchWeight": 0.8,
@@ -106348,7 +117534,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiC.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106407,7 +117593,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "sicfoi s sicfoi b regex pattern",
       "searchWeight": 0.8,
@@ -106417,7 +117615,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiCFoI.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106499,7 +117697,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiGLA.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106568,7 +117766,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiGMA.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106627,7 +117825,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "simple s simple b regex pattern",
       "searchWeight": 0.8,
@@ -106637,7 +117859,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SiMPLE.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106725,7 +117947,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Sing Along.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -106775,7 +117997,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "solar s solar b regex pattern",
       "searchWeight": 0.8,
@@ -106785,7 +118020,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SoLaR.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107218,7 +118453,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Special Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107278,7 +118513,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Stan Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.675Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107330,7 +118565,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Stan.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107382,7 +118617,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SubsPlease.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107435,7 +118670,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SubsPlus+.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.722Z",
       "commitLog": {
         "commits": [
           {
@@ -107488,7 +118723,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "SumVision.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107549,7 +118784,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TAoE.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107592,7 +118827,55 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 3",
+            "slug": "720p-quality-tier-3",
+            "description": "Matches release groups who fall under 720p Quality Tier 3",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "SD Quality Tier 1",
+            "slug": "sd-quality-tier-1",
+            "description": "Matches release groups who fall under SD GPPi Tier 1",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "SD",
+              "Quality"
+            ],
+            "conditionCount": 3
+          }
+        ]
       },
       "searchText": "tbb s tbb b regex pattern",
       "searchWeight": 0.8,
@@ -107602,7 +118885,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TBB.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107653,7 +118936,54 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 4",
+            "slug": "720p-quality-tier-4",
+            "description": "Matches release groups who fall under 720p Quality Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "tdd s tdd b regex pattern",
       "searchWeight": 0.8,
@@ -107663,7 +118993,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TDD.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107714,7 +119044,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "tekno3d banned for fake dv hdr layer s tekno3d b regex pattern",
       "searchWeight": 0.8,
@@ -107724,7 +119066,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TEKNO3D.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107776,7 +119118,39 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "tepes s tepes b regex pattern",
       "searchWeight": 0.8,
@@ -107786,7 +119160,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TEPES.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107845,7 +119219,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "terminal s terminal b regex pattern",
       "searchWeight": 0.8,
@@ -107855,7 +119242,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TERMiNAL.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107916,7 +119303,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "THORA.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -107959,7 +119346,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "threesome s threesome b regex pattern",
       "searchWeight": 0.8,
@@ -107969,7 +119369,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "THREESOME.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108028,7 +119428,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "tombcruise s tombcruise b regex pattern",
       "searchWeight": 0.8,
@@ -108038,7 +119451,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TOMBCRUISE.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108089,7 +119502,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "tommy matches tommy when preceded by whitespace a hyphen or dot s tommy b regex pattern",
       "searchWeight": 0.8,
@@ -108099,7 +119534,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TOMMY.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108142,7 +119577,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "triton s triton b regex pattern",
       "searchWeight": 0.8,
@@ -108152,7 +119599,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TRiToN.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108205,7 +119652,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TTGA.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108274,7 +119721,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TVING.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108324,7 +119771,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "tayto s tayto b regex pattern",
       "searchWeight": 0.8,
@@ -108334,7 +119817,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TayTo.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108385,7 +119868,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "telly banned for retagging s telly b regex pattern",
       "searchWeight": 0.8,
@@ -108395,7 +119890,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Telly.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108514,7 +120009,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Theatrical Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108564,7 +120059,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "tnp s tnp b regex pattern",
       "searchWeight": 0.8,
@@ -108574,7 +120082,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TnP.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108625,7 +120133,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "tron s tron b regex pattern",
       "searchWeight": 0.8,
@@ -108635,7 +120156,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Tron.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108694,7 +120215,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TrueHD (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108763,7 +120284,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "TrueHD.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108815,7 +120336,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Tsundere.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108892,7 +120413,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHD Blu-ray.yml",
-      "lastModified": "2025-08-09T07:00:00.676Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -108976,7 +120497,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "UHD Bluray (Missing)",
+            "slug": "uhd-bluray-missing",
+            "description": "Attempts to match UHD Bluray as a source when not included in the release title",
+            "tags": [
+              "2160p",
+              "Storage"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "uhd bluray missing groups match release groups who don t put uhd bluray in their 1080p x265 hdr encodes s legi0n b regex pattern",
       "searchWeight": 0.8,
@@ -108984,7 +120517,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHD Bluray (Missing Groups).yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -109034,7 +120567,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "uhdclubremux s uhdclubremux b regex pattern",
       "searchWeight": 0.8,
@@ -109044,7 +120590,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "UHDCLUBREMUX.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.723Z",
       "commitLog": {
         "commits": [
           {
@@ -109095,7 +120641,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "ultrahdclub s ultrahdclub b regex pattern",
       "searchWeight": 0.8,
@@ -109105,7 +120664,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ULTRAHDCLUB.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109375,7 +120934,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Upscaled.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109443,7 +121002,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "valis s valis b regex pattern",
       "searchWeight": 0.8,
@@ -109453,7 +121025,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VALiS.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109514,7 +121086,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VARYG.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109557,7 +121129,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "vector banned for fake dv hdr layer s vector b regex pattern",
       "searchWeight": 0.8,
@@ -109567,7 +121151,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VECTOR.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109619,7 +121203,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "vlad s vlad b regex pattern",
       "searchWeight": 0.8,
@@ -109629,7 +121237,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VLAD.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109732,7 +121340,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VP9.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109820,7 +121428,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VVC.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109870,7 +121478,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "viethd s viethd b regex pattern",
       "searchWeight": 0.8,
@@ -109880,7 +121524,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VietHD.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -109985,7 +121629,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Viki.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110052,7 +121696,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "visionxpert banned for fake dv hdr layer s visionxpert b regex pattern",
       "searchWeight": 0.8,
@@ -110062,7 +121718,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "VisionXpert.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110124,7 +121780,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Viu.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110185,7 +121841,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Vodes.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110238,7 +121894,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Vyndros.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110281,7 +121937,42 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "2160p Quality Tier 3",
+            "slug": "2160p-quality-tier-3",
+            "description": "Matches release groups who fall under 2160p Quality Tier 3",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 6
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "w4nk3r s w4nk3r b regex pattern",
       "searchWeight": 0.8,
@@ -110291,7 +121982,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "W4NK3R.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110342,7 +122033,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 5",
+            "slug": "2160p-quality-tier-5",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          }
+        ]
       },
       "searchText": "watchable s watchable b regex pattern",
       "searchWeight": 0.8,
@@ -110352,7 +122056,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WATCHABLE.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110413,7 +122117,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WBDP.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110472,7 +122176,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "wming s wming b regex pattern",
       "searchWeight": 0.8,
@@ -110482,7 +122210,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WMING.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110533,7 +122261,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "wou s wou b regex pattern",
       "searchWeight": 0.8,
@@ -110543,7 +122283,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WOU.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110613,7 +122353,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Wavve.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110673,7 +122413,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WeTV.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110723,7 +122463,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "whiterhino s whiterhino b regex pattern",
       "searchWeight": 0.8,
@@ -110733,7 +122486,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WhiteRhino.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110792,7 +122545,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "wiki banned for upscale s wiki b regex pattern",
       "searchWeight": 0.8,
@@ -110802,7 +122567,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WiKi.yml",
-      "lastModified": "2025-08-09T07:00:00.677Z",
+      "lastModified": "2025-08-10T08:24:54.724Z",
       "commitLog": {
         "commits": [
           {
@@ -110862,7 +122627,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 1",
+            "slug": "remux-tier-1",
+            "description": "Matches release groups who fall under Remux Tier 1",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "wildcat s wildcat b regex pattern",
       "searchWeight": 0.8,
@@ -110872,7 +122649,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "WiLDCAT.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -110915,7 +122692,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 3",
+            "slug": "web-dl-tier-3",
+            "description": "Matches release groups who fall under WEB-DL Tier 3",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 17
+          }
+        ]
       },
       "searchText": "xebec s xebec b regex pattern",
       "searchWeight": 0.8,
@@ -110925,7 +122724,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "XEBEC.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111036,7 +122835,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Xvid.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111096,7 +122895,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YAWNiX.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111149,7 +122948,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YELLO.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111192,7 +122991,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "yify matches yify when preceded by whitespace a hyphen or dot s yify b regex pattern",
       "searchWeight": 0.8,
@@ -111202,7 +123013,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YIFY.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111245,7 +123056,19 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "yts matches yts when preceded by whitespace a hyphen or dot s yts mx lt ag b regex pattern",
       "searchWeight": 0.8,
@@ -111255,7 +123078,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YTS.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111308,7 +123131,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "YURI.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111377,7 +123200,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Yuki.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111436,7 +123259,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "zimbo s zimbo b regex pattern",
       "searchWeight": 0.8,
@@ -111446,7 +123293,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZIMBO.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111498,7 +123345,53 @@ export const contentDatabase = {
           "Remux",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "720p Quality Tier 2",
+            "slug": "720p-quality-tier-2",
+            "description": "Matches release groups who fall under 720p Quality Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 11
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 2",
+            "slug": "remux-tier-2",
+            "description": "Matches release groups who fall under Remux Tier 2",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "zq s zq b regex pattern",
       "searchWeight": 0.8,
@@ -111509,7 +123402,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZQ.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111570,7 +123463,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZR.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111629,7 +123522,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "zorosenpai s zorosenpai b regex pattern",
       "searchWeight": 0.8,
@@ -111639,7 +123566,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "ZoroSenpai.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111700,7 +123627,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "Zurako.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111743,7 +123670,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "b0mbardiers s b0mbardiers b regex pattern",
       "searchWeight": 0.8,
@@ -111753,7 +123693,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "b0mbardiers.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111804,7 +123744,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "beast s beast b regex pattern",
       "searchWeight": 0.8,
@@ -111814,7 +123767,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "beAst.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111865,7 +123818,42 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 2",
+            "slug": "1080p-quality-tier-2",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 2",
+            "slug": "2160p-quality-tier-2",
+            "description": "Matches release groups who fall under 2160p Quality Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 5
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "c0ke s c0ke b regex pattern",
       "searchWeight": 0.8,
@@ -111875,7 +123863,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "c0kE.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -111926,7 +123914,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "d3g banned for lq and various encode issues s d3g b regex pattern",
       "searchWeight": 0.8,
@@ -111936,7 +123936,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "d3g.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112006,7 +124006,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "dB.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112065,7 +124065,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 4",
+            "slug": "1080p-quality-tier-4",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 4",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 9
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "de 42 s de 42 b regex pattern",
       "searchWeight": 0.8,
@@ -112075,7 +124099,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "de(42).yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112144,7 +124168,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "deanzel.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112187,7 +124211,41 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 3",
+            "slug": "remux-tier-3",
+            "description": "Matches release groups who fall under Remux Tier 3",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 8
+          }
+        ]
       },
       "searchText": "decibel s decibel b regex pattern",
       "searchWeight": 0.8,
@@ -112197,7 +124255,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "decibeL.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112248,7 +124306,20 @@ export const contentDatabase = {
           "Release Group",
           "Anime"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "dkore s dkore b regex pattern",
       "searchWeight": 0.8,
@@ -112258,7 +124329,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "dkore.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112309,7 +124380,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "edge2020 banned for lq mislabeling and upscale s edge2020 b regex pattern",
       "searchWeight": 0.8,
@@ -112319,7 +124402,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "edge2020.yml",
-      "lastModified": "2025-08-09T07:00:00.678Z",
+      "lastModified": "2025-08-10T08:24:54.725Z",
       "commitLog": {
         "commits": [
           {
@@ -112461,7 +124544,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "h265.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112548,7 +124631,31 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "1080p Balanced Tier 2",
+            "slug": "1080p-balanced-tier-2",
+            "description": "Matches release groups who fall under 1080p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "1080p",
+              "Balanced"
+            ],
+            "conditionCount": 3
+          },
+          {
+            "title": "2160p Balanced Tier 2",
+            "slug": "2160p-balanced-tier-2",
+            "description": "Matches release groups who fall under 2160p Balanced Tier 2",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Balanced"
+            ],
+            "conditionCount": 4
+          }
+        ]
       },
       "searchText": "hallowed s hallowed b regex pattern",
       "searchWeight": 0.8,
@@ -112558,7 +124665,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hallowed.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112627,7 +124734,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hchcsen.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112670,7 +124777,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "hdalx s hdalx b regex pattern",
       "searchWeight": 0.8,
@@ -112680,7 +124811,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "hdalx.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112731,7 +124862,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "icandy s icandy b regex pattern",
       "searchWeight": 0.8,
@@ -112741,7 +124885,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iCandy.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112792,7 +124936,64 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 3",
+            "slug": "1080p-quality-tier-3",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 2",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 10
+          },
+          {
+            "title": "2160p Quality Tier 4",
+            "slug": "2160p-quality-tier-4",
+            "description": "Matches release groups who fall under 2160p Quality Tier 4",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 7
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          },
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "ift s ift b regex pattern",
       "searchWeight": 0.8,
@@ -112802,7 +125003,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iFT.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112853,7 +125054,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "invandraren s invandraren b regex pattern",
       "searchWeight": 0.8,
@@ -112863,7 +125077,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iNVANDRAREN.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -112914,7 +125128,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "ion s ion b regex pattern",
       "searchWeight": 0.8,
@@ -112924,7 +125162,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iON.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113033,7 +125271,19 @@ export const contentDatabase = {
               "error": false
             }
           ]
-        }
+        },
+        "referencedBy": [
+          {
+            "title": "iT (Missing)",
+            "slug": "it-missing",
+            "description": "Matches 'iTunes' WEB-DLs that are not labelled correctly. Matches when its not from another streaming service and comes from an iPT release group: EVO or CMRG",
+            "tags": [
+              "Streaming Service",
+              "WEB-DL"
+            ],
+            "conditionCount": 16
+          }
+        ]
       },
       "searchText": "ipt internals matches evo cmrg needed for the itunes missing cf s cm a r io g evo b regex pattern",
       "searchWeight": 0.8,
@@ -113042,7 +125292,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iPT Internals.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113102,7 +125352,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iQIYI.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113260,7 +125510,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iTunes Rename.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113426,7 +125676,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "iTunes.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113484,7 +125734,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "jennaortegauhd banned for fake dv hdr layer s jennaortega uhd b regex pattern",
       "searchWeight": 0.8,
@@ -113494,7 +125756,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "jennaortegaUHD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113546,7 +125808,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 6",
+            "slug": "2160p-quality-tier-6",
+            "description": "Matches release groups who fall under 2160p Quality Tier 5",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 42
+          }
+        ]
       },
       "searchText": "k00kie s k00kie b regex pattern",
       "searchWeight": 0.8,
@@ -113556,7 +125831,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "k00kie.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113617,7 +125892,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "kmplx.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113670,7 +125945,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "kuchikirukia.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113713,7 +125988,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "luvbb s luvbb b regex pattern",
       "searchWeight": 0.8,
@@ -113723,7 +126022,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "luvBB.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113774,7 +126073,20 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality Tier 7",
+            "slug": "2160p-quality-tier-7",
+            "description": "Matches release groups who fall under 2160p Quality Tier 6",
+            "tags": [
+              "Release Group Tier",
+              "2160p",
+              "Quality"
+            ],
+            "conditionCount": 15
+          }
+        ]
       },
       "searchText": "micius s micius b regex pattern",
       "searchWeight": 0.8,
@@ -113784,7 +126096,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "micius.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113887,7 +126199,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "mkv.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113947,7 +126259,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "monkee.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -113990,7 +126302,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "nmd s nmd b regex pattern",
       "searchWeight": 0.8,
@@ -114000,7 +126348,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "nmd.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -114051,7 +126399,19 @@ export const contentDatabase = {
           "Release Group",
           "Remux"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Remux Tier 4",
+            "slug": "remux-tier-4",
+            "description": "Matches release groups who fall under Remux Tier 4",
+            "tags": [
+              "Release Groups",
+              "Remux"
+            ],
+            "conditionCount": 9
+          }
+        ]
       },
       "searchText": "playbd s playbd b regex pattern",
       "searchWeight": 0.8,
@@ -114061,7 +126421,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playBD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.726Z",
       "commitLog": {
         "commits": [
           {
@@ -114104,7 +126464,43 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "720p Quality Tier 5",
+            "slug": "720p-quality-tier-5",
+            "description": "Matches release groups who fall under 720p Quality Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "720p",
+              "Quality"
+            ],
+            "conditionCount": 16
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "playhd s playhd b regex pattern",
       "searchWeight": 0.8,
@@ -114114,7 +126510,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playHD.yml",
-      "lastModified": "2025-08-09T07:00:00.679Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114165,7 +126561,29 @@ export const contentDatabase = {
           "Release Group",
           "WEB-DL"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned WEB-DL (x265)",
+            "slug": "banned-web-dl-x265",
+            "description": "",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 26
+          },
+          {
+            "title": "WEB-DL Tier 2",
+            "slug": "web-dl-tier-2",
+            "description": "Matches release groups who fall under WEB-DL Tier 2",
+            "tags": [
+              "Release Groups",
+              "WEB-DL"
+            ],
+            "conditionCount": 7
+          }
+        ]
       },
       "searchText": "playweb s playweb b regex pattern",
       "searchWeight": 0.8,
@@ -114175,7 +126593,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "playWEB.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114244,7 +126662,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "pog42.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114287,7 +126705,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "rightsize s rightsize b regex pattern",
       "searchWeight": 0.8,
@@ -114297,7 +126739,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "rightSIZE.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114348,7 +126790,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "rttr s rttr b regex pattern",
       "searchWeight": 0.8,
@@ -114358,7 +126824,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "rttr.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114427,7 +126893,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "sam.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114496,7 +126962,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "smol.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114555,7 +127021,19 @@ export const contentDatabase = {
           "Release Group",
           "Banned"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "Banned Groups",
+            "slug": "banned-groups",
+            "description": "Matches Release Groups that are Banned",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 38
+          }
+        ]
       },
       "searchText": "tarunk9c banned for fake dv hdr layer s tarunk9c b regex pattern",
       "searchWeight": 0.8,
@@ -114565,7 +127043,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "tarunk9c.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114731,7 +127209,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "x264.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114850,7 +127328,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "x265.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -114924,7 +127402,31 @@ export const contentDatabase = {
           "Release Group",
           "Bluray"
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality Tier 5",
+            "slug": "1080p-quality-tier-5",
+            "description": "Matches release groups who fall under 1080p GPPi Tier 5",
+            "tags": [
+              "GPPi",
+              "Release Group Tier",
+              "1080p",
+              "Quality"
+            ],
+            "conditionCount": 48
+          },
+          {
+            "title": "Banned WEBRip",
+            "slug": "banned-webrip",
+            "description": "Matches WEBRip releases that are not from a quality tier",
+            "tags": [
+              "Banned",
+              "Release Group"
+            ],
+            "conditionCount": 72
+          }
+        ]
       },
       "searchText": "xander s xander b regex pattern",
       "searchWeight": 0.8,
@@ -114934,7 +127436,7 @@ export const contentDatabase = {
         "regex"
       ],
       "filename": "xander.yml",
-      "lastModified": "2025-08-09T07:00:00.680Z",
+      "lastModified": "2025-08-10T08:24:54.727Z",
       "commitLog": {
         "commits": [
           {
@@ -115109,6 +127611,33 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3300
+          }
         ]
       },
       "searchText": "1080p balanced tier 1 matches release groups who fall under 1080p balanced tier 1 custom format",
@@ -115120,7 +127649,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Balanced Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.655Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -115335,6 +127864,33 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3200
+          }
         ]
       },
       "searchText": "1080p balanced tier 2 matches release groups who fall under 1080p balanced tier 2 custom format",
@@ -115346,7 +127902,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Balanced Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -115451,7 +128007,29 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p bluray matches 1080p blurays that are not remuxes custom format",
       "searchWeight": 0.9,
@@ -115460,7 +128038,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -115525,7 +128103,19 @@ export const contentDatabase = {
             "type": "indexer_flag"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 800
+          }
+        ]
       },
       "searchText": "1080p golden popcorn matches 1080p golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -115535,7 +128125,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -115623,7 +128213,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 4100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 4100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 4100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 4100
+          }
+        ]
       },
       "searchText": "1080p quality tier 1 matches release groups who fall under 1080p gppi tier 1 custom format",
       "searchWeight": 0.9,
@@ -115635,7 +128247,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.705Z",
       "commitLog": {
         "commits": [
           {
@@ -115758,7 +128370,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 4000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 4000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 4000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 4000
+          }
+        ]
       },
       "searchText": "1080p quality tier 2 matches release groups who fall under 1080p gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -115770,7 +128404,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -115917,7 +128551,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3900
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3900
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3900
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3900
+          }
+        ]
       },
       "searchText": "1080p quality tier 3 matches release groups who fall under 1080p gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -115929,7 +128585,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116045,7 +128701,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3800
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3800
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3800
+          }
+        ]
       },
       "searchText": "1080p quality tier 4 matches release groups who fall under 1080p gppi tier 4 custom format",
       "searchWeight": 0.9,
@@ -116057,7 +128735,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116446,7 +129124,29 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3700
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3700
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3700
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3700
+          }
+        ]
       },
       "searchText": "1080p quality tier 5 matches release groups who fall under 1080p gppi tier 5 custom format",
       "searchWeight": 0.9,
@@ -116458,7 +129158,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116538,7 +129238,19 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 10000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 10000
+          }
+        ]
       },
       "searchText": "1080p remux matches 1080p remux custom format",
       "searchWeight": 0.9,
@@ -116547,7 +129259,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116611,7 +129323,44 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 11000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 11000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 11000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 11000
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 8000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p web dl matches 1080p web dls custom format",
       "searchWeight": 0.9,
@@ -116620,7 +129369,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116684,7 +129433,29 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8000
+          }
+        ]
       },
       "searchText": "1080p webrip matches 1080p webrips custom format",
       "searchWeight": 0.9,
@@ -116693,7 +129464,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116761,7 +129532,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "1080p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -116927,6 +129698,18 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13400
+          }
         ]
       },
       "searchText": "2160p balanced tier 1 matches release groups who fall under 2160p balanced tier 1 custom format",
@@ -116938,7 +129721,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Balanced Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117168,6 +129951,18 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T02:53:37.357699",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13200
+          }
         ]
       },
       "searchText": "2160p balanced tier 2 matches release groups who fall under 2160p balanced tier 2 custom format",
@@ -117179,7 +129974,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Balanced Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117301,7 +130096,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117425,7 +130220,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20200
+          }
+        ]
       },
       "searchText": "2160p quality tier 1 matches release groups who fall under 2160p quality tier 1 custom format",
       "searchWeight": 0.9,
@@ -117436,7 +130238,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117556,7 +130358,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20100
+          }
+        ]
       },
       "searchText": "2160p quality tier 2 matches release groups who fall under 2160p quality tier 2 custom format",
       "searchWeight": 0.9,
@@ -117567,7 +130376,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117694,7 +130503,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20000
+          }
+        ]
       },
       "searchText": "2160p quality tier 3 matches release groups who fall under 2160p quality tier 3 custom format",
       "searchWeight": 0.9,
@@ -117705,7 +130521,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -117839,7 +130655,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 19900
+          }
+        ]
       },
       "searchText": "2160p quality tier 4 matches release groups who fall under 2160p quality tier 4 custom format",
       "searchWeight": 0.9,
@@ -117850,7 +130673,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118005,7 +130828,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 19800
+          }
+        ]
       },
       "searchText": "2160p quality tier 5 matches release groups who fall under 2160p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -118016,7 +130846,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118403,7 +131233,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 13100
+          }
+        ]
       },
       "searchText": "2160p quality tier 6 matches release groups who fall under 2160p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -118414,7 +131251,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 6.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118613,7 +131450,14 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 13000
+          }
+        ]
       },
       "searchText": "2160p quality tier 7 matches release groups who fall under 2160p quality tier 6 custom format",
       "searchWeight": 0.9,
@@ -118624,7 +131468,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Quality Tier 7.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118721,7 +131565,14 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 14000
+          }
+        ]
       },
       "searchText": "2160p remux matches 2160p remux custom format",
       "searchWeight": 0.9,
@@ -118730,7 +131581,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118810,7 +131661,24 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 14000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 13000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 12000
+          }
+        ]
       },
       "searchText": "2160p web dl matches 2160p web dls custom format",
       "searchWeight": 0.9,
@@ -118819,7 +131687,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118908,7 +131776,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -118983,7 +131851,14 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "2160p ultra high definition resolution offering maximum detail and clarity custom format",
       "searchWeight": 0.9,
@@ -118994,7 +131869,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "2160p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119058,7 +131933,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "360p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119108,7 +131983,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "3d matches the 3d regex pattern custom format",
       "searchWeight": 0.9,
@@ -119118,7 +132035,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "3D.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119192,7 +132109,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 3000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 3000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 3000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 3000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 3000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 3000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 3000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 3000
+          }
+        ]
       },
       "searchText": "480p web dl matches 480p web dls custom format",
       "searchWeight": 0.9,
@@ -119201,7 +132160,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119266,7 +132225,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119330,7 +132289,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "480p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119390,7 +132349,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "540p.yml",
-      "lastModified": "2025-08-09T07:00:00.656Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119450,7 +132409,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "576p.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119506,7 +132465,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 5000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 5000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 5000
+          }
+        ]
       },
       "searchText": "720p bluray matches 720p blurays that are not remuxes custom format",
       "searchWeight": 0.9,
@@ -119515,7 +132506,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119572,7 +132563,29 @@ export const contentDatabase = {
             "type": "indexer_flag"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 600
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 600
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 600
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 600
+          }
+        ]
       },
       "searchText": "720p golden popcorn matches 720p golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -119582,7 +132595,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119663,7 +132676,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2100
+          }
+        ]
       },
       "searchText": "720p quality tier 1 matches release groups who fall under 720p quality tier 1 custom format",
       "searchWeight": 0.9,
@@ -119675,7 +132720,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119822,7 +132867,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
+        ]
       },
       "searchText": "720p quality tier 2 matches release groups who fall under 720p quality tier 2 custom format",
       "searchWeight": 0.9,
@@ -119834,7 +132911,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.706Z",
       "commitLog": {
         "commits": [
           {
@@ -119976,7 +133053,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1900
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1900
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1900
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1900
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1900
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1900
+          }
+        ]
       },
       "searchText": "720p quality tier 3 matches release groups who fall under 720p quality tier 3 custom format",
       "searchWeight": 0.9,
@@ -119988,7 +133097,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120121,7 +133230,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1800
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1800
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1800
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1800
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1800
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1800
+          }
+        ]
       },
       "searchText": "720p quality tier 4 matches release groups who fall under 720p quality tier 4 custom format",
       "searchWeight": 0.9,
@@ -120133,7 +133274,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120315,7 +133456,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 1700
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 1700
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 1700
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 1700
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 1700
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 1700
+          }
+        ]
       },
       "searchText": "720p quality tier 5 matches release groups who fall under 720p quality tier 5 custom format",
       "searchWeight": 0.9,
@@ -120327,7 +133500,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p Quality Tier 5.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120424,7 +133597,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 6000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 6000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 6000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 6000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 6000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 6000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 6000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 6000
+          }
+        ]
       },
       "searchText": "720p web dl matches 720p web dls custom format",
       "searchWeight": 0.9,
@@ -120433,7 +133648,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p WEB-DL.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120489,7 +133704,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 5000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 5000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 5000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 5000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 5000
+          }
+        ]
       },
       "searchText": "720p webrip matches 720p webrips custom format",
       "searchWeight": 0.9,
@@ -120498,7 +133745,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120558,7 +133805,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "720p.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120666,6 +133913,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:45:16.007149",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "amzn matches amazon prime web dls negates any encodes custom format",
@@ -120676,7 +133965,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "AMZN.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120815,6 +134104,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-03T02:27:03.531343",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "atvp matches apple tv web dls negates any encodes custom format",
@@ -120825,7 +134156,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "ATVP.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -120939,7 +134270,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "av1 matches the av1 regex pattern custom format",
       "searchWeight": 0.9,
@@ -120949,7 +134322,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "AV1.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121144,6 +134517,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T23:15:56.334239",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
         ]
       },
       "searchText": "atmos missing attempts to match releases which have atmos truehd 7 1 that don t label it correctly custom format",
@@ -121154,7 +134569,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Atmos (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121311,6 +134726,48 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T23:15:49.211241",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
         ]
       },
       "searchText": "atmos matches atmos regex pattern custom format",
@@ -121321,7 +134778,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Atmos.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121421,6 +134878,48 @@ export const contentDatabase = {
             "lastRun": "2025-02-13T13:14:54.830866",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "b w matches the b w and colour regex pattern custom format",
@@ -121432,7 +134931,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "B&W.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121549,7 +135048,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "BCORE.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121898,7 +135397,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned groups matches release groups that are banned custom format",
       "searchWeight": 0.9,
@@ -121908,7 +135449,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned Groups.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -121989,7 +135530,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned remux matches otherwise unfavourable remux groups bloated audio tracks fake hdr etc custom format",
       "searchWeight": 0.9,
@@ -121999,7 +135552,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -122444,6 +135997,23 @@ export const contentDatabase = {
             "lastRun": "2025-06-01T13:52:35.810829",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
         ]
       },
       "searchText": "banned web dl x265 custom format",
@@ -122454,7 +136024,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned WEB-DL (x265).yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123011,7 +136581,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "banned webrip matches webrip releases that are not from a quality tier custom format",
       "searchWeight": 0.9,
@@ -123021,7 +136623,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Banned WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123133,7 +136735,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123206,7 +136808,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
+        ]
       },
       "searchText": "crit matches criterion channel web dls negates any encodes custom format",
       "searchWeight": 0.9,
@@ -123216,7 +136860,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "CRIT.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123347,6 +136991,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-03T16:31:38.572151",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 400
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
         ]
       },
       "searchText": "dsnp matches disney web dls negates any encodes custom format",
@@ -123357,7 +137043,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DSNP.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123518,7 +137204,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
+        ]
       },
       "searchText": "dts hd ma matches dts hd ma regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -123527,7 +137235,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS-HD MA.yml",
-      "lastModified": "2025-08-09T07:00:00.657Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123625,7 +137333,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 600
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 600
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 150
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 150
+          }
+        ]
       },
       "searchText": "dts x matches dts x regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -123634,7 +137364,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS-X.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123755,7 +137485,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DTS.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123831,6 +137561,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-08T22:41:50.874176",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
         ]
       },
       "searchText": "dvd remux a dvd remux is a direct rip of a dvd s content without any re encoding preserving the original video audio and subtitle quality it retains the exact resolution bitrate and format of the dvd ensuring no loss in fidelity compared to the source custom format",
@@ -123842,7 +137614,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DVD Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.707Z",
       "commitLog": {
         "commits": [
           {
@@ -123892,7 +137664,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 2000
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 2000
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 2000
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 2000
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 2000
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 2000
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 2000
+          }
+        ]
       },
       "searchText": "dvd the dvd format or digital versatile disc is an optical disc storage medium widely used for video audio and data storage it offers a standard capacity of 4 7 gb for single layer discs and up to 8 5 gb for dual layer discs making it suitable for movies software and backups dvds provide a resolution of 720x480 ntsc or 720x576 pal for video and support dolby digital or dts audio for high quality sound they are compatible with standalone dvd players computer drives and gaming consoles offering broad accessibility while requiring a physical disc for playback custom format",
       "searchWeight": 0.9,
@@ -123902,7 +137716,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "DVD.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124010,7 +137824,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Digital.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124060,7 +137874,34 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "dolby vision without fallback matches the dolby vision without fallback regex pattern custom format",
       "searchWeight": 0.9,
@@ -124070,7 +137911,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Vision (Without Fallback).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124120,7 +137961,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "dolby vision matches the dolby vision regex pattern custom format",
       "searchWeight": 0.9,
@@ -124130,7 +138013,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Dolby Vision.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124180,7 +138063,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "extras matches the extras regex pattern custom format",
       "searchWeight": 0.9,
@@ -124190,7 +138115,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Extras.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124307,7 +138232,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          }
+        ]
       },
       "searchText": "flac matches flac regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -124316,7 +138263,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "FLAC.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124378,7 +138325,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free100.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124448,7 +138395,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free25.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124518,7 +138465,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free50.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124588,7 +138535,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Free75.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124653,7 +138600,49 @@ export const contentDatabase = {
             "qualityModifier": "brdisk"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "full disc quality match matches full discs using a quality modifier custom format",
       "searchWeight": 0.9,
@@ -124662,7 +138651,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Full Disc (Quality Match).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124788,6 +138777,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-08T22:57:56.281360",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "full disc matches the full disc regex pattern and negates any remuxes encodes custom format",
@@ -124797,7 +138828,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Full Disc.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -124907,7 +138938,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hdr matches the hdr regex pattern custom format",
       "searchWeight": 0.9,
@@ -124917,7 +138990,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125039,7 +139112,14 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          }
+        ]
       },
       "searchText": "hdr10 missing 1080p attempts to match hdr10 in 1080p x265 encodes labelled with x265 custom format",
       "searchWeight": 0.9,
@@ -125049,7 +139129,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10 (Missing) (1080p).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125297,6 +139377,23 @@ export const contentDatabase = {
             "lastRun": "2025-01-11T22:58:21.736014",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          }
         ]
       },
       "searchText": "hdr10 missing attempts to match hdr10 to groups that mislabel their releases this does not work properly in sonarr custom format",
@@ -125307,7 +139404,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10 (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125434,7 +139531,89 @@ export const contentDatabase = {
             "pattern": "HDR10+"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hdr10 matches the hdr10 regex pattern custom format",
       "searchWeight": 0.9,
@@ -125444,7 +139623,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HDR10.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125554,7 +139733,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "hlg matches the hlg regex pattern custom format",
       "searchWeight": 0.9,
@@ -125564,7 +139785,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HLG.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125687,6 +139908,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T04:51:30.887518",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "hmax matches hbo max web dls negates any encodes custom format",
@@ -125697,7 +139960,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125853,6 +140116,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:09:07.037575",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "htsr matches hotstar web dls negates any encodes custom format",
@@ -125863,7 +140168,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HTSR.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -125947,6 +140252,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:29:49.598013",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "hulu matches hulu web dls negates any encodes custom format",
@@ -125957,7 +140304,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "HULU.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126096,7 +140443,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IMAX Enhanced.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126162,7 +140509,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IMAX.yml",
-      "lastModified": "2025-08-09T07:00:00.658Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126256,7 +140603,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "IQIYI.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126350,7 +140697,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "KCW.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126428,7 +140775,19 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "lossless audio 1080p matches any lossless audio track in a 1080p release custom format",
       "searchWeight": 0.9,
@@ -126437,7 +140796,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Lossless Audio (1080p).yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.708Z",
       "commitLog": {
         "commits": [
           {
@@ -126502,7 +140861,49 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 500
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 500
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 500
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 500
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 500
+          }
+        ]
       },
       "searchText": "ma matches movies anywhere web dls negates any encodes custom format",
       "searchWeight": 0.9,
@@ -126512,7 +140913,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "MA.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -126642,6 +141043,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T02:59:11.931629",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "max matches max web dls negates any encodes custom format",
@@ -126652,7 +141095,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "MAX.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -126808,6 +141251,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:05:09.422536",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "nf matches netflix web dls negates any encodes custom format",
@@ -126818,7 +141303,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "NF.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -126980,6 +141465,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:24:08.521814",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "now matches now web dls negates any encodes custom format",
@@ -126990,7 +141517,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "NOW.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127109,7 +141636,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Non Retail HDR.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127202,7 +141729,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not English.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127284,7 +141811,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not Only English (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127359,7 +141886,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Not Only English.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127457,6 +141984,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T02:45:41.699916",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "pcok matches peacock web dls negates any encodes custom format",
@@ -127467,7 +142036,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PCOK.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127631,6 +142200,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:11:34.055223",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "pmtp matches paramount web dls negates any encodes custom format",
@@ -127641,7 +142252,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PMTP.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127798,7 +142409,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "pq matches the pq regex pattern custom format",
       "searchWeight": 0.9,
@@ -127808,7 +142461,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "PQ.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -127924,6 +142577,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:41:18.535555",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "roku matches roku web dls negates any encodes custom format",
@@ -127934,7 +142629,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "ROKU.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128107,7 +142802,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 80
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 80
+          }
+        ]
       },
       "searchText": "remux tier 1 matches release groups who fall under remux tier 1 custom format",
       "searchWeight": 0.9,
@@ -128117,7 +142824,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128257,7 +142964,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 60
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 60
+          }
+        ]
       },
       "searchText": "remux tier 2 matches release groups who fall under remux tier 2 custom format",
       "searchWeight": 0.9,
@@ -128267,7 +142986,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128391,7 +143110,19 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 40
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 40
+          }
+        ]
       },
       "searchText": "remux tier 3 matches release groups who fall under remux tier 3 custom format",
       "searchWeight": 0.9,
@@ -128401,7 +143132,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128532,7 +143263,19 @@ export const contentDatabase = {
             "pattern": "ZoroSenpai"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 20
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 20
+          }
+        ]
       },
       "searchText": "remux tier 4 matches release groups who fall under remux tier 4 custom format",
       "searchWeight": 0.9,
@@ -128542,7 +143285,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128639,7 +143382,39 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "remux matches remux as a codec not a source either h265 or h264 custom format",
       "searchWeight": 0.9,
@@ -128648,7 +143423,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128707,7 +143482,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 6
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 6
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 6
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 6
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 6
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 6
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 6
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 6
+          }
+        ]
       },
       "searchText": "repack1 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch basic level fixes no number suffixes custom format",
       "searchWeight": 0.9,
@@ -128717,7 +143534,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128767,7 +143584,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 7
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 7
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 7
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 7
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 7
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 7
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 7
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 7
+          }
+        ]
       },
       "searchText": "repack2 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch level 2 fixes custom format",
       "searchWeight": 0.9,
@@ -128777,7 +143636,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128827,7 +143686,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 8
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 8
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 8
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 8
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 8
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 8
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 8
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 8
+          }
+        ]
       },
       "searchText": "repack3 release groups use specific terms to indicate when they re fixing issues in releases in scene releases groups can only occupy one release slot which leads to two different terms proper is used when a different group fixes issues in another group s release repack is used when a group fixes issues in their own release p2p releases are simpler repack is typically used whenever a group releases a fixed version real rerip indicate similar things but their specific meaning origin is unclear this custom format will catch level 3 fixes custom format",
       "searchWeight": 0.9,
@@ -128837,7 +143738,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Repack3.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -128908,7 +143809,29 @@ export const contentDatabase = {
             "type": "resolution"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 400
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 400
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 400
+          }
+        ]
       },
       "searchText": "sd golden popcorn matches sd golden popcorns only works on passthepopcorn custom format",
       "searchWeight": 0.9,
@@ -128918,7 +143841,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Golden Popcorn.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129008,7 +143931,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 300
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
+        ]
       },
       "searchText": "sd quality tier 1 matches release groups who fall under sd gppi tier 1 custom format",
       "searchWeight": 0.9,
@@ -129020,7 +143975,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Quality Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129103,7 +144058,39 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
+        ]
       },
       "searchText": "sd quality tier 2 matches release groups who fall under sd gppi tier 2 custom format",
       "searchWeight": 0.9,
@@ -129115,7 +144102,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SD Quality Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.659Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129240,7 +144227,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SDR.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129363,6 +144350,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:33:55.371437",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "sho matches showtime web dls negates any encodes custom format",
@@ -129373,7 +144402,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "SHO.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129464,6 +144493,48 @@ export const contentDatabase = {
             "lastRun": "2025-04-21T20:26:28.890603",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 200
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 200
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 200
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 200
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 200
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 200
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 200
+          }
         ]
       },
       "searchText": "stan matches stan web dls negates any encodes custom format",
@@ -129474,7 +144545,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "STAN.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129588,7 +144659,49 @@ export const contentDatabase = {
             "releaseType": "season_pack"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 10
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 10
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 10
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 10
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 10
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 10
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 10
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 10
+          }
+        ]
       },
       "searchText": "season pack matches season pack release type on sonarr custom format",
       "searchWeight": 0.9,
@@ -129597,7 +144710,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Season Pack.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.709Z",
       "commitLog": {
         "commits": [
           {
@@ -129648,7 +144761,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "sing along custom format",
       "searchWeight": 0.9,
@@ -129658,7 +144813,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Sing Along.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130169,7 +145324,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Special Edition (Banned).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130482,6 +145637,48 @@ export const contentDatabase = {
             "lastRun": "2025-02-26T05:09:12.646645",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 100
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 100
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 100
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 100
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 100
+          }
         ]
       },
       "searchText": "special edition special editions are modified versions of movies released after the original theatrical version they exist because filmmakers want to present their true vision fix problems or because studios want to make more money you ll see them with names like director s cut extended edition or creative marketing labels like ultimate cut a single film can have multiple special editions as technology improves or different creative perspectives emerge custom format",
@@ -130491,7 +145688,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Special Edition.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130584,7 +145781,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TVING.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130676,7 +145873,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          }
+        ]
       },
       "searchText": "truehd missing attempts to match truehd releases which are not labelled correctly triton epsilon groups custom format",
       "searchWeight": 0.9,
@@ -130685,7 +145904,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TrueHD (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130778,7 +145997,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 500
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 100
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 100
+          }
+        ]
       },
       "searchText": "truehd matches truehd regex pattern and negates any other audio types that might conflict custom format",
       "searchWeight": 0.9,
@@ -130787,7 +146028,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "TrueHD.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -130900,6 +146141,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:32:13.794103",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 12000
+          }
         ]
       },
       "searchText": "uhd bluray missing attempts to match uhd bluray as a source when not included in the release title custom format",
@@ -130910,7 +146158,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHD Bluray (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131059,6 +146307,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-13T08:53:49.334557",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 12000
+          }
         ]
       },
       "searchText": "uhd bluray uhd blu ray is a digital optical disc format released in 2016 it stores 66gb on triple layer discs or 100gb on quad layer discs compared to standard blu ray s 25gb 50gb capacity the format delivers 3840x2160 4k resolution video using hevc h 265 encoding at bitrates up to 128mbps all uhd blu rays include hdr10 support with some releases adding dolby vision or hdr10 the format uses the bt 2020 color space and 10 bit color depth while supporting audio formats like dolby atmos dts x dts hd ma and dolby truehd uhd blu ray players require hdmi 2 0a and hdcp 2 2 compliant displays to show 4k hdr content custom format",
@@ -131069,7 +146324,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHD Bluray.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131127,7 +146382,29 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "uhdbits matches patterns unique to the uhdbits indexer needed to remove remux based releases due to bad parsing custom format",
       "searchWeight": 0.9,
@@ -131137,7 +146414,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "UHDBits.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131280,7 +146557,29 @@ export const contentDatabase = {
             "pattern": "TrueHD (Missing Groups)"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 50
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 50
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 50
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 50
+          }
+        ]
       },
       "searchText": "unknown lossless audio matches uhd blu rays remux encode that don t include a named audio track since all uhd blu rays include lossless audio it s safe to assume that some lossless audio track does exist and just isn t labelled custom format",
       "searchWeight": 0.9,
@@ -131289,7 +146588,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Unknown Lossless Audio.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131371,7 +146670,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "upscaled matches the upscaled regex pattern custom format",
       "searchWeight": 0.9,
@@ -131381,7 +146722,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Upscaled.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131500,7 +146841,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VIKI.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131594,7 +146935,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VIU.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131645,7 +146986,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "vp9 matches the vp9 regex pattern custom format",
       "searchWeight": 0.9,
@@ -131655,7 +147038,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VP9.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131714,7 +147097,49 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "vvc matches the vvc regex pattern custom format",
       "searchWeight": 0.9,
@@ -131724,7 +147149,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "VVC.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131825,7 +147250,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WAVVE.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131890,7 +147315,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 80
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 80
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 80
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 80
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 80
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 80
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 80
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 80
+          }
+        ]
       },
       "searchText": "web dl tier 1 matches release groups who fall under web dl tier 1 custom format",
       "searchWeight": 0.9,
@@ -131900,7 +147367,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 1.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -131993,7 +147460,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 60
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 60
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 60
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 60
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 60
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 60
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 60
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 60
+          }
+        ]
       },
       "searchText": "web dl tier 2 matches release groups who fall under web dl tier 2 custom format",
       "searchWeight": 0.9,
@@ -132003,7 +147512,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 2.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132190,7 +147699,49 @@ export const contentDatabase = {
             "type": "release_group"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 40
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 40
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 40
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 40
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 40
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 40
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 40
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 40
+          }
+        ]
       },
       "searchText": "web dl tier 3 matches release groups who fall under web dl tier 3 custom format",
       "searchWeight": 0.9,
@@ -132200,7 +147751,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 3.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132312,7 +147863,49 @@ export const contentDatabase = {
             "pattern": "LAZY"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 20
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 20
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 20
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 20
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 20
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 20
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 20
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 20
+          }
+        ]
       },
       "searchText": "web dl tier 4 matches release groups who fall under web dl tier 4 custom format",
       "searchWeight": 0.9,
@@ -132322,7 +147915,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEB-DL Tier 4.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132435,7 +148028,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WEBRip.yml",
-      "lastModified": "2025-08-09T07:00:00.660Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132528,7 +148121,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "WeTV.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132587,7 +148180,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "Xvid.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.710Z",
       "commitLog": {
         "commits": [
           {
@@ -132643,7 +148236,49 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "h265 matches h265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -132652,7 +148287,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "h265.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133351,7 +148986,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "iT (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133473,6 +149108,48 @@ export const contentDatabase = {
             "lastRun": "2024-12-06T05:49:21.811162",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": 400
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": 400
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": 400
+          },
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": 300
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": 300
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": 300
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": 300
+          }
         ]
       },
       "searchText": "it matches itunes web dls negates any encodes custom format",
@@ -133483,7 +149160,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "iT.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133612,7 +149289,24 @@ export const contentDatabase = {
             "type": "release_title"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x264 2160p matches x264 regex pattern only when 2160p is also found custom format",
       "searchWeight": 0.9,
@@ -133621,7 +149315,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x264 (2160p).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133710,7 +149404,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x264.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133782,7 +149476,14 @@ export const contentDatabase = {
             "source": "bluray"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -9000
+          }
+        ]
       },
       "searchText": "x265 bluray matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -133791,7 +149492,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (Bluray).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -133911,6 +149612,13 @@ export const contentDatabase = {
             "lastRun": "2025-01-14T09:03:52.278761",
             "passes": true
           }
+        ],
+        "referencedBy": [
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          }
         ]
       },
       "searchText": "x265 missing attempts to match 2160p x265 encodes that aren t labelled with any codec custom format",
@@ -133920,7 +149628,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (Missing).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -134009,7 +149717,14 @@ export const contentDatabase = {
             "type": "source"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Quality (HDR)",
+            "slug": "1080p-quality-hdr",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x265 web matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -134018,7 +149733,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265 (WEB).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -134091,7 +149806,44 @@ export const contentDatabase = {
             "resolution": "2160p"
           }
         ],
-        "tests": []
+        "tests": [],
+        "referencedBy": [
+          {
+            "title": "1080p Balanced",
+            "slug": "1080p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "1080p Quality",
+            "slug": "1080p-quality",
+            "score": -99999
+          },
+          {
+            "title": "1080p Remux",
+            "slug": "1080p-remux",
+            "score": -99999
+          },
+          {
+            "title": "2160p Balanced",
+            "slug": "2160p-balanced",
+            "score": -99999
+          },
+          {
+            "title": "2160p Quality",
+            "slug": "2160p-quality",
+            "score": -99999
+          },
+          {
+            "title": "2160p Remux",
+            "slug": "2160p-remux",
+            "score": -99999
+          },
+          {
+            "title": "720p Quality",
+            "slug": "720p-quality",
+            "score": -99999
+          }
+        ]
       },
       "searchText": "x265 matches x265 regex pattern custom format",
       "searchWeight": 0.9,
@@ -134100,7 +149852,7 @@ export const contentDatabase = {
         "custom-format"
       ],
       "filename": "x265.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -137350,7 +153102,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Balanced.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -141907,7 +157659,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Quality (HDR).yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -146274,7 +162026,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -149460,7 +165212,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "1080p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -154329,7 +170081,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Balanced.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -159986,7 +175738,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -163255,7 +179007,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "2160p Remux.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -166494,7 +182246,7 @@ export const contentDatabase = {
         "quality-profile"
       ],
       "filename": "720p Quality.yml",
-      "lastModified": "2025-08-09T07:00:00.662Z",
+      "lastModified": "2025-08-10T08:24:54.712Z",
       "commitLog": {
         "commits": [
           {
@@ -166555,7 +182307,7 @@ export const contentDatabase = {
         "misc"
       ],
       "filename": "misc.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -166617,7 +182369,7 @@ export const contentDatabase = {
         "naming"
       ],
       "filename": "naming.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -166926,7 +182678,7 @@ export const contentDatabase = {
         "qualitydefinitions"
       ],
       "filename": "quality_definitions.yml",
-      "lastModified": "2025-08-09T07:00:00.661Z",
+      "lastModified": "2025-08-10T08:24:54.711Z",
       "commitLog": {
         "commits": [
           {
@@ -167055,7 +182807,7 @@ export const contentDatabase = {
         "philosophy"
       ],
       "filename": "RGP.md",
-      "lastModified": "2025-08-09T07:00:00.680Z"
+      "lastModified": "2025-08-10T08:24:54.727Z"
     },
     "/wiki/edtion-philosophy": {
       "id": "wiki-edtion-philosophy",
@@ -167229,7 +182981,7 @@ export const contentDatabase = {
         "extras"
       ],
       "filename": "edtion-philosophy.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     "/wiki/eei": {
       "id": "wiki-eei",
@@ -167933,7 +183685,7 @@ export const contentDatabase = {
         "encode"
       ],
       "filename": "eei.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     "/wiki/faq": {
       "id": "wiki-faq",
@@ -167998,7 +183750,7 @@ export const contentDatabase = {
         "faq"
       ],
       "filename": "faq.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     "/wiki/gppi": {
       "id": "wiki-gppi",
@@ -168104,7 +183856,7 @@ export const contentDatabase = {
         "encode"
       ],
       "filename": "gppi.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     "/wiki/profilarr-casaos": {
       "id": "wiki-profilarr-casaos",
@@ -168306,7 +184058,7 @@ export const contentDatabase = {
         "containers"
       ],
       "filename": "profilarr-casaos.md",
-      "lastModified": "2025-08-09T07:00:00.681Z"
+      "lastModified": "2025-08-10T08:24:54.728Z"
     },
     "/devlogs/rebirth": {
       "id": "devlogs-rebirth",
@@ -168409,7 +184161,7 @@ export const contentDatabase = {
         "milestone"
       ],
       "filename": "rebirth.md",
-      "lastModified": "2025-08-09T07:00:00.661Z"
+      "lastModified": "2025-08-10T08:24:54.711Z"
     },
     "/": {
       "id": "getting-started-welcome",
@@ -189876,7 +205628,7 @@ export const contentDatabase = {
     "regex-pattern",
     "wiki"
   ],
-  "lastGenerated": "2025-08-09T07:00:10.814Z",
+  "lastGenerated": "2025-08-10T08:25:04.822Z",
   "version": "2.0.0"
 } as const;
 

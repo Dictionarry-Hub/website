@@ -6,6 +6,7 @@
   import Overview from './overview/overview.svelte';
   import Pattern from './pattern/pattern.svelte';
   import Tests from './tests/tests.svelte';
+  import References from './references/references.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
   import Changelog from '@shared/ui/changelog.svelte';
   
@@ -30,11 +31,21 @@
   $: tests = regexEntry?.data?.tests || '';
   $: testResults = regexEntry?.data?.testResults || null;
   $: regex101 = regexEntry?.data?.regex101 || null;
+  $: referencedBy = regexEntry?.data?.referencedBy || [];
   $: commitLog = regexEntry?.commitLog || null;
+  
+  // Debug: Log what data we're getting
+  $: if (referencedBy.length > 0) {
+    console.log('Referenced by data:', referencedBy);
+  }
   
   // Set up navigation when regex pattern is loaded
   $: if (regexEntry) {
-    const navItems = ['Overview', 'Pattern', 'Tests', 'Changelog', 'Discussion'];
+    const navItems = ['Overview', 'Pattern', 'Tests'];
+    if (referencedBy.length > 0) {
+      navItems.push('Referenced By');
+    }
+    navItems.push('Changelog', 'Discussion');
     setNavigationItems(navItems, currentPath);
   }
   
@@ -61,6 +72,13 @@
       <section id="tests" class="mb-12">
         <Tests {tests} {testResults} {regex101} />
       </section>
+      
+      <!-- Referenced By Section -->
+      {#if referencedBy.length > 0}
+        <section id="referenced-by" class="mb-12">
+          <References {referencedBy} />
+        </section>
+      {/if}
       
       <!-- Changelog Section -->
       <section id="changelog" class="mb-12">
