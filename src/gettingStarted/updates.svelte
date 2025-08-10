@@ -1,21 +1,33 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import VideoPlayer from '@shared/ui/videoPlayer.svelte';
+
+  const seo = getSeoData($router.path);
   
   onMount(() => {
     setNavigationItems([
       'Scenario',
       'Overview',
       'Workflow'
-    ], '#/profilarr-setup/updates');
+    ], '/profilarr-setup/updates');
   });
   
   onDestroy(() => {
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Updates</h1>
@@ -31,7 +43,7 @@
     Overview
   </h2>
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Recall from <a href="#/profilarr-setup/linking" class="text-blue-600 dark:text-blue-400 hover:underline">linking</a> that PCDs are Git repositories. Git is a system that tracks changes to files over time. Every change gets a unique identifier, and the complete history of changes is preserved.
+    Recall from <a href="/profilarr-setup/linking" class="text-blue-600 dark:text-blue-400 hover:underline">linking</a> that PCDs are Git repositories. Git is a system that tracks changes to files over time. Every change gets a unique identifier, and the complete history of changes is preserved.
   </p>
   
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">

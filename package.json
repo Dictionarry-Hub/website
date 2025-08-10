@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "build:ssg": "vite build && node scripts/prerender.js",
     "db": "tsx scripts/db.ts",
     "db:dev": "tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch scoring-refactor",
     "db:stable": "tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch stable",

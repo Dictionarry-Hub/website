@@ -1,8 +1,13 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import VideoPlayer from '@shared/ui/videoPlayer.svelte';
+
+  const seo = getSeoData($router.path);
   
   onMount(() => {
     setNavigationItems([
@@ -10,13 +15,20 @@
       { title: 'Overview', children: ["What's a Commit?", 'How It Works', 'Why Manual Commits?'] },
       'Workflow',
       { title: 'Merge Conflicts', children: ['The Scenario', "What's Happening?", 'Resolution Process', 'After Resolution'] }
-    ], '#/profilarr-setup/customizations');
+    ], '/profilarr-setup/customizations');
   });
   
   onDestroy(() => {
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Customizations</h1>
@@ -72,12 +84,12 @@
   </div>
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    This separation enables the <a href="#/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">update system</a>. Git keeps your changes and maintainer updates separate, merging them intelligently.
+    This separation enables the <a href="/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">update system</a>. Git keeps your changes and maintainer updates separate, merging them intelligently.
   </p>
 
   <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
     <p class="text-sm text-blue-900 dark:text-blue-100">
-      <strong>Note:</strong> Creating a commit saves your changes locally but doesn't sync them to Radarr/Sonarr. To apply your customizations, you'll need to trigger a sync manually, wait for a scheduled sync, or rely on "On Pull" syncing as described in <a href="#/profilarr-setup/syncing" class="text-blue-600 dark:text-blue-400 hover:underline">syncing</a>.
+      <strong>Note:</strong> Creating a commit saves your changes locally but doesn't sync them to Radarr/Sonarr. To apply your customizations, you'll need to trigger a sync manually, wait for a scheduled sync, or rely on "On Pull" syncing as described in <a href="/profilarr-setup/syncing" class="text-blue-600 dark:text-blue-400 hover:underline">syncing</a>.
     </p>
   </div>
 
@@ -87,7 +99,7 @@
 
   <VideoPlayer 
     src="/video/profilarr_setup/commit.mp4"
-    description="The video below walks through adjusting the Dolby Vision score from the <a href='profilarr-setup/customizations#section=scenario' class='text-blue-600 dark:text-blue-400 hover:underline'>scenario</a> above."
+    description="The video below walks through adjusting the Dolby Vision score from the <a href='profilarr-setup/customizations?section=scenario' class='text-blue-600 dark:text-blue-400 hover:underline'>scenario</a> above."
   />
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
@@ -95,7 +107,7 @@
   </p>
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    The database page now shows "Outgoing Changes" - your local modifications waiting to be committed. These mirror the <a href="#/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">Incoming Changes</a> from before, but represent your changes instead of the maintainer's.
+    The database page now shows "Outgoing Changes" - your local modifications waiting to be committed. These mirror the <a href="/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">Incoming Changes</a> from before, but represent your changes instead of the maintainer's.
   </p>
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">
@@ -207,7 +219,7 @@
 
   <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
     <p class="text-neutral-700 dark:text-neutral-300">
-      The <a href="#/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a> asked: how do you apply configurations? How do you get updates without losing changes? How do you know what changed? Profilarr's answer: Git repositories. Link, Bridge, Sync, Update and Customize. This isn't a new workflow - it's the same version control process software engineers use every day, now applied to media server configurations.
+      The <a href="/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a> asked: how do you apply configurations? How do you get updates without losing changes? How do you know what changed? Profilarr's answer: Git repositories. Link, Bridge, Sync, Update and Customize. This isn't a new workflow - it's the same version control process software engineers use every day, now applied to media server configurations.
     </p>
     <p class="text-neutral-700 dark:text-neutral-300 mt-4">
       The next section covers database development - how to create, test, and share configuration databases with the community.
@@ -216,6 +228,6 @@
   
   <PageNavigation 
     previous={{path: '/profilarr-setup/updates', title: 'Updates', description: 'Stay current with database changes'}}
-    next={{path: '/development', title: 'Development', description: 'Create and maintain configuration databases'}}
+    next={{path: '/profilarr-setup/development', title: 'Development', description: 'Create and maintain configuration databases'}}
   />
 </div>

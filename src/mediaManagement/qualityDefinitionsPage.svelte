@@ -1,4 +1,7 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { contentDatabase } from '@db';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
@@ -6,6 +9,8 @@
   import Table from '@shared/ui/table.svelte';
   import Changelog from '@shared/ui/changelog.svelte';
   import Utterances from '@shared/ui/utterances.svelte';
+
+  const seo = getSeoData($router.path);
 
   // Find the quality definitions entry
   $: qualityDefinitionsEntry = contentDatabase.entries.find(e => e.slug === 'qualitydefinitions' && e.type === 'media-management');
@@ -17,7 +22,7 @@
       'Sonarr',
       'Changelog',
       'Discussion'
-    ], '#/media-management/qualitydefinitions');
+    ], '/media-management/qualitydefinitions');
   });
 
   onDestroy(() => {
@@ -69,6 +74,13 @@
     }
   ];
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 <div>
   <div class="mb-12">

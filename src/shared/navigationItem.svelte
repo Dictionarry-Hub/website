@@ -12,7 +12,7 @@
   {href}
   class="block px-2 py-1 {textSize} rounded transition-colors {isActive ? 'text-blue-600 dark:text-blue-400 font-medium' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800'}"
   on:click|preventDefault={() => {
-    const targetId = href.replace('#section=', '');
+    const targetId = href.replace('?section=', '');
     const element = document.getElementById(targetId);
     if (element) {
       const mainContent = document.querySelector('main');
@@ -28,9 +28,10 @@
         });
       }
       
-      // Update URL with section parameter, keeping current route
-      const currentPath = window.location.hash.split('#section')[0] || '#/';
-      window.history.replaceState(null, '', currentPath + href);
+      // Update URL with section parameter
+      const url = new URL(window.location);
+      url.searchParams.set('section', targetId);
+      window.history.replaceState(null, '', url.toString());
     }
   }}
 >

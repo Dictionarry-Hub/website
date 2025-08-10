@@ -1,7 +1,12 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { onMount } from 'svelte';
   import { setNavigationItems } from '@shared/stores/navigation';
   import { FileText, BarChart3, Settings } from 'lucide-svelte';
+
+  const seo = getSeoData($router.path);
 
   onMount(() => {
     setNavigationItems([
@@ -17,6 +22,13 @@
   });
 </script>
 
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
+
 <div>
   <div class="mb-6">
     <h1 id="overview" class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Media Management Settings</h1>
@@ -26,7 +38,7 @@
   </div>
 
   <div class="space-y-6">
-    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-600 transition-colors cursor-pointer group" on:click={() => window.location.hash='#/media-management/naming'}>
+    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-blue-400 dark:hover:border-blue-600 transition-colors cursor-pointer group" on:click={() => router.goto('/media-management/naming')}>
     <div class="p-6">
       <div class="flex items-start gap-4">
         <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
@@ -65,7 +77,7 @@
     </div>
     </section>
 
-    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-orange-400 dark:hover:border-orange-600 transition-colors cursor-pointer group" on:click={() => window.location.hash='#/media-management/qualitydefinitions'}>
+    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-orange-400 dark:hover:border-orange-600 transition-colors cursor-pointer group" on:click={() => router.goto('/media-management/qualitydefinitions')}>
     <div class="p-6">
       <div class="flex items-start gap-4">
         <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
@@ -87,7 +99,7 @@
     </div>
     </section>
 
-    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-green-400 dark:hover:border-green-600 transition-colors cursor-pointer group" on:click={() => window.location.hash='#/media-management/misc'}>
+    <section class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-green-400 dark:hover:border-green-600 transition-colors cursor-pointer group" on:click={() => router.goto('/media-management/misc')}>
     <div class="p-6">
       <div class="flex items-start gap-4">
         <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">

@@ -1,4 +1,6 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import { router } from 'tinro';
@@ -7,6 +9,8 @@
   import CodeBlock from '@shared/ui/codeBlock.svelte';
   import DockerIcon from '@shared/icons/dockerIcon.svelte';
   import { Terminal } from 'lucide-svelte';
+
+  const seo = getSeoData($router.path);
 
   const pages = [
     {
@@ -25,7 +29,7 @@
       'Docker',
       'Unraid',
       'CasaOS'
-    ], '#/profilarr-setup/installation');
+    ], '/profilarr-setup/installation');
   });
   
   onDestroy(() => {
@@ -44,12 +48,12 @@
       - TZ=UTC # Set your timezone
     restart: unless-stopped`;
 
-  const dockerCliCode = `docker run -d \\
-  --name=profilarr \\
-  -p 6868:6868 \\
-  -v /path/to/your/data:/config \\
-  -e TZ=UTC \\
-  --restart unless-stopped \\
+  const dockerCliCode = `docker run -d \
+  --name=profilarr \
+  -p 6868:6868 \
+  -v /path/to/your/data:/config \
+  -e TZ=UTC \
+  --restart unless-stopped \
   santiagosayshey/profilarr:latest  # or :beta`;
 
   const codeItems = [
@@ -67,6 +71,13 @@
     }
   ];
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div>
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Installation</h1>
@@ -97,7 +108,7 @@
     Profilarr can be installed in CasaOS as a custom app. A detailed guide is available in our wiki, thanks to a contribution from lawgics.
   </p>
   <p class="text-neutral-700 dark:text-neutral-300 mt-2">
-    <a href="#/wiki/profilarr-casaos" class="text-blue-600 dark:text-blue-400 hover:underline">Click here to view the CasaOS installation guide.</a>
+    <a href="/wiki/profilarr-casaos" class="text-blue-600 dark:text-blue-400 hover:underline">Click here to view the CasaOS installation guide.</a>
   </p>
 
   <PageNavigation next={{path: '/profilarr-setup/101', title: 'Profilarr 101', description: 'Learn the basics'}} />

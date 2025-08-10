@@ -1,9 +1,14 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { onMount, onDestroy } from 'svelte';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import FeaturedCarousel from './featured/carousel.svelte';
   import WikiList from './list/list.svelte';
   import { contentDatabase } from '@db';
+
+  const seo = getSeoData($router.path);
 
   const wikiEntries = contentDatabase.entries.filter(entry => entry.category === 'wiki');
   const featuredEntries = wikiEntries.filter(entry => entry.frontmatter?.featured);
@@ -14,13 +19,20 @@
       navItems.push('Featured Articles');
     }
     navItems.push('All Articles');
-    setNavigationItems(navItems, '#/wiki');
+    setNavigationItems(navItems, '/wiki');
   });
 
   onDestroy(() => {
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div>
   <!-- Page Header -->

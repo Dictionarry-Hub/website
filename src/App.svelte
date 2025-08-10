@@ -31,7 +31,6 @@
   import NotFound from '@shared/components/notFound.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
-  import { initAnchorScrolling } from '@shared/utils/scrollToAnchor'
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
   import { fly } from 'svelte/transition'
@@ -47,7 +46,7 @@
     '/profilarr-setup/syncing': Sync,
     '/profilarr-setup/updates': Updates,
     '/profilarr-setup/customizations': Customizations,
-    '/development': Development,
+    '/profilarr-setup/development': Development,
     '/devlogs': DevlogsLanding,
     '/quality-profile': QualityProfilePage,
     '/custom-format': CustomFormatPage,
@@ -72,7 +71,7 @@
   // Helper to get component for a route
   function getRouteComponent(url) {
     // Remove section parameters for route matching
-    const cleanUrl = url.split('#section=')[0]
+    const cleanUrl = url.split('?section=')[0]
     
     // Check static routes first
     if (routeConfig[cleanUrl]) {
@@ -90,8 +89,8 @@
     return NotFound
   }
   
-  // Enable hash-based routing for SPA
-  router.mode.hash()
+  // Enable path-based routing for better SEO
+  router.mode.history()
   
   // Scroll to top on route change, but handle section parameters
   router.subscribe(() => {
@@ -101,34 +100,32 @@
     // Track page view in Google Analytics
     if (typeof gtag !== 'undefined') {
       gtag('config', 'G-TN66960SGE', {
-        page_path: window.location.hash
+        page_path: window.location.pathname
       });
     }
     
-    const hash = window.location.hash;
-    if (hash.includes('section=')) {
-      const sectionMatch = hash.match(/section=([^&]+)/);
-      if (sectionMatch) {
-        const targetId = sectionMatch[1];
-        setTimeout(() => {
-          const element = document.getElementById(targetId);
-          if (element) {
-            const mainContent = document.querySelector('main');
-            if (mainContent) {
-              const mainContentRect = mainContent.getBoundingClientRect();
-              const elementRect = element.getBoundingClientRect();
-              const scrollTop = mainContent.scrollTop;
-              const targetScrollTop = scrollTop + elementRect.top - mainContentRect.top - 20;
-              
-              mainContent.scrollTo({
-                top: targetScrollTop,
-                behavior: 'smooth'
-              });
-            }
+    // Check for section query parameter
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get('section');
+    if (section) {
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          const mainContent = document.querySelector('main');
+          if (mainContent) {
+            const mainContentRect = mainContent.getBoundingClientRect();
+            const elementRect = element.getBoundingClientRect();
+            const scrollTop = mainContent.scrollTop;
+            const targetScrollTop = scrollTop + elementRect.top - mainContentRect.top - 20;
+            
+            mainContent.scrollTo({
+              top: targetScrollTop,
+              behavior: 'smooth'
+            });
           }
-        }, 100);
-        return;
-      }
+        }
+      }, 100);
+      return;
     }
     const mainContent = document.querySelector('main');
     if (mainContent) {

@@ -1,6 +1,8 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
   import { router } from 'tinro';
   import { contentDatabase } from '@db';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import Overview from './overview/overview.svelte';
@@ -33,6 +35,11 @@
   $: regex101 = regexEntry?.data?.regex101 || null;
   $: referencedBy = regexEntry?.data?.referencedBy || [];
   $: commitLog = regexEntry?.commitLog || null;
+
+  $: seo = {
+    title: name,
+    description: getSeoData('/regex-pattern').description
+  };
   
   // Debug: Log what data we're getting
   $: if (referencedBy.length > 0) {
@@ -53,6 +60,13 @@
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={null}
+  url={$router.path}
+/>
 
 <div>
   {#if regexEntry}

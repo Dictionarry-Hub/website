@@ -1,21 +1,33 @@
 <script>
+  import Seo from '@shared/components/seo.svelte';
+  import { router } from 'tinro';
+  import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import VideoPlayer from '@shared/ui/videoPlayer.svelte';
+
+  const seo = getSeoData($router.path);
   
   onMount(() => {
     setNavigationItems([
       'Overview',
       'Sync Methods',
       'Unique Imports'
-    ], '#/profilarr-setup/syncing');
+    ], '/profilarr-setup/syncing');
   });
   
   onDestroy(() => {
     clearNavigation();
   });
 </script>
+
+<Seo
+  title={seo.title}
+  description={seo.description}
+  image={seo.image}
+  url={$router.path}
+/>
 
 <div >
   <h1 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Syncing</h1>
@@ -75,7 +87,7 @@
 
   <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
     <p class="text-neutral-700 dark:text-neutral-300">
-      This completes the basic setup. You've seen how Profilarr addresses the first part of the <a href="#/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a>: getting configurations from a database into your Radarr/Sonarr instances. The next sections cover the remaining aspects: handling updates, preserving customizations, and managing databases.
+      This completes the basic setup. You've seen how Profilarr addresses the first part of the <a href="/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a>: getting configurations from a database into your Radarr/Sonarr instances. The next sections cover the remaining aspects: handling updates, preserving customizations, and managing databases.
     </p>
   </div>
 
