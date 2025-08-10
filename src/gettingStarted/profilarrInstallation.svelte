@@ -25,7 +25,7 @@
       'Docker',
       'Unraid',
       'CasaOS'
-    ], '#/profilarr-setup/installation');
+    ], '/profilarr-setup/installation');
   });
   
   onDestroy(() => {
@@ -97,7 +97,7 @@
     Profilarr can be installed in CasaOS as a custom app. A detailed guide is available in our wiki, thanks to a contribution from lawgics.
   </p>
   <p class="text-neutral-700 dark:text-neutral-300 mt-2">
-    <a href="#/wiki/profilarr-casaos" class="text-blue-600 dark:text-blue-400 hover:underline">Click here to view the CasaOS installation guide.</a>
+    <a href="/wiki/profilarr-casaos" class="text-blue-600 dark:text-blue-400 hover:underline">Click here to view the CasaOS installation guide.</a>
   </p>
 
   <PageNavigation next={{path: '/profilarr-setup/101', title: 'Profilarr 101', description: 'Learn the basics'}} />

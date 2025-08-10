@@ -9,7 +9,7 @@
       'Overview',
       { title: 'Setup', children: ['Step 1: Generate PAT', 'Step 2: Create .env File', 'Step 3: Update Docker'] },
       { title: 'Development Workflow', children: ['Effective Commits', 'General Tips'] }
-    ], '#/development');
+    ], '/profilarr-setup/development');
   });
   
   onDestroy(() => {
@@ -72,11 +72,11 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
     Overview
   </h2>
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    A core concept in Profilarr is that database updates are powered by the very same process users follow for <a href="#/profilarr-setup/customizations" class="text-blue-600 dark:text-blue-400 hover:underline">customization</a>. While end users make local changes that remain private to their setup, developers follow an identical workflow to create the updates everyone receives.
+    A core concept in Profilarr is that database updates are powered by the very same process users follow for <a href="/profilarr-setup/customizations" class="text-blue-600 dark:text-blue-400 hover:underline">customization</a>. While end users make local changes that remain private to their setup, developers follow an identical workflow to create the updates everyone receives.
   </p>
   
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">
-    The key difference is that developers publish, or push, their changes to GitHub. This action transforms their local customizations into official updates for the entire community. In essence, when a developer commits and pushes their changes, those modifications appear as <a href="#/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">"Incoming Changes"</a> for any user linked to that database.
+    The key difference is that developers publish, or push, their changes to GitHub. This action transforms their local customizations into official updates for the entire community. In essence, when a developer commits and pushes their changes, those modifications appear as <a href="/profilarr-setup/updates" class="text-blue-600 dark:text-blue-400 hover:underline">"Incoming Changes"</a> for any user linked to that database.
   </p>
 
   <h2 class="text-xl font-semibold text-neutral-800 dark:text-neutral-200 mt-8 mb-4" id="setup">
@@ -157,7 +157,7 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
   </h2>
 
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    To contribute to a database, you'll use the same editing and committing process detailed in the <a href="#/profilarr-setup/customizations" class="text-blue-600 dark:text-blue-400 hover:underline">Customizations</a> section. This guide focuses on the best practices to follow when creating those contributions.
+    To contribute to a database, you'll use the same editing and committing process detailed in the <a href="/profilarr-setup/customizations" class="text-blue-600 dark:text-blue-400 hover:underline">Customizations</a> section. This guide focuses on the best practices to follow when creating those contributions.
   </p>
 
   <div class="mt-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">

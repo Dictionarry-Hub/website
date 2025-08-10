@@ -22,7 +22,7 @@
         {href}
         class="flex-1 px-3 py-2 text-sm font-medium transition-colors {isActive ? 'text-neutral-900 dark:text-neutral-100' : 'text-neutral-800 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100'}"
         on:click|preventDefault={() => {
-          const targetId = href.replace('#section=', '');
+          const targetId = href.replace('?section=', '');
           const element = document.getElementById(targetId);
           if (element) {
             // Calculate offset for navbar (64px + some padding)
@@ -34,9 +34,10 @@
               behavior: 'smooth'
             });
             
-            // Update URL with section parameter, keeping current route
-            const currentPath = window.location.hash.split('#section')[0] || '#/';
-            window.history.replaceState(null, '', currentPath + href);
+            // Update URL with section parameter
+            const url = new URL(window.location);
+            url.searchParams.set('section', targetId);
+            window.history.replaceState(null, '', url.toString());
           }
         }}
       >

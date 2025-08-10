@@ -22,7 +22,7 @@
       navItems.push('Latest Entry');
     }
     navItems.push('All Entries');
-    setNavigationItems(navItems, '#/devlogs');
+    setNavigationItems(navItems, '/devlogs');
   });
 
   onDestroy(() => {

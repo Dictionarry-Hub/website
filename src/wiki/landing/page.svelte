@@ -14,7 +14,7 @@
       navItems.push('Featured Articles');
     }
     navItems.push('All Articles');
-    setNavigationItems(navItems, '#/wiki');
+    setNavigationItems(navItems, '/wiki');
   });
 
   onDestroy(() => {

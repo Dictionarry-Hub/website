@@ -7,7 +7,7 @@
   onMount(() => {
     setNavigationItems([
       'Overview'
-    ], '#/profilarr-setup/bridging');
+    ], '/profilarr-setup/bridging');
   });
   
   onDestroy(() => {

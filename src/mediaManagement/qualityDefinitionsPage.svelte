@@ -17,7 +17,7 @@
       'Sonarr',
       'Changelog',
       'Discussion'
-    ], '#/media-management/qualitydefinitions');
+    ], '/media-management/qualitydefinitions');
   });
 
   onDestroy(() => {

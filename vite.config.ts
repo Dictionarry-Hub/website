@@ -17,5 +17,9 @@ export default defineConfig({
       '@db': resolve(__dirname, './src/generated/contentDatabase.ts'),
     }
   },
-  base: './'
+  base: '/',
+  // Handle client-side routing in dev server
+  server: {
+    historyApiFallback: true
+  }
 })

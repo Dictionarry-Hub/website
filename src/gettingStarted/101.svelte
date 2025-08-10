@@ -14,7 +14,7 @@
       'Link',
       'Bridge', 
       'Sync'
-    ], '#/profilarr-setup/101');
+    ], '/profilarr-setup/101');
   });
   
   onDestroy(() => {

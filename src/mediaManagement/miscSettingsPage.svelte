@@ -16,7 +16,7 @@
       'Sonarr',
       'Changelog',
       'Discussion'
-    ], '#/media-management/misc');
+    ], '/media-management/misc');
   });
 
   onDestroy(() => {

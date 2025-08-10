@@ -9,7 +9,7 @@
       'Overview',
       'Sync Methods',
       'Unique Imports'
-    ], '#/profilarr-setup/syncing');
+    ], '/profilarr-setup/syncing');
   });
   
   onDestroy(() => {
@@ -75,7 +75,7 @@
 
   <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
     <p class="text-neutral-700 dark:text-neutral-300">
-      This completes the basic setup. You've seen how Profilarr addresses the first part of the <a href="#/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a>: getting configurations from a database into your Radarr/Sonarr instances. The next sections cover the remaining aspects: handling updates, preserving customizations, and managing databases.
+      This completes the basic setup. You've seen how Profilarr addresses the first part of the <a href="/" class="text-blue-600 dark:text-blue-400 hover:underline">tooling challenge</a>: getting configurations from a database into your Radarr/Sonarr instances. The next sections cover the remaining aspects: handling updates, preserving customizations, and managing databases.
     </p>
   </div>
 

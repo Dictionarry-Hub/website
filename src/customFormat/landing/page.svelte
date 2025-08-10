@@ -6,7 +6,7 @@
     setNavigationItems([
       'Overview',
       'Thanks'
-    ], '#/custom-format');
+    ], '/custom-format');
   });
   
   onDestroy(() => {

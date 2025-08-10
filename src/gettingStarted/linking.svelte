@@ -11,7 +11,7 @@
       'Configuration Databases',
       'The Open Standard',
       'Database Spotlight'
-    ], '#/profilarr-setup/linking');
+    ], '/profilarr-setup/linking');
   });
   
   onDestroy(() => {

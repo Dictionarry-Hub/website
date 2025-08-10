@@ -8,7 +8,7 @@
       'Overview',
       'What Can Be Matched',
       'Reusability'
-    ], '#/regex-pattern');
+    ], '/regex-pattern');
   });
   
   onDestroy(() => {

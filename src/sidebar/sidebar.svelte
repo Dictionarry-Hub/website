@@ -55,7 +55,7 @@
       <SidebarItem href="/profilarr-setup/syncing" label="Syncing" isActive={currentPath === "/profilarr-setup/syncing"} />
       <SidebarItem href="/profilarr-setup/updates" label="Updates" isActive={currentPath === "/profilarr-setup/updates"} />
       <SidebarItem href="/profilarr-setup/customizations" label="Customizations" isActive={currentPath === "/profilarr-setup/customizations"} />
-      <SidebarItem href="/development" label="Development" isActive={currentPath === "/development"} />
+      <SidebarItem href="/profilarr-setup/development" label="Development" isActive={currentPath === "/profilarr-setup/development"} />
     </SidebarSection>
   
     <!-- Quality Profiles Section -->

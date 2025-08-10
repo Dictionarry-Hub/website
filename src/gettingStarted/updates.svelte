@@ -9,7 +9,7 @@
       'Scenario',
       'Overview',
       'Workflow'
-    ], '#/profilarr-setup/updates');
+    ], '/profilarr-setup/updates');
   });
   
   onDestroy(() => {
@@ -31,7 +31,7 @@
     Overview
   </h2>
   <p class="text-neutral-700 dark:text-neutral-300 mt-6">
-    Recall from <a href="#/profilarr-setup/linking" class="text-blue-600 dark:text-blue-400 hover:underline">linking</a> that PCDs are Git repositories. Git is a system that tracks changes to files over time. Every change gets a unique identifier, and the complete history of changes is preserved.
+    Recall from <a href="/profilarr-setup/linking" class="text-blue-600 dark:text-blue-400 hover:underline">linking</a> that PCDs are Git repositories. Git is a system that tracks changes to files over time. Every change gets a unique identifier, and the complete history of changes is preserved.
   </p>
   
   <p class="text-neutral-700 dark:text-neutral-300 mt-4">
