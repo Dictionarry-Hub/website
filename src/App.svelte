@@ -104,7 +104,8 @@
       const normalizedPath = path.slice(0, -1)
       const search = window.location.search
       const hash = window.location.hash
-      window.history.replaceState(null, '', normalizedPath + search + hash)
+      // Use router.goto for proper navigation instead of just replacing state
+      router.goto(normalizedPath + search + hash)
     }
   })
   
