@@ -10,12 +10,12 @@ on:
 jobs:
   notify-commit:
     if: github.event_name == 'push'
-    uses: Dictionarry-Hub/parrot/.github/workflows/notify-commit.yml@main
+    uses: Dictionarry-Hub/parrot/.github/workflows/notify-commit.yml@v1
     secrets:
       PARROT_URL: ${{ secrets.PARROT_URL }}
 
   notify-release:
     if: github.event_name == 'release'
-    uses: Dictionarry-Hub/parrot/.github/workflows/notify-release.yml@main
+    uses: Dictionarry-Hub/parrot/.github/workflows/notify-release.yml@v1
     secrets:
       PARROT_URL: ${{ secrets.PARROT_URL }}
