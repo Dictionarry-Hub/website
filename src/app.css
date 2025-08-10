@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -39,6 +39,11 @@ body {
 
 .social-icon {
   @apply p-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors duration-200;
+}
+
+/* Header font */
+.header-font {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Inter', Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Custom Scrollbars */
