@@ -71,7 +71,12 @@
   // Helper to get component for a route
   function getRouteComponent(url) {
     // Remove section parameters for route matching
-    const cleanUrl = url.split('?section=')[0]
+    let cleanUrl = url.split('?section=')[0]
+    
+    // Remove trailing slash if present (except for root path)
+    if (cleanUrl.length > 1 && cleanUrl.endsWith('/')) {
+      cleanUrl = cleanUrl.slice(0, -1)
+    }
     
     // Check static routes first
     if (routeConfig[cleanUrl]) {
@@ -91,6 +96,17 @@
   
   // Enable path-based routing for better SEO
   router.mode.history()
+  
+  // Normalize URLs to remove trailing slashes
+  router.subscribe((route) => {
+    const path = window.location.pathname
+    if (path.length > 1 && path.endsWith('/')) {
+      const normalizedPath = path.slice(0, -1)
+      const search = window.location.search
+      const hash = window.location.hash
+      window.history.replaceState(null, '', normalizedPath + search + hash)
+    }
+  })
   
   // Scroll to top on route change, but handle section parameters
   router.subscribe(() => {
