@@ -29,3 +29,6 @@ public/database
 # ai
 CLAUDE.md
 GEMINI.md
+
+# generated
+src/generated/contentDatabase.ts
