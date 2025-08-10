@@ -18,7 +18,7 @@
   
   // Get current path and extract slug
   $: currentPath = $router.path;
-  $: slug = currentPath.replace('/wiki/', '');
+  $: slug = currentPath.replace('/wiki/', '').replace(/\/$/, '');
   
   // Find wiki entry in content database
   $: wikiEntry = slug && slug !== 'wiki' 

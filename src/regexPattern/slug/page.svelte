@@ -16,7 +16,7 @@
   
   // Get current path and extract slug
   $: currentPath = $router.path;
-  $: slug = currentPath.replace('/regex-pattern/', '');
+  $: slug = currentPath.replace('/regex-pattern/', '').replace(/\/$/, '');
   
   // Find regex pattern in content database
   $: regexEntry = slug && slug !== 'regex-pattern' 

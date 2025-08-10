@@ -18,7 +18,7 @@
   
   // Get current path and extract slug
   $: currentPath = $router.path;
-  $: slug = currentPath.replace('/devlogs/', '');
+  $: slug = currentPath.replace('/devlogs/', '').replace(/\/$/, '');
   
   // Find devlog entry in content database
   $: devlogEntry = slug && slug !== 'devlogs' 

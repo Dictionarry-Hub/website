@@ -15,7 +15,7 @@
   
   // Get current path and extract slug
   $: currentPath = $router.path;
-  $: slug = currentPath.replace('/custom-format/', '');
+  $: slug = currentPath.replace('/custom-format/', '').replace(/\/$/, '');
   
   // Find format in content database
   $: formatEntry = slug && slug !== 'custom-format' 

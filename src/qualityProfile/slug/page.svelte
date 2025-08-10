@@ -15,7 +15,7 @@
   
   // Get current path and extract slug
   $: currentPath = $router.path;
-  $: slug = currentPath.replace('/quality-profile/', '');
+  $: slug = currentPath.replace('/quality-profile/', '').replace(/\/$/, '');
   
   // Find profile in content database
   $: profileEntry = slug && slug !== 'quality-profile' 
