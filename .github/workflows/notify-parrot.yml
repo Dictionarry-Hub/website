@@ -1,0 +1,21 @@
+name: Notify Parrot Bot
+
+on:
+  push:
+    branches:
+      - v3
+  release:
+    types: [published]
+
+jobs:
+  notify-commit:
+    if: github.event_name == 'push'
+    uses: dictionarry-hub/parrot/.github/workflows/notify-commit.yml@main
+    secrets:
+      PARROT_URL: ${{ secrets.PARROT_URL }}
+
+  notify-release:
+    if: github.event_name == 'release'
+    uses: dictionarry-hub/parrot/.github/workflows/notify-release.yml@main
+    secrets:
+      PARROT_URL: ${{ secrets.PARROT_URL }}
