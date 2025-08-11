@@ -12,7 +12,7 @@
 </script>
 
 <button
-  class="relative flex items-center justify-center {isPortrait ? 'gap-1' : 'gap-2'} {isPortrait ? 'h-7 text-[10px]' : 'w-auto text-[11px]'} {isPortrait ? 'px-2' : 'px-3 py-1.5'} {isPortrait ? 'rounded border' : 'rounded-md border-2'} transition-all z-10 font-mono
+  class="relative flex items-center justify-center {isPortrait ? 'gap-1' : 'gap-2'} {isPortrait ? 'h-7 text-[10px]' : 'min-w-[100px] text-[11px]'} {isPortrait ? 'px-2' : 'px-3 py-1.5'} {isPortrait ? 'rounded border' : 'rounded-md border-2'} transition-all z-10 font-mono
     {isSelected 
       ? 'bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 border-neutral-900 dark:border-neutral-100 shadow-md' 
       : isEnabled

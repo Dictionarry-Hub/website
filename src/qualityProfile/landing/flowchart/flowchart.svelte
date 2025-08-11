@@ -271,18 +271,17 @@
           {#if recommendedProfile.url}
             <a 
               href={recommendedProfile.url} 
-              class="group relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-neutral-300 dark:hover:border-neutral-600 transition-all w-full lg:w-auto"
+              class="group relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500 w-full lg:w-auto"
             >
               <div class="flex-1">
                 <div class="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-0.5">Recommended Profile</div>
-                <div class="text-sm font-semibold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <div class="text-sm font-semibold text-neutral-900 dark:text-white">
                   {recommendedProfile.name}
                 </div>
               </div>
-              <div class="w-8 h-8 bg-white dark:bg-neutral-700 rounded-full flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30 transition-colors">
-                <Link2 class="w-4 h-4 text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+              <div class="w-8 h-8 bg-white dark:bg-neutral-700 rounded-full flex items-center justify-center">
+                <Link2 class="w-4 h-4 text-neutral-400" />
               </div>
-              <div class="absolute inset-0 rounded-lg ring-1 ring-blue-500 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             </a>
           {:else}
             <div class="relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 w-full lg:w-auto">
@@ -317,44 +316,42 @@
     
     <div class="relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg" bind:this={containerRef}>
       <!-- Button Grid -->
-      <div class="relative grid {state.currentColumn === 1 ? 'grid-cols-1' : state.currentColumn === 2 ? 'grid-cols-2' : state.currentColumn === 3 ? 'grid-cols-3' : state.currentColumn === 4 ? 'grid-cols-4' : 'grid-cols-5'}">
+      <div class="relative grid grid-cols-5">
         {#each flowchartColumns as column, columnIndex}
-          {#if columnIndex + 1 <= state.currentColumn}
-            <div class="relative p-4 h-full {columnIndex + 1 < state.currentColumn ? 'border-r' : ''} border-neutral-200 dark:border-neutral-700">
-              <!-- Column header -->
-              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                {#if column.description}
-                  <InfoTooltip content={column.description} position="top">
-                    <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400 cursor-help">
-                      {column.name}
-                    </span>
-                  </InfoTooltip>
-                {:else}
-                  <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded text-[10px] font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+          <div class="relative p-4 h-full min-h-[320px] {columnIndex < 4 ? 'border-r' : ''} border-neutral-200 dark:border-neutral-700 {columnIndex + 1 === state.currentColumn && state.currentColumn <= 5 && !state.selections[5] ? 'bg-neutral-50 dark:bg-neutral-800/30' : ''} {columnIndex === 0 && state.currentColumn === 1 && !state.selections[5] ? 'rounded-l-lg' : ''} {columnIndex === 4 && state.currentColumn === 5 && !state.selections[5] ? 'rounded-r-lg' : ''}">
+            <!-- Column header -->
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+              {#if column.description}
+                <InfoTooltip content={column.description} position="top">
+                  <span class="px-3 py-1 bg-white dark:bg-neutral-900 border rounded text-[10px] font-mono uppercase tracking-wider cursor-help {columnIndex + 1 === state.currentColumn && !state.selections[5] ? 'border-neutral-400 dark:border-neutral-600 text-neutral-700 dark:text-neutral-300 font-bold' : columnIndex + 1 > state.currentColumn ? 'border-neutral-200 dark:border-neutral-700 text-neutral-400 dark:text-neutral-500' : 'border-neutral-300 dark:border-neutral-700 text-neutral-500 dark:text-neutral-400'}">
                     {column.name}
                   </span>
-                {/if}
-              </div>
-              <div class="flex h-full flex-col items-center justify-evenly gap-3 pt-6">
-                {#each column.items as item, itemIndex}
-                  <div 
-                    bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}
-                    on:mouseenter={() => hoveredButton = `${columnIndex}-${itemIndex}`}
-                    on:mouseleave={() => hoveredButton = null}
-                  >
-                    <FlowchartItem
-                      label={item.label}
-                      icon={item.icon}
-                      isSelected={state.selections[columnIndex + 1] === itemIndex + 1}
-                      isPortrait={false}
-                      isEnabled={isItemEnabled(columnIndex, itemIndex)}
-                      onClick={() => handleButtonClick(columnIndex, itemIndex)}
-                    />
-                  </div>
-                {/each}
-              </div>
+                </InfoTooltip>
+              {:else}
+                <span class="px-3 py-1 bg-white dark:bg-neutral-900 border rounded text-[10px] font-mono uppercase tracking-wider {columnIndex + 1 === state.currentColumn && !state.selections[5] ? 'border-neutral-400 dark:border-neutral-600 text-neutral-700 dark:text-neutral-300 font-bold' : columnIndex + 1 > state.currentColumn ? 'border-neutral-200 dark:border-neutral-700 text-neutral-400 dark:text-neutral-500' : 'border-neutral-300 dark:border-neutral-700 text-neutral-500 dark:text-neutral-400'}">
+                  {column.name}
+                </span>
+              {/if}
             </div>
-          {/if}
+            <div class="flex h-full flex-col items-center justify-evenly gap-3 pt-6 {columnIndex + 1 > state.currentColumn ? 'opacity-30' : ''}">
+              {#each column.items as item, itemIndex}
+                <div 
+                  bind:this={buttonRefs[getButtonRef(columnIndex, itemIndex)]}
+                  on:mouseenter={() => hoveredButton = `${columnIndex}-${itemIndex}`}
+                  on:mouseleave={() => hoveredButton = null}
+                >
+                  <FlowchartItem
+                    label={item.label}
+                    icon={item.icon}
+                    isSelected={state.selections[columnIndex + 1] === itemIndex + 1}
+                    isPortrait={false}
+                    isEnabled={isItemEnabled(columnIndex, itemIndex)}
+                    onClick={() => handleButtonClick(columnIndex, itemIndex)}
+                  />
+                </div>
+              {/each}
+            </div>
+          </div>
         {/each}
       </div>
     
