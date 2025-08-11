@@ -48,12 +48,12 @@
       - TZ=UTC # Set your timezone
     restart: unless-stopped`;
 
-  const dockerCliCode = `docker run -d \
-  --name=profilarr \
-  -p 6868:6868 \
-  -v /path/to/your/data:/config \
-  -e TZ=UTC \
-  --restart unless-stopped \
+  const dockerCliCode = `docker run -d \\
+  --name=profilarr \\
+  -p 6868:6868 \\
+  -v /path/to/your/data:/config \\
+  -e TZ=UTC \\
+  --restart unless-stopped \\ 
   santiagosayshey/profilarr:latest  # or :beta`;
 
   const codeItems = [

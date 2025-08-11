@@ -6,6 +6,8 @@
   import { onMount, onDestroy } from 'svelte';
   import PageNavigation from '@shared/ui/pageNavigation.svelte';
   import CodeBlock from '@shared/ui/codeBlock.svelte';
+  import DockerIcon from '@shared/icons/dockerIcon.svelte';
+  import { Terminal } from 'lucide-svelte';
 
   const seo = getSeoData($router.path);
   
@@ -38,13 +40,13 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
     env_file:
       - .env # This line securely loads your credentials
     restart: unless-stopped`;
-  
-  const dockerCliCode = `docker run -d \
-  --name=profilarr \
-  -p 6868:6868 \
-  -v /path/to/your/data:/config \
-  -e TZ=UTC \
-  --env-file .env \
+
+  const dockerCliCode = `docker run -d \\
+  --name=profilarr \\
+  -p 6868:6868 \\
+  -v /path/to/your/data:/config \\
+  -e TZ=UTC \\
+  --env-file .env \\
   --restart unless-stopped \
   santiagosayshey/profilarr:latest`;
   
@@ -52,7 +54,7 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
     {
       title: '.env',
       code: envCode,
-      language: 'bash'
+      language: 'bash',
     }
   ];
   
@@ -60,12 +62,14 @@ PROFILARR_PAT=your_github_pat_from_step_1`;
     {
       title: 'Docker Compose',
       code: dockerComposeCode,
-      language: 'yaml'
+      language: 'yaml',
+      icon: DockerIcon
     },
     {
       title: 'Docker CLI',
       code: dockerCliCode,
-      language: 'bash'
+      language: 'bash',
+      icon: Terminal
     }
   ];
 </script>
