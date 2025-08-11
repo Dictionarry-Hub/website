@@ -14,7 +14,7 @@
 
 <div class="mb-4">
   <!-- Section Header -->
-  <div class="flex items-center rounded-md transition-colors group mb-2 {isActive ? 'bg-neutral-100 dark:bg-neutral-800' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800'}">
+  <div class="flex items-stretch rounded-md transition-colors group mb-2 {isActive ? 'bg-neutral-100 dark:bg-neutral-800' : 'hover:bg-neutral-50 dark:hover:bg-neutral-800'}">
     <!-- Title Link -->
     {#if href}
       <a 
@@ -31,7 +31,7 @@
     
     <!-- Chevron Button -->
     <button 
-      class="p-2 text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-md transition-all duration-200"
+      class="flex items-center justify-center px-2 text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-r-md transition-all duration-200"
       on:click={toggleSection}
     >
       {#if isOpen}
