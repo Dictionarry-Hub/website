@@ -3692,5 +3692,40 @@
       ]
     },
     "timestamp": 1754563311436
+  },
+  "dd5ec5429716387b_e96b0e0fbb080edf": {
+    "patternHash": "dd5ec5429716387b",
+    "testsHash": "e96b0e0fbb080edf",
+    "results": {
+      "passed": 3,
+      "failed": 0,
+      "results": [
+        {
+          "testString": "Aqua Teen Hunger Force (2000) S00E13 (480p DVD x265 SDR AAC 2.0 English - r00t QxR)",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        },
+        {
+          "testString": "Spider-Man Across the Spider-Verse 2023 1080p UHD BluRay DDP7 1 DoVi HDR10x265-c0kE",
+          "description": "",
+          "criteria": "DOES_MATCH",
+          "matches": true,
+          "passed": true,
+          "error": false
+        }
+      ]
+    },
+    "timestamp": 1754942213502
   }
 }

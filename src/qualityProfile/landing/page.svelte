@@ -51,7 +51,7 @@
           return { name: '1080p Balanced', url: '/quality-profile/1080p-balanced', status: 'Available' };
         }
         if (focus === 'Efficient') {
-          return { name: '1080p Efficient', url: null, status: 'Coming Soon' };
+          return { name: '1080p Efficient', url: '/quality-profile/1080p-efficient', status: 'Available' };
         }
       }
     }
