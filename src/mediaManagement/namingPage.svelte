@@ -40,7 +40,9 @@
       'seasonFolderFormat': 'Season Folder',
       'dailyEpisodeFormat': 'Daily Episode',
       'animeEpisodeFormat': 'Anime Episode',
-      'multiEpisodeStyle': 'Multi-Episode Style'
+      'multiEpisodeStyle': 'Multi-Episode Style',
+      'replaceIllegalCharacters': 'Replace Illegal Characters',
+      'customColonReplacementFormat': 'Custom Colon Replacement'
     };
     return fieldNames[key] || key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
   }
@@ -51,6 +53,63 @@
     if (key.includes('Episode')) return Hash;
     if (key.includes('daily')) return Calendar;
     return FileText;
+  }
+
+  // Mapping functions for Sonarr numeric values
+  function mapColonReplacement(value, isRadarr = false) {
+    if (isRadarr) {
+      // Radarr uses string values
+      const radarrMap = {
+        'delete': 'Delete',
+        'dash': 'Replace with Dash',
+        'spaceDash': 'Replace with Space Dash',
+        'spaceDashSpace': 'Replace with Space Dash Space',
+        'smart': 'Smart Replace'
+      };
+      return radarrMap[value] || value;
+    } else {
+      // Sonarr uses numeric values
+      const sonarrMap = {
+        0: 'Delete',
+        1: 'Replace with Dash',
+        2: 'Replace with Space Dash',
+        3: 'Replace with Space Dash Space',
+        4: 'Smart Replace',
+        5: 'Custom'
+      };
+      return sonarrMap[value] || value;
+    }
+  }
+
+  function mapMultiEpisodeStyle(value) {
+    const styleMap = {
+      0: 'Extend',
+      1: 'Duplicate',
+      2: 'Repeat',
+      3: 'Scene',
+      4: 'Range',
+      5: 'Prefixed Range'
+    };
+    return styleMap[value] || value;
+  }
+
+  // Format the value for display
+  function formatValue(key, value, service) {
+    if (typeof value === 'boolean') {
+      return value ? 'Enabled' : 'Disabled';
+    }
+    
+    // Handle colon replacement mapping
+    if (key === 'colonReplacementFormat') {
+      return mapColonReplacement(value, service === 'radarr');
+    }
+    
+    // Handle multi-episode style mapping (Sonarr only)
+    if (key === 'multiEpisodeStyle' && service === 'sonarr') {
+      return mapMultiEpisodeStyle(value);
+    }
+    
+    return value;
   }
 </script>
 
@@ -94,7 +153,7 @@
                 <CodeBlock 
                   items={[{
                     title: formatFieldName(key),
-                    code: typeof value === 'boolean' ? (value ? 'Enabled' : 'Disabled') : value,
+                    code: formatValue(key, value, service.toLowerCase()),
                     language: 'text',
                     icon: getFieldIcon(key)
                   }]}
