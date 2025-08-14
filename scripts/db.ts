@@ -203,6 +203,14 @@ async function main() {
     console.log('🏗️  Building database...');
     const databaseBuilder = new DatabaseBuilder();
     const database = databaseBuilder.build(allEntries);
+    
+    // Add metadata
+    database.metadata = {
+      source: sourceConfig.repo || 'local',
+      branch: sourceConfig.branch || 'main',
+      timestamp: new Date().toISOString(),
+      entriesCount: allEntries.length
+    };
 
     // Write output
     const outputPath = options.output || './src/generated/contentDatabase.ts';
