@@ -150,15 +150,17 @@
           <div class="space-y-4">
             {#each Object.entries(config) as [key, value]}
               {#if value !== '' && value !== null && value !== undefined}
-                <CodeBlock 
-                  items={[{
-                    title: formatFieldName(key),
-                    code: formatValue(key, value, service.toLowerCase()),
-                    language: 'text',
-                    icon: getFieldIcon(key)
-                  }]}
-                  overflow="wrap"
-                />
+                {#if !((key === 'colonReplacementFormat' || key === 'customColonReplacementFormat') && config.replaceIllegalCharacters === false)}
+                  <CodeBlock 
+                    items={[{
+                      title: formatFieldName(key),
+                      code: formatValue(key, value, service.toLowerCase()),
+                      language: 'text',
+                      icon: getFieldIcon(key)
+                    }]}
+                    overflow="wrap"
+                  />
+                {/if}
               {/if}
             {/each}
           </div>
