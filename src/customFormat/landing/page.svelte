@@ -14,7 +14,29 @@
   $: totalFormats = contentDatabase.entries.filter(e => e.type === 'custom-format').length;
 
   onMount(() => {
-    setNavigationItems(["Overview", "Master List", "Credits"], "/custom-format");
+    const navItems = [
+      "Overview",
+      {
+        title: "Master List",
+        children: [
+          "Audio",
+          "HDR / Color Grade",
+          "Release Groups",
+          "Release Group Tiers",
+          "Streaming Services",
+          "Codecs",
+          "Storage",
+          "Resolution",
+          "Source",
+          "Indexer Flags",
+          "Edition",
+          "Enhancements",
+          "Languages"
+        ]
+      },
+      "Credits"
+    ];
+    setNavigationItems(navItems, "/custom-format");
   });
 
   onDestroy(() => {

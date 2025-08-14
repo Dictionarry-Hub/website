@@ -67,7 +67,7 @@
   // Define group order and icons
   const groupOrder = [
     "Audio",
-    "HDR",
+    "HDR / Color Grade",
     "Release Groups",
     "Release Group Tiers",
     "Streaming Services",
@@ -84,7 +84,7 @@
 
   const groupIcons = {
     Audio: Volume2,
-    HDR: Monitor,
+    "HDR / Color Grade": Monitor,
     "Release Groups": Users,
     "Release Group Tiers": Tag,
     "Streaming Services": Tv,
@@ -93,6 +93,9 @@
     Resolution: Square,
     Source: Layers,
     "Indexer Flags": Tag,
+    Edition: Tag,
+    Enhancements: Tag,
+    Languages: Tag,
     Uncategorized: Folder,
   };
 

@@ -24,7 +24,7 @@
   }
 </script>
 
-<div class="mb-6">
+<div id={groupName.toLowerCase().replace(/[\s\/]/g, '-')} class="mb-6 scroll-mt-4">
   <GroupHeader {groupName} formatCount={formats.length} {icon} {isExpanded} onToggle={toggleExpanded} />
 
   {#if isExpanded}
