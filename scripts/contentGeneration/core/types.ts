@@ -62,6 +62,12 @@ export interface ContentDatabase {
   categories: string[];
   lastGenerated: string;
   version: string;
+  metadata?: {
+    source: string;
+    branch: string;
+    timestamp: string;
+    entriesCount: number;
+  };
 }
 
 export interface DataSourceConfig {
