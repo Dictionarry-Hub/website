@@ -29,10 +29,8 @@
   
   // Set up navigation when devlog entry is loaded
   $: if (devlogEntry && devlogEntry.navigation) {
-    // Convert navigation items to simple strings for the navigation store
-    const navItems = devlogEntry.navigation.map(item => 
-      typeof item === 'string' ? item : item.title
-    );
+    // Preserve the full navigation structure (including nested items)
+    const navItems = [...devlogEntry.navigation];
     // Add Discussion to navigation
     navItems.push('Discussion');
     setNavigationItems(navItems, currentPath);

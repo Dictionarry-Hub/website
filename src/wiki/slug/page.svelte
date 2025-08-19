@@ -29,10 +29,8 @@
   
   // Set up navigation when wiki entry is loaded
   $: if (wikiEntry && wikiEntry.navigation) {
-    // Convert navigation items to simple strings for the navigation store
-    const navItems = wikiEntry.navigation.map(item => 
-      typeof item === 'string' ? item : item.title
-    );
+    // Preserve the full navigation structure (including nested items)
+    const navItems = [...wikiEntry.navigation];
     // Add Discussion to navigation
     navItems.push('Discussion');
     setNavigationItems(navItems, currentPath);

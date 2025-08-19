@@ -16,11 +16,27 @@ export type Block =
   | MathBlock
   | ListBlock
   | BlockquoteBlock
-  | FootnoteBlock;
+  | FootnoteBlock
+  | ImageBlock
+  | HorizontalRuleBlock;
 
 interface ParagraphBlock {
   type: 'paragraph';
   content: string;
+}
+
+interface ImageBlock {
+  type: 'image';
+  src: string;
+  alt?: string;
+  variants?: {
+    light?: string;
+    dark?: string;
+  };
+}
+
+interface HorizontalRuleBlock {
+  type: 'horizontal-rule';
 }
 
 interface HeaderBlock {
@@ -151,6 +167,23 @@ export function parseMarkdown(markdown: string): ParsedContent {
       blocks.push(result.block);
       i = result.nextIndex;
       continue;
+    }
+    
+    // Check for horizontal rule (---, ***, ___)
+    if (line.match(/^[\s]*(?:---+|___+|\*\*\*+)[\s]*$/)) {
+      blocks.push({ type: 'horizontal-rule' });
+      i++;
+      continue;
+    }
+    
+    // Check for images
+    if (line.startsWith('![')) {
+      const result = parseImage(lines, i);
+      if (result.block) {
+        blocks.push(result.block);
+        i = result.nextIndex;
+        continue;
+      }
     }
     
     // Parse as paragraph
@@ -455,6 +488,99 @@ function parseFootnote(lines: string[], startIndex: number): { block: FootnoteBl
   };
 }
 
+// Parse image with support for light/dark variants
+function parseImage(lines: string[], startIndex: number): { block: ImageBlock | null; nextIndex: number } {
+  const line = lines[startIndex];
+  
+  // Match custom syntax: ![alt text](path[style=light|dark])
+  const variantMatch = line.match(/^!\[([^\]]*)\]\(([^[]+)\[style=(light|dark)\]\)/);
+  if (variantMatch) {
+    const alt = variantMatch[1];
+    const basePath = variantMatch[2];
+    const style = variantMatch[3];
+    
+    // Check if next line has the opposite variant
+    let variants: { light?: string; dark?: string } = {};
+    let nextIndex = startIndex + 1;
+    
+    if (style === 'light') {
+      variants.light = basePath;
+      // Look for dark variant on next line
+      if (nextIndex < lines.length) {
+        const nextLine = lines[nextIndex];
+        const darkMatch = nextLine.match(/^!\[([^\]]*)\]\(([^[]+)\[style=dark\]\)/);
+        if (darkMatch && darkMatch[2] === basePath) {
+          variants.dark = basePath;
+          nextIndex++;
+        }
+      }
+    } else if (style === 'dark') {
+      variants.dark = basePath;
+      // Look for light variant on next line
+      if (nextIndex < lines.length) {
+        const nextLine = lines[nextIndex];
+        const lightMatch = nextLine.match(/^!\[([^\]]*)\]\(([^[]+)\[style=light\]\)/);
+        if (lightMatch && lightMatch[2] === basePath) {
+          variants.light = basePath;
+          nextIndex++;
+        }
+      }
+    }
+    
+    // Build the actual file paths
+    const extension = basePath.match(/\.(svg|png|jpg|jpeg|gif|webp)$/i)?.[1] || 'svg';
+    const baseFileName = basePath.replace(/\.(svg|png|jpg|jpeg|gif|webp)$/i, '');
+    
+    if (variants.light) {
+      variants.light = `/svg/${baseFileName}[style=light].${extension}`;
+    }
+    if (variants.dark) {
+      variants.dark = `/svg/${baseFileName}[style=dark].${extension}`;
+    }
+    
+    return {
+      block: {
+        type: 'image',
+        src: variants.light || variants.dark || `/svg/${basePath}`,
+        alt,
+        variants
+      },
+      nextIndex
+    };
+  }
+  
+  // Match standard markdown image syntax: ![alt text](path)
+  const standardMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
+  if (standardMatch) {
+    const alt = standardMatch[1];
+    let src = standardMatch[2];
+    
+    // If path doesn't start with http or /, assume it's in public folder
+    if (!src.startsWith('http') && !src.startsWith('/')) {
+      // Check if it's an SVG or image file
+      if (src.match(/\.(svg|png|jpg|jpeg|gif|webp)$/i)) {
+        // Check if file likely exists in svg or images folder
+        if (src.includes('svg') || src.endsWith('.svg')) {
+          src = `/svg/${src}`;
+        } else {
+          src = `/images/${src}`;
+        }
+      }
+    }
+    
+    return {
+      block: {
+        type: 'image',
+        src,
+        alt
+      },
+      nextIndex: startIndex + 1
+    };
+  }
+  
+  return { block: null, nextIndex: startIndex + 1 };
+}
+
 // Parse paragraph
 function parseParagraph(lines: string[], startIndex: number): { block: ParagraphBlock; nextIndex: number } {
   const paragraphLines: string[] = [];
@@ -471,6 +597,8 @@ function parseParagraph(lines: string[], startIndex: number): { block: Paragraph
         line.startsWith('>') ||
         line.match(/^[\*\-\+]\s+/) ||
         line.match(/^\d+\.\s+/) ||
+        line.startsWith('![') ||
+        line.match(/^[\s]*(?:---+|___+|\*\*\*+)[\s]*$/) ||
         isTableStart(lines, i)) {
       break;
     }
@@ -509,6 +637,30 @@ function processInlineElements(text: string): string {
     mathExpressions.push(math);
     // Use a placeholder that won't be interpreted as markdown
     return `MATHBLOCK${index}MATHBLOCK`;
+  });
+  
+  // Handle inline images with light/dark variants
+  text = text.replace(/!\[([^\]]*)\]\(([^[]+)\[style=(light|dark)\]\)/g, (match, alt, basePath, style) => {
+    const extension = basePath.match(/\.(svg|png|jpg|jpeg|gif|webp)$/i)?.[1] || 'svg';
+    const baseFileName = basePath.replace(/\.(svg|png|jpg|jpeg|gif|webp)$/i, '');
+    const src = `/svg/${baseFileName}[style=${style}].${extension}`;
+    
+    return `<img src="${src}" alt="${alt}" data-variant="${style}" />`;
+  });
+  
+  // Handle standard inline images
+  text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+    // If path doesn't start with http or /, assume it's in public folder
+    if (!src.startsWith('http') && !src.startsWith('/')) {
+      if (src.match(/\.(svg|png|jpg|jpeg|gif|webp)$/i)) {
+        if (src.includes('svg') || src.endsWith('.svg')) {
+          src = `/svg/${src}`;
+        } else {
+          src = `/images/${src}`;
+        }
+      }
+    }
+    return `<img src="${src}" alt="${alt}" />`;
   });
   
   // Handle footnote references [^1], [^2], etc.

@@ -127,6 +127,33 @@
         {@html block.content}
       </blockquote>
     
+    {:else if block.type === 'image'}
+      <div class="my-6">
+        {#if block.variants}
+          <!-- Image with light/dark variants -->
+          <img 
+            src={block.variants.light || block.variants.dark || block.src}
+            alt={block.alt || ''}
+            class="w-full max-w-4xl mx-auto dark:hidden"
+          />
+          <img 
+            src={block.variants.dark || block.variants.light || block.src}
+            alt={block.alt || ''}
+            class="w-full max-w-4xl mx-auto hidden dark:block"
+          />
+        {:else}
+          <!-- Standard image -->
+          <img 
+            src={block.src}
+            alt={block.alt || ''}
+            class="w-full max-w-4xl mx-auto"
+          />
+        {/if}
+      </div>
+      
+    {:else if block.type === 'horizontal-rule'}
+      <hr class="my-8 border-t border-neutral-300 dark:border-neutral-700" />
+      
     {:else if block.type === 'footnote'}
       <!-- Footnotes are rendered at the bottom, skip here -->
     {/if}

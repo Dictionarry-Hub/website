@@ -1,17 +1,17 @@
 import * as path from 'path';
 import matter from 'gray-matter';
-import { ContentEntry, RawContent, ProcessorConfig, ContentProcessor } from '../core/types';
+import { ContentEntry, RawContent, ProcessorConfig, ContentProcessor, DataSourceConfig } from '../core/types';
 import { DataSource } from '../core/DataSource';
 import { slugify, sanitizeForSearch, stripMarkdown, calculateReadingTime } from '../utils/text';
 import { parseMarkdown } from '../../parseMarkdown';
 
 export class MarkdownProcessor extends ContentProcessor {
   name = 'markdown';
-  supportedPaths = ['wiki', 'dev_logs'];
+  supportedPaths = ['wiki', 'devlogs'];
   
-  private categoryMap: Record<string, { basePath: string; searchWeight: number }> = {
-    'wiki': { basePath: '/wiki', searchWeight: 0.8 },
-    'devlogs': { basePath: '/devlogs', searchWeight: 0.6 }
+  private categoryMap: Record<string, { basePath: string; searchWeight: number; publicPath: string }> = {
+    'wiki': { basePath: '/wiki', searchWeight: 0.8, publicPath: 'wiki' },
+    'devlogs': { basePath: '/devlogs', searchWeight: 0.6, publicPath: 'devlogs' }
   };
 
   canProcess(path: string): boolean {
@@ -78,16 +78,42 @@ export class MarkdownProcessor extends ContentProcessor {
   async processAll(source: DataSource): Promise<ContentEntry[]> {
     const entries: ContentEntry[] = [];
     
-    for (const dir of ['wiki', 'dev_logs']) {
-      const files = await source.listFiles(dir, /\.md$/);
-      
-      for (const file of files) {
-        const content = await source.readFile(file);
+    // ALWAYS use local public folder for markdown files, regardless of database source
+    // This ensures markdown content is never fetched from remote repositories
+    const markdownSourceConfig: DataSourceConfig = {
+      type: 'local',
+      localPath: './public'
+    };
+    const markdownSource = new DataSource(markdownSourceConfig);
+    await markdownSource.initialize();
+    
+    try {
+      // Process wiki files from public/wiki
+      const wikiFiles = await markdownSource.listFiles('wiki', /\.md$/);
+      for (const file of wikiFiles) {
+        const content = await markdownSource.readFile(file);
         if (content) {
           const entry = await this.process(content, {} as ProcessorConfig);
           if (entry) entries.push(entry);
         }
       }
+      
+      // Process devlog files from public/devlogs
+      const devlogFiles = await markdownSource.listFiles('devlogs', /\.md$/);
+      for (const file of devlogFiles) {
+        const content = await markdownSource.readFile(file);
+        if (content) {
+          // Update the path to match expected format
+          content.path = content.path.replace('devlogs', 'dev_logs');
+          const entry = await this.process(content, {} as ProcessorConfig);
+          if (entry) entries.push(entry);
+        }
+      }
+      
+      // NOTE: We intentionally DO NOT read from the source parameter
+      // Markdown files should ONLY come from local public folder
+    } finally {
+      await markdownSource.cleanup();
     }
     
     return entries;
