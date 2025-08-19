@@ -26,7 +26,7 @@ jobs:
           cache: 'npm'
       
       - run: npm ci
-      - run: npm run db:website  # Fetch database
+      - run: npm run db:stable  # Fetch database
       - run: npm run build:ssg   # Build site with prerendering
       
       - uses: actions/configure-pages@v4
