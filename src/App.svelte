@@ -32,8 +32,7 @@
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
   import { onMount } from 'svelte'
-  import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
-  import { isMobileHeaderNavOpen, closeMobileHeaderNav } from '@shared/stores/mobileHeaderNav'
+  import { isMobileSidebarOpen, closeMobileSidebar, isMobileHeaderNavOpen, closeMobileHeaderNav } from '@shared/stores/mobileNavigation'
   import { fly } from 'svelte/transition'
   
   // Route configuration - single source of truth for all routes

@@ -4,8 +4,7 @@
   import Extras from './components/extras.svelte';
   import SearchModal from './searchModal/searchModal.svelte';
   import { Compass, X, ListTree } from 'lucide-svelte';
-  import { isMobileSidebarOpen, toggleMobileSidebar } from '@shared/stores/mobileSidebar';
-  import { isMobileHeaderNavOpen, toggleMobileHeaderNav } from '@shared/stores/mobileHeaderNav';
+  import { isMobileSidebarOpen, toggleMobileSidebar, isMobileHeaderNavOpen, toggleMobileHeaderNav } from '@shared/stores/mobileNavigation';
   import { navigationItems } from '@shared/stores/navigation';
   
   let isSearchModalOpen = false;
