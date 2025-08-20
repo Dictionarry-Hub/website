@@ -1,6 +1,6 @@
 <script>
-  import SidebarSection from './sidebarSection.svelte';
-  import SidebarItem from './sidebarItem.svelte';
+  import SidebarSection from './pageNavSection.svelte';
+  import SidebarItem from './pageNavItem.svelte';
   import { contentDatabase } from '@db';
   import { router } from 'tinro';
   

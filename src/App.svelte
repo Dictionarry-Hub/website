@@ -1,10 +1,10 @@
 <script>
   import 'highlight.js/styles/atom-one-dark.css'
   import { Route, router } from 'tinro'
-  import Navbar from './navbar/navbar.svelte'
+  import Navbar from './navigation/navbar/navbar.svelte'
   import Footer from './footer/footer.svelte'
-  import Sidebar from './sidebar/sidebar.svelte'
-  import Navigation from './shared/navigation.svelte'
+  import PageNav from './navigation/pageNav/pageNav.svelte'
+  import HeaderNav from './navigation/headerNav/headerNav.svelte'
   import Welcome from './gettingStarted/welcome.svelte'
   import ProfilarrInstallation from './gettingStarted/profilarrInstallation.svelte'
   import Development from './gettingStarted/development.svelte'
@@ -28,7 +28,7 @@
   import MiscSettingsPage from './mediaManagement/miscSettingsPage.svelte'
   import WikiPage from './wiki/landing/page.svelte'
   import WikiSlug from './wiki/slug/page.svelte'
-  import NotFound from '@shared/components/notFound.svelte'
+  import NotFound from './pages/404/404.svelte'
   import { theme } from '@shared/stores/theme'
   import { loadSearchIndex } from '@shared/stores/search'
   import { onMount } from 'svelte'
@@ -162,14 +162,14 @@
   <div class="flex flex-1 relative overflow-hidden">
     <!-- Desktop sidebar -->
     <div class="hidden xl:block">
-      <Sidebar />
+      <PageNav />
     </div>
     
-    <!-- Mobile sidebar with slide animation -->
+    <!-- Mobile PageNav with slide animation -->
     {#if $isMobileSidebarOpen}
       <div class="xl:hidden fixed inset-0 top-16 z-40" transition:fly={{ x: -320, duration: 300 }}>
         <div class="w-full h-full bg-white dark:bg-neutral-900 overflow-y-auto">
-          <Sidebar />
+          <PageNav />
         </div>
       </div>
     {/if}
@@ -183,9 +183,9 @@
       </div>
     </main>
     
-    <!-- Navigation -->
+    <!-- HeaderNav -->
     <div class="hidden xl:block">
-      <Navigation />
+      <HeaderNav />
     </div>
   </div>
   <!-- Footer only on desktop -->

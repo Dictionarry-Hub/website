@@ -1,5 +1,5 @@
 <script>
-  import Seo from '@shared/components/seo.svelte';
+  import Seo from '@shared/ui/seo.svelte';
   import { getSeoData } from '@shared/constants/seoData';
   import { setNavigationItems, clearNavigation } from '@shared/stores/navigation';
   import { onMount, onDestroy } from 'svelte';

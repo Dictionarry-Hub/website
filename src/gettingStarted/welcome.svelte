@@ -3,7 +3,7 @@
   import { showHoverInfo, hideHoverInfo } from '@shared/stores/hoverInfo';
   import { onMount, onDestroy } from 'svelte';
   import { WandSparkles, Download, Code, FlaskConical, BookOpen, SlidersHorizontal } from 'lucide-svelte';
-  import Seo from '@shared/components/seo.svelte';
+  import Seo from '@shared/ui/seo.svelte';
   import { router } from 'tinro';
   import { getSeoData } from '@shared/constants/seoData';
 

@@ -2,7 +2,7 @@
   import Header from './components/header.svelte';
   import Search from './components/search.svelte';
   import Extras from './components/extras.svelte';
-  import SearchModal from '../searchModal/searchModal.svelte';
+  import SearchModal from './searchModal/searchModal.svelte';
   import { Menu, X } from 'lucide-svelte';
   import { isMobileSidebarOpen, toggleMobileSidebar } from '@shared/stores/mobileSidebar';
   

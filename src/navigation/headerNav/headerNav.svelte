@@ -1,7 +1,7 @@
 <script>
   import { navigationItems } from '@shared/stores/navigation';
-  import NavigationItem from './navigationItem.svelte';
-  import HoverInfo from '@shared/components/hoverInfo.svelte';
+  import HeaderNavItem from './headerNavItem.svelte';
+  import HoverInfo from '@ui/hoverInfo.svelte';
   import { Navigation } from 'lucide-svelte';
   import { onMount, onDestroy } from 'svelte';
   
@@ -76,35 +76,35 @@
     <div class="space-y-1">
       {#each $navigationItems.items as item}
         {#if typeof item === 'string'}
-          <NavigationItem href="?section={sanitizeForAnchor(item)}" label={item} isActive={activeSection === sanitizeForAnchor(item)} />
+          <HeaderNavItem href="?section={sanitizeForAnchor(item)}" label={item} isActive={activeSection === sanitizeForAnchor(item)} />
         {:else if item.title}
           <!-- Main section -->
           <div class="mb-3">
-            <NavigationItem href="?section={sanitizeForAnchor(item.title)}" label={item.title} isActive={activeSection === sanitizeForAnchor(item.title)} />
+            <HeaderNavItem href="?section={sanitizeForAnchor(item.title)}" label={item.title} isActive={activeSection === sanitizeForAnchor(item.title)} />
             
             {#if item.children}
               <div class="ml-4 mt-1 space-y-0.5">
                 {#each item.children as child}
                   {#if typeof child === 'string'}
-                    <NavigationItem href="?section={sanitizeForAnchor(child)}" label={child} isActive={activeSection === sanitizeForAnchor(child)} />
+                    <HeaderNavItem href="?section={sanitizeForAnchor(child)}" label={child} isActive={activeSection === sanitizeForAnchor(child)} />
                   {:else if child.title}
                     <!-- Subsection -->
                     <div class="ml-2">
-                      <NavigationItem href="?section={sanitizeForAnchor(child.title)}" label={child.title} isActive={activeSection === sanitizeForAnchor(child.title)} />
+                      <HeaderNavItem href="?section={sanitizeForAnchor(child.title)}" label={child.title} isActive={activeSection === sanitizeForAnchor(child.title)} />
                       
                       {#if child.children}
                         <div class="ml-4 mt-0.5 space-y-0.5">
                           {#each child.children as grandchild}
                             {#if typeof grandchild === 'string'}
-                              <NavigationItem href="?section={sanitizeForAnchor(grandchild)}" label={grandchild} isActive={activeSection === sanitizeForAnchor(grandchild)} />
+                              <HeaderNavItem href="?section={sanitizeForAnchor(grandchild)}" label={grandchild} isActive={activeSection === sanitizeForAnchor(grandchild)} />
                             {:else if grandchild.title}
                               <div class="ml-2">
-                                <NavigationItem href="?section={sanitizeForAnchor(grandchild.title)}" label={grandchild.title} isActive={activeSection === sanitizeForAnchor(grandchild.title)} />
+                                <HeaderNavItem href="?section={sanitizeForAnchor(grandchild.title)}" label={grandchild.title} isActive={activeSection === sanitizeForAnchor(grandchild.title)} />
                                 
                                 {#if grandchild.children}
                                   <div class="ml-4 mt-0.5 space-y-0.5">
                                     {#each grandchild.children as greatgrandchild}
-                                      <NavigationItem href="?section={sanitizeForAnchor(greatgrandchild)}" label={greatgrandchild} isActive={activeSection === sanitizeForAnchor(greatgrandchild)} />
+                                      <HeaderNavItem href="?section={sanitizeForAnchor(greatgrandchild)}" label={greatgrandchild} isActive={activeSection === sanitizeForAnchor(greatgrandchild)} />
                                     {/each}
                                   </div>
                                 {/if}
