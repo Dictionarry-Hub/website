@@ -3,8 +3,10 @@
   import Search from './components/search.svelte';
   import Extras from './components/extras.svelte';
   import SearchModal from './searchModal/searchModal.svelte';
-  import { Menu, X } from 'lucide-svelte';
+  import { Compass, X, ListTree } from 'lucide-svelte';
   import { isMobileSidebarOpen, toggleMobileSidebar } from '@shared/stores/mobileSidebar';
+  import { isMobileHeaderNavOpen, toggleMobileHeaderNav } from '@shared/stores/mobileHeaderNav';
+  import { navigationItems } from '@shared/stores/navigation';
   
   let isSearchModalOpen = false;
   
@@ -27,7 +29,7 @@
           {#if $isMobileSidebarOpen}
             <X class="w-5 h-5" />
           {:else}
-            <Menu class="w-5 h-5" />
+            <Compass class="w-5 h-5" />
           {/if}
         </button>
       </div>
@@ -35,6 +37,20 @@
       <div class="flex items-center space-x-2">
         <Search {openSearchModal} />
         <Extras />
+        {#if $navigationItems.items && $navigationItems.items.length > 0}
+          <button
+            class="p-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-neutral-700 dark:text-neutral-300"
+            on:click={toggleMobileHeaderNav}
+            aria-label={$isMobileHeaderNavOpen ? 'Close table of contents' : 'Open table of contents'}
+            title="Table of contents"
+          >
+            {#if $isMobileHeaderNavOpen}
+              <X class="w-5 h-5" />
+            {:else}
+              <ListTree class="w-5 h-5" />
+            {/if}
+          </button>
+        {/if}
       </div>
     </div>
     

@@ -63,7 +63,7 @@
 </script>
 
 {#if $navigationItems.items.length > 0}
-<aside class="sticky top-16 w-80 h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 border-l border-neutral-200 dark:border-neutral-700 overflow-y-auto">
+<aside class="xl:sticky xl:top-16 w-full xl:w-80 h-full xl:h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 xl:border-l border-neutral-200 dark:border-neutral-700 overflow-y-auto">
   <div class="p-6">
     <div class="mb-6 pb-3 border-b border-neutral-200 dark:border-neutral-800">
       <div class="flex items-center gap-2.5">

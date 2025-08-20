@@ -33,6 +33,7 @@
   import { loadSearchIndex } from '@shared/stores/search'
   import { onMount } from 'svelte'
   import { isMobileSidebarOpen, closeMobileSidebar } from '@shared/stores/mobileSidebar'
+  import { isMobileHeaderNavOpen, closeMobileHeaderNav } from '@shared/stores/mobileHeaderNav'
   import { fly } from 'svelte/transition'
   
   // Route configuration - single source of truth for all routes
@@ -111,8 +112,9 @@
   
   // Scroll to top on route change, but handle section parameters
   router.subscribe(() => {
-    // Close mobile sidebar on route change
+    // Close mobile sidebar and header nav on route change
     closeMobileSidebar();
+    closeMobileHeaderNav();
     
     // Track page view in Google Analytics
     if (typeof gtag !== 'undefined') {
@@ -174,8 +176,17 @@
       </div>
     {/if}
     
+    <!-- Mobile HeaderNav with slide animation from right -->
+    {#if $isMobileHeaderNavOpen}
+      <div class="xl:hidden fixed inset-0 top-16 z-40" transition:fly={{ x: 320, duration: 300 }}>
+        <div class="w-full h-full bg-white dark:bg-neutral-900 overflow-y-auto">
+          <HeaderNav />
+        </div>
+      </div>
+    {/if}
+    
     <!-- Main content -->
-    <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen ? 'hidden xl:block' : ''}">
+    <main class="flex-1 overflow-y-auto {$isMobileSidebarOpen || $isMobileHeaderNavOpen ? 'hidden xl:block' : ''}">
       <div class="universal-padding max-w-6xl mx-auto">
         <Route path="/*" let:meta>
           <svelte:component this={getRouteComponent(meta.url)} />
