@@ -2,15 +2,24 @@
   export let href = '';
   export let label = '';
   export let isActive = false;
+  export let level = 0;
   
-  // Determine level based on indentation classes in parent
-  $: isMainSection = label && (label.includes('👋') || label.includes('Profilarr Setup') || label.includes('Installation') || label.includes('Usage') || label.includes('Importing'));
-  $: textSize = isMainSection ? 'text-sm font-medium' : 'text-sm';
+  // Simpler text sizing
+  $: textStyle = level === 0 
+    ? 'text-sm font-medium' 
+    : 'text-xs';
+    
+  // Cleaner active state
+  $: activeStyle = isActive 
+    ? 'text-blue-600 dark:text-blue-400 font-medium' 
+    : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100';
+    
+  $: padding = 'px-2 py-1';
 </script>
 
 <a 
   {href}
-  class="block px-2 py-1 {textSize} rounded transition-colors {isActive ? 'text-blue-600 dark:text-blue-400 font-medium' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800'}"
+  class="block {padding} {textStyle} rounded transition-colors {activeStyle}"
   on:click|preventDefault={() => {
     const targetId = href.replace('?section=', '');
     const element = document.getElementById(targetId);

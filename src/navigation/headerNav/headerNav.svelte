@@ -2,7 +2,7 @@
   import { navigationItems } from '@shared/stores/navigation';
   import HeaderNavItem from './headerNavItem.svelte';
   import HoverInfo from '@ui/hoverInfo.svelte';
-  import { Navigation } from 'lucide-svelte';
+  import { ListTree } from 'lucide-svelte';
   import { onMount, onDestroy } from 'svelte';
   
   let activeSection = '';
@@ -64,56 +64,56 @@
 
 {#if $navigationItems.items.length > 0}
 <aside class="sticky top-16 w-80 h-[calc(100vh-4rem)] bg-white dark:bg-neutral-900 border-l border-neutral-200 dark:border-neutral-700 overflow-y-auto">
-  <div class="p-4">
-    <div class="mb-4">
-      <div class="flex items-center space-x-2">
-        <Navigation class="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
-        <span class="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-          Navigation
+  <div class="p-6">
+    <div class="mb-6 pb-3 border-b border-neutral-200 dark:border-neutral-800">
+      <div class="flex items-center gap-2.5">
+        <div class="p-1.5 bg-blue-50 dark:bg-blue-900/20 rounded-md">
+          <ListTree class="w-4 h-4 text-blue-600 dark:text-blue-400" />
+        </div>
+        <span class="text-sm font-semibold text-neutral-900 dark:text-neutral-100 uppercase tracking-wider">
+          On This Page
         </span>
       </div>
     </div>
-    <div class="space-y-1">
-      {#each $navigationItems.items as item}
+    <div>
+      {#each $navigationItems.items as item, index}
         {#if typeof item === 'string'}
-          <HeaderNavItem href="?section={sanitizeForAnchor(item)}" label={item} isActive={activeSection === sanitizeForAnchor(item)} />
+          <div class="mb-2">
+            <HeaderNavItem href="?section={sanitizeForAnchor(item)}" label={`${index + 1}. ${item}`} isActive={activeSection === sanitizeForAnchor(item)} level={0} />
+          </div>
         {:else if item.title}
           <!-- Main section -->
-          <div class="mb-3">
-            <HeaderNavItem href="?section={sanitizeForAnchor(item.title)}" label={item.title} isActive={activeSection === sanitizeForAnchor(item.title)} />
+          <div class="mb-2">
+            <HeaderNavItem href="?section={sanitizeForAnchor(item.title)}" label={`${index + 1}. ${item.title}`} isActive={activeSection === sanitizeForAnchor(item.title)} level={0} />
             
             {#if item.children}
-              <div class="ml-4 mt-1 space-y-0.5">
+              <div class="ml-2 mt-2 border-l-2 border-neutral-100 dark:border-neutral-800 pl-3">
                 {#each item.children as child}
                   {#if typeof child === 'string'}
-                    <HeaderNavItem href="?section={sanitizeForAnchor(child)}" label={child} isActive={activeSection === sanitizeForAnchor(child)} />
+                    <HeaderNavItem href="?section={sanitizeForAnchor(child)}" label={child} isActive={activeSection === sanitizeForAnchor(child)} level={1} />
                   {:else if child.title}
                     <!-- Subsection -->
-                    <div class="ml-2">
-                      <HeaderNavItem href="?section={sanitizeForAnchor(child.title)}" label={child.title} isActive={activeSection === sanitizeForAnchor(child.title)} />
-                      
-                      {#if child.children}
-                        <div class="ml-4 mt-0.5 space-y-0.5">
-                          {#each child.children as grandchild}
-                            {#if typeof grandchild === 'string'}
-                              <HeaderNavItem href="?section={sanitizeForAnchor(grandchild)}" label={grandchild} isActive={activeSection === sanitizeForAnchor(grandchild)} />
-                            {:else if grandchild.title}
-                              <div class="ml-2">
-                                <HeaderNavItem href="?section={sanitizeForAnchor(grandchild.title)}" label={grandchild.title} isActive={activeSection === sanitizeForAnchor(grandchild.title)} />
-                                
-                                {#if grandchild.children}
-                                  <div class="ml-4 mt-0.5 space-y-0.5">
-                                    {#each grandchild.children as greatgrandchild}
-                                      <HeaderNavItem href="?section={sanitizeForAnchor(greatgrandchild)}" label={greatgrandchild} isActive={activeSection === sanitizeForAnchor(greatgrandchild)} />
-                                    {/each}
-                                  </div>
-                                {/if}
+                    <HeaderNavItem href="?section={sanitizeForAnchor(child.title)}" label={child.title} isActive={activeSection === sanitizeForAnchor(child.title)} level={1} />
+                    
+                    {#if child.children}
+                      <div class="ml-2 mt-1 border-l-2 border-neutral-100 dark:border-neutral-800 pl-3">
+                        {#each child.children as grandchild}
+                          {#if typeof grandchild === 'string'}
+                            <HeaderNavItem href="?section={sanitizeForAnchor(grandchild)}" label={grandchild} isActive={activeSection === sanitizeForAnchor(grandchild)} level={2} />
+                          {:else if grandchild.title}
+                            <HeaderNavItem href="?section={sanitizeForAnchor(grandchild.title)}" label={grandchild.title} isActive={activeSection === sanitizeForAnchor(grandchild.title)} level={2} />
+                            
+                            {#if grandchild.children}
+                              <div class="ml-2 mt-1 border-l-2 border-neutral-100 dark:border-neutral-800 pl-3">
+                                {#each grandchild.children as greatgrandchild}
+                                  <HeaderNavItem href="?section={sanitizeForAnchor(greatgrandchild)}" label={greatgrandchild} isActive={activeSection === sanitizeForAnchor(greatgrandchild)} level={3} />
+                                {/each}
                               </div>
                             {/if}
-                          {/each}
-                        </div>
-                      {/if}
-                    </div>
+                          {/if}
+                        {/each}
+                      </div>
+                    {/if}
                   {/if}
                 {/each}
               </div>
