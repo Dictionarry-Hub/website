@@ -79,23 +79,40 @@ export class QualityProfileProcessor extends ContentProcessor {
     );
 
     for (const entry of entries) {
-      if (entry.type === 'quality-profile' && entry.data?.custom_formats) {
-        entry.data.custom_formats = entry.data.custom_formats.map((cf: any) => {
-          if (!cf.name) return cf;
-          const cfSlug = slugify(cf.name);
-          const customFormatEntry = customFormatMap.get(cfSlug);
-          if (customFormatEntry) {
-            return {
-              ...cf,
-              slug: cfSlug,
-              tags: customFormatEntry.data.tags || [],
-              conditions: customFormatEntry.data.conditions || [],
-              description: customFormatEntry.data.description || ''
-            };
-          }
-          return cf;
-        });
+      if (entry.type === 'quality-profile') {
+        // Process generic custom_formats field
+        if (entry.data?.custom_formats) {
+          entry.data.custom_formats = this.enrichCustomFormats(entry.data.custom_formats, customFormatMap);
+        }
+        
+        // Process Radarr-specific custom formats
+        if (entry.data?.custom_formats_radarr) {
+          entry.data.custom_formats_radarr = this.enrichCustomFormats(entry.data.custom_formats_radarr, customFormatMap);
+        }
+        
+        // Process Sonarr-specific custom formats
+        if (entry.data?.custom_formats_sonarr) {
+          entry.data.custom_formats_sonarr = this.enrichCustomFormats(entry.data.custom_formats_sonarr, customFormatMap);
+        }
       }
     }
+  }
+
+  private enrichCustomFormats(formats: any[], customFormatMap: Map<string, ContentEntry>): any[] {
+    return formats.map((cf: any) => {
+      if (!cf.name) return cf;
+      const cfSlug = slugify(cf.name);
+      const customFormatEntry = customFormatMap.get(cfSlug);
+      if (customFormatEntry) {
+        return {
+          ...cf,
+          slug: cfSlug,
+          tags: customFormatEntry.data.tags || [],
+          conditions: customFormatEntry.data.conditions || [],
+          description: customFormatEntry.data.description || ''
+        };
+      }
+      return cf;
+    });
   }
 }

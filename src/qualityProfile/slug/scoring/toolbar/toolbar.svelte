@@ -2,12 +2,16 @@
   import Search from './search.svelte';
   import Group from './group.svelte';
   import Value from './value.svelte';
+  import Category from './category.svelte';
   import { createEventDispatcher } from 'svelte';
   
   export let rangeMin = 0;
   export let rangeMax = 0;
   export let minValue = rangeMin;
   export let maxValue = rangeMax;
+  export let hasRadarr = false;
+  export let hasSonarr = false;
+  export let selectedCategories = ['radarr', 'sonarr'];
   
   const dispatch = createEventDispatcher();
   
@@ -31,4 +35,5 @@
   <Search bind:searchTerm on:search={handleSearch} />
   <Group on:groupChange={handleGroupChange} />
   <Value {rangeMin} {rangeMax} {minValue} {maxValue} on:change={handleValueChange} />
+  <Category {hasRadarr} {hasSonarr} bind:selectedCategories />
 </div>

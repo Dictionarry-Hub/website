@@ -1,9 +1,11 @@
 <script>
   import Toolbar from './toolbar/toolbar.svelte';
   import Formats from './formats.svelte';
-  import { PanelBottomOpen, TrendingUp, CopyPlus } from 'lucide-svelte';
+  import { PanelBottomOpen, TrendingUp, CopyPlus, Film, Tv } from 'lucide-svelte';
   
   export let custom_formats = [];
+  export let custom_formats_radarr = [];
+  export let custom_formats_sonarr = [];
   export let minCustomFormatScore = 0;
   export let upgradeUntilScore = null;
   export let minScoreIncrement = null;
@@ -13,11 +15,84 @@
   let customTags = [];
   let minValue = null;
   let maxValue = null;
+  let selectedCategories = ['radarr', 'sonarr']; // Array for multiple selection
   
-  // Calculate min and max scores from custom formats
+  // Determine which formats to display based on selection
+  $: displayFormats = (() => {
+    const hasRadarrFormats = custom_formats_radarr.length > 0;
+    const hasSonarrFormats = custom_formats_sonarr.length > 0;
+    const hasSharedFormats = custom_formats.length > 0;
+    
+    let formats = [];
+    const processedNames = new Set();
+    
+    // If both are selected, show all formats
+    if (selectedCategories.includes('radarr') && selectedCategories.includes('sonarr')) {
+      // First add shared formats (these apply to both)
+      if (hasSharedFormats) {
+        custom_formats.forEach(f => {
+          formats.push({ ...f, source: 'both' });
+          processedNames.add(f.name);
+        });
+      }
+      
+      // Add app-specific formats
+      if (hasRadarrFormats || hasSonarrFormats) {
+        const radarrNames = new Set(custom_formats_radarr.map(f => f.name));
+        const sonarrNames = new Set(custom_formats_sonarr.map(f => f.name));
+        
+        // Add Radarr-specific formats (not already in shared)
+        custom_formats_radarr.forEach(f => {
+          if (!processedNames.has(f.name)) {
+            // Check if this format is also in Sonarr
+            if (sonarrNames.has(f.name)) {
+              formats.push({ ...f, source: 'both' });
+            } else {
+              formats.push({ ...f, source: 'radarr' });
+            }
+            processedNames.add(f.name);
+          }
+        });
+        
+        // Add Sonarr-only formats (not already processed)
+        custom_formats_sonarr.forEach(f => {
+          if (!processedNames.has(f.name)) {
+            formats.push({ ...f, source: 'sonarr' });
+            processedNames.add(f.name);
+          }
+        });
+      }
+    } else if (selectedCategories.includes('radarr')) {
+      // Show only Radarr formats
+      if (hasRadarrFormats) {
+        formats = custom_formats_radarr.map(f => ({ ...f, source: 'radarr' }));
+      } else if (hasSharedFormats) {
+        formats = custom_formats.map(f => ({ ...f, source: 'both' }));
+      }
+    } else if (selectedCategories.includes('sonarr')) {
+      // Show only Sonarr formats
+      if (hasSonarrFormats) {
+        formats = custom_formats_sonarr.map(f => ({ ...f, source: 'sonarr' }));
+      } else if (hasSharedFormats) {
+        formats = custom_formats.map(f => ({ ...f, source: 'both' }));
+      }
+    }
+    
+    // Sort formats by score (descending) then by name
+    formats.sort((a, b) => {
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+      return a.name.localeCompare(b.name);
+    });
+    
+    return formats;
+  })();
+  
+  // Calculate min and max scores from display formats
   $: scoreRange = (() => {
-    if (custom_formats.length === 0) return { min: -100000, max: 100000 };
-    const scores = custom_formats.map(f => f.score);
+    if (displayFormats.length === 0) return { min: -100000, max: 100000 };
+    const scores = displayFormats.map(f => f.score);
     return {
       min: Math.min(...scores),
       max: Math.max(...scores)
@@ -33,7 +108,7 @@
   // Calculate unique tag count
   $: uniqueTagCount = (() => {
     const allTags = new Set();
-    custom_formats.forEach(format => {
+    displayFormats.forEach(format => {
       format.tags.forEach(tag => allTags.add(tag));
     });
     return allTags.size;
@@ -54,7 +129,7 @@
   };
   
   // Filter custom formats based on search term and score range
-  $: filteredFormats = custom_formats.filter(format => {
+  $: filteredFormats = displayFormats.filter(format => {
     // Filter by search term
     if (searchTerm) {
       const search = searchTerm.toLowerCase();
@@ -163,12 +238,20 @@
         </span>
       {/if}
       
-      <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-yellow-600 dark:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-        </svg>
-        <span class="text-neutral-700 dark:text-neutral-300">{custom_formats.length} Formats</span>
-      </span>
+      <!-- Format count pills -->
+      {#if custom_formats_radarr.length > 0 || custom_formats.length > 0}
+        <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+          <Film class="w-3.5 h-3.5 text-yellow-600 dark:text-yellow-400" />
+          <span class="text-neutral-700 dark:text-neutral-300">Radarr: {custom_formats_radarr.length + custom_formats.length}</span>
+        </span>
+      {/if}
+      
+      {#if custom_formats_sonarr.length > 0 || custom_formats.length > 0}
+        <span class="px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded-full text-xs font-medium flex items-center gap-1.5">
+          <Tv class="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+          <span class="text-neutral-700 dark:text-neutral-300">Sonarr: {custom_formats_sonarr.length + custom_formats.length}</span>
+        </span>
+      {/if}
     </div>
   </div>
   
@@ -180,6 +263,9 @@
     rangeMax={scoreRange.max}
     {minValue}
     {maxValue}
+    hasRadarr={custom_formats_radarr.length > 0 || custom_formats.length > 0}
+    hasSonarr={custom_formats_sonarr.length > 0 || custom_formats.length > 0}
+    bind:selectedCategories
   />
   
   <Formats 

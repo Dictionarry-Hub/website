@@ -1,5 +1,5 @@
 <script>
-  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight } from 'lucide-svelte';
+  import { Volume2, Monitor, Users, Tv, Code, HardDrive, Tag, Square, Layers, Folder, ChevronDown, ChevronRight, Film, Tv as TvIcon } from 'lucide-svelte';
   import { slide } from 'svelte/transition';
   
   export let groupName = '';
@@ -56,6 +56,7 @@
         <thead>
           <tr class="border-b border-neutral-200 dark:border-neutral-700">
             <th class="text-left px-4 py-3 text-xs font-medium text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Format Name</th>
+            <th class="text-right px-4 py-3 text-xs font-medium text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Application</th>
             <th class="text-right px-4 py-3 text-xs font-medium text-neutral-600 dark:text-neutral-400 uppercase tracking-wider w-24">Score</th>
           </tr>
         </thead>
@@ -69,6 +70,30 @@
                 >
                   {format.name}
                 </a>
+              </td>
+              <td class="px-4 py-3 text-right">
+                <div class="flex items-center justify-end gap-1">
+                  {#if format.source === 'radarr'}
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded text-[10px] font-medium">
+                      <Film class="w-3 h-3 text-yellow-600 dark:text-yellow-400" />
+                      <span class="text-neutral-700 dark:text-neutral-300">Radarr</span>
+                    </span>
+                  {:else if format.source === 'sonarr'}
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded text-[10px] font-medium">
+                      <TvIcon class="w-3 h-3 text-blue-600 dark:text-blue-400" />
+                      <span class="text-neutral-700 dark:text-neutral-300">Sonarr</span>
+                    </span>
+                  {:else if format.source === 'both'}
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded text-[10px] font-medium">
+                      <Film class="w-3 h-3 text-yellow-600 dark:text-yellow-400" />
+                      <span class="text-neutral-700 dark:text-neutral-300">Radarr</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-300/70 dark:border-neutral-700/50 rounded text-[10px] font-medium">
+                      <TvIcon class="w-3 h-3 text-blue-600 dark:text-blue-400" />
+                      <span class="text-neutral-700 dark:text-neutral-300">Sonarr</span>
+                    </span>
+                  {/if}
+                </div>
               </td>
               <td class="px-4 py-3 text-right">
                 <a 

@@ -33,6 +33,8 @@
   $: upgradeUntilScore = profileEntry?.data?.upgradeUntilScore || null;
   $: minScoreIncrement = profileEntry?.data?.minScoreIncrement || null;
   $: custom_formats = profileEntry?.data?.custom_formats || [];
+  $: custom_formats_radarr = profileEntry?.data?.custom_formats_radarr || [];
+  $: custom_formats_sonarr = profileEntry?.data?.custom_formats_sonarr || [];
   $: qualities = profileEntry?.data?.qualities || [];
   $: upgrade_until = profileEntry?.data?.upgrade_until || null;
   $: language = profileEntry?.data?.language || null;
@@ -72,7 +74,7 @@
     <div >
       <!-- Custom Formats Section -->
       <section id="custom-formats" class="mb-12">
-        <Scoring {custom_formats} {minCustomFormatScore} {upgradeUntilScore} {minScoreIncrement} />
+        <Scoring {custom_formats} {custom_formats_radarr} {custom_formats_sonarr} {minCustomFormatScore} {upgradeUntilScore} {minScoreIncrement} />
       </section>
       
       <!-- Qualities Section -->

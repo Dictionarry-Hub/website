@@ -213,7 +213,7 @@
 
   <div class="mt-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
     <p class="text-sm text-green-900 dark:text-green-100">
-      <strong>Note:</strong> The conflict resolution system handles small changes well, but we're still improving how it deals with larger-scale modifications. If you're planning extensive database changes, it's better to fork the repository on GitHub for now. The built-in resolution works great for tweaking individual scores and making minor adjustments.
+      <strong>Note:</strong> The conflict resolution system handles small changes well, but we're still <a href="/devlogs/mutable-immutability?section=change-layer" class="text-green-600 dark:text-green-400 hover:underline">improving</a> how it deals with larger-scale modifications. If you're planning extensive database changes, it's better to fork the repository on GitHub for now. The built-in resolution works great for tweaking individual scores and making minor adjustments.
     </p>
   </div>
 
