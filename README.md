@@ -19,11 +19,9 @@ npm install
 
 ### Development
 
-1. Fetch the database content:
+1. Build the database content:
 ```bash
-npm run db:stable  # Use stable database
-# OR
-npm run db:dev     # Use development database
+tsx scripts/db.ts --repo <github-repo-url> --branch <branch-name>
 ```
 
 2. Start the development server:
@@ -33,22 +31,37 @@ npm run dev
 
 The site will be available at `http://localhost:5173`
 
-### Database Sources
+## Customizing for Your Own Content
 
-The site pulls content from a database repository using a script (`scripts/db.ts`). 
+Fork this codebase to create your own documentation site with custom content sources.
 
-```bash
-tsx scripts/db.ts --repo <github-repo-url> --branch <branch-name>
+### Database Generation
 
-# Examples:
-tsx scripts/db.ts --repo https://github.com/Dictionarry-Hub/database --branch stable
-tsx scripts/db.ts --repo https://github.com/xshatterx/database --branch main
-```
-### Building for Production
+The site content is generated from a Profilarr-compliant database structure. Use the database script to pull content from any GitHub repository:
 
 ```bash
-npm run db:stable *# Fetch database*
-npm run build *# Build static site*
+tsx scripts/db.ts --repo <github-url> --branch <branch-name>
 ```
 
-The static site will be generated in the `dist/` directory.
+The script processes multiple content types from your repository:
+- YAML files in `regex_patterns/`, `custom_formats/`, `profiles/`, and `media_management/`
+- Automatically builds a searchable index and category structure
+
+Additional options:
+- `--cache`: Cache repository for faster rebuilds
+- `--only <types>`: Process specific content types (regex, custom-formats, quality-profiles, media-management, markdown, static)
+- `--token <token>`: Access private repositories
+
+### Profile Wizard
+
+Customize the quality profile selection wizard by editing `src/shared/constants/flowchartOptions.ts`:
+
+- `flowchartColumns`: Define decision categories and their options
+- `qualityProfiles`: Configure profiles with their selection paths and URLs
+
+### Markdown Content
+
+Add static markdown files directly to the public directory:
+- `public/wiki/`: Wiki articles and documentation
+- `public/devlogs/`: Development logs and updates
+- `public/gettingStarted/`: Getting started guides and tutorials

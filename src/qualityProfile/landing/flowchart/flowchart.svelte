@@ -3,7 +3,8 @@
   import { onMount, afterUpdate, onDestroy } from 'svelte';
   import FlowchartItem from './flowchartItem.svelte';
   import FlowchartMobile from './flowchartMobile.svelte';
-  import { flowchartColumns, flowchartEdges } from '@shared/constants/flowchartOptions';
+  import { flowchartColumns, getAvailableOptions, getMatchingProfile } from '@shared/constants/flowchartOptions';
+  import { calculateFlowchartPath } from '@shared/utils/flowchartPath';
   import InfoTooltip from '@shared/ui/infoTooltip.svelte';
   import Tooltip from '@shared/ui/tooltip.svelte';
   import { Link2, Clock, HelpCircle } from 'lucide-svelte';
@@ -22,7 +23,7 @@
     state = value;
   });
   
-  $: recommendedProfile = state?.selections?.[5] ? getRecommendedProfile(state.selections) : null;
+  $: recommendedProfile = state?.selections?.[5] ? getMatchingProfile(state.selections) : null;
   
   function handleButtonClick(columnIndex, itemIndex) {
     flowchartStore.selectButton(columnIndex + 1, itemIndex + 1);
@@ -36,115 +37,11 @@
     // First column is always enabled
     if (columnIndex === 0) return true;
 
-    const prevColumnIndex = columnIndex - 1;
-    const prevSelection = state.selections[prevColumnIndex + 1];
-    if (!prevSelection) return false;
-
-    const currentColId = flowchartColumns[columnIndex].id;
-
-    // Custom logic for the 'Focus' column (col3)
-    if (currentColId === 'col3') {
-      const resolutionSelection = state.selections[1]; // col1: Resolution
-      const compressionSelection = state.selections[2]; // col2: Compression
-
-      // If compression is Lossless (index 0), only Quality (index 0) is enabled
-      if (compressionSelection === 1) {
-        return itemIndex === 0;
-      }
-
-      // If compression is Compressed (index 1)
-      if (compressionSelection === 2) {
-        // SD (index 0) or 720p (index 1) + Compressed -> only Quality (index 0) is enabled
-        if (resolutionSelection === 1 || resolutionSelection === 2) {
-          return itemIndex === 0; // Quality
-        }
-
-        // 1080p (index 2) + Compressed -> all are enabled
-        if (resolutionSelection === 3) {
-          return true; // Quality, Balanced, Efficient
-        }
-
-        // 2160p (index 3) + Compressed -> Quality (index 0) and Balanced (index 1) are enabled
-        if (resolutionSelection === 4) {
-          return itemIndex === 0 || itemIndex === 1; // Quality, Balanced
-        }
-      }
-
-      // Default to disabled if no rule matches
-      return false;
-    }
-
-    // Custom logic for the 'Codec' column (col4)
-    if (currentColId === 'col4') {
-      const resolutionSelection = state.selections[1]; // col1: Resolution
-      const compressionSelection = state.selections[2]; // col2: Compression
-      const focusSelection = state.selections[3]; // col3: Focus
-
-      // Everything 2160p only gets h265
-      if (resolutionSelection === 4) {
-        return itemIndex === 0; // h265 only
-      }
-
-      // Everything SD and 720p gets h264
-      if (resolutionSelection === 1 || resolutionSelection === 2) {
-        return itemIndex === 1; // h264 only
-      }
-
-      // 1080p logic
-      if (resolutionSelection === 3) {
-        // 1080p quality compressed gets h265 and h264
-        if (compressionSelection === 2 && focusSelection === 1) {
-          return true; // Both h265 and h264
-        }
-        // 1080p quality lossless gets h264
-        if (compressionSelection === 1 && focusSelection === 1) {
-          return itemIndex === 1; // h264 only
-        }
-        // 1080p balanced gets h264
-        if (focusSelection === 2) {
-          return itemIndex === 1; // h264 only
-        }
-        // 1080p efficient gets h265
-        if (focusSelection === 3) {
-          return itemIndex === 0; // h265 only
-        }
-      }
-
-      // Default to disabled if no rule matches
-      return false;
-    }
-
-    // Custom logic for the 'HDR' column (col5)
-    if (currentColId === 'col5') {
-      const resolutionSelection = state.selections[1]; // col1: Resolution
-      const focusSelection = state.selections[3]; // col3: Focus
-      const codecSelection = state.selections[4]; // col4: Codec
-
-      // h264 only gets SDR
-      if (codecSelection === 2) {
-        return itemIndex === 1; // SDR only
-      }
-
-      // h265 logic
-      if (codecSelection === 1) {
-        // 1080p efficient h265 only gets SDR
-        if (resolutionSelection === 3 && focusSelection === 3) {
-          return itemIndex === 1; // SDR only
-        }
-        // All other h265 only gets HDR (no SDR)
-        return itemIndex === 0; // HDR only
-      }
-
-      // Default to disabled if no rule matches
-      return false;
-    }
-
-    // Default logic for all other columns
-    const prevColId = flowchartColumns[prevColumnIndex].id;
-    const edgeKey = `${prevColId}:${prevSelection - 1}`;
-    const allowedConnections = flowchartEdges[edgeKey] || [];
-
-    return allowedConnections.includes(`${currentColId}:${itemIndex}`);
+    // Get available options for this column based on current selections
+    const availableOptions = getAvailableOptions(state.selections, columnIndex + 1);
+    const itemLabel = flowchartColumns[columnIndex].items[itemIndex].label;
+    
+    return availableOptions.includes(itemLabel);
   }
   
   function checkMobile() {
@@ -170,23 +67,11 @@
     const fromRect = fromButtonEl.getBoundingClientRect();
     const toRect = toButtonEl.getBoundingClientRect();
     
-    // Horizontal layout only for desktop
-    const fromX = fromRect.right - containerRect.left;
-    const fromY = fromRect.top + fromRect.height / 2 - containerRect.top;
-    const toX = toRect.left - containerRect.left;
-    const toY = toRect.top + toRect.height / 2 - containerRect.top;
-    
-    // Add horizontal line extensions
-    const lineExtension = 10;
-    const startX = fromX - lineExtension;
-    const endX = toX + lineExtension;
-    
-    // Calculate control points for bezier curve
-    const distance = toX - fromX;
-    const controlOffset = distance * 0.4;
-    
-    // Path with horizontal line extensions
-    return `M ${startX} ${fromY} L ${fromX} ${fromY} C ${fromX + controlOffset} ${fromY}, ${toX - controlOffset} ${toY}, ${toX} ${toY} L ${endX} ${toY}`;
+    return calculateFlowchartPath({
+      fromRect,
+      toRect,
+      containerRect
+    });
   }
   
   function updatePaths() {
