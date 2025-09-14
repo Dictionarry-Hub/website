@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { ChevronUp, ChevronDown, ChevronsUpDown } from 'lucide-svelte';
+  import { router } from 'tinro';
   
   export let headers = [];
   export let data = [];
@@ -153,7 +154,7 @@
       </thead>
       <tbody class="divide-y divide-neutral-200 dark:divide-neutral-700">
         {#each sortedData as row}
-          <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
+          <tr class="hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors cursor-pointer group" on:click={() => row.url && router.goto(row.url)}>
             {#each headers as header}
               <td class="text-sm {header.className || ''}">
                 {#if header.render}
