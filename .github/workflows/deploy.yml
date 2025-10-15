@@ -5,6 +5,8 @@ on:
   repository_dispatch:
     types: [database-updated]
   workflow_dispatch:
+  schedule:
+    - cron: '30 21 * * *'  # Runs daily at 7am Adelaide time (ACST)
 
 permissions:
   contents: read
