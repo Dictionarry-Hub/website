@@ -125,6 +125,12 @@ export const qualityProfiles: QualityProfile[] = [
     available: true
   },
   {
+    name: "2160p Efficient",
+    path: ["2160p", "Compressed", "Efficient", "h265", "HDR"],
+    url: "/quality-profile/2160p-efficient",
+    available: true
+  },
+  {
     name: "2160p Remux",
     path: ["2160p", "Lossless", "Quality", "h265", "HDR"],
     url: "/quality-profile/2160p-remux",
