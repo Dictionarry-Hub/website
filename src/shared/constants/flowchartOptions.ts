@@ -42,11 +42,12 @@ export const flowchartColumns: FlowchartColumn[] = [
   {
     id: "col3",
     name: "Focus",
-    description: "Determines the primary goal: maximum quality, a balanced approach, or smallest file size.",
+    description: "Determines the primary goal: maximum quality, balanced quality and size, efficient encoding for smaller files, or compact size for limited storage.",
     items: [
       { label: "Quality", icon: "Sparkles" },
       { label: "Balanced", icon: "Scale" },
-      { label: "Efficient", icon: "Zap" }
+      { label: "Efficient", icon: "Zap" },
+      { label: "Compact", icon: "BetweenHorizontalEnd" }
     ]
   },
   {
@@ -77,21 +78,15 @@ export const qualityProfiles: QualityProfile[] = [
     available: true
   },
   {
-    name: "1080p Balanced Plus",
-    path: ["1080p", "Compressed", "Balanced", "h265", "SDR"],
-    url: "/quality-profile/1080p-balanced-plus",
+    name: "1080p Compact",
+    path: ["1080p", "Compressed", "Compact", "h265", "SDR"],
+    url: "/quality-profile/1080p-compact",
     available: true
   },
   {
     name: "1080p Efficient",
     path: ["1080p", "Compressed", "Efficient", "h265", "SDR"],
     url: "/quality-profile/1080p-efficient",
-    available: true
-  },
-  {
-    name: "1080p Efficient Plus",
-    path: ["1080p", "Compressed", "Efficient", "h265", "SDR"],
-    url: "/quality-profile/1080p-efficient-plus",
     available: false
   },
   {
@@ -101,7 +96,7 @@ export const qualityProfiles: QualityProfile[] = [
     available: true
   },
   {
-    name: "1080p Quality (HDR)",
+    name: "1080p Quality HDR",
     path: ["1080p", "Compressed", "Quality", "h265", "HDR"],
     url: "/quality-profile/1080p-quality-hdr",
     available: true
