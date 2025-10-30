@@ -3,7 +3,8 @@
   import Table from './table.svelte';
   import MathRenderer from './mathRenderer.svelte';
   import ListRenderer from './listRenderer.svelte';
-  
+  import MarkdownVideoPlayer from './markdownVideoPlayer.svelte';
+
   export let blocks = [];
   
   // Process paragraph content to handle inline math
@@ -131,26 +132,32 @@
       <div class="my-6">
         {#if block.variants}
           <!-- Image with light/dark variants -->
-          <img 
+          <img
             src={block.variants.light || block.variants.dark || block.src}
             alt={block.alt || ''}
             class="w-full max-w-4xl mx-auto dark:hidden"
           />
-          <img 
+          <img
             src={block.variants.dark || block.variants.light || block.src}
             alt={block.alt || ''}
             class="w-full max-w-4xl mx-auto hidden dark:block"
           />
         {:else}
           <!-- Standard image -->
-          <img 
+          <img
             src={block.src}
             alt={block.alt || ''}
             class="w-full max-w-4xl mx-auto"
           />
         {/if}
       </div>
-      
+
+    {:else if block.type === 'video'}
+      <MarkdownVideoPlayer
+        src={block.src}
+        description={block.description || ''}
+      />
+
     {:else if block.type === 'horizontal-rule'}
       <hr class="my-8 border-t border-neutral-300 dark:border-neutral-700" />
       

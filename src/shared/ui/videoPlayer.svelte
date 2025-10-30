@@ -96,7 +96,20 @@
       playsinline
       class="w-full cursor-pointer"
     >
-      <source src={src} type="video/mp4">
+      {#if src.endsWith('.mp4')}
+        <source src={src} type="video/mp4">
+      {:else if src.endsWith('.mkv')}
+        <source src={src} type="video/x-matroska">
+      {:else if src.endsWith('.webm')}
+        <source src={src} type="video/webm">
+      {:else if src.endsWith('.mov')}
+        <source src={src} type="video/quicktime">
+      {:else if src.endsWith('.avi')}
+        <source src={src} type="video/x-msvideo">
+      {:else}
+        <source src={src} type="video/mp4">
+      {/if}
+      Your browser doesn't support the video tag.
     </video>
   </div>
 </div>

@@ -1,0 +1,129 @@
+---
+title: Multi Episode Splitting
+slug: multi-episode-splitting
+author: santiagosayshey
+created: 2025-10-30
+tags: [wiki, plex, files, encoding]
+blurb: Two solutions to automatically splitting multi episode files.
+featured: true
+---
+
+Multi-episode files are annoying. 
+- Sometimes they're out of order, meaning you get metadata mismatches.
+- You're locked into whatever episode order the uploader chose.
+- If you want to watch the second episode in a file you have to scrub manually through the timeline.
+
+This problem is especially common with early 2000s cartoons. Networks like Nickelodeon and Cartoon Network aired episodes in paired blocks, and streaming releases followed suit - cramming 2-3 episodes into single files to match the original broadcast structure. While DVD releases properly split episodes, they're stuck at lower quality. This means if you want the best quality versions (upscaled WEB-DLs from Amazon, Paramount+, Disney+, etc.), you're dealing with multi-episode files. The releases you find online preserve this structure, leaving you to choose between quality and convenience.
+
+But we shouldn't have to choose. The solution is to take those high-quality streaming releases and split them ourselves into proper single-episode files. The question is: how do we do this efficiently across hundreds of episodes without manually scrubbing through timelines to find timestamps?
+
+---
+
+## Lossless Splitting
+
+If you're lucky, your files will contain chapters that you can extract timestamps from and automate lossless splitting with `ffmpeg`.
+
+First, check if your file has chapters using `ffprobe`:
+```bash
+ffprobe -i "SpongeBob.SquarePants.S02E01-E02.mkv" \
+  -print_format json -show_chapters -loglevel error
+```
+
+Look for chapters titled "Episode Title" - these mark where each episode begins. In this example:
+- Episode 1 starts at `0s` (but episode title card is at `45s`)
+- Episode 2 starts at `751s`
+
+If you're unlucky (like we were here), you won't get any chapters at all, or even worse, the chapters will be wrong! In which case, you'll need to go through each episode, determine timestamps and note them down manually. For hundreds of episodes, this will probably take you weeks.
+
+But, lets assume you can get perfect timestamps. We can use `ffmpeg` with `-c copy` for lossless splitting (no re-encoding):
+
+```bash
+# Episode 1 - skip opening theme, keep episode title
+ffmpeg -i "SpongeBob.SquarePants.S02E01-E02.mkv" \
+  -ss 45 -to 751 -c copy \
+  "SpongeBob.SquarePants.S02E01.Your.Shoes.Untied.mkv"
+
+```
+
+### Result
+
+Even with perfect timestamps, the result isn't perfect. Lossless splits using `-c copy` can only cut at [keyframes](https://en.wikipedia.org/wiki/Key_frame#Video_compression) - complete video frames that occur every few seconds in encoded video. This results in weird splits where episodes might start at the very end of the previous episode, as shown in the video below. For a perfectionist like myself, this is even more infuriating than having multi-episode files in the first place!
+
+![video](wiki/lossless-split-bad.mp4)
+
+---
+
+## Lossy Splitting
+
+Enter 'lossy' splitting. Instead of losslessly copying using the `-c` flag in `ffmpeg`, we take advantage of the keyframes created from a brand new encode to get perfect splits! Since multi episode files usually occur in early 2000s cartoons, we can take advantage of this and also squeeze some really efficient encoding in `h.265` or even `AV1`, often saving 65-80% of the original space with transparent video.
+
+This leaves us with a theoretical solution to perfect splits, but how do we get the perfect timestamps to facilitate this in the first place?
+
+### Cross Correlation
+
+What if we didn't have to manually find timestamps at all? What if we could [automate](https://preview.redd.it/2ialma4xoiv41.jpg?width=640&crop=smart&auto=webp&s=13de7034e0fa0da65a3544cbf93109738e590d4a) it?
+
+As we outlined in the beginning, we actually have two versions of the same content - properly split DVD episodes (lower quality) and multi-episode WEB-DL files (higher quality). By treating the DVD episodes as reference templates, we can use audio [cross-correlation](https://en.wikipedia.org/wiki/Cross-correlation) to automatically detect exactly where each episode starts in the WEB-DL file.
+
+Here's how it works:
+
+1. **Extract audio** from both the DVD episode and the WEB-DL file
+2. **Normalize** both audio streams to the same volume level
+3. **Cross-correlate** the DVD audio against the WEB-DL audio
+4. **Find the peak** - the highest correlation point tells us where the DVD episode appears in the WEB-DL
+5. **Convert to timestamp** - that peak position is our episode start time!
+
+The beauty of this approach is that it's completely automated and incredibly accurate. Audio correlation can pinpoint episode boundaries down to fractions of a second - far more precise than manual scrubbing or unreliable chapters. It works because each episode has a unique "audio fingerprint" - the combination of dialogue, music, and sound effects creates a distinct waveform pattern. By correlating just the first 60 seconds of each DVD episode, we can find exactly where that audio pattern appears in the multi-episode file.
+
+```psuedocode
+FOR each multi-episode WEB-DL file:
+    EXTRACT full audio from WEB-DL
+    
+    FOR each corresponding DVD episode:
+        EXTRACT first 60 seconds of audio from DVD episode
+        NORMALIZE both audio streams
+        
+        CORRELATE DVD audio against WEB-DL audio
+        FIND peak correlation point
+        
+        timestamp = peak_position / sample_rate
+        confidence = peak_strength / audio_length
+        
+        SAVE timestamp for this episode
+
+ONCE all timestamps are found:
+    FOR each timestamp:
+        SPLIT WEB-DL with re-encoding at exact timestamp
+        SAVE as single episode file
+```
+
+In about 20 minutes realtime, my Ryzen 7 3700x found the exact timestamps for the first 4 seasons (146 episodes) of spongebob down to the millisecond. In the same 20 minutes, I did 8 episodes manually (+- 0.5 seconds).
+
+### Encoding
+
+Now that we have precise timestamps, we can perform our lossy splits with perfect accuracy. Using the timestamps from cross-correlation, we re-encode each episode:
+
+```bash
+# Using an example detected timestamp of 751.891s for Episode 2
+ffmpeg -i "SpongeBob.SquarePants.S02E01-E02.mkv" \
+  -ss 751.891 -to 1463.234 \
+  -c:v libsvtav1 -preset 6 -crf 28 \
+  -c:a copy \
+  "SpongeBob.SquarePants.S02E02.Squids.Day.Off.mkv"
+```
+
+Since we're re-encoding anyway, every frame becomes a potential keyframe. Our timestamps hit exactly where we want - no more episodes starting mid-scene. As a bonus, encoding to `AV1` reduced the file size by 70% with transparent quality (for me at least. Don't come at me quality purists). I haven't actually finished encoding season 2 yet, but still the same result for season 1:
+
+![video](wiki/lossy-split-good.mp4)
+
+---
+
+## Results
+
+Was this worth the effort? Probably not, no. But it was fun! 
+
+For context: Season 1 of Spongebob Squarepants went from 20 multi-episode files at ~33.6GB down to 41 perfectly split episodes at ~8.7GB. That's 74% space savings with transparent quality, plus the satisfaction of having everything properly organized. The massive, obvious downside is encoding took 10 hours. Losslessly splitting would probably take less than a minute.
+
+Lossless splitting is good enough for non crazy people, but if you want a challenge, this is a pretty good one. Plus you get some storage space back!
+
+Here's the [code](https://github.com/santiagosayshey/spongebob-split) I used to automate this process for Spongebob. Perhaps one day I'll work on a proper tool and share that, but for now it's pretty easy to do yourself with [`scipy`](https://docs.scipy.org/doc/scipy/reference/signal.html).
