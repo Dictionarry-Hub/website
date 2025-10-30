@@ -14,7 +14,7 @@ featured: true
 
 ## The Decision Engine
 
-The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the [Transparent](../Profiles/1080p%20Transparent.md) profile's decision-making process. It's engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.
+The Golden Popcorn Performance Index, or GPPI, is a calculated metric, pivotal to the [Quality](../quality-profile/1080p-quality) profile's decision-making process. It's engineered to rank release groups based on their propensity to release a Golden Popcorn encode at any given resolution $r$.
 
 ## Formula
 
