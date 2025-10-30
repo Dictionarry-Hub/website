@@ -8,7 +8,7 @@ marked.use({
 });
 
 // Block types
-export type Block = 
+export type Block =
   | ParagraphBlock
   | HeaderBlock
   | CodeBlock
@@ -18,6 +18,7 @@ export type Block =
   | BlockquoteBlock
   | FootnoteBlock
   | ImageBlock
+  | VideoBlock
   | HorizontalRuleBlock;
 
 interface ParagraphBlock {
@@ -33,6 +34,12 @@ interface ImageBlock {
     light?: string;
     dark?: string;
   };
+}
+
+interface VideoBlock {
+  type: 'video';
+  src: string;
+  description?: string;
 }
 
 interface HorizontalRuleBlock {
@@ -176,6 +183,16 @@ export function parseMarkdown(markdown: string): ParsedContent {
       continue;
     }
     
+    // Check for videos (must check before images since videos use image syntax)
+    if (line.startsWith('![video]')) {
+      const result = parseVideo(lines, i);
+      if (result.block) {
+        blocks.push(result.block);
+        i = result.nextIndex;
+        continue;
+      }
+    }
+
     // Check for images
     if (line.startsWith('![')) {
       const result = parseImage(lines, i);
@@ -488,6 +505,38 @@ function parseFootnote(lines: string[], startIndex: number): { block: FootnoteBl
   };
 }
 
+// Parse video with support for various formats
+function parseVideo(lines: string[], startIndex: number): { block: VideoBlock | null; nextIndex: number } {
+  const line = lines[startIndex];
+
+  // Match markdown syntax: ![video](path) or ![video](path "description")
+  const videoMatch = line.match(/^!\[video\]\(([^")]+)(?:\s+"([^"]+)")?\)/);
+
+  if (videoMatch) {
+    let src = videoMatch[1].trim();
+    const description = videoMatch[2];
+
+    // If path doesn't start with http or /, assume it's in public/video folder
+    if (!src.startsWith('http') && !src.startsWith('/')) {
+      // Check if it's a video file
+      if (src.match(/\.(mp4|mkv|webm|mov|avi)$/i)) {
+        src = `/video/${src}`;
+      }
+    }
+
+    return {
+      block: {
+        type: 'video',
+        src,
+        description
+      },
+      nextIndex: startIndex + 1
+    };
+  }
+
+  return { block: null, nextIndex: startIndex + 1 };
+}
+
 // Parse image with support for light/dark variants
 function parseImage(lines: string[], startIndex: number): { block: ImageBlock | null; nextIndex: number } {
   const line = lines[startIndex];
@@ -550,9 +599,16 @@ function parseImage(lines: string[], startIndex: number): { block: ImageBlock | 
   }
   
   // Match standard markdown image syntax: ![alt text](path)
+  // But exclude ![video](...) which should be handled by parseVideo
   const standardMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
   if (standardMatch) {
     const alt = standardMatch[1];
+
+    // Skip if this is a video block (should be handled by parseVideo)
+    if (alt.toLowerCase() === 'video') {
+      return { block: null, nextIndex: startIndex + 1 };
+    }
+
     let src = standardMatch[2];
     
     // If path doesn't start with http or /, assume it's in public folder
