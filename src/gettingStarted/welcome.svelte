@@ -74,19 +74,19 @@
 
     <ul class="list-disc list-inside space-y-2 mb-6 text-neutral-700 dark:text-neutral-300">
       <li class="text-neutral-700 dark:text-neutral-300">
-        <strong class="text-neutral-900 dark:text-white">2160p Remux</strong> - Archival approach prioritizing perfect source preservation with lossless audio and HDR/Dolby Vision
+        <strong class="text-blue-500 underline hover:text-blue-600"><a href='quality-profile/2160p-remux'>2160p Remux</a></strong> - Archival approach prioritizing perfect source preservation with lossless audio and HDR/Dolby Vision
       </li>
       <li class="text-neutral-700 dark:text-neutral-300">
-        <strong class="text-neutral-900 dark:text-white">2160p Quality</strong> - Perceptual transparency via efficiency metrics, accepting high-quality encodes that are visually identical to source
+        <strong class="text-blue-500 underline hover:text-blue-600"><a href='quality-profile/2160p-quality'>2160p Quality</a></strong> - Perceptual transparency via efficiency metrics, accepting high-quality encodes that are visually identical to source
       </li>
       <li class="text-neutral-700 dark:text-neutral-300">
-        <strong class="text-neutral-900 dark:text-white">1080p Quality</strong> - Performance-indexed selection using Golden Popcorn metrics for transparent results
+        <strong class="text-blue-500 underline hover:text-blue-600"><a href='quality-profile/1080p-quality'>1080p Quality</a></strong> - Performance-indexed selection using Golden Popcorn metrics for transparent results
       </li>
       <li class="text-neutral-700 dark:text-neutral-300">
-        <strong class="text-neutral-900 dark:text-white">1080p Efficient</strong> - Space-conscious x265 optimization based on encode efficiency calculations
+        <strong class="text-blue-500 underline hover:text-blue-600"><a href='quality-profile/1080p-compact'>1080p Compact</a></strong> - Space-conscious x265 optimization based on encode efficiency calculations
       </li>
       <li class="text-neutral-700 dark:text-neutral-300">
-        <strong class="text-neutral-900 dark:text-white">And More</strong> - Additional profiles for specific use cases and requirements
+        <strong class="text-blue-500 underline hover:text-blue-600"><a href='quality-profile'>And More</a></strong> - Additional profiles for specific use cases and requirements
       </li>
     </ul>
   </section>
