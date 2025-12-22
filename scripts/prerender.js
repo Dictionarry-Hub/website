@@ -58,7 +58,7 @@ async function prerender() {
   
   // Generate sitemap
   generateSitemap();
-  
+
   // Copy robots.txt if it exists
   const robotsSource = path.join(__dirname, '../public/robots.txt');
   const robotsDest = path.join(distPath, 'robots.txt');

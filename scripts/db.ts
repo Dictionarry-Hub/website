@@ -12,6 +12,7 @@ import { QualityProfileProcessor } from './contentGeneration/processors/QualityP
 import { MediaManagementProcessor } from './contentGeneration/processors/MediaManagementProcessor';
 import { MarkdownProcessor } from './contentGeneration/processors/MarkdownProcessor';
 import { StaticPageProcessor } from './contentGeneration/processors/StaticPageProcessor';
+import { RssGenerator } from './contentGeneration/core/RssGenerator';
 
 interface CliOptions {
   repo?: string;
@@ -216,6 +217,14 @@ async function main() {
     const outputPath = options.output || './src/generated/contentDatabase.ts';
     console.log(`💾 Writing database to ${outputPath}...`);
     await databaseBuilder.write(database, outputPath);
+
+    // Generate RSS feeds
+    console.log('📰 Generating RSS feeds...');
+    const rssGenerator = new RssGenerator();
+    const rssStats = rssGenerator.generate(allEntries);
+    console.log(`  • wiki.xml: ${rssStats.wiki} entries`);
+    console.log(`  • devlogs.xml: ${rssStats.devlogs} entries`);
+    console.log(`  • all.xml: ${rssStats.all} entries`);
 
     // Display statistics
     const stats = databaseBuilder.getStats(database);

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dictionarry - All Updates</title>
+    <link>https://dictionarry.dev</link>
+    <description>Guides, documentation, and development updates for the Dictionarry project</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Dec 2025 05:21:23 GMT</lastBuildDate>
+    <atom:link href="https://dictionarry.dev/rss/all.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multi Episode Splitting</title>
+      <link>https://dictionarry.dev/wiki/multi-episode-splitting</link>
+      <guid isPermaLink="true">https://dictionarry.dev/wiki/multi-episode-splitting</guid>
+      <description>Two solutions to automatically splitting multi episode files.</description>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>wiki</category>
+      <category>plex</category>
+      <category>files</category>
+      <category>encoding</category>
+    </item>
+    <item>
+      <title>Mutable Immutability</title>
+      <link>https://dictionarry.dev/devlogs/mutable-immutability</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/mutable-immutability</guid>
+      <description>Rethinking databases.</description>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>database</category>
+      <category>architecture</category>
+      <category>workflow</category>
+    </item>
+    <item>
+      <title>Workflow&apos;d</title>
+      <link>https://dictionarry.dev/devlogs/workflowd</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/workflowd</guid>
+      <description>stable gets some love</description>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>database</category>
+      <category>stable</category>
+      <category>milestone</category>
+    </item>
+    <item>
+      <title>Rebirth</title>
+      <link>https://dictionarry.dev/devlogs/rebirth</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/rebirth</guid>
+      <description>Dictionarry, born again.</description>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>website</category>
+      <category>personal</category>
+      <category>milestone</category>
+    </item>
+    <item>
+      <title>Edition Philosophy</title>
+      <link>https://dictionarry.dev/wiki/edtion-philosophy</link>
+      <guid isPermaLink="true">https://dictionarry.dev/wiki/edtion-philosophy</guid>
+      <description>A comparison of theatrical vs. special edition cuts and which movies benefit from each format.</description>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>wiki</category>
+      <category>edition</category>
+      <category>extras</category>
+    </item>
+    <item>
+      <title>Casa OS - Profilarr Installation Guide</title>
+      <link>https://dictionarry.dev/wiki/profilarr-casaos</link>
+      <guid isPermaLink="true">https://dictionarry.dev/wiki/profilarr-casaos</guid>
+      <description>A simple guide to install Profilarr in Casa OS as a custom app.</description>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
+      <author>lawgics</author>
+      <category>wiki</category>
+      <category>casaos</category>
+      <category>installation</category>
+      <category>profilarr</category>
+      <category>docker</category>
+      <category>containers</category>
+    </item>
+    <item>
+      <title>Encode Efficiency Index</title>
+      <link>https://dictionarry.dev/wiki/eei</link>
+      <guid isPermaLink="true">https://dictionarry.dev/wiki/eei</guid>
+      <description>A data-driven metric that measures how well release groups balance file size and quality in their encodes, helping users find releases that match their storage and quality preferences.</description>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>wiki</category>
+      <category>efficiency</category>
+      <category>encode</category>
+    </item>
+    <item>
+      <title>Golden Popcorn Performance Index</title>
+      <link>https://dictionarry.dev/wiki/gppi</link>
+      <guid isPermaLink="true">https://dictionarry.dev/wiki/gppi</guid>
+      <description>A data-driven metric that identifies high-quality release groups by analyzing their Golden Popcorn track record.</description>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>wiki</category>
+      <category>quality</category>
+      <category>encode</category>
+    </item>
+  </channel>
+</rss>

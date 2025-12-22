@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dictionarry - Devlogs</title>
+    <link>https://dictionarry.dev</link>
+    <description>Development updates and progress notes from the Dictionarry project</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Dec 2025 05:21:23 GMT</lastBuildDate>
+    <atom:link href="https://dictionarry.dev/rss/devlogs.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mutable Immutability</title>
+      <link>https://dictionarry.dev/devlogs/mutable-immutability</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/mutable-immutability</guid>
+      <description>Rethinking databases.</description>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>database</category>
+      <category>architecture</category>
+      <category>workflow</category>
+    </item>
+    <item>
+      <title>Workflow&apos;d</title>
+      <link>https://dictionarry.dev/devlogs/workflowd</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/workflowd</guid>
+      <description>stable gets some love</description>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>database</category>
+      <category>stable</category>
+      <category>milestone</category>
+    </item>
+    <item>
+      <title>Rebirth</title>
+      <link>https://dictionarry.dev/devlogs/rebirth</link>
+      <guid isPermaLink="true">https://dictionarry.dev/devlogs/rebirth</guid>
+      <description>Dictionarry, born again.</description>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+      <author>santiagosayshey</author>
+      <category>website</category>
+      <category>personal</category>
+      <category>milestone</category>
+    </item>
+  </channel>
+</rss>
