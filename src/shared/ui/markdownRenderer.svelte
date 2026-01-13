@@ -127,27 +127,83 @@
       <blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 my-4 italic text-neutral-600 dark:text-neutral-400">
         {@html block.content}
       </blockquote>
-    
+
+    {:else if block.type === 'quote'}
+      <figure class="my-8 mx-6 lg:mx-12">
+        <blockquote class="quote-text text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          {@html block.content}
+        </blockquote>
+        {#if block.author || block.year}
+          <figcaption class="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
+            {#if block.author}
+              <span class="font-medium text-neutral-700 dark:text-neutral-300">{block.author}</span>
+            {/if}
+            {#if block.author && block.year}
+              <span class="mx-1">&middot;</span>
+            {/if}
+            {#if block.year}
+              <span>{block.year}</span>
+            {/if}
+          </figcaption>
+        {/if}
+      </figure>
+
+    {:else if block.type === 'tabs'}
+      <div class="my-4">
+        <CodeBlock items={block.items} />
+      </div>
+
+    {:else if block.type === 'admonition'}
+      {@const styles = {
+        warning: 'border-amber-500 bg-amber-50 dark:bg-amber-950/30',
+        note: 'border-blue-500 bg-blue-50 dark:bg-blue-950/30',
+        tip: 'border-green-500 bg-green-50 dark:bg-green-950/30',
+        danger: 'border-red-500 bg-red-50 dark:bg-red-950/30'
+      }}
+      {@const icons = {
+        warning: '⚠️',
+        note: '📝',
+        tip: '💡',
+        danger: '🚨'
+      }}
+      {@const titles = {
+        warning: 'Warning',
+        note: 'Note',
+        tip: 'Tip',
+        danger: 'Danger'
+      }}
+      <div class="my-6 border-l-4 {styles[block.variant]} rounded-r-lg p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span>{icons[block.variant]}</span>
+          <span class="font-semibold text-sm text-neutral-800 dark:text-neutral-200">{titles[block.variant]}</span>
+        </div>
+        <div class="text-sm text-neutral-700 dark:text-neutral-200">
+          {@html block.content}
+        </div>
+      </div>
+
     {:else if block.type === 'image'}
       <div class="my-6">
         {#if block.variants}
           <!-- Image with light/dark variants -->
+          {@const isSvg = (block.variants.light || block.variants.dark || block.src)?.endsWith('.svg')}
           <img
             src={block.variants.light || block.variants.dark || block.src}
             alt={block.alt || ''}
-            class="w-full max-w-4xl mx-auto dark:hidden"
+            class="w-full dark:hidden {isSvg ? '' : 'rounded-lg'}"
           />
           <img
             src={block.variants.dark || block.variants.light || block.src}
             alt={block.alt || ''}
-            class="w-full max-w-4xl mx-auto hidden dark:block"
+            class="w-full hidden dark:block {isSvg ? '' : 'rounded-lg'}"
           />
         {:else}
           <!-- Standard image -->
+          {@const isSvg = block.src?.endsWith('.svg')}
           <img
             src={block.src}
             alt={block.alt || ''}
-            class="w-full max-w-4xl mx-auto"
+            class="w-full {isSvg ? '' : 'rounded-lg'}"
           />
         {/if}
       </div>
@@ -190,7 +246,12 @@
 </div>
 
 <style>
-  
+  /* Quote directive font */
+  .quote-text {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+  }
+
   /* Bold text - including in tables */
   :global(.prose strong),
   :global(.prose b),

@@ -19,7 +19,10 @@ export type Block =
   | FootnoteBlock
   | ImageBlock
   | VideoBlock
-  | HorizontalRuleBlock;
+  | HorizontalRuleBlock
+  | QuoteBlock
+  | TabsBlock
+  | AdmonitionBlock;
 
 interface ParagraphBlock {
   type: 'paragraph';
@@ -44,6 +47,24 @@ interface VideoBlock {
 
 interface HorizontalRuleBlock {
   type: 'horizontal-rule';
+}
+
+interface QuoteBlock {
+  type: 'quote';
+  content: string;
+  author?: string;
+  year?: string;
+}
+
+interface TabsBlock {
+  type: 'tabs';
+  items: Array<{ title: string; code: string; language: string }>;
+}
+
+interface AdmonitionBlock {
+  type: 'admonition';
+  variant: 'note' | 'warning' | 'tip' | 'danger';
+  content: string;
 }
 
 interface HeaderBlock {
@@ -119,6 +140,31 @@ export function parseMarkdown(markdown: string): ParsedContent {
       continue;
     }
     
+    // Check for quote directive (:::quote)
+    if (line.trim().startsWith(':::quote')) {
+      const result = parseQuoteDirective(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+
+    // Check for tabs directive (:::tabs)
+    if (line.trim().startsWith(':::tabs')) {
+      const result = parseTabsDirective(lines, i);
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+
+    // Check for admonition directive (:::warning, :::note, :::tip, :::danger)
+    const admonitionMatch = line.trim().match(/^:::(warning|note|tip|danger)$/);
+    if (admonitionMatch) {
+      const result = parseAdmonitionDirective(lines, i, admonitionMatch[1] as 'warning' | 'note' | 'tip' | 'danger');
+      blocks.push(result.block);
+      i = result.nextIndex;
+      continue;
+    }
+
     // Check for math blocks
     if (line.trim().startsWith('$$')) {
       const result = parseMathBlock(lines, i);
@@ -126,7 +172,7 @@ export function parseMarkdown(markdown: string): ParsedContent {
       i = result.nextIndex;
       continue;
     }
-    
+
     // Check for code blocks
     if (line.trim().startsWith('```')) {
       const result = parseCodeBlock(lines, i);
@@ -289,17 +335,54 @@ function parseTable(lines: string[], startIndex: number): { block: TableBlock; n
   };
 }
 
-// Parse a single table row
+// Parse a single table row - respects inline code and links
 function parseTableRow(line: string): string[] {
-  return line
-    .split('|')
-    .map(cell => {
-      const trimmed = cell.trim();
-      // Process inline markdown in table cells (bold, italic, links, etc.)
-      return trimmed ? processInlineElements(trimmed) : '';
-    })
+  const cells: string[] = [];
+  let current = '';
+  let inCode = false;
+  let inLink = false;
+  let depth = 0;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+
+    // Track backticks for inline code
+    if (char === '`') {
+      inCode = !inCode;
+      current += char;
+      continue;
+    }
+
+    // Track brackets for links [text](url)
+    if (!inCode) {
+      if (char === '[') {
+        depth++;
+        inLink = true;
+      } else if (char === ']') {
+        depth--;
+      } else if (char === ')' && inLink && depth === 0) {
+        inLink = false;
+      }
+    }
+
+    // Split on pipe only when not in code or link
+    if (char === '|' && !inCode && !inLink) {
+      cells.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+
+  // Add the last cell
+  if (current.trim()) {
+    cells.push(current.trim());
+  }
+
+  // Process inline markdown and filter empty edge cells
+  return cells
+    .map(cell => cell ? processInlineElements(cell) : '')
     .filter((cell, index, arr) => {
-      // Remove empty first and last elements from pipe delimiters
       return !(index === 0 && cell === '') && !(index === arr.length - 1 && cell === '');
     });
 }
@@ -451,22 +534,154 @@ function getIndentLevel(line: string): number {
 // Parse blockquote
 function parseBlockquote(lines: string[], startIndex: number): { block: BlockquoteBlock; nextIndex: number } {
   const contentLines: string[] = [];
-  
+
   let i = startIndex;
   while (i < lines.length && lines[i].startsWith('>')) {
     const content = lines[i].replace(/^>\s?/, '');
     contentLines.push(content);
     i++;
   }
-  
+
   // Process inline elements in the blockquote content
   const fullContent = contentLines.join(' ').trim();
   const processedContent = processInlineElements(fullContent);
-  
+
   return {
     block: {
       type: 'blockquote',
       content: processedContent
+    },
+    nextIndex: i
+  };
+}
+
+// Parse quote directive (:::quote ... :::)
+function parseQuoteDirective(lines: string[], startIndex: number): { block: QuoteBlock; nextIndex: number } {
+  let i = startIndex + 1; // Skip the opening :::quote line
+
+  // Parse metadata (author, year, etc.) until we hit ---
+  const metadata: Record<string, string> = {};
+  while (i < lines.length && !lines[i].trim().startsWith('---') && !lines[i].trim().startsWith(':::')) {
+    const line = lines[i].trim();
+    const colonIndex = line.indexOf(':');
+    if (colonIndex > 0) {
+      const key = line.slice(0, colonIndex).trim();
+      const value = line.slice(colonIndex + 1).trim();
+      metadata[key] = value;
+    }
+    i++;
+  }
+
+  // Skip the --- separator if present
+  if (i < lines.length && lines[i].trim().startsWith('---')) {
+    i++;
+  }
+
+  // Collect content until closing :::
+  const contentLines: string[] = [];
+  while (i < lines.length && !lines[i].trim().startsWith(':::')) {
+    contentLines.push(lines[i]);
+    i++;
+  }
+
+  // Skip the closing :::
+  if (i < lines.length && lines[i].trim().startsWith(':::')) {
+    i++;
+  }
+
+  const content = contentLines.join('\n').trim();
+  const processedContent = processInlineElements(content);
+
+  return {
+    block: {
+      type: 'quote',
+      content: processedContent,
+      author: metadata.author,
+      year: metadata.year
+    },
+    nextIndex: i
+  };
+}
+
+// Parse tabs directive (:::tabs ... :::)
+function parseTabsDirective(lines: string[], startIndex: number): { block: TabsBlock; nextIndex: number } {
+  let i = startIndex + 1; // Skip the opening :::tabs line
+
+  const items: Array<{ title: string; code: string; language: string }> = [];
+
+  // Parse code blocks until closing :::
+  while (i < lines.length && !lines[i].trim().startsWith(':::')) {
+    const line = lines[i].trim();
+
+    // Check for code block start
+    if (line.startsWith('```')) {
+      // Parse language and optional title: ```yaml title="Import"
+      const fenceMatch = line.match(/^```(\w*)\s*(?:title=["']([^"']+)["'])?/);
+      const language = fenceMatch?.[1] || '';
+      const title = fenceMatch?.[2] || language || 'Code';
+
+      // Collect code content
+      const codeLines: string[] = [];
+      i++;
+      while (i < lines.length && !lines[i].trim().startsWith('```')) {
+        codeLines.push(lines[i]);
+        i++;
+      }
+      // Skip closing ```
+      if (i < lines.length && lines[i].trim().startsWith('```')) {
+        i++;
+      }
+
+      items.push({
+        title,
+        code: codeLines.join('\n'),
+        language
+      });
+    } else {
+      // Skip empty lines or other content
+      i++;
+    }
+  }
+
+  // Skip the closing :::
+  if (i < lines.length && lines[i].trim().startsWith(':::')) {
+    i++;
+  }
+
+  return {
+    block: {
+      type: 'tabs',
+      items
+    },
+    nextIndex: i
+  };
+}
+
+// Parse admonition directive (:::warning, :::note, :::tip, :::danger)
+function parseAdmonitionDirective(
+  lines: string[],
+  startIndex: number,
+  variant: 'warning' | 'note' | 'tip' | 'danger'
+): { block: AdmonitionBlock; nextIndex: number } {
+  let i = startIndex + 1; // Skip the opening line
+  const contentLines: string[] = [];
+
+  // Collect content until closing :::
+  while (i < lines.length && !lines[i].trim().startsWith(':::')) {
+    contentLines.push(lines[i]);
+    i++;
+  }
+
+  // Skip the closing :::
+  if (i < lines.length && lines[i].trim().startsWith(':::')) {
+    i++;
+  }
+
+  return {
+    block: {
+      type: 'admonition',
+      variant,
+      content: processInlineElements(contentLines.join('\n').trim())
     },
     nextIndex: i
   };
@@ -579,18 +794,22 @@ function parseImage(lines: string[], startIndex: number): { block: ImageBlock | 
     // Build the actual file paths
     const extension = basePath.match(/\.(svg|png|jpg|jpeg|gif|webp)$/i)?.[1] || 'svg';
     const baseFileName = basePath.replace(/\.(svg|png|jpg|jpeg|gif|webp)$/i, '');
-    
+
+    // Check if path is absolute (starts with /) or relative
+    const isAbsolutePath = baseFileName.startsWith('/');
+    const prefix = isAbsolutePath ? '' : '/svg/';
+
     if (variants.light) {
-      variants.light = `/svg/${baseFileName}[style=light].${extension}`;
+      variants.light = `${prefix}${baseFileName}[style=light].${extension}`;
     }
     if (variants.dark) {
-      variants.dark = `/svg/${baseFileName}[style=dark].${extension}`;
+      variants.dark = `${prefix}${baseFileName}[style=dark].${extension}`;
     }
-    
+
     return {
       block: {
         type: 'image',
-        src: variants.light || variants.dark || `/svg/${basePath}`,
+        src: variants.light || variants.dark || `${prefix}${basePath}`,
         alt,
         variants
       },
@@ -646,10 +865,11 @@ function parseParagraph(lines: string[], startIndex: number): { block: Paragraph
     const line = lines[i];
     
     // Stop at special markers
-    if (!line.trim() || 
+    if (!line.trim() ||
         line.match(/^#{1,6}\s+/) ||
         line.trim().startsWith('```') ||
         line.trim().startsWith('$$') ||
+        line.trim().startsWith(':::') ||
         line.startsWith('>') ||
         line.match(/^[\*\-\+]\s+/) ||
         line.match(/^\d+\.\s+/) ||
