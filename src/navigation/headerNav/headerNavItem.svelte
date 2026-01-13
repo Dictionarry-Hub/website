@@ -4,10 +4,8 @@
   export let isActive = false;
   export let level = 0;
   
-  // Simpler text sizing
-  $: textStyle = level === 0 
-    ? 'text-sm font-medium' 
-    : 'text-xs';
+  // Same text size for all levels
+  $: textStyle = 'text-sm';
     
   // Cleaner active state
   $: activeStyle = isActive 
