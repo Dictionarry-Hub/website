@@ -3,7 +3,7 @@ title: Show Your Work
 slug: show-your-work
 blurb: Upgrades, operations, testing, and treating preference like math.
 author: santiagosayshey
-created: 2026-01-11
+created: 2026-01-13
 tags:
   - profilarr v2
   - architecture
