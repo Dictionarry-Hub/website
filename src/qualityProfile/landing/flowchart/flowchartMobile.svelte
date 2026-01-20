@@ -179,9 +179,9 @@
   <!-- Recommended Profile -->
   <div class="mt-6 mb-8">
     {#if recommendedProfile}
-      {#if recommendedProfile.url}
-        <a 
-          href={recommendedProfile.url} 
+      {#if recommendedProfile.available && recommendedProfile.url}
+        <a
+          href={recommendedProfile.url}
           class="block w-full p-4 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border-2 border-neutral-300 dark:border-neutral-700 hover:border-neutral-500 dark:hover:border-neutral-500 transition-all"
         >
           <div class="flex items-center justify-between">

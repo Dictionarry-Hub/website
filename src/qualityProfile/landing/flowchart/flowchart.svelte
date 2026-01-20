@@ -153,9 +153,9 @@
       </div>
       <div class="flex col-span-1 lg:col-span-2 items-center lg:justify-end">
         {#if recommendedProfile}
-          {#if recommendedProfile.url}
-            <a 
-              href={recommendedProfile.url} 
+          {#if recommendedProfile.available && recommendedProfile.url}
+            <a
+              href={recommendedProfile.url}
               class="group relative flex items-center gap-3 px-4 py-2 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg border border-neutral-200 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500 w-full lg:w-auto"
             >
               <div class="flex-1">
