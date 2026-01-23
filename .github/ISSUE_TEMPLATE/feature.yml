@@ -1,0 +1,33 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement
+labels: ["type: feature"]
+
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: What area?
+      options:
+        - Profile Wizard
+        - Content pages
+        - Getting Started
+        - Wiki/Docs
+        - Search
+        - Navigation/UI
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want?
+      placeholder: Describe the feature you'd like to see
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      placeholder: Explain your use case

@@ -1,0 +1,64 @@
+name: 🐛 Bug Report
+description: Report something that isn't working correctly
+labels: ["type: bug"]
+
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: What area?
+      options:
+        - Profile Wizard
+        - Quality Profile pages
+        - Custom Format pages
+        - Regex pages
+        - Getting Started
+        - Wiki/Docs
+        - Search
+        - Navigation/UI
+        - Build/Generation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Link to the affected page
+      placeholder: https://dictionarry.dev/...
+
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong?
+      placeholder: Describe the issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include screenshots if relevant
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g. Chrome 120, Firefox 121, Safari 17
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop
+        - Mobile
+        - Tablet

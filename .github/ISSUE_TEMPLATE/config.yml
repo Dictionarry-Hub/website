@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Profilarr Discussions
+    url: https://github.com/Dictionarry-Hub/profilarr/discussions
+    about: Questions about Profilarr (the app)
+
+  - name: 💬 Database Discussions
+    url: https://github.com/Dictionarry-Hub/database/discussions
+    about: Questions about profiles, custom formats, and regex
+
+  - name: 📚 Check the Docs
+    url: https://dictionarry.dev
+    about: Read the documentation before opening an issue
