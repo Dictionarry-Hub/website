@@ -3,7 +3,7 @@
   import { theme } from '@shared/stores/theme';
   
   export let issueTerm = '';
-  export let repo = 'Dictionarry-Hub/gist';
+  export let repo = 'Dictionarry-Hub/database';
   
   let utterancesContainer;
   let utterancesFrame;
