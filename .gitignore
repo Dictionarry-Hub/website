@@ -24,3 +24,7 @@ vite.config.ts.timestamp-*
 
 .vscode
 CLAUDE.md
+
+# PCD build artifacts
+src/data/*.db
+.pcd-cache

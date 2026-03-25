@@ -1,0 +1,9 @@
+{
+	"databases": [
+		{
+			"name": "dictionarry",
+			"repo": "https://github.com/Dictionarry-Hub/database",
+			"branch": "v2"
+		}
+	]
+}
