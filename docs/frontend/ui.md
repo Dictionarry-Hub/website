@@ -152,11 +152,39 @@ Child navigation link, used inside NavGroup.
 | `label`         | `string`             | yes      |         |
 | `href`          | `string`             | yes      |         |
 | `icon`          | `Component`          | no       |         |
+| `image`         | `string`             | no       |         |
 | `badge`         | `number`             | no       | `0`     |
 | `activePattern` | `string \| RegExp`   | no       |         |
 
+`image` renders an `<img>` element before the label. Used for arr-type icons on PCD media entities.
+
 Active state derived from current pathname. If `activePattern` is provided, uses string includes or
 regex test. Otherwise exact or prefix match against `href`.
+
+### Dropdown
+
+#### `DropdownSelect`
+
+`src/lib/client/ui/dropdown/DropdownSelect.svelte`
+
+Select control backed by a dropdown menu. Wraps `Dropdown`, `DropdownHeader`, and `DropdownItem`.
+
+| Prop          | Type                                                         | Required | Default      |
+| ------------- | ------------------------------------------------------------ | -------- | ------------ |
+| `value`       | `string` (bindable)                                          | yes      |              |
+| `options`     | `{ value: string; label: string; icon?: Component }[]`       | yes      |              |
+| `label`       | `string`                                                     | no       |              |
+| `header`      | `string`                                                     | no       |              |
+| `placeholder` | `string`                                                     | no       | `'Select...'`|
+| `minWidth`    | `string`                                                     | no       | `'8rem'`     |
+| `position`    | `'left' \| 'right' \| 'middle'`                              | no       | `'left'`     |
+| `placement`   | `'auto' \| 'bottom' \| 'top'`                                | no       | `'auto'`     |
+| `disabled`    | `boolean`                                                    | no       | `false`      |
+| `iconOnly`    | `boolean`                                                    | no       | `false`      |
+| `onchange`    | `(value: string) => void`                                    | no       |              |
+
+`header` renders a `DropdownHeader` at the top of the menu (e.g. "Theme", "Database"). `iconOnly`
+renders just the matched option's icon as the trigger button.
 
 ### Badge
 

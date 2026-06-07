@@ -40,3 +40,4 @@ runtime server.
 ### Tooling
 
 - [Linting](./tooling/lint.md) - ESLint, custom lint framework, project-specific rules
+- [PCD Pipeline](./tooling/pcd.md) - Build-time PCD compilation, entity extraction, output format
