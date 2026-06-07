@@ -36,7 +36,7 @@
 
 <SEO {title} description={blurb} />
 
-<article class="px-6 py-10">
+<article class="mx-auto max-w-prose px-6 py-10">
 	<header class="mb-8">
 		<h1 class="text-3xl font-bold">{title}</h1>
 		{#if authors.length > 0 || created}
