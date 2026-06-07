@@ -11,7 +11,10 @@
 	import DropdownHeader from '$lib/client/ui/dropdown/DropdownHeader.svelte';
 	import DropdownFooter from '$lib/client/ui/dropdown/DropdownFooter.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
-	import { Apple, Cherry, Citrus } from '@lucide/svelte';
+	import { Apple, Cherry, Citrus, Star, CircleAlert } from '@lucide/svelte';
+	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
+	import Author from '$lib/client/ui/author/Author.svelte';
 
 	let basicValue = $state('');
 	let labelValue = $state('');
@@ -255,6 +258,135 @@
 							<DropdownFooter label="3 actions" />
 						</Dropdown>
 					{/if}
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Badge</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Variants</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge variant="subtle">Subtle</Badge>
+					<Badge variant="solid">Solid</Badge>
+					<Badge variant="outline">Outline</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Colors</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge color="neutral">Neutral</Badge>
+					<Badge color="accent">Accent</Badge>
+					<Badge color="success">Success</Badge>
+					<Badge color="warning">Warning</Badge>
+					<Badge color="danger">Danger</Badge>
+					<Badge color="info">Info</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Colors (solid)</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge variant="solid" color="neutral">Neutral</Badge>
+					<Badge variant="solid" color="accent">Accent</Badge>
+					<Badge variant="solid" color="success">Success</Badge>
+					<Badge variant="solid" color="warning">Warning</Badge>
+					<Badge variant="solid" color="danger">Danger</Badge>
+					<Badge variant="solid" color="info">Info</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Colors (outline)</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge variant="outline" color="neutral">Neutral</Badge>
+					<Badge variant="outline" color="accent">Accent</Badge>
+					<Badge variant="outline" color="success">Success</Badge>
+					<Badge variant="outline" color="warning">Warning</Badge>
+					<Badge variant="outline" color="danger">Danger</Badge>
+					<Badge variant="outline" color="info">Info</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Sizes</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge size="sm">Small</Badge>
+					<Badge size="md">Medium</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Pill</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge>Default</Badge>
+					<Badge pill>Pill</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With icon</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge icon={Star}>Featured</Badge>
+					<Badge icon={CircleAlert} color="warning">Warning</Badge>
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">DateTime</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Long (default)</h3>
+				<DateTime date="2026-05-17" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Short</h3>
+				<DateTime date="2026-05-17" format="short" />
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Author</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Name only</h3>
+				<Author name="santiagosayshey" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With avatar</h3>
+				<Author name="santiagosayshey" avatar="https://github.com/santiagosayshey.png" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With link</h3>
+				<Author
+					name="santiagosayshey"
+					avatar="https://github.com/santiagosayshey.png"
+					href="https://github.com/santiagosayshey" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Sizes</h3>
+				<div class="flex flex-wrap items-center gap-6">
+					<Author name="santiagosayshey" avatar="https://github.com/santiagosayshey.png" size="sm" />
+					<Author name="santiagosayshey" avatar="https://github.com/santiagosayshey.png" size="md" />
 				</div>
 			</div>
 		</div>
