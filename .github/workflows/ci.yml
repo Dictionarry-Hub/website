@@ -20,12 +20,14 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - uses: pnpm/action-setup@v4
+              with:
+                  standalone: true
             - uses: actions/setup-node@v6
               with:
                   node-version: 22
                   cache: 'pnpm'
             - run: pnpm install --frozen-lockfile
-            - run: pnpm format --check
+            - run: pnpm format:check
 
     lint:
         name: Lint
@@ -33,6 +35,8 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - uses: pnpm/action-setup@v4
+              with:
+                  standalone: true
             - uses: actions/setup-node@v6
               with:
                   node-version: 22
@@ -46,6 +50,8 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - uses: pnpm/action-setup@v4
+              with:
+                  standalone: true
             - uses: actions/setup-node@v6
               with:
                   node-version: 22
@@ -59,6 +65,8 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - uses: pnpm/action-setup@v4
+              with:
+                  standalone: true
             - uses: actions/setup-node@v6
               with:
                   node-version: 22
