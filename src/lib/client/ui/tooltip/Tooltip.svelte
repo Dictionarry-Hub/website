@@ -107,8 +107,11 @@
 	{#if text && visible}
 		<div use:portal bind:this={tooltipEl} class="pointer-events-none fixed z-[110]" {style}>
 			<div
-				class="whitespace-pre-wrap rounded-control border border-border bg-surface px-2 py-1 text-xs font-medium text-text shadow-card">
-				{text}
+				class="overflow-hidden rounded-control border border-border bg-bg shadow-card">
+				<div
+					class="whitespace-pre-wrap bg-surface px-2 py-1 text-xs font-medium text-text">
+					{text}
+				</div>
 			</div>
 		</div>
 	{/if}

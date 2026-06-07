@@ -1,10 +1,40 @@
 <script lang="ts">
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import Button from '$lib/client/ui/button/Button.svelte';
-	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
+	import { theme } from '$lib/client/ui/theme/theme.svelte';
 	import { Save } from '@lucide/svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';
+	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
+	import Dropdown from '$lib/client/ui/dropdown/Dropdown.svelte';
+	import DropdownItem from '$lib/client/ui/dropdown/DropdownItem.svelte';
+	import DropdownHeader from '$lib/client/ui/dropdown/DropdownHeader.svelte';
+	import DropdownFooter from '$lib/client/ui/dropdown/DropdownFooter.svelte';
+	import { clickOutside } from '$lib/client/utils/clickOutside';
+	import { Apple, Cherry, Citrus } from '@lucide/svelte';
+
+	let basicValue = $state('');
+	let labelValue = $state('');
+	let iconValue = $state('');
+	let posLeftValue = $state('');
+	let posMiddleValue = $state('');
+	let posRightValue = $state('');
+	let groupedOpen = $state(false);
+	let groupedTriggerEl: HTMLElement | undefined = $state();
+	let groupedSelected = $state('');
+
+	const fruitOptions = [
+		{ value: 'apple', label: 'Apple' },
+		{ value: 'banana', label: 'Banana' },
+		{ value: 'cherry', label: 'Cherry' },
+		{ value: 'dragonfruit', label: 'Dragonfruit' }
+	];
+
+	const iconOptions = [
+		{ value: 'apple', label: 'Apple', icon: Apple },
+		{ value: 'cherry', label: 'Cherry', icon: Cherry },
+		{ value: 'citrus', label: 'Citrus', icon: Citrus }
+	];
 </script>
 
 <SEO title="UI Showcase" />
@@ -15,23 +45,15 @@
 	"Sizes" shows all sizes at default variant (default).
 -->
 
-<div class="max-w-3xl space-y-12 p-8 pb-48">
-	<header class="space-y-4">
+<div class="max-w-3xl space-y-8 p-8 pb-48">
+	<header>
 		<h1 class="text-2xl font-bold">UI Showcase</h1>
-		<div class="flex gap-2">
-			{#each THEMES as t}
-				<Button
-					type="button"
-					variant={theme.current === t ? 'accent' : 'default'}
-					onclick={() => theme.set(t)}>
-					{t}
-				</Button>
-			{/each}
-		</div>
 	</header>
 
-	<section class="space-y-4">
-		<h2 class="text-lg font-semibold">Button</h2>
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Button</h2>
+		{/snippet}
 
 		<div class="space-y-6">
 			<div class="space-y-2">
@@ -93,10 +115,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</Card>
 
-	<section class="space-y-4">
-		<h2 class="text-lg font-semibold">Tooltip</h2>
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Tooltip</h2>
+		{/snippet}
 
 		<div class="space-y-6">
 			<div class="space-y-2">
@@ -137,32 +161,163 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</Card>
 
-	<section class="space-y-4">
-		<h2 class="text-lg font-semibold">Card</h2>
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Dropdown</h2>
+		{/snippet}
 
 		<div class="space-y-6">
 			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Basic</h3>
+				<DropdownSelect
+					bind:value={basicValue}
+					options={fruitOptions}
+					placeholder="Pick a fruit" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With label</h3>
+				<DropdownSelect
+					label="Fruit"
+					bind:value={labelValue}
+					options={fruitOptions}
+					placeholder="Pick a fruit" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With icons</h3>
+				<DropdownSelect
+					bind:value={iconValue}
+					options={iconOptions}
+					placeholder="Pick a fruit" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Position</h3>
+				<div class="flex items-center justify-between">
+					<DropdownSelect
+						bind:value={posLeftValue}
+						options={fruitOptions}
+						position="left"
+						placeholder="Left" />
+					<DropdownSelect
+						bind:value={posMiddleValue}
+						options={fruitOptions}
+						position="middle"
+						placeholder="Middle" />
+					<DropdownSelect
+						bind:value={posRightValue}
+						options={fruitOptions}
+						position="right"
+						placeholder="Right" />
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Disabled</h3>
+				<DropdownSelect
+					value=""
+					options={fruitOptions}
+					placeholder="Can't touch this"
+					disabled />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Header / Footer (raw Dropdown)</h3>
+				<div
+					class="relative"
+					bind:this={groupedTriggerEl}
+					use:clickOutside={() => (groupedOpen = false)}>
+					<Button type="button" onclick={() => (groupedOpen = !groupedOpen)}>
+						{groupedSelected || 'Pick an action'}
+					</Button>
+					{#if groupedOpen}
+						<Dropdown triggerEl={groupedTriggerEl} minWidth="14rem">
+							<DropdownHeader label="Actions" />
+							<DropdownItem
+								label="Save"
+								icon={Save}
+								selected={groupedSelected === 'Save'}
+								onclick={() => {
+									groupedSelected = 'Save';
+									groupedOpen = false;
+								}} />
+							<DropdownItem
+								label="Delete"
+								danger
+								onclick={() => {
+									groupedSelected = 'Delete';
+									groupedOpen = false;
+								}} />
+							<DropdownItem label="Disabled option" disabled />
+							<DropdownFooter label="3 actions" />
+						</Dropdown>
+					{/if}
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Card</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Variants</h3>
+				<div class="grid grid-cols-3 gap-3">
+					<Card variant="default" class="text-center text-sm">default</Card>
+					<Card variant="outline" class="text-center text-sm">outline</Card>
+					<Card variant="ghost" class="text-center text-sm">ghost</Card>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Padding</h3>
+				<div class="grid grid-cols-4 gap-3">
+					<Card padding="none" class="text-center text-sm">none</Card>
+					<Card padding="sm" class="text-center text-sm">sm</Card>
+					<Card padding="md" class="text-center text-sm">md</Card>
+					<Card padding="lg" class="text-center text-sm">lg</Card>
+				</div>
+			</div>
+
+			<div class="space-y-2">
 				<h3 class="text-sm font-medium text-text-muted">Rounded</h3>
 				<div class="grid grid-cols-5 gap-3">
-					<Card rounded="none" class="p-4 text-center text-sm">none</Card>
-					<Card rounded="sm" class="p-4 text-center text-sm">sm</Card>
-					<Card rounded="md" class="p-4 text-center text-sm">md</Card>
-					<Card rounded="lg" class="p-4 text-center text-sm">lg</Card>
-					<Card rounded="xl" class="p-4 text-center text-sm">xl</Card>
+					<Card rounded="none" class="text-center text-sm">none</Card>
+					<Card rounded="sm" class="text-center text-sm">sm</Card>
+					<Card rounded="md" class="text-center text-sm">md</Card>
+					<Card rounded="lg" class="text-center text-sm">lg</Card>
+					<Card rounded="xl" class="text-center text-sm">xl</Card>
 				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Header / Footer</h3>
+				<Card>
+					{#snippet header()}
+						<span class="text-sm font-medium">Card header</span>
+					{/snippet}
+					<span class="text-sm">Card body</span>
+					{#snippet footer()}
+						<span class="text-sm text-text-muted">Card footer</span>
+					{/snippet}
+				</Card>
 			</div>
 
 			<div class="space-y-2">
 				<h3 class="text-sm font-medium text-text-muted">As element</h3>
 				<div class="flex flex-wrap items-start gap-3">
-					<Card class="p-4 text-sm">div (default)</Card>
-					<Card as="section" class="p-4 text-sm">section</Card>
-					<Card as="nav" class="p-4 text-sm">nav</Card>
-					<Card as="aside" class="p-4 text-sm">aside</Card>
+					<Card class="text-sm">div (default)</Card>
+					<Card as="section" class="text-sm">section</Card>
+					<Card as="nav" class="text-sm">nav</Card>
+					<Card as="aside" class="text-sm">aside</Card>
 				</div>
 			</div>
 		</div>
-	</section>
+	</Card>
 </div>

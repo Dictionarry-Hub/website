@@ -2,4 +2,4 @@
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 </script>
 
-<SEO title="Dictionarry" />
+<SEO title="Home - Dictionarry" />

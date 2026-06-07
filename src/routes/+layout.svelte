@@ -1,16 +1,24 @@
 <script lang="ts">
 	import './layout.css';
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
-	import Button from '$lib/client/ui/button/Button.svelte';
-	import { Sun, Moon, Monitor } from '@lucide/svelte';
+	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
+	import { Monitor, Sun, Moon, Landmark } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 
-	const themeIcons = { light: Sun, dark: Moon, retro: Monitor } as const;
+	const themeOptions = [
+		{ value: 'system', label: 'System', icon: Monitor },
+		{ value: 'light', label: 'Light', icon: Sun },
+		{ value: 'dark', label: 'Dark', icon: Moon },
+		{ value: 'retro', label: 'Retro', icon: Landmark }
+	];
 
 	let { children } = $props();
 
+	let themeValue = $state(theme.current);
+
 	onMount(() => {
 		theme.init();
+		themeValue = theme.current;
 	});
 </script>
 
@@ -21,16 +29,12 @@
 			<img src="/icon.png" alt="dictionarry" class="size-5" />
 			<span class="font-accent text-lg font-semibold">dictionarry</span>
 		</div>
-		<div class="flex gap-1">
-			{#each THEMES as t}
-				<Button
-					type="button"
-					size="md"
-					variant={theme.current === t ? 'accent' : 'default'}
-					icon={themeIcons[t]}
-					onclick={() => theme.set(t)} />
-			{/each}
-		</div>
+		<DropdownSelect
+			bind:value={themeValue}
+			options={themeOptions}
+			position="middle"
+			iconOnly
+			onchange={(v) => theme.set(v as typeof theme.current)} />
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 border-r border-border px-6 py-4"></div>
