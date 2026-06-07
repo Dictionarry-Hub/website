@@ -177,7 +177,7 @@
 					<NavItem
 						label={entry.name}
 						image="/{entry.arrType}.svg"
-						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{entry.name}" />
+						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{slugify(entry.name)}" />
 				{/each}
 			</NavGroup>
 
