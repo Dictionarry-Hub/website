@@ -151,7 +151,7 @@
 				icon={Clock}
 				open={false}>
 				{#each currentNav.delayProfiles as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/delay-profiles/{name}" />
+					<NavItem label={name} href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
 				{/each}
 			</NavGroup>
 
