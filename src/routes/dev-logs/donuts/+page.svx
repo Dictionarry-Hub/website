@@ -98,12 +98,16 @@ A donut hole within a donut's hole. You cut away the noise to expose the thing t
 
 The goal of Profilarr has always been to make things easier. Give someone the profiles and let them watch movies, not spend more time configuring than watching. But giving someone a profile only goes so far. If they don't understand why it works, they're stuck the moment something doesn't work. Give a man a fish, you know the rest. Docs try to do the second thing, but as v2 has grown, written guides have felt less and less adequate. So the idea became: what if the UI itself teaches you? Interactive onboarding that walks you through the system directly, pointing at real things, not descriptions of things. A donut hole in a donut's hole.
 
+## Cutscene
+
 The concept is really quite simple. You build a layer on top of your UI that blocks interaction, and you cut holes where you want the user to focus. Think about it in dimensions. The website itself is a 2D plane, X and Y. The overlay adds a third dimension, a Z axis. A layer that sits on top of everything and says 'you can't touch this, but you can touch that.' The fourth dimension is time: how the user moves through the stages of a cutscene. First you're here, then you're there, each step peeling back a little more of the system. We call it Cutscene, because you're cutting holes in the scene, and because like a cutscene in a game, the app takes over for a bit, walks you through something, and then hands control back.
 
 <ThemeImage
 	dark="/images/devlog_donuts_cutscene[style=dark].png"
 	light="/images/devlog_donuts_cutscene[style=light].png"
 	alt="Cutscene" />
+
+## Primitives
 
 Programmatically, this breaks down into three primitives: steps, stages, and groups.
 
@@ -130,6 +134,8 @@ Two systems glue this together. State checks are named async functions that quer
 Targeting is the simplest part. You tag interactive elements with `data-onboarding` attributes and the overlay finds them and cuts the holes.
 
 <CodeBlock items={targetingCode} />
+
+## Why build it
 
 I've been thinking about this system for a really long time. The overlay itself was the hard part: figuring out where to cut the holes, how to make it survive the underlying app scrolling around, what happens when the thing you're pointing at moves mid-step. Prerequisites were their own puzzle. Route resolvers needed to handle URLs that don't exist until you generate them. State had to persist across tabs, refreshes, days-long gaps in attention. The overlay engine came first, then the store, then the completion system that decides when a step is done. Scroll lock, because an overlay isn't an overlay if the user can scroll past the spotlight. Stages for every major workflow: databases, arr instances, syncing, custom formats, quality profiles. Each one had every button, input, and dropdown along the way tagged so the overlay knew what to point at. Finally the onboarding page itself, with collapsible groups and search.
 
