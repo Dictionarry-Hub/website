@@ -2,8 +2,18 @@
 	import './layout.css';
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
-	import { Monitor, Sun, Moon, Landmark, Flame, Telescope } from '@lucide/svelte';
+	import {
+		Monitor,
+		Sun,
+		Moon,
+		Landmark,
+		Flame,
+		Telescope,
+		NotebookPen
+	} from '@lucide/svelte';
 	import { onMount } from 'svelte';
+	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
+	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
 
 	const themeOptions = [
 		{ value: 'system', label: 'System', icon: Monitor },
@@ -39,7 +49,11 @@
 			onchange={(v) => theme.set(v as typeof theme.current)} />
 	</div>
 	<!-- Page nav -->
-	<div class="flex-1 border-r border-border px-6 py-4"></div>
+	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
+		<NavGroup label="Dev Logs" href="/dev-logs" icon={NotebookPen}>
+			<NavItem label="Profilarr v2" href="/dev-logs/profilarr-v2" />
+		</NavGroup>
+	</div>
 </div>
 
 <main class="min-h-screen bg-bg pl-72 font-sans text-text">
