@@ -38,7 +38,7 @@
 
 <article class="mx-auto max-w-prose px-6 py-10">
 	<header class="mb-8">
-		<h1 class="text-3xl font-bold">{title}</h1>
+		<h1 class="font-accent text-3xl font-bold">{title}</h1>
 		{#if authors.length > 0 || created}
 			<div class="mt-2 flex items-center gap-2 text-text-soft">
 				{#each authors as a}
