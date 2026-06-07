@@ -1,0 +1,135 @@
+---
+layout: dev-logs
+title: Donuts
+slug: donuts
+blurb: An interactive onboarding system, a murder mystery, and a grilled cheese
+author: https://github.com/santiagosayshey
+created: 2026-05-13
+tags:
+  - onboarding
+  - ux
+  - personal
+---
+
+<script>
+	import ThemeImage from '$lib/client/ui/markdown/image/ThemeImage.svelte';
+	import Video from '$lib/client/ui/markdown/video/Video.svelte';
+</script>
+
+Knives Out is a murder mystery whose protagonist isn't built for murder mysteries. Marta Cabrera is a Paraguayan-Uruguayan-Brazilian nurse so honest she physically can't lie. When her patient, the renowned mystery author Harlan Thrombey, dies, Marta gets pulled into a plot worthy of his own novels, against a family whose love for her extends exactly as far as their inheritance.
+I've seen it maybe ten times. I was watching it again the other night, and somewhere in Daniel Craig's bizarre monologue about donut holes within donut holes, my brain jumped to onboarding.
+
+<Video src="/video/knives_clip_donuts_web.mp4" title="The Hole at the Center of the Donut" />
+
+A donut hole within a donut's hole. You cut away the noise to expose the thing that matters, and inside that, there's another thing that matters even more. That's kind of the whole problem with onboarding, isn't it? You've got this massive, complex system and you need to get people to the center of it without losing them in everything around it. Cut the hole. Spotlight the thing. Then go deeper.
+
+The goal of Profilarr has always been to make things easier. Give someone the profiles and let them watch movies, not spend more time configuring than watching. But giving someone a profile only goes so far. If they don't understand why it works, they're stuck the moment something doesn't work. Give a man a fish, you know the rest. Docs try to do the second thing, but as v2 has grown, written guides have felt less and less adequate. So the idea became: what if the UI itself teaches you? Interactive onboarding that walks you through the system directly, pointing at real things, not descriptions of things. A donut hole in a donut's hole.
+
+The concept is really quite simple. You build a layer on top of your UI that blocks interaction, and you cut holes where you want the user to focus. Think about it in dimensions. The website itself is a 2D plane, X and Y. The overlay adds a third dimension, a Z axis. A layer that sits on top of everything and says 'you can't touch this, but you can touch that.' The fourth dimension is time: how the user moves through the stages of a cutscene. First you're here, then you're there, each step peeling back a little more of the system. We call it Cutscene, because you're cutting holes in the scene, and because like a cutscene in a game, the app takes over for a bit, walks you through something, and then hands control back.
+
+<ThemeImage
+	dark="/images/devlog_donuts_cutscene[style=dark].png"
+	light="/images/devlog_donuts_cutscene[style=light].png"
+	alt="Cutscene" />
+
+Programmatically, this breaks down into three primitives: steps, stages, and groups.
+
+A step is the smallest unit. One instruction, one spotlight, one completion condition.
+
+```typescript
+type Completion =
+  | { type: 'click' }
+  | { type: 'route'; path: string }
+  | { type: 'state'; check: string }
+  | { type: 'manual' };
+
+type Step = {
+  id: string;
+  route?: string | { resolve: string };
+  target?: string;
+  title: string;
+  body: string;
+  position?: 'above' | 'below' | 'left' | 'right'
+    | 'above-left' | 'above-right' | 'below-left' | 'below-right';
+  freeInteract?: boolean;
+  completion: Completion;
+};
+```
+
+A step completes when the user does the thing it's asking for. It doesn't care what they learned, only that they acted.
+
+A stage teaches one thing: a sequence of steps that can run independently, optionally gated by prerequisites.
+
+```typescript
+type Prerequisite = {
+  check: string;
+  message: string;
+};
+
+type Stage = {
+  id: string;
+  name: string;
+  description: string;
+  steps: Step[];
+  silent?: boolean;
+  prerequisites?: Prerequisite[];
+};
+```
+
+If you haven't linked a database yet, there's no point walking you through syncing one. The stage tells you what's missing and points you where to go.
+
+Groups organize stages visually on the onboarding page.
+
+```typescript
+type StageGroup = {
+  name: string;
+  description: string;
+  stages: Stage[];
+};
+```
+
+Two systems glue this together. State checks are named async functions that query app state, prerequisites use them to gate stages, completions use them to mark steps done. Route resolvers handle dynamic navigation: some steps need to land on a page without a static URL, like "go to the first database's changes page," and the resolver figures it out at runtime.
+
+```typescript
+const stateChecks: Record<string, () => Promise<boolean>> = {
+  hasDatabase: async () => { ... },
+  hasArrInstance: async () => { ... },
+};
+
+const routeResolvers: Record<string, () => Promise<string>> = {
+  firstDatabaseChanges: async () => { ... },
+  firstArrSync: async () => { ... },
+};
+```
+
+Targeting is the simplest part. You tag interactive elements with `data-onboarding` attributes and the overlay finds them and cuts the holes.
+
+```html
+<button data-onboarding="add-database-btn">Add Database</button>
+```
+
+I've been thinking about this system for a really long time. The overlay itself was the hard part: figuring out where to cut the holes, how to make it survive the underlying app scrolling around, what happens when the thing you're pointing at moves mid-step. Prerequisites were their own puzzle. Route resolvers needed to handle URLs that don't exist until you generate them. State had to persist across tabs, refreshes, days-long gaps in attention. The overlay engine came first, then the store, then the completion system that decides when a step is done. Scroll lock, because an overlay isn't an overlay if the user can scroll past the spotlight. Stages for every major workflow: databases, arr instances, syncing, custom formats, quality profiles. Each one had every button, input, and dropdown along the way tagged so the overlay knew what to point at. Finally the onboarding page itself, with collapsible groups and search.
+
+And then I sat there and thought: does anyone actually care about this?
+
+Seriously. How many apps have you used that have onboarding tutorials? How many did you sit through? How many did you skip the second you saw a "skip" button? I know I do. Every time.
+
+So why build one?
+
+I don't know. Building things for other people is really weird sometimes. Like, I don't need onboarding because I wrote the bloody thing and know it inside and out. I didn't start working on any of this for any other reason than: I had an itch and I built something to scratch that itch. It just so happens that many other people had that itch too.
+
+When someone says your work is bad, you have to decide what to do with that. Are they trying to make the thing better? Are they attacking the work? Are they attacking you? Are they just protecting what they've already built, justifying the time they sunk into it by tearing down the thing that threatens to make it irrelevant? You can't actually know. And even if you could, what do you do differently? If you push back, you're defensive. If you absorb it, you're a pushover. If you ignore it, you don't care about your users. There's no version of it that feels right. Sometimes it's hard to separate the value of this work from the value of me.
+
+<Video src="/video/chef_clip_cake_web.mp4" title="It's F*CKING MOLTEN!" />
+
+It's your own decisions too. How do you say no to something without making someone feel dismissed? How do you say yes to something you disagree with because you know it's the right call? How do you close an issue that someone clearly cares about? I keep coming back to this question of whether you can get things done and still be kind about it. Whether efficiency and empathy are actually compatible or if at some point you have to pick one. Am I going to be an asshole today? Or am I going to get nothing done?
+
+Knives Out is a murder mystery where the kindest person wins because she's the kindest. Marta doesn't have to choose between being good and being effective because the movie refuses to acknowledge the choice exists. You can't actually win by being too honest to lie. The world doesn't work like that. But sometimes it's nice to think it does.
+
+This is all about downloading movies slightly better, in case you forgot.
+
+So why build one? Because I can. Because it's fun. Because two years ago I just wanted to share some quality profiles and now I'm here writing about dimensions and overlay engines. Because at some point you stop building to solve a problem and you start building because you like how the pieces fit together.
+
+<Video src="/video/chef_clip_grilled_cheese_web.mp4" />
+
+The v2 announcement post / dev log will be next :D
