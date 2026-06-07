@@ -11,7 +11,30 @@ Components live in `src/lib/client/ui/` organized by purpose.
 
 ## Components
 
-_Components will be documented here as they are built._
+### Utils
+
+#### `SEO`
+
+`src/lib/client/ui/utils/SEO.svelte`
+
+Renders `<title>`, Open Graph, Twitter Card, description, and theme-color meta tags via
+`<svelte:head>`. Every page must use this component.
+
+| Prop          | Type     | Required | Default                      |
+| ------------- | -------- | -------- | ---------------------------- |
+| `title`       | `string` | yes      |                              |
+| `description` | `string` | no       | Site-wide default            |
+| `image`       | `string` | no       | GitHub-hosted `icon.png` URL |
+
+```svelte
+<script lang="ts">
+	import SEO from '$lib/client/ui/utils/SEO.svelte';
+</script>
+
+<SEO
+	title="Installation"
+	description="How to install Profilarr." />
+```
 
 ## Semantic Tokens
 

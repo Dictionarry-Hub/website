@@ -30,33 +30,85 @@ options:
 
 ## Meta Tags
 
-Site-wide defaults are set in `app.html`:
+All meta tags are rendered by the `SEO` component (`src/lib/client/ui/utils/SEO.svelte`). Every page
+must use it. The component handles `<title>`, description, theme-color, Open Graph, and Twitter Card
+tags via `<svelte:head>`.
 
-- `<meta name="description">`
-- `<meta name="theme-color">` (used by Discord for embed accent)
-- `<meta property="og:type">`, `og:site_name`, `og:title`, `og:description`, `og:image`
-- `<meta name="twitter:card">`, `twitter:title`, `twitter:description`, `twitter:image`
+```svelte
+<SEO
+	title="Installation"
+	description="How to install Profilarr." />
+```
+
+| Prop          | Type     | Required | Default                      |
+| ------------- | -------- | -------- | ---------------------------- |
+| `title`       | `string` | yes      |                              |
+| `description` | `string` | no       | Site-wide default            |
+| `image`       | `string` | no       | GitHub-hosted `icon.png` URL |
+
+`app.html` contains only structural head elements (charset, viewport, favicon links, manifest).
+Social and SEO meta tags live exclusively in the `SEO` component to avoid duplicates.
 
 The `og:image` and `twitter:image` must be absolute URLs.
 
-Individual pages override the defaults via `<svelte:head>`. At minimum, every page should set:
-
-- `<title>`
-- `<meta property="og:title">`
-- `<meta property="og:description">`
-
 For mdsvex content, frontmatter provides the title and description. The layout component should
-handle rendering the `<svelte:head>` block automatically so content authors only write frontmatter.
+handle rendering the `SEO` component automatically so content authors only write frontmatter.
 
-## Enforcement
+## Lighthouse CI
 
-Two strategies for catching SEO issues before they ship:
+Lighthouse CI (`@lhci/cli`) runs in the CI pipeline as part of `.github/workflows/ci.yml`. It builds
+the site, serves the static output, and audits each configured URL. Configuration lives in
+`lighthouserc.js`.
 
-- **Lighthouse CI**: runs in GitHub Actions after the build step. Audits the built static site for
-  SEO, accessibility, and performance. Score thresholds fail the build if a page drops below the
-  minimum.
-- **Custom linters**: targeted checks for project-specific rules (every page has an `og:image`, no
-  empty `<h1>`, required frontmatter fields). Faster feedback than Lighthouse and can enforce rules
-  Lighthouse doesn't cover.
+### What it checks
 
-Neither is implemented yet. Will be added once the site has content pages.
+Lighthouse runs four audit categories:
+
+| Category       | Threshold | Severity | Notes                               |
+| -------------- | --------- | -------- | ----------------------------------- |
+| SEO            | 100       | error    | All 8 SEO audits must pass          |
+| Accessibility  | 90        | error    | Uses axe-core under the hood        |
+| Best Practices | 90        | error    | Security, compatibility, UX hygiene |
+| Performance    | 90        | warn     | CI runners have variable hardware   |
+
+SEO audits specifically check: `<title>` exists, `<meta name="description">` exists, page is
+crawlable (no `noindex`), `robots.txt` is valid, canonical is valid, hreflang is valid, link text is
+descriptive, and links are crawlable (no `javascript:void(0)`).
+
+### What it does not check
+
+Lighthouse has no awareness of Open Graph tags, Twitter Card tags, structured data, cross-page
+duplicate titles, heading structure for SEO purposes, or sitemap validity. These are handled by the
+custom linter.
+
+### Adding pages
+
+When new routes are added, add their URLs to the `url` array in `lighthouserc.js`:
+
+```js
+url: [
+  'http://localhost/',
+  'http://localhost/docs/',
+  'http://localhost/wiki/',
+],
+```
+
+### Running locally
+
+```bash
+pnpm build && pnpm lighthouse
+```
+
+Requires Chrome or Chromium. On WSL2, use the CI pipeline instead (Chrome on Windows cannot
+communicate with WSL2's network stack).
+
+## Custom Linter
+
+Targeted checks for project-specific rules that Lighthouse does not cover. Planned but not yet
+implemented. Expected rules include:
+
+- Every page has `og:title`, `og:description`, `og:image`
+- No duplicate `<title>` values across pages
+- Every page has exactly one `<h1>`
+- Required frontmatter fields in mdsvex content
+- Component structure rules (e.g. no raw HTML elements in route files)
