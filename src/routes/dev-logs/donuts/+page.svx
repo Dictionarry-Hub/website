@@ -1,6 +1,6 @@
 ---
 layout: dev-logs
-title: Donuts
+title: 🍩 Donuts
 slug: donuts
 blurb: An interactive onboarding system, a murder mystery, and a grilled cheese
 author: https://github.com/santiagosayshey

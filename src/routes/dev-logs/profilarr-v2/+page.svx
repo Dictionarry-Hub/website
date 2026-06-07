@@ -1,6 +1,6 @@
 ---
 layout: dev-logs
-title: Profilarr v2 is Out!
+title: 🚀 Profilarr v2 is Out!
 slug: profilarr-v2
 blurb: profilarr 2 - electric boogaloo
 author: https://github.com/santiagosayshey
