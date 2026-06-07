@@ -30,10 +30,18 @@ options:
 
 ## Meta Tags
 
-Every page needs proper meta tags via `<svelte:head>`:
+Site-wide defaults are set in `app.html`:
+
+- `<meta name="description">`
+- `<meta name="theme-color">` (used by Discord for embed accent)
+- `<meta property="og:type">`, `og:site_name`, `og:title`, `og:description`, `og:image`
+- `<meta name="twitter:card">`, `twitter:title`, `twitter:description`, `twitter:image`
+
+The `og:image` and `twitter:image` must be absolute URLs.
+
+Individual pages override the defaults via `<svelte:head>`. At minimum, every page should set:
 
 - `<title>`
-- `<meta name="description">`
 - `<meta property="og:title">`
 - `<meta property="og:description">`
 
