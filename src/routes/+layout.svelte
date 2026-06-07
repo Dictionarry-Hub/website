@@ -14,30 +14,28 @@
 	});
 </script>
 
-<div class="grid min-h-screen grid-cols-[1fr_6fr] bg-bg font-sans text-text">
-	<div class="sticky top-0 flex h-screen flex-col">
-		<!-- Navbar -->
-		<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
-			<div class="flex items-center gap-2">
-				<img src="/icon.png" alt="dictionarry" class="size-5" />
-				<span class="font-accent text-lg font-semibold">dictionarry</span>
-			</div>
-			<div class="flex gap-1">
-				{#each THEMES as t}
-					<Button
-						type="button"
-						size="md"
-						variant={theme.current === t ? 'accent' : 'default'}
-						icon={themeIcons[t]}
-						onclick={() => theme.set(t)} />
-				{/each}
-			</div>
+<div class="fixed top-0 left-0 flex h-screen w-72 flex-col bg-bg font-sans text-text">
+	<!-- Navbar -->
+	<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
+		<div class="flex items-center gap-2">
+			<img src="/icon.png" alt="dictionarry" class="size-5" />
+			<span class="font-accent text-lg font-semibold">dictionarry</span>
 		</div>
-		<!-- Page nav -->
-		<div class="flex-1 border-r border-border px-6 py-4"></div>
+		<div class="flex gap-1">
+			{#each THEMES as t}
+				<Button
+					type="button"
+					size="md"
+					variant={theme.current === t ? 'accent' : 'default'}
+					icon={themeIcons[t]}
+					onclick={() => theme.set(t)} />
+			{/each}
+		</div>
 	</div>
-
-	<div>
-		{@render children()}
-	</div>
+	<!-- Page nav -->
+	<div class="flex-1 border-r border-border px-6 py-4"></div>
 </div>
+
+<main class="min-h-screen bg-bg pl-72 font-sans text-text">
+	{@render children()}
+</main>
