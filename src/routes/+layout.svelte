@@ -9,7 +9,8 @@
 		Landmark,
 		Flame,
 		Telescope,
-		NotebookPen
+		NotebookPen,
+		Wrench
 	} from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
@@ -24,7 +25,7 @@
 		{ value: 'roswell', label: 'Roswell', icon: Telescope }
 	];
 
-	let { children } = $props();
+	let { children, data } = $props();
 
 	let themeValue = $state(theme.current);
 
@@ -50,9 +51,19 @@
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
-		<NavGroup label="Dev Logs" href="/dev-logs" icon={NotebookPen}>
-			<NavItem label="Profilarr v2" href="/dev-logs/profilarr-v2" />
-		</NavGroup>
+		{#if data.devLogs.length > 0}
+			<NavGroup label="Dev Logs" href="/dev-logs" icon={NotebookPen}>
+				{#each data.devLogs as log}
+					<NavItem label={log.title} href={log.href} />
+				{/each}
+			</NavGroup>
+		{/if}
+
+		{#if import.meta.env.DEV}
+			<NavGroup label="Dev" href="/dev" icon={Wrench}>
+				<NavItem label="UI Showcase" href="/dev/ui" />
+			</NavGroup>
+		{/if}
 	</div>
 </div>
 

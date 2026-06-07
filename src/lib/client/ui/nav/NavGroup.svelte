@@ -12,9 +12,9 @@
 		children?: Snippet;
 	}
 
-	let { label, href, icon, badge = 0, open = true, children }: Props = $props();
+	let { label, href, icon, badge = 0, open: initialOpen = true, children }: Props = $props();
 
-	let isOpen = $state(open);
+	let isOpen = $state(initialOpen);
 
 	const hasItems = $derived(!!children);
 
