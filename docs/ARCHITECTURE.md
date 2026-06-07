@@ -26,4 +26,17 @@ runtime server.
 
 ## Architecture Sections
 
-_Subsection docs will be added as implementation progresses._
+### Frontend
+
+- [UI](./frontend/ui.md) - Component library, semantic tokens, theming
+- [SEO](./frontend/SEO.md) - Pre-rendering, meta tags, Lighthouse CI
+- [Markdown](./frontend/markdown.md) - mdsvex configuration, component remapping, frontmatter
+
+### Backend
+
+- [Content](./backend/content.md) - Content layers: Profilarr docs, PCD browser, dev logs
+- [Search](./backend/search.md) - Client-side fuzzy search, Elo ranking
+
+### Tooling
+
+- [Linting](./tooling/lint.md) - ESLint, custom lint framework, project-specific rules
