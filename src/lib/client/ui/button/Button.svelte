@@ -46,7 +46,7 @@
 		ghost: ['text-text', 'hover:bg-surface-hover'].join(' ')
 	};
 
-	const isIconOnly = icon && !children;
+	const isIconOnly = $derived(icon && !children);
 
 	const sizeClasses: Record<NonNullable<Props['size']>, string> = {
 		sm: 'gap-1.5 px-2 py-0.5 text-sm rounded-control-sm',
@@ -71,12 +71,14 @@
 	class="inline-flex cursor-pointer items-center justify-center font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 {variantClasses[variant!]} {isIconOnly ? iconOnlySizeClasses[size!] : sizeClasses[size!]} {className ?? ''}"
 	{...rest}>
 	{#if icon && iconPosition === 'left'}
-		<svelte:component this={icon} size={iconSizes[size!]} class={iconClass} />
+		{@const Icon = icon}
+		<Icon size={iconSizes[size!]} class={iconClass} />
 	{/if}
 	{#if children}
 		{@render children()}
 	{/if}
 	{#if icon && iconPosition === 'right'}
-		<svelte:component this={icon} size={iconSizes[size!]} class={iconClass} />
+		{@const Icon = icon}
+		<Icon size={iconSizes[size!]} class={iconClass} />
 	{/if}
 </button>

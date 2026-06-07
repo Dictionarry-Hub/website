@@ -48,7 +48,10 @@ Standard button component. Extends `HTMLButtonAttributes` so all native button p
 | Prop      | Type                                      | Required | Default   |
 | --------- | ----------------------------------------- | -------- | --------- |
 | `variant` | `'accent' \| 'default' \| 'danger' \| 'outline' \| 'ghost'` | no | `'default'` |
-| `size`    | `'sm' \| 'md'`                            | no       | `'md'`    |
+| `size`    | `'sm' \| 'md' \| 'lg'`                    | no       | `'md'`    |
+| `icon`    | `Component`                               | no       |           |
+| `iconPosition` | `'left' \| 'right'`                 | no       | `'left'`  |
+| `iconClass` | `string`                                | no       | `''`      |
 | `type`    | `'button' \| 'submit' \| 'reset'`         | yes      |           |
 
 Variant mapping:
@@ -66,6 +69,31 @@ Variant mapping:
 
 <Button type="button" variant="accent">Save</Button>
 <Button type="button" variant="danger" size="sm">Delete</Button>
+```
+
+### Tooltip
+
+#### `Tooltip`
+
+`src/lib/client/ui/tooltip/Tooltip.svelte`
+
+Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to the viewport.
+
+| Prop       | Type                                    | Required | Default    |
+| ---------- | --------------------------------------- | -------- | ---------- |
+| `text`     | `string`                                | no       | `''`       |
+| `position` | `'top' \| 'bottom' \| 'left' \| 'right'` | no     | `'bottom'` |
+| `align`    | `'left' \| 'middle' \| 'right'`         | no       | `'middle'` |
+
+```svelte
+<script lang="ts">
+	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
+	import Button from '$lib/client/ui/button/Button.svelte';
+</script>
+
+<Tooltip text="Save changes" position="top">
+	<Button type="button">Save</Button>
+</Tooltip>
 ```
 
 ## Semantic Tokens

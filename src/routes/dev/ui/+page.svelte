@@ -3,6 +3,7 @@
 	import Button from '$lib/client/ui/button/Button.svelte';
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
 	import { Save } from '@lucide/svelte';
+	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 </script>
 
 <SEO title="UI Showcase" />
@@ -13,7 +14,7 @@
 	"Sizes" shows all sizes at default variant (default).
 -->
 
-<div class="mx-auto max-w-3xl space-y-12 p-8">
+<div class="mx-auto max-w-3xl space-y-12 p-8 pb-48">
 	<header class="space-y-4">
 		<h1 class="text-2xl font-bold">UI Showcase</h1>
 		<div class="flex gap-2">
@@ -88,6 +89,50 @@
 				<div class="flex flex-wrap items-center gap-3">
 					<Button type="button" icon={Save}>Default</Button>
 					<Button type="button" icon={Save} iconClass="text-accent-text">Custom</Button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="space-y-4">
+		<h2 class="text-lg font-semibold">Tooltip</h2>
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Position</h3>
+				<div class="grid grid-cols-3 place-items-center gap-4">
+					<div></div>
+					<Tooltip text="Appears above" position="top">
+						<Button type="button">Top</Button>
+					</Tooltip>
+					<div></div>
+					<Tooltip text="Appears left" position="left">
+						<Button type="button">Left</Button>
+					</Tooltip>
+					<div></div>
+					<Tooltip text="Appears right" position="right">
+						<Button type="button">Right</Button>
+					</Tooltip>
+					<div></div>
+					<Tooltip text="Appears below" position="bottom">
+						<Button type="button">Bottom</Button>
+					</Tooltip>
+					<div></div>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Alignment</h3>
+				<div class="flex items-center justify-between">
+					<Tooltip text="Anchored to left edge" position="bottom" align="left">
+						<Button type="button">Left</Button>
+					</Tooltip>
+					<Tooltip text="Centered on trigger" position="bottom" align="middle">
+						<Button type="button">Middle</Button>
+					</Tooltip>
+					<Tooltip text="Anchored to right edge" position="bottom" align="right">
+						<Button type="button">Right</Button>
+					</Tooltip>
 				</div>
 			</div>
 		</div>
