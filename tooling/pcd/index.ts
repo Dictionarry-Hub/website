@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { fetchRepo, fetchSchema, resolveSchemaVersion, getOpsDir, cleanupTempDirs } from './fetch.js';
 import { compileDatabase } from './build.js';
 import { extractDatabase } from './extract.js';
+import { slugify } from '../../src/lib/shared/utils/slug.js';
 import type { PcdConfig, PcdManifest } from './types.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -25,6 +26,50 @@ interface NavIndex {
 		mediaSettings: NavEntry[];
 		qualityDefinitions: NavEntry[];
 	};
+}
+
+interface SlugCollision {
+	database: string;
+	entityType: string;
+	slug: string;
+	names: string[];
+}
+
+function checkSlugCollisions(navIndex: NavIndex): SlugCollision[] {
+	const collisions: SlugCollision[] = [];
+
+	for (const [dbId, db] of Object.entries(navIndex)) {
+		for (const [entityType, entries] of Object.entries(db)) {
+			const slugMap = new Map<string, string[]>();
+			const names = (entries as (string | NavEntry)[]).map((e) =>
+				typeof e === 'string' ? e : `${e.arrType}/${e.name}`
+			);
+
+			for (const name of names) {
+				const slug = slugify(name);
+				const existing = slugMap.get(slug);
+				if (existing) {
+					existing.push(name);
+				} else {
+					slugMap.set(slug, [name]);
+				}
+			}
+
+			for (const [slug, slugNames] of slugMap) {
+				if (slugNames.length > 1) {
+					// Skip case-only collisions (e.g. SiGMA vs SIGMA) - known upstream issue
+					const isCaseOnly = slugNames.every(
+						(n) => n.toLowerCase() === slugNames[0].toLowerCase()
+					);
+					if (!isCaseOnly) {
+						collisions.push({ database: dbId, entityType, slug, names: slugNames });
+					}
+				}
+			}
+		}
+	}
+
+	return collisions;
 }
 
 function main(): void {
@@ -81,6 +126,17 @@ function main(): void {
 
 		const elapsed = (performance.now() - start).toFixed(0);
 		console.log(`    -> ${compiled.customFormats.length} CFs, ${compiled.qualityProfiles.length} QPs, ${compiled.regularExpressions.length} regexes (${elapsed}ms)`);
+	}
+
+	// Check for slug collisions
+	const collisions = checkSlugCollisions(navIndex);
+	if (collisions.length > 0) {
+		console.error('\nSlug collisions detected (these entities produce identical URL slugs):');
+		for (const c of collisions) {
+			console.error(`  ${c.database}/${c.entityType}: ${c.names.join(', ')} -> "${c.slug}"`);
+		}
+		cleanupTempDirs();
+		process.exit(1);
 	}
 
 	// Write nav index for layout sidebar
