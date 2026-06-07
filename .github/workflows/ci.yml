@@ -1,0 +1,67 @@
+name: CI
+
+on:
+    push:
+        branches: [develop]
+    pull_request:
+        branches: [develop]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+    cancel-in-progress: true
+
+permissions:
+    contents: read
+
+jobs:
+    format:
+        name: Format
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm format --check
+
+    lint:
+        name: Lint
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm lint
+
+    type-check:
+        name: Type Check
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm check
+
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm build
