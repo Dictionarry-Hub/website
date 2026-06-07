@@ -46,6 +46,7 @@
 	"dependencies": {
 		"@lucide/svelte": "^1.17.0",
 		"plyr": "^3.8.4",
+		"rehype-slug": "^6.0.0",
 		"shiki": "^4.2.0"
 	}
 }

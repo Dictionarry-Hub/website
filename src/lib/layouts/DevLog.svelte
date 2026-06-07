@@ -3,6 +3,7 @@
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import TableOfContents from '$lib/client/ui/toc/TableOfContents.svelte';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -36,32 +37,67 @@
 
 <SEO {title} description={blurb} />
 
-<article class="mx-auto max-w-prose px-6 py-10">
-	<header class="mb-8">
-		<h1 class="font-accent text-3xl font-bold">{title}</h1>
-		{#if authors.length > 0 || created}
-			<div class="mt-2 flex items-center gap-2 text-text-soft">
-				{#each authors as a}
-					<Author name={a.name} avatar={a.avatar} href={a.href} />
-				{/each}
-				{#if authors.length > 0 && created}
-					<span class="text-text-muted">·</span>
-				{/if}
-				{#if created}
-					<DateTime date={created} class="text-sm" />
-				{/if}
-			</div>
-		{/if}
-		{#if tags && tags.length > 0}
-			<div class="mt-3 flex flex-wrap gap-2">
-				{#each tags as tag}
-					<Badge pill>{tag}</Badge>
-				{/each}
-			</div>
-		{/if}
-	</header>
+<div id="top" class="content-wrapper relative mx-auto max-w-prose px-6 py-10">
+	<article>
+		<header class="mb-8">
+			<h1 class="font-accent text-3xl font-bold">{title}</h1>
+			{#if authors.length > 0 || created}
+				<div class="mt-2 flex items-center gap-2 text-text-soft">
+					{#each authors as a}
+						<Author name={a.name} avatar={a.avatar} href={a.href} />
+					{/each}
+					{#if authors.length > 0 && created}
+						<span class="text-text-muted">·</span>
+					{/if}
+					{#if created}
+						<DateTime date={created} class="text-sm" />
+					{/if}
+				</div>
+			{/if}
+			{#if tags && tags.length > 0}
+				<div class="mt-3 flex flex-wrap gap-2">
+					{#each tags as tag}
+						<Badge pill>{tag}</Badge>
+					{/each}
+				</div>
+			{/if}
+		</header>
 
-	<div class="prose">
-		{@render children()}
+		<div class="prose">
+			{@render children()}
+		</div>
+	</article>
+
+	<div class="toc-float">
+		<div class="toc-sticky">
+			<TableOfContents {title} />
+		</div>
 	</div>
-</article>
+</div>
+
+<style>
+	.toc-float {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		height: 100%;
+		margin-left: 2rem;
+	}
+
+	.toc-sticky {
+		position: sticky;
+		top: 2rem;
+	}
+
+	@media (min-width: 1280px) {
+		.content-wrapper {
+			margin-left: calc(50% - 32.5ch - 9rem);
+			margin-right: auto;
+		}
+
+		.toc-float {
+			display: block;
+		}
+	}
+</style>

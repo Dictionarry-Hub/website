@@ -1,5 +1,6 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
+import rehypeSlug from 'rehype-slug';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
 
@@ -21,6 +22,7 @@ const config = {
 	preprocess: [
 		mdsvex({
 			extensions: ['.svx', '.md'],
+			rehypePlugins: [rehypeSlug],
 			layout: {
 				'dev-logs': resolve(__dirname, 'src/lib/layouts/DevLog.svelte'),
 				_: resolve(__dirname, 'src/lib/layouts/Default.svelte')

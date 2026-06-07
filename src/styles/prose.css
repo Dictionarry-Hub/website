@@ -3,6 +3,15 @@
 	color: var(--theme-text);
 }
 
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+	scroll-margin-top: 2rem;
+}
+
 /* Headings */
 
 .prose h1 {
