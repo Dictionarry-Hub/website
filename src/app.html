@@ -14,7 +14,7 @@
 			crossorigin />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Geist+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" />
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Geist+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700&display=swap" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -41,7 +41,7 @@
 			(function () {
 				try {
 					var t = localStorage.getItem('theme');
-					if (t === 'dark' || t === 'retro') {
+					if (t === 'dark' || t === 'retro' || t === 'velouria' || t === 'roswell') {
 						document.documentElement.setAttribute('data-theme', t);
 					} else if (!t || t === 'system') {
 						if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

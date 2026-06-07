@@ -2,14 +2,16 @@
 	import './layout.css';
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
-	import { Monitor, Sun, Moon, Landmark } from '@lucide/svelte';
+	import { Monitor, Sun, Moon, Landmark, Flame, Telescope } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 
 	const themeOptions = [
 		{ value: 'system', label: 'System', icon: Monitor },
 		{ value: 'light', label: 'Light', icon: Sun },
 		{ value: 'dark', label: 'Dark', icon: Moon },
-		{ value: 'retro', label: 'Retro', icon: Landmark }
+		{ value: 'retro', label: 'Retro', icon: Landmark },
+		{ value: 'velouria', label: 'Velouria', icon: Flame },
+		{ value: 'roswell', label: 'Roswell', icon: Telescope }
 	];
 
 	let { children } = $props();
