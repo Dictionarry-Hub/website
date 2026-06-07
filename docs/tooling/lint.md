@@ -33,7 +33,7 @@ tooling/
     ├── index.ts                # Runner: discovers rules, globs files, reports
     ├── types.ts                # LintRule, FileEntry, Violation interfaces
     └── rules/
-        ├── seo-component-required.ts
+        ├── require-seo.ts
         └── no-raw-ui.ts
 ```
 
@@ -62,7 +62,7 @@ interface LintRule {
 
 ### Current rules
 
-#### `seo-component-required` (category: `seo`)
+#### `require-seo` (category: `seo`)
 
 Every `+page.svelte` must import and use the `SEO` component from `$lib/client/ui/utils/SEO.svelte`.
 This ensures all pages have proper meta tags.

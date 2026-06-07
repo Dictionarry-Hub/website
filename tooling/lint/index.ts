@@ -2,10 +2,10 @@ import { readFileSync, globSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
 import type { LintRule, Violation, FileEntry } from './types.js';
 
-import seoComponentRequired from './rules/seo-component-required.js';
+import requireSeo from './rules/require-seo.js';
 import noRawUi from './rules/no-raw-ui.js';
 
-const rules: LintRule[] = [seoComponentRequired, noRawUi];
+const rules: LintRule[] = [requireSeo, noRawUi];
 
 function run(): void {
 	const root = resolve(import.meta.dirname, '../..');

@@ -1,7 +1,7 @@
 import type { LintRule } from '../types.js';
 
 const rule: LintRule = {
-	name: 'seo-component-required',
+	name: 'require-seo',
 	description: 'Every +page.svelte must import and use the SEO component',
 	category: 'seo',
 	severity: 'error',
