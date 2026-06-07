@@ -15,6 +15,29 @@
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
+	import Table from '$lib/client/ui/table/Table.svelte';
+	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
+	import type { Column } from '$lib/client/ui/table/types';
+
+	interface DemoRow {
+		name: string;
+		role: string;
+		status: string;
+		[key: string]: unknown;
+	}
+
+	const tableData: DemoRow[] = [
+		{ name: 'Alice', role: 'Engineer', status: 'Active' },
+		{ name: 'Bob', role: 'Designer', status: 'Away' },
+		{ name: 'Charlie', role: 'Manager', status: 'Active' },
+		{ name: 'Diana', role: 'Engineer', status: 'Offline' }
+	];
+
+	const tableColumns: Column<DemoRow>[] = [
+		{ key: 'name', header: 'Name', sortable: true },
+		{ key: 'role', header: 'Role', sortable: true },
+		{ key: 'status', header: 'Status', align: 'center' }
+	];
 
 	let basicValue = $state('');
 	let labelValue = $state('');
@@ -48,7 +71,7 @@
 	"Sizes" shows all sizes at default variant (default).
 -->
 
-<div class="max-w-3xl space-y-8 p-8 pb-48">
+<div class="mx-auto max-w-3xl space-y-8 px-6 py-10">
 	<header>
 		<h1 class="text-2xl font-bold">UI Showcase</h1>
 	</header>
@@ -465,6 +488,52 @@
 					<Card as="nav" class="text-sm">nav</Card>
 					<Card as="aside" class="text-sm">aside</Card>
 				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Table</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Basic (sortable)</h3>
+				<Table data={tableData} columns={tableColumns} />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Clickable rows</h3>
+				<Table data={tableData} columns={tableColumns} href={() => '#'} />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Expandable</h3>
+				<Table data={tableData} columns={tableColumns}>
+					{#snippet expanded(row)}
+						<p class="text-sm text-text-soft">Expanded content for <strong>{row.name}</strong>. This can contain anything.</p>
+					{/snippet}
+				</Table>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Adaptive List</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Table on desktop, cards on mobile</h3>
+				<AdaptiveList data={tableData} columns={tableColumns} href={() => '#'}>
+					{#snippet card(row)}
+						<p class="text-sm font-medium">{row.name}</p>
+						<p class="text-xs text-text-muted">{row.role}</p>
+						<Badge size="sm" class="mt-2">{row.status}</Badge>
+					{/snippet}
+				</AdaptiveList>
 			</div>
 		</div>
 	</Card>
