@@ -38,6 +38,10 @@ export default defineConfig(
 	{
 		// Override or add rule settings here, such as:
 		// 'svelte/button-has-type': 'error'
-		rules: {}
+		rules: {
+			'svelte/button-has-type': 'error',
+			'@typescript-eslint/no-explicit-any': 'error',
+			'svelte/no-at-html-tags': 'warn'
+		}
 	}
 );
