@@ -25,10 +25,10 @@
 	}
 
 	onMount(() => {
-		const prose = document.querySelector('.prose');
-		if (!prose) return;
+		const container = document.querySelector('article');
+		if (!container) return;
 
-		const elements = prose.querySelectorAll('h1, h2, h3');
+		const elements = container.querySelectorAll('h1, h2, h3');
 		const parsed = Array.from(elements)
 			.filter((el) => el.id)
 			.map((el) => ({

@@ -194,18 +194,26 @@ renders just the matched option's icon as the trigger button.
 
 Inline label for tags, statuses, and counts.
 
-| Prop      | Type                                                              | Required | Default     |
-| --------- | ----------------------------------------------------------------- | -------- | ----------- |
-| `variant` | `'subtle' \| 'solid' \| 'outline'`                               | no       | `'solid'`   |
-| `color`   | `'neutral' \| 'accent' \| 'success' \| 'warning' \| 'danger' \| 'info'` | no | `'neutral'` |
-| `size`    | `'sm' \| 'md'`                                                    | no       | `'sm'`      |
-| `pill`    | `boolean`                                                         | no       | `false`     |
-| `icon`    | `Component`                                                       | no       |             |
+| Prop        | Type                                                              | Required | Default     |
+| ----------- | ----------------------------------------------------------------- | -------- | ----------- |
+| `variant`   | `'subtle' \| 'solid' \| 'outline'`                               | no       | `'solid'`   |
+| `color`     | `'neutral' \| 'accent' \| 'success' \| 'warning' \| 'danger' \| 'info'` | no | `'neutral'` |
+| `size`      | `'sm' \| 'md'`                                                    | no       | `'sm'`      |
+| `pill`      | `boolean`                                                         | no       | `false`     |
+| `icon`      | `Component`                                                       | no       |             |
+| `iconColor` | `string`                                                          | no       |             |
+| `link`      | `boolean`                                                         | no       | `false`     |
+
+`iconColor` applies a custom class to the leading icon (e.g. `"text-info-icon"`). `link` appends an
+`ExternalLink` icon on the right, signalling the badge is a clickable link.
 
 ```svelte
 <Badge>Default</Badge>
 <Badge color="success" pill>Published</Badge>
 <Badge variant="outline" color="danger">Removed</Badge>
+<a href="https://regex101.com/r/abc123" target="_blank" rel="noopener noreferrer">
+  <Badge variant="outline" icon={FlaskConical} iconColor="text-info-icon" link pill>regex101</Badge>
+</a>
 ```
 
 ### DateTime

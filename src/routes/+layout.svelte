@@ -27,6 +27,7 @@
 	import { goto } from '$app/navigation';
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
+	import { slugify } from '$lib/shared/utils/slug';
 
 	const themeOptions = [
 		{ value: 'system', label: 'System', icon: Monitor },
@@ -136,11 +137,11 @@
 
 			<NavGroup
 				label="Regular Expressions"
-				href="/pcd/{databaseValue}/regex"
+				href="/pcd/{databaseValue}/regular-expressions"
 				icon={Regex}
 				open={false}>
 				{#each currentNav.regularExpressions as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/regex/{name}" />
+					<NavItem label={name} href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
 				{/each}
 			</NavGroup>
 

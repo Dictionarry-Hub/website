@@ -11,7 +11,7 @@
 	import DropdownHeader from '$lib/client/ui/dropdown/DropdownHeader.svelte';
 	import DropdownFooter from '$lib/client/ui/dropdown/DropdownFooter.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
-	import { Apple, Cherry, Citrus, Star, CircleAlert } from '@lucide/svelte';
+	import { Apple, Cherry, Citrus, Star, CircleAlert, FlaskConical } from '@lucide/svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
@@ -335,6 +335,22 @@
 				<div class="flex flex-wrap items-center gap-3">
 					<Badge icon={Star}>Featured</Badge>
 					<Badge icon={CircleAlert} color="warning">Warning</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Icon color</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge icon={FlaskConical} iconColor="text-info-icon">Default icon color</Badge>
+					<Badge icon={Star} iconColor="text-warning-icon">Custom icon color</Badge>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Link</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Badge link>With external icon</Badge>
+					<Badge variant="outline" icon={FlaskConical} iconColor="text-info-icon" link pill>regex101</Badge>
 				</div>
 			</div>
 		</div>

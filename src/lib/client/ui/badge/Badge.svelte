@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ExternalLink } from '@lucide/svelte';
 	import type { Component, Snippet } from 'svelte';
 
 	interface Props {
@@ -7,6 +8,8 @@
 		size?: 'sm' | 'md';
 		pill?: boolean;
 		icon?: Component<{ size?: number; class?: string }>;
+		iconColor?: string;
+		link?: boolean;
 		children: Snippet;
 		class?: string;
 	}
@@ -17,6 +20,8 @@
 		size = 'sm',
 		pill = false,
 		icon,
+		iconColor,
+		link = false,
 		children,
 		class: className
 	}: Props = $props();
@@ -72,7 +77,10 @@
 	class="inline-flex items-center font-medium {colorMap[color!][variant!]} {sizeClasses[size!]} {pill ? 'rounded-pill' : 'rounded-control-sm'} {className ?? ''}">
 	{#if icon}
 		{@const Icon = icon}
-		<Icon size={iconSizes[size!]} />
+		<Icon size={iconSizes[size!]} class={iconColor ?? ''} />
 	{/if}
 	{@render children()}
+	{#if link}
+		<ExternalLink size={iconSizes[size!]} class="text-text-muted" />
+	{/if}
 </span>

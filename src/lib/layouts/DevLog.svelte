@@ -1,8 +1,8 @@
 <script lang="ts">
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
+	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
-	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import TableOfContents from '$lib/client/ui/toc/TableOfContents.svelte';
 	import type { Snippet } from 'svelte';
 
@@ -39,29 +39,19 @@
 
 <div id="top" class="content-wrapper relative mx-auto max-w-prose px-6 py-10">
 	<article>
-		<header class="mb-8">
-			<h1 class="font-accent text-3xl font-bold">{title}</h1>
-			{#if authors.length > 0 || created}
-				<div class="mt-2 flex items-center gap-2 text-text-soft">
-					{#each authors as a}
-						<Author name={a.name} avatar={a.avatar} href={a.href} />
-					{/each}
-					{#if authors.length > 0 && created}
-						<span class="text-text-muted">·</span>
-					{/if}
-					{#if created}
-						<DateTime date={created} class="text-sm" />
-					{/if}
-				</div>
-			{/if}
-			{#if tags && tags.length > 0}
-				<div class="mt-3 flex flex-wrap gap-2">
-					{#each tags as tag}
-						<Badge pill>{tag}</Badge>
-					{/each}
-				</div>
-			{/if}
-		</header>
+		<PageHeader {title} {tags}>
+			{#snippet meta()}
+				{#each authors as a}
+					<Author name={a.name} avatar={a.avatar} href={a.href} />
+				{/each}
+				{#if authors.length > 0 && created}
+					<span class="text-text-muted">·</span>
+				{/if}
+				{#if created}
+					<DateTime date={created} class="text-sm" />
+				{/if}
+			{/snippet}
+		</PageHeader>
 
 		<div class="prose">
 			{@render children()}
