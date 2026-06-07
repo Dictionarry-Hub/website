@@ -1,1 +1,80 @@
 @import 'tailwindcss';
+@import '../styles/themes/light.css';
+@import '../styles/themes/dark.css';
+@import '../styles/themes/retro.css';
+
+@theme inline {
+	/* Colors */
+	--color-bg: var(--theme-bg);
+	--color-surface: var(--theme-surface);
+	--color-surface-muted: var(--theme-surface-muted);
+	--color-surface-hover: var(--theme-surface-hover);
+	--color-surface-hover-muted: var(--theme-surface-hover-muted);
+
+	--color-text: var(--theme-text);
+	--color-text-soft: var(--theme-text-soft);
+	--color-text-muted: var(--theme-text-muted);
+	--color-text-subtle: var(--theme-text-subtle);
+
+	--color-border: var(--theme-border);
+	--color-border-muted: var(--theme-border-muted);
+	--color-border-subtle: var(--theme-border-subtle);
+
+	--color-accent-solid: var(--theme-accent-solid);
+	--color-accent-solid-hover: var(--theme-accent-solid-hover);
+	--color-on-accent: var(--theme-on-accent);
+	--color-accent-bg: var(--theme-accent-bg);
+	--color-accent-text: var(--theme-accent-text);
+	--color-accent-border: var(--theme-accent-border);
+	--color-accent-hover: var(--theme-accent-hover);
+
+	--color-danger-solid: var(--theme-danger-solid);
+	--color-danger-solid-hover: var(--theme-danger-solid-hover);
+	--color-on-danger: var(--theme-on-danger);
+	--color-danger-hover: var(--theme-danger-hover);
+
+	--color-flush-bg: var(--theme-flush-bg);
+	--color-flush-hover: var(--theme-flush-hover);
+
+	--color-ghost-bg: var(--theme-ghost-bg);
+	--color-ghost-border: var(--theme-ghost-border);
+	--color-ghost-label-bg: var(--theme-ghost-label-bg);
+	--color-ghost-label-text: var(--theme-ghost-label-text);
+
+	--color-success-bg: var(--theme-success-bg);
+	--color-success-text: var(--theme-success-text);
+	--color-success-border: var(--theme-success-border);
+	--color-success-icon: var(--theme-success-icon);
+
+	--color-warning-bg: var(--theme-warning-bg);
+	--color-warning-text: var(--theme-warning-text);
+	--color-warning-border: var(--theme-warning-border);
+	--color-warning-icon: var(--theme-warning-icon);
+
+	--color-danger-bg: var(--theme-danger-bg);
+	--color-danger-text: var(--theme-danger-text);
+	--color-danger-border: var(--theme-danger-border);
+	--color-danger-icon: var(--theme-danger-icon);
+
+	--color-info-bg: var(--theme-info-bg);
+	--color-info-text: var(--theme-info-text);
+	--color-info-border: var(--theme-info-border);
+	--color-info-icon: var(--theme-info-icon);
+
+	--color-link-text: var(--theme-link-text);
+
+	/* Fonts */
+	--font-sans: var(--theme-font-sans);
+	--font-mono: var(--theme-font-mono);
+
+	/* Radii */
+	--radius-control-sm: var(--theme-radius-control-sm);
+	--radius-control: var(--theme-radius-control);
+	--radius-card: var(--theme-radius-card);
+	--radius-pill: var(--theme-radius-pill);
+
+	/* Shadows */
+	--shadow-card: var(--theme-shadow-card);
+	--shadow-control: var(--theme-shadow-control);
+	--shadow-control-active: var(--theme-shadow-control-active);
+}

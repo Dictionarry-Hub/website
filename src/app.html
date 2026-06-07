@@ -27,6 +27,16 @@
 		<link
 			rel="manifest"
 			href="/site.webmanifest" />
+		<script>
+			(function () {
+				try {
+					var t = localStorage.getItem('theme');
+					if (t === 'dark' || t === 'retro') {
+						document.documentElement.setAttribute('data-theme', t);
+					}
+				} catch (e) {}
+			})();
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

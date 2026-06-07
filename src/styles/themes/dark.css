@@ -1,0 +1,71 @@
+[data-theme='dark'] {
+	--theme-font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+	--theme-font-mono: 'Geist Mono', ui-monospace, monospace;
+
+	--theme-bg: #171717;
+	--theme-surface: rgb(38 38 38 / 0.5);
+	--theme-surface-muted: #171717;
+	--theme-surface-hover: rgb(38 38 38 / 0.6);
+	--theme-surface-hover-muted: rgb(38 38 38 / 0.8);
+
+	--theme-text: #fafafa;
+	--theme-text-soft: #e5e5e5;
+	--theme-text-muted: #a3a3a3;
+	--theme-text-subtle: #525252;
+
+	--theme-border: rgb(64 64 64 / 0.6);
+	--theme-border-muted: rgb(64 64 64 / 0.6);
+	--theme-border-subtle: rgb(64 64 64 / 0.4);
+
+	--theme-accent-solid: #3b82f6;
+	--theme-accent-solid-hover: #60a5fa;
+	--theme-on-accent: #ffffff;
+	--theme-accent-bg: rgb(30 58 138 / 0.5);
+	--theme-accent-text: #93c5fd;
+	--theme-accent-border: rgb(59 130 246 / 0.4);
+	--theme-accent-hover: rgb(30 58 138 / 0.7);
+
+	--theme-danger-solid: #ef4444;
+	--theme-danger-solid-hover: #dc2626;
+	--theme-on-danger: #ffffff;
+	--theme-danger-hover: rgb(153 27 27 / 0.8);
+
+	--theme-flush-bg: var(--theme-bg);
+	--theme-flush-hover: var(--theme-surface-hover);
+
+	--theme-ghost-bg: transparent;
+	--theme-ghost-border: transparent;
+	--theme-ghost-label-bg: rgb(38 38 38 / 0.4);
+	--theme-ghost-label-text: #a3a3a3;
+
+	--theme-success-bg: #064e3b;
+	--theme-success-text: #a7f3d0;
+	--theme-success-border: rgb(6 95 70 / 0.6);
+	--theme-success-icon: #6ee7b7;
+
+	--theme-warning-bg: #78350f;
+	--theme-warning-text: #fde68a;
+	--theme-warning-border: rgb(146 64 14 / 0.6);
+	--theme-warning-icon: #fcd34d;
+
+	--theme-danger-bg: #7f1d1d;
+	--theme-danger-text: #fecaca;
+	--theme-danger-border: rgb(153 27 27 / 0.6);
+	--theme-danger-icon: #fca5a5;
+
+	--theme-info-bg: #1e3a8a;
+	--theme-info-text: #bfdbfe;
+	--theme-info-border: rgb(7 89 133 / 0.6);
+	--theme-info-icon: #7dd3fc;
+
+	--theme-link-text: #93c5fd;
+
+	--theme-radius-control-sm: 0.5rem;
+	--theme-radius-control: 0.75rem;
+	--theme-radius-card: 0.75rem;
+	--theme-radius-pill: 9999px;
+
+	--theme-shadow-card: none;
+	--theme-shadow-control: none;
+	--theme-shadow-control-active: none;
+}

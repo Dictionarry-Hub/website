@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@lucide/svelte':
+        specifier: ^1.17.0
+        version: 1.17.0(svelte@5.56.2(@typescript-eslint/types@8.60.1))
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -338,6 +342,11 @@ packages:
 
   '@lhci/utils@0.15.1':
     resolution: {integrity: sha512-WclJnUQJeOMY271JSuaOjCv/aA0pgvuHZS29NFNdIeI14id8eiFsjith85EGKYhljgoQhJ2SiW4PsVfFiakNNw==}
+
+  '@lucide/svelte@1.17.0':
+    resolution: {integrity: sha512-q06YCFBN5CO8cd1ADmLCxWRVMVb7xxvHzqC0lvNoxGa+FLW6Cd1Y1AOxgbQk4Iwe68vkAMCRveNHint4WoaVKg==}
+    peerDependencies:
+      svelte: ^5
 
   '@napi-rs/wasm-runtime@1.1.4':
     resolution: {integrity: sha512-3NQNNgA1YSlJb/kMH1ildASP9HW7/7kYnRI2szWJaofaS1hWmbGI4H+d3+22aGzXXN9IJ+n+GiFVcGipJP18ow==}
@@ -2694,6 +2703,10 @@ snapshots:
       - react-native-b4a
       - supports-color
       - utf-8-validate
+
+  '@lucide/svelte@1.17.0(svelte@5.56.2(@typescript-eslint/types@8.60.1))':
+    dependencies:
+      svelte: 5.56.2(@typescript-eslint/types@8.60.1)
 
   '@napi-rs/wasm-runtime@1.1.4(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:

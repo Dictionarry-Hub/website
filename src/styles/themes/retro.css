@@ -1,0 +1,71 @@
+[data-theme='retro'] {
+	--theme-font-sans: Tahoma, 'MS Sans Serif', Arial, sans-serif;
+	--theme-font-mono: 'Courier New', Courier, monospace;
+
+	--theme-bg: #c0c0c0;
+	--theme-surface: #d4d0c8;
+	--theme-surface-muted: #c0c0c0;
+	--theme-surface-hover: #b8b4ac;
+	--theme-surface-hover-muted: #cac6be;
+
+	--theme-text: #000000;
+	--theme-text-soft: #1a1a1a;
+	--theme-text-muted: #555555;
+	--theme-text-subtle: #808080;
+
+	--theme-border: #808080;
+	--theme-border-muted: #a0a0a0;
+	--theme-border-subtle: #c0c0c0;
+
+	--theme-accent-solid: #000080;
+	--theme-accent-solid-hover: #0000b0;
+	--theme-on-accent: #ffffff;
+	--theme-accent-bg: #000080;
+	--theme-accent-text: #ffffff;
+	--theme-accent-border: #000080;
+	--theme-accent-hover: #0000a0;
+
+	--theme-danger-solid: #cc0000;
+	--theme-danger-solid-hover: #990000;
+	--theme-on-danger: #ffffff;
+	--theme-danger-hover: #900000;
+
+	--theme-flush-bg: var(--theme-surface);
+	--theme-flush-hover: var(--theme-surface-hover-muted);
+
+	--theme-ghost-bg: var(--theme-surface);
+	--theme-ghost-border: var(--theme-border);
+	--theme-ghost-label-bg: var(--theme-surface);
+	--theme-ghost-label-text: #555555;
+
+	--theme-success-bg: #008000;
+	--theme-success-text: #ffffff;
+	--theme-success-border: #006600;
+	--theme-success-icon: #ffffff;
+
+	--theme-warning-bg: #d8d4b0;
+	--theme-warning-text: #7a6000;
+	--theme-warning-border: #7a6000;
+	--theme-warning-icon: #7a6000;
+
+	--theme-danger-bg: #b00000;
+	--theme-danger-text: #ffffff;
+	--theme-danger-border: #b00000;
+	--theme-danger-icon: #ffffff;
+
+	--theme-info-bg: var(--theme-accent-solid);
+	--theme-info-text: var(--theme-on-accent);
+	--theme-info-border: #000060;
+	--theme-info-icon: #ffffff;
+
+	--theme-link-text: #000080;
+
+	--theme-radius-control-sm: 0px;
+	--theme-radius-control: 0px;
+	--theme-radius-card: 0px;
+	--theme-radius-pill: 0px;
+
+	--theme-shadow-card: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
+	--theme-shadow-control: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
+	--theme-shadow-control-active: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
+}
