@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
+	import { database, DATABASES } from '$lib/client/ui/database/database.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import {
 		Monitor,
@@ -10,7 +11,9 @@
 		Flame,
 		Telescope,
 		NotebookPen,
-		Wrench
+		Wrench,
+		BookOpen,
+		Trash2
 	} from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
@@ -25,13 +28,30 @@
 		{ value: 'roswell', label: 'Roswell', icon: Telescope }
 	];
 
+	const databaseIcons: Record<string, typeof BookOpen> = {
+		dictionarry: BookOpen,
+		trash: Trash2,
+		'trash-french': Trash2,
+		'trash-german': Trash2,
+		dumpstarr: Flame
+	};
+
+	const databaseOptions = DATABASES.map((d) => ({
+		value: d.id,
+		label: d.name,
+		icon: databaseIcons[d.id]
+	}));
+
 	let { children, data } = $props();
 
 	let themeValue = $state(theme.current);
+	let databaseValue = $state(database.current);
 
 	onMount(() => {
 		theme.init();
 		themeValue = theme.current;
+		database.init();
+		databaseValue = database.current;
 	});
 </script>
 
@@ -42,12 +62,22 @@
 			<img src="/icon.png" alt="dictionarry" class="size-5" />
 			<span class="font-accent text-lg font-semibold">dictionarry</span>
 		</div>
-		<DropdownSelect
-			bind:value={themeValue}
-			options={themeOptions}
-			position="middle"
-			iconOnly
-			onchange={(v) => theme.set(v as typeof theme.current)} />
+		<div class="flex items-center gap-1">
+			<DropdownSelect
+				bind:value={databaseValue}
+				options={databaseOptions}
+				header="Database"
+				position="middle"
+				iconOnly
+				onchange={(v) => database.set(v as typeof database.current)} />
+			<DropdownSelect
+				bind:value={themeValue}
+				options={themeOptions}
+				header="Theme"
+				position="middle"
+				iconOnly
+				onchange={(v) => theme.set(v as typeof theme.current)} />
+		</div>
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">

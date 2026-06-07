@@ -4,10 +4,12 @@
 	import { clickOutside } from '$lib/client/utils/clickOutside';
 	import Button from '$lib/client/ui/button/Button.svelte';
 	import Dropdown from './Dropdown.svelte';
+	import DropdownHeader from './DropdownHeader.svelte';
 	import DropdownItem from './DropdownItem.svelte';
 
 	interface Props {
 		label?: string;
+		header?: string;
 		value: string;
 		options: {
 			value: string;
@@ -25,6 +27,7 @@
 
 	let {
 		label,
+		header,
 		value = $bindable(),
 		options,
 		placeholder = 'Select...',
@@ -82,6 +85,9 @@
 				{minWidth}
 				{triggerEl}
 				onplacementchange={(p) => (resolvedPlacement = p)}>
+				{#if header}
+					<DropdownHeader label={header} />
+				{/if}
 				{#each options as option}
 					<DropdownItem
 						label={option.label}
