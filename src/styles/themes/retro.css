@@ -70,4 +70,17 @@
 	--theme-shadow-card: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
 	--theme-shadow-control: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
 	--theme-shadow-control-active: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
+
+	/* Code syntax: classic terminal palette */
+	--theme-code-foreground: #000000;
+	--theme-code-background: transparent;
+	--theme-code-token-keyword: #000080;
+	--theme-code-token-string: #008000;
+	--theme-code-token-string-expression: #008000;
+	--theme-code-token-comment: #808080;
+	--theme-code-token-function: #000080;
+	--theme-code-token-constant: #800080;
+	--theme-code-token-parameter: #808000;
+	--theme-code-token-punctuation: #555555;
+	--theme-code-token-link: #000080;
 }

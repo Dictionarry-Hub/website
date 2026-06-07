@@ -111,4 +111,17 @@
 	--theme-shadow-card: 0 1px 3px rgb(26 21 40 / 0.06), 0 4px 12px rgb(26 21 40 / 0.04);
 	--theme-shadow-control: none;
 	--theme-shadow-control-active: 0 0 0 2px rgb(124 58 237 / 0.15);
+
+	/* Code syntax: classified frequencies */
+	--theme-code-foreground: #362d4a;
+	--theme-code-background: transparent;
+	--theme-code-token-keyword: #7c3aed;
+	--theme-code-token-string: #0d9488;
+	--theme-code-token-string-expression: #0d9488;
+	--theme-code-token-comment: #a498be;
+	--theme-code-token-function: #2563eb;
+	--theme-code-token-constant: #c026d3;
+	--theme-code-token-parameter: #d97706;
+	--theme-code-token-punctuation: #6e6088;
+	--theme-code-token-link: #6d28d9;
 }

@@ -45,6 +45,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.17.0",
-		"plyr": "^3.8.4"
+		"plyr": "^3.8.4",
+		"shiki": "^4.2.0"
 	}
 }

@@ -111,4 +111,17 @@
 	--theme-shadow-card: 0 4px 16px -2px rgb(18 12 14 / 0.6), 0 0 8px -2px rgb(230 58 30 / 0.06);
 	--theme-shadow-control: none;
 	--theme-shadow-control-active: 0 0 0 2px rgb(230 58 30 / 0.25);
+
+	/* Code syntax: warm desert tones */
+	--theme-code-foreground: #c4b5a6;
+	--theme-code-background: transparent;
+	--theme-code-token-keyword: #f07060;
+	--theme-code-token-string: #e0b840;
+	--theme-code-token-string-expression: #e0b840;
+	--theme-code-token-comment: #5c4d42;
+	--theme-code-token-function: #80a8d8;
+	--theme-code-token-constant: #e88a6a;
+	--theme-code-token-parameter: #6abf6a;
+	--theme-code-token-punctuation: #8a7868;
+	--theme-code-token-link: #80a8d8;
 }

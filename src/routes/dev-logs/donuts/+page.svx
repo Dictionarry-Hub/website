@@ -14,6 +14,79 @@ tags:
 <script>
 	import ThemeImage from '$lib/client/ui/markdown/image/ThemeImage.svelte';
 	import Video from '$lib/client/ui/markdown/video/Video.svelte';
+	import CodeBlock from '$lib/client/ui/markdown/code/CodeBlock.svelte';
+
+	const stepCode = [{
+		title: 'Step',
+		language: 'typescript',
+		code: `type Completion =
+  | { type: 'click' }
+  | { type: 'route'; path: string }
+  | { type: 'state'; check: string }
+  | { type: 'manual' };
+
+type Step = {
+  id: string;
+  route?: string | { resolve: string };
+  target?: string;
+  title: string;
+  body: string;
+  position?: 'above' | 'below' | 'left' | 'right'
+    | 'above-left' | 'above-right' | 'below-left' | 'below-right';
+  freeInteract?: boolean;
+  completion: Completion;
+};`
+	}];
+
+	const stageCode = [{
+		title: 'Stage',
+		language: 'typescript',
+		code: `type Prerequisite = {
+  check: string;
+  message: string;
+};
+
+type Stage = {
+  id: string;
+  name: string;
+  description: string;
+  steps: Step[];
+  silent?: boolean;
+  prerequisites?: Prerequisite[];
+};`
+	}];
+
+	const stageGroupCode = [{
+		title: 'StageGroup',
+		language: 'typescript',
+		code: `type StageGroup = {
+  name: string;
+  description: string;
+  stages: Stage[];
+};`
+	}];
+
+	const glueCode = [{
+		title: 'State Checks',
+		language: 'typescript',
+		code: `const stateChecks: Record<string, () => Promise<boolean>> = {
+  hasDatabase: async () => { ... },
+  hasArrInstance: async () => { ... },
+};`
+	}, {
+		title: 'Route Resolvers',
+		language: 'typescript',
+		code: `const routeResolvers: Record<string, () => Promise<string>> = {
+  firstDatabaseChanges: async () => { ... },
+  firstArrSync: async () => { ... },
+};`
+	}];
+
+	const targetingCode = [{
+		title: 'Targeting',
+		language: 'html',
+		code: `<button data-onboarding="add-database-btn">Add Database</button>`
+	}];
 </script>
 
 Knives Out is a murder mystery whose protagonist isn't built for murder mysteries. Marta Cabrera is a Paraguayan-Uruguayan-Brazilian nurse so honest she physically can't lie. When her patient, the renowned mystery author Harlan Thrombey, dies, Marta gets pulled into a plot worthy of his own novels, against a family whose love for her extends exactly as far as their inheritance.
@@ -36,77 +109,27 @@ Programmatically, this breaks down into three primitives: steps, stages, and gro
 
 A step is the smallest unit. One instruction, one spotlight, one completion condition.
 
-```typescript
-type Completion =
-  | { type: 'click' }
-  | { type: 'route'; path: string }
-  | { type: 'state'; check: string }
-  | { type: 'manual' };
-
-type Step = {
-  id: string;
-  route?: string | { resolve: string };
-  target?: string;
-  title: string;
-  body: string;
-  position?: 'above' | 'below' | 'left' | 'right'
-    | 'above-left' | 'above-right' | 'below-left' | 'below-right';
-  freeInteract?: boolean;
-  completion: Completion;
-};
-```
+<CodeBlock items={stepCode} />
 
 A step completes when the user does the thing it's asking for. It doesn't care what they learned, only that they acted.
 
 A stage teaches one thing: a sequence of steps that can run independently, optionally gated by prerequisites.
 
-```typescript
-type Prerequisite = {
-  check: string;
-  message: string;
-};
-
-type Stage = {
-  id: string;
-  name: string;
-  description: string;
-  steps: Step[];
-  silent?: boolean;
-  prerequisites?: Prerequisite[];
-};
-```
+<CodeBlock items={stageCode} />
 
 If you haven't linked a database yet, there's no point walking you through syncing one. The stage tells you what's missing and points you where to go.
 
 Groups organize stages visually on the onboarding page.
 
-```typescript
-type StageGroup = {
-  name: string;
-  description: string;
-  stages: Stage[];
-};
-```
+<CodeBlock items={stageGroupCode} />
 
 Two systems glue this together. State checks are named async functions that query app state, prerequisites use them to gate stages, completions use them to mark steps done. Route resolvers handle dynamic navigation: some steps need to land on a page without a static URL, like "go to the first database's changes page," and the resolver figures it out at runtime.
 
-```typescript
-const stateChecks: Record<string, () => Promise<boolean>> = {
-  hasDatabase: async () => { ... },
-  hasArrInstance: async () => { ... },
-};
-
-const routeResolvers: Record<string, () => Promise<string>> = {
-  firstDatabaseChanges: async () => { ... },
-  firstArrSync: async () => { ... },
-};
-```
+<CodeBlock items={glueCode} />
 
 Targeting is the simplest part. You tag interactive elements with `data-onboarding` attributes and the overlay finds them and cuts the holes.
 
-```html
-<button data-onboarding="add-database-btn">Add Database</button>
-```
+<CodeBlock items={targetingCode} />
 
 I've been thinking about this system for a really long time. The overlay itself was the hard part: figuring out where to cut the holes, how to make it survive the underlying app scrolling around, what happens when the thing you're pointing at moves mid-step. Prerequisites were their own puzzle. Route resolvers needed to handle URLs that don't exist until you generate them. State had to persist across tabs, refreshes, days-long gaps in attention. The overlay engine came first, then the store, then the completion system that decides when a step is done. Scroll lock, because an overlay isn't an overlay if the user can scroll past the spotlight. Stages for every major workflow: databases, arr instances, syncing, custom formats, quality profiles. Each one had every button, input, and dropdown along the way tagged so the overlay knew what to point at. Finally the onboarding page itself, with collapsible groups and search.
 

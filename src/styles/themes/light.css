@@ -70,4 +70,17 @@
 	--theme-shadow-card: none;
 	--theme-shadow-control: none;
 	--theme-shadow-control-active: none;
+
+	/* Code syntax */
+	--theme-code-foreground: #374151;
+	--theme-code-background: transparent;
+	--theme-code-token-keyword: #8b5cf6;
+	--theme-code-token-string: #0d9488;
+	--theme-code-token-string-expression: #0d9488;
+	--theme-code-token-comment: #9ca3af;
+	--theme-code-token-function: #2563eb;
+	--theme-code-token-constant: #c026d3;
+	--theme-code-token-parameter: #d97706;
+	--theme-code-token-punctuation: #6b7280;
+	--theme-code-token-link: #1d4ed8;
 }
