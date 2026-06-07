@@ -190,6 +190,7 @@ export interface NamingConfig {
 	rename: boolean;
 	replaceIllegalCharacters: boolean;
 	colonReplacementFormat: string;
+	customColonReplacementFormat: string | null;
 	formats: Record<string, string>;
 }
 

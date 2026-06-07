@@ -19,6 +19,25 @@ import type {
 } from '../../src/lib/types/pcd.js';
 import type { DatabaseEntry, PcdManifest } from './types.js';
 
+// Sonarr stores these as integers in the DB; resolve to semantic strings matching Radarr's format
+const SONARR_COLON_REPLACEMENT: Record<number, string> = {
+	0: 'delete',
+	1: 'dash',
+	2: 'spaceDash',
+	3: 'spaceDashSpace',
+	4: 'smart',
+	5: 'custom'
+};
+
+const SONARR_MULTI_EPISODE_STYLE: Record<number, string> = {
+	0: 'extend',
+	1: 'duplicate',
+	2: 'repeat',
+	3: 'scene',
+	4: 'range',
+	5: 'prefixedRange'
+};
+
 export function extractDatabase(
 	db: Database.Database,
 	entry: DatabaseEntry,
@@ -418,7 +437,8 @@ function extractNaming(db: Database.Database, arrType: 'radarr' | 'sonarr'): Nam
 		.prepare(
 			`SELECT name, rename, standard_episode_format, daily_episode_format,
 			        anime_episode_format, series_folder_format, season_folder_format,
-			        replace_illegal_characters, colon_replacement_format, multi_episode_style
+			        replace_illegal_characters, colon_replacement_format,
+			        custom_colon_replacement_format, multi_episode_style
 			 FROM ${table} ORDER BY name`
 		)
 		.all() as {
@@ -431,6 +451,7 @@ function extractNaming(db: Database.Database, arrType: 'radarr' | 'sonarr'): Nam
 		season_folder_format: string;
 		replace_illegal_characters: number;
 		colon_replacement_format: number;
+		custom_colon_replacement_format: string | null;
 		multi_episode_style: number;
 	}[];
 
@@ -439,14 +460,15 @@ function extractNaming(db: Database.Database, arrType: 'radarr' | 'sonarr'): Nam
 		arrType: 'sonarr',
 		rename: row.rename === 1,
 		replaceIllegalCharacters: row.replace_illegal_characters === 1,
-		colonReplacementFormat: String(row.colon_replacement_format),
+		colonReplacementFormat: SONARR_COLON_REPLACEMENT[row.colon_replacement_format] ?? 'delete',
+		customColonReplacementFormat: row.custom_colon_replacement_format,
 		formats: {
 			standardEpisodeFormat: row.standard_episode_format,
 			dailyEpisodeFormat: row.daily_episode_format,
 			animeEpisodeFormat: row.anime_episode_format,
 			seriesFolderFormat: row.series_folder_format,
 			seasonFolderFormat: row.season_folder_format,
-			multiEpisodeStyle: String(row.multi_episode_style)
+			multiEpisodeStyle: SONARR_MULTI_EPISODE_STYLE[row.multi_episode_style] ?? 'extend'
 		}
 	}));
 }
