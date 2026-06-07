@@ -6,11 +6,12 @@
 		label: string;
 		href: string;
 		icon?: Component<{ size?: number; class?: string }>;
+		image?: string;
 		badge?: number;
 		activePattern?: string | RegExp;
 	}
 
-	let { label, href, icon, badge = 0, activePattern }: Props = $props();
+	let { label, href, icon, image, badge = 0, activePattern }: Props = $props();
 
 	const isActive = $derived.by(() => {
 		const pathname = page.url.pathname;
@@ -35,6 +36,9 @@
 	{#if icon}
 		{@const Icon = icon}
 		<Icon size={14} />
+	{/if}
+	{#if image}
+		<img src={image} alt="" class="size-3.5" />
 	{/if}
 	<span class="flex-1">{label}</span>
 	{#if badge > 0}

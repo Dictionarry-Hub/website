@@ -6,6 +6,23 @@ interface DevLogMeta {
 	created: string;
 }
 
+interface PcdNavEntry {
+	name: string;
+	arrType: string;
+}
+
+interface PcdNavIndex {
+	[databaseId: string]: {
+		customFormats: string[];
+		qualityProfiles: string[];
+		regularExpressions: string[];
+		delayProfiles: string[];
+		naming: PcdNavEntry[];
+		mediaSettings: PcdNavEntry[];
+		qualityDefinitions: PcdNavEntry[];
+	};
+}
+
 export async function load() {
 	const devLogFiles = import.meta.glob<{ metadata: DevLogMeta }>(
 		'/src/routes/dev-logs/**/+page.svx',
@@ -23,5 +40,10 @@ export async function load() {
 		})
 		.sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime());
 
-	return { devLogs };
+	const pcdNavFiles = import.meta.glob<{ default: PcdNavIndex }>('/src/lib/data/pcd/index.json', {
+		eager: true
+	});
+	const pcdNav: PcdNavIndex = Object.values(pcdNavFiles)[0]?.default ?? {};
+
+	return { devLogs, pcdNav };
 }

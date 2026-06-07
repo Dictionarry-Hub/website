@@ -13,9 +13,18 @@
 		NotebookPen,
 		Wrench,
 		BookOpen,
-		Trash2
+		Trash2,
+		SlidersHorizontal,
+		Tags,
+		Regex,
+		Clock,
+		FileText,
+		Settings,
+		Ruler
 	} from '@lucide/svelte';
 	import { onMount } from 'svelte';
+	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
 
@@ -47,6 +56,29 @@
 	let themeValue = $state(theme.current);
 	let databaseValue = $state(database.current);
 
+	const currentNav = $derived(data.pcdNav[databaseValue]);
+
+	// Sync database from URL when on PCD routes
+	$effect(() => {
+		const pathname = page.url.pathname;
+		if (database.isPcdRoute(pathname)) {
+			database.syncFromUrl(pathname);
+			databaseValue = database.current;
+		}
+	});
+
+	function onDatabaseChange(v: string) {
+		const id = v as typeof database.current;
+		database.set(id);
+
+		// Navigate to the new database's equivalent page when on a PCD route
+		const pathname = page.url.pathname;
+		if (database.isPcdRoute(pathname)) {
+			const newPath = pathname.replace(/^\/pcd\/[^/]+/, `/pcd/${id}`);
+			goto(newPath);
+		}
+	}
+
 	onMount(() => {
 		theme.init();
 		themeValue = theme.current;
@@ -69,7 +101,7 @@
 				header="Database"
 				position="middle"
 				iconOnly
-				onchange={(v) => database.set(v as typeof database.current)} />
+				onchange={onDatabaseChange} />
 			<DropdownSelect
 				bind:value={themeValue}
 				options={themeOptions}
@@ -81,6 +113,87 @@
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
+		{#if currentNav}
+			<NavGroup
+				label="Quality Profiles"
+				href="/pcd/{databaseValue}/quality-profiles"
+				icon={SlidersHorizontal}
+				open={false}>
+				{#each currentNav.qualityProfiles as name}
+					<NavItem label={name} href="/pcd/{databaseValue}/quality-profiles/{name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Custom Formats"
+				href="/pcd/{databaseValue}/custom-formats"
+				icon={Tags}
+				open={false}>
+				{#each currentNav.customFormats as name}
+					<NavItem label={name} href="/pcd/{databaseValue}/custom-formats/{name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Regular Expressions"
+				href="/pcd/{databaseValue}/regex"
+				icon={Regex}
+				open={false}>
+				{#each currentNav.regularExpressions as name}
+					<NavItem label={name} href="/pcd/{databaseValue}/regex/{name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Delay Profiles"
+				href="/pcd/{databaseValue}/delay-profiles"
+				icon={Clock}
+				open={false}>
+				{#each currentNav.delayProfiles as name}
+					<NavItem label={name} href="/pcd/{databaseValue}/delay-profiles/{name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Naming"
+				href="/pcd/{databaseValue}/naming"
+				icon={FileText}
+				open={false}>
+				{#each currentNav.naming as entry}
+					<NavItem
+						label={entry.name}
+						image="/{entry.arrType}.svg"
+						href="/pcd/{databaseValue}/naming/{entry.arrType}/{entry.name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Media Settings"
+				href="/pcd/{databaseValue}/media-settings"
+				icon={Settings}
+				open={false}>
+				{#each currentNav.mediaSettings as entry}
+					<NavItem
+						label={entry.name}
+						image="/{entry.arrType}.svg"
+						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{entry.name}" />
+				{/each}
+			</NavGroup>
+
+			<NavGroup
+				label="Quality Definitions"
+				href="/pcd/{databaseValue}/quality-definitions"
+				icon={Ruler}
+				open={false}>
+				{#each currentNav.qualityDefinitions as entry}
+					<NavItem
+						label={entry.name}
+						image="/{entry.arrType}.svg"
+						href="/pcd/{databaseValue}/quality-definitions/{entry.arrType}/{entry.name}" />
+				{/each}
+			</NavGroup>
+		{/if}
+
 		{#if data.devLogs.length > 0}
 			<NavGroup label="Dev Logs" href="/dev-logs" icon={NotebookPen}>
 				{#each data.devLogs as log}

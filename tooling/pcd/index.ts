@@ -10,12 +10,31 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '../..');
 const outputDir = join(projectRoot, 'src/lib/data/pcd');
 
+interface NavEntry {
+	name: string;
+	arrType: string;
+}
+
+interface NavIndex {
+	[databaseId: string]: {
+		customFormats: string[];
+		qualityProfiles: string[];
+		regularExpressions: string[];
+		delayProfiles: string[];
+		naming: NavEntry[];
+		mediaSettings: NavEntry[];
+		qualityDefinitions: NavEntry[];
+	};
+}
+
 function main(): void {
 	const config: PcdConfig = JSON.parse(readFileSync(join(__dirname, 'config.json'), 'utf-8'));
 
 	mkdirSync(outputDir, { recursive: true });
 
 	console.log(`Compiling ${config.databases.length} PCD databases...\n`);
+
+	const navIndex: NavIndex = {};
 
 	for (const entry of config.databases) {
 		const start = performance.now();
@@ -41,9 +60,31 @@ function main(): void {
 
 		db.close();
 
+		// Collect nav data
+		const mediaEntries = (arrType: 'radarr' | 'sonarr') => ({
+			naming: compiled.media[arrType].naming.map((n) => ({ name: n.name, arrType })),
+			settings: compiled.media[arrType].settings.map((s) => ({ name: s.name, arrType })),
+			qualityDefs: compiled.media[arrType].qualityDefinitions.map((q) => ({ name: q.name, arrType }))
+		});
+		const radarr = mediaEntries('radarr');
+		const sonarr = mediaEntries('sonarr');
+
+		navIndex[entry.id] = {
+			customFormats: compiled.customFormats.map((cf) => cf.name),
+			qualityProfiles: compiled.qualityProfiles.map((qp) => qp.name),
+			regularExpressions: compiled.regularExpressions.map((re) => re.name),
+			delayProfiles: compiled.delayProfiles.map((dp) => dp.name),
+			naming: [...radarr.naming, ...sonarr.naming],
+			mediaSettings: [...radarr.settings, ...sonarr.settings],
+			qualityDefinitions: [...radarr.qualityDefs, ...sonarr.qualityDefs]
+		};
+
 		const elapsed = (performance.now() - start).toFixed(0);
 		console.log(`    -> ${compiled.customFormats.length} CFs, ${compiled.qualityProfiles.length} QPs, ${compiled.regularExpressions.length} regexes (${elapsed}ms)`);
 	}
+
+	// Write nav index for layout sidebar
+	writeFileSync(join(outputDir, 'index.json'), JSON.stringify(navIndex));
 
 	cleanupTempDirs();
 	console.log('\nDone.');
