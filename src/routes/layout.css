@@ -66,6 +66,7 @@
 	/* Fonts */
 	--font-sans: var(--theme-font-sans);
 	--font-mono: var(--theme-font-mono);
+	--font-accent: var(--theme-font-accent);
 
 	/* Radii */
 	--radius-control-sm: var(--theme-radius-control-sm);

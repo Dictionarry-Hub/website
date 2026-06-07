@@ -15,7 +15,7 @@
 	"Sizes" shows all sizes at default variant (default).
 -->
 
-<div class="mx-auto max-w-3xl space-y-12 p-8 pb-48">
+<div class="max-w-3xl space-y-12 p-8 pb-48">
 	<header class="space-y-4">
 		<h1 class="text-2xl font-bold">UI Showcase</h1>
 		<div class="flex gap-2">

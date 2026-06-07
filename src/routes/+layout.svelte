@@ -1,7 +1,11 @@
 <script lang="ts">
 	import './layout.css';
-	import { theme } from '$lib/client/ui/theme/theme.svelte';
+	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
+	import Button from '$lib/client/ui/button/Button.svelte';
+	import { Sun, Moon, Monitor } from '@lucide/svelte';
 	import { onMount } from 'svelte';
+
+	const themeIcons = { light: Sun, dark: Moon, retro: Monitor } as const;
 
 	let { children } = $props();
 
@@ -10,6 +14,30 @@
 	});
 </script>
 
-<div class="min-h-screen bg-bg font-sans text-text">
-	{@render children()}
+<div class="grid min-h-screen grid-cols-[1fr_6fr] bg-bg font-sans text-text">
+	<div class="sticky top-0 flex h-screen flex-col">
+		<!-- Navbar -->
+		<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
+			<div class="flex items-center gap-2">
+				<img src="/icon.png" alt="dictionarry" class="size-5" />
+				<span class="font-accent text-lg font-semibold">dictionarry</span>
+			</div>
+			<div class="flex gap-1">
+				{#each THEMES as t}
+					<Button
+						type="button"
+						size="md"
+						variant={theme.current === t ? 'accent' : 'default'}
+						icon={themeIcons[t]}
+						onclick={() => theme.set(t)} />
+				{/each}
+			</div>
+		</div>
+		<!-- Page nav -->
+		<div class="flex-1 border-r border-border px-6 py-4"></div>
+	</div>
+
+	<div>
+		{@render children()}
+	</div>
 </div>

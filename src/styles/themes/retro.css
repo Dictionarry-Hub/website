@@ -1,6 +1,7 @@
 [data-theme='retro'] {
 	--theme-font-sans: Tahoma, 'MS Sans Serif', Arial, sans-serif;
 	--theme-font-mono: 'Courier New', Courier, monospace;
+	--theme-font-accent: 'Comic Sans MS', cursive;
 
 	--theme-bg: #c0c0c0;
 	--theme-surface: #d4d0c8;
