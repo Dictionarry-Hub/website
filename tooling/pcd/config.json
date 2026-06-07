@@ -1,0 +1,37 @@
+{
+	"schema": {
+		"repo": "Dictionarry-Hub/schema"
+	},
+	"databases": [
+		{
+			"id": "dictionarry",
+			"name": "Dictionarry",
+			"repo": "Dictionarry-Hub/database",
+			"branch": "v2"
+		},
+		{
+			"id": "trash",
+			"name": "TRaSH",
+			"repo": "Dictionarry-Hub/trash-pcd",
+			"branch": "main"
+		},
+		{
+			"id": "trash-french",
+			"name": "TRaSH French",
+			"repo": "Dictionarry-Hub/trash-pcd",
+			"branch": "french"
+		},
+		{
+			"id": "trash-german",
+			"name": "TRaSH German",
+			"repo": "Dictionarry-Hub/trash-pcd",
+			"branch": "german"
+		},
+		{
+			"id": "dumpstarr",
+			"name": "Dumpstarr",
+			"repo": "Dumpstarr/Database",
+			"branch": "stable"
+		}
+	]
+}
