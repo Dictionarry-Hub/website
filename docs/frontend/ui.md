@@ -120,6 +120,132 @@ positioning - the consumer controls those via class passthrough.
 <Card as="nav" rounded="none" class="fixed top-0 w-full px-4 py-2">Navbar</Card>
 ```
 
+### Nav
+
+#### `NavGroup`
+
+`src/lib/client/ui/nav/NavGroup.svelte`
+
+Collapsible navigation section with a split header. The left side is a link, the right side is a
+chevron toggle. Both highlight on hover of either via group hover. Children render with a vertical
+connector line and a slide transition.
+
+| Prop   | Type        | Required | Default |
+| ------ | ----------- | -------- | ------- |
+| `label` | `string`   | yes      |         |
+| `href`  | `string`   | yes      |         |
+| `icon`  | `Component` | no      |         |
+| `badge` | `number`   | no       | `0`     |
+| `open`  | `boolean`  | no       | `true`  |
+
+Active state: exact match when children exist, prefix match otherwise. Active renders with
+`bg-surface border-border shadow-control` (Button default treatment).
+
+#### `NavItem`
+
+`src/lib/client/ui/nav/NavItem.svelte`
+
+Child navigation link, used inside NavGroup.
+
+| Prop            | Type                 | Required | Default |
+| --------------- | -------------------- | -------- | ------- |
+| `label`         | `string`             | yes      |         |
+| `href`          | `string`             | yes      |         |
+| `icon`          | `Component`          | no       |         |
+| `badge`         | `number`             | no       | `0`     |
+| `activePattern` | `string \| RegExp`   | no       |         |
+
+Active state derived from current pathname. If `activePattern` is provided, uses string includes or
+regex test. Otherwise exact or prefix match against `href`.
+
+### Badge
+
+#### `Badge`
+
+`src/lib/client/ui/badge/Badge.svelte`
+
+Inline label for tags, statuses, and counts.
+
+| Prop      | Type                                                              | Required | Default     |
+| --------- | ----------------------------------------------------------------- | -------- | ----------- |
+| `variant` | `'subtle' \| 'solid' \| 'outline'`                               | no       | `'solid'`   |
+| `color`   | `'neutral' \| 'accent' \| 'success' \| 'warning' \| 'danger' \| 'info'` | no | `'neutral'` |
+| `size`    | `'sm' \| 'md'`                                                    | no       | `'sm'`      |
+| `pill`    | `boolean`                                                         | no       | `false`     |
+| `icon`    | `Component`                                                       | no       |             |
+
+```svelte
+<Badge>Default</Badge>
+<Badge color="success" pill>Published</Badge>
+<Badge variant="outline" color="danger">Removed</Badge>
+```
+
+### DateTime
+
+#### `DateTime`
+
+`src/lib/client/ui/datetime/DateTime.svelte`
+
+Renders a formatted `<time>` element with a `datetime` attribute for SEO.
+
+| Prop     | Type               | Required | Default  |
+| -------- | ------------------ | -------- | -------- |
+| `date`   | `string`           | yes      |          |
+| `format` | `'short' \| 'long'` | no     | `'long'` |
+
+Short format: "May 17". Long format: "May 17, 2026". Accepts ISO date strings and full ISO
+timestamps (as produced by YAML date parsing).
+
+### Author
+
+#### `Author`
+
+`src/lib/client/ui/author/Author.svelte`
+
+Pill-shaped author display with optional avatar and link. Shows a lucide `User` icon when no avatar
+is provided. Linked variant uses subtle styling with an `ExternalLink` icon.
+
+| Prop     | Type              | Required | Default |
+| -------- | ----------------- | -------- | ------- |
+| `name`   | `string`          | yes      |         |
+| `avatar` | `string`          | no       |         |
+| `href`   | `string`          | no       |         |
+| `size`   | `'sm' \| 'md'`   | no       | `'sm'`  |
+
+### Markdown
+
+Components for use inside mdsvex content (`.svx` files).
+
+#### `ThemeImage`
+
+`src/lib/client/ui/markdown/image/ThemeImage.svelte`
+
+Renders two images and uses CSS to show the correct one based on the active theme. No flash on load
+because the inline script in `app.html` sets `data-theme` before first paint. Dark themes: dark,
+velouria.
+
+| Prop    | Type     | Required | Default |
+| ------- | -------- | -------- | ------- |
+| `dark`  | `string` | yes      |         |
+| `light` | `string` | yes      |         |
+| `alt`   | `string` | yes      |         |
+
+#### `Video`
+
+`src/lib/client/ui/markdown/video/Video.svelte`
+
+Video player powered by Plyr. Lazy-loads Plyr and its CSS on mount. Renders a `<figure>` with an
+optional caption.
+
+| Prop    | Type     | Required | Default |
+| ------- | -------- | -------- | ------- |
+| `src`   | `string` | yes      |         |
+| `title` | `string` | no       |         |
+
+```svelte
+<Video src="/video/clip.mp4" title="Caption text" />
+```
+
 ## Semantic Tokens
 
 All tokens use the `--theme-*` prefix. Components never use raw color values. Tailwind utilities are
@@ -215,14 +341,16 @@ Example: `--theme-success-bg`, `--theme-warning-text`, `--theme-danger-border`.
 
 ## Theming
 
-Three themes, each defining the complete token set. No base+override layering. Theme files live in
+Five themes, each defining the complete token set. No base+override layering. Theme files live in
 `src/styles/themes/`.
 
 ```
 src/styles/themes/
-├── light.css    # :root selector (default)
-├── dark.css     # [data-theme="dark"]
-└── retro.css    # [data-theme="retro"]
+├── light.css      # :root selector (default)
+├── dark.css       # [data-theme="dark"]
+├── retro.css      # [data-theme="retro"]
+├── velouria.css   # [data-theme="velouria"]
+└── roswell.css    # [data-theme="roswell"]
 ```
 
 ### Switching
