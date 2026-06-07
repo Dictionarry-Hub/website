@@ -33,5 +33,12 @@
 	.video-wrapper {
 		border-radius: var(--theme-radius-card);
 		overflow: hidden;
+
+		--plyr-color-main: var(--theme-accent-solid);
+		--plyr-video-control-color: #fff;
+		--plyr-video-control-color-hover: #fff;
+		--plyr-range-thumb-background: #fff;
+		--plyr-control-radius: var(--theme-radius-control-sm);
+		--plyr-font-family: var(--theme-font-sans);
 	}
 </style>
