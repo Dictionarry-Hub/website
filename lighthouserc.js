@@ -5,8 +5,8 @@ export default {
 			numberOfRuns: 3,
 			url: ['http://localhost/'],
 			settings: {
-				chromeFlags: '--no-sandbox',
-			},
+				chromeFlags: '--no-sandbox'
+			}
 		},
 		assert: {
 			preset: 'lighthouse:no-pwa',
@@ -14,12 +14,12 @@ export default {
 				'categories:performance': ['warn', { minScore: 0.9 }],
 				'categories:accessibility': ['error', { minScore: 0.9 }],
 				'categories:best-practices': ['error', { minScore: 0.9 }],
-				'categories:seo': ['error', { minScore: 1.0 }],
-			},
+				'categories:seo': ['error', { minScore: 1.0 }]
+			}
 		},
 		upload: {
 			target: 'filesystem',
-			outputDir: '.lighthouseci',
-		},
-	},
+			outputDir: '.lighthouseci'
+		}
+	}
 };
