@@ -96,6 +96,30 @@ Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to 
 </Tooltip>
 ```
 
+### Card
+
+#### `Card`
+
+`src/lib/client/ui/card/Card.svelte`
+
+Surface primitive. Provides background, border, radius, and shadow. Used as the foundation for
+panels, navbars, sidebars, modals, and any other bounded surface. Does not handle padding or
+positioning - the consumer controls those via class passthrough.
+
+| Prop      | Type                                       | Required | Default |
+| --------- | ------------------------------------------ | -------- | ------- |
+| `rounded` | `'none' \| 'sm' \| 'md' \| 'lg' \| 'xl'` | no       | `'xl'`  |
+| `as`      | `string`                                   | no       | `'div'` |
+
+```svelte
+<script lang="ts">
+	import Card from '$lib/client/ui/card/Card.svelte';
+</script>
+
+<Card class="p-6">Content panel</Card>
+<Card as="nav" rounded="none" class="fixed top-0 w-full px-4 py-2">Navbar</Card>
+```
+
 ## Semantic Tokens
 
 All tokens use the `--theme-*` prefix. Components never use raw color values. Tailwind utilities are

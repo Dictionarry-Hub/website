@@ -4,6 +4,7 @@
 	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
 	import { Save } from '@lucide/svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
+	import Card from '$lib/client/ui/card/Card.svelte';
 </script>
 
 <SEO title="UI Showcase" />
@@ -133,6 +134,33 @@
 					<Tooltip text="Anchored to right edge" position="bottom" align="right">
 						<Button type="button">Right</Button>
 					</Tooltip>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="space-y-4">
+		<h2 class="text-lg font-semibold">Card</h2>
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Rounded</h3>
+				<div class="grid grid-cols-5 gap-3">
+					<Card rounded="none" class="p-4 text-center text-sm">none</Card>
+					<Card rounded="sm" class="p-4 text-center text-sm">sm</Card>
+					<Card rounded="md" class="p-4 text-center text-sm">md</Card>
+					<Card rounded="lg" class="p-4 text-center text-sm">lg</Card>
+					<Card rounded="xl" class="p-4 text-center text-sm">xl</Card>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">As element</h3>
+				<div class="flex flex-wrap items-start gap-3">
+					<Card class="p-4 text-sm">div (default)</Card>
+					<Card as="section" class="p-4 text-sm">section</Card>
+					<Card as="nav" class="p-4 text-sm">nav</Card>
+					<Card as="aside" class="p-4 text-sm">aside</Card>
 				</div>
 			</div>
 		</div>

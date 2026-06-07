@@ -71,6 +71,7 @@
 	--radius-control-sm: var(--theme-radius-control-sm);
 	--radius-control: var(--theme-radius-control);
 	--radius-card: var(--theme-radius-card);
+	--radius-xl: var(--theme-radius-xl);
 	--radius-pill: var(--theme-radius-pill);
 
 	/* Shadows */
