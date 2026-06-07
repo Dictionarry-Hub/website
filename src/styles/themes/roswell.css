@@ -31,7 +31,7 @@
 [data-theme='roswell'] {
 	--theme-font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 	--theme-font-mono: 'Space Mono', ui-monospace, monospace;
-	--theme-font-accent: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+	--theme-font-accent: 'Syne', ui-sans-serif, system-ui, sans-serif;
 
 	/* Desert light through classified glass */
 	--theme-bg: #f8f6fc;
