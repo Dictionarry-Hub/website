@@ -8,6 +8,7 @@ export interface Violation {
 	file: string;
 	message: string;
 	line?: number;
+	column?: number;
 }
 
 export interface LintRule {

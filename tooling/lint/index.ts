@@ -3,8 +3,9 @@ import { resolve, relative } from 'node:path';
 import type { LintRule, Violation, FileEntry } from './types.js';
 
 import seoComponentRequired from './rules/seo-component-required.js';
+import noRawUi from './rules/no-raw-ui.js';
 
-const rules: LintRule[] = [seoComponentRequired];
+const rules: LintRule[] = [seoComponentRequired, noRawUi];
 
 function run(): void {
 	const root = resolve(import.meta.dirname, '../..');
@@ -40,7 +41,7 @@ function run(): void {
 	for (const v of violations) {
 		const severity = filtered.find((r) => r.name === v.rule)?.severity ?? 'error';
 		const icon = severity === 'error' ? '✘' : '⚠️';
-		const location = v.line ? `${v.file}:${v.line}` : v.file;
+		const location = v.line && v.column ? `${v.file}:${v.line}:${v.column}` : v.line ? `${v.file}:${v.line}` : v.file;
 
 		console.error(`  ${icon}  ${v.rule} (${location})`);
 		console.error(`     ${v.message}`);
