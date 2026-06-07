@@ -19,10 +19,19 @@
 </script>
 
 <figure class="mb-6 {className ?? ''}">
-	<video bind:this={videoEl} playsinline controls>
-		<source {src} type="video/mp4" />
-	</video>
+	<div class="video-wrapper">
+		<video bind:this={videoEl} playsinline controls>
+			<source {src} type="video/mp4" />
+		</video>
+	</div>
 	{#if title}
 		<figcaption class="mt-2 text-center text-sm text-text-muted">{title}</figcaption>
 	{/if}
 </figure>
+
+<style>
+	.video-wrapper {
+		border-radius: var(--theme-radius-card);
+		overflow: hidden;
+	}
+</style>
