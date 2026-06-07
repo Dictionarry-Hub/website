@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { slugify } from '$lib/shared/utils/slug';
-import type { CompiledDatabase } from '$lib/types/pcd';
+import type { CompiledDatabase, PatternCondition } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
 
 const NO_DESCRIPTION_MESSAGES = [
@@ -43,5 +43,18 @@ export const load: PageServerLoad = async ({ params }) => {
 	const descriptionHtml = regex.description ? await marked.parse(regex.description) : null;
 	const noDescriptionMessage = descriptionHtml ? null : pickMessage(regex.name);
 
-	return { regex: { ...regex, noDescriptionMessage }, descriptionHtml };
+	// Find custom formats that reference this regex
+	const references = data.customFormats
+		.filter((cf) =>
+			cf.conditions.some(
+				(c) => (c.data as PatternCondition).regularExpressionName === regex.name
+			)
+		)
+		.map((cf) => ({
+			name: cf.name,
+			slug: slugify(cf.name),
+			tags: cf.tags
+		}));
+
+	return { regex: { ...regex, noDescriptionMessage }, descriptionHtml, references, database };
 };
