@@ -14,6 +14,7 @@ export interface AuthInfo {
 	location: string;
 	paramName: string;
 	description: string;
+	[key: string]: unknown;
 }
 
 export interface ApiTag {

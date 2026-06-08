@@ -2,17 +2,21 @@
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';
 	import EndpointSection from './EndpointSection.svelte';
-	import { KeyRound, Cookie } from '@lucide/svelte';
+	import type { Column } from '$lib/client/ui/table/types';
+	import type { AuthInfo } from '$lib/types/api';
 
 	let { data } = $props();
 	const spec = $derived(data.spec);
 
-	const authIcons = {
-		header: KeyRound,
-		cookie: Cookie
-	} as Record<string, typeof KeyRound>;
+	const authColumns: Column<AuthInfo>[] = [
+		{ key: 'name', header: 'Method' },
+		{ key: 'location', header: 'Location' },
+		{ key: 'paramName', header: 'Parameter' },
+		{ key: 'description', header: 'Description' }
+	];
 </script>
 
 <SEO
@@ -42,29 +46,38 @@
 			class="mb-4 font-accent text-xl font-semibold">
 			Authentication
 		</h2>
-		<div class="grid gap-3 sm:grid-cols-2">
-			{#each spec.auth as auth (auth.name)}
-				{@const Icon = authIcons[auth.location] ?? KeyRound}
-				<Card>
-					<div class="flex items-start gap-3">
-						<div class="rounded-control bg-surface-muted p-2">
-							<Icon
-								size={18}
-								class="text-text-muted" />
-						</div>
-						<div>
-							<div class="flex items-center gap-2">
-								<span class="font-medium">{auth.paramName}</span>
-								<Badge
-									color="neutral"
-									size="sm">{auth.location}</Badge>
-							</div>
-							<p class="mt-1 text-sm text-text-soft">{auth.description}</p>
-						</div>
-					</div>
-				</Card>
-			{/each}
-		</div>
+		<p class="mb-4 text-sm text-text-soft">
+			Profilarr requires authentication on all API endpoints via either an
+			<code>X-Api-Key</code> header or a session cookie. API keys are for programmatic access
+			and restricted to <code>/api/</code> paths; session cookies are set after browser login.
+			Authenticated users never see raw secrets. Sensitive values are stripped from all responses
+			and only accessible with filesystem access to the host.
+		</p>
+		<AdaptiveList
+			data={spec.auth}
+			columns={authColumns}>
+			{#snippet cell(row, col)}
+				{#if col.key === 'paramName'}
+					<code class="text-xs">{row.paramName}</code>
+				{:else if col.key === 'location'}
+					<Badge
+						color="neutral"
+						size="sm">{row.location}</Badge>
+				{:else}
+					{row[col.key]}
+				{/if}
+			{/snippet}
+			{#snippet card(row)}
+				<div class="flex items-center gap-2">
+					<span class="font-medium">{row.name}</span>
+					<Badge
+						color="neutral"
+						size="sm">{row.location}</Badge>
+				</div>
+				<code class="mt-1 text-xs">{row.paramName}</code>
+				<p class="mt-1 text-sm text-text-soft">{row.description}</p>
+			{/snippet}
+		</AdaptiveList>
 	</section>
 {/if}
 
