@@ -10,6 +10,7 @@
 		Landmark,
 		Flame,
 		Telescope,
+		Waves,
 		NotebookPen,
 		Wrench,
 		BookOpen,
@@ -36,7 +37,8 @@
 		{ value: 'dark', label: 'Dark', icon: Moon },
 		{ value: 'retro', label: 'Retro', icon: Landmark },
 		{ value: 'velouria', label: 'Velouria', icon: Flame },
-		{ value: 'roswell', label: 'Roswell', icon: Telescope }
+		{ value: 'roswell', label: 'Roswell', icon: Telescope },
+		{ value: 'solaris', label: 'Solaris', icon: Waves }
 	];
 
 	const databaseIcons: Record<string, typeof BookOpen> = {
