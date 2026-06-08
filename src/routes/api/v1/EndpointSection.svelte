@@ -4,6 +4,11 @@
 	import Table from '$lib/client/ui/table/Table.svelte';
 	import type { Column } from '$lib/client/ui/table/types';
 	import type { ApiEndpoint, ApiParameter, HttpMethod } from '$lib/types/api';
+	import SiCurl from '@icons-pack/svelte-simple-icons/icons/SiCurl';
+	import SiPython from '@icons-pack/svelte-simple-icons/icons/SiPython';
+	import SiTypescript from '@icons-pack/svelte-simple-icons/icons/SiTypescript';
+	import SiDotnet from '@icons-pack/svelte-simple-icons/icons/SiDotnet';
+	import type { Component } from 'svelte';
 
 	interface Props {
 		endpoint: ApiEndpoint;
@@ -19,11 +24,19 @@
 		DELETE: 'danger'
 	};
 
+	const snippetIcons: Record<string, Component<{ size?: number; class?: string }>> = {
+		curl: SiCurl,
+		requests: SiPython,
+		fetch: SiTypescript,
+		HttpClient: SiDotnet
+	};
+
 	const snippetItems = $derived(
 		endpoint.snippets.map((s) => ({
 			title: s.title,
 			code: s.code,
-			language: s.language
+			language: s.language,
+			icon: snippetIcons[s.title]
 		}))
 	);
 

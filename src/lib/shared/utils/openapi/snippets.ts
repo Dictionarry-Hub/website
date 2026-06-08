@@ -10,17 +10,17 @@ export function generateSnippets(endpoint: ApiEndpoint, baseUrl: string): CodeSn
 		},
 		{
 			language: 'python',
-			title: 'Python',
+			title: 'requests',
 			code: generatePython(endpoint, baseUrl)
 		},
 		{
 			language: 'javascript',
-			title: 'JavaScript / TypeScript',
+			title: 'fetch',
 			code: generateJavaScript(endpoint, baseUrl)
 		},
 		{
 			language: 'csharp',
-			title: 'C#',
+			title: 'HttpClient',
 			code: generateCSharp(endpoint, baseUrl)
 		}
 	];
