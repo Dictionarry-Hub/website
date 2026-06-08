@@ -4,8 +4,9 @@ import type { LintRule, Violation, FileEntry } from './types.js';
 
 import requireSeo from './rules/require-seo.js';
 import noRawUi from './rules/no-raw-ui.js';
+import noRawTokens from './rules/no-raw-tokens.js';
 
-const rules: LintRule[] = [requireSeo, noRawUi];
+const rules: LintRule[] = [requireSeo, noRawUi, noRawTokens];
 
 function run(): void {
 	const root = resolve(import.meta.dirname, '../..');

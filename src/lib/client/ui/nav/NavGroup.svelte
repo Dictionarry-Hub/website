@@ -90,7 +90,7 @@
 			transition:slide={{ duration: 200 }}>
 			<!-- Vertical line -->
 			<div class="flex justify-center px-5">
-				<div class="w-0.5 rounded-full bg-border-muted"></div>
+				<div class="w-0.5 rounded-pill bg-border-muted"></div>
 			</div>
 
 			<!-- Items -->
