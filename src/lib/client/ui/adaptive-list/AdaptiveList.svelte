@@ -30,10 +30,10 @@
 
 <!-- Card view (below lg) -->
 <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:hidden">
-	{#each data as row}
+	{#each data as row, i (i)}
 		{#if href?.(row)}
 			<a
-				href={href(row)}
+				href={href!(row)!}
 				class="block">
 				<Card class="h-full transition-colors hover:bg-surface-hover">
 					{@render card(row)}

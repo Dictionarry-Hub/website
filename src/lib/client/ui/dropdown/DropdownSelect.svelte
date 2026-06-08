@@ -91,7 +91,7 @@
 				{#if header}
 					<DropdownHeader label={header} />
 				{/if}
-				{#each options as option}
+				{#each options as option (option.value)}
 					<DropdownItem
 						label={option.label}
 						icon={option.icon}

@@ -28,7 +28,7 @@
 	{/if}
 	{#if tags && tags.length > 0}
 		<div class="mt-3 flex flex-wrap gap-2">
-			{#each tags as tag}
+			{#each tags as tag (tag)}
 				<Badge pill>{tag}</Badge>
 			{/each}
 		</div>

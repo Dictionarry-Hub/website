@@ -45,7 +45,7 @@
 			{title}
 			{tags}>
 			{#snippet meta()}
-				{#each authors as a}
+				{#each authors as a (a.name)}
 					<Author
 						name={a.name}
 						avatar={a.avatar}

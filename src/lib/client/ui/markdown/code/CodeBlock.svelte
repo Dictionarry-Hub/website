@@ -41,7 +41,7 @@
 	{#if items.length > 1}
 		<div class="code-header tabbed">
 			<div class="code-tabs">
-				{#each items as item, index}
+				{#each items as item, index (item.title)}
 					<button
 						type="button"
 						class="code-tab"
@@ -87,11 +87,12 @@
 	<div
 		class="code-body"
 		class:wrap={overflow === 'wrap'}>
-		{#each highlighted as html, index}
+		{#each highlighted as html, index (index)}
 			<div
 				class="code-panel"
 				class:hidden={index !== activeTab}>
-				{@html html}
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -- highlighted code from build-time shiki -->
+			{@html html}
 			</div>
 		{/each}
 	</div>

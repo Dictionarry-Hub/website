@@ -41,7 +41,8 @@ export default defineConfig(
 		rules: {
 			'svelte/button-has-type': 'error',
 			'@typescript-eslint/no-explicit-any': 'error',
-			'svelte/no-at-html-tags': 'warn'
+			'svelte/no-at-html-tags': 'warn',
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	}
 );

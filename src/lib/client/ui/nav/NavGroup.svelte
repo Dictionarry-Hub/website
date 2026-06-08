@@ -12,10 +12,10 @@
 		children?: Snippet;
 	}
 
-	let props = $props();
-	const { label, href, icon, badge = 0, children } = props;
+	let { label, href, icon, badge = 0, open = true, children }: Props = $props();
 
-	let isOpen = $state(props.open ?? true);
+	let toggled = $state<boolean | null>(null);
+	const isOpen = $derived(toggled ?? open);
 
 	const hasItems = $derived(!!children);
 
@@ -28,7 +28,7 @@
 	});
 
 	function toggleOpen() {
-		isOpen = !isOpen;
+		toggled = !isOpen;
 	}
 </script>
 

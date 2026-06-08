@@ -34,6 +34,7 @@
 {#if href}
 	<a
 		{href}
+		rel="external"
 		class="{pillClasses} text-text-soft transition-colors hover:bg-surface-hover">
 		{#if avatar}
 			<img

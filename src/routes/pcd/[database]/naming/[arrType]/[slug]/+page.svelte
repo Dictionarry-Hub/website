@@ -190,7 +190,7 @@
 	Naming Scheme
 </h2>
 <div class="mt-4 space-y-4">
-	{#each formatEntries as entry}
+	{#each formatEntries as entry (entry.label)}
 		<div>
 			<p class="mb-2 text-sm font-medium text-text-muted">{entry.label}</p>
 			<div

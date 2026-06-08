@@ -1,7 +1,6 @@
 <script lang="ts">
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import Button from '$lib/client/ui/button/Button.svelte';
-	import { theme } from '$lib/client/ui/theme/theme.svelte';
 	import { Save } from '@lucide/svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';

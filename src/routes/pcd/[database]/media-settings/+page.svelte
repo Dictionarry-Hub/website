@@ -1,1 +1,7 @@
+<script lang="ts">
+	import SEO from '$lib/client/ui/utils/SEO.svelte';
+</script>
+
+<SEO title="Media Settings - Dictionarry" />
+
 <p>Media Settings</p>

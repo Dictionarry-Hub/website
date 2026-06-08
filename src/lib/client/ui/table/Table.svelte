@@ -2,6 +2,7 @@
 	lang="ts"
 	generics="T extends Record<string, unknown>">
 	import { goto } from '$app/navigation';
+	import { SvelteSet } from 'svelte/reactivity';
 	import { ChevronUp, ChevronDown, ChevronRight } from '@lucide/svelte';
 	import type { Snippet } from 'svelte';
 	import type { Column } from './types';
@@ -19,9 +20,9 @@
 
 	let sortKey = $state<string | null>(null);
 	let sortDir = $state<'asc' | 'desc'>('asc');
-	let expandedRows = $state<Set<number>>(new Set());
+	let expandedRows = new SvelteSet<number>();
 	let probeContainer = $state<HTMLElement | null>(null);
-	let expandableSet = $state<Set<number>>(new Set());
+	let expandableSet = new SvelteSet<number>();
 
 	function toggleSort(key: string) {
 		if (sortKey === key) {
@@ -34,13 +35,11 @@
 
 	function toggleExpand(index: number) {
 		if (!expandableSet.has(index)) return;
-		const next = new Set(expandedRows);
-		if (next.has(index)) {
-			next.delete(index);
+		if (expandedRows.has(index)) {
+			expandedRows.delete(index);
 		} else {
-			next.add(index);
+			expandedRows.add(index);
 		}
-		expandedRows = next;
 	}
 
 	const sorted = $derived.by(() => {
@@ -64,14 +63,13 @@
 		const _rows = sorted;
 		if (!probeContainer) return;
 
-		const next = new Set<number>();
+		expandableSet.clear();
 		const children = probeContainer.children;
 		for (let i = 0; i < _rows.length; i++) {
 			if (children[i]?.childElementCount > 0) {
-				next.add(i);
+				expandableSet.add(i);
 			}
 		}
-		expandableSet = next;
 	});
 
 	const colCount = $derived(columns.length + (expanded ? 1 : 0));
@@ -87,7 +85,7 @@
 	<div
 		class="hidden"
 		bind:this={probeContainer}>
-		{#each sorted as row}
+		{#each sorted as row, i (i)}
 			<div>{@render expanded(row)}</div>
 		{/each}
 	</div>
@@ -98,7 +96,7 @@
 	<table class="w-full border-collapse text-sm">
 		<thead>
 			<tr class="border-b border-border bg-surface">
-				{#each columns as col}
+				{#each columns as col (col.key)}
 					<th
 						class="px-4 py-3 font-medium text-text-muted {col.align === 'center'
 							? 'text-center'
@@ -130,13 +128,13 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each sorted as row, idx}
+			{#each sorted as row, idx (idx)}
 				<tr
 					class="border-b border-border-subtle last:border-b-0 {href?.(row)
 						? 'cursor-pointer transition-colors hover:bg-surface-hover'
 						: ''}"
 					onclick={() => rowClick(row)}>
-					{#each columns as col}
+					{#each columns as col (col.key)}
 						<td
 							class="px-4 py-3 {col.align === 'center'
 								? 'text-center'

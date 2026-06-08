@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import { theme, THEMES } from '$lib/client/ui/theme/theme.svelte';
+	import { theme } from '$lib/client/ui/theme/theme.svelte';
 	import { database, DATABASES } from '$lib/client/ui/database/database.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import {
@@ -123,7 +123,7 @@
 				href="/pcd/{databaseValue}/quality-profiles"
 				icon={SlidersHorizontal}
 				open={false}>
-				{#each currentNav.qualityProfiles as name}
+				{#each currentNav.qualityProfiles as name (name)}
 					<NavItem
 						label={name}
 						href="/pcd/{databaseValue}/quality-profiles/{name}" />
@@ -135,7 +135,7 @@
 				href="/pcd/{databaseValue}/custom-formats"
 				icon={Tags}
 				open={false}>
-				{#each currentNav.customFormats as name}
+				{#each currentNav.customFormats as name (name)}
 					<NavItem
 						label={name}
 						href="/pcd/{databaseValue}/custom-formats/{name}" />
@@ -147,7 +147,7 @@
 				href="/pcd/{databaseValue}/regular-expressions"
 				icon={Regex}
 				open={false}>
-				{#each currentNav.regularExpressions as name}
+				{#each currentNav.regularExpressions as name (name)}
 					<NavItem
 						label={name}
 						href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
@@ -159,7 +159,7 @@
 				href="/pcd/{databaseValue}/delay-profiles"
 				icon={Clock}
 				open={false}>
-				{#each currentNav.delayProfiles as name}
+				{#each currentNav.delayProfiles as name (name)}
 					<NavItem
 						label={name}
 						href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
@@ -171,7 +171,7 @@
 				href="/pcd/{databaseValue}/naming"
 				icon={FileText}
 				open={false}>
-				{#each currentNav.naming as entry}
+				{#each currentNav.naming as entry (`${entry.arrType}/${entry.name}`)}
 					<NavItem
 						label={entry.name}
 						image="/{entry.arrType}.svg"
@@ -184,7 +184,7 @@
 				href="/pcd/{databaseValue}/media-settings"
 				icon={Settings}
 				open={false}>
-				{#each currentNav.mediaSettings as entry}
+				{#each currentNav.mediaSettings as entry (`${entry.arrType}/${entry.name}`)}
 					<NavItem
 						label={entry.name}
 						image="/{entry.arrType}.svg"
@@ -199,7 +199,7 @@
 				href="/pcd/{databaseValue}/quality-definitions"
 				icon={Ruler}
 				open={false}>
-				{#each currentNav.qualityDefinitions as entry}
+				{#each currentNav.qualityDefinitions as entry (`${entry.arrType}/${entry.name}`)}
 					<NavItem
 						label={entry.name}
 						image="/{entry.arrType}.svg"
@@ -213,7 +213,7 @@
 				label="Dev Logs"
 				href="/dev-logs"
 				icon={NotebookPen}>
-				{#each data.devLogs as log}
+				{#each data.devLogs as log (log.href)}
 					<NavItem
 						label={log.title}
 						href={log.href} />

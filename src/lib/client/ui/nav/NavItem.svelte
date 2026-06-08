@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import type { Component, Snippet } from 'svelte';
+	import type { Component } from 'svelte';
 
 	interface Props {
 		label: string;

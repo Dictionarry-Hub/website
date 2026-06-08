@@ -1,4 +1,4 @@
-import { mkdtempSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
+import { mkdtempSync, readdirSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execSync } from 'node:child_process';

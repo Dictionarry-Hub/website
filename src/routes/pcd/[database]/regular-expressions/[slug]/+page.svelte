@@ -61,6 +61,7 @@
 </h2>
 {#if descriptionHtml}
 	<div class="prose mt-2">
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -- markdown parsed at build time -->
 		{@html descriptionHtml}
 	</div>
 {:else}
@@ -83,7 +84,7 @@
 					<span class="font-medium">{row.name}</span>
 				{:else if col.key === 'tags'}
 					<div class="flex flex-wrap gap-1">
-						{#each row.tags as tag}
+						{#each row.tags as tag (tag)}
 							<Badge
 								size="sm"
 								pill>{tag}</Badge>
@@ -95,7 +96,7 @@
 				<p class="text-sm font-medium">{row.name}</p>
 				{#if row.tags.length > 0}
 					<div class="mt-2 flex flex-wrap gap-1">
-						{#each row.tags as tag}
+						{#each row.tags as tag (tag)}
 							<Badge
 								size="sm"
 								pill>{tag}</Badge>

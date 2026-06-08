@@ -81,7 +81,7 @@
 						href="#top"
 						class="toc-link">{sanitize(title)}</a>
 				{/if}
-				{#each headings as heading}
+				{#each headings as heading (heading.id)}
 					<a
 						href="#{heading.id}"
 						class="toc-link"
