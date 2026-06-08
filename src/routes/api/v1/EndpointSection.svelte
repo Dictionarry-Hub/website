@@ -72,7 +72,10 @@
 			id={endpoint.operationId}
 			data-method={endpoint.method}
 			class="text-sm font-semibold">
-			<code>{endpoint.path}</code>
+			<Badge
+				variant="outline"
+				color="neutral"
+				size="sm">{endpoint.path}</Badge>
 		</h3>
 		<span class="text-sm text-text-soft">{endpoint.summary}</span>
 	</div>
