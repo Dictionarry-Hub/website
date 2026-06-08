@@ -41,7 +41,9 @@
 		{/if}
 		<span class="flex-1">{label}</span>
 		{#if selected}
-			<Check size={16} class="text-accent-solid" />
+			<Check
+				size={16}
+				class="text-accent-solid" />
 		{/if}
 	</button>
 </div>

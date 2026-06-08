@@ -102,14 +102,20 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<div class="inline-flex" bind:this={wrapperEl} onmouseenter={show} onmouseleave={hide}>
+<div
+	class="inline-flex"
+	bind:this={wrapperEl}
+	onmouseenter={show}
+	onmouseleave={hide}>
 	{@render children()}
 	{#if text && visible}
-		<div use:portal bind:this={tooltipEl} class="pointer-events-none fixed z-[110]" {style}>
-			<div
-				class="overflow-hidden rounded-control border border-border bg-bg shadow-card">
-				<div
-					class="whitespace-pre-wrap bg-surface px-2 py-1 text-xs font-medium text-text">
+		<div
+			use:portal
+			bind:this={tooltipEl}
+			class="pointer-events-none fixed z-[110]"
+			{style}>
+			<div class="overflow-hidden rounded-control border border-border bg-bg shadow-card">
+				<div class="bg-surface px-2 py-1 text-xs font-medium whitespace-pre-wrap text-text">
 					{text}
 				</div>
 			</div>

@@ -10,4 +10,6 @@
 	});
 </script>
 
-<SEO title="PCD Browser" description="Browse Profilarr Compliant Database entities." />
+<SEO
+	title="PCD Browser"
+	description="Browse Profilarr Compliant Database entities." />

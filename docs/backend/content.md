@@ -22,15 +22,15 @@ independently crawlable.
 
 Seven entity types are browsable:
 
-| Entity Type          | Route segment          | Arr-specific |
-| -------------------- | ---------------------- | ------------ |
-| Quality Profiles     | `quality-profiles`     | No           |
-| Custom Formats       | `custom-formats`       | No           |
-| Regular Expressions  | `regex`                | No           |
-| Delay Profiles       | `delay-profiles`       | No           |
-| Naming               | `naming`               | Yes          |
-| Media Settings       | `media-settings`       | Yes          |
-| Quality Definitions  | `quality-definitions`  | Yes          |
+| Entity Type         | Route segment         | Arr-specific |
+| ------------------- | --------------------- | ------------ |
+| Quality Profiles    | `quality-profiles`    | No           |
+| Custom Formats      | `custom-formats`      | No           |
+| Regular Expressions | `regex`               | No           |
+| Delay Profiles      | `delay-profiles`      | No           |
+| Naming              | `naming`              | Yes          |
+| Media Settings      | `media-settings`      | Yes          |
+| Quality Definitions | `quality-definitions` | Yes          |
 
 Arr-specific entities include the arr type in the URL: `/pcd/[database]/naming/[arrType]/[name]`.
 

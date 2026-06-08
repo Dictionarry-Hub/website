@@ -16,8 +16,14 @@
 	Default (no attribute) = light.
 	Dark themes: dark, velouria.
 -->
-<img src={light} {alt} class="theme-img theme-img-light {className ?? ''}" />
-<img src={dark} {alt} class="theme-img theme-img-dark {className ?? ''}" />
+<img
+	src={light}
+	{alt}
+	class="theme-img theme-img-light {className ?? ''}" />
+<img
+	src={dark}
+	{alt}
+	class="theme-img theme-img-dark {className ?? ''}" />
 
 <style>
 	.theme-img-dark {

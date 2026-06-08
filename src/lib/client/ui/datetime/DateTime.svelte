@@ -15,10 +15,16 @@
 		if (format === 'short') {
 			return parsed.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 		}
-		return parsed.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+		return parsed.toLocaleDateString('en-US', {
+			month: 'long',
+			day: 'numeric',
+			year: 'numeric'
+		});
 	});
 </script>
 
-<time datetime={iso} class={className}>
+<time
+	datetime={iso}
+	class={className}>
 	{formatted}
 </time>

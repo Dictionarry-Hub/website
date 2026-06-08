@@ -61,12 +61,7 @@ function hasDisableComment(siblings: AnyNode[], index: number): boolean {
 	return false;
 }
 
-function walk(
-	nodes: AnyNode[],
-	offsets: number[],
-	file: string,
-	violations: Violation[]
-): void {
+function walk(nodes: AnyNode[], offsets: number[], file: string, violations: Violation[]): void {
 	for (let i = 0; i < nodes.length; i++) {
 		const node = nodes[i];
 		if (!node || typeof node.type !== 'string') continue;
@@ -98,7 +93,8 @@ function walk(
 
 const rule: LintRule = {
 	name: 'no-raw-ui',
-	description: 'No raw HTML UI elements in routes or client code. Use components from $lib/client/ui/.',
+	description:
+		'No raw HTML UI elements in routes or client code. Use components from $lib/client/ui/.',
 	category: 'ui',
 	severity: 'error',
 	files: 'src/**/*.svelte',

@@ -1,4 +1,6 @@
-<script lang="ts" generics="T extends Record<string, unknown>">
+<script
+	lang="ts"
+	generics="T extends Record<string, unknown>">
 	import Card from '$lib/client/ui/card/Card.svelte';
 	import Table from '$lib/client/ui/table/Table.svelte';
 	import type { Snippet } from 'svelte';
@@ -18,14 +20,21 @@
 
 <!-- Table view (lg+) -->
 <div class="hidden lg:block">
-	<Table {data} {columns} {href} {cell} {expanded} />
+	<Table
+		{data}
+		{columns}
+		{href}
+		{cell}
+		{expanded} />
 </div>
 
 <!-- Card view (below lg) -->
 <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:hidden">
 	{#each data as row}
 		{#if href?.(row)}
-			<a href={href(row)} class="block">
+			<a
+				href={href(row)}
+				class="block">
 				<Card class="h-full transition-colors hover:bg-surface-hover">
 					{@render card(row)}
 				</Card>

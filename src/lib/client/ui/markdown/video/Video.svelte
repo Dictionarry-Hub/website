@@ -20,8 +20,13 @@
 
 <figure class="mb-6 {className ?? ''}">
 	<div class="video-wrapper">
-		<video bind:this={videoEl} playsinline controls>
-			<source {src} type="video/mp4" />
+		<video
+			bind:this={videoEl}
+			playsinline
+			controls>
+			<source
+				{src}
+				type="video/mp4" />
 		</video>
 	</div>
 	{#if title}

@@ -22,21 +22,26 @@ in the sidebar. First entry is the default.
 
 ```json
 {
-  "schema": { "repo": "Dictionarry-Hub/schema" },
-  "databases": [
-    { "id": "dictionarry", "name": "Dictionarry", "repo": "Dictionarry-Hub/database", "branch": "v2" }
-  ]
+	"schema": { "repo": "Dictionarry-Hub/schema" },
+	"databases": [
+		{
+			"id": "dictionarry",
+			"name": "Dictionarry",
+			"repo": "Dictionarry-Hub/database",
+			"branch": "v2"
+		}
+	]
 }
 ```
 
 Each entry has:
 
-| Field    | Purpose                                              |
-| -------- | ---------------------------------------------------- |
-| `id`     | URL slug and output filename                         |
-| `name`   | Display name in the UI                               |
-| `repo`   | GitHub `owner/repo`                                  |
-| `branch` | Git ref to fetch                                     |
+| Field    | Purpose                      |
+| -------- | ---------------------------- |
+| `id`     | URL slug and output filename |
+| `name`   | Display name in the UI       |
+| `repo`   | GitHub `owner/repo`          |
+| `branch` | Git ref to fetch             |
 
 ## Pipeline Flow
 
@@ -60,9 +65,9 @@ pnpm compile:pcd
 ## Fetching
 
 Repos are fetched as tarballs via the GitHub API
-(`https://api.github.com/repos/{owner}/{repo}/tarball/{ref}`). No git required at build time.
-Schema tarballs are cached within a pipeline run since multiple databases typically pin the same
-schema version.
+(`https://api.github.com/repos/{owner}/{repo}/tarball/{ref}`). No git required at build time. Schema
+tarballs are cached within a pipeline run since multiple databases typically pin the same schema
+version.
 
 ## Schema Resolution
 

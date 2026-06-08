@@ -51,23 +51,29 @@
 
 <PageHeader title={settings.name} />
 
-<h2 id="configuration" class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+<h2
+	id="configuration"
+	class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
 	Configuration
 </h2>
 <div class="mt-4">
-	<AdaptiveList data={rows} {columns}>
+	<AdaptiveList
+		data={rows}
+		{columns}>
 		{#snippet cell(row, col)}
 			{#if col.key === 'setting'}
 				<span class="font-medium">{row.setting}</span>
 			{:else if col.key === 'value'}
 				{#if row.id === 'propers-repacks'}
-					<Badge color="info" variant="subtle" pill>{row.value}</Badge>
+					<Badge
+						color="info"
+						variant="subtle"
+						pill>{row.value}</Badge>
 				{:else}
 					<Badge
 						color={row.value === 'Yes' ? 'success' : 'neutral'}
 						variant="subtle"
-						pill
-					>
+						pill>
 						{row.value}
 					</Badge>
 				{/if}
@@ -77,13 +83,15 @@
 			<p class="text-sm font-medium">{row.setting}</p>
 			<div class="mt-2">
 				{#if row.id === 'propers-repacks'}
-					<Badge color="info" variant="subtle" pill>{row.value}</Badge>
+					<Badge
+						color="info"
+						variant="subtle"
+						pill>{row.value}</Badge>
 				{:else}
 					<Badge
 						color={row.value === 'Yes' ? 'success' : 'neutral'}
 						variant="subtle"
-						pill
-					>
+						pill>
 						{row.value}
 					</Badge>
 				{/if}

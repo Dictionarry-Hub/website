@@ -71,7 +71,9 @@ export function extractDatabase(
 // --- Custom Formats ---
 
 function extractCustomFormats(db: Database.Database): CustomFormat[] {
-	const rows = db.prepare('SELECT name, description, include_in_rename FROM custom_formats ORDER BY name').all() as {
+	const rows = db
+		.prepare('SELECT name, description, include_in_rename FROM custom_formats ORDER BY name')
+		.all() as {
 		name: string;
 		description: string | null;
 		include_in_rename: number;
@@ -142,7 +144,9 @@ function extractConditionData(
 					 FROM condition_languages
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
-				.get(cfName, condName) as { language_name: string; except_language: number } | undefined;
+				.get(cfName, condName) as
+				| { language_name: string; except_language: number }
+				| undefined;
 			return {
 				type: 'language',
 				languageName: row?.language_name ?? '',
@@ -200,8 +204,14 @@ function extractConditionData(
 					`SELECT min_bytes, max_bytes FROM condition_sizes
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
-				.get(cfName, condName) as { min_bytes: number | null; max_bytes: number | null } | undefined;
-			return { type: 'size', minBytes: row?.min_bytes ?? null, maxBytes: row?.max_bytes ?? null };
+				.get(cfName, condName) as
+				| { min_bytes: number | null; max_bytes: number | null }
+				| undefined;
+			return {
+				type: 'size',
+				minBytes: row?.min_bytes ?? null,
+				maxBytes: row?.max_bytes ?? null
+			};
 		}
 		case 'year': {
 			const row = db
@@ -209,7 +219,9 @@ function extractConditionData(
 					`SELECT min_year, max_year FROM condition_years
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
-				.get(cfName, condName) as { min_year: number | null; max_year: number | null } | undefined;
+				.get(cfName, condName) as
+				| { min_year: number | null; max_year: number | null }
+				| undefined;
 			return { type: 'year', minYear: row?.min_year ?? null, maxYear: row?.max_year ?? null };
 		}
 		default:
@@ -306,7 +318,9 @@ function extractProfileQualities(db: Database.Database, profileName: string): Qu
 		enabled: row.enabled === 1,
 		upgradeUntil: row.upgrade_until === 1,
 		quality: row.quality_name,
-		group: row.quality_group_name ? extractQualityGroup(db, profileName, row.quality_group_name) : null
+		group: row.quality_group_name
+			? extractQualityGroup(db, profileName, row.quality_group_name)
+			: null
 	}));
 }
 
@@ -351,7 +365,9 @@ function extractProfileScoring(db: Database.Database, profileName: string): Prof
 
 function extractRegularExpressions(db: Database.Database): RegularExpression[] {
 	const rows = db
-		.prepare('SELECT name, pattern, description, regex101_id FROM regular_expressions ORDER BY name')
+		.prepare(
+			'SELECT name, pattern, description, regex101_id FROM regular_expressions ORDER BY name'
+		)
 		.all() as {
 		name: string;
 		pattern: string;
@@ -473,7 +489,10 @@ function extractNaming(db: Database.Database, arrType: 'radarr' | 'sonarr'): Nam
 	}));
 }
 
-function extractMediaSettings(db: Database.Database, arrType: 'radarr' | 'sonarr'): MediaSettings[] {
+function extractMediaSettings(
+	db: Database.Database,
+	arrType: 'radarr' | 'sonarr'
+): MediaSettings[] {
 	const table = `${arrType}_media_settings`;
 
 	const rows = db
@@ -497,9 +516,9 @@ function extractQualityDefinitions(
 ): QualityDefinitionConfig[] {
 	const table = `${arrType}_quality_definitions`;
 
-	const names = db
-		.prepare(`SELECT DISTINCT name FROM ${table} ORDER BY name`)
-		.all() as { name: string }[];
+	const names = db.prepare(`SELECT DISTINCT name FROM ${table} ORDER BY name`).all() as {
+		name: string;
+	}[];
 
 	return names.map((n) => {
 		const tiers = db

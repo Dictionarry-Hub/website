@@ -1,7 +1,13 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { fetchRepo, fetchSchema, resolveSchemaVersion, getOpsDir, cleanupTempDirs } from './fetch.js';
+import {
+	fetchRepo,
+	fetchSchema,
+	resolveSchemaVersion,
+	getOpsDir,
+	cleanupTempDirs
+} from './fetch.js';
 import { compileDatabase } from './build.js';
 import { extractDatabase } from './extract.js';
 import { slugify } from '../../src/lib/shared/utils/slug.js';
@@ -109,7 +115,10 @@ function main(): void {
 		const mediaEntries = (arrType: 'radarr' | 'sonarr') => ({
 			naming: compiled.media[arrType].naming.map((n) => ({ name: n.name, arrType })),
 			settings: compiled.media[arrType].settings.map((s) => ({ name: s.name, arrType })),
-			qualityDefs: compiled.media[arrType].qualityDefinitions.map((q) => ({ name: q.name, arrType }))
+			qualityDefs: compiled.media[arrType].qualityDefinitions.map((q) => ({
+				name: q.name,
+				arrType
+			}))
 		});
 		const radarr = mediaEntries('radarr');
 		const sonarr = mediaEntries('sonarr');
@@ -125,7 +134,9 @@ function main(): void {
 		};
 
 		const elapsed = (performance.now() - start).toFixed(0);
-		console.log(`    -> ${compiled.customFormats.length} CFs, ${compiled.qualityProfiles.length} QPs, ${compiled.regularExpressions.length} regexes (${elapsed}ms)`);
+		console.log(
+			`    -> ${compiled.customFormats.length} CFs, ${compiled.qualityProfiles.length} QPs, ${compiled.regularExpressions.length} regexes (${elapsed}ms)`
+		);
 	}
 
 	// Check for slug collisions

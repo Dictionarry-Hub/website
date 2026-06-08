@@ -41,7 +41,12 @@ function run(): void {
 	for (const v of violations) {
 		const severity = filtered.find((r) => r.name === v.rule)?.severity ?? 'error';
 		const icon = severity === 'error' ? '✘' : '⚠️';
-		const location = v.line && v.column ? `${v.file}:${v.line}:${v.column}` : v.line ? `${v.file}:${v.line}` : v.file;
+		const location =
+			v.line && v.column
+				? `${v.file}:${v.line}:${v.column}`
+				: v.line
+					? `${v.file}:${v.line}`
+					: v.file;
 
 		console.error(`  ${icon}  ${v.rule} (${location})`);
 		console.error(`     ${v.message}`);

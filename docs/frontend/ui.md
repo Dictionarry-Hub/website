@@ -45,14 +45,14 @@ Renders `<title>`, Open Graph, Twitter Card, description, and theme-color meta t
 
 Standard button component. Extends `HTMLButtonAttributes` so all native button props are supported.
 
-| Prop      | Type                                      | Required | Default   |
-| --------- | ----------------------------------------- | -------- | --------- |
-| `variant` | `'accent' \| 'default' \| 'danger' \| 'outline' \| 'ghost'` | no | `'default'` |
-| `size`    | `'sm' \| 'md' \| 'lg'`                    | no       | `'md'`    |
-| `icon`    | `Component`                               | no       |           |
-| `iconPosition` | `'left' \| 'right'`                 | no       | `'left'`  |
-| `iconClass` | `string`                                | no       | `''`      |
-| `type`    | `'button' \| 'submit' \| 'reset'`         | yes      |           |
+| Prop           | Type                                                        | Required | Default     |
+| -------------- | ----------------------------------------------------------- | -------- | ----------- |
+| `variant`      | `'accent' \| 'default' \| 'danger' \| 'outline' \| 'ghost'` | no       | `'default'` |
+| `size`         | `'sm' \| 'md' \| 'lg'`                                      | no       | `'md'`      |
+| `icon`         | `Component`                                                 | no       |             |
+| `iconPosition` | `'left' \| 'right'`                                         | no       | `'left'`    |
+| `iconClass`    | `string`                                                    | no       | `''`        |
+| `type`         | `'button' \| 'submit' \| 'reset'`                           | yes      |             |
 
 Variant mapping:
 
@@ -67,8 +67,13 @@ Variant mapping:
 	import Button from '$lib/client/ui/button/Button.svelte';
 </script>
 
-<Button type="button" variant="accent">Save</Button>
-<Button type="button" variant="danger" size="sm">Delete</Button>
+<Button
+	type="button"
+	variant="accent">Save</Button>
+<Button
+	type="button"
+	variant="danger"
+	size="sm">Delete</Button>
 ```
 
 ### Tooltip
@@ -79,11 +84,11 @@ Variant mapping:
 
 Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to the viewport.
 
-| Prop       | Type                                    | Required | Default    |
-| ---------- | --------------------------------------- | -------- | ---------- |
-| `text`     | `string`                                | no       | `''`       |
-| `position` | `'top' \| 'bottom' \| 'left' \| 'right'` | no     | `'bottom'` |
-| `align`    | `'left' \| 'middle' \| 'right'`         | no       | `'middle'` |
+| Prop       | Type                                     | Required | Default    |
+| ---------- | ---------------------------------------- | -------- | ---------- |
+| `text`     | `string`                                 | no       | `''`       |
+| `position` | `'top' \| 'bottom' \| 'left' \| 'right'` | no       | `'bottom'` |
+| `align`    | `'left' \| 'middle' \| 'right'`          | no       | `'middle'` |
 
 ```svelte
 <script lang="ts">
@@ -91,7 +96,9 @@ Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to 
 	import Button from '$lib/client/ui/button/Button.svelte';
 </script>
 
-<Tooltip text="Save changes" position="top">
+<Tooltip
+	text="Save changes"
+	position="top">
 	<Button type="button">Save</Button>
 </Tooltip>
 ```
@@ -106,10 +113,10 @@ Surface primitive. Provides background, border, radius, and shadow. Used as the 
 panels, navbars, sidebars, modals, and any other bounded surface. Does not handle padding or
 positioning - the consumer controls those via class passthrough.
 
-| Prop      | Type                                       | Required | Default |
-| --------- | ------------------------------------------ | -------- | ------- |
+| Prop      | Type                                     | Required | Default |
+| --------- | ---------------------------------------- | -------- | ------- |
 | `rounded` | `'none' \| 'sm' \| 'md' \| 'lg' \| 'xl'` | no       | `'xl'`  |
-| `as`      | `string`                                   | no       | `'div'` |
+| `as`      | `string`                                 | no       | `'div'` |
 
 ```svelte
 <script lang="ts">
@@ -117,7 +124,10 @@ positioning - the consumer controls those via class passthrough.
 </script>
 
 <Card class="p-6">Content panel</Card>
-<Card as="nav" rounded="none" class="fixed top-0 w-full px-4 py-2">Navbar</Card>
+<Card
+	as="nav"
+	rounded="none"
+	class="fixed top-0 w-full px-4 py-2">Navbar</Card>
 ```
 
 ### Nav
@@ -130,13 +140,13 @@ Collapsible navigation section with a split header. The left side is a link, the
 chevron toggle. Both highlight on hover of either via group hover. Children render with a vertical
 connector line and a slide transition.
 
-| Prop   | Type        | Required | Default |
-| ------ | ----------- | -------- | ------- |
-| `label` | `string`   | yes      |         |
-| `href`  | `string`   | yes      |         |
-| `icon`  | `Component` | no      |         |
-| `badge` | `number`   | no       | `0`     |
-| `open`  | `boolean`  | no       | `true`  |
+| Prop    | Type        | Required | Default |
+| ------- | ----------- | -------- | ------- |
+| `label` | `string`    | yes      |         |
+| `href`  | `string`    | yes      |         |
+| `icon`  | `Component` | no       |         |
+| `badge` | `number`    | no       | `0`     |
+| `open`  | `boolean`   | no       | `true`  |
 
 Active state: exact match when children exist, prefix match otherwise. Active renders with
 `bg-surface border-border shadow-control` (Button default treatment).
@@ -147,14 +157,14 @@ Active state: exact match when children exist, prefix match otherwise. Active re
 
 Child navigation link, used inside NavGroup.
 
-| Prop            | Type                 | Required | Default |
-| --------------- | -------------------- | -------- | ------- |
-| `label`         | `string`             | yes      |         |
-| `href`          | `string`             | yes      |         |
-| `icon`          | `Component`          | no       |         |
-| `image`         | `string`             | no       |         |
-| `badge`         | `number`             | no       | `0`     |
-| `activePattern` | `string \| RegExp`   | no       |         |
+| Prop            | Type               | Required | Default |
+| --------------- | ------------------ | -------- | ------- |
+| `label`         | `string`           | yes      |         |
+| `href`          | `string`           | yes      |         |
+| `icon`          | `Component`        | no       |         |
+| `image`         | `string`           | no       |         |
+| `badge`         | `number`           | no       | `0`     |
+| `activePattern` | `string \| RegExp` | no       |         |
 
 `image` renders an `<img>` element before the label. Used for arr-type icons on PCD media entities.
 
@@ -169,19 +179,19 @@ regex test. Otherwise exact or prefix match against `href`.
 
 Select control backed by a dropdown menu. Wraps `Dropdown`, `DropdownHeader`, and `DropdownItem`.
 
-| Prop          | Type                                                         | Required | Default      |
-| ------------- | ------------------------------------------------------------ | -------- | ------------ |
-| `value`       | `string` (bindable)                                          | yes      |              |
-| `options`     | `{ value: string; label: string; icon?: Component }[]`       | yes      |              |
-| `label`       | `string`                                                     | no       |              |
-| `header`      | `string`                                                     | no       |              |
-| `placeholder` | `string`                                                     | no       | `'Select...'`|
-| `minWidth`    | `string`                                                     | no       | `'8rem'`     |
-| `position`    | `'left' \| 'right' \| 'middle'`                              | no       | `'left'`     |
-| `placement`   | `'auto' \| 'bottom' \| 'top'`                                | no       | `'auto'`     |
-| `disabled`    | `boolean`                                                    | no       | `false`      |
-| `iconOnly`    | `boolean`                                                    | no       | `false`      |
-| `onchange`    | `(value: string) => void`                                    | no       |              |
+| Prop          | Type                                                   | Required | Default       |
+| ------------- | ------------------------------------------------------ | -------- | ------------- |
+| `value`       | `string` (bindable)                                    | yes      |               |
+| `options`     | `{ value: string; label: string; icon?: Component }[]` | yes      |               |
+| `label`       | `string`                                               | no       |               |
+| `header`      | `string`                                               | no       |               |
+| `placeholder` | `string`                                               | no       | `'Select...'` |
+| `minWidth`    | `string`                                               | no       | `'8rem'`      |
+| `position`    | `'left' \| 'right' \| 'middle'`                        | no       | `'left'`      |
+| `placement`   | `'auto' \| 'bottom' \| 'top'`                          | no       | `'auto'`      |
+| `disabled`    | `boolean`                                              | no       | `false`       |
+| `iconOnly`    | `boolean`                                              | no       | `false`       |
+| `onchange`    | `(value: string) => void`                              | no       |               |
 
 `header` renders a `DropdownHeader` at the top of the menu (e.g. "Theme", "Database"). `iconOnly`
 renders just the matched option's icon as the trigger button.
@@ -194,25 +204,37 @@ renders just the matched option's icon as the trigger button.
 
 Inline label for tags, statuses, and counts.
 
-| Prop        | Type                                                              | Required | Default     |
-| ----------- | ----------------------------------------------------------------- | -------- | ----------- |
-| `variant`   | `'subtle' \| 'solid' \| 'outline'`                               | no       | `'solid'`   |
-| `color`     | `'neutral' \| 'accent' \| 'success' \| 'warning' \| 'danger' \| 'info'` | no | `'neutral'` |
-| `size`      | `'sm' \| 'md'`                                                    | no       | `'sm'`      |
-| `pill`      | `boolean`                                                         | no       | `false`     |
-| `icon`      | `Component`                                                       | no       |             |
-| `iconColor` | `string`                                                          | no       |             |
-| `link`      | `boolean`                                                         | no       | `false`     |
+| Prop        | Type                                                                    | Required | Default     |
+| ----------- | ----------------------------------------------------------------------- | -------- | ----------- |
+| `variant`   | `'subtle' \| 'solid' \| 'outline'`                                      | no       | `'solid'`   |
+| `color`     | `'neutral' \| 'accent' \| 'success' \| 'warning' \| 'danger' \| 'info'` | no       | `'neutral'` |
+| `size`      | `'sm' \| 'md'`                                                          | no       | `'sm'`      |
+| `pill`      | `boolean`                                                               | no       | `false`     |
+| `icon`      | `Component`                                                             | no       |             |
+| `iconColor` | `string`                                                                | no       |             |
+| `link`      | `boolean`                                                               | no       | `false`     |
 
 `iconColor` applies a custom class to the leading icon (e.g. `"text-info-icon"`). `link` appends an
 `ExternalLink` icon on the right, signalling the badge is a clickable link.
 
 ```svelte
 <Badge>Default</Badge>
-<Badge color="success" pill>Published</Badge>
-<Badge variant="outline" color="danger">Removed</Badge>
-<a href="https://regex101.com/r/abc123" target="_blank" rel="noopener noreferrer">
-  <Badge variant="outline" icon={FlaskConical} iconColor="text-info-icon" link pill>regex101</Badge>
+<Badge
+	color="success"
+	pill>Published</Badge>
+<Badge
+	variant="outline"
+	color="danger">Removed</Badge>
+<a
+	href="https://regex101.com/r/abc123"
+	target="_blank"
+	rel="noopener noreferrer">
+	<Badge
+		variant="outline"
+		icon={FlaskConical}
+		iconColor="text-info-icon"
+		link
+		pill>regex101</Badge>
 </a>
 ```
 
@@ -224,10 +246,10 @@ Inline label for tags, statuses, and counts.
 
 Renders a formatted `<time>` element with a `datetime` attribute for SEO.
 
-| Prop     | Type               | Required | Default  |
-| -------- | ------------------ | -------- | -------- |
-| `date`   | `string`           | yes      |          |
-| `format` | `'short' \| 'long'` | no     | `'long'` |
+| Prop     | Type                | Required | Default  |
+| -------- | ------------------- | -------- | -------- |
+| `date`   | `string`            | yes      |          |
+| `format` | `'short' \| 'long'` | no       | `'long'` |
 
 Short format: "May 17". Long format: "May 17, 2026". Accepts ISO date strings and full ISO
 timestamps (as produced by YAML date parsing).
@@ -241,12 +263,12 @@ timestamps (as produced by YAML date parsing).
 Pill-shaped author display with optional avatar and link. Shows a lucide `User` icon when no avatar
 is provided. Linked variant uses subtle styling with an `ExternalLink` icon.
 
-| Prop     | Type              | Required | Default |
-| -------- | ----------------- | -------- | ------- |
-| `name`   | `string`          | yes      |         |
-| `avatar` | `string`          | no       |         |
-| `href`   | `string`          | no       |         |
-| `size`   | `'sm' \| 'md'`   | no       | `'sm'`  |
+| Prop     | Type           | Required | Default |
+| -------- | -------------- | -------- | ------- |
+| `name`   | `string`       | yes      |         |
+| `avatar` | `string`       | no       |         |
+| `href`   | `string`       | no       |         |
+| `size`   | `'sm' \| 'md'` | no       | `'sm'`  |
 
 ### Markdown
 
@@ -279,7 +301,9 @@ optional caption.
 | `title` | `string` | no       |         |
 
 ```svelte
-<Video src="/video/clip.mp4" title="Caption text" />
+<Video
+	src="/video/clip.mp4"
+	title="Caption text" />
 ```
 
 ## Semantic Tokens
@@ -290,22 +314,22 @@ available via the `@theme inline` bridge in `layout.css` (e.g., `bg-bg`, `text-t
 
 ### Surface
 
-| Token                          | Role                   |
-| ------------------------------ | ---------------------- |
-| `--theme-bg`                   | Page background        |
-| `--theme-surface`              | Card / panel fill      |
-| `--theme-surface-muted`        | Subdued surface        |
-| `--theme-surface-hover`        | Surface hover state    |
-| `--theme-surface-hover-muted`  | Subdued hover state    |
+| Token                         | Role                |
+| ----------------------------- | ------------------- |
+| `--theme-bg`                  | Page background     |
+| `--theme-surface`             | Card / panel fill   |
+| `--theme-surface-muted`       | Subdued surface     |
+| `--theme-surface-hover`       | Surface hover state |
+| `--theme-surface-hover-muted` | Subdued hover state |
 
 ### Text
 
-| Token                | Role                   |
-| -------------------- | ---------------------- |
-| `--theme-text`       | Primary body text      |
-| `--theme-text-soft`  | Secondary text         |
-| `--theme-text-muted` | Tertiary / placeholder |
-| `--theme-text-subtle`| Disabled / decorative  |
+| Token                 | Role                   |
+| --------------------- | ---------------------- |
+| `--theme-text`        | Primary body text      |
+| `--theme-text-soft`   | Secondary text         |
+| `--theme-text-muted`  | Tertiary / placeholder |
+| `--theme-text-subtle` | Disabled / decorative  |
 
 ### Border
 
@@ -330,50 +354,50 @@ available via the `@theme inline` bridge in `layout.css` (e.g., `bg-bg`, `text-t
 
 Each status (success, warning, danger, info) has four tokens:
 
-| Suffix    | Role                    |
-| --------- | ----------------------- |
-| `-bg`     | Background fill         |
-| `-text`   | Text color              |
-| `-border` | Border color            |
-| `-icon`   | Icon color              |
+| Suffix    | Role            |
+| --------- | --------------- |
+| `-bg`     | Background fill |
+| `-text`   | Text color      |
+| `-border` | Border color    |
+| `-icon`   | Icon color      |
 
 Example: `--theme-success-bg`, `--theme-warning-text`, `--theme-danger-border`.
 
 ### Component Variants
 
-| Token                      | Role                       |
-| -------------------------- | -------------------------- |
-| `--theme-flush-bg`         | Flush button background    |
-| `--theme-flush-hover`      | Flush button hover         |
-| `--theme-ghost-bg`         | Ghost button background    |
-| `--theme-ghost-border`     | Ghost button border        |
-| `--theme-ghost-label-bg`   | Ghost label background     |
-| `--theme-ghost-label-text` | Ghost label text           |
+| Token                      | Role                    |
+| -------------------------- | ----------------------- |
+| `--theme-flush-bg`         | Flush button background |
+| `--theme-flush-hover`      | Flush button hover      |
+| `--theme-ghost-bg`         | Ghost button background |
+| `--theme-ghost-border`     | Ghost button border     |
+| `--theme-ghost-label-bg`   | Ghost label background  |
+| `--theme-ghost-label-text` | Ghost label text        |
 
 ### Typography
 
-| Token              | Role         |
-| ------------------ | ------------ |
-| `--theme-font-sans`| Sans-serif   |
-| `--theme-font-mono`| Monospace    |
-| `--theme-link-text`| Link color   |
+| Token               | Role       |
+| ------------------- | ---------- |
+| `--theme-font-sans` | Sans-serif |
+| `--theme-font-mono` | Monospace  |
+| `--theme-link-text` | Link color |
 
 ### Shape
 
-| Token                       | Role                   |
-| --------------------------- | ---------------------- |
-| `--theme-radius-control-sm` | Small controls         |
-| `--theme-radius-control`    | Standard controls      |
-| `--theme-radius-card`       | Cards, panels          |
-| `--theme-radius-pill`       | Pills, fully rounded   |
+| Token                       | Role                 |
+| --------------------------- | -------------------- |
+| `--theme-radius-control-sm` | Small controls       |
+| `--theme-radius-control`    | Standard controls    |
+| `--theme-radius-card`       | Cards, panels        |
+| `--theme-radius-pill`       | Pills, fully rounded |
 
 ### Shadows
 
-| Token                          | Role                |
-| ------------------------------ | ------------------- |
-| `--theme-shadow-card`          | Card elevation       |
-| `--theme-shadow-control`       | Control resting      |
-| `--theme-shadow-control-active`| Control pressed      |
+| Token                           | Role            |
+| ------------------------------- | --------------- |
+| `--theme-shadow-card`           | Card elevation  |
+| `--theme-shadow-control`        | Control resting |
+| `--theme-shadow-control-active` | Control pressed |
 
 ## Theming
 

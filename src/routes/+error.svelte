@@ -51,13 +51,16 @@
 				<img
 					src={content.gif}
 					alt={content.title}
-					class="h-full w-full object-contain"
-				/>
+					class="h-full w-full object-contain" />
 			</div>
 		{/if}
 
 		<div class="mt-8">
-			<Button type="button" variant="accent" icon={House} onclick={() => window.location.href = '/'}>
+			<Button
+				type="button"
+				variant="accent"
+				icon={House}
+				onclick={() => (window.location.href = '/')}>
 				Go Home
 			</Button>
 		</div>

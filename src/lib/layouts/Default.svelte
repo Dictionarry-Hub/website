@@ -9,7 +9,9 @@
 	let { children }: Props = $props();
 </script>
 
-<div id="top" class="content-wrapper relative mx-auto max-w-prose px-6 py-10">
+<div
+	id="top"
+	class="content-wrapper relative mx-auto max-w-prose px-6 py-10">
 	<article>
 		{@render children()}
 	</article>

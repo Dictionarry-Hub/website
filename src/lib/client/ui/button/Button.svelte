@@ -68,17 +68,23 @@
 </script>
 
 <button
-	class="inline-flex cursor-pointer items-center justify-center font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 {variantClasses[variant!]} {isIconOnly ? iconOnlySizeClasses[size!] : sizeClasses[size!]} {className ?? ''}"
+	class="inline-flex cursor-pointer items-center justify-center font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 {variantClasses[
+		variant!
+	]} {isIconOnly ? iconOnlySizeClasses[size!] : sizeClasses[size!]} {className ?? ''}"
 	{...rest}>
 	{#if icon && iconPosition === 'left'}
 		{@const Icon = icon}
-		<Icon size={iconSizes[size!]} class={iconClass} />
+		<Icon
+			size={iconSizes[size!]}
+			class={iconClass} />
 	{/if}
 	{#if children}
 		{@render children()}
 	{/if}
 	{#if icon && iconPosition === 'right'}
 		{@const Icon = icon}
-		<Icon size={iconSizes[size!]} class={iconClass} />
+		<Icon
+			size={iconSizes[size!]}
+			class={iconClass} />
 	{/if}
 </button>

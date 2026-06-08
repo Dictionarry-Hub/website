@@ -47,7 +47,7 @@
 	const currentLabel = $derived(matchedOption?.label ?? placeholder);
 	const currentIcon = $derived(matchedOption?.icon);
 	const isPlaceholder = $derived(!matchedOption);
-	const chevronIcon = $derived(open && resolvedPlacement === 'top' ? ChevronUp : ChevronDown);
+	const chevronIcon = $derived(open && resolvedPlacement !== 'bottom' ? ChevronUp : ChevronDown);
 
 	function select(optionValue: string) {
 		value = optionValue;
@@ -60,7 +60,10 @@
 	{#if label}
 		<span class="text-sm text-text-muted">{label}</span>
 	{/if}
-	<div class="relative" bind:this={triggerEl} use:clickOutside={() => (open = false)}>
+	<div
+		class="relative"
+		bind:this={triggerEl}
+		use:clickOutside={() => (open = false)}>
 		{#if iconOnly && currentIcon}
 			<Button
 				type="button"

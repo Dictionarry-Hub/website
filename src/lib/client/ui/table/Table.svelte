@@ -1,4 +1,6 @@
-<script lang="ts" generics="T extends Record<string, unknown>">
+<script
+	lang="ts"
+	generics="T extends Record<string, unknown>">
 	import { goto } from '$app/navigation';
 	import { ChevronUp, ChevronDown, ChevronRight } from '@lucide/svelte';
 	import type { Snippet } from 'svelte';
@@ -82,7 +84,9 @@
 </script>
 
 {#if expanded}
-	<div class="hidden" bind:this={probeContainer}>
+	<div
+		class="hidden"
+		bind:this={probeContainer}>
 		{#each sorted as row}
 			<div>{@render expanded(row)}</div>
 		{/each}
@@ -96,14 +100,16 @@
 			<tr class="border-b border-border bg-surface">
 				{#each columns as col}
 					<th
-						class="px-4 py-3 font-medium text-text-muted {col.align === 'center' ? 'text-center' : col.align === 'right' ? 'text-right' : 'text-left'} {col.width ?? ''}"
-					>
+						class="px-4 py-3 font-medium text-text-muted {col.align === 'center'
+							? 'text-center'
+							: col.align === 'right'
+								? 'text-right'
+								: 'text-left'} {col.width ?? ''}">
 						{#if col.sortable}
 							<button
 								type="button"
-								class="inline-flex items-center gap-1 hover:text-text transition-colors"
-								onclick={() => toggleSort(col.key)}
-							>
+								class="inline-flex items-center gap-1 transition-colors hover:text-text"
+								onclick={() => toggleSort(col.key)}>
 								{col.header}
 								{#if sortKey === col.key}
 									{#if sortDir === 'asc'}
@@ -126,11 +132,17 @@
 		<tbody>
 			{#each sorted as row, idx}
 				<tr
-					class="border-b border-border-subtle last:border-b-0 {href?.(row) ? 'cursor-pointer hover:bg-surface-hover transition-colors' : ''}"
-					onclick={() => rowClick(row)}
-				>
+					class="border-b border-border-subtle last:border-b-0 {href?.(row)
+						? 'cursor-pointer transition-colors hover:bg-surface-hover'
+						: ''}"
+					onclick={() => rowClick(row)}>
 					{#each columns as col}
-						<td class="px-4 py-3 {col.align === 'center' ? 'text-center' : col.align === 'right' ? 'text-right' : 'text-left'}">
+						<td
+							class="px-4 py-3 {col.align === 'center'
+								? 'text-center'
+								: col.align === 'right'
+									? 'text-right'
+									: 'text-left'}">
 							{#if cell}
 								{@render cell(row, col)}
 							{:else}
@@ -146,16 +158,22 @@
 									variant="ghost"
 									size="sm"
 									icon={ChevronRight}
-									iconClass="transition-transform {expandedRows.has(idx) ? 'rotate-90' : ''}"
-									onclick={(e: MouseEvent) => { e.stopPropagation(); toggleExpand(idx); }}
-								/>
+									iconClass="transition-transform {expandedRows.has(idx)
+										? 'rotate-90'
+										: ''}"
+									onclick={(e: MouseEvent) => {
+										e.stopPropagation();
+										toggleExpand(idx);
+									}} />
 							{/if}
 						</td>
 					{/if}
 				</tr>
 				{#if expanded && expandedRows.has(idx)}
 					<tr class="border-b border-border-subtle last:border-b-0">
-						<td colspan={colCount} class="bg-surface px-4 py-4">
+						<td
+							colspan={colCount}
+							class="bg-surface px-4 py-4">
 							{@render expanded(row)}
 						</td>
 					</tr>

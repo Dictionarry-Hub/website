@@ -18,14 +18,19 @@ const config = {
 			return true;
 		}
 	},
-	kit: { adapter: adapter() },
+	kit: {
+		adapter: adapter(),
+		prerender: {
+			handleUnseenRoutes: 'ignore'
+		}
+	},
 	preprocess: [
 		mdsvex({
 			extensions: ['.svx', '.md'],
 			rehypePlugins: [rehypeSlug],
 			layout: {
 				'dev-logs': resolve(__dirname, 'src/lib/layouts/DevLog.svelte'),
-				_: resolve(__dirname, 'src/lib/layouts/Default.svelte')
+				'_': resolve(__dirname, 'src/lib/layouts/Default.svelte')
 			}
 		})
 	],

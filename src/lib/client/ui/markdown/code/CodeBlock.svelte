@@ -84,9 +84,13 @@
 		</div>
 	{/if}
 
-	<div class="code-body" class:wrap={overflow === 'wrap'}>
+	<div
+		class="code-body"
+		class:wrap={overflow === 'wrap'}>
 		{#each highlighted as html, index}
-			<div class="code-panel" class:hidden={index !== activeTab}>
+			<div
+				class="code-panel"
+				class:hidden={index !== activeTab}>
 				{@html html}
 			</div>
 		{/each}

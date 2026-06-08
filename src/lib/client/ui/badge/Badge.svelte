@@ -74,13 +74,19 @@
 </script>
 
 <span
-	class="inline-flex items-center font-medium {colorMap[color!][variant!]} {sizeClasses[size!]} {pill ? 'rounded-pill' : 'rounded-control-sm'} {className ?? ''}">
+	class="inline-flex items-center font-medium {colorMap[color!][variant!]} {sizeClasses[
+		size!
+	]} {pill ? 'rounded-pill' : 'rounded-control-sm'} {className ?? ''}">
 	{#if icon}
 		{@const Icon = icon}
-		<Icon size={iconSizes[size!]} class={iconColor ?? ''} />
+		<Icon
+			size={iconSizes[size!]}
+			class={iconColor ?? ''} />
 	{/if}
 	{@render children()}
 	{#if link}
-		<ExternalLink size={iconSizes[size!]} class="text-text-muted" />
+		<ExternalLink
+			size={iconSizes[size!]}
+			class="text-text-muted" />
 	{/if}
 </span>

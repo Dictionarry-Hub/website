@@ -39,11 +39,11 @@
 	];
 
 	const databaseIcons: Record<string, typeof BookOpen> = {
-		dictionarry: BookOpen,
-		trash: Trash2,
+		'dictionarry': BookOpen,
+		'trash': Trash2,
 		'trash-french': Trash2,
 		'trash-german': Trash2,
-		dumpstarr: Flame
+		'dumpstarr': Flame
 	};
 
 	const databaseOptions = DATABASES.map((d) => ({
@@ -92,7 +92,10 @@
 	<!-- Navbar -->
 	<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
 		<div class="flex items-center gap-2">
-			<img src="/icon.png" alt="dictionarry" class="size-5" />
+			<img
+				src="/icon.png"
+				alt="dictionarry"
+				class="size-5" />
 			<span class="font-accent text-lg font-semibold">dictionarry</span>
 		</div>
 		<div class="flex items-center gap-1">
@@ -121,7 +124,9 @@
 				icon={SlidersHorizontal}
 				open={false}>
 				{#each currentNav.qualityProfiles as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/quality-profiles/{name}" />
+					<NavItem
+						label={name}
+						href="/pcd/{databaseValue}/quality-profiles/{name}" />
 				{/each}
 			</NavGroup>
 
@@ -131,7 +136,9 @@
 				icon={Tags}
 				open={false}>
 				{#each currentNav.customFormats as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/custom-formats/{name}" />
+					<NavItem
+						label={name}
+						href="/pcd/{databaseValue}/custom-formats/{name}" />
 				{/each}
 			</NavGroup>
 
@@ -141,7 +148,9 @@
 				icon={Regex}
 				open={false}>
 				{#each currentNav.regularExpressions as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
+					<NavItem
+						label={name}
+						href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
 				{/each}
 			</NavGroup>
 
@@ -151,7 +160,9 @@
 				icon={Clock}
 				open={false}>
 				{#each currentNav.delayProfiles as name}
-					<NavItem label={name} href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
+					<NavItem
+						label={name}
+						href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
 				{/each}
 			</NavGroup>
 
@@ -177,7 +188,9 @@
 					<NavItem
 						label={entry.name}
 						image="/{entry.arrType}.svg"
-						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{slugify(entry.name)}" />
+						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{slugify(
+							entry.name
+						)}" />
 				{/each}
 			</NavGroup>
 
@@ -196,26 +209,44 @@
 		{/if}
 
 		{#if data.devLogs.length > 0}
-			<NavGroup label="Dev Logs" href="/dev-logs" icon={NotebookPen}>
+			<NavGroup
+				label="Dev Logs"
+				href="/dev-logs"
+				icon={NotebookPen}>
 				{#each data.devLogs as log}
-					<NavItem label={log.title} href={log.href} />
+					<NavItem
+						label={log.title}
+						href={log.href} />
 				{/each}
 			</NavGroup>
 		{/if}
 
 		{#if import.meta.env.DEV}
-			<NavGroup label="Dev" href="/dev" icon={Wrench}>
-				<NavItem label="UI Showcase" href="/dev/ui" />
-				<NavItem label="Error 404" href="/dev/errors/404" />
-				<NavItem label="Error 403" href="/dev/errors/403" />
-				<NavItem label="Error 500" href="/dev/errors/500" />
+			<NavGroup
+				label="Dev"
+				href="/dev"
+				icon={Wrench}>
+				<NavItem
+					label="UI Showcase"
+					href="/dev/ui" />
+				<NavItem
+					label="Error 404"
+					href="/dev/errors/404" />
+				<NavItem
+					label="Error 403"
+					href="/dev/errors/403" />
+				<NavItem
+					label="Error 500"
+					href="/dev/errors/500" />
 			</NavGroup>
 		{/if}
 	</div>
 </div>
 
 <main class="min-h-screen bg-bg pl-72 font-sans text-text">
-	<div id="top" class="content-area mx-auto max-w-3xl px-6 py-10">
+	<div
+		id="top"
+		class="content-area mx-auto max-w-3xl px-6 py-10">
 		{@render children()}
 	</div>
 </main>

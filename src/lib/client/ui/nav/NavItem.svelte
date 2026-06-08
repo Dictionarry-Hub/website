@@ -31,14 +31,17 @@
 	{href}
 	class="flex items-center gap-2 rounded-control border py-1.5 pr-2 pl-3 text-sm font-semibold transition-colors
 		{isActive
-		? 'bg-surface text-text border-border shadow-control'
+		? 'border-border bg-surface text-text shadow-control'
 		: 'border-transparent text-text-muted hover:bg-surface-hover hover:text-text'}">
 	{#if icon}
 		{@const Icon = icon}
 		<Icon size={14} />
 	{/if}
 	{#if image}
-		<img src={image} alt="" class="size-3.5" />
+		<img
+			src={image}
+			alt=""
+			class="size-3.5" />
 	{/if}
 	<span class="flex-1">{label}</span>
 	{#if badge > 0}

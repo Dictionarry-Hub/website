@@ -19,9 +19,7 @@
 	let minLevel = $state(2);
 
 	function sanitize(text: string): string {
-		return text
-			.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '')
-			.trim();
+		return text.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '').trim();
 	}
 
 	onMount(() => {
@@ -65,7 +63,9 @@
 	<div class="toc">
 		<!-- Header -->
 		<div class="toc-header">
-			<Pin size={16} class="shrink-0" />
+			<Pin
+				size={16}
+				class="shrink-0" />
 			<span>On This Page</span>
 		</div>
 
@@ -77,7 +77,9 @@
 
 			<div class="toc-items">
 				{#if title}
-					<a href="#top" class="toc-link">{sanitize(title)}</a>
+					<a
+						href="#top"
+						class="toc-link">{sanitize(title)}</a>
 				{/if}
 				{#each headings as heading}
 					<a

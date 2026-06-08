@@ -5,12 +5,12 @@ project-specific conventions.
 
 ## Commands
 
-| Command         | What it runs                          |
-| --------------- | ------------------------------------- |
-| `pnpm lint`     | ESLint + all custom rules             |
+| Command            | What it runs                       |
+| ------------------ | ---------------------------------- |
+| `pnpm lint`        | ESLint + all custom rules          |
 | `pnpm lint:eslint` | ESLint only                        |
-| `pnpm lint:seo` | Custom rules in the `seo` category    |
-| `pnpm lint:ui`  | Custom rules in the `ui` category     |
+| `pnpm lint:seo`    | Custom rules in the `seo` category |
+| `pnpm lint:ui`     | Custom rules in the `ui` category  |
 
 `pnpm lint` is what CI runs. It requires a build first because some rules inspect build output.
 
@@ -51,12 +51,12 @@ The `--category` flag filters to a specific category. Without it, all rules run.
 
 ```ts
 interface LintRule {
-  name: string;
-  description: string;
-  category: string;
-  severity: 'error' | 'warn';
-  files: string;              // glob pattern relative to project root
-  check(files: FileEntry[]): Violation[];
+	name: string;
+	description: string;
+	category: string;
+	severity: 'error' | 'warn';
+	files: string; // glob pattern relative to project root
+	check(files: FileEntry[]): Violation[];
 }
 ```
 

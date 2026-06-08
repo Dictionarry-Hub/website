@@ -32,19 +32,29 @@
 </script>
 
 {#if href}
-	<a {href} class="{pillClasses} text-text-soft hover:bg-surface-hover transition-colors">
+	<a
+		{href}
+		class="{pillClasses} text-text-soft transition-colors hover:bg-surface-hover">
 		{#if avatar}
-			<img src={avatar} alt={name} class="rounded-pill object-cover {avatarSizes[size!]}" />
+			<img
+				src={avatar}
+				alt={name}
+				class="rounded-pill object-cover {avatarSizes[size!]}" />
 		{:else}
 			<User size={iconSizes[size!]} />
 		{/if}
 		<span class="font-medium {textSizes[size!]}">{name}</span>
-		<ExternalLink size={iconSizes[size!]} class="text-text-muted" />
+		<ExternalLink
+			size={iconSizes[size!]}
+			class="text-text-muted" />
 	</a>
 {:else}
 	<span class="{pillClasses} text-text-soft">
 		{#if avatar}
-			<img src={avatar} alt={name} class="rounded-pill object-cover {avatarSizes[size!]}" />
+			<img
+				src={avatar}
+				alt={name}
+				class="rounded-pill object-cover {avatarSizes[size!]}" />
 		{:else}
 			<User size={iconSizes[size!]} />
 		{/if}

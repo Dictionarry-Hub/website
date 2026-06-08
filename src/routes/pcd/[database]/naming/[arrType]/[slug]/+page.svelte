@@ -46,9 +46,7 @@
 			}))
 	);
 
-	const multiEpisodeStyle = $derived(
-		isSonarr ? naming.formats.multiEpisodeStyle : null
-	);
+	const multiEpisodeStyle = $derived(isSonarr ? naming.formats.multiEpisodeStyle : null);
 
 	interface SettingRow {
 		id: string;
@@ -89,23 +87,29 @@
 
 <PageHeader title={naming.name} />
 
-<h2 id="configuration" class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+<h2
+	id="configuration"
+	class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
 	Configuration
 </h2>
 <div class="mt-4">
-	<AdaptiveList data={rows} {columns}>
+	<AdaptiveList
+		data={rows}
+		{columns}>
 		{#snippet cell(row, col)}
 			{#if col.key === 'setting'}
 				<span class="font-medium">{row.setting}</span>
 			{:else if col.key === 'value'}
 				{#if row.id === 'multi-episode'}
-					<Badge color="info" variant="subtle" pill>{row.value}</Badge>
+					<Badge
+						color="info"
+						variant="subtle"
+						pill>{row.value}</Badge>
 				{:else}
 					<Badge
 						color={row.value === 'Yes' ? 'success' : 'neutral'}
 						variant="subtle"
-						pill
-					>
+						pill>
 						{row.value}
 					</Badge>
 				{/if}
@@ -116,14 +120,19 @@
 				<div class="space-y-2">
 					<div class="flex items-center justify-between">
 						<span class="text-sm text-text-muted">Colon Replacement</span>
-						<Badge color="info" variant="subtle" size="sm" pill>
-							{COLON_REPLACEMENT_LABELS[naming.colonReplacementFormat] ?? naming.colonReplacementFormat}
+						<Badge
+							color="info"
+							variant="subtle"
+							size="sm"
+							pill>
+							{COLON_REPLACEMENT_LABELS[naming.colonReplacementFormat] ??
+								naming.colonReplacementFormat}
 						</Badge>
 					</div>
 					{#if naming.colonReplacementFormat === 'custom' && naming.customColonReplacementFormat}
 						<div class="flex items-center justify-between">
 							<span class="text-sm text-text-muted">Custom Replacement</span>
-							<span class="text-sm font-medium font-mono">
+							<span class="font-mono text-sm font-medium">
 								{naming.customColonReplacementFormat}
 							</span>
 						</div>
@@ -135,13 +144,15 @@
 			<p class="text-sm font-medium">{row.setting}</p>
 			<div class="mt-2">
 				{#if row.id === 'multi-episode'}
-					<Badge color="info" variant="subtle" pill>{row.value}</Badge>
+					<Badge
+						color="info"
+						variant="subtle"
+						pill>{row.value}</Badge>
 				{:else}
 					<Badge
 						color={row.value === 'Yes' ? 'success' : 'neutral'}
 						variant="subtle"
-						pill
-					>
+						pill>
 						{row.value}
 					</Badge>
 				{/if}
@@ -149,14 +160,19 @@
 					<div class="mt-3 space-y-1">
 						<div class="flex items-center justify-between text-sm">
 							<span class="text-text-muted">Colon Replacement</span>
-							<Badge color="info" variant="subtle" size="sm" pill>
-								{COLON_REPLACEMENT_LABELS[naming.colonReplacementFormat] ?? naming.colonReplacementFormat}
+							<Badge
+								color="info"
+								variant="subtle"
+								size="sm"
+								pill>
+								{COLON_REPLACEMENT_LABELS[naming.colonReplacementFormat] ??
+									naming.colonReplacementFormat}
 							</Badge>
 						</div>
 						{#if naming.colonReplacementFormat === 'custom' && naming.customColonReplacementFormat}
 							<div class="flex items-center justify-between text-sm">
 								<span class="text-text-muted">Custom Replacement</span>
-								<span class="font-medium font-mono">
+								<span class="font-mono font-medium">
 									{naming.customColonReplacementFormat}
 								</span>
 							</div>
@@ -168,14 +184,17 @@
 	</AdaptiveList>
 </div>
 
-<h2 id="naming-scheme" class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+<h2
+	id="naming-scheme"
+	class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
 	Naming Scheme
 </h2>
 <div class="mt-4 space-y-4">
 	{#each formatEntries as entry}
 		<div>
 			<p class="mb-2 text-sm font-medium text-text-muted">{entry.label}</p>
-			<div class="overflow-x-auto rounded-card border border-border bg-surface-muted px-4 py-3">
+			<div
+				class="overflow-x-auto rounded-card border border-border bg-surface-muted px-4 py-3">
 				<code class="text-sm break-all">{entry.value}</code>
 			</div>
 		</div>

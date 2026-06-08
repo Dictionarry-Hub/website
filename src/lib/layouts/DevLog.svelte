@@ -35,20 +35,29 @@
 	});
 </script>
 
-<SEO {title} description={blurb} />
+<SEO
+	{title}
+	description={blurb} />
 
 <div class="relative">
 	<article>
-		<PageHeader {title} {tags}>
+		<PageHeader
+			{title}
+			{tags}>
 			{#snippet meta()}
 				{#each authors as a}
-					<Author name={a.name} avatar={a.avatar} href={a.href} />
+					<Author
+						name={a.name}
+						avatar={a.avatar}
+						href={a.href} />
 				{/each}
 				{#if authors.length > 0 && created}
 					<span class="text-text-muted">·</span>
 				{/if}
 				{#if created}
-					<DateTime date={created} class="text-sm" />
+					<DateTime
+						date={created}
+						class="text-sm" />
 				{/if}
 			{/snippet}
 		</PageHeader>

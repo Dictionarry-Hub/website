@@ -56,7 +56,9 @@
 
 <svelte:element
 	this={as}
-	class="flex flex-col overflow-hidden {variantClasses[variant!]} {roundedClasses[rounded!]} {className ?? ''}"
+	class="flex flex-col overflow-hidden {variantClasses[variant!]} {roundedClasses[
+		rounded!
+	]} {className ?? ''}"
 	{...rest}>
 	{#if header}
 		<div class={paddingClasses[padding!]}>

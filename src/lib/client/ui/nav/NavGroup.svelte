@@ -12,9 +12,10 @@
 		children?: Snippet;
 	}
 
-	let { label, href, icon, badge = 0, open: initialOpen = true, children }: Props = $props();
+	let props = $props();
+	const { label, href, icon, badge = 0, children } = props;
 
-	let isOpen = $state(initialOpen);
+	let isOpen = $state(props.open ?? true);
 
 	const hasItems = $derived(!!children);
 
@@ -35,20 +36,18 @@
 	<!-- Split header -->
 	<div
 		class="group/header flex items-center rounded-control border transition-colors
-			{isActive
-			? 'bg-surface border-border shadow-control'
-			: 'border-transparent'}">
+			{isActive ? 'border-border bg-surface shadow-control' : 'border-transparent'}">
 		<!-- Link side -->
 		<a
 			{href}
 			class="flex flex-1 items-center gap-2 py-1.5 pr-2 pl-3 text-sm font-semibold transition-colors
 				{hasItems ? 'rounded-l-control' : 'rounded-control'}
-				{isActive
-				? 'text-text'
-				: 'text-text-soft group-hover/header:bg-surface-hover'}">
+				{isActive ? 'text-text' : 'text-text-soft group-hover/header:bg-surface-hover'}">
 			{#if icon}
 				{@const Icon = icon}
-				<Icon size={16} class="shrink-0" />
+				<Icon
+					size={16}
+					class="shrink-0" />
 			{/if}
 			<span class="flex-1">{label}</span>
 			{#if badge > 0}
@@ -86,7 +85,9 @@
 
 	<!-- Children with vertical connector -->
 	{#if isOpen && hasItems && children}
-		<div class="mt-2 grid grid-cols-[auto_1fr]" transition:slide={{ duration: 200 }}>
+		<div
+			class="mt-2 grid grid-cols-[auto_1fr]"
+			transition:slide={{ duration: 200 }}>
 			<!-- Vertical line -->
 			<div class="flex justify-center px-5">
 				<div class="w-0.5 rounded-full bg-border-muted"></div>

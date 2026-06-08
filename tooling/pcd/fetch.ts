@@ -14,7 +14,9 @@ export function fetchRepo(repo: string, ref: string): string {
 	// Tarball extracts into a single directory named {owner}-{repo}-{hash}
 	const entries = readdirSync(tmp);
 	if (entries.length !== 1) {
-		throw new Error(`Expected single directory in tarball for ${repo}@${ref}, got ${entries.length}`);
+		throw new Error(
+			`Expected single directory in tarball for ${repo}@${ref}, got ${entries.length}`
+		);
 	}
 
 	return join(tmp, entries[0]);
