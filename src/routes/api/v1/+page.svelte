@@ -22,6 +22,7 @@
 <PageHeader title="API Reference">
 	{#snippet actions()}
 		<Badge
+			variant="outline"
 			color="accent"
 			size="md">v{spec.version}</Badge>
 	{/snippet}
