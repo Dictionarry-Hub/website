@@ -4,8 +4,7 @@
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
-	import Card from '$lib/client/ui/card/Card.svelte';
-	import EndpointSection from './EndpointSection.svelte';
+import EndpointSection from './EndpointSection.svelte';
 	import type { Column } from '$lib/client/ui/table/types';
 	import type { AuthInfo } from '$lib/types/api';
 
