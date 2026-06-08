@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import CodeBlock from '$lib/client/ui/markdown/code/CodeBlock.svelte';
-	import Table from '$lib/client/ui/table/Table.svelte';
+	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import type { Column } from '$lib/client/ui/table/types';
 	import type { ApiEndpoint, ApiParameter, HttpMethod } from '$lib/types/api';
 	import SiCurl from '@icons-pack/svelte-simple-icons/icons/SiCurl';
@@ -110,7 +110,7 @@
 			<h4 class="mb-2 text-xs font-semibold tracking-wide text-text-muted uppercase">
 				Parameters
 			</h4>
-			<Table
+			<AdaptiveList
 				data={endpoint.parameters}
 				columns={paramColumns}>
 				{#snippet cell(row, col)}
@@ -134,7 +134,17 @@
 						<span class="text-text-soft">{row[col.key]}</span>
 					{/if}
 				{/snippet}
-			</Table>
+				{#snippet card(row)}
+					<div class="flex items-center gap-2">
+						<span class="font-mono text-xs font-medium">{row.name}</span>
+						<span class="font-mono text-xs text-text-soft">{row.type}</span>
+						{#if row.required}
+							<Badge color="success" size="sm">required</Badge>
+						{/if}
+					</div>
+					<p class="mt-1 text-sm text-text-soft">{row.description}</p>
+				{/snippet}
+			</AdaptiveList>
 		</div>
 	{/if}
 
