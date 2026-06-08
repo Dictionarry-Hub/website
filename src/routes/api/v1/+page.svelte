@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Callout from '$lib/client/ui/callout/Callout.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
@@ -31,6 +32,10 @@
 			size="md">v{spec.version}</Badge>
 	{/snippet}
 </PageHeader>
+
+<Callout type="info">
+	API v1 is still in progress and subject to change. It is not complete. Use at your own risk.
+</Callout>
 
 <!-- Description -->
 {#if spec.description}
