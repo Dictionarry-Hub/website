@@ -38,6 +38,11 @@
 		overflow-y: auto;
 	}
 
+	article :global(h2),
+	article :global(h3) {
+		scroll-margin-top: 6rem;
+	}
+
 	@media (min-width: 1280px) {
 		.toc-float {
 			display: block;
