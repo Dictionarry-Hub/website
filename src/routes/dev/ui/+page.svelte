@@ -71,7 +71,7 @@
 	"Sizes" shows all sizes at default variant (default).
 -->
 
-<div class="mx-auto max-w-3xl space-y-8 px-6 py-10">
+<div class="space-y-8">
 	<header>
 		<h1 class="text-2xl font-bold">UI Showcase</h1>
 	</header>

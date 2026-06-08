@@ -206,11 +206,25 @@
 		{#if import.meta.env.DEV}
 			<NavGroup label="Dev" href="/dev" icon={Wrench}>
 				<NavItem label="UI Showcase" href="/dev/ui" />
+				<NavItem label="Error 404" href="/dev/errors/404" />
+				<NavItem label="Error 403" href="/dev/errors/403" />
+				<NavItem label="Error 500" href="/dev/errors/500" />
 			</NavGroup>
 		{/if}
 	</div>
 </div>
 
 <main class="min-h-screen bg-bg pl-72 font-sans text-text">
-	{@render children()}
+	<div id="top" class="content-area mx-auto max-w-3xl px-6 py-10">
+		{@render children()}
+	</div>
 </main>
+
+<style>
+	@media (min-width: 1280px) {
+		.content-area {
+			margin-left: calc(50% - 24rem - 9rem);
+			margin-right: auto;
+		}
+	}
+</style>

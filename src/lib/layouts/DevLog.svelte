@@ -37,7 +37,7 @@
 
 <SEO {title} description={blurb} />
 
-<div id="top" class="content-wrapper relative mx-auto max-w-prose px-6 py-10">
+<div class="relative">
 	<article>
 		<PageHeader {title} {tags}>
 			{#snippet meta()}
@@ -81,11 +81,6 @@
 	}
 
 	@media (min-width: 1280px) {
-		.content-wrapper {
-			margin-left: calc(50% - 32.5ch - 9rem);
-			margin-right: auto;
-		}
-
 		.toc-float {
 			display: block;
 		}
