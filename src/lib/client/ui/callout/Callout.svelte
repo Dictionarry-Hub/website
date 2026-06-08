@@ -1,22 +1,25 @@
 <script lang="ts">
-	import { Info, TriangleAlert, OctagonAlert, Lightbulb, StickyNote } from '@lucide/svelte';
+	import { Info, TriangleAlert, OctagonAlert, Lightbulb, StickyNote, Quote } from '@lucide/svelte';
 	import type { Component, Snippet } from 'svelte';
 
-	type CalloutType = 'info' | 'warning' | 'danger' | 'tip' | 'note';
+	type CalloutType = 'info' | 'warning' | 'danger' | 'tip' | 'note' | 'quote';
 
 	interface Props {
 		type?: CalloutType;
+		cite?: string;
+		year?: number;
 		children: Snippet;
 	}
 
-	let { type = 'info', children }: Props = $props();
+	let { type = 'info', cite, year, children }: Props = $props();
 
 	const config: Record<CalloutType, { icon: Component<{ size?: number; class?: string }>; label: string }> = {
 		info: { icon: Info, label: 'Info' },
 		warning: { icon: TriangleAlert, label: 'Warning' },
 		danger: { icon: OctagonAlert, label: 'Danger' },
 		tip: { icon: Lightbulb, label: 'Tip' },
-		note: { icon: StickyNote, label: 'Note' }
+		note: { icon: StickyNote, label: 'Note' },
+		quote: { icon: Quote, label: 'Quote' }
 	};
 
 	const Icon = $derived(config[type].icon);
@@ -31,6 +34,11 @@
 	<div class="callout-body">
 		{@render children()}
 	</div>
+	{#if cite}
+		<div class="callout-cite">
+			{cite}{#if year}, {year}{/if}
+		</div>
+	{/if}
 </div>
 
 <style>
@@ -98,5 +106,25 @@
 
 	.callout-note .callout-header {
 		color: var(--theme-text);
+	}
+
+	.callout-quote {
+		background: color-mix(in srgb, var(--theme-surface-muted) 50%, transparent);
+		border-color: var(--theme-border);
+	}
+
+	.callout-quote .callout-header {
+		color: var(--theme-text-muted);
+	}
+
+	.callout-quote .callout-body {
+		font-style: italic;
+	}
+
+	.callout-cite {
+		margin-top: 0.5rem;
+		font-size: 0.8125rem;
+		font-weight: 500;
+		color: var(--theme-text-muted);
 	}
 </style>
