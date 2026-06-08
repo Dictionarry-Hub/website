@@ -40,14 +40,14 @@
 		}))
 	);
 
+	const responsesWithBody = $derived(endpoint.responses.filter((r) => r.example));
+
 	const responseItems = $derived(
-		endpoint.responses
-			.filter((r) => r.example)
-			.map((r) => ({
-				title: `${r.status} ${r.description}`,
-				code: r.example!,
-				language: 'json'
-			}))
+		responsesWithBody.map((r) => ({
+			title: r.status,
+			code: r.example!,
+			language: 'json'
+		}))
 	);
 
 	const responsesWithoutBody = $derived(endpoint.responses.filter((r) => !r.example));
@@ -160,7 +160,11 @@
 			<h4 class="mb-2 text-xs font-semibold tracking-wide text-text-muted uppercase">
 				Responses
 			</h4>
-			<CodeBlock items={responseItems} />
+			<CodeBlock items={responseItems}>
+				{#snippet footer(activeIndex)}
+					{responsesWithBody[activeIndex].description}
+				{/snippet}
+			</CodeBlock>
 		</div>
 	{/if}
 

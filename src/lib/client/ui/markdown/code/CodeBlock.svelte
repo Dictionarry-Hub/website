@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Component } from 'svelte';
+	import type { Component, Snippet } from 'svelte';
 	import { Copy, Check } from '@lucide/svelte';
 	import Button from '$lib/client/ui/button/Button.svelte';
 	import { highlight } from './highlight.js';
@@ -14,9 +14,10 @@
 	interface Props {
 		items: CodeItem[];
 		overflow?: 'scroll' | 'wrap';
+		footer?: Snippet<[number]>;
 	}
 
-	let { items, overflow = 'scroll' }: Props = $props();
+	let { items, overflow = 'scroll', footer }: Props = $props();
 
 	let activeTab = $state(0);
 	let copied = $state(false);
@@ -96,6 +97,12 @@
 			</div>
 		{/each}
 	</div>
+
+	{#if footer}
+		<div class="code-footer">
+			{@render footer(activeTab)}
+		</div>
+	{/if}
 </div>
 
 <style>
@@ -162,6 +169,13 @@
 		font-size: 0.75rem;
 		font-weight: 500;
 		color: var(--theme-text-muted);
+	}
+
+	.code-footer {
+		border-top: 1px solid var(--theme-border-muted);
+		padding: 0.5rem 0.75rem;
+		font-size: 0.8125rem;
+		color: var(--theme-text-soft);
 	}
 
 	.code-body {
