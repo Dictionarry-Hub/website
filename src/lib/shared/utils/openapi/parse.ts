@@ -118,7 +118,7 @@ export async function parseOpenApiSpec(raw: RawSpec): Promise<ApiSpec> {
 
 	return {
 		title: raw.info.title,
-		version: raw.info.version,
+		version: raw.info.version.split('.')[0],
 		description,
 		auth,
 		tags
