@@ -60,9 +60,7 @@
 	);
 </script>
 
-<div
-	id={endpoint.operationId}
-	class="mb-8 border-b border-border-subtle pb-8 last:mb-0 last:border-b-0 last:pb-0">
+<div class="mb-8 border-b border-border-subtle pb-8 last:mb-0 last:border-b-0 last:pb-0">
 	<!-- Header -->
 	<div class="mb-3 flex items-center gap-3">
 		<Badge
@@ -70,7 +68,12 @@
 			size="sm">
 			{endpoint.method}
 		</Badge>
-		<code class="text-sm font-semibold">{endpoint.path}</code>
+		<h3
+			id={endpoint.operationId}
+			data-method={endpoint.method}
+			class="text-sm font-semibold">
+			<code>{endpoint.path}</code>
+		</h3>
 		<span class="text-sm text-text-soft">{endpoint.summary}</span>
 	</div>
 

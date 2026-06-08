@@ -10,6 +10,7 @@
 		id: string;
 		text: string;
 		level: number;
+		method?: string;
 	}
 
 	let { title }: Props = $props();
@@ -32,7 +33,8 @@
 			.map((el) => ({
 				id: el.id,
 				text: el.textContent?.trim() ?? '',
-				level: parseInt(el.tagName[1])
+				level: parseInt(el.tagName[1]),
+				method: (el as HTMLElement).dataset.method
 			}));
 
 		if (parsed.length === 0) return;
@@ -87,6 +89,10 @@
 						class="toc-link"
 						class:active={activeId === heading.id}
 						class:nested={heading.level > minLevel}>
+						{#if heading.method}
+							<span class="toc-method toc-method-{heading.method.toLowerCase()}"
+								>{heading.method}</span>
+						{/if}
 						{sanitize(heading.text)}
 					</a>
 				{/each}
@@ -161,5 +167,33 @@
 		font-weight: 400;
 		font-size: 0.75rem;
 		padding-left: 1.25rem;
+	}
+
+	.toc-method {
+		font-size: 0.625rem;
+		font-weight: 700;
+		font-family: var(--theme-font-mono);
+		margin-right: 0.375rem;
+		flex-shrink: 0;
+	}
+
+	.toc-method-get {
+		color: #22c55e;
+	}
+
+	.toc-method-post {
+		color: #3b82f6;
+	}
+
+	.toc-method-put {
+		color: #06b6d4;
+	}
+
+	.toc-method-patch {
+		color: #f59e0b;
+	}
+
+	.toc-method-delete {
+		color: #ef4444;
 	}
 </style>

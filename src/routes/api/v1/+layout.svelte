@@ -32,8 +32,10 @@
 	}
 
 	.toc-sticky {
-		position: sticky;
+		position: fixed;
 		top: 2rem;
+		max-height: calc(100vh - 4rem);
+		overflow-y: auto;
 	}
 
 	@media (min-width: 1280px) {
