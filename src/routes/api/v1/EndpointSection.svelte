@@ -99,10 +99,9 @@
 	</div>
 
 	<!-- Description -->
-	{#if endpoint.description}
-		<div class="prose mb-4 text-sm text-text-soft">
-			{endpoint.description}
-		</div>
+	{#if endpoint.descriptionHtml}
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -- parsed markdown from OpenAPI spec -->
+		<div class="prose mb-4 text-sm text-text-soft">{@html endpoint.descriptionHtml}</div>
 	{/if}
 
 	<!-- Parameters -->
@@ -179,7 +178,8 @@
 					{/if}
 				{/snippet}
 				{#snippet footer(activeIndex)}
-					{responsesWithBody[activeIndex].description}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -- parsed markdown from OpenAPI spec -->
+					{@html responsesWithBody[activeIndex].descriptionHtml}
 				{/snippet}
 			</CodeBlock>
 		</div>

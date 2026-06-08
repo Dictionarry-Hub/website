@@ -87,7 +87,7 @@ export async function parseOpenApiSpec(raw: RawSpec): Promise<ApiSpec> {
 	const baseUrl = raw.servers?.[0]?.url ?? '/api/v1';
 
 	const auth = parseAuth(raw.components?.securitySchemes);
-	const tagMap = buildTagMap(raw);
+	const tagMap = await buildTagMap(raw);
 
 	// Generate snippets for each endpoint
 	for (const tag of tagMap.values()) {
@@ -137,7 +137,7 @@ function parseAuth(schemes?: Record<string, RawSecurityScheme>): AuthInfo[] {
 	}));
 }
 
-function buildTagMap(raw: RawSpec): Map<string, ApiTag> {
+async function buildTagMap(raw: RawSpec): Promise<Map<string, ApiTag>> {
 	const tagDescriptions = new Map<string, string>();
 	for (const t of raw.tags ?? []) {
 		tagDescriptions.set(t.name, t.description ?? '');
@@ -162,7 +162,7 @@ function buildTagMap(raw: RawSpec): Map<string, ApiTag> {
 				});
 			}
 
-			const endpoint = parseEndpoint(path, method, operation, pathParams);
+			const endpoint = await parseEndpoint(path, method, operation, pathParams);
 			tagMap.get(tagName)!.endpoints.push(endpoint);
 		}
 	}
@@ -170,12 +170,12 @@ function buildTagMap(raw: RawSpec): Map<string, ApiTag> {
 	return tagMap;
 }
 
-function parseEndpoint(
+async function parseEndpoint(
 	path: string,
 	method: string,
 	op: RawOperation,
 	pathParams: RawParameter[]
-): ApiEndpoint {
+): Promise<ApiEndpoint> {
 	const allParams = [...pathParams, ...(op.parameters ?? [])];
 
 	return {
@@ -184,9 +184,10 @@ function parseEndpoint(
 		path,
 		summary: op.summary ?? '',
 		description: op.description ?? null,
+		descriptionHtml: op.description ? await marked.parse(op.description) : null,
 		parameters: allParams.map(parseParameter),
 		requestBody: parseRequestBody(op.requestBody),
-		responses: parseResponses(op.responses),
+		responses: await parseResponses(op.responses),
 		snippets: []
 	};
 }
@@ -223,30 +224,35 @@ function parseRequestBody(body?: RawOperation['requestBody']): ApiRequestBody | 
 	};
 }
 
-function parseResponses(responses?: Record<string, RawResponse>): ApiResponse[] {
+async function parseResponses(responses?: Record<string, RawResponse>): Promise<ApiResponse[]> {
 	if (!responses) return [];
 
-	return Object.entries(responses).map(([status, resp]) => {
-		let example: string | null = null;
-		let schema: string | null = null;
+	return Promise.all(
+		Object.entries(responses).map(async ([status, resp]) => {
+			let example: string | null = null;
+			let schema: string | null = null;
 
-		if (resp.content) {
-			const [, media] = Object.entries(resp.content)[0] ?? [];
-			if (media?.schema) {
-				schema = JSON.stringify(media.schema, null, 2);
+			if (resp.content) {
+				const [, media] = Object.entries(resp.content)[0] ?? [];
+				if (media?.schema) {
+					schema = JSON.stringify(media.schema, null, 2);
+				}
+				if (media?.example) {
+					example = JSON.stringify(media.example, null, 2);
+				} else if (media?.schema) {
+					example = JSON.stringify(generateExample(media.schema), null, 2);
+				}
 			}
-			if (media?.example) {
-				example = JSON.stringify(media.example, null, 2);
-			} else if (media?.schema) {
-				example = JSON.stringify(generateExample(media.schema), null, 2);
-			}
-		}
 
-		return {
-			status,
-			description: resp.description ?? '',
-			example,
-			schema
-		};
-	});
+			const description = resp.description ?? '';
+
+			return {
+				status,
+				description,
+				descriptionHtml: description ? await marked.parse(description) : '',
+				example,
+				schema
+			};
+		})
+	);
 }

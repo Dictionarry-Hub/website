@@ -32,6 +32,7 @@ export interface ApiEndpoint {
 	path: string;
 	summary: string;
 	description: string | null;
+	descriptionHtml: string | null;
 	parameters: ApiParameter[];
 	requestBody: ApiRequestBody | null;
 	responses: ApiResponse[];
@@ -56,6 +57,7 @@ export interface ApiRequestBody {
 export interface ApiResponse {
 	status: string;
 	description: string;
+	descriptionHtml: string;
 	example: string | null;
 	schema: string | null;
 }
