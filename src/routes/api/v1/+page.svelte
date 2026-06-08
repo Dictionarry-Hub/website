@@ -51,7 +51,9 @@
 			<code>X-Api-Key</code> header or a session cookie. API keys are for programmatic access
 			and restricted to <code>/api/</code> paths; session cookies are set after browser login.
 			Authenticated users never see raw secrets. Sensitive values are stripped from all responses
-			and only accessible with filesystem access to the host.
+			and only accessible with filesystem access to the host. The only exception is the health
+			endpoint, which is public and requires no authentication. It is intentionally barebones so
+			uptime monitors can poll it without credentials.
 		</p>
 		<AdaptiveList
 			data={spec.auth}
