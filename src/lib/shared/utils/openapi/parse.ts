@@ -228,9 +228,13 @@ function parseResponses(responses?: Record<string, RawResponse>): ApiResponse[] 
 
 	return Object.entries(responses).map(([status, resp]) => {
 		let example: string | null = null;
+		let schema: string | null = null;
 
 		if (resp.content) {
 			const [, media] = Object.entries(resp.content)[0] ?? [];
+			if (media?.schema) {
+				schema = JSON.stringify(media.schema, null, 2);
+			}
 			if (media?.example) {
 				example = JSON.stringify(media.example, null, 2);
 			} else if (media?.schema) {
@@ -241,7 +245,8 @@ function parseResponses(responses?: Record<string, RawResponse>): ApiResponse[] 
 		return {
 			status,
 			description: resp.description ?? '',
-			example
+			example,
+			schema
 		};
 	});
 }

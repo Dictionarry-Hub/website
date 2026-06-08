@@ -57,6 +57,7 @@ export interface ApiResponse {
 	status: string;
 	description: string;
 	example: string | null;
+	schema: string | null;
 }
 
 export interface CodeSnippet {

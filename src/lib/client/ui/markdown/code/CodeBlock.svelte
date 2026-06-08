@@ -15,9 +15,10 @@
 		items: CodeItem[];
 		overflow?: 'scroll' | 'wrap';
 		footer?: Snippet<[number]>;
+		headerActions?: Snippet;
 	}
 
-	let { items, overflow = 'scroll', footer }: Props = $props();
+	let { items, overflow = 'scroll', footer, headerActions }: Props = $props();
 
 	let activeTab = $state(0);
 	let copied = $state(false);
@@ -56,14 +57,19 @@
 					</button>
 				{/each}
 			</div>
-			<Button
-				type="button"
-				variant="default"
-				size="sm"
-				icon={copied ? Check : Copy}
-				iconClass={copied ? 'text-success-icon' : ''}
-				onclick={copyToClipboard}
-				aria-label="Copy code" />
+			<div class="code-actions">
+				{#if headerActions}
+					{@render headerActions()}
+				{/if}
+				<Button
+					type="button"
+					variant="default"
+					size="sm"
+					icon={copied ? Check : Copy}
+					iconClass={copied ? 'text-success-icon' : ''}
+					onclick={copyToClipboard}
+					aria-label="Copy code" />
+			</div>
 		</div>
 	{:else}
 		<div class="code-header">
@@ -74,14 +80,19 @@
 				{/if}
 				<span>{items[0].title}</span>
 			</div>
-			<Button
-				type="button"
-				variant="default"
-				size="sm"
-				icon={copied ? Check : Copy}
-				iconClass={copied ? 'text-success-icon' : ''}
-				onclick={copyToClipboard}
-				aria-label="Copy code" />
+			<div class="code-actions">
+				{#if headerActions}
+					{@render headerActions()}
+				{/if}
+				<Button
+					type="button"
+					variant="default"
+					size="sm"
+					icon={copied ? Check : Copy}
+					iconClass={copied ? 'text-success-icon' : ''}
+					onclick={copyToClipboard}
+					aria-label="Copy code" />
+			</div>
 		</div>
 	{/if}
 
@@ -169,6 +180,12 @@
 		font-size: 0.75rem;
 		font-weight: 500;
 		color: var(--theme-text-muted);
+	}
+
+	.code-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
 	}
 
 	.code-footer {

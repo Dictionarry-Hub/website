@@ -8,6 +8,8 @@
 	import SiPython from '@icons-pack/svelte-simple-icons/icons/SiPython';
 	import SiTypescript from '@icons-pack/svelte-simple-icons/icons/SiTypescript';
 	import SiDotnet from '@icons-pack/svelte-simple-icons/icons/SiDotnet';
+	import { Braces } from '@lucide/svelte';
+	import Button from '$lib/client/ui/button/Button.svelte';
 	import type { Component } from 'svelte';
 
 	interface Props {
@@ -41,11 +43,14 @@
 	);
 
 	const responsesWithBody = $derived(endpoint.responses.filter((r) => r.example));
+	let showSchema = $state(false);
+
+	const hasSchemas = $derived(responsesWithBody.some((r) => r.schema));
 
 	const responseItems = $derived(
 		responsesWithBody.map((r) => ({
 			title: r.status,
-			code: r.example!,
+			code: showSchema && r.schema ? r.schema : r.example!,
 			language: 'json'
 		}))
 	);
@@ -161,6 +166,18 @@
 				Responses
 			</h4>
 			<CodeBlock items={responseItems}>
+				{#snippet headerActions()}
+					{#if hasSchemas}
+						<Button
+							type="button"
+							variant={showSchema ? 'accent' : 'default'}
+							size="sm"
+							icon={Braces}
+							onclick={() => (showSchema = !showSchema)}>
+							{showSchema ? 'Hide Schema' : 'Show Schema'}
+						</Button>
+					{/if}
+				{/snippet}
 				{#snippet footer(activeIndex)}
 					{responsesWithBody[activeIndex].description}
 				{/snippet}
