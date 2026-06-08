@@ -18,7 +18,8 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"lighthouse": "lhci autorun",
-		"compile:pcd": "tsx tooling/pcd/index.ts"
+		"compile:pcd": "tsx tooling/pcd/index.ts",
+		"compile:api": "tsx tooling/api/index.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

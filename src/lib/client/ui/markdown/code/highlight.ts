@@ -12,6 +12,7 @@ import markdown from 'shiki/langs/markdown.mjs';
 import jsx from 'shiki/langs/jsx.mjs';
 import tsx from 'shiki/langs/tsx.mjs';
 import html from 'shiki/langs/html.mjs';
+import csharp from 'shiki/langs/csharp.mjs';
 
 const theme = createCssVariablesTheme({
 	name: 'css-variables',
@@ -21,7 +22,20 @@ const theme = createCssVariablesTheme({
 
 const highlighter = createHighlighterCoreSync({
 	themes: [theme],
-	langs: [javascript, typescript, json, yaml, shellscript, python, sql, markdown, jsx, tsx, html],
+	langs: [
+		javascript,
+		typescript,
+		json,
+		yaml,
+		shellscript,
+		python,
+		sql,
+		markdown,
+		jsx,
+		tsx,
+		html,
+		csharp
+	],
 	engine: createJavaScriptRegexEngine()
 });
 
@@ -38,15 +52,17 @@ export function highlight(code: string, language: string): string {
 /** Map common aliases to Shiki language IDs. */
 function resolveLanguage(lang: string): string {
 	const aliases: Record<string, string> = {
-		js: 'javascript',
-		ts: 'typescript',
-		sh: 'shellscript',
-		bash: 'shellscript',
-		shell: 'shellscript',
-		zsh: 'shellscript',
-		py: 'python',
-		yml: 'yaml',
-		md: 'markdown'
+		'js': 'javascript',
+		'ts': 'typescript',
+		'sh': 'shellscript',
+		'bash': 'shellscript',
+		'shell': 'shellscript',
+		'zsh': 'shellscript',
+		'py': 'python',
+		'yml': 'yaml',
+		'md': 'markdown',
+		'cs': 'csharp',
+		'c#': 'csharp'
 	};
 	return aliases[lang] || lang;
 }

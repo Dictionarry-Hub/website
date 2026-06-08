@@ -28,6 +28,9 @@ vite.config.ts.timestamp-*
 # Generated PCD data
 src/lib/data/pcd/
 
+# Generated API data
+src/lib/data/api/
+
 # AI Stuff
 CLAUDE.md
 AGENTS.md

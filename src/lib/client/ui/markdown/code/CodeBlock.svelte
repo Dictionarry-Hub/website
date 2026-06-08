@@ -92,7 +92,7 @@
 				class="code-panel"
 				class:hidden={index !== activeTab}>
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -- highlighted code from build-time shiki -->
-			{@html html}
+				{@html html}
 			</div>
 		{/each}
 	</div>

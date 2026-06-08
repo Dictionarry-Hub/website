@@ -20,7 +20,8 @@
 		Clock,
 		FileText,
 		Settings,
-		Ruler
+		Ruler,
+		Code
 	} from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
@@ -117,6 +118,11 @@
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
+		<NavGroup
+			label="API Reference"
+			href="/api/v1"
+			icon={Code} />
+
 		{#if currentNav}
 			<NavGroup
 				label="Quality Profiles"

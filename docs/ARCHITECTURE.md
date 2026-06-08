@@ -41,3 +41,4 @@ runtime server.
 
 - [Linting](./tooling/lint.md) - ESLint, custom lint framework, project-specific rules
 - [PCD Pipeline](./tooling/pcd.md) - Build-time PCD compilation, entity extraction, output format
+- [API Pipeline](./tooling/api.md) - Build-time OpenAPI spec fetching for API reference docs

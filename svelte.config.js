@@ -8,10 +8,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	warningFilter: (warning) => {
-		if (warning.code === 'state_referenced_locally') return false;
-		return true;
-	},
 	compilerOptions: {
 		// Force runes mode for the project, except for libraries and mdsvex files.
 		// mdsvex emits `export let` for frontmatter, which is invalid in runes mode.

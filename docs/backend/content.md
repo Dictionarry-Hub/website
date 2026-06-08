@@ -4,7 +4,7 @@ Notes on the site's content layers and how data flows into pages.
 
 ## Content Types
 
-The site has three content layers:
+The site has four content layers:
 
 ### Profilarr Documentation
 
@@ -33,6 +33,18 @@ Seven entity types are browsable:
 | Quality Definitions | `quality-definitions` | Yes          |
 
 Arr-specific entities include the arr type in the URL: `/pcd/[database]/naming/[arrType]/[name]`.
+
+### API Reference
+
+Auto-generated API documentation for the Profilarr REST API. The OpenAPI 3.1.0 spec is fetched at
+build time from the Profilarr repo (`pnpm compile:api`) and rendered as a single page at `/api/v1`.
+
+The page groups endpoints by tag, renders parameters, request/response schemas as JSON examples, and
+generates code snippets in curl, Python, JavaScript/TypeScript, and C#. Adding an endpoint to the
+OpenAPI spec automatically adds it to the docs on next build.
+
+The spec JSON is output to `src/lib/data/api/v1.json` (gitignored). For pipeline implementation
+details, see [tooling/api.md](../tooling/api.md).
 
 ### Dev Logs and Wiki Articles
 

@@ -133,10 +133,7 @@ function checkClassText(
 	}
 }
 
-function collectStringLiterals(
-	node: AnyNode,
-	results: { value: string; start: number }[]
-): void {
+function collectStringLiterals(node: AnyNode, results: { value: string; start: number }[]): void {
 	if (!node) return;
 
 	if (node.type === 'Literal' && typeof node.value === 'string') {
@@ -170,12 +167,7 @@ function hasDisableComment(siblings: AnyNode[], index: number): boolean {
 	return false;
 }
 
-function walk(
-	nodes: AnyNode[],
-	offsets: number[],
-	file: string,
-	violations: Violation[]
-): void {
+function walk(nodes: AnyNode[], offsets: number[], file: string, violations: Violation[]): void {
 	for (let i = 0; i < nodes.length; i++) {
 		const node = nodes[i];
 		if (!node || typeof node.type !== 'string') continue;
@@ -184,7 +176,11 @@ function walk(
 			for (const attr of node.attributes) {
 				if (attr.type !== 'Attribute' || attr.name !== 'class') continue;
 
-				const values = Array.isArray(attr.value) ? attr.value : attr.value ? [attr.value] : [];
+				const values = Array.isArray(attr.value)
+					? attr.value
+					: attr.value
+						? [attr.value]
+						: [];
 				for (const val of values) {
 					if (val.type === 'Text') {
 						checkClassText(val.data, val.start, offsets, file, violations);
