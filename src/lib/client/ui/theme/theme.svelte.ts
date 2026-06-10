@@ -1,5 +1,13 @@
 const STORAGE_KEY = 'theme';
-export const THEMES = ['system', 'light', 'dark', 'retro', 'velouria', 'roswell', 'solaris'] as const;
+export const THEMES = [
+	'system',
+	'light',
+	'dark',
+	'retro',
+	'velouria',
+	'roswell',
+	'solaris'
+] as const;
 export type Theme = (typeof THEMES)[number];
 
 let current = $state<Theme>('system');

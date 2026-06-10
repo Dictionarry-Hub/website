@@ -1,5 +1,12 @@
 <script lang="ts">
-	import { Info, TriangleAlert, OctagonAlert, Lightbulb, StickyNote, Quote } from '@lucide/svelte';
+	import {
+		Info,
+		TriangleAlert,
+		OctagonAlert,
+		Lightbulb,
+		StickyNote,
+		Quote
+	} from '@lucide/svelte';
 	import type { Component, Snippet } from 'svelte';
 
 	type CalloutType = 'info' | 'warning' | 'danger' | 'tip' | 'note' | 'quote';
@@ -13,7 +20,10 @@
 
 	let { type = 'info', cite, year, children }: Props = $props();
 
-	const config: Record<CalloutType, { icon: Component<{ size?: number; class?: string }>; label: string }> = {
+	const config: Record<
+		CalloutType,
+		{ icon: Component<{ size?: number; class?: string }>; label: string }
+	> = {
 		info: { icon: Info, label: 'Info' },
 		warning: { icon: TriangleAlert, label: 'Warning' },
 		danger: { icon: OctagonAlert, label: 'Danger' },
@@ -26,7 +36,9 @@
 	const label = $derived(config[type].label);
 </script>
 
-<div class="callout callout-{type}" role="note">
+<div
+	class="callout callout-{type}"
+	role="note">
 	<div class="callout-header">
 		<Icon size={16} />
 		<span>{label}</span>

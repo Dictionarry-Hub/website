@@ -41,7 +41,13 @@
 			(function () {
 				try {
 					var t = localStorage.getItem('theme');
-					if (t === 'dark' || t === 'retro' || t === 'velouria' || t === 'roswell' || t === 'solaris') {
+					if (
+						t === 'dark' ||
+						t === 'retro' ||
+						t === 'velouria' ||
+						t === 'roswell' ||
+						t === 'solaris'
+					) {
 						document.documentElement.setAttribute('data-theme', t);
 					} else if (!t || t === 'system') {
 						if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

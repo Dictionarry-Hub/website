@@ -139,7 +139,9 @@
 						<span class="font-mono text-xs font-medium">{row.name}</span>
 						<span class="font-mono text-xs text-text-soft">{row.type}</span>
 						{#if row.required}
-							<Badge color="success" size="sm">required</Badge>
+							<Badge
+								color="success"
+								size="sm">required</Badge>
 						{/if}
 					</div>
 					<p class="mt-1 text-sm text-text-soft">{row.description}</p>

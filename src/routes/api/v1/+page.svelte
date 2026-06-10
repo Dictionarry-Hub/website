@@ -4,7 +4,7 @@
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
-import EndpointSection from './EndpointSection.svelte';
+	import EndpointSection from './EndpointSection.svelte';
 	import type { Column } from '$lib/client/ui/table/types';
 	import type { AuthInfo } from '$lib/types/api';
 
@@ -53,11 +53,11 @@ import EndpointSection from './EndpointSection.svelte';
 		<p class="mb-4 text-sm text-text-soft">
 			Profilarr requires authentication on all API endpoints via either an
 			<code>X-Api-Key</code> header or a session cookie. API keys are for programmatic access
-			and restricted to <code>/api/</code> paths; session cookies are set after browser login.
-			Authenticated users never see raw secrets. Sensitive values are stripped from all responses
-			and only accessible with filesystem access to the host. The only exception is the health
-			endpoint, which is public and requires no authentication. It is intentionally barebones so
-			uptime monitors can poll it without credentials.
+			and restricted to <code>/api/</code> paths; session cookies are set after browser login. Authenticated
+			users never see raw secrets. Sensitive values are stripped from all responses and only accessible
+			with filesystem access to the host. The only exception is the health endpoint, which is public
+			and requires no authentication. It is intentionally barebones so uptime monitors can poll
+			it without credentials.
 		</p>
 		<AdaptiveList
 			data={spec.auth}
