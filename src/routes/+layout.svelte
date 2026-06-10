@@ -25,6 +25,8 @@
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
 	import NavGroupSelect from '$lib/client/ui/nav/NavGroupSelect.svelte';
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
+	import SearchPalette from '$lib/client/ui/search/SearchPalette.svelte';
+	import SearchTrigger from '$lib/client/ui/search/SearchTrigger.svelte';
 	import { slugify } from '$lib/shared/utils/slug';
 
 	const themeOptions = THEME_DEFINITIONS.map((d) => ({
@@ -51,6 +53,7 @@
 
 	let themeValue = $state(theme.current);
 	let databaseValue = $state(database.current);
+	let searchOpen = $state(false);
 
 	const currentNav = $derived(data.pcdNav[databaseValue]);
 
@@ -103,7 +106,9 @@
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
-		<!-- Search trigger lands here with the command palette -->
+		<div class="mb-4">
+			<SearchTrigger onclick={() => (searchOpen = true)} />
+		</div>
 
 		{#if data.devLogs.length > 0}
 			<NavGroup
@@ -250,6 +255,10 @@
 		{/if}
 	</div>
 </div>
+
+<SearchPalette
+	bind:open={searchOpen}
+	database={databaseValue} />
 
 <main class="min-h-screen bg-bg pl-72 font-sans text-text">
 	<div

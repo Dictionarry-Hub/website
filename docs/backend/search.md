@@ -243,10 +243,13 @@ benefit.
 
 ## UI
 
-A command palette modal, opened with Ctrl+K, designed mobile-first (a modal escapes the small
-screen in a way inline dropdowns cannot). Requires new UI primitives (modal/dialog, text input,
-keyboard list navigation) that do not exist yet; to be designed per the UI workflow before
-implementation.
+A command palette modal (`SearchPalette` in `src/lib/client/ui/search/`, on the `Dialog`
+primitive), opened with Ctrl+K / Cmd+K or the sidebar trigger. Results render as a flat ranked
+list with type badges, exactly the order the scorer returns: the ranking is the product, and the
+UI does not regroup it. The list shown to the user is the `shown` payload of click events,
+recorded on every activation (`src/lib/client/search/clicks.ts`, a no-op until the Worker
+endpoint exists). Index files lazy-load on first open and are cached per database
+(`src/lib/client/search/load.ts`).
 
 The empty state shows the most popular pages: the global leaderboard sorted by rating (`popular()`
 in the scorer), never per-term tables. Clicks from that state are recorded faithfully with an

@@ -131,6 +131,106 @@ positioning - the consumer controls those via class passthrough.
 	class="fixed top-0 w-full px-4 py-2">Navbar</Card>
 ```
 
+### Kbd
+
+#### `Kbd`
+
+`src/lib/client/ui/kbd/Kbd.svelte`
+
+Semantic keyboard-key hint: renders a `<kbd>` element styled as a keycap in Badge's visual
+language (border, mono font). Used for the search palette's footer hints (`default`) and the
+search trigger's shortcut (`outline`, transparent over the trigger's own surface).
+
+| Prop      | Type                   | Required | Default     |
+| --------- | ---------------------- | -------- | ----------- |
+| `variant` | `'default' \| 'outline'` | no     | `'default'` |
+| `size`    | `'sm' \| 'md'`         | no       | `'sm'`      |
+| `class`   | `string`               | no       |             |
+
+`default` fills with `bg-surface-muted`; `outline` is transparent with just the border, for use
+over a surface that already has its own fill.
+
+```svelte
+<span class="flex items-center gap-1.5"><Kbd>⌘K</Kbd> open</span>
+```
+
+### Dialog
+
+#### `Dialog`
+
+`src/lib/client/ui/dialog/Dialog.svelte`
+
+Minimal modal shell on the native `<dialog>` element: top-layer rendering, focus trap, and Escape
+handling come from the browser. Provides the panel surface (border, radius, shadow, backdrop) and
+nothing else. No chrome, no padding, no width: consumers compose those. Backdrop click closes, and
+the page behind is scroll-locked while open (`showModal()` makes the background inert but not
+scroll-proof).
+
+| Prop        | Type                 | Required | Default |
+| ----------- | -------------------- | -------- | ------- |
+| `open`      | `boolean` (bindable) | no       | `false` |
+| `onclose`   | `() => void`         | no       |         |
+| `ariaLabel` | `string`             | no       |         |
+| `class`     | `string`             | no       | `''`    |
+| `header`    | `Snippet`            | no       |         |
+| `footer`    | `Snippet`            | no       |         |
+
+`header` and `footer` render as fixed regions above and below the content, separated by borders
+(unpadded; the snippet provides its own padding). When height is constrained via `class` (e.g.
+`max-h-[60vh]`), the children region scrolls between them.
+
+Opens with a 150ms fade and rise (via `@starting-style`; browsers without support snap, and
+reduced motion is respected). Close is instant by design.
+
+Default position is centered. Override with margin utilities via `class` (margin longhands beat
+the internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette position.
+
+```svelte
+<script lang="ts">
+	import Dialog from '$lib/client/ui/dialog/Dialog.svelte';
+
+	let open = $state(false);
+</script>
+
+<Dialog
+	bind:open
+	ariaLabel="Confirm deletion"
+	class="w-full max-w-md">
+	<div class="p-6">...</div>
+</Dialog>
+```
+
+### Search
+
+#### `SearchPalette`
+
+`src/lib/client/ui/search/SearchPalette.svelte`
+
+The command palette: a modal search box over the client-side scorer (see
+[backend/search.md](../backend/search.md)). Composes `Dialog` (input row as `header`, keyboard
+hints as `footer`), lazy-loads the core and active-database index files on first open, and renders
+a flat ranked list with type `Badge`s, exactly the order the scorer returns. Empty query shows the
+global most-popular entries. Arrow keys, Enter, and Escape navigate; clicks and Enter record a
+click event (a no-op until the Elo store ships) and `goto` the result. Toggled globally by Ctrl+K /
+Cmd+K via `svelte:window`. Mounted once in the root layout.
+
+| Prop       | Type                 | Required | Default |
+| ---------- | -------------------- | -------- | ------- |
+| `open`     | `boolean` (bindable) | no       | `false` |
+| `database` | `string`             | yes      |         |
+
+#### `SearchTrigger`
+
+`src/lib/client/ui/search/SearchTrigger.svelte`
+
+A button dressed as an input: the sidebar search affordance. Search icon, "Search..." placeholder,
+and a platform-aware kbd hint (⌘K on Apple platforms, Ctrl K elsewhere, resolved client-side).
+
+| Prop      | Type         | Required | Default |
+| --------- | ------------ | -------- | ------- |
+| `onclick` | `() => void` | no       |         |
+| `class`   | `string`     | no       | `''`    |
+
 ### Nav
 
 #### `NavGroup`

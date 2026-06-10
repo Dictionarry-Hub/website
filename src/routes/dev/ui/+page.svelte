@@ -4,6 +4,8 @@
 	import { Save } from '@lucide/svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';
+	import Dialog from '$lib/client/ui/dialog/Dialog.svelte';
+	import Kbd from '$lib/client/ui/kbd/Kbd.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import Dropdown from '$lib/client/ui/dropdown/Dropdown.svelte';
 	import DropdownItem from '$lib/client/ui/dropdown/DropdownItem.svelte';
@@ -40,6 +42,8 @@
 		{ key: 'status', header: 'Status', align: 'center' }
 	];
 
+	let dialogOpen = $state(false);
+	let dialogSlotsOpen = $state(false);
 	let basicValue = $state('');
 	let labelValue = $state('');
 	let iconValue = $state('');
@@ -243,6 +247,102 @@
 						<Button type="button">Right</Button>
 					</Tooltip>
 				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Kbd</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Variants</h3>
+				<div class="flex items-center gap-3">
+					<Kbd>⌘K</Kbd>
+					<Kbd variant="outline">⌘K</Kbd>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Sizes</h3>
+				<div class="flex items-center gap-3">
+					<Kbd size="sm">⌘K</Kbd>
+					<Kbd size="md">⌘K</Kbd>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">In context</h3>
+				<div class="flex items-center gap-4 text-xs text-text-muted">
+					<span class="flex items-center gap-1.5"><Kbd>↑↓</Kbd> navigate</span>
+					<span class="flex items-center gap-1.5"><Kbd>↵</Kbd> open</span>
+					<span class="flex items-center gap-1.5"><Kbd>esc</Kbd> close</span>
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">Dialog</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Modal</h3>
+				<Button
+					type="button"
+					onclick={() => (dialogOpen = true)}>Open dialog</Button>
+				<Dialog
+					bind:open={dialogOpen}
+					ariaLabel="Example dialog"
+					class="w-full max-w-md">
+					<div class="space-y-4 p-6">
+						<h3 class="text-lg font-semibold">A modal dialog</h3>
+						<p class="text-sm text-text-soft">
+							Escape, backdrop click, or the button below all close it. Focus is
+							trapped by the native element, and the page behind cannot scroll.
+						</p>
+						<Button
+							type="button"
+							variant="accent"
+							onclick={() => (dialogOpen = false)}>Close</Button>
+					</div>
+				</Dialog>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Header and footer slots</h3>
+				<Button
+					type="button"
+					onclick={() => (dialogSlotsOpen = true)}>Open with slots</Button>
+				<Dialog
+					bind:open={dialogSlotsOpen}
+					ariaLabel="Dialog with header and footer"
+					class="max-h-[60vh] w-full max-w-md">
+					{#snippet header()}
+						<div class="px-6 py-4">
+							<h3 class="text-lg font-semibold">Fixed header</h3>
+						</div>
+					{/snippet}
+					<div class="space-y-3 p-6">
+						{#each Array.from({ length: 20 }, (_, i) => i + 1) as n (n)}
+							<p class="text-sm text-text-soft">
+								Scrollable content row {n}. Header and footer stay put.
+							</p>
+						{/each}
+					</div>
+					{#snippet footer()}
+						<div class="flex justify-end px-6 py-3">
+							<Button
+								type="button"
+								size="sm"
+								onclick={() => (dialogSlotsOpen = false)}>Close</Button>
+						</div>
+					{/snippet}
+				</Dialog>
 			</div>
 		</div>
 	</Card>
