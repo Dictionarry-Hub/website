@@ -128,6 +128,26 @@ Get a database by ID.
 - **Markdown descriptions, not HTML.** Serializers use the raw `description` fields from the parser,
   never the `descriptionHtml` variants.
 
+## Dev Log Artifacts
+
+The first mdsvex content layer. The source `.svx` files are already markdown, so the serializers at
+`src/lib/shared/utils/llm/devlog.ts` are thin:
+
+| Artifact | URL                   | Content                                                  |
+| -------- | --------------------- | -------------------------------------------------------- |
+| Index    | `/dev-logs.md`        | One line per log (title, date, blurb), newest first      |
+| Dev log  | `/dev-logs/{slug}.md` | Preamble from frontmatter, then the source body verbatim |
+
+The slug is the route directory name, the same derivation the nav uses. The preamble is synthesized
+from frontmatter: title as H1, blurb as blockquote, then a context line with author, date, tags, and
+the web URL. The body ships nearly verbatim: frontmatter and `<script>` blocks are stripped, but
+embedded Svelte components stay intact, the same approach Anthropic's docs use. Components often
+carry real content in their props (e.g. `CodeBlock` code), so stripping them would lose information;
+models read component tags fine.
+
+Index links point at the `.md` artifacts, so the index doubles as a machine-readable directory of
+the dev log layer.
+
 ## Copy Buttons and the AI Menu
 
 On `/api/v1`:
@@ -140,6 +160,10 @@ On `/api/v1`:
 The fuller menu exists only at page level, never repeated per section. With several copy affordances
 on one page, every icon-only button's tooltip and aria-label state the copy scope ("Copy Databases
 as Markdown"), not just the format.
+
+Dev log pages get an `AiMenu` automatically: the `DevLog` layout renders one in its `PageHeader`
+actions, deriving the artifact path from the current pathname plus `.md` and using the default
+prompt.
 
 ### Assistant deep links
 
@@ -182,9 +206,11 @@ and forgetting its markdown mirror. See [tooling/lint.md](../tooling/lint.md) fo
 Planned but not yet built. Each reuses the same three pieces (serializer, artifact route, copy
 component):
 
-- **mdsvex page mirrors.** A `.md` artifact per docs page, dev log, and wiki article. The source is
-  already markdown, so the serializer reduces to stripping frontmatter and Svelte components.
-  Landing it removes the corresponding entries from the rule's `PENDING` list (see Enforcement).
+- **Remaining mdsvex surfaces.** Dev logs are done (see Dev Log Artifacts); the home page and any
+  future docs or wiki sections follow the same pattern. Landing each removes its entries from the
+  rule's `PENDING` list (see Enforcement).
+- **PCD entity mirrors.** The entity browser pages are generated from structured PCD data, so they
+  would get an API-style serializer rather than an mdsvex one. Not yet designed.
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.
   Cheap once artifacts exist, but low priority: log studies show almost no organic consumption, and
   copy affordances are what readers actually use.

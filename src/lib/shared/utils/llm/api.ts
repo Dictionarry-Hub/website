@@ -1,5 +1,6 @@
 import type { ApiSpec, ApiTag, ApiEndpoint } from '$lib/types/api';
 import { SITE_URL } from './site.js';
+import { join, fence } from './md.js';
 
 // Markdown serializers for the API reference artifacts. Formatting decisions
 // live here and nowhere else. Heading depths are fixed across all
@@ -134,21 +135,10 @@ function exampleSection(endpoint: ApiEndpoint): string {
 	return join(['#### Example', fence('bash', curl.code)]);
 }
 
-function fence(language: string, code: string): string {
-	return `\`\`\`${language}\n${code.trim()}\n\`\`\``;
-}
-
 /** Escape a value for use inside a markdown table cell. */
 function cell(value: string): string {
 	return value
 		.replace(/\|/g, '\\|')
 		.replace(/\s*\n\s*/g, ' ')
 		.trim();
-}
-
-function join(blocks: (string | null)[]): string {
-	return blocks
-		.map((block) => block?.trim() ?? '')
-		.filter((block) => block !== '')
-		.join('\n\n');
 }

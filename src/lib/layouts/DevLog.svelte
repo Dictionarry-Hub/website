@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
@@ -44,6 +46,11 @@
 		<PageHeader
 			{title}
 			{tags}>
+			{#snippet actions()}
+				<AiMenu
+					artifactPath="{page.url.pathname}.md"
+					pagePath={page.url.pathname} />
+			{/snippet}
 			{#snippet meta()}
 				{#each authors as a (a.name)}
 					<Author
