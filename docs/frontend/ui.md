@@ -388,7 +388,7 @@ Components for use inside mdsvex content (`.svx` files).
 
 Renders two images and uses CSS to show the correct one based on the active theme. No flash on load
 because the inline script in `app.html` sets `data-theme` before first paint. Dark themes: dark,
-velouria.
+velouria, solaris.
 
 | Prop    | Type     | Required | Default |
 | ------- | -------- | -------- | ------- |
@@ -509,7 +509,7 @@ Example: `--theme-success-bg`, `--theme-warning-text`, `--theme-danger-border`.
 
 ## Theming
 
-Five themes, each defining the complete token set. No base+override layering. Theme files live in
+Seven themes, each defining the complete token set. No base+override layering. Theme files live in
 `src/styles/themes/`.
 
 ```
@@ -518,7 +518,9 @@ src/styles/themes/
 ├── dark.css       # [data-theme="dark"]
 ├── retro.css      # [data-theme="retro"]
 ├── velouria.css   # [data-theme="velouria"]
-└── roswell.css    # [data-theme="roswell"]
+├── roswell.css    # [data-theme="roswell"]
+├── solaris.css    # [data-theme="solaris"]
+└── voyager.css    # [data-theme="voyager"]
 ```
 
 ### Switching

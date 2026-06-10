@@ -33,7 +33,8 @@
 		{ value: 'retro', label: 'Retro', emoji: '📼' },
 		{ value: 'velouria', label: 'Velouria', emoji: '🪐' },
 		{ value: 'roswell', label: 'Roswell', emoji: '👽' },
-		{ value: 'solaris', label: 'Solaris', emoji: '🌊' }
+		{ value: 'solaris', label: 'Solaris', emoji: '🌊' },
+		{ value: 'voyager', label: 'Voyager', emoji: '📀' }
 	];
 
 	const databaseIcons: Record<string, typeof BookOpen> = {

@@ -6,7 +6,8 @@ export const THEMES = [
 	'retro',
 	'velouria',
 	'roswell',
-	'solaris'
+	'solaris',
+	'voyager'
 ] as const;
 export type Theme = (typeof THEMES)[number];
 

@@ -9,6 +9,7 @@ html {
 @import '../styles/themes/velouria.css';
 @import '../styles/themes/roswell.css';
 @import '../styles/themes/solaris.css';
+@import '../styles/themes/voyager.css';
 @import '../styles/prose.css';
 
 @theme inline {

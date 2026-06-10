@@ -1,0 +1,118 @@
+/*
+ * Voyager
+ *
+ * "To the makers of music, all worlds, all times."
+ *
+ * That line is etched by hand into the run-out groove of a
+ * gold-plated copper record bolted to the side of two spacecraft
+ * launched in 1977. The record holds Bach, Chuck Berry, whale
+ * song, greetings in 55 languages, the brainwaves of a woman in
+ * love, and engraved diagrams teaching any nonhuman who finds it
+ * how to play the whole thing back. We wrote documentation for
+ * aliens, and then we threw it into the dark. Both probes are
+ * still transmitting on less power than a refrigerator bulb.
+ *
+ * This is a light theme, because the famous photograph of the
+ * record is not of space. It is the disc gleaming in full
+ * sunlight before it shipped. The background is warm ivory,
+ * archival paper in a clean room. Surfaces are brighter sheets
+ * laid over it, mission documents in a stack. Text is bronze-
+ * brown ink, the color of engraving, not printing. Borders are
+ * groove-fine lines, the etched spirals that carry the music.
+ *
+ * The accent is the record itself: deep engraved gold that
+ * glints where you need to look. Status colors are instrument
+ * readings from a probe that still phones home after five
+ * decades, clinical, warm, and quietly proud of itself.
+ *
+ * Overpass descends from Highway Gothic, the closest a webfont
+ * gets to the signage lineage NASA painted on everything. Space
+ * Mono handles the telemetry, forty-six years of it and counting.
+ */
+
+[data-theme='voyager'] {
+	--theme-font-sans: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+	--theme-font-mono: 'Space Mono', ui-monospace, monospace;
+	--theme-font-accent: 'Overpass', sans-serif;
+
+	--theme-bg: #faf6eb;
+	--theme-surface: #fffdf7;
+	--theme-surface-muted: #f7f1e0;
+	--theme-surface-hover: #f3ecda;
+	--theme-surface-hover-muted: #f7f2e6;
+
+	--theme-text: #2a2014;
+	--theme-text-soft: #51422c;
+	--theme-text-muted: #8a7757;
+	--theme-text-subtle: #bba98a;
+
+	--theme-border: #ddd0b3;
+	--theme-border-muted: #e8dec7;
+	--theme-border-subtle: #f3ecdb;
+
+	--theme-accent-solid: #a16207;
+	--theme-accent-solid-hover: #854d0e;
+	--theme-on-accent: #fffdf7;
+	--theme-accent-bg: rgb(250 237 196 / 0.8);
+	--theme-accent-text: #854d0e;
+	--theme-accent-border: rgb(202 162 74 / 0.6);
+	--theme-accent-hover: rgb(246 226 170 / 0.9);
+
+	--theme-danger-solid: #b91c1c;
+	--theme-danger-solid-hover: #991b1b;
+	--theme-on-danger: #fffdf7;
+	--theme-danger-hover: #f6d3c9;
+
+	--theme-flush-bg: var(--theme-bg);
+	--theme-flush-hover: var(--theme-surface-hover);
+
+	--theme-ghost-bg: transparent;
+	--theme-ghost-border: transparent;
+	--theme-ghost-label-bg: rgb(243 236 219 / 0.6);
+	--theme-ghost-label-text: #6b5b3e;
+
+	--theme-success-bg: #e6efd9;
+	--theme-success-text: #365314;
+	--theme-success-border: #c3d9a5;
+	--theme-success-icon: #65a30d;
+
+	--theme-warning-bg: #fdeacc;
+	--theme-warning-text: #8a4b0f;
+	--theme-warning-border: #f5d49a;
+	--theme-warning-icon: #d97706;
+
+	--theme-danger-bg: #fbe3dc;
+	--theme-danger-text: #99231b;
+	--theme-danger-border: #f3c4b8;
+	--theme-danger-icon: #dc2626;
+
+	--theme-info-bg: #dfe9f2;
+	--theme-info-text: #1e4e8c;
+	--theme-info-border: #b9d2e8;
+	--theme-info-icon: #2f6cb3;
+
+	--theme-link-text: #854d0e;
+
+	--theme-radius-control-sm: 0.375rem;
+	--theme-radius-control: 0.5rem;
+	--theme-radius-card: 0.625rem;
+	--theme-radius-xl: 0.875rem;
+	--theme-radius-pill: 9999px;
+
+	--theme-shadow-card: 0 1px 2px rgb(120 90 30 / 0.08), 0 2px 8px rgb(120 90 30 / 0.06);
+	--theme-shadow-control: 0 1px 1px rgb(120 90 30 / 0.08);
+	--theme-shadow-control-active: inset 0 1px 2px rgb(120 90 30 / 0.12);
+
+	/* Code syntax */
+	--theme-code-foreground: #4a3a22;
+	--theme-code-background: transparent;
+	--theme-code-token-keyword: #b45309;
+	--theme-code-token-string: #4d7c0f;
+	--theme-code-token-string-expression: #4d7c0f;
+	--theme-code-token-comment: #a89875;
+	--theme-code-token-function: #0f766e;
+	--theme-code-token-constant: #be185d;
+	--theme-code-token-parameter: #6d28d9;
+	--theme-code-token-punctuation: #8a7757;
+	--theme-code-token-link: #854d0e;
+}
