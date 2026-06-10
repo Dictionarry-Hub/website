@@ -60,7 +60,7 @@ describe('buildApiEndpointEntries', () => {
 				url: '/api/v1#getDatabases',
 				type: 'api-endpoint',
 				blurb: 'GET /api/v1/databases',
-				keywords: ['Databases'],
+				keywords: ['Databases', 'api endpoint'],
 				elo: 1500
 			},
 			{
@@ -68,7 +68,7 @@ describe('buildApiEndpointEntries', () => {
 				url: '/api/v1#deleteDatabase',
 				type: 'api-endpoint',
 				blurb: 'DELETE /api/v1/databases/{id}',
-				keywords: ['Databases'],
+				keywords: ['Databases', 'api endpoint'],
 				elo: 1500
 			}
 		]);
@@ -106,6 +106,9 @@ describe('buildApiEndpointEntries', () => {
 			})
 		);
 
-		expect(entries.map((e) => e.keywords)).toEqual([['A'], ['B']]);
+		expect(entries.map((e) => e.keywords)).toEqual([
+			['A', 'api endpoint'],
+			['B', 'api endpoint']
+		]);
 	});
 });

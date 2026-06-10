@@ -17,7 +17,7 @@ describe('buildDevLogEntry', () => {
 			url: '/dev-logs/show-your-work',
 			type: 'dev-log',
 			blurb: 'Upgrades, operations, testing, and treating preference like math.',
-			keywords: ['profilarr v2', 'architecture'],
+			keywords: ['profilarr v2', 'architecture', 'dev log'],
 			elo: 1500
 		});
 	});
@@ -26,6 +26,6 @@ describe('buildDevLogEntry', () => {
 		const entry = buildDevLogEntry({ title: 'Donuts', slug: 'donuts' });
 
 		expect(entry.blurb).toBe('');
-		expect(entry.keywords).toEqual([]);
+		expect(entry.keywords).toEqual(['dev log']);
 	});
 });

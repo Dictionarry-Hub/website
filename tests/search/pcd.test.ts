@@ -196,7 +196,8 @@ describe('buildQualityProfileEntry', () => {
 			'encode',
 			'WEBDL-1080p',
 			'Bluray-1080p',
-			'Bluray-1080p Remux'
+			'Bluray-1080p Remux',
+			'quality profile'
 		]);
 	});
 });
@@ -238,7 +239,7 @@ describe('buildCustomFormatEntry', () => {
 
 		expect(entry.url).toBe('/pcd/dictionarry/custom-formats/x265-hd');
 		expect(entry.blurb).toBe('3 conditions: release title, resolution.');
-		expect(entry.keywords).toEqual(['codec']);
+		expect(entry.keywords).toEqual(['codec', 'custom format']);
 	});
 
 	it('uses the description when present', () => {
@@ -316,7 +317,7 @@ describe('buildNamingEntry', () => {
 
 		expect(entry.url).toBe('/pcd/dictionarry/naming/sonarr/default');
 		expect(entry.blurb).toBe('Sonarr naming scheme, renaming disabled.');
-		expect(entry.keywords).toEqual(['sonarr']);
+		expect(entry.keywords).toEqual(['sonarr', 'naming']);
 	});
 });
 
@@ -326,7 +327,7 @@ describe('buildMediaSettingsEntry', () => {
 
 		expect(entry.url).toBe('/pcd/dictionarry/media-settings/sonarr/default');
 		expect(entry.blurb).toBe('Propers/repacks: do not prefer. MediaInfo enabled.');
-		expect(entry.keywords).toEqual(['sonarr']);
+		expect(entry.keywords).toEqual(['sonarr', 'media settings']);
 	});
 });
 
@@ -336,7 +337,7 @@ describe('buildQualityDefinitionsEntry', () => {
 
 		expect(entry.url).toBe('/pcd/dictionarry/quality-definitions/radarr/default');
 		expect(entry.blurb).toBe('3 quality tiers, SDTV to Remux-2160p.');
-		expect(entry.keywords).toEqual(['radarr']);
+		expect(entry.keywords).toEqual(['radarr', 'quality definitions']);
 	});
 });
 

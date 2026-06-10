@@ -7,7 +7,7 @@ export function buildDevLogEntry(devLog: DevLogIndexEntry): SearchEntry {
 		url: `/dev-logs/${devLog.slug}`,
 		type: 'dev-log',
 		blurb: devLog.blurb ?? '',
-		keywords: devLog.tags ?? [],
+		keywords: [...(devLog.tags ?? []), 'dev log'],
 		elo: BASELINE_ELO
 	};
 }

@@ -56,6 +56,10 @@ searchable but not readable prose (tags, arr types, quality names) belong in key
 Descriptions are nullable across PCD entities (and absent entirely on some types), so every PCD
 builder has a derived fallback.
 
+Every builder also appends its type words to keywords ("quality profile", "regex", "custom
+format", "naming", ...). Users search by kind, and the kind rarely appears in entity names or
+descriptions: without this, "1080p profile" cannot find quality profiles.
+
 | Type                    | Blurb                                                                                              | Keywords            |
 | ----------------------- | -------------------------------------------------------------------------------------------------- | ------------------- |
 | Dev log                 | Frontmatter blurb, passed through                                                                  | Tags                |
@@ -97,7 +101,9 @@ from the UI. Four stages:
    scores are averaged. Title matches outweigh blurb matches (blurb at roughly half weight). No
    type boosts in v1. Unmatched tokens split into two cases:
     - A token that matches *some* entries but not this one (a discriminating token, e.g. "sonarr")
-      applies a hard penalty multiplier, not a soft dilution.
+      applies a penalty multiplier scaled by that token's strongest match anywhere in the index:
+      missing a strong keyword costs the full penalty, missing a word that only grazes a blurb
+      somewhere barely registers.
     - A token that matches *nothing in the entire index* ("best", "how") is qualifier language, not
       failed navigation. It is dropped from text scoring with no penalty and counted as an
       exploratory-intent signal for stage 4.
@@ -241,6 +247,12 @@ A command palette modal, opened with Ctrl+K, designed mobile-first (a modal esca
 screen in a way inline dropdowns cannot). Requires new UI primitives (modal/dialog, text input,
 keyboard list navigation) that do not exist yet; to be designed per the UI workflow before
 implementation.
+
+The empty state shows the most popular pages: the global leaderboard sorted by rating (`popular()`
+in the scorer), never per-term tables. Clicks from that state are recorded faithfully with an
+empty query but excluded from the Elo fold in v1: a popular list promotes what is already
+top-rated, so folding those clicks would feed a rich-get-richer loop with no relevance anchor.
+Replay can revisit that weighting later.
 
 ## Open Questions
 

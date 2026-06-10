@@ -76,7 +76,7 @@ export function buildQualityProfileEntry(
 			const name = target?.quality ?? target?.group?.name;
 			return name ? `Upgrades until ${name}.` : 'Quality profile.';
 		}),
-		keywords: dedupe([...profile.tags, ...qualityNames]),
+		keywords: dedupe([...profile.tags, ...qualityNames, 'quality profile']),
 		elo: BASELINE_ELO
 	};
 }
@@ -92,7 +92,7 @@ export function buildCustomFormatEntry(format: CustomFormat, database: string): 
 			const plural = format.conditions.length === 1 ? 'condition' : 'conditions';
 			return `${format.conditions.length} ${plural}: ${types.join(', ')}.`;
 		}),
-		keywords: format.tags,
+		keywords: [...format.tags, 'custom format'],
 		elo: BASELINE_ELO
 	};
 }
@@ -109,7 +109,7 @@ export function buildRegularExpressionEntry(
 			regex.description,
 			() => `Pattern: ${truncate(regex.pattern, PATTERN_MAX)}`
 		),
-		keywords: regex.tags,
+		keywords: [...regex.tags, 'regex', 'regular expression'],
 		elo: BASELINE_ELO
 	};
 }
@@ -130,7 +130,7 @@ export function buildDelayProfileEntry(profile: DelayProfile, database: string):
 		url: `/pcd/${database}/delay-profiles/${slugify(profile.name)}`,
 		type: 'delay-profile',
 		blurb: parts.join(' '),
-		keywords: [],
+		keywords: ['delay profile'],
 		elo: BASELINE_ELO
 	};
 }
@@ -141,7 +141,7 @@ export function buildNamingEntry(config: NamingConfig, database: string): Search
 		url: `/pcd/${database}/naming/${config.arrType}/${slugify(config.name)}`,
 		type: 'naming',
 		blurb: `${capitalize(config.arrType)} naming scheme, renaming ${config.rename ? 'enabled' : 'disabled'}.`,
-		keywords: [config.arrType],
+		keywords: [config.arrType, 'naming'],
 		elo: BASELINE_ELO
 	};
 }
@@ -156,7 +156,7 @@ export function buildMediaSettingsEntry(
 		url: `/pcd/${database}/media-settings/${arrType}/${slugify(settings.name)}`,
 		type: 'media-settings',
 		blurb: `Propers/repacks: ${humanizeCamel(settings.propersRepacks)}. MediaInfo ${settings.enableMediaInfo ? 'enabled' : 'disabled'}.`,
-		keywords: [arrType],
+		keywords: [arrType, 'media settings'],
 		elo: BASELINE_ELO
 	};
 }
@@ -179,7 +179,7 @@ export function buildQualityDefinitionsEntry(
 		url: `/pcd/${database}/quality-definitions/${arrType}/${slugify(config.name)}`,
 		type: 'quality-definitions',
 		blurb,
-		keywords: [arrType],
+		keywords: [arrType, 'quality definitions'],
 		elo: BASELINE_ELO
 	};
 }

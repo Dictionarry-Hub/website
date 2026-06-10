@@ -15,7 +15,7 @@ export function buildApiEndpointEntries(spec: ApiSpec): SearchEntry[] {
 				url: `${page}#${endpoint.operationId}`,
 				type: 'api-endpoint',
 				blurb: `${endpoint.method} ${spec.baseUrl}${endpoint.path}`,
-				keywords: [tag.name],
+				keywords: [tag.name, 'api endpoint'],
 				elo: BASELINE_ELO
 			})
 		)
