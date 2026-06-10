@@ -81,14 +81,32 @@
 	text-decoration: underline;
 }
 
-/* Inline code */
+/* Inline code. Scoped to exclude fenced code blocks and the CodeBlock
+   component, which style their own code elements. */
 
-.prose code {
+.prose code:not(pre code) {
 	font-family: var(--theme-font-mono);
 	font-size: 0.875em;
-	background: var(--theme-surface-muted);
+	background: transparent;
+	border: 1px solid var(--theme-border);
 	border-radius: var(--theme-radius-control-sm);
 	padding: 0.15em 0.4em;
+	color: var(--theme-text-soft);
+}
+
+/* Plain fenced code blocks (mdsvex default output). The CodeBlock component
+   styles its own pre elements. */
+
+.prose pre:not(.code-block pre) {
+	font-family: var(--theme-font-mono);
+	font-size: 0.8125rem;
+	line-height: 1.625;
+	background: var(--theme-surface-muted);
+	border: 1px solid var(--theme-border);
+	border-radius: var(--theme-radius-card);
+	padding: 1rem;
+	margin-bottom: 1.25rem;
+	overflow-x: auto;
 }
 
 /* Lists */
