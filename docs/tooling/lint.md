@@ -91,26 +91,26 @@ Place the comment immediately before the element. Use sparingly.
 
 #### `no-raw-tokens` (category: `ui`)
 
-No raw Tailwind colors, radii, or shadows in `class` attributes anywhere under `src/`. Use
-semantic design tokens instead (see [frontend/ui.md](../frontend/ui.md)).
+No raw Tailwind colors, radii, or shadows in `class` attributes anywhere under `src/`. Use semantic
+design tokens instead (see [frontend/ui.md](../frontend/ui.md)).
 
 Parses the Svelte 5 AST and inspects `class` attributes, including string literals inside
-expressions (ternaries, logical expressions, template literals). Variant modifiers (`hover:`,
-`md:`, `!`) are stripped before checking. Reports exact line and column numbers.
+expressions (ternaries, logical expressions, template literals). Variant modifiers (`hover:`, `md:`,
+`!`) are stripped before checking. Reports exact line and column numbers.
 
 **Flagged:**
 
-- Palette colors (`bg-red-500`, `text-zinc-100/50`), `white`/`black` (`text-white`), and
-  arbitrary color values (`bg-[#fff]`, `border-[rgb(0,0,0)]`) on any color-capable prefix
-  (`bg`, `text`, `border`, `ring`, `shadow`, `fill`, etc.).
-- Raw radii (`rounded`, `rounded-lg`, side variants like `rounded-t-md`, arbitrary values).
-  Semantic radii are allowed: `rounded-control-sm`, `rounded-control`, `rounded-card`,
-  `rounded-xl`, `rounded-pill`.
+- Palette colors (`bg-red-500`, `text-zinc-100/50`), `white`/`black` (`text-white`), and arbitrary
+  color values (`bg-[#fff]`, `border-[rgb(0,0,0)]`) on any color-capable prefix (`bg`, `text`,
+  `border`, `ring`, `shadow`, `fill`, etc.).
+- Raw radii (`rounded`, `rounded-lg`, side variants like `rounded-t-md`, arbitrary values). Semantic
+  radii are allowed: `rounded-control-sm`, `rounded-control`, `rounded-card`, `rounded-xl`,
+  `rounded-pill`.
 - Raw shadows (`shadow`, `shadow-md`, arbitrary values). Semantic shadows are allowed:
   `shadow-card`, `shadow-control`, `shadow-control-active`, `shadow-none`.
 
-Unlike `no-raw-ui`, the `src/lib/client/ui/` components are not exempt: wrappers must use
-semantic tokens too.
+Unlike `no-raw-ui`, the `src/lib/client/ui/` components are not exempt: wrappers must use semantic
+tokens too.
 
 **Escape hatch:**
 
@@ -123,10 +123,10 @@ Place the comment immediately before the element. Use sparingly.
 
 #### `require-md-mirror` (category: `llm`)
 
-Every built page (`build/**/*.html`) must have a sibling `.md` markdown mirror for LLM
-consumption. Runs against build output, so it requires `pnpm build` first. Exempt and pending
-routes are configured in `tooling/lint/md-mirror.json`. See
-[backend/llm.md](../backend/llm.md) for the architecture and the list semantics.
+Every built page (`build/**/*.html`) must have a sibling `.md` markdown mirror for LLM consumption.
+Runs against build output, so it requires `pnpm build` first. Exempt and pending routes are
+configured in `tooling/lint/md-mirror.json`. See [backend/llm.md](../backend/llm.md) for the
+architecture and the list semantics.
 
 ### Adding a new rule
 

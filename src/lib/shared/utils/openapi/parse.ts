@@ -120,6 +120,8 @@ export async function parseOpenApiSpec(raw: RawSpec): Promise<ApiSpec> {
 		title: raw.info.title,
 		version: raw.info.version.split('.')[0],
 		description,
+		descriptionMd: raw.info.description?.trim() ?? '',
+		baseUrl,
 		auth,
 		tags
 	};
@@ -178,8 +180,16 @@ async function parseEndpoint(
 ): Promise<ApiEndpoint> {
 	const allParams = [...pathParams, ...(op.parameters ?? [])];
 
+	// Markdown artifact URLs are derived from operationIds, so a missing one
+	// must fail the build instead of inventing a fallback slug.
+	if (!op.operationId) {
+		throw new Error(
+			`OpenAPI operation ${method.toUpperCase()} ${path} is missing an operationId`
+		);
+	}
+
 	return {
-		operationId: op.operationId ?? `${method}${path}`,
+		operationId: op.operationId,
 		method: method.toUpperCase() as HttpMethod,
 		path,
 		summary: op.summary ?? '',

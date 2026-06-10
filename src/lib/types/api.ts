@@ -4,6 +4,8 @@ export interface ApiSpec {
 	title: string;
 	version: string;
 	description: string;
+	descriptionMd: string;
+	baseUrl: string;
 	auth: AuthInfo[];
 	tags: ApiTag[];
 }
