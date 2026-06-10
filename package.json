@@ -15,6 +15,7 @@
 		"lint:eslint": "eslint .",
 		"lint:seo": "tsx tooling/lint/index.ts --category seo",
 		"lint:ui": "tsx tooling/lint/index.ts --category ui",
+		"lint:llm": "tsx tooling/lint/index.ts --category llm",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"lighthouse": "lhci autorun",

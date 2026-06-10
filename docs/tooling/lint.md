@@ -89,6 +89,13 @@ Parses the Svelte 5 AST and walks the template tree. Reports exact line and colu
 
 Place the comment immediately before the element. Use sparingly.
 
+#### `require-md-mirror` (category: `llm`)
+
+Every built page (`build/**/*.html`) must have a sibling `.md` markdown mirror for LLM
+consumption. Runs against build output, so it requires `pnpm build` first. Exempt and pending
+routes are configured in `tooling/lint/md-mirror.json`. See
+[backend/llm.md](../backend/llm.md) for the architecture and the list semantics.
+
 ### Adding a new rule
 
 1. Create a file in `tooling/lint/rules/`.

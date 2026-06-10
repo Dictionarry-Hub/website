@@ -1,0 +1,12 @@
+{
+	"exempt": [
+		{ "route": "/dev/ui", "reason": "component showcase, dev-only, not content" },
+		{ "route": "/pcd", "reason": "client-side redirect stub to /pcd/{preference}/" }
+	],
+	"pending": [
+		{ "route": "/", "reason": "home" },
+		{ "route": "/dev-logs", "reason": "dev logs listing, ships with the mdsvex mirror layer" },
+		{ "route": "/dev-logs/*", "reason": "dev log posts, ships with the mdsvex mirror layer" },
+		{ "route": "/pcd/*", "reason": "PCD entity browser, mirror layer not yet designed" }
+	]
+}

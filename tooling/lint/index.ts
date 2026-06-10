@@ -5,8 +5,9 @@ import type { LintRule, Violation, FileEntry } from './types.js';
 import requireSeo from './rules/require-seo.js';
 import noRawUi from './rules/no-raw-ui.js';
 import noRawTokens from './rules/no-raw-tokens.js';
+import requireMdMirror from './rules/require-md-mirror.js';
 
-const rules: LintRule[] = [requireSeo, noRawUi, noRawTokens];
+const rules: LintRule[] = [requireSeo, noRawUi, noRawTokens, requireMdMirror];
 
 function run(): void {
 	const root = resolve(import.meta.dirname, '../..');

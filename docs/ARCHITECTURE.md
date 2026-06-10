@@ -36,6 +36,7 @@ runtime server.
 
 - [Content](./backend/content.md) - Content layers: Profilarr docs, PCD browser, dev logs
 - [Search](./backend/search.md) - Client-side fuzzy search, Elo ranking
+- [LLM Consumption](./backend/llm.md) - Markdown artifacts, copy buttons, AI-consumable content
 
 ### Tooling
 
