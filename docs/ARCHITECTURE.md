@@ -29,7 +29,7 @@ runtime server.
 ### Frontend
 
 - [UI](./frontend/ui.md) - Component library, semantic tokens, theming
-- [SEO](./frontend/SEO.md) - Pre-rendering, meta tags, Lighthouse CI
+- [SEO](./frontend/seo.md) - Pre-rendering, meta tags, Lighthouse CI
 - [Markdown](./frontend/markdown.md) - mdsvex configuration, component remapping, frontmatter
 
 ### Backend
