@@ -14,7 +14,7 @@
 	The inline script in app.html sets data-theme before first paint, so no flash.
 
 	Default (no attribute) = light.
-	Dark themes: dark, velouria.
+	Dark themes: dark, velouria, solaris.
 -->
 <img
 	src={light}
@@ -31,12 +31,14 @@
 	}
 
 	:global([data-theme='dark']) .theme-img-dark,
-	:global([data-theme='velouria']) .theme-img-dark {
+	:global([data-theme='velouria']) .theme-img-dark,
+	:global([data-theme='solaris']) .theme-img-dark {
 		display: revert;
 	}
 
 	:global([data-theme='dark']) .theme-img-light,
-	:global([data-theme='velouria']) .theme-img-light {
+	:global([data-theme='velouria']) .theme-img-light,
+	:global([data-theme='solaris']) .theme-img-light {
 		display: none;
 	}
 </style>
