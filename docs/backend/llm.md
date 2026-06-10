@@ -128,16 +128,31 @@ Get a database by ID.
 - **Markdown descriptions, not HTML.** Serializers use the raw `description` fields from the parser,
   never the `descriptionHtml` variants.
 
-## Copy Button Placement
+## Copy Buttons and the AI Menu
 
 On `/api/v1`:
 
-- Page header: copies `/api/v1.md`.
-- Each tag heading: copies `/api/v1/{tag}.md`.
-- Each endpoint heading: copies `/api/v1/{tag}/{op}.md`.
+- Page header: an `AiMenu` (sparkle icon dropdown) with "Copy page as Markdown" (`/api/v1.md`),
+  "View as Markdown", "Open in Claude", and "Open in ChatGPT".
+- Each tag heading: a `CopyMarkdown` icon button copying `/api/v1/{tag}.md`.
+- Each endpoint heading: a `CopyMarkdown` icon button copying `/api/v1/{tag}/{op}.md`.
 
-Plain copy buttons at every level. A fuller page-level menu (view as markdown, open in Claude) is a
-possible later addition and would only ever exist at page level, never repeated per section.
+The fuller menu exists only at page level, never repeated per section. With several copy affordances
+on one page, every icon-only button's tooltip and aria-label state the copy scope ("Copy Databases
+as Markdown"), not just the format.
+
+### Assistant deep links
+
+"Open in" links carry a short prompt referencing a URL, never content (URL prompt payloads cap
+around 14k characters). Claude is pointed at the markdown artifact, ChatGPT at the HTML page, which
+its fetcher handles better. The default prompt is the Mintlify pattern
+(`Read {url} so I can ask questions about it.`); pages with a clear task override it via the
+`prompt` prop (the API reference uses `Read {url} and help me use this API.`).
+
+The URL formats live in `assistantLink` in `src/lib/shared/utils/llm/assistants.ts`. They are owned
+by the receiving apps and undocumented, so they can break silently; that file is the one place to
+fix them. The links only work against the deployed site, since the assistant has to fetch a public
+URL.
 
 ## Enforcement
 
@@ -173,8 +188,6 @@ component):
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.
   Cheap once artifacts exist, but low priority: log studies show almost no organic consumption, and
   copy affordances are what readers actually use.
-- **Assistant deep links.** "Open in Claude" style links carrying a short prompt that references the
-  artifact URL (the Mintlify pattern: `Read from {url} so I can ask questions about it.`).
 
 ## Prior Art
 

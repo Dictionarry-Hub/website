@@ -270,6 +270,79 @@ is provided. Linked variant uses subtle styling with an `ExternalLink` icon.
 | `href`   | `string`       | no       |         |
 | `size`   | `'sm' \| 'md'` | no       | `'sm'`  |
 
+### CopyMarkdown
+
+#### `CopyMarkdown`
+
+`src/lib/client/ui/copy-markdown/CopyMarkdown.svelte`
+
+Copies a markdown artifact to the clipboard for LLM consumption (see
+[backend/llm.md](../backend/llm.md)). Fetches the given URL and writes the response text, with
+copy-to-checkmark feedback matching `CodeBlock` and a brief alert-icon state if the fetch or
+clipboard write fails. Content-agnostic by design: it takes a URL and nothing else.
+
+| Prop        | Type                                | Required | Default            |
+| ----------- | ----------------------------------- | -------- | ------------------ |
+| `url`       | `string`                            | yes      |                    |
+| `label`     | `string`                            | no       | none (icon-only)   |
+| `ariaLabel` | `string`                            | no       | `Copy as Markdown` |
+| `variant`   | `'default' \| 'outline' \| 'ghost'` | no       | `'outline'`        |
+| `size`      | `'sm' \| 'md'`                      | no       | `'sm'`             |
+
+Icon-only placements should be wrapped in a `Tooltip` at the call site. With several copy buttons on
+one page, the tooltip and `ariaLabel` must state the copy scope, not just the format:
+
+```svelte
+<script lang="ts">
+	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
+	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
+</script>
+
+<CopyMarkdown
+	url="/api/v1.md"
+	label="Copy page"
+	variant="default" />
+
+<Tooltip text="Copy Databases as Markdown">
+	<CopyMarkdown
+		url="/api/v1/databases.md"
+		ariaLabel="Copy Databases as Markdown" />
+</Tooltip>
+```
+
+### AiMenu
+
+#### `AiMenu`
+
+`src/lib/client/ui/ai-menu/AiMenu.svelte`
+
+Page-level AI actions menu: a sparkle icon button opening a dropdown with "Copy page as Markdown",
+"View as Markdown", "Open in Claude", and "Open in ChatGPT". Composed from `Button`, `Dropdown`, and
+`DropdownItem`. The copy item shares its fetch-and-copy logic with `CopyMarkdown`; assistant deep
+links are built by `assistantLink` in `src/lib/shared/utils/llm/`. One per page, in the `PageHeader`
+actions. See [backend/llm.md](../backend/llm.md).
+
+| Prop           | Type     | Required | Default                                       |
+| -------------- | -------- | -------- | --------------------------------------------- |
+| `artifactPath` | `string` | yes      |                                               |
+| `pagePath`     | `string` | yes      |                                               |
+| `prompt`       | `string` | no       | `Read {url} so I can ask questions about it.` |
+
+`prompt` is a template for the assistant links; the `{url}` token is replaced per assistant (Claude
+gets the markdown artifact URL, ChatGPT the page URL). Pages with a clear task should override it,
+e.g. the API reference uses `Read {url} and help me use this API.`
+
+```svelte
+<script lang="ts">
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
+</script>
+
+<AiMenu
+	artifactPath="/api/v1.md"
+	pagePath="/api/v1"
+	prompt={'Read {url} and help me use this API.'} />
+```
+
 ### Markdown
 
 Components for use inside mdsvex content (`.svx` files).

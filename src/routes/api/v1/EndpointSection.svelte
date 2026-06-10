@@ -10,13 +10,16 @@
 	import SiDotnet from '@icons-pack/svelte-simple-icons/icons/SiDotnet';
 	import { Braces } from '@lucide/svelte';
 	import Button from '$lib/client/ui/button/Button.svelte';
+	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
+	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import type { Component } from 'svelte';
 
 	interface Props {
 		endpoint: ApiEndpoint;
+		markdownUrl: string;
 	}
 
-	let { endpoint }: Props = $props();
+	let { endpoint, markdownUrl }: Props = $props();
 
 	const methodColors: Record<HttpMethod, 'success' | 'accent' | 'warning' | 'danger' | 'info'> = {
 		GET: 'success',
@@ -96,6 +99,13 @@
 				size="sm">{endpoint.path}</Badge>
 		</h3>
 		<span class="text-sm text-text-soft">{endpoint.summary}</span>
+		<div class="ml-auto">
+			<Tooltip text="Copy endpoint as Markdown">
+				<CopyMarkdown
+					url={markdownUrl}
+					ariaLabel="Copy endpoint as Markdown" />
+			</Tooltip>
+		</div>
 	</div>
 
 	<!-- Description -->

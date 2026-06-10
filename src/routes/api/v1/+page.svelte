@@ -4,12 +4,18 @@
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
+	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
+	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import EndpointSection from './EndpointSection.svelte';
+	import { operationSlug } from '$lib/shared/utils/llm/index.js';
 	import type { Column } from '$lib/client/ui/table/types';
 	import type { AuthInfo } from '$lib/types/api';
 
 	let { data } = $props();
 	const spec = $derived(data.spec);
+
+	const aiPrompt = 'Read {url} and help me use this API.';
 
 	const authColumns: Column<AuthInfo>[] = [
 		{ key: 'name', header: 'Method' },
@@ -29,6 +35,10 @@
 			variant="outline"
 			color="accent"
 			size="md">v{spec.version}</Badge>
+		<AiMenu
+			artifactPath="/api/v1.md"
+			pagePath="/api/v1"
+			prompt={aiPrompt} />
 	{/snippet}
 </PageHeader>
 
@@ -90,17 +100,26 @@
 <!-- Tag Sections -->
 {#each spec.tags as tag (tag.slug)}
 	<section class="mb-10">
-		<h2
-			id={tag.slug}
-			class="mb-1 font-accent text-xl font-semibold">
-			{tag.name}
-		</h2>
+		<div class="mb-1 flex items-center gap-2">
+			<h2
+				id={tag.slug}
+				class="font-accent text-xl font-semibold">
+				{tag.name}
+			</h2>
+			<Tooltip text="Copy {tag.name} as Markdown">
+				<CopyMarkdown
+					url={`/api/v1/${tag.slug}.md`}
+					ariaLabel="Copy {tag.name} as Markdown" />
+			</Tooltip>
+		</div>
 		{#if tag.description}
 			<p class="mb-6 text-sm text-text-soft">{tag.description}</p>
 		{/if}
 
 		{#each tag.endpoints as endpoint (endpoint.operationId)}
-			<EndpointSection {endpoint} />
+			<EndpointSection
+				{endpoint}
+				markdownUrl={`/api/v1/${tag.slug}/${operationSlug(endpoint.operationId)}.md`} />
 		{/each}
 	</section>
 {/each}

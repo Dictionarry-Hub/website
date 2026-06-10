@@ -11,7 +11,9 @@
 	import DropdownFooter from '$lib/client/ui/dropdown/DropdownFooter.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
 	import { Apple, Cherry, Citrus, Star, CircleAlert, FlaskConical } from '@lucide/svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import Table from '$lib/client/ui/table/Table.svelte';
@@ -335,6 +337,72 @@
 							<DropdownFooter label="3 actions" />
 						</Dropdown>
 					{/if}
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">AiMenu</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Default</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<AiMenu
+						artifactPath="/api/v1.md"
+						pagePath="/api/v1" />
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Custom prompt</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<AiMenu
+						artifactPath="/api/v1.md"
+						pagePath="/api/v1"
+						prompt={'Read {url} and help me use this API.'} />
+				</div>
+			</div>
+		</div>
+	</Card>
+
+	<Card>
+		{#snippet header()}
+			<h2 class="text-lg font-semibold">CopyMarkdown</h2>
+		{/snippet}
+
+		<div class="space-y-6">
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Icon only (outline, default)</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<Tooltip text="Copy as Markdown">
+						<CopyMarkdown url="/api/v1.md" />
+					</Tooltip>
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Labeled</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<CopyMarkdown
+						url="/api/v1.md"
+						label="Copy page"
+						variant="default" />
+				</div>
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">
+					Failure state (missing artifact)
+				</h3>
+				<div class="flex flex-wrap items-center gap-3">
+					<CopyMarkdown
+						url="/does-not-exist.md"
+						label="Copy page"
+						variant="default" />
 				</div>
 			</div>
 		</div>
