@@ -51,8 +51,22 @@ details, see [tooling/api.md](../tooling/api.md).
 Site-specific content written as mdsvex markdown. Dev logs cover releases and development progress.
 Wiki articles cover broader topics.
 
-Dev log frontmatter includes title, slug, blurb, author, created date, and tags. Wiki article
-frontmatter structure to be defined.
+Both layers share the same article frontmatter and render through the same mdsvex layout
+(`src/lib/layouts/Article.svelte`, registered as both the `dev-logs` and `wiki` layout keys):
+
+| Field     | Notes                                                          |
+| --------- | -------------------------------------------------------------- |
+| `layout`  | `dev-logs` or `wiki`                                           |
+| `title`   | Display title                                                  |
+| `slug`    | Matches the route directory name (which is what routes derive) |
+| `blurb`   | Short description; SEO meta, search blurb, artifact preamble   |
+| `author`  | GitHub profile URL (or list); rendered with avatar and link    |
+| `created` | Publish date, used for newest-first sorting                    |
+| `tags`    | Displayed as chips and indexed as search keywords              |
+
+Articles live at `src/routes/dev-logs/<slug>/+page.svx` and `src/routes/wiki/<slug>/+page.svx`. The
+sidebar nav, search index, and markdown artifact routes all glob these paths and derive the slug
+from the directory name.
 
 ## PCD Pipeline
 

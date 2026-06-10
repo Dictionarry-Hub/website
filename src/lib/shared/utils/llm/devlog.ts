@@ -1,10 +1,9 @@
 import { SITE_URL } from './site.js';
-import { join } from './md.js';
+import { join, isoDate, articleBody } from './md.js';
 
 // Markdown serializers for dev log artifacts. The source .svx files are
-// already markdown, so the body ships nearly verbatim: frontmatter and script
-// blocks are stripped, embedded components stay intact (they often carry real
-// content in props, e.g. CodeBlock code). See docs/backend/llm.md.
+// already markdown, so the body ships nearly verbatim via articleBody.
+// See docs/backend/llm.md.
 
 export interface DevLogMeta {
 	title: string;
@@ -30,7 +29,12 @@ export function devLogToMarkdown(meta: DevLogMeta, source: string, slug: string)
 		.filter(Boolean)
 		.join(' ');
 
-	return join([`# ${meta.title}`, meta.blurb ? `> ${meta.blurb}` : '', context, body(source)]);
+	return join([
+		`# ${meta.title}`,
+		meta.blurb ? `> ${meta.blurb}` : '',
+		context,
+		articleBody(source)
+	]);
 }
 
 export function devLogIndexToMarkdown(logs: DevLogIndexEntry[]): string {
@@ -46,16 +50,4 @@ export function devLogIndexToMarkdown(logs: DevLogIndexEntry[]): string {
 		`Web version: ${SITE_URL}/dev-logs`,
 		items.join('\n')
 	]);
-}
-
-/** YAML date parsing produces ISO timestamps; keep just the date part. */
-function isoDate(created: string): string {
-	return String(created).slice(0, 10);
-}
-
-function body(source: string): string {
-	return source
-		.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '')
-		.replace(/<script[\s\S]*?<\/script>\r?\n?/g, '')
-		.trim();
 }

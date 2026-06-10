@@ -63,7 +63,7 @@ without this, "1080p profile" cannot find quality profiles.
 | Type                   | Blurb                                                                                               | Keywords            |
 | ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------- |
 | Dev log                | Frontmatter blurb, passed through                                                                   | Tags                |
-| Wiki article (future)  | Frontmatter blurb (constrains the to-be-defined frontmatter)                                        | Tags                |
+| Wiki article           | Frontmatter blurb, passed through                                                                   | Tags                |
 | Profilarr doc (future) | Frontmatter description; fallback decided when the layer exists                                     |                     |
 | API endpoint           | Method plus path ("GET /api/v1/databases"); title from the operation summary                        | Tag name            |
 | Quality profile        | Description, truncated. Fallback: upgrade-target sentence ("Upgrades until Bluray-1080p"). No stats | Tags, quality names |
@@ -280,10 +280,10 @@ The click store runs locally only. Taking it live, in order:
    production builds.
 5. Create a scoped Cloudflare API token (D1 read) and add it with the account id to GitHub Actions
    secrets (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`).
-6. Add `compile:elo -- --remote` to the deploy workflow before `pnpm build` (every deploy, not
-   just the cron, or merges reset live ratings to baseline).
-7. Add the scheduled rebuild: a cron-triggered workflow running the same deploy pipeline, to
-   refresh ratings between merges.
+6. Add `compile:elo -- --remote` to the deploy workflow before `pnpm build` (every deploy, not just
+   the cron, or merges reset live ratings to baseline).
+7. Add the scheduled rebuild: a cron-triggered workflow running the same deploy pipeline, to refresh
+   ratings between merges.
 
 ## Open Questions
 

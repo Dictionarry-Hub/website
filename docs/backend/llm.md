@@ -128,15 +128,19 @@ Get a database by ID.
 - **Markdown descriptions, not HTML.** Serializers use the raw `description` fields from the parser,
   never the `descriptionHtml` variants.
 
-## Dev Log Artifacts
+## Dev Log and Wiki Artifacts
 
-The first mdsvex content layer. The source `.svx` files are already markdown, so the serializers at
-`src/lib/shared/utils/llm/devlog.ts` are thin:
+The mdsvex content layers. The source `.svx` files are already markdown, so the serializers at
+`src/lib/shared/utils/llm/devlog.ts` and `src/lib/shared/utils/llm/wiki.ts` are thin. The shared
+stripping and date helpers (`articleBody`, `isoDate`) live in `md.ts`; each layer module owns only
+its formatting strings.
 
-| Artifact | URL                   | Content                                                  |
-| -------- | --------------------- | -------------------------------------------------------- |
-| Index    | `/dev-logs.md`        | One line per log (title, date, blurb), newest first      |
-| Dev log  | `/dev-logs/{slug}.md` | Preamble from frontmatter, then the source body verbatim |
+| Artifact      | URL                   | Content                                                  |
+| ------------- | --------------------- | -------------------------------------------------------- |
+| Dev log index | `/dev-logs.md`        | One line per log (title, date, blurb), newest first      |
+| Dev log       | `/dev-logs/{slug}.md` | Preamble from frontmatter, then the source body verbatim |
+| Wiki index    | `/wiki.md`            | One line per article (title, date, blurb), newest first  |
+| Wiki article  | `/wiki/{slug}.md`     | Preamble from frontmatter, then the source body verbatim |
 
 The slug is the route directory name, the same derivation the nav uses. The preamble is synthesized
 from frontmatter: title as H1, blurb as blockquote, then a context line with author, date, tags, and
@@ -145,8 +149,8 @@ embedded Svelte components stay intact, the same approach Anthropic's docs use. 
 carry real content in their props (e.g. `CodeBlock` code), so stripping them would lose information;
 models read component tags fine.
 
-Index links point at the `.md` artifacts, so the index doubles as a machine-readable directory of
-the dev log layer.
+Index links point at the `.md` artifacts, so each index doubles as a machine-readable directory of
+its layer.
 
 ## Copy Buttons and the AI Menu
 
@@ -161,9 +165,9 @@ The fuller menu exists only at page level, never repeated per section. With seve
 on one page, every icon-only button's tooltip and aria-label state the copy scope ("Copy Databases
 as Markdown"), not just the format.
 
-Dev log pages get an `AiMenu` automatically: the `DevLog` layout renders one in its `PageHeader`
-actions, deriving the artifact path from the current pathname plus `.md` and using the default
-prompt.
+Dev log and wiki pages get an `AiMenu` automatically: the shared `Article` layout renders one in its
+`PageHeader` actions, deriving the artifact path from the current pathname plus `.md` and using the
+default prompt.
 
 ### Assistant deep links
 
@@ -206,9 +210,9 @@ and forgetting its markdown mirror. See [tooling/lint.md](../tooling/lint.md) fo
 Planned but not yet built. Each reuses the same three pieces (serializer, artifact route, copy
 component):
 
-- **Remaining mdsvex surfaces.** Dev logs are done (see Dev Log Artifacts); the home page and any
-  future docs or wiki sections follow the same pattern. Landing each removes its entries from the
-  rule's `PENDING` list (see Enforcement).
+- **Remaining mdsvex surfaces.** Dev logs and wiki articles are done (see Dev Log and Wiki
+  Artifacts); the home page and any future docs sections follow the same pattern. Landing each
+  removes its entries from the rule's `PENDING` list (see Enforcement).
 - **PCD entity mirrors.** The entity browser pages are generated from structured PCD data, so they
   would get an API-style serializer rather than an mdsvex one. Not yet designed.
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.

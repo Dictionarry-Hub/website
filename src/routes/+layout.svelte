@@ -6,6 +6,7 @@
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import {
 		NotebookPen,
+		Library,
 		Wrench,
 		BookOpen,
 		Trash2,
@@ -119,6 +120,19 @@
 					<NavItem
 						label={log.title}
 						href={log.href} />
+				{/each}
+			</NavGroup>
+		{/if}
+
+		{#if data.wiki.length > 0}
+			<NavGroup
+				label="Wiki"
+				href="/wiki"
+				icon={Library}>
+				{#each data.wiki as article (article.href)}
+					<NavItem
+						label={article.title}
+						href={article.href} />
 				{/each}
 			</NavGroup>
 		{/if}

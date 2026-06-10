@@ -20,9 +20,39 @@ lives in the components.
 This was chosen over writing a custom markdown parser. Full control over every element's rendering
 without maintaining a parser.
 
+## Layouts
+
+Named mdsvex layouts are registered in `svelte.config.js`. Articles select one via the `layout`
+frontmatter key:
+
+| Key        | Component                        | Used by         |
+| ---------- | -------------------------------- | --------------- |
+| `dev-logs` | `src/lib/layouts/Article.svelte` | Dev logs        |
+| `wiki`     | `src/lib/layouts/Article.svelte` | Wiki articles   |
+| `_`        | `src/lib/layouts/Default.svelte` | Everything else |
+
+Both article layers share `Article.svelte`: same frontmatter, same page header, AI menu, and table
+of contents.
+
+## Plugins
+
+mdsvex bundles an older remark, so remark plugins are pinned to the last majors that target its
+tree. Newer versions expect a micromark-based pipeline and fail silently or loudly.
+
+| Plugin                | Version pin | Purpose                                           |
+| --------------------- | ----------- | ------------------------------------------------- |
+| `remark-math`         | `3.x`       | Parses `$...$` and `$$...$$` math syntax          |
+| `remark-footnotes`    | `2.x`       | Parses `[^1]` footnote references and definitions |
+| `rehype-katex-svelte` | current     | Renders math to KaTeX HTML escaped for Svelte     |
+| `rehype-slug`         | current     | Heading ids for the table of contents and anchors |
+
+KaTeX rendering happens at build time; the KaTeX stylesheet is imported per-article in the
+`<script>` block of articles that use math, so non-math pages don't ship it.
+
 ## Frontmatter
 
 Markdown files use YAML frontmatter for metadata. Frontmatter values are used for SEO meta tags,
 search indexing, and content listing/sorting.
 
-Required fields and structure to be defined during implementation.
+The article frontmatter shared by dev logs and wiki articles is documented in
+[backend/content.md](../backend/content.md).

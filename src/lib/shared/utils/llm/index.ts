@@ -6,4 +6,5 @@ export {
 	type DevLogMeta,
 	type DevLogIndexEntry
 } from './devlog.js';
+export { wikiToMarkdown, wikiIndexToMarkdown, type WikiMeta, type WikiIndexEntry } from './wiki.js';
 export { SITE_URL } from './site.js';
