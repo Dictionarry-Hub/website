@@ -265,6 +265,26 @@ query but excluded from the Elo fold in v1: a popular list promotes what is alre
 folding those clicks would feed a rich-get-richer loop with no relevance anchor. Replay can revisit
 that weighting later.
 
+## Remaining Work: Production Deployment
+
+The click store runs locally only. Taking it live, in order:
+
+1. `wrangler login` (one-time, on a maintainer machine).
+2. `wrangler d1 create dictionarry-clicks`, paste the returned `database_id` into
+   `worker/wrangler.jsonc`, then apply the migration with
+   `wrangler d1 migrations apply dictionarry-clicks --remote -c worker/wrangler.jsonc`.
+3. `wrangler deploy -c worker/wrangler.jsonc`, with `ALLOWED_ORIGIN` set to the production site
+   origin and an `IP_SALT` secret (`wrangler secret put IP_SALT`). Prefer a custom hostname over
+   `*.workers.dev` (ad blockers blanket-block the latter).
+4. Point `CLICK_ENDPOINT` (`src/lib/client/search/clicks.ts`) at the deployed Worker URL for
+   production builds.
+5. Create a scoped Cloudflare API token (D1 read) and add it with the account id to GitHub Actions
+   secrets (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`).
+6. Add `compile:elo -- --remote` to the deploy workflow before `pnpm build` (every deploy, not
+   just the cron, or merges reset live ratings to baseline).
+7. Add the scheduled rebuild: a cron-triggered workflow running the same deploy pipeline, to
+   refresh ratings between merges.
+
 ## Open Questions
 
 - Exact scoring weights, tiers, and the flatness measure (constants in
