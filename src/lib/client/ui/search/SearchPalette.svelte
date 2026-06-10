@@ -4,8 +4,9 @@
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import Dialog from '$lib/client/ui/dialog/Dialog.svelte';
 	import Kbd from '$lib/client/ui/kbd/Kbd.svelte';
-	import { popular, search, type SearchIndex, type SearchResult } from '$lib/client/search';
-	import { loadSearchIndex } from '$lib/client/search/load';
+	import { popular, search, type SearchResult } from '$lib/client/search';
+	import { SEARCH } from '$lib/client/search/constants';
+	import { loadSearchIndex, type LoadedSearch } from '$lib/client/search/load';
 	import { recordClick } from '$lib/client/search/clicks';
 	import type { SearchEntryType } from '$lib/shared/utils/search/types';
 
@@ -18,7 +19,7 @@
 
 	let { open = $bindable(false), database }: Props = $props();
 
-	const POPULAR_LIMIT = 5;
+	const POPULAR_LIMIT = 8;
 
 	type BadgeColor = 'neutral' | 'accent' | 'success' | 'warning' | 'danger' | 'info';
 
@@ -38,15 +39,17 @@
 
 	let query = $state('');
 	let selected = $state(0);
-	let index = $state<SearchIndex | null>(null);
+	let loaded = $state<LoadedSearch | null>(null);
 	let loadFailed = $state(false);
 	let listEl: HTMLElement | undefined = $state();
 
 	const isPopular = $derived(query.trim() === '');
 
 	const results = $derived.by((): SearchResult[] => {
-		if (!index) return [];
-		return isPopular ? popular(index, POPULAR_LIMIT) : search(index, query);
+		if (!loaded) return [];
+		return isPopular
+			? popular(loaded.index, POPULAR_LIMIT)
+			: search(loaded.index, query, { queryRatings: loaded.queryRatings });
 	});
 
 	// Load (or reload on database switch) while open. The stale flag guards
@@ -56,9 +59,9 @@
 		const target = database;
 		let stale = false;
 		loadSearchIndex(target)
-			.then((loaded) => {
+			.then((result) => {
 				if (stale) return;
-				index = loaded;
+				loaded = result;
 				loadFailed = false;
 			})
 			.catch(() => {
@@ -84,10 +87,16 @@
 	});
 
 	function activate(result: SearchResult) {
+		// Battles record a fixed prefix, not the scrollable display list, so
+		// they are identical-sized on every device. A deeper click appends
+		// the clicked route: it beat everything ranked above it.
+		const shown = results.slice(0, SEARCH.SHOWN_RECORD_LIMIT).map((r) => r.entry.url);
+		if (!shown.includes(result.entry.url)) shown.push(result.entry.url);
+
 		recordClick({
 			query: query.trim(),
 			clicked: result.entry.url,
-			shown: results.map((r) => r.entry.url)
+			shown
 		});
 		open = false;
 		goto(result.entry.url);
@@ -143,7 +152,7 @@
 			<p class="px-4 py-10 text-center text-sm text-text-muted">
 				The search index failed to load.
 			</p>
-		{:else if !index}
+		{:else if !loaded}
 			<p class="px-4 py-10 text-center text-sm text-text-muted">Loading index...</p>
 		{:else if results.length === 0}
 			<p class="px-4 py-10 text-center text-sm text-text-muted">

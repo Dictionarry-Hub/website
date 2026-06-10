@@ -239,12 +239,12 @@ describe('per-term ratings', () => {
 });
 
 describe('results', () => {
-	it('respects the limit option and defaults to 10', () => {
-		const entries = Array.from({ length: 15 }, (_, i) =>
+	it('respects the limit option and defaults to 15', () => {
+		const entries = Array.from({ length: 20 }, (_, i) =>
 			entry({ title: `Profile ${String.fromCharCode(65 + i)}`, url: `/p${i}` })
 		);
 
-		expect(run('profile', entries)).toHaveLength(10);
+		expect(run('profile', entries)).toHaveLength(15);
 		expect(run('profile', entries, { limit: 3 })).toHaveLength(3);
 	});
 

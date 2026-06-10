@@ -31,6 +31,9 @@ src/lib/data/pcd/
 # Generated API data
 src/lib/data/api/
 
+# Generated Elo ratings
+src/lib/data/elo/
+
 # AI Stuff
 CLAUDE.md
 AGENTS.md

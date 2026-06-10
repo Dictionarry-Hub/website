@@ -2,6 +2,7 @@ import type { RequestHandler } from './$types';
 import type { DevLogMeta } from '$lib/shared/utils/llm/index.js';
 import { buildApiEndpointEntries } from '$lib/shared/utils/search/api.js';
 import { buildDevLogEntry } from '$lib/shared/utils/search/devlog.js';
+import { applyRatings } from '$lib/shared/utils/search/ratings.js';
 import { loadApiSpec } from '$lib/shared/utils/openapi/index.js';
 
 export const prerender = true;
@@ -20,7 +21,7 @@ export const GET: RequestHandler = async () => {
 	);
 
 	const spec = await loadApiSpec();
-	const entries = [...devLogs, ...buildApiEndpointEntries(spec)];
+	const entries = applyRatings([...devLogs, ...buildApiEndpointEntries(spec)]);
 
 	return new Response(JSON.stringify(entries), {
 		headers: { 'Content-Type': 'application/json' }

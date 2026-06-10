@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator, RequestHandler } from './$types';
 import { buildPcdEntries } from '$lib/shared/utils/search/pcd.js';
+import { applyRatings } from '$lib/shared/utils/search/ratings.js';
 import type { CompiledDatabase } from '$lib/types/pcd';
 
 export const prerender = true;
@@ -28,7 +29,7 @@ export const GET: RequestHandler = async ({ params }) => {
 		error(404, 'Database not found');
 	}
 
-	return new Response(JSON.stringify(buildPcdEntries(data)), {
+	return new Response(JSON.stringify(applyRatings(buildPcdEntries(data))), {
 		headers: { 'Content-Type': 'application/json' }
 	});
 };

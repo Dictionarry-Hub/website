@@ -142,9 +142,9 @@ write time. Stored event:
 
 | Field     | Notes                                                  |
 | --------- | ------------------------------------------------------ |
-| `query`   | Normalized query text                                  |
+| `query`   | Raw query text (normalized at fold time)               |
 | `clicked` | Route of the clicked result                            |
-| `shown`   | Routes shown at click time                             |
+| `shown`   | Fixed-length prominent prefix of results, rank order   |
 | `source`  | `human` or `synthetic` (for bootstrap/test data)       |
 | `ip`      | Hashed, for rate limiting and retroactive exclusion    |
 | `ts`      | Server timestamp                                       |
@@ -177,9 +177,14 @@ Ratings enter the build as a third compile pipeline, shaped like `compile:pcd` a
    looked up.
 3. Downstream is unchanged: the scorer reads `entry.elo` either way.
 
-Local, CI, and PR builds never run `compile:elo`; the file is absent and everything ships at
-baseline. Only the scheduled production rebuild (a GitHub Actions cron running `compile:elo`
-before `pnpm build`) bakes live ratings into the index.
+`compile:elo` reads events via `wrangler d1 execute --json` (`--local` against the dev SQLite
+state, `--remote` against production D1), so the Worker needs no read endpoint and the script
+handles no credentials: wrangler owns auth in both modes.
+
+Local, CI, and PR builds never run `compile:elo`; the files are absent and everything ships at
+baseline. Every production deploy runs `compile:elo --remote` before building (otherwise each
+merge would silently reset live ratings to baseline); the scheduled cron exists to refresh
+ratings between merges.
 
 Full replay is what makes the system tunable and recoverable:
 
@@ -246,10 +251,14 @@ benefit.
 A command palette modal (`SearchPalette` in `src/lib/client/ui/search/`, on the `Dialog`
 primitive), opened with Ctrl+K / Cmd+K or the sidebar trigger. Results render as a flat ranked
 list with type badges, exactly the order the scorer returns: the ranking is the product, and the
-UI does not regroup it. The list shown to the user is the `shown` payload of click events,
-recorded on every activation (`src/lib/client/search/clicks.ts`, a no-op until the Worker
-endpoint exists). Index files lazy-load on first open and are cached per database
-(`src/lib/client/search/load.ts`).
+UI does not regroup it. Result counts are constants, never responsive.
+
+Click events record a fixed-length top prefix of the results as `shown`
+(`SHOWN_RECORD_LIMIT`), not the full scrollable list: Elo battles stay identical-sized and
+viewport-independent, and results nobody scrolled to are never punished as losers. A click deeper
+than the prefix appends the clicked route (it beat everything ranked above it). Recording lives
+in `src/lib/client/search/clicks.ts`; index files lazy-load on first open and are cached per
+database (`src/lib/client/search/load.ts`).
 
 The empty state shows the most popular pages: the global leaderboard sorted by rating (`popular()`
 in the scorer), never per-term tables. Clicks from that state are recorded faithfully with an
@@ -259,8 +268,8 @@ Replay can revisit that weighting later.
 
 ## Open Questions
 
-- How `compile:elo` fetches events: a GET endpoint on the Worker versus the D1 HTTP API.
-- Exact scoring weights, tiers, the flatness measure, and the Elo K-factor (tuned during
-  implementation).
-- The shrinkage constant `C` and the per-term shipping cutoff (tuned once real query data exists).
-- The Elo update rule details (pairwise updates of clicked versus shown, K-factor schedule).
+- Exact scoring weights, tiers, and the flatness measure (constants in
+  `src/lib/client/search/constants.ts`, tuned by feel).
+- The K-factor, shrinkage constant `C`, and per-term shipping cutoff (constants in
+  `tooling/elo/fold.ts`, tuned once real query data exists).
+- Production hardening: IP rate limiting on the Worker (needs state; deferred).

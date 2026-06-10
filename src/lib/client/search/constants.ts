@@ -2,8 +2,16 @@
 // values, so these can be tuned freely. See docs/backend/search.md.
 
 export const SEARCH = {
-	/** Default result count; also the "shown" list in click events. */
-	LIMIT: 10,
+	/** Default displayed result count (constant across breakpoints). */
+	LIMIT: 15,
+
+	/**
+	 * How many top results a click event records as "shown". A fixed prefix,
+	 * not the display list: Elo battles stay identical-sized and viewport-
+	 * independent, and never punish results nobody scrolled to. A click
+	 * deeper than the prefix appends the clicked route.
+	 */
+	SHOWN_RECORD_LIMIT: 8,
 
 	// Field weights: where a token matches matters.
 	WEIGHT_TITLE: 1,

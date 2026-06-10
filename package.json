@@ -22,9 +22,13 @@
 		"test:watch": "vitest",
 		"lighthouse": "lhci autorun",
 		"compile:pcd": "tsx tooling/pcd/index.ts",
-		"compile:api": "tsx tooling/api/index.ts"
+		"compile:api": "tsx tooling/api/index.ts",
+		"compile:elo": "tsx tooling/elo/index.ts",
+		"worker:dev": "wrangler dev -c worker/wrangler.jsonc",
+		"worker:migrate": "wrangler d1 migrations apply dictionarry-clicks --local -c worker/wrangler.jsonc"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20260609.1",
 		"@eslint/js": "^10.0.1",
 		"@icons-pack/svelte-simple-icons": "^7.2.0",
 		"@lhci/cli": "^0.15.1",
@@ -50,7 +54,8 @@
 		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.58.1",
 		"vite": "^8.0.7",
-		"vitest": "^4.1.8"
+		"vitest": "^4.1.8",
+		"wrangler": "^4.99.0"
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.17.0",
