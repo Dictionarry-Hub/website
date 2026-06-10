@@ -93,9 +93,12 @@
 		<div class="flex items-center gap-2">
 			<img
 				src="/icon.png"
-				alt="dictionarry"
+				alt="profilarr"
 				class="size-5" />
-			<span class="font-accent text-lg font-semibold">dictionarry</span>
+			<span class="flex items-baseline gap-1">
+				<span class="font-accent text-lg font-semibold">profilarr</span>
+				<span class="font-mono text-sm text-text-muted">/docs</span>
+			</span>
 		</div>
 		<DropdownSelect
 			bind:value={themeValue}
