@@ -75,6 +75,12 @@
 		color: var(--theme-text-soft);
 	}
 
+	/* Markdown content arrives as block elements (p, ul) whose prose
+	   margins would otherwise pad the callout bottom. */
+	.callout-body > :global(:last-child) {
+		margin-bottom: 0;
+	}
+
 	.callout-info {
 		background: color-mix(in srgb, var(--theme-info-bg) 50%, transparent);
 		border-color: var(--theme-info-border);
