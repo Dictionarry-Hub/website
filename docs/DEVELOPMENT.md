@@ -32,8 +32,8 @@ Every pull request targeting `develop` runs five checks in parallel:
 | Test       | `pnpm test`         | Failing unit tests (Vitest)       |
 | Build      | `pnpm build`        | Build failures, broken routes     |
 
-All five must pass before a PR can be merged. Tests live in `tests/` at the repository root. PR titles are validated against conventional commit
-format.
+All five must pass before a PR can be merged. Tests live in `tests/` at the repository root. PR
+titles are validated against conventional commit format.
 
 ## Deployment
 

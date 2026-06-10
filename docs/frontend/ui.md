@@ -137,18 +137,18 @@ positioning - the consumer controls those via class passthrough.
 
 `src/lib/client/ui/kbd/Kbd.svelte`
 
-Semantic keyboard-key hint: renders a `<kbd>` element styled as a keycap in Badge's visual
-language (border, mono font). Used for the search palette's footer hints (`default`) and the
-search trigger's shortcut (`outline`, transparent over the trigger's own surface).
+Semantic keyboard-key hint: renders a `<kbd>` element styled as a keycap in Badge's visual language
+(border, mono font). Used for the search palette's footer hints (`default`) and the search trigger's
+shortcut (`outline`, transparent over the trigger's own surface).
 
-| Prop      | Type                   | Required | Default     |
-| --------- | ---------------------- | -------- | ----------- |
-| `variant` | `'default' \| 'outline'` | no     | `'default'` |
-| `size`    | `'sm' \| 'md'`         | no       | `'sm'`      |
-| `class`   | `string`               | no       |             |
+| Prop      | Type                     | Required | Default     |
+| --------- | ------------------------ | -------- | ----------- |
+| `variant` | `'default' \| 'outline'` | no       | `'default'` |
+| `size`    | `'sm' \| 'md'`           | no       | `'sm'`      |
+| `class`   | `string`                 | no       |             |
 
-`default` fills with `bg-surface-muted`; `outline` is transparent with just the border, for use
-over a surface that already has its own fill.
+`default` fills with `bg-surface-muted`; `outline` is transparent with just the border, for use over
+a surface that already has its own fill.
 
 ```svelte
 <span class="flex items-center gap-1.5"><Kbd>⌘K</Kbd> open</span>
@@ -179,11 +179,11 @@ scroll-proof).
 (unpadded; the snippet provides its own padding). When height is constrained via `class` (e.g.
 `max-h-[60vh]`), the children region scrolls between them.
 
-Opens with a 150ms fade and rise (via `@starting-style`; browsers without support snap, and
-reduced motion is respected). Close is instant by design.
+Opens with a 150ms fade and rise (via `@starting-style`; browsers without support snap, and reduced
+motion is respected). Close is instant by design.
 
-Default position is centered. Override with margin utilities via `class` (margin longhands beat
-the internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette position.
+Default position is centered. Override with margin utilities via `class` (margin longhands beat the
+internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette position.
 
 ```svelte
 <script lang="ts">
@@ -207,12 +207,12 @@ the internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette positi
 `src/lib/client/ui/search/SearchPalette.svelte`
 
 The command palette: a modal search box over the client-side scorer (see
-[backend/search.md](../backend/search.md)). Composes `Dialog` (input row as `header`, keyboard
-hints as `footer`), lazy-loads the core and active-database index files on first open, and renders
-a flat ranked list with type `Badge`s, exactly the order the scorer returns. Empty query shows the
-global most-popular entries. Arrow keys, Enter, and Escape navigate; clicks and Enter record a
-click event (a no-op until the Elo store ships) and `goto` the result. Toggled globally by Ctrl+K /
-Cmd+K via `svelte:window`. Mounted once in the root layout.
+[backend/search.md](../backend/search.md)). Composes `Dialog` (input row as `header`, keyboard hints
+as `footer`), lazy-loads the core and active-database index files on first open, and renders a flat
+ranked list with type `Badge`s, exactly the order the scorer returns. Empty query shows the global
+most-popular entries. Arrow keys, Enter, and Escape navigate; clicks and Enter record a click event
+(a no-op until the Elo store ships) and `goto` the result. Toggled globally by Ctrl+K / Cmd+K via
+`svelte:window`. Mounted once in the root layout.
 
 | Prop       | Type                 | Required | Default |
 | ---------- | -------------------- | -------- | ------- |
@@ -241,14 +241,14 @@ Collapsible navigation section with a split header. The left side is a link, the
 chevron toggle. Both highlight on hover of either via group hover. Children render with a vertical
 connector line and a slide transition.
 
-| Prop    | Type        | Required | Default |
-| ------- | ----------- | -------- | ------- |
-| `label` | `string`    | yes      |         |
-| `href`  | `string`    | yes      |         |
-| `icon`  | `Component` | no       |         |
-| `badge` | `number`    | no       | `0`     |
-| `open`  | `boolean`   | no       | `true`  |
-| `class` | `string` (replaces the default `mb-4` root spacing) | no | |
+| Prop    | Type                                                | Required | Default |
+| ------- | --------------------------------------------------- | -------- | ------- |
+| `label` | `string`                                            | yes      |         |
+| `href`  | `string`                                            | yes      |         |
+| `icon`  | `Component`                                         | no       |         |
+| `badge` | `number`                                            | no       | `0`     |
+| `open`  | `boolean`                                           | no       | `true`  |
+| `class` | `string` (replaces the default `mb-4` root spacing) | no       |         |
 
 Active state: exact match when children exist, prefix match otherwise. Active renders with
 `bg-surface border-border shadow-control` (Button default treatment). Groups nested inside
@@ -283,14 +283,14 @@ opens a dropdown to pick a context value, the right chevron collapses the childr
 scopes. The select affordance is deliberately quiet: no glyph, just a hover tooltip (and matching
 `aria-label`). Used for the sidebar database picker, which roots the PCD subtree.
 
-| Prop       | Type                                                                    | Required | Default           |
-| ---------- | ----------------------------------------------------------------------- | -------- | ----------------- |
-| `value`    | `string` (bindable)                                                      | yes      |                   |
-| `options`  | `{ value: string; label: string; icon?: Component; emoji?: string }[]`   | yes      |                   |
-| `header`   | `string`                                                                 | no       |                   |
-| `tooltip`  | `string`                                                                 | no       | `Click to switch` |
-| `open`     | `boolean`                                                                | no       | `true`            |
-| `onchange` | `(value: string) => void`                                                | no       |                   |
+| Prop       | Type                                                                   | Required | Default           |
+| ---------- | ---------------------------------------------------------------------- | -------- | ----------------- |
+| `value`    | `string` (bindable)                                                    | yes      |                   |
+| `options`  | `{ value: string; label: string; icon?: Component; emoji?: string }[]` | yes      |                   |
+| `header`   | `string`                                                               | no       |                   |
+| `tooltip`  | `string`                                                               | no       | `Click to switch` |
+| `open`     | `boolean`                                                              | no       | `true`            |
+| `onchange` | `(value: string) => void`                                              | no       |                   |
 
 ```svelte
 <NavGroupSelect
@@ -298,7 +298,9 @@ scopes. The select affordance is deliberately quiet: no glyph, just a hover tool
 	options={databaseOptions}
 	header="Database"
 	onchange={onDatabaseChange}>
-	<NavGroup label="Quality Profiles" href="/pcd/{databaseValue}/quality-profiles">
+	<NavGroup
+		label="Quality Profiles"
+		href="/pcd/{databaseValue}/quality-profiles">
 		<!-- ... -->
 	</NavGroup>
 </NavGroupSelect>
@@ -312,19 +314,19 @@ scopes. The select affordance is deliberately quiet: no glyph, just a hover tool
 
 Select control backed by a dropdown menu. Wraps `Dropdown`, `DropdownHeader`, and `DropdownItem`.
 
-| Prop          | Type                                                   | Required | Default       |
-| ------------- | ------------------------------------------------------ | -------- | ------------- |
-| `value`       | `string` (bindable)                                    | yes      |               |
-| `options`     | `{ value: string; label: string; icon?: Component; emoji?: string }[]` | yes |    |
-| `label`       | `string`                                               | no       |               |
-| `header`      | `string`                                               | no       |               |
-| `placeholder` | `string`                                               | no       | `'Select...'` |
-| `minWidth`    | `string`                                               | no       | `'8rem'`      |
-| `position`    | `'left' \| 'right' \| 'middle'`                        | no       | `'left'`      |
-| `placement`   | `'auto' \| 'bottom' \| 'top'`                          | no       | `'auto'`      |
-| `disabled`    | `boolean`                                              | no       | `false`       |
-| `iconOnly`    | `boolean`                                              | no       | `false`       |
-| `onchange`    | `(value: string) => void`                              | no       |               |
+| Prop          | Type                                                                   | Required | Default       |
+| ------------- | ---------------------------------------------------------------------- | -------- | ------------- |
+| `value`       | `string` (bindable)                                                    | yes      |               |
+| `options`     | `{ value: string; label: string; icon?: Component; emoji?: string }[]` | yes      |               |
+| `label`       | `string`                                                               | no       |               |
+| `header`      | `string`                                                               | no       |               |
+| `placeholder` | `string`                                                               | no       | `'Select...'` |
+| `minWidth`    | `string`                                                               | no       | `'8rem'`      |
+| `position`    | `'left' \| 'right' \| 'middle'`                                        | no       | `'left'`      |
+| `placement`   | `'auto' \| 'bottom' \| 'top'`                                          | no       | `'auto'`      |
+| `disabled`    | `boolean`                                                              | no       | `false`       |
+| `iconOnly`    | `boolean`                                                              | no       | `false`       |
+| `onchange`    | `(value: string) => void`                                              | no       |               |
 
 `header` renders a `DropdownHeader` at the top of the menu (e.g. "Theme", "Database"). `iconOnly`
 renders just the matched option's icon as the trigger button. An option `emoji` takes precedence
@@ -611,10 +613,10 @@ Example: `--theme-success-bg`, `--theme-warning-text`, `--theme-danger-border`.
 
 Each theme declares its own light/dark identity; nothing else enumerates themes.
 
-| Token                 | Role                                                |
-| --------------------- | --------------------------------------------------- |
-| `--theme-image-light` | `display` for light-variant `ThemeImage` images     |
-| `--theme-image-dark`  | `display` for dark-variant `ThemeImage` images      |
+| Token                 | Role                                            |
+| --------------------- | ----------------------------------------------- |
+| `--theme-image-light` | `display` for light-variant `ThemeImage` images |
+| `--theme-image-dark`  | `display` for dark-variant `ThemeImage` images  |
 
 Themes also declare `color-scheme: light` or `color-scheme: dark` (a plain CSS property, not a
 token) so native scrollbars and form controls match.
@@ -645,14 +647,14 @@ The active theme is set via `data-theme` on `<html>`. Light is the default (no a
   because no theme CSS matches it.
 - **Store**: `src/lib/client/ui/theme/theme.svelte.ts` provides reactive state and a `set()` method
   for runtime switching.
-- **Registry**: `src/lib/client/ui/theme/themes.ts` is the single source of truth for theme
-  identity (id, label, emoji). The `Theme` type, the `THEMES` array, and the switcher options all
-  derive from it.
+- **Registry**: `src/lib/client/ui/theme/themes.ts` is the single source of truth for theme identity
+  (id, label, emoji). The `Theme` type, the `THEMES` array, and the switcher options all derive from
+  it.
 
 ### Adding a theme
 
-1. Create `src/styles/themes/<id>.css` defining the complete token set (`light.css` is the
-   canonical contract), a `color-scheme` declaration, and the `--theme-image-*` tokens.
+1. Create `src/styles/themes/<id>.css` defining the complete token set (`light.css` is the canonical
+   contract), a `color-scheme` declaration, and the `--theme-image-*` tokens.
 2. Add an entry to `THEME_DEFINITIONS` in `src/lib/client/ui/theme/themes.ts`.
 3. Add the `@import` in `src/routes/layout.css`.
 

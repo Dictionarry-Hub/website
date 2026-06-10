@@ -56,14 +56,15 @@ function dedupe(values: string[]): string[] {
 	return [...new Set(values)];
 }
 
-export function buildQualityProfileEntry(
-	profile: QualityProfile,
-	database: string
-): SearchEntry {
+export function buildQualityProfileEntry(profile: QualityProfile, database: string): SearchEntry {
 	const qualityNames = profile.qualities
 		.filter((entry) => entry.enabled)
 		.flatMap((entry) =>
-			entry.quality ? [entry.quality] : entry.group ? [entry.group.name, ...entry.group.members] : []
+			entry.quality
+				? [entry.quality]
+				: entry.group
+					? [entry.group.name, ...entry.group.members]
+					: []
 		);
 
 	return {

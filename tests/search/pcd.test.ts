@@ -150,7 +150,10 @@ describe('buildQualityProfileEntry', () => {
 						enabled: true,
 						upgradeUntil: true,
 						quality: null,
-						group: { name: 'Bluray-1080p', members: ['Bluray-1080p', 'Bluray-1080p Remux'] }
+						group: {
+							name: 'Bluray-1080p',
+							members: ['Bluray-1080p', 'Bluray-1080p Remux']
+						}
 					}
 				]
 			}),
@@ -177,7 +180,10 @@ describe('buildQualityProfileEntry', () => {
 						enabled: true,
 						upgradeUntil: true,
 						quality: null,
-						group: { name: 'Bluray-1080p', members: ['Bluray-1080p', 'Bluray-1080p Remux'] }
+						group: {
+							name: 'Bluray-1080p',
+							members: ['Bluray-1080p', 'Bluray-1080p Remux']
+						}
 					},
 					{
 						position: 3,
@@ -295,7 +301,9 @@ describe('buildDelayProfileEntry', () => {
 		);
 
 		expect(entry.url).toBe('/pcd/dictionarry/delay-profiles/prefer-usenet');
-		expect(entry.blurb).toBe('Prefers usenet. 120 min torrent delay. Bypasses at highest quality.');
+		expect(entry.blurb).toBe(
+			'Prefers usenet. 120 min torrent delay. Bypasses at highest quality.'
+		);
 	});
 
 	it('includes the score bypass when configured', () => {

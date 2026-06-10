@@ -160,7 +160,8 @@
 			</p>
 		{:else}
 			{#if isPopular}
-				<div class="px-4 pt-3 pb-1 text-xs font-semibold tracking-wide text-text-muted uppercase">
+				<div
+					class="px-4 pt-3 pb-1 text-xs font-semibold tracking-wide text-text-muted uppercase">
 					Popular
 				</div>
 			{/if}

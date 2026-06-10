@@ -13,15 +13,7 @@
 		children?: Snippet;
 	}
 
-	let {
-		label,
-		href,
-		icon,
-		badge = 0,
-		open = true,
-		class: className,
-		children
-	}: Props = $props();
+	let { label, href, icon, badge = 0, open = true, class: className, children }: Props = $props();
 
 	let toggled = $state<boolean | null>(null);
 	const isOpen = $derived(toggled ?? open);

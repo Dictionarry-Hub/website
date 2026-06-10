@@ -85,7 +85,9 @@ function main(): void {
 	const queryRatings = Object.fromEntries(
 		Object.entries(perTerm).map(([term, table]) => [
 			term,
-			Object.fromEntries(Object.entries(table).map(([route, rating]) => [route, round(rating)]))
+			Object.fromEntries(
+				Object.entries(table).map(([route, rating]) => [route, round(rating)])
+			)
 		])
 	);
 

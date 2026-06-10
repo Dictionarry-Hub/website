@@ -193,7 +193,9 @@
 						<NavItem
 							label={entry.name}
 							image="/{entry.arrType}.svg"
-							href="/pcd/{databaseValue}/naming/{entry.arrType}/{slugify(entry.name)}" />
+							href="/pcd/{databaseValue}/naming/{entry.arrType}/{slugify(
+								entry.name
+							)}" />
 					{/each}
 				</NavGroup>
 

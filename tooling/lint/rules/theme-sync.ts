@@ -95,13 +95,19 @@ const rule: LintRule = {
 				);
 			}
 			if (extra.length > 0) {
-				fail(file.path, `Token(s) not in the contract (add to light.css or remove): ${extra.join(', ')}.`);
+				fail(
+					file.path,
+					`Token(s) not in the contract (add to light.css or remove): ${extra.join(', ')}.`
+				);
 			}
 		}
 
 		for (const id of registryIds) {
 			if (!cssIds.has(id)) {
-				fail(REGISTRY_PATH, `Theme '${id}' is registered but src/styles/themes/${id}.css does not exist.`);
+				fail(
+					REGISTRY_PATH,
+					`Theme '${id}' is registered but src/styles/themes/${id}.css does not exist.`
+				);
 			}
 		}
 		for (const id of importIds) {

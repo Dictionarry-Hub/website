@@ -92,9 +92,7 @@ export function search(
 	// A token matching nothing in the entire index is qualifier language
 	// ("best"): dropped from scoring, counted as exploratory intent. A token
 	// matching some entries discriminates, and entries missing it pay for it.
-	const realIndices = tokens
-		.map((_, i) => i)
-		.filter((i) => matrix.some((row) => row[i] > 0));
+	const realIndices = tokens.map((_, i) => i).filter((i) => matrix.some((row) => row[i] > 0));
 	if (realIndices.length === 0) return [];
 	const exploratory = realIndices.length < tokens.length;
 
@@ -156,7 +154,7 @@ export function search(
  * Top entries by global rating, for the palette's empty state. Per-term
  * tables never apply: there is no term.
  */
-export function popular(index: SearchIndex, limit = SEARCH.LIMIT): SearchResult[] {
+export function popular(index: SearchIndex, limit: number = SEARCH.LIMIT): SearchResult[] {
 	return [...index.items]
 		.sort((a, b) => b.entry.elo - a.entry.elo || a.entry.title.localeCompare(b.entry.title))
 		.slice(0, limit)

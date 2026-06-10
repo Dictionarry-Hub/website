@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { Search } from '@lucide/svelte';
 	import Kbd from '$lib/client/ui/kbd/Kbd.svelte';
 
@@ -9,12 +10,9 @@
 
 	let { onclick, class: className = '' }: Props = $props();
 
-	// Resolved client-side; prerendered HTML shows the Ctrl form briefly.
-	let isMac = $state(false);
-
-	$effect(() => {
-		isMac = /Mac|iPhone|iPad/i.test(navigator.platform);
-	});
+	// browser-guarded: navigator does not exist at prerender time, so the
+	// prerendered HTML shows the Ctrl form briefly on Apple platforms.
+	const isMac = $derived(browser && /Mac|iPhone|iPad/i.test(navigator.platform));
 </script>
 
 <!-- A button dressed as an input: the docs-site search affordance. -->

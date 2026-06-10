@@ -1,7 +1,7 @@
 # Search
 
-Design for the search system: a hand-rolled fuzzy scorer blended with Elo ratings derived from
-click behavior. Nothing here is implemented yet; this is the agreed design.
+Design for the search system: a hand-rolled fuzzy scorer blended with Elo ratings derived from click
+behavior. Fully implemented except production deployment of the click store (Worker, D1, cron).
 
 ## Concept
 
@@ -29,8 +29,8 @@ Search is scoped to the currently selected database. The index is split accordin
 
 The client lazy-loads the core index, the active database's index, and the per-term rating table
 (`/search-index/query-ratings.json`, see Rating Computation) on first search interaction. Index
-files are emitted as prerendered endpoints (like the markdown artifact routes), not bundled into
-the JS.
+files are emitted as prerendered endpoints (like the markdown artifact routes), not bundled into the
+JS.
 
 ### Entry schema
 
@@ -50,29 +50,29 @@ Body text is not indexed. Search matches against title, blurb, and keywords.
 ### Blurb builders
 
 Each content type defines a function that builds its entry from its data at index build time. The
-blurb serves two masters: searchable text and display text in the palette. Terms that are
-searchable but not readable prose (tags, arr types, quality names) belong in keywords instead.
+blurb serves two masters: searchable text and display text in the palette. Terms that are searchable
+but not readable prose (tags, arr types, quality names) belong in keywords instead.
 
 Descriptions are nullable across PCD entities (and absent entirely on some types), so every PCD
 builder has a derived fallback.
 
-Every builder also appends its type words to keywords ("quality profile", "regex", "custom
-format", "naming", ...). Users search by kind, and the kind rarely appears in entity names or
-descriptions: without this, "1080p profile" cannot find quality profiles.
+Every builder also appends its type words to keywords ("quality profile", "regex", "custom format",
+"naming", ...). Users search by kind, and the kind rarely appears in entity names or descriptions:
+without this, "1080p profile" cannot find quality profiles.
 
-| Type                    | Blurb                                                                                              | Keywords            |
-| ----------------------- | -------------------------------------------------------------------------------------------------- | ------------------- |
-| Dev log                 | Frontmatter blurb, passed through                                                                  | Tags                |
-| Wiki article (future)   | Frontmatter blurb (constrains the to-be-defined frontmatter)                                       | Tags                |
-| Profilarr doc (future)  | Frontmatter description; fallback decided when the layer exists                                    |                     |
-| API endpoint            | Method plus path ("GET /api/v1/databases"); title from the operation summary                       | Tag name            |
-| Quality profile         | Description, truncated. Fallback: upgrade-target sentence ("Upgrades until Bluray-1080p"). No stats | Tags, quality names |
-| Custom format           | Description. Fallback: condition-type summary ("3 conditions: release title, resolution, source")  | Tags                |
-| Regex                   | Description. Fallback: truncated pattern                                                           | Tags                |
-| Delay profile           | Derived: protocol, delays, bypass ("Prefers usenet. 120 min torrent delay.")                       |                     |
-| Naming                  | Derived: "Radarr naming scheme, renaming enabled."                                                 | Arr type            |
-| Media settings          | Derived: propers/repacks behavior, MediaInfo on/off                                                | Arr type            |
-| Quality definitions     | Derived: tier count and range ("12 quality tiers, SDTV to Remux-2160p.")                           | Arr type            |
+| Type                   | Blurb                                                                                               | Keywords            |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------- |
+| Dev log                | Frontmatter blurb, passed through                                                                   | Tags                |
+| Wiki article (future)  | Frontmatter blurb (constrains the to-be-defined frontmatter)                                        | Tags                |
+| Profilarr doc (future) | Frontmatter description; fallback decided when the layer exists                                     |                     |
+| API endpoint           | Method plus path ("GET /api/v1/databases"); title from the operation summary                        | Tag name            |
+| Quality profile        | Description, truncated. Fallback: upgrade-target sentence ("Upgrades until Bluray-1080p"). No stats | Tags, quality names |
+| Custom format          | Description. Fallback: condition-type summary ("3 conditions: release title, resolution, source")   | Tags                |
+| Regex                  | Description. Fallback: truncated pattern                                                            | Tags                |
+| Delay profile          | Derived: protocol, delays, bypass ("Prefers usenet. 120 min torrent delay.")                        |                     |
+| Naming                 | Derived: "Radarr naming scheme, renaming enabled."                                                  | Arr type            |
+| Media settings         | Derived: propers/repacks behavior, MediaInfo on/off                                                 | Arr type            |
+| Quality definitions    | Derived: tier count and range ("12 quality tiers, SDTV to Remux-2160p.")                            | Arr type            |
 
 The API reference is indexed per endpoint, one entry per operation, with URLs anchored into the
 single API reference page by operationId (`/api/v1#getDatabases`). The page already renders
@@ -98,13 +98,13 @@ from the UI. Four stages:
     subsequence/acronym matching (fzf-style) in v1.
 
 3. **Aggregate to an entry score.** Each query token takes its best match anywhere in the entry;
-   scores are averaged. Title matches outweigh blurb matches (blurb at roughly half weight). No
-   type boosts in v1. Unmatched tokens split into two cases:
-    - A token that matches *some* entries but not this one (a discriminating token, e.g. "sonarr")
+   scores are averaged. Title matches outweigh blurb matches (blurb at roughly half weight). No type
+   boosts in v1. Unmatched tokens split into two cases:
+    - A token that matches _some_ entries but not this one (a discriminating token, e.g. "sonarr")
       applies a penalty multiplier scaled by that token's strongest match anywhere in the index:
       missing a strong keyword costs the full penalty, missing a word that only grazes a blurb
       somewhere barely registers.
-    - A token that matches *nothing in the entire index* ("best", "how") is qualifier language, not
+    - A token that matches _nothing in the entire index_ ("best", "how") is qualifier language, not
       failed navigation. It is dropped from text scoring with no penalty and counted as an
       exploratory-intent signal for stage 4.
 
@@ -116,21 +116,21 @@ from the UI. Four stages:
     candidate's rating resolves per-term first: if the normalized query has a per-term table (see
     Rating Computation), those ratings feed the blend, otherwise the entry's global `elo` does.
     Ratings normalize to 0..1 via Elo's own expected-score formula:
-    `1 / (1 + 10^((1500 - rating) / 400))`.
-    The Elo weight is not fixed: it scales with how *flat* the top text scores are. When one entry
-    towers over the field (navigational query), Elo influence stays small. When the top candidates
-    are clustered ("best 1080p profile" matching several profiles near-identically), text matching
-    has no real opinion and the Elo weight slides up toward a cap; exploratory-intent tokens from
-    stage 3 nudge the same dial. Even at the cap, text still tie-breaks among equals; Elo reorders
-    the pack, it never overrides a clearly better text match.
+    `1 / (1 + 10^((1500 - rating) / 400))`. The Elo weight is not fixed: it scales with how _flat_
+    the top text scores are. When one entry towers over the field (navigational query), Elo
+    influence stays small. When the top candidates are clustered ("best 1080p profile" matching
+    several profiles near-identically), text matching has no real opinion and the Elo weight slides
+    up toward a cap; exploratory-intent tokens from stage 3 nudge the same dial. Even at the cap,
+    text still tie-breaks among equals; Elo reorders the pack, it never overrides a clearly better
+    text match.
 
 All weights, tiers, and thresholds live in one constants block and are tuned by feel against a test
 suite.
 
 ## Click Store
 
-A Cloudflare Worker (planned: `worker/` directory in this repo, deployed via Wrangler) with a
-single endpoint:
+A Cloudflare Worker (planned: `worker/` directory in this repo, deployed via Wrangler) with a single
+endpoint:
 
 ```
 POST /api/click
@@ -140,14 +140,14 @@ POST /api/click
 The Worker validates the payload and appends one row to a D1 table. No Elo computation happens at
 write time. Stored event:
 
-| Field     | Notes                                                  |
-| --------- | ------------------------------------------------------ |
-| `query`   | Raw query text (normalized at fold time)               |
-| `clicked` | Route of the clicked result                            |
-| `shown`   | Fixed-length prominent prefix of results, rank order   |
-| `source`  | `human` or `synthetic` (for bootstrap/test data)       |
-| `ip`      | Hashed, for rate limiting and retroactive exclusion    |
-| `ts`      | Server timestamp                                       |
+| Field     | Notes                                                |
+| --------- | ---------------------------------------------------- |
+| `query`   | Raw query text (normalized at fold time)             |
+| `clicked` | Route of the clicked result                          |
+| `shown`   | Fixed-length prominent prefix of results, rank order |
+| `source`  | `human` or `synthetic` (for bootstrap/test data)     |
+| `ip`      | Hashed, for rate limiting and retroactive exclusion  |
+| `ts`      | Server timestamp                                     |
 
 D1 over KV: appends to distinct rows cannot conflict (no read-modify-write race), and the free tier
 allows 100k row writes/day versus KV's 1k.
@@ -177,14 +177,14 @@ Ratings enter the build as a third compile pipeline, shaped like `compile:pcd` a
    looked up.
 3. Downstream is unchanged: the scorer reads `entry.elo` either way.
 
-`compile:elo` reads events via `wrangler d1 execute --json` (`--local` against the dev SQLite
-state, `--remote` against production D1), so the Worker needs no read endpoint and the script
-handles no credentials: wrangler owns auth in both modes.
+`compile:elo` reads events via `wrangler d1 execute --json` (`--local` against the dev SQLite state,
+`--remote` against production D1), so the Worker needs no read endpoint and the script handles no
+credentials: wrangler owns auth in both modes.
 
 Local, CI, and PR builds never run `compile:elo`; the files are absent and everything ships at
-baseline. Every production deploy runs `compile:elo --remote` before building (otherwise each
-merge would silently reset live ratings to baseline); the scheduled cron exists to refresh
-ratings between merges.
+baseline. Every production deploy runs `compile:elo --remote` before building (otherwise each merge
+would silently reset live ratings to baseline); the scheduled cron exists to refresh ratings between
+merges.
 
 Full replay is what makes the system tunable and recoverable:
 
@@ -222,12 +222,12 @@ effective  = confidence * perTermRating + (1 - confidence) * globalRating
 
 A term with a handful of clicks sits near global; a term with hundreds is essentially its own
 leaderboard. `compile:elo` computes effective ratings at build time and ships them as
-`/search-index/query-ratings.json` (`term -> route -> rating`), only for terms above a minimum
-click count. That cutoff is a file-size optimization, not a correctness cliff: below it the
-effective rating is approximately global anyway.
+`/search-index/query-ratings.json` (`term -> route -> rating`), only for terms above a minimum click
+count. That cutoff is a file-size optimization, not a correctness cliff: below it the effective
+rating is approximately global anyway.
 
-At search time the scorer resolves ratings per-term first: if the normalized query matches a term
-in the table, those ratings feed the blend; otherwise each entry's global `elo` does. Click-count
+At search time the scorer resolves ratings per-term first: if the normalized query matches a term in
+the table, those ratings feed the blend; otherwise each entry's global `elo` does. Click-count
 shrinkage and the flatness-adaptive blend weight are orthogonal dials: one picks which rating to
 trust, the other how much rating matters at all for the query.
 
@@ -248,23 +248,22 @@ benefit.
 
 ## UI
 
-A command palette modal (`SearchPalette` in `src/lib/client/ui/search/`, on the `Dialog`
-primitive), opened with Ctrl+K / Cmd+K or the sidebar trigger. Results render as a flat ranked
-list with type badges, exactly the order the scorer returns: the ranking is the product, and the
-UI does not regroup it. Result counts are constants, never responsive.
+A command palette modal (`SearchPalette` in `src/lib/client/ui/search/`, on the `Dialog` primitive),
+opened with Ctrl+K / Cmd+K or the sidebar trigger. Results render as a flat ranked list with type
+badges, exactly the order the scorer returns: the ranking is the product, and the UI does not
+regroup it. Result counts are constants, never responsive.
 
-Click events record a fixed-length top prefix of the results as `shown`
-(`SHOWN_RECORD_LIMIT`), not the full scrollable list: Elo battles stay identical-sized and
-viewport-independent, and results nobody scrolled to are never punished as losers. A click deeper
-than the prefix appends the clicked route (it beat everything ranked above it). Recording lives
-in `src/lib/client/search/clicks.ts`; index files lazy-load on first open and are cached per
-database (`src/lib/client/search/load.ts`).
+Click events record a fixed-length top prefix of the results as `shown` (`SHOWN_RECORD_LIMIT`), not
+the full scrollable list: Elo battles stay identical-sized and viewport-independent, and results
+nobody scrolled to are never punished as losers. A click deeper than the prefix appends the clicked
+route (it beat everything ranked above it). Recording lives in `src/lib/client/search/clicks.ts`;
+index files lazy-load on first open and are cached per database (`src/lib/client/search/load.ts`).
 
 The empty state shows the most popular pages: the global leaderboard sorted by rating (`popular()`
-in the scorer), never per-term tables. Clicks from that state are recorded faithfully with an
-empty query but excluded from the Elo fold in v1: a popular list promotes what is already
-top-rated, so folding those clicks would feed a rich-get-richer loop with no relevance anchor.
-Replay can revisit that weighting later.
+in the scorer), never per-term tables. Clicks from that state are recorded faithfully with an empty
+query but excluded from the Elo fold in v1: a popular list promotes what is already top-rated, so
+folding those clicks would feed a rich-get-richer loop with no relevance anchor. Replay can revisit
+that weighting later.
 
 ## Open Questions
 
