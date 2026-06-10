@@ -10,6 +10,10 @@ html {
 @import '../styles/themes/roswell.css';
 @import '../styles/themes/solaris.css';
 @import '../styles/themes/voyager.css';
+@import '../styles/themes/phosphor.css';
+@import '../styles/themes/vamos.css';
+@import '../styles/themes/eight.css';
+@import '../styles/themes/blue.css';
 @import '../styles/prose.css';
 
 @theme inline {
