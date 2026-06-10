@@ -22,16 +22,17 @@ merging.
 
 ## CI
 
-Every pull request targeting `develop` runs four checks in parallel:
+Every pull request targeting `develop` runs five checks in parallel:
 
 | Job        | Command             | What it catches                   |
 | ---------- | ------------------- | --------------------------------- |
 | Format     | `pnpm format:check` | Unformatted code                  |
 | Lint       | `pnpm lint`         | ESLint errors                     |
 | Type Check | `pnpm check`        | TypeScript and Svelte type errors |
+| Test       | `pnpm test`         | Failing unit tests (Vitest)       |
 | Build      | `pnpm build`        | Build failures, broken routes     |
 
-All four must pass before a PR can be merged. PR titles are validated against conventional commit
+All five must pass before a PR can be merged. Tests live in `tests/` at the repository root. PR titles are validated against conventional commit
 format.
 
 ## Deployment

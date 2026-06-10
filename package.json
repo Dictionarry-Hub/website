@@ -18,6 +18,8 @@
 		"lint:llm": "tsx tooling/lint/index.ts --category llm",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
+		"test": "vitest run",
+		"test:watch": "vitest",
 		"lighthouse": "lhci autorun",
 		"compile:pcd": "tsx tooling/pcd/index.ts",
 		"compile:api": "tsx tooling/api/index.ts"
@@ -47,7 +49,8 @@
 		"tsx": "^4.22.4",
 		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.58.1",
-		"vite": "^8.0.7"
+		"vite": "^8.0.7",
+		"vitest": "^4.1.8"
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.17.0",

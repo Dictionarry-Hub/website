@@ -60,6 +60,21 @@ jobs:
             - run: pnpm install --frozen-lockfile
             - run: pnpm check
 
+    test:
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: pnpm/action-setup@v4
+              with:
+                  standalone: true
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm test
+
     build:
         name: Build
         runs-on: ubuntu-latest
