@@ -38,17 +38,14 @@
 			rel="manifest"
 			href="/site.webmanifest" />
 		<script>
+			// Deliberately list-free: an unknown stored name sets an attribute
+			// no theme CSS matches, which falls back to :root (light), the same
+			// outcome validation would produce. Themes are registered in
+			// src/lib/client/ui/theme/themes.ts; this file never changes.
 			(function () {
 				try {
 					var t = localStorage.getItem('theme');
-					if (
-						t === 'dark' ||
-						t === 'retro' ||
-						t === 'velouria' ||
-						t === 'roswell' ||
-						t === 'solaris' ||
-						t === 'voyager'
-					) {
+					if (t && t !== 'system' && t !== 'light') {
 						document.documentElement.setAttribute('data-theme', t);
 					} else if (!t || t === 'system') {
 						if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

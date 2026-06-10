@@ -33,6 +33,10 @@
 	--theme-font-mono: 'Space Mono', ui-monospace, monospace;
 	--theme-font-accent: 'Syne', ui-sans-serif, system-ui, sans-serif;
 
+	color-scheme: dark;
+	--theme-image-light: none;
+	--theme-image-dark: inline;
+
 	/* The void between bonfires */
 	--theme-bg: #120c0e;
 

@@ -10,11 +10,10 @@
 </script>
 
 <!--
-	Both images render in the DOM. CSS hides the wrong one based on data-theme.
-	The inline script in app.html sets data-theme before first paint, so no flash.
-
-	Default (no attribute) = light.
-	Dark themes: dark, velouria, solaris.
+	Both images render in the DOM. CSS hides the wrong one based on the
+	--theme-image-* display tokens every theme declares, so this component
+	never enumerates themes. The inline script in app.html sets data-theme
+	before first paint, so no flash. Fallbacks match :root (light).
 -->
 <img
 	src={light}
@@ -26,19 +25,11 @@
 	class="theme-img theme-img-dark {className ?? ''}" />
 
 <style>
+	.theme-img-light {
+		display: var(--theme-image-light, inline);
+	}
+
 	.theme-img-dark {
-		display: none;
-	}
-
-	:global([data-theme='dark']) .theme-img-dark,
-	:global([data-theme='velouria']) .theme-img-dark,
-	:global([data-theme='solaris']) .theme-img-dark {
-		display: revert;
-	}
-
-	:global([data-theme='dark']) .theme-img-light,
-	:global([data-theme='velouria']) .theme-img-light,
-	:global([data-theme='solaris']) .theme-img-light {
-		display: none;
+		display: var(--theme-image-dark, none);
 	}
 </style>

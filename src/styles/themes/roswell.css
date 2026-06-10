@@ -33,6 +33,10 @@
 	--theme-font-mono: 'Space Mono', ui-monospace, monospace;
 	--theme-font-accent: 'Syne', ui-sans-serif, system-ui, sans-serif;
 
+	color-scheme: light;
+	--theme-image-light: inline;
+	--theme-image-dark: none;
+
 	/* Desert light through classified glass */
 	--theme-bg: #f8f6fc;
 

@@ -1,15 +1,8 @@
+import { THEME_DEFINITIONS, type Theme } from './themes';
+
 const STORAGE_KEY = 'theme';
-export const THEMES = [
-	'system',
-	'light',
-	'dark',
-	'retro',
-	'velouria',
-	'roswell',
-	'solaris',
-	'voyager'
-] as const;
-export type Theme = (typeof THEMES)[number];
+export const THEMES: readonly Theme[] = THEME_DEFINITIONS.map((d) => d.id);
+export type { Theme };
 
 let current = $state<Theme>('system');
 

@@ -42,6 +42,10 @@
 	--theme-font-mono: 'Martian Mono', ui-monospace, monospace;
 	--theme-font-accent: 'Darker Grotesque', ui-sans-serif, system-ui, sans-serif;
 
+	color-scheme: dark;
+	--theme-image-light: none;
+	--theme-image-dark: inline;
+
 	/* Ocean at depth */
 	--theme-bg: #0a1118;
 

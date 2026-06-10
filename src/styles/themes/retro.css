@@ -3,6 +3,10 @@
 	--theme-font-mono: 'Courier New', Courier, monospace;
 	--theme-font-accent: Tahoma, 'MS Sans Serif', Arial, sans-serif;
 
+	color-scheme: light;
+	--theme-image-light: inline;
+	--theme-image-dark: none;
+
 	--theme-bg: #c0c0c0;
 	--theme-surface: #d4d0c8;
 	--theme-surface-muted: #c0c0c0;

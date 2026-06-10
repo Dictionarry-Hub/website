@@ -35,6 +35,10 @@
 	--theme-font-mono: 'Space Mono', ui-monospace, monospace;
 	--theme-font-accent: 'Overpass', sans-serif;
 
+	color-scheme: light;
+	--theme-image-light: inline;
+	--theme-image-dark: none;
+
 	--theme-bg: #faf6eb;
 	--theme-surface: #fffdf7;
 	--theme-surface-muted: #f7f1e0;

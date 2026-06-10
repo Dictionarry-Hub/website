@@ -6,8 +6,9 @@ import requireSeo from './rules/require-seo.js';
 import noRawUi from './rules/no-raw-ui.js';
 import noRawTokens from './rules/no-raw-tokens.js';
 import requireMdMirror from './rules/require-md-mirror.js';
+import themeSync from './rules/theme-sync.js';
 
-const rules: LintRule[] = [requireSeo, noRawUi, noRawTokens, requireMdMirror];
+const rules: LintRule[] = [requireSeo, noRawUi, noRawTokens, requireMdMirror, themeSync];
 
 function run(): void {
 	const root = resolve(import.meta.dirname, '../..');

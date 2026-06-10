@@ -387,8 +387,8 @@ Components for use inside mdsvex content (`.svx` files).
 `src/lib/client/ui/markdown/image/ThemeImage.svelte`
 
 Renders two images and uses CSS to show the correct one based on the active theme. No flash on load
-because the inline script in `app.html` sets `data-theme` before first paint. Dark themes: dark,
-velouria, solaris.
+because the inline script in `app.html` sets `data-theme` before first paint. Which image shows is
+driven by the `--theme-image-*` tokens each theme declares; the component never enumerates themes.
 
 | Prop    | Type     | Required | Default |
 | ------- | -------- | -------- | ------- |
@@ -507,6 +507,18 @@ Example: `--theme-success-bg`, `--theme-warning-text`, `--theme-danger-border`.
 | `--theme-shadow-control`        | Control resting |
 | `--theme-shadow-control-active` | Control pressed |
 
+### Scheme
+
+Each theme declares its own light/dark identity; nothing else enumerates themes.
+
+| Token                 | Role                                                |
+| --------------------- | --------------------------------------------------- |
+| `--theme-image-light` | `display` for light-variant `ThemeImage` images     |
+| `--theme-image-dark`  | `display` for dark-variant `ThemeImage` images      |
+
+Themes also declare `color-scheme: light` or `color-scheme: dark` (a plain CSS property, not a
+token) so native scrollbars and form controls match.
+
 ## Theming
 
 Seven themes, each defining the complete token set. No base+override layering. Theme files live in
@@ -529,9 +541,23 @@ The active theme is set via `data-theme` on `<html>`. Light is the default (no a
 
 - **Persistence**: `localStorage` key `theme`.
 - **Flash prevention**: an inline script in `app.html` reads localStorage and sets `data-theme`
-  before first paint.
+  before first paint. The script is list-free: an unknown stored name falls back to `:root` (light)
+  because no theme CSS matches it.
 - **Store**: `src/lib/client/ui/theme/theme.svelte.ts` provides reactive state and a `set()` method
   for runtime switching.
+- **Registry**: `src/lib/client/ui/theme/themes.ts` is the single source of truth for theme
+  identity (id, label, emoji). The `Theme` type, the `THEMES` array, and the switcher options all
+  derive from it.
+
+### Adding a theme
+
+1. Create `src/styles/themes/<id>.css` defining the complete token set (`light.css` is the
+   canonical contract), a `color-scheme` declaration, and the `--theme-image-*` tokens.
+2. Add an entry to `THEME_DEFINITIONS` in `src/lib/client/ui/theme/themes.ts`.
+3. Add the `@import` in `src/routes/layout.css`.
+
+Nothing else: `app.html` and `ThemeImage` never change. The `theme-sync` lint rule (`pnpm lint:ui`)
+enforces all of the above, including token-contract completeness.
 
 ### Tailwind Bridge
 

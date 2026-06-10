@@ -121,6 +121,15 @@ tokens too.
 
 Place the comment immediately before the element. Use sparingly.
 
+#### `theme-sync` (category: `ui`)
+
+The theme system's three artifacts must agree: every `src/styles/themes/<id>.css` file has a
+registry entry in `src/lib/client/ui/theme/themes.ts` and an `@import` in `src/routes/layout.css`,
+and vice versa. Each theme CSS must use the right selector (`:root` for light, `[data-theme='<id>']`
+otherwise), declare `color-scheme`, and define the complete token contract, with `light.css` as the
+canonical set. Both missing and extra tokens are violations: a missing token silently inherits from
+`:root` and produces a subtly wrong theme.
+
 #### `require-md-mirror` (category: `llm`)
 
 Every built page (`build/**/*.html`) must have a sibling `.md` markdown mirror for LLM consumption.

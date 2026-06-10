@@ -3,6 +3,10 @@
 	--theme-font-mono: 'Geist Mono', ui-monospace, monospace;
 	--theme-font-accent: 'Sora', sans-serif;
 
+	color-scheme: dark;
+	--theme-image-light: none;
+	--theme-image-dark: inline;
+
 	--theme-bg: #171717;
 	--theme-surface: rgb(38 38 38 / 0.5);
 	--theme-surface-muted: #171717;

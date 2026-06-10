@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import { theme } from '$lib/client/ui/theme/theme.svelte';
+	import { THEME_DEFINITIONS } from '$lib/client/ui/theme/themes';
 	import { database, DATABASES } from '$lib/client/ui/database/database.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import {
@@ -26,16 +27,11 @@
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
 	import { slugify } from '$lib/shared/utils/slug';
 
-	const themeOptions = [
-		{ value: 'system', label: 'System', emoji: '🖥️' },
-		{ value: 'light', label: 'Light', emoji: '💡' },
-		{ value: 'dark', label: 'Dark', emoji: '🌑' },
-		{ value: 'retro', label: 'Retro', emoji: '📼' },
-		{ value: 'velouria', label: 'Velouria', emoji: '🪐' },
-		{ value: 'roswell', label: 'Roswell', emoji: '👽' },
-		{ value: 'solaris', label: 'Solaris', emoji: '🌊' },
-		{ value: 'voyager', label: 'Voyager', emoji: '📀' }
-	];
+	const themeOptions = THEME_DEFINITIONS.map((d) => ({
+		value: d.id,
+		label: d.label,
+		emoji: d.emoji
+	}));
 
 	const databaseIcons: Record<string, typeof BookOpen> = {
 		'dictionarry': BookOpen,
