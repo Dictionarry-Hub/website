@@ -350,7 +350,8 @@ Here's a list of other random things that don't fit neatly into this log's struc
 - v2 is getting closer. Some days I'll write code for 12 hours and other days I'm playing Red Dead Redemption 2 for 12 hours. Balance. Progress is slowing down as I transition to implementing the repetitive tasks like edit functionality, dirty tracking, etc.
 - I haven't touched the v1 codebase for a while. I feel pretty guilty about this since there are some outstanding cache bugs that really should have been merged into stable months ago, but just thinking about that god awful codebase makes me anxious.
 - I've written 2 wiki articles recently:
-  - [Multi Episode Splitting](/wiki/multi-episode-splitting): A personal project I thought to share.
-  - [Anatomy of a Profile](/wiki/anatomy-of-a-profile): An ELI5 profile building guide at the request of [SFusion](https://discord.com/channels/1202375791556431892/1202375792416260169/1417300222605787156)! (Sorry it took so long)
+  <!-- TODO: relink these to /wiki/multi-episode-splitting and /wiki/anatomy-of-a-profile once the wiki routes exist -->
+  - Multi Episode Splitting: A personal project I thought to share.
+  - Anatomy of a Profile: An ELI5 profile building guide at the request of [SFusion](https://discord.com/channels/1202375791556431892/1202375792416260169/1417300222605787156)! (Sorry it took so long)
 - I added RSS feeds for the website, check the footer.
 - On a more personal note, I finally finished my computer science degree this past december. Hopefully more time to code
