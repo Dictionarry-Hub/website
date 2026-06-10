@@ -15,6 +15,7 @@
 			value: string;
 			label: string;
 			icon?: Component<{ size?: number; class?: string }>;
+			emoji?: string;
 		}[];
 		placeholder?: string;
 		minWidth?: string;
@@ -46,6 +47,7 @@
 	const matchedOption = $derived(options.find((o) => o.value === value));
 	const currentLabel = $derived(matchedOption?.label ?? placeholder);
 	const currentIcon = $derived(matchedOption?.icon);
+	const currentEmoji = $derived(matchedOption?.emoji);
 	const isPlaceholder = $derived(!matchedOption);
 	const chevronIcon = $derived(open && resolvedPlacement !== 'bottom' ? ChevronUp : ChevronDown);
 
@@ -64,7 +66,16 @@
 		class="relative"
 		bind:this={triggerEl}
 		use:clickOutside={() => (open = false)}>
-		{#if iconOnly && currentIcon}
+		{#if iconOnly && currentEmoji}
+			<Button
+				type="button"
+				{disabled}
+				class="size-7 p-0"
+				aria-label={currentLabel}
+				onclick={() => !disabled && (open = !open)}>
+				<span class="text-sm leading-none">{currentEmoji}</span>
+			</Button>
+		{:else if iconOnly && currentIcon}
 			<Button
 				type="button"
 				icon={currentIcon}
@@ -95,6 +106,7 @@
 					<DropdownItem
 						label={option.label}
 						icon={option.icon}
+						emoji={option.emoji}
 						selected={value === option.value}
 						onclick={() => select(option.value)} />
 				{/each}

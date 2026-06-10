@@ -43,6 +43,8 @@
 	let basicValue = $state('');
 	let labelValue = $state('');
 	let iconValue = $state('');
+	let emojiValue = $state('');
+	let emojiOnlyValue = $state('apple');
 	let posLeftValue = $state('');
 	let posMiddleValue = $state('');
 	let posRightValue = $state('');
@@ -61,6 +63,12 @@
 		{ value: 'apple', label: 'Apple', icon: Apple },
 		{ value: 'cherry', label: 'Cherry', icon: Cherry },
 		{ value: 'citrus', label: 'Citrus', icon: Citrus }
+	];
+
+	const emojiOptions = [
+		{ value: 'apple', label: 'Apple', emoji: '🍎' },
+		{ value: 'cherry', label: 'Cherry', emoji: '🍒' },
+		{ value: 'citrus', label: 'Citrus', emoji: '🍋' }
 	];
 </script>
 
@@ -268,6 +276,23 @@
 					bind:value={iconValue}
 					options={iconOptions}
 					placeholder="Pick a fruit" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">With emoji</h3>
+				<DropdownSelect
+					bind:value={emojiValue}
+					options={emojiOptions}
+					placeholder="Pick a fruit" />
+			</div>
+
+			<div class="space-y-2">
+				<h3 class="text-sm font-medium text-text-muted">Emoji only trigger</h3>
+				<DropdownSelect
+					bind:value={emojiOnlyValue}
+					options={emojiOptions}
+					header="Fruit"
+					iconOnly />
 			</div>
 
 			<div class="space-y-2">

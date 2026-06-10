@@ -4,17 +4,11 @@
 	import { database, DATABASES } from '$lib/client/ui/database/database.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
 	import {
-		Monitor,
-		Sun,
-		Moon,
-		Landmark,
-		Flame,
-		Telescope,
-		Waves,
 		NotebookPen,
 		Wrench,
 		BookOpen,
 		Trash2,
+		Flame,
 		SlidersHorizontal,
 		Tags,
 		Regex,
@@ -28,17 +22,18 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import NavGroup from '$lib/client/ui/nav/NavGroup.svelte';
+	import NavGroupSelect from '$lib/client/ui/nav/NavGroupSelect.svelte';
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
 	import { slugify } from '$lib/shared/utils/slug';
 
 	const themeOptions = [
-		{ value: 'system', label: 'System', icon: Monitor },
-		{ value: 'light', label: 'Light', icon: Sun },
-		{ value: 'dark', label: 'Dark', icon: Moon },
-		{ value: 'retro', label: 'Retro', icon: Landmark },
-		{ value: 'velouria', label: 'Velouria', icon: Flame },
-		{ value: 'roswell', label: 'Roswell', icon: Telescope },
-		{ value: 'solaris', label: 'Solaris', icon: Waves }
+		{ value: 'system', label: 'System', emoji: '🖥️' },
+		{ value: 'light', label: 'Light', emoji: '💡' },
+		{ value: 'dark', label: 'Dark', emoji: '🌑' },
+		{ value: 'retro', label: 'Retro', emoji: '📼' },
+		{ value: 'velouria', label: 'Velouria', emoji: '🪐' },
+		{ value: 'roswell', label: 'Roswell', emoji: '👽' },
+		{ value: 'solaris', label: 'Solaris', emoji: '🌊' }
 	];
 
 	const databaseIcons: Record<string, typeof BookOpen> = {
@@ -92,7 +87,7 @@
 </script>
 
 <div class="fixed top-0 left-0 flex h-screen w-72 flex-col bg-bg font-sans text-text">
-	<!-- Navbar -->
+	<!-- Navbar: logo and theme switcher only -->
 	<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
 		<div class="flex items-center gap-2">
 			<img
@@ -101,120 +96,17 @@
 				class="size-5" />
 			<span class="font-accent text-lg font-semibold">dictionarry</span>
 		</div>
-		<div class="flex items-center gap-1">
-			<DropdownSelect
-				bind:value={databaseValue}
-				options={databaseOptions}
-				header="Database"
-				position="middle"
-				iconOnly
-				onchange={onDatabaseChange} />
-			<DropdownSelect
-				bind:value={themeValue}
-				options={themeOptions}
-				header="Theme"
-				position="middle"
-				iconOnly
-				onchange={(v) => theme.set(v as typeof theme.current)} />
-		</div>
+		<DropdownSelect
+			bind:value={themeValue}
+			options={themeOptions}
+			header="Theme"
+			position="middle"
+			iconOnly
+			onchange={(v) => theme.set(v as typeof theme.current)} />
 	</div>
 	<!-- Page nav -->
 	<div class="flex-1 overflow-y-auto border-r border-border px-4 py-4">
-		<NavGroup
-			label="API Reference"
-			href="/api/v1"
-			icon={Code} />
-
-		{#if currentNav}
-			<NavGroup
-				label="Quality Profiles"
-				href="/pcd/{databaseValue}/quality-profiles"
-				icon={SlidersHorizontal}
-				open={false}>
-				{#each currentNav.qualityProfiles as name (name)}
-					<NavItem
-						label={name}
-						href="/pcd/{databaseValue}/quality-profiles/{name}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Custom Formats"
-				href="/pcd/{databaseValue}/custom-formats"
-				icon={Tags}
-				open={false}>
-				{#each currentNav.customFormats as name (name)}
-					<NavItem
-						label={name}
-						href="/pcd/{databaseValue}/custom-formats/{name}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Regular Expressions"
-				href="/pcd/{databaseValue}/regular-expressions"
-				icon={Regex}
-				open={false}>
-				{#each currentNav.regularExpressions as name (name)}
-					<NavItem
-						label={name}
-						href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Delay Profiles"
-				href="/pcd/{databaseValue}/delay-profiles"
-				icon={Clock}
-				open={false}>
-				{#each currentNav.delayProfiles as name (name)}
-					<NavItem
-						label={name}
-						href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Naming"
-				href="/pcd/{databaseValue}/naming"
-				icon={FileText}
-				open={false}>
-				{#each currentNav.naming as entry (`${entry.arrType}/${entry.name}`)}
-					<NavItem
-						label={entry.name}
-						image="/{entry.arrType}.svg"
-						href="/pcd/{databaseValue}/naming/{entry.arrType}/{slugify(entry.name)}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Media Settings"
-				href="/pcd/{databaseValue}/media-settings"
-				icon={Settings}
-				open={false}>
-				{#each currentNav.mediaSettings as entry (`${entry.arrType}/${entry.name}`)}
-					<NavItem
-						label={entry.name}
-						image="/{entry.arrType}.svg"
-						href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{slugify(
-							entry.name
-						)}" />
-				{/each}
-			</NavGroup>
-
-			<NavGroup
-				label="Quality Definitions"
-				href="/pcd/{databaseValue}/quality-definitions"
-				icon={Ruler}
-				open={false}>
-				{#each currentNav.qualityDefinitions as entry (`${entry.arrType}/${entry.name}`)}
-					<NavItem
-						label={entry.name}
-						image="/{entry.arrType}.svg"
-						href="/pcd/{databaseValue}/quality-definitions/{entry.arrType}/{entry.name}" />
-				{/each}
-			</NavGroup>
-		{/if}
+		<!-- Search trigger lands here with the command palette -->
 
 		{#if data.devLogs.length > 0}
 			<NavGroup
@@ -228,6 +120,117 @@
 				{/each}
 			</NavGroup>
 		{/if}
+
+		<!-- PCD reference: the whole subtree is scoped to one database, so the
+		     database picker is its root. -->
+		{#if currentNav}
+			<NavGroupSelect
+				bind:value={databaseValue}
+				options={databaseOptions}
+				header="Database"
+				onchange={onDatabaseChange}>
+				<NavGroup
+					label="Quality Profiles"
+					href="/pcd/{databaseValue}/quality-profiles"
+					icon={SlidersHorizontal}
+					open={false}
+					class="mb-1">
+					{#each currentNav.qualityProfiles as name (name)}
+						<NavItem
+							label={name}
+							href="/pcd/{databaseValue}/quality-profiles/{name}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Custom Formats"
+					href="/pcd/{databaseValue}/custom-formats"
+					icon={Tags}
+					open={false}
+					class="mb-1">
+					{#each currentNav.customFormats as name (name)}
+						<NavItem
+							label={name}
+							href="/pcd/{databaseValue}/custom-formats/{name}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Regular Expressions"
+					href="/pcd/{databaseValue}/regular-expressions"
+					icon={Regex}
+					open={false}
+					class="mb-1">
+					{#each currentNav.regularExpressions as name (name)}
+						<NavItem
+							label={name}
+							href="/pcd/{databaseValue}/regular-expressions/{slugify(name)}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Delay Profiles"
+					href="/pcd/{databaseValue}/delay-profiles"
+					icon={Clock}
+					open={false}
+					class="mb-1">
+					{#each currentNav.delayProfiles as name (name)}
+						<NavItem
+							label={name}
+							href="/pcd/{databaseValue}/delay-profiles/{slugify(name)}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Naming"
+					href="/pcd/{databaseValue}/naming"
+					icon={FileText}
+					open={false}
+					class="mb-1">
+					{#each currentNav.naming as entry (`${entry.arrType}/${entry.name}`)}
+						<NavItem
+							label={entry.name}
+							image="/{entry.arrType}.svg"
+							href="/pcd/{databaseValue}/naming/{entry.arrType}/{slugify(entry.name)}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Media Settings"
+					href="/pcd/{databaseValue}/media-settings"
+					icon={Settings}
+					open={false}
+					class="mb-1">
+					{#each currentNav.mediaSettings as entry (`${entry.arrType}/${entry.name}`)}
+						<NavItem
+							label={entry.name}
+							image="/{entry.arrType}.svg"
+							href="/pcd/{databaseValue}/media-settings/{entry.arrType}/{slugify(
+								entry.name
+							)}" />
+					{/each}
+				</NavGroup>
+
+				<NavGroup
+					label="Quality Definitions"
+					href="/pcd/{databaseValue}/quality-definitions"
+					icon={Ruler}
+					open={false}
+					class="mb-1">
+					{#each currentNav.qualityDefinitions as entry (`${entry.arrType}/${entry.name}`)}
+						<NavItem
+							label={entry.name}
+							image="/{entry.arrType}.svg"
+							href="/pcd/{databaseValue}/quality-definitions/{entry.arrType}/{entry.name}" />
+					{/each}
+				</NavGroup>
+			</NavGroupSelect>
+		{/if}
+
+		<NavGroup
+			label="API Reference"
+			href="/api/v1"
+			icon={Code} />
 
 		{#if import.meta.env.DEV}
 			<NavGroup

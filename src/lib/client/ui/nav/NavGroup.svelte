@@ -9,10 +9,19 @@
 		icon?: Component<{ size?: number; class?: string }>;
 		badge?: number;
 		open?: boolean;
+		class?: string;
 		children?: Snippet;
 	}
 
-	let { label, href, icon, badge = 0, open = true, children }: Props = $props();
+	let {
+		label,
+		href,
+		icon,
+		badge = 0,
+		open = true,
+		class: className,
+		children
+	}: Props = $props();
 
 	let toggled = $state<boolean | null>(null);
 	const isOpen = $derived(toggled ?? open);
@@ -32,7 +41,7 @@
 	}
 </script>
 
-<div class="mb-4">
+<div class={className ?? 'mb-4'}>
 	<!-- Split header -->
 	<div
 		class="group/header flex items-center rounded-control border transition-colors

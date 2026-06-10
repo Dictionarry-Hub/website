@@ -5,6 +5,7 @@
 	interface Props {
 		label: string;
 		icon?: Component<{ size?: number; class?: string }>;
+		emoji?: string;
 		selected?: boolean;
 		disabled?: boolean;
 		danger?: boolean;
@@ -14,6 +15,7 @@
 	let {
 		label,
 		icon,
+		emoji,
 		selected = false,
 		disabled = false,
 		danger = false,
@@ -35,7 +37,9 @@
 		class="flex min-w-0 flex-1 cursor-pointer items-center gap-3 px-3 py-2 text-left text-sm transition-colors {stateClasses}"
 		{disabled}
 		{onclick}>
-		{#if icon}
+		{#if emoji}
+			<span class="w-4 text-center text-sm leading-none">{emoji}</span>
+		{:else if icon}
 			{@const Icon = icon}
 			<Icon size={16} />
 		{/if}

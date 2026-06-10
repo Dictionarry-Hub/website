@@ -89,6 +89,7 @@ Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to 
 | `text`     | `string`                                 | no       | `''`       |
 | `position` | `'top' \| 'bottom' \| 'left' \| 'right'` | no       | `'bottom'` |
 | `align`    | `'left' \| 'middle' \| 'right'`          | no       | `'middle'` |
+| `class`    | `string` (applied to the inline wrapper) | no       | `''`       |
 
 ```svelte
 <script lang="ts">
@@ -147,9 +148,11 @@ connector line and a slide transition.
 | `icon`  | `Component` | no       |         |
 | `badge` | `number`    | no       | `0`     |
 | `open`  | `boolean`   | no       | `true`  |
+| `class` | `string` (replaces the default `mb-4` root spacing) | no | |
 
 Active state: exact match when children exist, prefix match otherwise. Active renders with
-`bg-surface border-border shadow-control` (Button default treatment).
+`bg-surface border-border shadow-control` (Button default treatment). Groups nested inside
+`NavGroupSelect` pass `class="mb-1"` for tighter spacing.
 
 #### `NavItem`
 
@@ -171,6 +174,36 @@ Child navigation link, used inside NavGroup.
 Active state derived from current pathname. If `activePattern` is provided, uses string includes or
 regex test. Otherwise exact or prefix match against `href`.
 
+#### `NavGroupSelect`
+
+`src/lib/client/ui/nav/NavGroupSelect.svelte`
+
+NavGroup's split-header language with the link side replaced by a select trigger: the left side
+opens a dropdown to pick a context value, the right chevron collapses the children the context
+scopes. The select affordance is deliberately quiet: no glyph, just a hover tooltip (and matching
+`aria-label`). Used for the sidebar database picker, which roots the PCD subtree.
+
+| Prop       | Type                                                                    | Required | Default           |
+| ---------- | ----------------------------------------------------------------------- | -------- | ----------------- |
+| `value`    | `string` (bindable)                                                      | yes      |                   |
+| `options`  | `{ value: string; label: string; icon?: Component; emoji?: string }[]`   | yes      |                   |
+| `header`   | `string`                                                                 | no       |                   |
+| `tooltip`  | `string`                                                                 | no       | `Click to switch` |
+| `open`     | `boolean`                                                                | no       | `true`            |
+| `onchange` | `(value: string) => void`                                                | no       |                   |
+
+```svelte
+<NavGroupSelect
+	bind:value={databaseValue}
+	options={databaseOptions}
+	header="Database"
+	onchange={onDatabaseChange}>
+	<NavGroup label="Quality Profiles" href="/pcd/{databaseValue}/quality-profiles">
+		<!-- ... -->
+	</NavGroup>
+</NavGroupSelect>
+```
+
 ### Dropdown
 
 #### `DropdownSelect`
@@ -182,7 +215,7 @@ Select control backed by a dropdown menu. Wraps `Dropdown`, `DropdownHeader`, an
 | Prop          | Type                                                   | Required | Default       |
 | ------------- | ------------------------------------------------------ | -------- | ------------- |
 | `value`       | `string` (bindable)                                    | yes      |               |
-| `options`     | `{ value: string; label: string; icon?: Component }[]` | yes      |               |
+| `options`     | `{ value: string; label: string; icon?: Component; emoji?: string }[]` | yes |    |
 | `label`       | `string`                                               | no       |               |
 | `header`      | `string`                                               | no       |               |
 | `placeholder` | `string`                                               | no       | `'Select...'` |
@@ -194,7 +227,9 @@ Select control backed by a dropdown menu. Wraps `Dropdown`, `DropdownHeader`, an
 | `onchange`    | `(value: string) => void`                              | no       |               |
 
 `header` renders a `DropdownHeader` at the top of the menu (e.g. "Theme", "Database"). `iconOnly`
-renders just the matched option's icon as the trigger button.
+renders just the matched option's icon as the trigger button. An option `emoji` takes precedence
+over its `icon`, in menu items and in the `iconOnly` trigger (used by the theme switcher). Emoji
+rendering is platform-owned: glyphs differ across operating systems.
 
 ### Badge
 

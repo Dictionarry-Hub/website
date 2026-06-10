@@ -6,10 +6,17 @@
 		text?: string;
 		position?: 'top' | 'bottom' | 'left' | 'right';
 		align?: 'left' | 'middle' | 'right';
+		class?: string;
 		children: Snippet;
 	}
 
-	let { text = '', position = 'bottom', align = 'middle', children }: Props = $props();
+	let {
+		text = '',
+		position = 'bottom',
+		align = 'middle',
+		class: className = '',
+		children
+	}: Props = $props();
 
 	const PADDING = 8;
 
@@ -103,7 +110,7 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-	class="inline-flex"
+	class="inline-flex {className}"
 	bind:this={wrapperEl}
 	onmouseenter={show}
 	onmouseleave={hide}>
