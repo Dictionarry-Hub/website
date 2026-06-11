@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import CodeBlock from '$lib/client/ui/markdown/code/CodeBlock.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
@@ -40,6 +42,9 @@
 					pill>regex101</Badge>
 			</a>
 		{/if}
+		<AiMenu
+			artifactPath="{page.url.pathname}.md"
+			pagePath={page.url.pathname} />
 	{/snippet}
 </PageHeader>
 

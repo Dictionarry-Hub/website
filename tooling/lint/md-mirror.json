@@ -5,6 +5,9 @@
 	],
 	"pending": [
 		{ "route": "/", "reason": "home" },
-		{ "route": "/pcd/*", "reason": "PCD entity browser, mirror layer not yet designed" }
+		{
+			"route": "/pcd/*",
+			"reason": "PCD entity browser, remaining mirror layers not yet built; regular expression detail mirrors are live and guaranteed by their own prerender"
+		}
 	]
 }
