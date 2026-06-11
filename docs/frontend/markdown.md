@@ -25,14 +25,15 @@ without maintaining a parser.
 Named mdsvex layouts are registered in `svelte.config.js`. Articles select one via the `layout`
 frontmatter key:
 
-| Key        | Component                        | Used by         |
-| ---------- | -------------------------------- | --------------- |
-| `dev-logs` | `src/lib/layouts/Article.svelte` | Dev logs        |
-| `wiki`     | `src/lib/layouts/Article.svelte` | Wiki articles   |
-| `_`        | `src/lib/layouts/Default.svelte` | Everything else |
+| Key        | Component                        | Used by       |
+| ---------- | -------------------------------- | ------------- |
+| `dev-logs` | `src/lib/layouts/Article.svelte` | Dev logs      |
+| `wiki`     | `src/lib/layouts/Article.svelte` | Wiki articles |
 
-Both article layers share `Article.svelte`: same frontmatter, same page header, AI menu, and table
-of contents.
+Both article layers share `Article.svelte`: same frontmatter, same page header, and AI menu. There
+is no fallback layout; all `.svx` files live under `dev-logs/` or `wiki/`. The table of contents is
+not part of the layout: the root layout mounts it globally beside any page that renders an
+`<article>` (see [ui.md](./ui.md)).
 
 ## Plugins
 

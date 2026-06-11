@@ -37,8 +37,7 @@ const config = {
 			rehypePlugins: [rehypeKatexSvelte, rehypeSlug],
 			layout: {
 				'dev-logs': resolve(__dirname, 'src/lib/layouts/Article.svelte'),
-				'wiki': resolve(__dirname, 'src/lib/layouts/Article.svelte'),
-				'_': resolve(__dirname, 'src/lib/layouts/Default.svelte')
+				'wiki': resolve(__dirname, 'src/lib/layouts/Article.svelte')
 			}
 		})
 	],

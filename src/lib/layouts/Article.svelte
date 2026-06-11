@@ -5,7 +5,6 @@
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
-	import TableOfContents from '$lib/client/ui/toc/TableOfContents.svelte';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -41,64 +40,34 @@
 	{title}
 	description={blurb} />
 
-<div class="relative">
-	<article>
-		<PageHeader
-			{title}
-			{tags}>
-			{#snippet actions()}
-				<AiMenu
-					artifactPath="{page.url.pathname}.md"
-					pagePath={page.url.pathname} />
-			{/snippet}
-			{#snippet meta()}
-				{#each authors as a (a.name)}
-					<Author
-						name={a.name}
-						avatar={a.avatar}
-						href={a.href} />
-				{/each}
-				{#if authors.length > 0 && created}
-					<span class="text-text-muted">·</span>
-				{/if}
-				{#if created}
-					<DateTime
-						date={created}
-						class="text-sm" />
-				{/if}
-			{/snippet}
-		</PageHeader>
+<article>
+	<PageHeader
+		{title}
+		{tags}>
+		{#snippet actions()}
+			<AiMenu
+				artifactPath="{page.url.pathname}.md"
+				pagePath={page.url.pathname} />
+		{/snippet}
+		{#snippet meta()}
+			{#each authors as a (a.name)}
+				<Author
+					name={a.name}
+					avatar={a.avatar}
+					href={a.href} />
+			{/each}
+			{#if authors.length > 0 && created}
+				<span class="text-text-muted">·</span>
+			{/if}
+			{#if created}
+				<DateTime
+					date={created}
+					class="text-sm" />
+			{/if}
+		{/snippet}
+	</PageHeader>
 
-		<div class="prose">
-			{@render children()}
-		</div>
-	</article>
-
-	<div class="toc-float">
-		<div class="toc-sticky">
-			<TableOfContents {title} />
-		</div>
+	<div class="prose">
+		{@render children()}
 	</div>
-</div>
-
-<style>
-	.toc-float {
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 100%;
-		height: 100%;
-		margin-left: 2rem;
-	}
-
-	.toc-sticky {
-		position: sticky;
-		top: 2rem;
-	}
-
-	@media (min-width: 1280px) {
-		.toc-float {
-			display: block;
-		}
-	}
-</style>
+</article>

@@ -16,6 +16,15 @@ html {
 @import '../styles/themes/blue.css';
 @import '../styles/prose.css';
 
+/* Anchor jumps from the table of contents land with breathing room.
+   Covers non-prose article pages (API reference, PCD); prose.css
+   declares the same value for prose content. */
+article h1,
+article h2,
+article h3 {
+	scroll-margin-top: 2rem;
+}
+
 @theme inline {
 	/* Colors */
 	--color-bg: var(--theme-bg);

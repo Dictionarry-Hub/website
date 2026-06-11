@@ -2,10 +2,6 @@
 	import { onMount } from 'svelte';
 	import { Pin } from '@lucide/svelte';
 
-	interface Props {
-		title?: string;
-	}
-
 	interface Heading {
 		id: string;
 		text: string;
@@ -13,8 +9,7 @@
 		method?: string;
 	}
 
-	let { title }: Props = $props();
-
+	let title = $state('');
 	let headings: Heading[] = $state([]);
 	let activeId: string = $state('');
 	let minLevel = $state(2);
@@ -26,6 +21,8 @@
 	onMount(() => {
 		const container = document.querySelector('article');
 		if (!container) return;
+
+		title = container.querySelector('h1')?.textContent?.trim() ?? '';
 
 		const elements = container.querySelectorAll('h1, h2, h3');
 		const parsed = Array.from(elements)

@@ -28,6 +28,7 @@
 	import NavItem from '$lib/client/ui/nav/NavItem.svelte';
 	import SearchPalette from '$lib/client/ui/search/SearchPalette.svelte';
 	import SearchTrigger from '$lib/client/ui/search/SearchTrigger.svelte';
+	import TableOfContents from '$lib/client/ui/toc/TableOfContents.svelte';
 	import { slugify } from '$lib/shared/utils/slug';
 
 	const themeOptions = THEME_DEFINITIONS.map((d) => ({
@@ -283,15 +284,46 @@
 	<div
 		id="top"
 		class="content-area mx-auto max-w-3xl px-6 py-10">
-		{@render children()}
+		<div class="relative">
+			{@render children()}
+
+			<!-- Floats beside any page that renders an <article>; renders nothing elsewhere.
+			     Keyed by pathname so the heading scan reruns on client-side navigation. -->
+			<div class="toc-float">
+				<div class="toc-sticky">
+					{#key page.url.pathname}
+						<TableOfContents />
+					{/key}
+				</div>
+			</div>
+		</div>
 	</div>
 </main>
 
 <style>
+	.toc-float {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		margin-left: 2rem;
+	}
+
+	.toc-sticky {
+		position: fixed;
+		top: 2rem;
+		max-height: calc(100vh - 4rem);
+		overflow-y: auto;
+	}
+
 	@media (min-width: 1280px) {
 		.content-area {
 			margin-left: calc(50% - 24rem - 9rem);
 			margin-right: auto;
+		}
+
+		.toc-float {
+			display: block;
 		}
 	}
 </style>

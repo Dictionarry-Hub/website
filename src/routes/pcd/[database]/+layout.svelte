@@ -1,5 +1,4 @@
 <script lang="ts">
-	import TableOfContents from '$lib/client/ui/toc/TableOfContents.svelte';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -9,36 +8,6 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="relative">
-	<article>
-		{@render children()}
-	</article>
-
-	<div class="toc-float">
-		<div class="toc-sticky">
-			<TableOfContents />
-		</div>
-	</div>
-</div>
-
-<style>
-	.toc-float {
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 100%;
-		height: 100%;
-		margin-left: 2rem;
-	}
-
-	.toc-sticky {
-		position: sticky;
-		top: 2rem;
-	}
-
-	@media (min-width: 1280px) {
-		.toc-float {
-			display: block;
-		}
-	}
-</style>
+<article>
+	{@render children()}
+</article>

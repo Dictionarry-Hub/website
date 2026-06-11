@@ -306,6 +306,22 @@ scopes. The select affordance is deliberately quiet: no glyph, just a hover tool
 </NavGroupSelect>
 ```
 
+### Toc
+
+#### `TableOfContents`
+
+`src/lib/client/ui/toc/TableOfContents.svelte`
+
+The floating "On This Page" panel. Mounted once in the root layout, keyed by pathname so the
+heading scan reruns on every client-side navigation. On mount it reads the page's `<article>`
+element: headings (`h1` to `h3`) with ids become entries, and the first `h1` (with or without an
+id) becomes a title link back to `#top`. Renders nothing on pages without id'd headings. Headings
+carrying a `data-method` attribute get a color-coded HTTP method label (used by the API reference).
+
+No props. Positioning is owned by the root layout, not the component: hidden below 1280px, floated
+to the right of the content column, pinned to the viewport (`position: fixed`) with an internal
+scrollbar when taller than the viewport.
+
 ### Dropdown
 
 #### `DropdownSelect`
