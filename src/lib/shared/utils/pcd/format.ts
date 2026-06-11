@@ -48,6 +48,37 @@ export function formatDelay(minutes: number | null): string {
 	return m > 0 ? `${h}h ${m}m` : `${h}h`;
 }
 
+/** Quality definition tier sizes are stored as megabytes per minute of runtime. */
+export type TierSizeUnit = 'mb-min' | 'gb-hr';
+
+export const TIER_SIZE_UNIT_LABELS: Record<TierSizeUnit, string> = {
+	'mb-min': 'MB/min',
+	'gb-hr': 'GB/hr'
+};
+
+/** GB/hr uses binary gigabytes (x60 / 1024), matching how the arr UIs display sizes. */
+export function formatTierSize(mbPerMin: number, unit: TierSizeUnit): string {
+	if (unit === 'gb-hr') {
+		return String(Math.round(((mbPerMin * 60) / 1024) * 10) / 10);
+	}
+	return String(mbPerMin);
+}
+
+// The arr max-size sliders cap out at these values; a tier stored at or
+// above its cap means no limit, as does 0.
+const TIER_MAX_SIZE_CAPS: Record<string, number> = {
+	radarr: 2000,
+	sonarr: 1000
+};
+
+export function formatTierMaxSize(mbPerMin: number, unit: TierSizeUnit, arrType: string): string {
+	const cap = TIER_MAX_SIZE_CAPS[arrType];
+	if (mbPerMin === 0 || (cap !== undefined && mbPerMin >= cap)) {
+		return 'Unlimited';
+	}
+	return formatTierSize(mbPerMin, unit);
+}
+
 export function formatPropersRepacks(value: string): string {
 	switch (value) {
 		case 'doNotPrefer':

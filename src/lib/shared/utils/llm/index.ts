@@ -11,6 +11,7 @@ export {
 	regexToMarkdown,
 	delayProfileToMarkdown,
 	namingConfigToMarkdown,
-	mediaSettingsToMarkdown
+	mediaSettingsToMarkdown,
+	qualityDefinitionsToMarkdown
 } from './pcd.js';
 export { SITE_URL } from './site.js';

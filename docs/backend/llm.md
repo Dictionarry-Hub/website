@@ -158,12 +158,13 @@ The first structured-data layer outside the API reference. PCD entities are comp
 mdsvex, so the serializers at `src/lib/shared/utils/llm/pcd.ts` are API-style: they consume the same
 `CompiledDatabase` data the entity pages render, one serializer per entity type.
 
-| Artifact           | URL                                                  | Serializer                |
-| ------------------ | ---------------------------------------------------- | ------------------------- |
-| Regular expression | `/pcd/{database}/regular-expressions/{slug}.md`      | `regexToMarkdown`         |
-| Delay profile      | `/pcd/{database}/delay-profiles/{slug}.md`           | `delayProfileToMarkdown`  |
-| Naming config      | `/pcd/{database}/naming/{arrType}/{slug}.md`         | `namingConfigToMarkdown`  |
-| Media settings     | `/pcd/{database}/media-settings/{arrType}/{slug}.md` | `mediaSettingsToMarkdown` |
+| Artifact            | URL                                                       | Serializer                     |
+| ------------------- | --------------------------------------------------------- | ------------------------------ |
+| Regular expression  | `/pcd/{database}/regular-expressions/{slug}.md`           | `regexToMarkdown`              |
+| Delay profile       | `/pcd/{database}/delay-profiles/{slug}.md`                | `delayProfileToMarkdown`       |
+| Naming config       | `/pcd/{database}/naming/{arrType}/{slug}.md`              | `namingConfigToMarkdown`       |
+| Media settings      | `/pcd/{database}/media-settings/{arrType}/{slug}.md`      | `mediaSettingsToMarkdown`      |
+| Quality definitions | `/pcd/{database}/quality-definitions/{arrType}/{slug}.md` | `qualityDefinitionsToMarkdown` |
 
 The slug is `slugify(name)`, the same derivation the entity pages use. Each artifact route
 enumerates its entries by globbing the compiled `src/lib/data/pcd/*.json` output (excluding the
@@ -192,6 +193,10 @@ entity pages and the serializers, so page and artifact cannot drift apart.
   multi-episode style for Sonarr), then `## Naming Scheme` with each format string in a fenced block
   under an `###` heading.
 - **Media settings**: `## Configuration` with propers/repacks preference and media info.
+- **Quality definitions**: `## Quality Tiers` with a per-quality table of min, preferred, and max
+  sizes in megabytes per minute (the native arr unit; the HTML page's unit dropdown is
+  display-only). A max of 0, or at or above the arr's slider cap (2000 for Radarr, 1000 for Sonarr),
+  renders as `Unlimited`.
 
 Only detail pages have mirrors. The entity list pages do not, so `/pcd/*` stays in the lint rule's
 `pending` list and the detail artifacts are guaranteed by their own build instead: entries derive
@@ -259,10 +264,10 @@ component):
 - **Remaining mdsvex surfaces.** Dev logs and wiki articles are done (see Dev Log and Wiki
   Artifacts); the home page and any future docs sections follow the same pattern. Landing each
   removes its entries from the rule's `PENDING` list (see Enforcement).
-- **PCD entity mirrors.** Regular expressions, delay profiles, naming configs, and media settings
-  are done (see PCD Entity Artifacts); the remaining entity types (custom formats, quality profiles,
-  quality definitions) and the entity list pages follow the same serializer-per-entity pattern in
-  `src/lib/shared/utils/llm/pcd.ts`.
+- **PCD entity mirrors.** Regular expressions, delay profiles, naming configs, media settings, and
+  quality definitions are done (see PCD Entity Artifacts); the remaining entity types (custom
+  formats, quality profiles) and the entity list pages follow the same serializer-per-entity pattern
+  in `src/lib/shared/utils/llm/pcd.ts`.
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.
   Cheap once artifacts exist, but low priority: log studies show almost no organic consumption, and
   copy affordances are what readers actually use.

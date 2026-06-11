@@ -131,6 +131,48 @@ positioning - the consumer controls those via class passthrough.
 	class="fixed top-0 w-full px-4 py-2">Navbar</Card>
 ```
 
+### AdaptiveList
+
+#### `AdaptiveList`
+
+`src/lib/client/ui/adaptive-list/AdaptiveList.svelte`
+
+Responsive data list: renders a `Table` at `lg` and above, and a `Card` grid (one to three columns
+by breakpoint) below. Generic over the row type, which must carry a string index signature. Used by
+the PCD entity detail pages and the API reference.
+
+| Prop       | Type                                   | Required | Default |
+| ---------- | -------------------------------------- | -------- | ------- |
+| `data`     | `T[]`                                  | yes      |         |
+| `columns`  | `Column<T>[]`                          | yes      |         |
+| `href`     | `(row: T) => string \| undefined`      | no       |         |
+| `cell`     | `Snippet<[row: T, column: Column<T>]>` | no       |         |
+| `card`     | `Snippet<[row: T]>`                    | yes      |         |
+| `expanded` | `Snippet<[row: T]>`                    | no       |         |
+
+`columns`, `href`, `cell`, and `expanded` pass through to `Table` (`Column` comes from
+`src/lib/client/ui/table/types.ts`: key, header, width, align, sortable). Without `cell`, table
+cells render `row[col.key]` directly. `card` renders each row's card-view content; when `href`
+returns a URL for a row, both the table row and the card become links.
+
+```svelte
+<script lang="ts">
+	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
+	import type { Column } from '$lib/client/ui/table/types';
+</script>
+
+<AdaptiveList
+	data={rows}
+	{columns}>
+	{#snippet cell(row, col)}
+		{row[col.key]}
+	{/snippet}
+	{#snippet card(row)}
+		<p class="text-sm font-medium">{row.name}</p>
+	{/snippet}
+</AdaptiveList>
+```
+
 ### Kbd
 
 #### `Kbd`

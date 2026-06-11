@@ -5,6 +5,7 @@ import type {
 	MediaSettings,
 	NamingConfig,
 	PatternCondition,
+	QualityDefinitionConfig,
 	RegularExpression
 } from '$lib/types/pcd';
 import { slugify } from '$lib/shared/utils/slug';
@@ -14,7 +15,9 @@ import {
 	MULTI_EPISODE_LABELS,
 	formatProtocol,
 	formatDelay,
-	formatPropersRepacks
+	formatPropersRepacks,
+	formatTierSize,
+	formatTierMaxSize
 } from '$lib/shared/utils/pcd/format';
 import { SITE_URL } from './site.js';
 import { join, fence } from './md.js';
@@ -140,6 +143,32 @@ export function mediaSettingsToMarkdown(
 			`Web version: ${SITE_URL}/pcd/${data.id}/media-settings/${arrType}/${slug}`,
 		'## Configuration',
 		settingsTable(rows)
+	]);
+}
+
+export function qualityDefinitionsToMarkdown(
+	data: CompiledDatabase,
+	config: QualityDefinitionConfig,
+	arrType: string
+): string {
+	const slug = slugify(config.name);
+
+	const tierRows = config.tiers.map(
+		(t) =>
+			`| ${t.qualityName} | ${formatTierSize(t.minSize, 'mb-min')} | ${formatTierSize(t.preferredSize, 'mb-min')} | ${formatTierMaxSize(t.maxSize, 'mb-min', arrType)} |`
+	);
+
+	return join([
+		`# ${config.name}`,
+		`${arrLabel(arrType)} quality definitions from the ${data.name} PCD database. ` +
+			`Web version: ${SITE_URL}/pcd/${data.id}/quality-definitions/${arrType}/${slug}`,
+		'## Quality Tiers',
+		'Sizes are megabytes per minute of runtime.',
+		[
+			'| Quality | Min | Preferred | Max |',
+			'| ------- | --- | --------- | --- |',
+			...tierRows
+		].join('\n')
 	]);
 }
 
