@@ -1,8 +1,11 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
+	import { formatProtocol, formatDelay } from '$lib/shared/utils/pcd/format';
 	import type { Column } from '$lib/client/ui/table/types';
 
 	let { data } = $props();
@@ -12,22 +15,6 @@
 	const isOnlyTorrent = $derived(profile.preferredProtocol === 'only_torrent');
 	const showUsenetDelay = $derived(!isOnlyTorrent);
 	const showTorrentDelay = $derived(!isOnlyUsenet);
-
-	function formatProtocol(protocol: string): string {
-		return protocol
-			.split('_')
-			.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-			.join(' ');
-	}
-
-	function formatDelay(minutes: number | null): string {
-		if (minutes === null) return 'N/A';
-		if (minutes === 0) return 'No delay';
-		if (minutes < 60) return `${minutes}m`;
-		const h = Math.floor(minutes / 60);
-		const m = minutes % 60;
-		return m > 0 ? `${h}h ${m}m` : `${h}h`;
-	}
 
 	interface SettingRow {
 		id: string;
@@ -62,7 +49,13 @@
 
 <SEO title={profile.name} />
 
-<PageHeader title={profile.name} />
+<PageHeader title={profile.name}>
+	{#snippet actions()}
+		<AiMenu
+			artifactPath="{page.url.pathname}.md"
+			pagePath={page.url.pathname} />
+	{/snippet}
+</PageHeader>
 
 <h2
 	id="configuration"

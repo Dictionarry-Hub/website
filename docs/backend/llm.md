@@ -152,35 +152,50 @@ models read component tags fine.
 Index links point at the `.md` artifacts, so each index doubles as a machine-readable directory of
 its layer.
 
-## PCD Regular Expression Artifacts
+## PCD Entity Artifacts
 
 The first structured-data layer outside the API reference. PCD entities are compiled JSON, not
-mdsvex, so the serializer at `src/lib/shared/utils/llm/pcd.ts` is API-style: it consumes the same
-`CompiledDatabase` data the entity pages render.
+mdsvex, so the serializers at `src/lib/shared/utils/llm/pcd.ts` are API-style: they consume the same
+`CompiledDatabase` data the entity pages render, one serializer per entity type.
 
-| Artifact           | URL                                             | Serializer        |
-| ------------------ | ----------------------------------------------- | ----------------- |
-| Regular expression | `/pcd/{database}/regular-expressions/{slug}.md` | `regexToMarkdown` |
+| Artifact           | URL                                                  | Serializer                |
+| ------------------ | ---------------------------------------------------- | ------------------------- |
+| Regular expression | `/pcd/{database}/regular-expressions/{slug}.md`      | `regexToMarkdown`         |
+| Delay profile      | `/pcd/{database}/delay-profiles/{slug}.md`           | `delayProfileToMarkdown`  |
+| Naming config      | `/pcd/{database}/naming/{arrType}/{slug}.md`         | `namingConfigToMarkdown`  |
+| Media settings     | `/pcd/{database}/media-settings/{arrType}/{slug}.md` | `mediaSettingsToMarkdown` |
 
-The slug is `slugify(name)`, the same derivation the entity pages use. The artifact route enumerates
-its entries by globbing the compiled `src/lib/data/pcd/*.json` output (excluding the nav-only
-`index.json`), so every database in `tooling/pcd/config.json` gets artifacts automatically.
+The slug is `slugify(name)`, the same derivation the entity pages use. Each artifact route
+enumerates its entries by globbing the compiled `src/lib/data/pcd/*.json` output (excluding the
+nav-only `index.json`), so every database in `tooling/pcd/config.json` gets artifacts automatically.
+Names that slugify to the empty string are skipped: those entities have no reachable HTML page
+either.
 
 ### Artifact shape
 
-H1 name, then a context line (database, tags, web URL) in the wiki preamble style, then:
+Every artifact is H1 name, then a context line (entity type, database, web URL) in the wiki preamble
+style, then sections mirroring what the HTML page shows, under the same labels the page uses.
+Configuration values render as a `| Setting | Value |` table. Value display formatting (label maps,
+delay and protocol formatting) lives in `src/lib/shared/utils/pcd/format.ts`, imported by both the
+entity pages and the serializers, so page and artifact cannot drift apart.
 
-- `## Pattern`: the pattern in a fenced block tagged `regex`, plus a regex101 link when the entity
-  has a `regex101Id`.
-- `## Description`: the raw markdown `description` verbatim. Omitted entirely when null; the joke
-  placeholder the HTML page shows never ships in artifacts.
-- `## References`: the custom formats whose conditions use this regex, linked at their expected
-  `.md` URLs (`/pcd/{database}/custom-formats/{slug}.md`). That layer is not built yet, so the links
-  resolve once it lands; the names and web paths are already correct.
+- **Regular expression**: `## Pattern` fenced as `regex` plus a regex101 link when the entity has a
+  `regex101Id`; `## Description` with the raw markdown `description` verbatim (omitted entirely when
+  null; the joke placeholder the HTML page shows never ships in artifacts); `## References` linking
+  the custom formats whose conditions use the regex at their expected `.md` URLs
+  (`/pcd/{database}/custom-formats/{slug}.md`). That layer is not built yet, so the links resolve
+  once it lands; the names and web paths are already correct.
+- **Delay profile**: `## Configuration` with protocol, delays, and bypass settings. Delay values use
+  the page's human formatting (`No delay`, `2h 30m`); protocol-irrelevant delays are omitted, as on
+  the page.
+- **Naming config**: `## Configuration` (rename, character replacement, colon replacement,
+  multi-episode style for Sonarr), then `## Naming Scheme` with each format string in a fenced block
+  under an `###` heading.
+- **Media settings**: `## Configuration` with propers/repacks preference and media info.
 
 Only detail pages have mirrors. The entity list pages do not, so `/pcd/*` stays in the lint rule's
 `pending` list and the detail artifacts are guaranteed by their own build instead: entries derive
-from the same compiled data the pages render, and a missing regex throws during prerender.
+from the same compiled data the pages render, and a missing entity throws during prerender.
 
 ## Copy Buttons and the AI Menu
 
@@ -197,7 +212,7 @@ as Markdown"), not just the format.
 
 Dev log and wiki pages get an `AiMenu` automatically: the shared `Article` layout renders one in its
 `PageHeader` actions, deriving the artifact path from the current pathname plus `.md` and using the
-default prompt. The PCD regular expression detail page renders one the same way, manually in its own
+default prompt. The PCD entity detail pages render one the same way, manually in their own
 `PageHeader` actions since PCD pages do not use the `Article` layout.
 
 ### Assistant deep links
@@ -244,9 +259,9 @@ component):
 - **Remaining mdsvex surfaces.** Dev logs and wiki articles are done (see Dev Log and Wiki
   Artifacts); the home page and any future docs sections follow the same pattern. Landing each
   removes its entries from the rule's `PENDING` list (see Enforcement).
-- **PCD entity mirrors.** Regular expression detail pages are done (see PCD Regular Expression
-  Artifacts); the remaining entity types (custom formats, quality profiles, and the rest) and the
-  entity list pages follow the same serializer-per-entity pattern in
+- **PCD entity mirrors.** Regular expressions, delay profiles, naming configs, and media settings
+  are done (see PCD Entity Artifacts); the remaining entity types (custom formats, quality profiles,
+  quality definitions) and the entity list pages follow the same serializer-per-entity pattern in
   `src/lib/shared/utils/llm/pcd.ts`.
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.
   Cheap once artifacts exist, but low priority: log studies show almost no organic consumption, and

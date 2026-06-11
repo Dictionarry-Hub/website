@@ -1,47 +1,26 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
+	import {
+		NAMING_FORMAT_LABELS,
+		COLON_REPLACEMENT_LABELS,
+		MULTI_EPISODE_LABELS
+	} from '$lib/shared/utils/pcd/format';
 	import type { Column } from '$lib/client/ui/table/types';
 
 	let { data } = $props();
 	const naming = $derived(data.naming);
 	const isSonarr = $derived(naming.arrType === 'sonarr');
 
-	const FORMAT_LABELS: Record<string, string> = {
-		movieFormat: 'Movie',
-		movieFolderFormat: 'Movie Folder',
-		standardEpisodeFormat: 'Standard Episode',
-		dailyEpisodeFormat: 'Daily Episode',
-		animeEpisodeFormat: 'Anime Episode',
-		seriesFolderFormat: 'Series Folder',
-		seasonFolderFormat: 'Season Folder'
-	};
-
-	const COLON_REPLACEMENT_LABELS: Record<string, string> = {
-		delete: 'Delete',
-		dash: 'Replace with Dash',
-		spaceDash: 'Replace with Space Dash',
-		spaceDashSpace: 'Replace with Space Dash Space',
-		smart: 'Smart Replace',
-		custom: 'Custom'
-	};
-
-	const MULTI_EPISODE_LABELS: Record<string, string> = {
-		extend: 'Extend',
-		duplicate: 'Duplicate',
-		repeat: 'Repeat',
-		scene: 'Scene',
-		range: 'Range',
-		prefixedRange: 'Prefixed Range'
-	};
-
 	const formatEntries = $derived(
 		Object.entries(naming.formats)
 			.filter(([key]) => key !== 'multiEpisodeStyle')
 			.map(([key, value]) => ({
-				label: FORMAT_LABELS[key] ?? key,
+				label: NAMING_FORMAT_LABELS[key] ?? key,
 				value
 			}))
 	);
@@ -85,7 +64,13 @@
 
 <SEO title={naming.name} />
 
-<PageHeader title={naming.name} />
+<PageHeader title={naming.name}>
+	{#snippet actions()}
+		<AiMenu
+			artifactPath="{page.url.pathname}.md"
+			pagePath={page.url.pathname} />
+	{/snippet}
+</PageHeader>
 
 <h2
 	id="configuration"

@@ -1,25 +1,15 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
+	import { formatPropersRepacks } from '$lib/shared/utils/pcd/format';
 	import type { Column } from '$lib/client/ui/table/types';
 
 	let { data } = $props();
 	const settings = $derived(data.settings);
-
-	function formatPropersRepacks(value: string): string {
-		switch (value) {
-			case 'doNotPrefer':
-				return 'Do Not Prefer';
-			case 'preferAndUpgrade':
-				return 'Prefer and Upgrade';
-			case 'prefer':
-				return 'Prefer';
-			default:
-				return value;
-		}
-	}
 
 	interface SettingRow {
 		id: string;
@@ -49,7 +39,13 @@
 
 <SEO title={settings.name} />
 
-<PageHeader title={settings.name} />
+<PageHeader title={settings.name}>
+	{#snippet actions()}
+		<AiMenu
+			artifactPath="{page.url.pathname}.md"
+			pagePath={page.url.pathname} />
+	{/snippet}
+</PageHeader>
 
 <h2
 	id="configuration"
