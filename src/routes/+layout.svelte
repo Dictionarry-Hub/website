@@ -88,7 +88,7 @@
 	});
 </script>
 
-<div class="fixed top-0 left-0 flex h-screen w-72 flex-col bg-bg font-sans text-text">
+<div class="fixed top-0 left-0 flex h-screen w-80 flex-col bg-bg font-sans text-text">
 	<!-- Navbar: logo and theme switcher only -->
 	<div class="flex items-center justify-between border-r border-b border-border px-6 py-4">
 		<div class="flex items-center gap-2">
@@ -114,32 +114,6 @@
 		<div class="mb-4">
 			<SearchTrigger onclick={() => (searchOpen = true)} />
 		</div>
-
-		{#if data.devLogs.length > 0}
-			<NavGroup
-				label="Dev Logs"
-				href="/dev-logs"
-				icon={NotebookPen}>
-				{#each data.devLogs as log (log.href)}
-					<NavItem
-						label={log.title}
-						href={log.href} />
-				{/each}
-			</NavGroup>
-		{/if}
-
-		{#if data.wiki.length > 0}
-			<NavGroup
-				label="Wiki"
-				href="/wiki"
-				icon={Library}>
-				{#each data.wiki as article (article.href)}
-					<NavItem
-						label={article.title}
-						href={article.href} />
-				{/each}
-			</NavGroup>
-		{/if}
 
 		<!-- PCD reference: the whole subtree is scoped to one database, so the
 		     database picker is its root. -->
@@ -251,6 +225,34 @@
 			</NavGroupSelect>
 		{/if}
 
+		{#if data.devLogs.length > 0}
+			<NavGroup
+				label="Dev Logs"
+				href="/dev-logs"
+				icon={NotebookPen}
+				open={false}>
+				{#each data.devLogs as log (log.href)}
+					<NavItem
+						label={log.title}
+						href={log.href} />
+				{/each}
+			</NavGroup>
+		{/if}
+
+		{#if data.wiki.length > 0}
+			<NavGroup
+				label="Wiki"
+				href="/wiki"
+				icon={Library}
+				open={false}>
+				{#each data.wiki as article (article.href)}
+					<NavItem
+						label={article.title}
+						href={article.href} />
+				{/each}
+			</NavGroup>
+		{/if}
+
 		<NavGroup
 			label="API Reference"
 			href="/api/v1"
@@ -282,7 +284,7 @@
 	bind:open={searchOpen}
 	database={databaseValue} />
 
-<main class="min-h-screen bg-bg pl-72 font-sans text-text">
+<main class="min-h-screen bg-bg pl-80 font-sans text-text">
 	<div
 		id="top"
 		class="content-area mx-auto max-w-3xl px-6 py-10">
