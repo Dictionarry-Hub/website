@@ -8,28 +8,34 @@
 
 	interface Props {
 		data: T[];
-		columns: Column<T>[];
+		columns?: Column<T>[];
+		view?: 'adaptive' | 'cards';
 		href?: (row: T) => string | undefined;
 		cell?: Snippet<[row: T, column: Column<T>]>;
 		card: Snippet<[row: T]>;
 		expanded?: Snippet<[row: T]>;
 	}
 
-	let { data, columns, href, cell, card, expanded }: Props = $props();
+	let { data, columns = [], view = 'adaptive', href, cell, card, expanded }: Props = $props();
 </script>
 
-<!-- Table view (lg+) -->
-<div class="hidden lg:block">
-	<Table
-		{data}
-		{columns}
-		{href}
-		{cell}
-		{expanded} />
-</div>
+{#if view === 'adaptive'}
+	<!-- Table view (lg+) -->
+	<div class="hidden lg:block">
+		<Table
+			{data}
+			{columns}
+			{href}
+			{cell}
+			{expanded} />
+	</div>
+{/if}
 
-<!-- Card view (below lg) -->
-<div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:hidden">
+<!-- Card view (below lg in adaptive view, all breakpoints in cards view) -->
+<div
+	class="grid grid-cols-1 gap-3 sm:grid-cols-2 {view === 'adaptive'
+		? 'md:grid-cols-3 lg:hidden'
+		: ''}">
 	{#each data as row, i (i)}
 		{#if href?.(row)}
 			<a

@@ -138,17 +138,20 @@ positioning - the consumer controls those via class passthrough.
 `src/lib/client/ui/adaptive-list/AdaptiveList.svelte`
 
 Responsive data list: renders a `Table` at `lg` and above, and a `Card` grid (one to three columns
-by breakpoint) below. Generic over the row type, which must carry a string index signature. Used by
-the PCD entity detail pages and the API reference.
+by breakpoint) below. `view="cards"` skips the table and renders the card grid at every breakpoint
+(for small datasets where a table is ceremony), capped at two columns; `columns` is then unused. Generic over the row type,
+which must carry a string index signature. Used by the PCD entity detail pages and the API
+reference.
 
-| Prop       | Type                                   | Required | Default |
-| ---------- | -------------------------------------- | -------- | ------- |
-| `data`     | `T[]`                                  | yes      |         |
-| `columns`  | `Column<T>[]`                          | yes      |         |
-| `href`     | `(row: T) => string \| undefined`      | no       |         |
-| `cell`     | `Snippet<[row: T, column: Column<T>]>` | no       |         |
-| `card`     | `Snippet<[row: T]>`                    | yes      |         |
-| `expanded` | `Snippet<[row: T]>`                    | no       |         |
+| Prop       | Type                                   | Required               | Default      |
+| ---------- | -------------------------------------- | ---------------------- | ------------ |
+| `data`     | `T[]`                                  | yes                    |              |
+| `columns`  | `Column<T>[]`                          | in `adaptive` view     | `[]`         |
+| `view`     | `'adaptive' \| 'cards'`                | no                     | `'adaptive'` |
+| `href`     | `(row: T) => string \| undefined`      | no                     |              |
+| `cell`     | `Snippet<[row: T, column: Column<T>]>` | no                     |              |
+| `card`     | `Snippet<[row: T]>`                    | yes                    |              |
+| `expanded` | `Snippet<[row: T]>`                    | no                     |              |
 
 `columns`, `href`, `cell`, and `expanded` pass through to `Table` (`Column` comes from
 `src/lib/client/ui/table/types.ts`: key, header, width, align, sortable). Without `cell`, table
@@ -171,6 +174,83 @@ returns a URL for a row, both the table row and the card become links.
 		<p class="text-sm font-medium">{row.name}</p>
 	{/snippet}
 </AdaptiveList>
+```
+
+### Carousel
+
+#### `Carousel`
+
+`src/lib/client/ui/carousel/Carousel.svelte`
+
+Horizontal scroll-snap track with manual prev/next controls. Content-agnostic: each item renders
+through the `item` snippet, which owns its own width and surface. Controls page by one viewport
+width, only appear when the track overflows, and disable at each end. Scrolling is smooth only when
+the user allows motion.
+
+| Prop        | Type                                 | Required | Default      |
+| ----------- | ------------------------------------ | -------- | ------------ |
+| `items`     | `T[]`                                | yes      |              |
+| `item`      | `Snippet<[item: T]>`                 | yes      |              |
+| `label`     | `string` (aria-label)                | no       | `'Carousel'` |
+| `itemClass` | `string` (applied to each snap item) | no       | `''`         |
+
+Item width defaults to the snippet's content; pass `itemClass="w-full"` for one item per view.
+
+```svelte
+<Carousel
+	items={featured}
+	label="Featured posts">
+	{#snippet item(entry)}
+		<Card class="w-72 p-4">{entry.title}</Card>
+	{/snippet}
+</Carousel>
+```
+
+### ListPage
+
+#### `ListPage`
+
+`src/lib/client/ui/list-page/ListPage.svelte`
+
+Page template for entity index pages (dev logs, wiki, PCD entity types). Composes `SEO`,
+`PageHeader` (with an `AiMenu` when `artifactPath` is given), an optional intro, an optional
+featured `Carousel`, and one `AdaptiveList` per group. Generic over the row type. Grouping happens
+in `+page.server.ts` at build time; the component receives `ListGroup<T>[]` (`{ title?,
+description?, data }` from `src/lib/client/ui/list-page/types.ts`) and stays dumb. Group titles
+render as id'd `h2`s, so `TableOfContents` picks them up. Empty groups are skipped.
+
+| Prop             | Type                                   | Required | Default |
+| ---------------- | -------------------------------------- | -------- | ------- |
+| `title`          | `string` (PageHeader + SEO)            | yes      |         |
+| `seoDescription` | `string`                               | no       |         |
+| `description`    | `Snippet` (rich intro under header)    | no       |         |
+| `groups`         | `ListGroup<T>[]`                       | yes      |         |
+| `columns`        | `Column<T>[]` (unused in `cards` view) | no       | `[]`    |
+| `view`           | `'adaptive' \| 'cards'` (passthrough)  | no       | `'adaptive'` |
+| `href`           | `(row: T) => string \| undefined`      | no       |         |
+| `cell`           | `Snippet<[row: T, column: Column<T>]>` | no       |         |
+| `card`           | `Snippet<[row: T]>`                    | yes      |         |
+| `artifactPath`   | `string` (enables AiMenu)              | no       |         |
+| `carousel`       | `number` (count; presence enables)     | no       |         |
+| `carouselCard`   | `Snippet<[row: T]>`                    | no       | `card`  |
+
+The carousel draws from all groups flattened. The pre-rendered HTML carries the first N entries
+(deterministic, so no hydration mismatch); a client-side shuffle replaces them after mount.
+`ListPage` shows one full-width item per view and wraps each in a linked `Card`, mirroring
+`AdaptiveList`'s card view, so the list `card` snippet works as the fallback.
+
+```svelte
+<ListPage
+	title="Dev Logs"
+	groups={[{ data: logs }]}
+	{columns}
+	href={(row) => `/dev-logs/${row.slug}`}
+	artifactPath="/dev-logs.md"
+	carousel={4}>
+	{#snippet card(row)}
+		<p class="font-medium">{row.title}</p>
+	{/snippet}
+</ListPage>
 ```
 
 ### Kbd
