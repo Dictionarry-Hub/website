@@ -37,7 +37,7 @@
 </script>
 
 <div
-	class="callout callout-{type}"
+	class="callout callout-{type} overflow-hidden rounded-xl"
 	role="note">
 	<div class="callout-header">
 		<Icon size={16} />
@@ -55,10 +55,20 @@
 
 <style>
 	.callout {
-		border-left: 4px solid;
-		border-radius: 0;
+		--callout-accent-width: max(6px, var(--theme-radius-xl));
+		position: relative;
 		padding: 0.75rem 1rem;
+		padding-inline-start: calc(var(--callout-accent-width) + 1rem);
 		margin-bottom: 1rem;
+	}
+
+	.callout::before {
+		content: '';
+		position: absolute;
+		inset-block: 0;
+		inset-inline-start: 0;
+		width: var(--callout-accent-width);
+		background: var(--callout-accent);
 	}
 
 	.callout-header {
@@ -82,8 +92,8 @@
 	}
 
 	.callout-info {
+		--callout-accent: var(--theme-info-border);
 		background: color-mix(in srgb, var(--theme-info-bg) 50%, transparent);
-		border-color: var(--theme-info-border);
 	}
 
 	.callout-info .callout-header {
@@ -91,8 +101,8 @@
 	}
 
 	.callout-warning {
+		--callout-accent: var(--theme-warning-border);
 		background: color-mix(in srgb, var(--theme-warning-bg) 50%, transparent);
-		border-color: var(--theme-warning-border);
 	}
 
 	.callout-warning .callout-header {
@@ -100,8 +110,8 @@
 	}
 
 	.callout-danger {
+		--callout-accent: var(--theme-danger-border);
 		background: color-mix(in srgb, var(--theme-danger-bg) 50%, transparent);
-		border-color: var(--theme-danger-border);
 	}
 
 	.callout-danger .callout-header {
@@ -109,8 +119,8 @@
 	}
 
 	.callout-tip {
+		--callout-accent: var(--theme-success-border);
 		background: color-mix(in srgb, var(--theme-success-bg) 50%, transparent);
-		border-color: var(--theme-success-border);
 	}
 
 	.callout-tip .callout-header {
@@ -118,8 +128,8 @@
 	}
 
 	.callout-note {
+		--callout-accent: var(--theme-border);
 		background: color-mix(in srgb, var(--theme-surface-muted) 50%, transparent);
-		border-color: var(--theme-border);
 	}
 
 	.callout-note .callout-header {
@@ -127,8 +137,8 @@
 	}
 
 	.callout-quote {
+		--callout-accent: var(--theme-border);
 		background: color-mix(in srgb, var(--theme-surface-muted) 50%, transparent);
-		border-color: var(--theme-border);
 	}
 
 	.callout-quote .callout-header {
