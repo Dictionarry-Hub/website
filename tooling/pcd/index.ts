@@ -105,7 +105,7 @@ function main(): void {
 		const db = compileDatabase(schemaOpsDir, baseOpsDir);
 
 		// Extract and write
-		const compiled = extractDatabase(db, entry, manifest);
+		const compiled = extractDatabase(db, entry, manifest, schemaVersion);
 		const outputPath = join(outputDir, `${entry.id}.json`);
 		writeFileSync(outputPath, JSON.stringify(compiled, null, 2));
 

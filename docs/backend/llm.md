@@ -220,8 +220,7 @@ as Markdown"), not just the format.
 
 Dev log and wiki pages get an `AiMenu` automatically: the shared `Article` layout renders one in its
 `PageHeader` actions, deriving the artifact path from the current pathname plus `.md` and using the
-default prompt. The PCD entity detail pages render one the same way, manually in their own
-`PageHeader` actions since PCD pages do not use the `Article` layout.
+default prompt.
 
 ### Assistant deep links
 

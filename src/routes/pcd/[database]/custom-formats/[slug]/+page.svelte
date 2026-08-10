@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
+	import type { PageFormatAction } from '$lib/client/ui/page-actions/types';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import {
@@ -12,6 +13,23 @@
 	let { data } = $props();
 	const format = $derived(data.format);
 	const descriptionHtml = $derived(data.descriptionHtml);
+	const formatActions = $derived.by((): PageFormatAction[] => {
+		const yamlPath = `${page.url.pathname}.yaml`;
+		return [
+			{
+				kind: 'copy',
+				label: 'Copy as YAML',
+				successLabel: 'YAML copied',
+				url: yamlPath
+			},
+			{
+				kind: 'download',
+				label: 'Download as YAML',
+				url: yamlPath,
+				filename: `${page.params.slug}.yaml`
+			}
+		];
+	});
 </script>
 
 <SEO
@@ -22,7 +40,8 @@
 	title={format.name}
 	tags={format.tags}>
 	{#snippet actions()}
-		<AiMenu
+		<PageActionsMenu
+			{formatActions}
 			artifactPath="{page.url.pathname}.md"
 			pagePath={page.url.pathname} />
 	{/snippet}
@@ -56,7 +75,17 @@
 					<dt>Type</dt>
 					<dd>{formatConditionType(condition.type)}</dd>
 					<dt>Value</dt>
-					<dd>{formatConditionValue(condition.data)}</dd>
+					<dd>
+						{#if condition.regularExpressionSlug}
+							<a
+								href="/pcd/{page.params
+									.database}/regular-expressions/{condition.regularExpressionSlug}">
+								{formatConditionValue(condition.data)}
+							</a>
+						{:else}
+							{formatConditionValue(condition.data)}
+						{/if}
+					</dd>
 					<dt>Applies To</dt>
 					<dd>{formatConditionArrType(condition.arrType)}</dd>
 					<dt>Required</dt>

@@ -355,6 +355,7 @@ describe('buildPcdEntries', () => {
 			id: 'dictionarry',
 			name: 'Dictionarry',
 			version: '1.0.0',
+			schemaVersion: '1.0.0',
 			description: 'Test database',
 			arrTypes: ['radarr', 'sonarr'],
 			customFormats: [customFormat()],

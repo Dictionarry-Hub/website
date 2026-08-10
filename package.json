@@ -16,6 +16,7 @@
 		"lint:seo": "tsx tooling/lint/index.ts --category seo",
 		"lint:ui": "tsx tooling/lint/index.ts --category ui",
 		"lint:llm": "tsx tooling/lint/index.ts --category llm",
+		"lint:exports": "tsx tooling/lint/index.ts --category exports",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"test": "vitest run",
@@ -66,6 +67,7 @@
 		"marked": "^18.0.5",
 		"plyr": "^3.8.4",
 		"rehype-slug": "^6.0.0",
-		"shiki": "^4.2.0"
+		"shiki": "^4.2.0",
+		"yaml": "2.9.0"
 	}
 }

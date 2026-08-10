@@ -21,6 +21,22 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	const descriptionHtml = format.description ? await marked.parse(format.description) : null;
+	const conditions = format.conditions.map((condition) => {
+		const regularExpressionName =
+			condition.data.type === 'release_title' ||
+			condition.data.type === 'release_group' ||
+			condition.data.type === 'edition'
+				? condition.data.regularExpressionName
+				: null;
+		const regularExpression = regularExpressionName
+			? data.regularExpressions.find((entry) => entry.name === regularExpressionName)
+			: null;
 
-	return { format, descriptionHtml };
+		return {
+			...condition,
+			regularExpressionSlug: regularExpression ? slugify(regularExpression.name) : null
+		};
+	});
+
+	return { format: { ...format, conditions }, descriptionHtml };
 };
