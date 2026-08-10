@@ -145,7 +145,7 @@
 					{#each currentNav.customFormats as name (name)}
 						<NavItem
 							label={name}
-							href="/pcd/{databaseValue}/custom-formats/{name}" />
+							href="/pcd/{databaseValue}/custom-formats/{slugify(name)}" />
 					{/each}
 				</NavGroup>
 

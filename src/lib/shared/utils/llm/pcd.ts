@@ -17,7 +17,10 @@ import {
 	formatDelay,
 	formatPropersRepacks,
 	formatTierSize,
-	formatTierMaxSize
+	formatTierMaxSize,
+	formatConditionType,
+	formatConditionArrType,
+	formatConditionValue
 } from '$lib/shared/utils/pcd/format';
 import { SITE_URL } from './site.js';
 import { join, fence } from './md.js';
@@ -51,6 +54,52 @@ export function regexToMarkdown(data: CompiledDatabase, regex: RegularExpression
 		regex.description ? join(['## Description', regex.description]) : '',
 		'## References',
 		referencesSection(data.id, references)
+	]);
+}
+
+export function customFormatToMarkdown(data: CompiledDatabase, format: CustomFormat): string {
+	const slug = slugify(format.name);
+	const context = [
+		`A custom format from the ${data.name} PCD database.`,
+		format.tags.length > 0 ? `Tags: ${format.tags.join(', ')}.` : '',
+		`Web version: ${SITE_URL}/pcd/${data.id}/custom-formats/${slug}`
+	]
+		.filter(Boolean)
+		.join(' ');
+
+	const conditions = format.conditions.map((condition) =>
+		join([
+			`### ${condition.name}`,
+			detailList([
+				['Type', formatConditionType(condition.type)],
+				['Value', formatConditionValue(condition.data)],
+				['Applies To', formatConditionArrType(condition.arrType)],
+				['Required', condition.required ? 'Yes' : 'No'],
+				['Negated', condition.negate ? 'Yes' : 'No']
+			])
+		])
+	);
+
+	const tests = format.tests.map((test) =>
+		join([
+			`### ${test.title}`,
+			detailList([
+				['Type', test.type],
+				['Expected to Match', test.shouldMatch ? 'Yes' : 'No']
+			]),
+			test.description
+		])
+	);
+
+	return join([
+		`# ${format.name}`,
+		context,
+		format.description ? join(['## Description', format.description]) : '',
+		'## Configuration',
+		settingsTable([['Include in Rename', format.includeInRename ? 'Yes' : 'No']]),
+		'## Conditions',
+		conditions.length > 0 ? conditions.join('\n\n') : 'No conditions.',
+		tests.length > 0 ? join(['## Tests', tests.join('\n\n')]) : ''
 	]);
 }
 
@@ -178,6 +227,10 @@ function settingsTable(rows: [string, string][]): string {
 		'| ------- | ----- |',
 		...rows.map(([setting, value]) => `| ${setting} | ${value} |`)
 	].join('\n');
+}
+
+function detailList(rows: [string, string][]): string {
+	return rows.map(([label, value]) => `- **${label}:** ${value}`).join('\n');
 }
 
 function arrLabel(arrType: string): string {

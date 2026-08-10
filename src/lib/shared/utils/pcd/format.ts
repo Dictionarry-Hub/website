@@ -2,6 +2,8 @@
 // the llm serializers so the HTML page and its markdown artifact cannot
 // drift apart.
 
+import type { Condition, ConditionData } from '$lib/types/pcd';
+
 export const NAMING_FORMAT_LABELS: Record<string, string> = {
 	movieFormat: 'Movie',
 	movieFolderFormat: 'Movie Folder',
@@ -90,4 +92,54 @@ export function formatPropersRepacks(value: string): string {
 		default:
 			return value;
 	}
+}
+
+export function formatConditionType(type: Condition['type']): string {
+	return type
+		.split('_')
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(' ');
+}
+
+export function formatConditionArrType(arrType: string): string {
+	if (arrType === 'all') return 'Radarr and Sonarr';
+	return arrType.charAt(0).toUpperCase() + arrType.slice(1);
+}
+
+export function formatConditionValue(data: ConditionData): string {
+	switch (data.type) {
+		case 'release_title':
+		case 'release_group':
+		case 'edition':
+			return data.regularExpressionName;
+		case 'language':
+			return data.exceptLanguage ? `Except ${data.languageName}` : data.languageName;
+		case 'source':
+			return data.source;
+		case 'resolution':
+			return data.resolution;
+		case 'quality_modifier':
+			return data.qualityModifier;
+		case 'release_type':
+			return data.releaseType;
+		case 'indexer_flag':
+			return data.flag;
+		case 'size':
+			return formatRange(data.minBytes, data.maxBytes, 'bytes', 'Any size');
+		case 'year':
+			return formatRange(data.minYear, data.maxYear, '', 'Any year');
+	}
+}
+
+function formatRange(
+	minimum: number | null,
+	maximum: number | null,
+	unit: string,
+	emptyLabel: string
+): string {
+	const suffix = unit ? ` ${unit}` : '';
+	if (minimum === null && maximum === null) return emptyLabel;
+	if (minimum === null) return `At most ${maximum}${suffix}`;
+	if (maximum === null) return `At least ${minimum}${suffix}`;
+	return `${minimum} to ${maximum}${suffix}`;
 }

@@ -8,6 +8,7 @@ export {
 } from './devlog.js';
 export { wikiToMarkdown, wikiIndexToMarkdown, type WikiMeta, type WikiIndexEntry } from './wiki.js';
 export {
+	customFormatToMarkdown,
 	regexToMarkdown,
 	delayProfileToMarkdown,
 	namingConfigToMarkdown,
