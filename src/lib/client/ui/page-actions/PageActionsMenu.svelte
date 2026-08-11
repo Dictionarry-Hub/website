@@ -105,7 +105,6 @@
 					icon={action.kind === 'copy' ? Copy : Download}
 					onclick={() => runFormatAction(action)} />
 			{/each}
-			<DropdownHeader label="AI actions" />
 			<DropdownItem
 				label="Copy page as Markdown"
 				icon={Copy}
@@ -114,6 +113,7 @@
 				label="View as Markdown"
 				icon={FileText}
 				onclick={() => openLink(artifactPath)} />
+			<DropdownHeader label="AI actions" />
 			<DropdownItem
 				label="Open in Claude"
 				icon={SiClaude}

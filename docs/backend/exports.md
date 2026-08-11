@@ -35,11 +35,11 @@ embedded.
 ## Page Actions Menu
 
 `PageActionsMenu` combines machine-readable page formats and AI actions in one dropdown. Custom
-format pages provide Copy as YAML and Download as YAML under Page formats, followed by the standard
-Markdown and assistant actions under AI actions. Copy feedback temporarily replaces the menu trigger
-with a success or failure state. Future Radarr, Sonarr, and Profilarr actions will use separate JSON
-artifact routes through the same menu. A rich/YAML page mode may be added separately when the entity
-page UI is designed.
+format pages provide Copy as YAML, Download as YAML, Copy page as Markdown, and View as Markdown
+under Page formats. Open in Claude and Open in ChatGPT remain under AI actions. Copy feedback
+temporarily replaces the menu trigger with a success or failure state. Future Radarr, Sonarr, and
+Profilarr actions will use separate JSON artifact routes through the same menu. A rich/YAML page
+mode may be added separately when the entity page UI is designed.
 
 ## Enforcement
 
