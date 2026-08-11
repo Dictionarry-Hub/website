@@ -1,3 +1,3 @@
 {
-	"requiredEntityTypes": ["custom-formats"]
+	"requiredEntityTypes": ["custom-formats", "regular-expressions"]
 }

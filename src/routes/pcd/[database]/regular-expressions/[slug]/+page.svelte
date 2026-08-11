@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
-	import CodeBlock from '$lib/client/ui/markdown/code/CodeBlock.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import CodeBlock from '$lib/client/ui/markdown/code/CodeBlock.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
+	import type { PageFormatAction } from '$lib/client/ui/page-actions/types';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
-	import { Regex, FlaskConical } from '@lucide/svelte';
 	import type { Column } from '$lib/client/ui/table/types';
+	import { FlaskConical, Regex } from '@lucide/svelte';
 
 	let { data } = $props();
 	const regex = $derived(data.regex);
@@ -19,6 +20,24 @@
 		{ key: 'name', header: 'Custom Format', sortable: true },
 		{ key: 'tags', header: 'Tags' }
 	];
+
+	const formatActions = $derived.by((): PageFormatAction[] => {
+		const yamlPath = `${page.url.pathname}.yaml`;
+		return [
+			{
+				kind: 'copy',
+				label: 'Copy as YAML',
+				successLabel: 'YAML copied',
+				url: yamlPath
+			},
+			{
+				kind: 'download',
+				label: 'Download as YAML',
+				url: yamlPath,
+				filename: `${page.params.slug}.yaml`
+			}
+		];
+	});
 </script>
 
 <SEO
@@ -42,7 +61,8 @@
 					pill>regex101</Badge>
 			</a>
 		{/if}
-		<AiMenu
+		<PageActionsMenu
+			{formatActions}
 			artifactPath="{page.url.pathname}.md"
 			pagePath={page.url.pathname} />
 	{/snippet}

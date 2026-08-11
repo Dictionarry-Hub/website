@@ -1,2 +1,2 @@
 export { stringifyYaml } from './stringify.js';
-export { customFormatToYaml } from './pcd.js';
+export { customFormatToYaml, regularExpressionToYaml } from './pcd.js';

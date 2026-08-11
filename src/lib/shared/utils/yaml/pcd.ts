@@ -1,4 +1,10 @@
-import type { CompiledDatabase, Condition, ConditionData, CustomFormat } from '$lib/types/pcd';
+import type {
+	CompiledDatabase,
+	Condition,
+	ConditionData,
+	CustomFormat,
+	RegularExpression
+} from '$lib/types/pcd';
 import { SITE_URL } from '$lib/shared/utils/llm/site.js';
 import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import { slugify } from '$lib/shared/utils/slug';
@@ -33,6 +39,23 @@ export function customFormatToYaml(data: CompiledDatabase, format: CustomFormat)
 	};
 
 	return stringifyYaml(document);
+}
+
+export function regularExpressionToYaml(data: CompiledDatabase, regex: RegularExpression): string {
+	return stringifyYaml({
+		schema_version: data.schemaVersion,
+		database: {
+			id: data.id,
+			name: data.name,
+			version: data.version
+		},
+		entity_type: 'regular_expression',
+		name: regex.name,
+		description: regex.description,
+		tags: regex.tags,
+		pattern: regex.pattern,
+		regex101_id: regex.regex101Id
+	});
 }
 
 function conditionToYaml(data: CompiledDatabase, condition: Condition): Record<string, unknown> {
