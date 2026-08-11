@@ -5,11 +5,8 @@
 	import type { PageFormatAction } from '$lib/client/ui/page-actions/types';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
-	import {
-		formatConditionArrType,
-		formatConditionType,
-		formatConditionValue
-	} from '$lib/shared/utils/pcd/format';
+	import { formatConditionValue } from '$lib/shared/utils/pcd/format';
+	import ConditionCard from './ConditionCard.svelte';
 
 	let { data } = $props();
 	const format = $derived(data.format);
@@ -70,37 +67,28 @@
 {/if}
 
 <section aria-labelledby="conditions">
-	<h2 id="conditions">Conditions</h2>
+	<h2
+		id="conditions"
+		class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+		Conditions
+	</h2>
 	{#if format.conditions.length > 0}
-		{#each format.conditions as condition}
-			<article>
-				<h3>{condition.name}</h3>
-				<dl>
-					<dt>Type</dt>
-					<dd>{formatConditionType(condition.type)}</dd>
-					<dt>Value</dt>
-					<dd>
-						{#if condition.regularExpressionSlug}
-							<a
-								href="/pcd/{page.params
-									.database}/regular-expressions/{condition.regularExpressionSlug}">
-								{formatConditionValue(condition.data)}
-							</a>
-						{:else}
-							{formatConditionValue(condition.data)}
-						{/if}
-					</dd>
-					<dt>Applies To</dt>
-					<dd>{formatConditionArrType(condition.arrType)}</dd>
-					<dt>Required</dt>
-					<dd>{condition.required ? 'Yes' : 'No'}</dd>
-					<dt>Negated</dt>
-					<dd>{condition.negate ? 'Yes' : 'No'}</dd>
-				</dl>
-			</article>
-		{/each}
+		<div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
+			{#each format.conditions as condition, index (index)}
+				<ConditionCard
+					name={condition.name}
+					type={condition.type}
+					value={formatConditionValue(condition.data)}
+					valueHref={condition.regularExpressionSlug
+						? `/pcd/${page.params.database}/regular-expressions/${condition.regularExpressionSlug}`
+						: undefined}
+					arrType={condition.arrType}
+					required={condition.required}
+					negated={condition.negate} />
+			{/each}
+		</div>
 	{:else}
-		<p>No conditions.</p>
+		<p class="mt-4 text-sm text-text-muted italic">No conditions.</p>
 	{/if}
 </section>
 

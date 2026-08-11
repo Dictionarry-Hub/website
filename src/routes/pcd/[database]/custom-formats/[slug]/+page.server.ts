@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
+import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
@@ -21,22 +22,24 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	const descriptionHtml = format.description ? await marked.parse(format.description) : null;
-	const conditions = format.conditions.map((condition) => {
-		const regularExpressionName =
-			condition.data.type === 'release_title' ||
-			condition.data.type === 'release_group' ||
-			condition.data.type === 'edition'
-				? condition.data.regularExpressionName
+	const conditions = sortConditions(
+		format.conditions.map((condition) => {
+			const regularExpressionName =
+				condition.data.type === 'release_title' ||
+				condition.data.type === 'release_group' ||
+				condition.data.type === 'edition'
+					? condition.data.regularExpressionName
+					: null;
+			const regularExpression = regularExpressionName
+				? data.regularExpressions.find((entry) => entry.name === regularExpressionName)
 				: null;
-		const regularExpression = regularExpressionName
-			? data.regularExpressions.find((entry) => entry.name === regularExpressionName)
-			: null;
 
-		return {
-			...condition,
-			regularExpressionSlug: regularExpression ? slugify(regularExpression.name) : null
-		};
-	});
+			return {
+				...condition,
+				regularExpressionSlug: regularExpression ? slugify(regularExpression.name) : null
+			};
+		})
+	);
 
 	return { format: { ...format, conditions }, descriptionHtml };
 };

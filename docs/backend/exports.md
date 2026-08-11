@@ -19,8 +19,9 @@ Shared YAML code lives in `src/lib/shared/utils/yaml/`:
 - `pcd.ts` owns typed entity serializers.
 - `index.ts` is the public export surface.
 
-Serializers preserve structured machine values and source collection order. The shared encoder uses
-YAML 1.2, two-space indentation, literal multiline strings, and disables line folding.
+Serializers preserve structured machine values. Custom format conditions use the same canonical
+status, type, and name order as the HTML and Markdown representations. The shared encoder uses YAML
+1.2, two-space indentation, literal multiline strings, and disables line folding.
 
 ## Custom Formats
 

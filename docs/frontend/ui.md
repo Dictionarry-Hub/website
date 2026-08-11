@@ -82,7 +82,8 @@ Variant mapping:
 
 `src/lib/client/ui/tooltip/Tooltip.svelte`
 
-Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to the viewport.
+Wraps any element to show a tooltip on hover or when a focusable child receives keyboard focus.
+Portals to `<body>` and clamps to the viewport.
 
 | Prop       | Type                                     | Required | Default    |
 | ---------- | ---------------------------------------- | -------- | ---------- |

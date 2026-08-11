@@ -1,5 +1,6 @@
 import type { CompiledDatabase, Condition, ConditionData, CustomFormat } from '$lib/types/pcd';
 import { SITE_URL } from '$lib/shared/utils/llm/site.js';
+import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import { slugify } from '$lib/shared/utils/slug';
 import { stringifyYaml } from './stringify.js';
 
@@ -16,7 +17,9 @@ export function customFormatToYaml(data: CompiledDatabase, format: CustomFormat)
 		description: format.description,
 		tags: format.tags,
 		include_in_rename: format.includeInRename,
-		conditions: format.conditions.map((condition) => conditionToYaml(data, condition)),
+		conditions: sortConditions(format.conditions).map((condition) =>
+			conditionToYaml(data, condition)
+		),
 		...(format.tests.length > 0
 			? {
 					tests: format.tests.map((test) => ({

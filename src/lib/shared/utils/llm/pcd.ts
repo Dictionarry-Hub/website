@@ -9,6 +9,7 @@ import type {
 	RegularExpression
 } from '$lib/types/pcd';
 import { slugify } from '$lib/shared/utils/slug';
+import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import {
 	NAMING_FORMAT_LABELS,
 	COLON_REPLACEMENT_LABELS,
@@ -67,7 +68,7 @@ export function customFormatToMarkdown(data: CompiledDatabase, format: CustomFor
 		.filter(Boolean)
 		.join(' ');
 
-	const conditions = format.conditions.map((condition) =>
+	const conditions = sortConditions(format.conditions).map((condition) =>
 		join([
 			`### ${condition.name}`,
 			detailList([
