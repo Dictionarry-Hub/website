@@ -2,6 +2,7 @@ import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
+import { customFormatProfileReferences } from '$lib/shared/utils/pcd/references';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
@@ -56,6 +57,11 @@ export const load: PageServerLoad = async ({ params }) => {
 			};
 		})
 	);
+	const references = customFormatProfileReferences(data, format.name);
 
-	return { format: { ...format, conditions, noDescriptionMessage }, descriptionHtml };
+	return {
+		format: { ...format, conditions, noDescriptionMessage },
+		descriptionHtml,
+		references
+	};
 };

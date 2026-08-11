@@ -4,12 +4,18 @@ import type {
 	DelayProfile,
 	MediaSettings,
 	NamingConfig,
-	PatternCondition,
 	QualityDefinitionConfig,
 	RegularExpression
 } from '$lib/types/pcd';
 import { slugify } from '$lib/shared/utils/slug';
 import { sortConditions } from '$lib/shared/utils/pcd/conditions';
+import {
+	customFormatProfileReferences,
+	formatProfileScore,
+	regularExpressionReferences,
+	type QualityProfileReference,
+	type RegularExpressionReference
+} from '$lib/shared/utils/pcd/references';
 import {
 	NAMING_FORMAT_LABELS,
 	COLON_REPLACEMENT_LABELS,
@@ -42,9 +48,7 @@ export function regexToMarkdown(data: CompiledDatabase, regex: RegularExpression
 		.filter(Boolean)
 		.join(' ');
 
-	const references = data.customFormats.filter((cf) =>
-		cf.conditions.some((c) => (c.data as PatternCondition).regularExpressionName === regex.name)
-	);
+	const references = regularExpressionReferences(data, regex.name);
 
 	return join([
 		`# ${regex.name}`,
@@ -91,6 +95,7 @@ export function customFormatToMarkdown(data: CompiledDatabase, format: CustomFor
 			test.description
 		])
 	);
+	const references = customFormatProfileReferences(data, format.name);
 
 	return join([
 		`# ${format.name}`,
@@ -100,7 +105,9 @@ export function customFormatToMarkdown(data: CompiledDatabase, format: CustomFor
 		settingsTable([['Include in Rename', format.includeInRename ? 'Yes' : 'No']]),
 		'## Conditions',
 		conditions.length > 0 ? conditions.join('\n\n') : 'No conditions.',
-		tests.length > 0 ? join(['## Tests', tests.join('\n\n')]) : ''
+		tests.length > 0 ? join(['## Tests', tests.join('\n\n')]) : '',
+		'## References',
+		qualityProfileReferencesSection(data.id, references)
 	]);
 }
 
@@ -238,18 +245,50 @@ function arrLabel(arrType: string): string {
 	return arrType.charAt(0).toUpperCase() + arrType.slice(1);
 }
 
-function referencesSection(databaseId: string, references: CustomFormat[]): string {
+function referencesSection(
+	databaseId: string,
+	references: RegularExpressionReference[]
+): string {
 	if (references.length === 0) {
 		return 'No custom formats reference this regular expression.';
 	}
 
 	const items = references.map(
-		(cf) =>
-			`- [${cf.name}](${SITE_URL}/pcd/${databaseId}/custom-formats/${slugify(cf.name)}.md)`
+		(reference) =>
+			`- [${reference.name}](${SITE_URL}/pcd/${databaseId}/custom-formats/${reference.slug}.md)`
 	);
 
 	return join([
 		'Custom formats using this regular expression. Each link points to the markdown version.',
 		items.join('\n')
 	]);
+}
+
+function qualityProfileReferencesSection(
+	databaseId: string,
+	references: QualityProfileReference[]
+): string {
+	if (references.length === 0) {
+		return 'No quality profiles reference this custom format.';
+	}
+
+	return references
+		.map((reference) => {
+			const { radarr, sonarr } = reference.scores;
+			let scores: string;
+
+			if (radarr !== null && radarr === sonarr) {
+				scores = `Radarr and Sonarr ${formatProfileScore(radarr)}`;
+			} else {
+				scores = [
+					radarr === null ? '' : `Radarr ${formatProfileScore(radarr)}`,
+					sonarr === null ? '' : `Sonarr ${formatProfileScore(sonarr)}`
+				]
+					.filter(Boolean)
+					.join('; ');
+			}
+
+			return `- [${reference.name}](${SITE_URL}/pcd/${databaseId}/quality-profiles/${reference.slug}): ${scores}`;
+		})
+		.join('\n');
 }

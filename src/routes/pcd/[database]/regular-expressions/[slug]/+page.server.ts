@@ -1,8 +1,9 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
+import { regularExpressionReferences } from '$lib/shared/utils/pcd/references';
 import { slugify } from '$lib/shared/utils/slug';
-import type { CompiledDatabase, PatternCondition } from '$lib/types/pcd';
+import type { CompiledDatabase } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
 
 const NO_DESCRIPTION_MESSAGES = [
@@ -38,18 +39,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		? null
 		: pickDescriptionFallback(regex.name, NO_DESCRIPTION_MESSAGES);
 
-	// Find custom formats that reference this regex
-	const references = data.customFormats
-		.filter((cf) =>
-			cf.conditions.some(
-				(c) => (c.data as PatternCondition).regularExpressionName === regex.name
-			)
-		)
-		.map((cf) => ({
-			name: cf.name,
-			slug: slugify(cf.name),
-			tags: cf.tags
-		}));
+	const references = regularExpressionReferences(data, regex.name);
 
 	return { regex: { ...regex, noDescriptionMessage }, descriptionHtml, references, database };
 };
