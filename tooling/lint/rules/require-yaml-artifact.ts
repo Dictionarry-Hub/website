@@ -54,7 +54,7 @@ const rule: LintRule = {
 		for (const file of files) {
 			if (!file.path.endsWith('.html')) continue;
 
-			const match = file.path.match(/^build\/pcd\/[^/]+\/([^/]+)\/[^/]+\.html$/);
+			const match = file.path.match(/^build\/pcd\/[^/]+\/([^/]+)\/.+\.html$/);
 			if (!match || !required.has(match[1])) continue;
 
 			const artifact = file.path.replace(/\.html$/, '.yaml');

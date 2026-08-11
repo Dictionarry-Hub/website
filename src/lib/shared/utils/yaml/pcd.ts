@@ -3,6 +3,7 @@ import type {
 	Condition,
 	ConditionData,
 	CustomFormat,
+	MediaSettings,
 	RegularExpression
 } from '$lib/types/pcd';
 import { SITE_URL } from '$lib/shared/utils/llm/site.js';
@@ -55,6 +56,26 @@ export function regularExpressionToYaml(data: CompiledDatabase, regex: RegularEx
 		tags: regex.tags,
 		pattern: regex.pattern,
 		regex101_id: regex.regex101Id
+	});
+}
+
+export function mediaSettingsToYaml(
+	data: CompiledDatabase,
+	settings: MediaSettings,
+	arrType: string
+): string {
+	return stringifyYaml({
+		schema_version: data.schemaVersion,
+		database: {
+			id: data.id,
+			name: data.name,
+			version: data.version
+		},
+		entity_type: 'media_settings',
+		arr_type: arrType,
+		name: settings.name,
+		propers_repacks: settings.propersRepacks,
+		enable_media_info: settings.enableMediaInfo
 	});
 }
 
