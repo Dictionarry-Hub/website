@@ -82,7 +82,8 @@ Variant mapping:
 
 `src/lib/client/ui/tooltip/Tooltip.svelte`
 
-Wraps any element to show a tooltip on hover. Portals to `<body>` and clamps to the viewport.
+Wraps any element to show a tooltip on hover or when a focusable child receives keyboard focus.
+Portals to `<body>` and clamps to the viewport.
 
 | Prop       | Type                                     | Required | Default    |
 | ---------- | ---------------------------------------- | -------- | ---------- |
@@ -139,19 +140,19 @@ positioning - the consumer controls those via class passthrough.
 
 Responsive data list: renders a `Table` at `lg` and above, and a `Card` grid (one to three columns
 by breakpoint) below. `view="cards"` skips the table and renders the card grid at every breakpoint
-(for small datasets where a table is ceremony), capped at two columns; `columns` is then unused. Generic over the row type,
-which must carry a string index signature. Used by the PCD entity detail pages and the API
-reference.
+(for small datasets where a table is ceremony), capped at two columns; `columns` is then unused.
+Generic over the row type, which must carry a string index signature. Used by the PCD entity detail
+pages and the API reference.
 
-| Prop       | Type                                   | Required               | Default      |
-| ---------- | -------------------------------------- | ---------------------- | ------------ |
-| `data`     | `T[]`                                  | yes                    |              |
-| `columns`  | `Column<T>[]`                          | in `adaptive` view     | `[]`         |
-| `view`     | `'adaptive' \| 'cards'`                | no                     | `'adaptive'` |
-| `href`     | `(row: T) => string \| undefined`      | no                     |              |
-| `cell`     | `Snippet<[row: T, column: Column<T>]>` | no                     |              |
-| `card`     | `Snippet<[row: T]>`                    | yes                    |              |
-| `expanded` | `Snippet<[row: T]>`                    | no                     |              |
+| Prop       | Type                                   | Required           | Default      |
+| ---------- | -------------------------------------- | ------------------ | ------------ |
+| `data`     | `T[]`                                  | yes                |              |
+| `columns`  | `Column<T>[]`                          | in `adaptive` view | `[]`         |
+| `view`     | `'adaptive' \| 'cards'`                | no                 | `'adaptive'` |
+| `href`     | `(row: T) => string \| undefined`      | no                 |              |
+| `cell`     | `Snippet<[row: T, column: Column<T>]>` | no                 |              |
+| `card`     | `Snippet<[row: T]>`                    | yes                |              |
+| `expanded` | `Snippet<[row: T]>`                    | no                 |              |
 
 `columns`, `href`, `cell`, and `expanded` pass through to `Table` (`Column` comes from
 `src/lib/client/ui/table/types.ts`: key, header, width, align, sortable). Without `cell`, table
@@ -215,24 +216,24 @@ Item width defaults to the snippet's content; pass `itemClass="w-full"` for one 
 Page template for entity index pages (dev logs, wiki, PCD entity types). Composes `SEO`,
 `PageHeader` (with an `AiMenu` when `artifactPath` is given), an optional intro, an optional
 featured `Carousel`, and one `AdaptiveList` per group. Generic over the row type. Grouping happens
-in `+page.server.ts` at build time; the component receives `ListGroup<T>[]` (`{ title?,
-description?, data }` from `src/lib/client/ui/list-page/types.ts`) and stays dumb. Group titles
-render as id'd `h2`s, so `TableOfContents` picks them up. Empty groups are skipped.
+in `+page.server.ts` at build time; the component receives `ListGroup<T>[]`
+(`{ title?, description?, data }` from `src/lib/client/ui/list-page/types.ts`) and stays dumb. Group
+titles render as id'd `h2`s, so `TableOfContents` picks them up. Empty groups are skipped.
 
-| Prop             | Type                                   | Required | Default |
-| ---------------- | -------------------------------------- | -------- | ------- |
-| `title`          | `string` (PageHeader + SEO)            | yes      |         |
-| `seoDescription` | `string`                               | no       |         |
-| `description`    | `Snippet` (rich intro under header)    | no       |         |
-| `groups`         | `ListGroup<T>[]`                       | yes      |         |
-| `columns`        | `Column<T>[]` (unused in `cards` view) | no       | `[]`    |
+| Prop             | Type                                   | Required | Default      |
+| ---------------- | -------------------------------------- | -------- | ------------ |
+| `title`          | `string` (PageHeader + SEO)            | yes      |              |
+| `seoDescription` | `string`                               | no       |              |
+| `description`    | `Snippet` (rich intro under header)    | no       |              |
+| `groups`         | `ListGroup<T>[]`                       | yes      |              |
+| `columns`        | `Column<T>[]` (unused in `cards` view) | no       | `[]`         |
 | `view`           | `'adaptive' \| 'cards'` (passthrough)  | no       | `'adaptive'` |
-| `href`           | `(row: T) => string \| undefined`      | no       |         |
-| `cell`           | `Snippet<[row: T, column: Column<T>]>` | no       |         |
-| `card`           | `Snippet<[row: T]>`                    | yes      |         |
-| `artifactPath`   | `string` (enables AiMenu)              | no       |         |
-| `carousel`       | `number` (count; presence enables)     | no       |         |
-| `carouselCard`   | `Snippet<[row: T]>`                    | no       | `card`  |
+| `href`           | `(row: T) => string \| undefined`      | no       |              |
+| `cell`           | `Snippet<[row: T, column: Column<T>]>` | no       |              |
+| `card`           | `Snippet<[row: T]>`                    | yes      |              |
+| `artifactPath`   | `string` (enables AiMenu)              | no       |              |
+| `carousel`       | `number` (count; presence enables)     | no       |              |
+| `carouselCard`   | `Snippet<[row: T]>`                    | no       | `card`       |
 
 The carousel draws from all groups flattened. The pre-rendered HTML carries the first N entries
 (deterministic, so no hydration mismatch); a client-side shuffle replaces them after mount.
@@ -252,6 +253,23 @@ The carousel draws from all groups flattened. The pre-rendered HTML carries the 
 	{/snippet}
 </ListPage>
 ```
+
+### PageHeader
+
+#### `PageHeader`
+
+`src/lib/client/ui/header/PageHeader.svelte`
+
+Page title with optional metadata, tags, supplementary badges, and actions. Supplementary badges
+render in the same row as tags through the `badges` snippet.
+
+| Prop      | Type       | Required | Default |
+| --------- | ---------- | -------- | ------- |
+| `title`   | `string`   | yes      |         |
+| `tags`    | `string[]` | no       |         |
+| `badges`  | `Snippet`  | no       |         |
+| `meta`    | `Snippet`  | no       |         |
+| `actions` | `Snippet`  | no       |         |
 
 ### Kbd
 
@@ -321,6 +339,19 @@ internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette position.
 	<div class="p-6">...</div>
 </Dialog>
 ```
+
+### PageActionsMenu
+
+#### `PageActionsMenu`
+
+`src/lib/client/ui/page-actions/PageActionsMenu.svelte`
+
+Unified page-level menu for machine-readable formats and AI actions. Composes `Button`, `Dropdown`,
+`DropdownHeader`, and `DropdownItem`. Entity pages provide copy or download format actions plus
+their Markdown artifact and page paths. Page formats contains the entity format actions followed by
+Copy page as Markdown and View as Markdown; AI actions contains the assistant links. Successful
+copies close the menu and replace the trigger with a green confirmation for two seconds; failures
+use the same pattern with the danger state.
 
 ### Search
 

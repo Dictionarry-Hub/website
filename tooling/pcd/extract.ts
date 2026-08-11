@@ -41,12 +41,14 @@ const SONARR_MULTI_EPISODE_STYLE: Record<number, string> = {
 export function extractDatabase(
 	db: Database.Database,
 	entry: DatabaseEntry,
-	manifest: PcdManifest
+	manifest: PcdManifest,
+	schemaVersion: string
 ): CompiledDatabase {
 	return {
 		id: entry.id,
 		name: entry.name,
 		version: manifest.version,
+		schemaVersion,
 		description: manifest.description,
 		arrTypes: manifest.arr_types ?? ['radarr', 'sonarr'],
 		customFormats: extractCustomFormats(db),

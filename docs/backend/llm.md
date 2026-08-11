@@ -160,6 +160,7 @@ mdsvex, so the serializers at `src/lib/shared/utils/llm/pcd.ts` are API-style: t
 
 | Artifact            | URL                                                       | Serializer                     |
 | ------------------- | --------------------------------------------------------- | ------------------------------ |
+| Custom format       | `/pcd/{database}/custom-formats/{slug}.md`                | `customFormatToMarkdown`       |
 | Regular expression  | `/pcd/{database}/regular-expressions/{slug}.md`           | `regexToMarkdown`              |
 | Delay profile       | `/pcd/{database}/delay-profiles/{slug}.md`                | `delayProfileToMarkdown`       |
 | Naming config       | `/pcd/{database}/naming/{arrType}/{slug}.md`              | `namingConfigToMarkdown`       |
@@ -180,12 +181,14 @@ Configuration values render as a `| Setting | Value |` table. Value display form
 delay and protocol formatting) lives in `src/lib/shared/utils/pcd/format.ts`, imported by both the
 entity pages and the serializers, so page and artifact cannot drift apart.
 
+- **Custom format**: `## Description` when present, `## Configuration` for rename inclusion,
+  `## Conditions` with the type, value, arr applicability, required state, and negation for each
+  condition, then `## Tests` when tests exist.
 - **Regular expression**: `## Pattern` fenced as `regex` plus a regex101 link when the entity has a
   `regex101Id`; `## Description` with the raw markdown `description` verbatim (omitted entirely when
   null; the joke placeholder the HTML page shows never ships in artifacts); `## References` linking
   the custom formats whose conditions use the regex at their expected `.md` URLs
-  (`/pcd/{database}/custom-formats/{slug}.md`). That layer is not built yet, so the links resolve
-  once it lands; the names and web paths are already correct.
+  (`/pcd/{database}/custom-formats/{slug}.md`).
 - **Delay profile**: `## Configuration` with protocol, delays, and bypass settings. Delay values use
   the page's human formatting (`No delay`, `2h 30m`); protocol-irrelevant delays are omitted, as on
   the page.
@@ -217,8 +220,7 @@ as Markdown"), not just the format.
 
 Dev log and wiki pages get an `AiMenu` automatically: the shared `Article` layout renders one in its
 `PageHeader` actions, deriving the artifact path from the current pathname plus `.md` and using the
-default prompt. The PCD entity detail pages render one the same way, manually in their own
-`PageHeader` actions since PCD pages do not use the `Article` layout.
+default prompt.
 
 ### Assistant deep links
 
@@ -264,10 +266,10 @@ component):
 - **Remaining mdsvex surfaces.** Dev logs and wiki articles are done (see Dev Log and Wiki
   Artifacts); the home page and any future docs sections follow the same pattern. Landing each
   removes its entries from the rule's `PENDING` list (see Enforcement).
-- **PCD entity mirrors.** Regular expressions, delay profiles, naming configs, media settings, and
-  quality definitions are done (see PCD Entity Artifacts); the remaining entity types (custom
-  formats, quality profiles) and the entity list pages follow the same serializer-per-entity pattern
-  in `src/lib/shared/utils/llm/pcd.ts`.
+- **PCD entity mirrors.** Custom formats, regular expressions, delay profiles, naming configs, media
+  settings, and quality definitions are done (see PCD Entity Artifacts); quality profiles and the
+  entity list pages follow the same serializer-per-entity pattern in
+  `src/lib/shared/utils/llm/pcd.ts`.
 - **`/llms.txt`.** An index of all artifacts, per the [llms.txt](https://llmstxt.org/) convention.
   Cheap once artifacts exist, but low priority: log studies show almost no organic consumption, and
   copy affordances are what readers actually use.

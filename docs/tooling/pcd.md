@@ -108,7 +108,8 @@ every page.
 ## Shared Types
 
 `src/lib/types/pcd.ts` defines the compiled data shape, used by both the pipeline and the SvelteKit
-app. Key interfaces:
+app. `CompiledDatabase` retains both the database manifest version and its pinned schema dependency
+version. Key interfaces:
 
 - `CompiledDatabase` - top-level container with metadata and all entity collections
 - `CustomFormat` - name, description, tags, conditions (with discriminated union for condition data)

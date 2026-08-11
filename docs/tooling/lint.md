@@ -5,12 +5,13 @@ project-specific conventions.
 
 ## Commands
 
-| Command            | What it runs                       |
-| ------------------ | ---------------------------------- |
-| `pnpm lint`        | ESLint + all custom rules          |
-| `pnpm lint:eslint` | ESLint only                        |
-| `pnpm lint:seo`    | Custom rules in the `seo` category |
-| `pnpm lint:ui`     | Custom rules in the `ui` category  |
+| Command             | What it runs                           |
+| ------------------- | -------------------------------------- |
+| `pnpm lint`         | ESLint + all custom rules              |
+| `pnpm lint:eslint`  | ESLint only                            |
+| `pnpm lint:seo`     | Custom rules in the `seo` category     |
+| `pnpm lint:ui`      | Custom rules in the `ui` category      |
+| `pnpm lint:exports` | Custom rules in the `exports` category |
 
 `pnpm lint` is what CI runs. It requires a build first because some rules inspect build output.
 
@@ -64,8 +65,9 @@ interface LintRule {
 
 #### `require-seo` (category: `seo`)
 
-Every `+page.svelte` must import and use the `SEO` component from `$lib/client/ui/utils/SEO.svelte`.
-This ensures all pages have proper meta tags.
+Every `+page.svelte` must import and render either the `SEO` component directly or the approved
+`ListPage` composition, which owns SEO for entity index pages. This ensures all pages have proper
+meta tags without rendering duplicates.
 
 #### `no-raw-ui` (category: `ui`)
 
@@ -136,6 +138,13 @@ Every built page (`build/**/*.html`) must have a sibling `.md` markdown mirror f
 Runs against build output, so it requires `pnpm build` first. Exempt and pending routes are
 configured in `tooling/lint/md-mirror.json`. See [backend/llm.md](../backend/llm.md) for the
 architecture and the list semantics.
+
+#### `require-yaml-artifact` (category: `exports`)
+
+Every built detail page for a YAML-enabled PCD entity type must have a sibling `.yaml` artifact.
+Runs against build output after `pnpm build`. Supported entity route segments are listed in
+`tooling/lint/yaml-artifacts.json`; adding a serializer for another entity type requires adding its
+route segment to that list. Entity index pages and unsupported entity types are ignored.
 
 ### Adding a new rule
 

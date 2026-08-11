@@ -29,7 +29,7 @@ runtime server.
 ### Frontend
 
 - [UI](./frontend/ui.md) - Component library, semantic tokens, theming
-- [SEO](./frontend/seo.md) - Pre-rendering, meta tags, Lighthouse CI
+- [SEO](./frontend/seo.md) - Pre-rendering, meta tags, and validation
 - [Markdown](./frontend/markdown.md) - mdsvex configuration, component remapping, frontmatter
 
 ### Backend
@@ -37,6 +37,7 @@ runtime server.
 - [Content](./backend/content.md) - Content layers: Profilarr docs, PCD browser, dev logs
 - [Search](./backend/search.md) - Client-side fuzzy search, Elo ranking
 - [LLM Consumption](./backend/llm.md) - Markdown artifacts, copy buttons, AI-consumable content
+- [Entity Exports](./backend/exports.md) - YAML artifacts and application export boundaries
 
 ### Tooling
 

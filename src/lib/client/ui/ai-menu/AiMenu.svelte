@@ -8,7 +8,7 @@
 	import DropdownItem from '$lib/client/ui/dropdown/DropdownItem.svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
-	import { copyMarkdownArtifact } from '$lib/client/ui/copy-markdown/copy.js';
+	import { copyArtifact } from '$lib/client/utils/artifact';
 	import { assistantLink } from '$lib/shared/utils/llm/index.js';
 
 	interface Props {
@@ -39,7 +39,7 @@
 	);
 
 	async function copyPage() {
-		copyStatus = (await copyMarkdownArtifact(artifactPath)) ? 'copied' : 'failed';
+		copyStatus = (await copyArtifact(artifactPath)) ? 'copied' : 'failed';
 		clearTimeout(timer);
 		timer = setTimeout(() => {
 			copyStatus = 'idle';

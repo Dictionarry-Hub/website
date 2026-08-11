@@ -1,7 +1,9 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
+import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
+import { regularExpressionReferences } from '$lib/shared/utils/pcd/references';
 import { slugify } from '$lib/shared/utils/slug';
-import type { CompiledDatabase, PatternCondition } from '$lib/types/pcd';
+import type { CompiledDatabase } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
 
 const NO_DESCRIPTION_MESSAGES = [
@@ -14,15 +16,7 @@ const NO_DESCRIPTION_MESSAGES = [
 	'Some things are better left unexplained.',
 	'It matches what it matches.',
 	'This regex matches the correct thing 100% of the time 40% of the time.'
-];
-
-function pickMessage(name: string): string {
-	let hash = 0;
-	for (let i = 0; i < name.length; i++) {
-		hash = (hash * 31 + name.charCodeAt(i)) | 0;
-	}
-	return NO_DESCRIPTION_MESSAGES[Math.abs(hash) % NO_DESCRIPTION_MESSAGES.length];
-}
+] as const;
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug } = params;
@@ -41,20 +35,11 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	const descriptionHtml = regex.description ? await marked.parse(regex.description) : null;
-	const noDescriptionMessage = descriptionHtml ? null : pickMessage(regex.name);
+	const noDescriptionMessage = descriptionHtml
+		? null
+		: pickDescriptionFallback(regex.name, NO_DESCRIPTION_MESSAGES);
 
-	// Find custom formats that reference this regex
-	const references = data.customFormats
-		.filter((cf) =>
-			cf.conditions.some(
-				(c) => (c.data as PatternCondition).regularExpressionName === regex.name
-			)
-		)
-		.map((cf) => ({
-			name: cf.name,
-			slug: slugify(cf.name),
-			tags: cf.tags
-		}));
+	const references = regularExpressionReferences(data, regex.name);
 
 	return { regex: { ...regex, noDescriptionMessage }, descriptionHtml, references, database };
 };

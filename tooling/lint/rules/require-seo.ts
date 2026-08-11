@@ -2,7 +2,7 @@ import type { LintRule } from '../types.js';
 
 const rule: LintRule = {
 	name: 'require-seo',
-	description: 'Every +page.svelte must import and use the SEO component',
+	description: 'Every +page.svelte must render SEO directly or through an approved composition',
 	category: 'seo',
 	severity: 'error',
 	files: 'src/routes/**/+page.svelte',
@@ -10,14 +10,18 @@ const rule: LintRule = {
 		const violations = [];
 
 		for (const file of files) {
-			const hasImport = file.content.includes("from '$lib/client/ui/utils/SEO.svelte'");
-			const hasUsage = file.content.includes('<SEO');
+			const hasDirectSeo =
+				file.content.includes("from '$lib/client/ui/utils/SEO.svelte'") &&
+				file.content.includes('<SEO');
+			const hasListPageSeo =
+				file.content.includes("from '$lib/client/ui/list-page/ListPage.svelte'") &&
+				file.content.includes('<ListPage');
 
-			if (!hasImport || !hasUsage) {
+			if (!hasDirectSeo && !hasListPageSeo) {
 				violations.push({
 					rule: this.name,
 					file: file.path,
-					message: 'Missing SEO component. Every page must import and use <SEO />.'
+					message: 'Missing SEO. Render <SEO /> directly or through <ListPage />.'
 				});
 			}
 		}

@@ -2,6 +2,63 @@
 // the llm serializers so the HTML page and its markdown artifact cannot
 // drift apart.
 
+import type { Condition, ConditionData } from '$lib/types/pcd';
+
+const BYTES_PER_GB = 1024 ** 3;
+
+const SOURCE_LABELS: Record<string, string> = {
+	unknown: 'Unknown',
+	television: 'Television',
+	television_raw: 'Television Raw',
+	web_dl: 'WEB-DL',
+	webrip: 'WEBRip',
+	dvd: 'DVD',
+	bluray: 'Bluray',
+	bluray_raw: 'Bluray Raw',
+	cam: 'CAM',
+	telesync: 'Telesync',
+	telecine: 'Telecine',
+	workprint: 'Workprint'
+};
+
+const RESOLUTION_LABELS: Record<string, string> = {
+	'360p': '360p',
+	'480p': '480p',
+	'540p': '540p',
+	'576p': '576p',
+	'720p': '720p',
+	'1080p': '1080p',
+	'2160p': '2160p'
+};
+
+const QUALITY_MODIFIER_LABELS: Record<string, string> = {
+	none: 'None',
+	regional: 'Regional',
+	screener: 'Screener',
+	rawhd: 'RawHD',
+	brdisk: 'BRDISK',
+	remux: 'REMUX'
+};
+
+const RELEASE_TYPE_LABELS: Record<string, string> = {
+	single_episode: 'Single Episode',
+	multi_episode: 'Multi Episode',
+	season_pack: 'Season Pack'
+};
+
+const INDEXER_FLAG_LABELS: Record<string, string> = {
+	freeleech: 'Freeleech',
+	halfleech: 'Halfleech',
+	double_upload: 'Double Upload',
+	internal: 'Internal',
+	scene: 'Scene',
+	freeleech_75: 'Freeleech 75%',
+	freeleech_25: 'Freeleech 25%',
+	nuked: 'Nuked',
+	ptp_golden: 'PTP Golden',
+	ptp_approved: 'PTP Approved'
+};
+
 export const NAMING_FORMAT_LABELS: Record<string, string> = {
 	movieFormat: 'Movie',
 	movieFolderFormat: 'Movie Folder',
@@ -90,4 +147,60 @@ export function formatPropersRepacks(value: string): string {
 		default:
 			return value;
 	}
+}
+
+export function formatConditionType(type: Condition['type']): string {
+	return type
+		.split('_')
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(' ');
+}
+
+export function formatConditionArrType(arrType: string): string {
+	if (arrType === 'all') return 'Radarr and Sonarr';
+	return arrType.charAt(0).toUpperCase() + arrType.slice(1);
+}
+
+export function formatConditionValue(data: ConditionData): string {
+	switch (data.type) {
+		case 'release_title':
+		case 'release_group':
+		case 'edition':
+			return data.regularExpressionName;
+		case 'language':
+			return data.exceptLanguage ? `Except ${data.languageName}` : data.languageName;
+		case 'source':
+			return SOURCE_LABELS[data.source] ?? data.source;
+		case 'resolution':
+			return RESOLUTION_LABELS[data.resolution] ?? data.resolution;
+		case 'quality_modifier':
+			return QUALITY_MODIFIER_LABELS[data.qualityModifier] ?? data.qualityModifier;
+		case 'release_type':
+			return RELEASE_TYPE_LABELS[data.releaseType] ?? data.releaseType;
+		case 'indexer_flag':
+			return INDEXER_FLAG_LABELS[data.flag] ?? data.flag;
+		case 'size':
+			return formatSizeRange(data.minBytes, data.maxBytes);
+		case 'year':
+			return formatYearRange(data.minYear, data.maxYear);
+	}
+}
+
+function formatSizeRange(minimum: number | null, maximum: number | null): string {
+	if (minimum === null) {
+		return maximum === null ? 'Any size' : `At most ${formatGigabytes(maximum)} GB`;
+	}
+	if (maximum === null) return `At least ${formatGigabytes(minimum)} GB`;
+	return `${formatGigabytes(minimum)} GB to ${formatGigabytes(maximum)} GB`;
+}
+
+function formatGigabytes(bytes: number): string {
+	return String(Math.round((bytes / BYTES_PER_GB) * 100) / 100);
+}
+
+function formatYearRange(minimum: number | null, maximum: number | null): string {
+	if (minimum === null && maximum === null) return 'Any year';
+	if (minimum === null) return `${maximum} or earlier`;
+	if (maximum === null) return `${minimum} or later`;
+	return `${minimum} to ${maximum}`;
 }

@@ -4,6 +4,7 @@ export interface CompiledDatabase {
 	id: string;
 	name: string;
 	version: string;
+	schemaVersion: string;
 	description: string;
 	arrTypes: string[];
 	customFormats: CustomFormat[];

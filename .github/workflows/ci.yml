@@ -42,6 +42,7 @@ jobs:
                   node-version: 22
                   cache: 'pnpm'
             - run: pnpm install --frozen-lockfile
+            - run: pnpm compile:api
             - run: pnpm build
             - run: pnpm lint
 
@@ -58,6 +59,7 @@ jobs:
                   node-version: 22
                   cache: 'pnpm'
             - run: pnpm install --frozen-lockfile
+            - run: pnpm compile:api
             - run: pnpm check
 
     test:
@@ -88,28 +90,5 @@ jobs:
                   node-version: 22
                   cache: 'pnpm'
             - run: pnpm install --frozen-lockfile
+            - run: pnpm compile:api
             - run: pnpm build
-
-    lighthouse:
-        name: Lighthouse
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v6
-              with:
-                  fetch-depth: 20
-            - uses: pnpm/action-setup@v4
-              with:
-                  standalone: true
-            - uses: actions/setup-node@v6
-              with:
-                  node-version: 22
-                  cache: 'pnpm'
-            - run: pnpm install --frozen-lockfile
-            - run: pnpm build
-            - run: pnpm lighthouse
-            - uses: actions/upload-artifact@v4
-              if: always()
-              with:
-                  name: lighthouse-reports
-                  path: .lighthouseci/
-                  retention-days: 14

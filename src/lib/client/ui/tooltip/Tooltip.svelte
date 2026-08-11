@@ -21,6 +21,8 @@
 	const PADDING = 8;
 
 	let visible = $state(false);
+	let hovered = false;
+	let focused = false;
 	let style = $state('');
 	let wrapperEl: HTMLDivElement | undefined = $state();
 	let tooltipEl: HTMLDivElement | undefined = $state();
@@ -94,8 +96,24 @@
 		style = `left:${left}px;top:${top}px;width:${tip.width}px`;
 	}
 
-	function hide() {
-		visible = false;
+	function enter() {
+		hovered = true;
+		show();
+	}
+
+	function leave() {
+		hovered = false;
+		if (!focused) visible = false;
+	}
+
+	function focusIn() {
+		focused = true;
+		show();
+	}
+
+	function focusOut() {
+		focused = false;
+		if (!hovered) visible = false;
 	}
 
 	function portal(node: HTMLElement) {
@@ -112,13 +130,16 @@
 <div
 	class="inline-flex {className}"
 	bind:this={wrapperEl}
-	onmouseenter={show}
-	onmouseleave={hide}>
+	onmouseenter={enter}
+	onmouseleave={leave}
+	onfocusin={focusIn}
+	onfocusout={focusOut}>
 	{@render children()}
 	{#if text && visible}
 		<div
 			use:portal
 			bind:this={tooltipEl}
+			role="tooltip"
 			class="pointer-events-none fixed z-[110]"
 			{style}>
 			<div class="overflow-hidden rounded-control border border-border bg-bg shadow-card">

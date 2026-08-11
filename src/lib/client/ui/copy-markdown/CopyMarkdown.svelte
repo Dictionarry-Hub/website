@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Copy, Check, CircleAlert } from '@lucide/svelte';
 	import Button from '$lib/client/ui/button/Button.svelte';
-	import { copyMarkdownArtifact } from './copy.js';
+	import { copyArtifact } from '$lib/client/utils/artifact';
 
 	interface Props {
 		url: string;
@@ -24,7 +24,7 @@
 	);
 
 	async function copy() {
-		status = (await copyMarkdownArtifact(url)) ? 'copied' : 'failed';
+		status = (await copyArtifact(url)) ? 'copied' : 'failed';
 		clearTimeout(timer);
 		timer = setTimeout(() => (status = 'idle'), 2000);
 	}

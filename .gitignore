@@ -23,7 +23,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Lighthouse CI
-.lighthouseci
 
 # Generated PCD data
 src/lib/data/pcd/

@@ -20,6 +20,14 @@ Users select a database (e.g. Dictionarry, TRaSH, Dumpstarr) and browse its enti
 database is part of the URL path (`/pcd/[database]/[entity-type]/[name]`) so every page is
 independently crawlable.
 
+Regular expression and custom format pages always render a Description section. When the source
+entity has no description, the server load deterministically selects a type-specific fallback from
+the entity name so prerendered output remains stable.
+
+Custom format pages also list the quality profiles that score them. References resolve shared and
+application-specific scoring into effective Radarr and Sonarr scores and appear in both HTML and
+Markdown representations.
+
 Seven entity types are browsable:
 
 | Entity Type         | Route segment         | Arr-specific |

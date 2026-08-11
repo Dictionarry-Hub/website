@@ -4,11 +4,18 @@ import type {
 	DelayProfile,
 	MediaSettings,
 	NamingConfig,
-	PatternCondition,
 	QualityDefinitionConfig,
 	RegularExpression
 } from '$lib/types/pcd';
 import { slugify } from '$lib/shared/utils/slug';
+import { sortConditions } from '$lib/shared/utils/pcd/conditions';
+import {
+	customFormatProfileReferences,
+	formatProfileScore,
+	regularExpressionReferences,
+	type QualityProfileReference,
+	type RegularExpressionReference
+} from '$lib/shared/utils/pcd/references';
 import {
 	NAMING_FORMAT_LABELS,
 	COLON_REPLACEMENT_LABELS,
@@ -17,7 +24,10 @@ import {
 	formatDelay,
 	formatPropersRepacks,
 	formatTierSize,
-	formatTierMaxSize
+	formatTierMaxSize,
+	formatConditionType,
+	formatConditionArrType,
+	formatConditionValue
 } from '$lib/shared/utils/pcd/format';
 import { SITE_URL } from './site.js';
 import { join, fence } from './md.js';
@@ -38,9 +48,7 @@ export function regexToMarkdown(data: CompiledDatabase, regex: RegularExpression
 		.filter(Boolean)
 		.join(' ');
 
-	const references = data.customFormats.filter((cf) =>
-		cf.conditions.some((c) => (c.data as PatternCondition).regularExpressionName === regex.name)
-	);
+	const references = regularExpressionReferences(data, regex.name);
 
 	return join([
 		`# ${regex.name}`,
@@ -51,6 +59,55 @@ export function regexToMarkdown(data: CompiledDatabase, regex: RegularExpression
 		regex.description ? join(['## Description', regex.description]) : '',
 		'## References',
 		referencesSection(data.id, references)
+	]);
+}
+
+export function customFormatToMarkdown(data: CompiledDatabase, format: CustomFormat): string {
+	const slug = slugify(format.name);
+	const context = [
+		`A custom format from the ${data.name} PCD database.`,
+		format.tags.length > 0 ? `Tags: ${format.tags.join(', ')}.` : '',
+		`Web version: ${SITE_URL}/pcd/${data.id}/custom-formats/${slug}`
+	]
+		.filter(Boolean)
+		.join(' ');
+
+	const conditions = sortConditions(format.conditions).map((condition) =>
+		join([
+			`### ${condition.name}`,
+			detailList([
+				['Type', formatConditionType(condition.type)],
+				['Value', formatConditionValue(condition.data)],
+				['Applies To', formatConditionArrType(condition.arrType)],
+				['Required', condition.required ? 'Yes' : 'No'],
+				['Negated', condition.negate ? 'Yes' : 'No']
+			])
+		])
+	);
+
+	const tests = format.tests.map((test) =>
+		join([
+			`### ${test.title}`,
+			detailList([
+				['Type', test.type],
+				['Expected to Match', test.shouldMatch ? 'Yes' : 'No']
+			]),
+			test.description
+		])
+	);
+	const references = customFormatProfileReferences(data, format.name);
+
+	return join([
+		`# ${format.name}`,
+		context,
+		format.description ? join(['## Description', format.description]) : '',
+		'## Configuration',
+		settingsTable([['Include in Rename', format.includeInRename ? 'Yes' : 'No']]),
+		'## Conditions',
+		conditions.length > 0 ? conditions.join('\n\n') : 'No conditions.',
+		tests.length > 0 ? join(['## Tests', tests.join('\n\n')]) : '',
+		'## References',
+		qualityProfileReferencesSection(data.id, references)
 	]);
 }
 
@@ -180,22 +237,55 @@ function settingsTable(rows: [string, string][]): string {
 	].join('\n');
 }
 
+function detailList(rows: [string, string][]): string {
+	return rows.map(([label, value]) => `- **${label}:** ${value}`).join('\n');
+}
+
 function arrLabel(arrType: string): string {
 	return arrType.charAt(0).toUpperCase() + arrType.slice(1);
 }
 
-function referencesSection(databaseId: string, references: CustomFormat[]): string {
+function referencesSection(databaseId: string, references: RegularExpressionReference[]): string {
 	if (references.length === 0) {
 		return 'No custom formats reference this regular expression.';
 	}
 
 	const items = references.map(
-		(cf) =>
-			`- [${cf.name}](${SITE_URL}/pcd/${databaseId}/custom-formats/${slugify(cf.name)}.md)`
+		(reference) =>
+			`- [${reference.name}](${SITE_URL}/pcd/${databaseId}/custom-formats/${reference.slug}.md)`
 	);
 
 	return join([
 		'Custom formats using this regular expression. Each link points to the markdown version.',
 		items.join('\n')
 	]);
+}
+
+function qualityProfileReferencesSection(
+	databaseId: string,
+	references: QualityProfileReference[]
+): string {
+	if (references.length === 0) {
+		return 'No quality profiles reference this custom format.';
+	}
+
+	return references
+		.map((reference) => {
+			const { radarr, sonarr } = reference.scores;
+			let scores: string;
+
+			if (radarr !== null && radarr === sonarr) {
+				scores = `Radarr and Sonarr ${formatProfileScore(radarr)}`;
+			} else {
+				scores = [
+					radarr === null ? '' : `Radarr ${formatProfileScore(radarr)}`,
+					sonarr === null ? '' : `Sonarr ${formatProfileScore(sonarr)}`
+				]
+					.filter(Boolean)
+					.join('; ');
+			}
+
+			return `- [${reference.name}](${SITE_URL}/pcd/${databaseId}/quality-profiles/${reference.slug}): ${scores}`;
+		})
+		.join('\n');
 }
