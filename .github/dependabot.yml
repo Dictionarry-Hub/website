@@ -1,35 +1,35 @@
 # .github/dependabot.yml
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: /
-    target-branch: develop
-    schedule:
-      interval: monthly
-      time: '14:00'
-      timezone: 'Australia/Adelaide'
-    groups:
-      npm:
-        patterns:
-          - '*'
-    cooldown:
-      default-days: 7
-    reviewers:
-      - santiagosayshey
-    labels:
-      - dependencies
+    - package-ecosystem: npm
+      directory: /
+      target-branch: develop
+      schedule:
+          interval: monthly
+          time: '14:00'
+          timezone: 'Australia/Adelaide'
+      groups:
+          npm:
+              patterns:
+                  - '*'
+      cooldown:
+          default-days: 7
+      reviewers:
+          - santiagosayshey
+      labels:
+          - dependencies
 
-  - package-ecosystem: github-actions
-    directory: /
-    target-branch: develop
-    schedule:
-      interval: weekly
-      day: monday
-      time: '14:00'
-      timezone: 'Australia/Adelaide'
-    groups:
-      github:
-        patterns:
-          - '*'
-    cooldown:
-      default-days: 7
+    - package-ecosystem: github-actions
+      directory: /
+      target-branch: develop
+      schedule:
+          interval: weekly
+          day: monday
+          time: '14:00'
+          timezone: 'Australia/Adelaide'
+      groups:
+          github:
+              patterns:
+                  - '*'
+      cooldown:
+          default-days: 7
