@@ -14,6 +14,19 @@ updates:
                   - '*'
       cooldown:
           default-days: 7
+      ignore:
+          - dependency-name: remark-math
+            update-types:
+                - version-update:semver-major
+          - dependency-name: typescript
+            update-types:
+                - version-update:semver-major
+          - dependency-name: vite
+            update-types:
+                - version-update:semver-major
+          - dependency-name: '@sveltejs/vite-plugin-svelte'
+            update-types:
+                - version-update:semver-major
       reviewers:
           - santiagosayshey
       labels:

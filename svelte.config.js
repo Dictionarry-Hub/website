@@ -2,7 +2,6 @@ import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 import rehypeSlug from 'rehype-slug';
 import remarkMath from 'remark-math';
-import remarkFootnotes from 'remark-footnotes';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
@@ -30,10 +29,10 @@ const config = {
 	preprocess: [
 		mdsvex({
 			extensions: ['.svx', '.md'],
-			// remark-math and remark-footnotes are pinned to old majors: mdsvex
-			// bundles an older remark, and newer plugin versions target a
-			// micromark-based tree it cannot parse.
-			remarkPlugins: [remarkMath, remarkFootnotes],
+			// remark-math is pinned to an old major: mdsvex bundles an older
+			// remark, and newer plugin versions target a micromark-based tree
+			// it cannot parse.
+			remarkPlugins: [remarkMath],
 			rehypePlugins: [rehypeKatexSvelte, rehypeSlug],
 			layout: {
 				'dev-logs': resolve(__dirname, 'src/lib/layouts/Article.svelte'),

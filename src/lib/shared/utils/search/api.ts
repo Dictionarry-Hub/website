@@ -9,15 +9,13 @@ export function buildApiEndpointEntries(spec: ApiSpec): SearchEntry[] {
 	const page = `/api/v${spec.version}`;
 
 	return spec.tags.flatMap((tag) =>
-		tag.endpoints.map(
-			(endpoint): SearchEntry => ({
-				title: endpoint.summary || `${endpoint.method} ${endpoint.path}`,
-				url: `${page}#${endpoint.operationId}`,
-				type: 'api-endpoint',
-				blurb: `${endpoint.method} ${spec.baseUrl}${endpoint.path}`,
-				keywords: [tag.name, 'api endpoint'],
-				elo: BASELINE_ELO
-			})
-		)
+		tag.endpoints.map((endpoint): SearchEntry => ({
+			title: endpoint.summary || `${endpoint.method} ${endpoint.path}`,
+			url: `${page}#${endpoint.operationId}`,
+			type: 'api-endpoint',
+			blurb: `${endpoint.method} ${spec.baseUrl}${endpoint.path}`,
+			keywords: [tag.name, 'api endpoint'],
+			elo: BASELINE_ELO
+		}))
 	);
 }
