@@ -14,6 +14,13 @@ updates:
                   - '*'
       cooldown:
           default-days: 7
+      ignore:
+          - dependency-name: remark-math
+            update-types:
+                - version-update:semver-major
+          - dependency-name: typescript
+            update-types:
+                - version-update:semver-major
       reviewers:
           - santiagosayshey
       labels:

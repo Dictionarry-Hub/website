@@ -147,8 +147,7 @@ function extractConditionData(
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
 				.get(cfName, condName) as
-				| { language_name: string; except_language: number }
-				| undefined;
+				{ language_name: string; except_language: number } | undefined;
 			return {
 				type: 'language',
 				languageName: row?.language_name ?? '',
@@ -207,8 +206,7 @@ function extractConditionData(
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
 				.get(cfName, condName) as
-				| { min_bytes: number | null; max_bytes: number | null }
-				| undefined;
+				{ min_bytes: number | null; max_bytes: number | null } | undefined;
 			return {
 				type: 'size',
 				minBytes: row?.min_bytes ?? null,
@@ -222,8 +220,7 @@ function extractConditionData(
 					 WHERE custom_format_name = ? AND condition_name = ?`
 				)
 				.get(cfName, condName) as
-				| { min_year: number | null; max_year: number | null }
-				| undefined;
+				{ min_year: number | null; max_year: number | null } | undefined;
 			return { type: 'year', minYear: row?.min_year ?? null, maxYear: row?.max_year ?? null };
 		}
 		default:
@@ -539,14 +536,12 @@ function extractQualityDefinitions(
 
 		return {
 			name: n.name,
-			tiers: tiers.map(
-				(t): QualityDefinitionTier => ({
-					qualityName: t.quality_name,
-					minSize: t.min_size,
-					maxSize: t.max_size,
-					preferredSize: t.preferred_size
-				})
-			)
+			tiers: tiers.map((t): QualityDefinitionTier => ({
+				qualityName: t.quality_name,
+				minSize: t.min_size,
+				maxSize: t.max_size,
+				preferredSize: t.preferred_size
+			}))
 		};
 	});
 }

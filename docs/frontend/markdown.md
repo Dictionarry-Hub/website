@@ -43,7 +43,6 @@ tree. Newer versions expect a micromark-based pipeline and fail silently or loud
 | Plugin                | Version pin | Purpose                                           |
 | --------------------- | ----------- | ------------------------------------------------- |
 | `remark-math`         | `3.x`       | Parses `$...$` and `$$...$$` math syntax          |
-| `remark-footnotes`    | `2.x`       | Parses `[^1]` footnote references and definitions |
 | `rehype-katex-svelte` | current     | Renders math to KaTeX HTML escaped for Svelte     |
 | `rehype-slug`         | current     | Heading ids for the table of contents and anchors |
 
