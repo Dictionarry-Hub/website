@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Carousel from '$lib/client/ui/carousel/Carousel.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';
@@ -75,7 +75,7 @@
 <PageHeader {title}>
 	{#snippet actions()}
 		{#if artifactPath}
-			<AiMenu
+			<PageActionsMenu
 				{artifactPath}
 				pagePath={page.url.pathname} />
 		{/if}

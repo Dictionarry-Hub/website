@@ -3,7 +3,10 @@ import type {
 	Condition,
 	ConditionData,
 	CustomFormat,
+	DelayProfile,
 	MediaSettings,
+	NamingConfig,
+	QualityDefinitionConfig,
 	RegularExpression
 } from '$lib/types/pcd';
 import { SITE_URL } from '$lib/shared/utils/llm/site.js';
@@ -76,6 +79,68 @@ export function mediaSettingsToYaml(
 		name: settings.name,
 		propers_repacks: settings.propersRepacks,
 		enable_media_info: settings.enableMediaInfo
+	});
+}
+
+export function delayProfileToYaml(data: CompiledDatabase, profile: DelayProfile): string {
+	return stringifyYaml({
+		schema_version: data.schemaVersion,
+		database: {
+			id: data.id,
+			name: data.name,
+			version: data.version
+		},
+		entity_type: 'delay_profile',
+		name: profile.name,
+		preferred_protocol: profile.preferredProtocol,
+		usenet_delay: profile.usenetDelay,
+		torrent_delay: profile.torrentDelay,
+		bypass_if_highest_quality: profile.bypassIfHighestQuality,
+		bypass_if_above_custom_format_score: profile.bypassIfAboveCustomFormatScore,
+		minimum_custom_format_score: profile.minimumCustomFormatScore
+	});
+}
+
+export function namingConfigToYaml(data: CompiledDatabase, naming: NamingConfig): string {
+	return stringifyYaml({
+		schema_version: data.schemaVersion,
+		database: {
+			id: data.id,
+			name: data.name,
+			version: data.version
+		},
+		entity_type: 'naming',
+		arr_type: naming.arrType,
+		name: naming.name,
+		rename: naming.rename,
+		replace_illegal_characters: naming.replaceIllegalCharacters,
+		colon_replacement_format: naming.colonReplacementFormat,
+		custom_colon_replacement_format: naming.customColonReplacementFormat ?? null,
+		formats: naming.formats
+	});
+}
+
+export function qualityDefinitionsToYaml(
+	data: CompiledDatabase,
+	config: QualityDefinitionConfig,
+	arrType: string
+): string {
+	return stringifyYaml({
+		schema_version: data.schemaVersion,
+		database: {
+			id: data.id,
+			name: data.name,
+			version: data.version
+		},
+		entity_type: 'quality_definitions',
+		arr_type: arrType,
+		name: config.name,
+		tiers: config.tiers.map((tier) => ({
+			quality: tier.qualityName,
+			min_size: tier.minSize,
+			preferred_size: tier.preferredSize,
+			max_size: tier.maxSize
+		}))
 	});
 }
 

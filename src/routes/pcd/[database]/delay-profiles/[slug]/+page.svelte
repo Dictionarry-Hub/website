@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
+	import type { PageFormatAction } from '$lib/client/ui/page-actions/types';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
-	import { formatProtocol, formatDelay } from '$lib/shared/utils/pcd/format';
 	import type { Column } from '$lib/client/ui/table/types';
+	import { formatDelay, formatProtocol } from '$lib/shared/utils/pcd/format';
 
 	let { data } = $props();
 	const profile = $derived(data.profile);
@@ -45,13 +46,32 @@
 		{ key: 'setting', header: 'Setting' },
 		{ key: 'value', header: 'Value' }
 	];
+
+	const formatActions = $derived.by((): PageFormatAction[] => {
+		const yamlPath = `${page.url.pathname}.yaml`;
+		return [
+			{
+				kind: 'copy',
+				label: 'Copy as YAML',
+				successLabel: 'YAML copied',
+				url: yamlPath
+			},
+			{
+				kind: 'download',
+				label: 'Download as YAML',
+				url: yamlPath,
+				filename: `${page.params.slug}.yaml`
+			}
+		];
+	});
 </script>
 
 <SEO title={profile.name} />
 
 <PageHeader title={profile.name}>
 	{#snippet actions()}
-		<AiMenu
+		<PageActionsMenu
+			{formatActions}
 			artifactPath="{page.url.pathname}.md"
 			pagePath={page.url.pathname} />
 	{/snippet}

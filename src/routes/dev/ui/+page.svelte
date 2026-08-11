@@ -13,13 +13,13 @@
 	import DropdownFooter from '$lib/client/ui/dropdown/DropdownFooter.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
 	import { Apple, Cherry, Citrus, Star, CircleAlert, FlaskConical } from '@lucide/svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import Table from '$lib/client/ui/table/Table.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
 	import type { Column } from '$lib/client/ui/table/types';
 
 	interface DemoRow {
@@ -469,14 +469,14 @@
 
 	<Card>
 		{#snippet header()}
-			<h2 class="text-lg font-semibold">AiMenu</h2>
+			<h2 class="text-lg font-semibold">PageActionsMenu</h2>
 		{/snippet}
 
 		<div class="space-y-6">
 			<div class="space-y-2">
 				<h3 class="text-sm font-medium text-text-muted">Default</h3>
 				<div class="flex flex-wrap items-center gap-3">
-					<AiMenu
+					<PageActionsMenu
 						artifactPath="/api/v1.md"
 						pagePath="/api/v1" />
 				</div>
@@ -485,7 +485,7 @@
 			<div class="space-y-2">
 				<h3 class="text-sm font-medium text-text-muted">Custom prompt</h3>
 				<div class="flex flex-wrap items-center gap-3">
-					<AiMenu
+					<PageActionsMenu
 						artifactPath="/api/v1.md"
 						pagePath="/api/v1"
 						prompt={'Read {url} and help me use this API.'} />

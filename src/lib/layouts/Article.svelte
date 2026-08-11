@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import SEO from '$lib/client/ui/utils/SEO.svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Author from '$lib/client/ui/author/Author.svelte';
 	import DateTime from '$lib/client/ui/datetime/DateTime.svelte';
@@ -45,7 +45,7 @@
 		{title}
 		{tags}>
 		{#snippet actions()}
-			<AiMenu
+			<PageActionsMenu
 				artifactPath="{page.url.pathname}.md"
 				pagePath={page.url.pathname} />
 		{/snippet}

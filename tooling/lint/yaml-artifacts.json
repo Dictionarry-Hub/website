@@ -1,3 +1,10 @@
 {
-	"requiredEntityTypes": ["custom-formats", "media-settings", "regular-expressions"]
+	"requiredEntityTypes": [
+		"custom-formats",
+		"delay-profiles",
+		"media-settings",
+		"naming",
+		"quality-definitions",
+		"regular-expressions"
+	]
 }

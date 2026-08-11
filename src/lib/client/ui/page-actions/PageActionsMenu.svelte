@@ -5,21 +5,21 @@
 	import Dropdown from '$lib/client/ui/dropdown/Dropdown.svelte';
 	import DropdownHeader from '$lib/client/ui/dropdown/DropdownHeader.svelte';
 	import DropdownItem from '$lib/client/ui/dropdown/DropdownItem.svelte';
-	import OpenAiIcon from '$lib/client/ui/ai-menu/OpenAiIcon.svelte';
-	import SparkleIcon from '$lib/client/ui/ai-menu/SparkleIcon.svelte';
+	import OpenAiIcon from './OpenAiIcon.svelte';
+	import SparkleIcon from './SparkleIcon.svelte';
 	import { clickOutside } from '$lib/client/utils/clickOutside';
 	import { copyArtifact, downloadArtifact } from '$lib/client/utils/artifact';
 	import { assistantLink } from '$lib/shared/utils/llm/index.js';
 	import type { PageFormatAction } from './types';
 
 	interface Props {
-		formatActions: PageFormatAction[];
+		formatActions?: PageFormatAction[];
 		artifactPath: string;
 		pagePath: string;
 		prompt?: string;
 	}
 
-	let { formatActions, artifactPath, pagePath, prompt }: Props = $props();
+	let { formatActions = [], artifactPath, pagePath, prompt }: Props = $props();
 
 	let open = $state(false);
 	let triggerEl: HTMLElement | undefined = $state();

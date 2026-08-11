@@ -4,8 +4,8 @@
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
-	import AiMenu from '$lib/client/ui/ai-menu/AiMenu.svelte';
 	import CopyMarkdown from '$lib/client/ui/copy-markdown/CopyMarkdown.svelte';
+	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import EndpointSection from './EndpointSection.svelte';
 	import { operationSlug } from '$lib/shared/utils/llm/index.js';
@@ -35,7 +35,7 @@
 			variant="outline"
 			color="accent"
 			size="md">v{spec.version}</Badge>
-		<AiMenu
+		<PageActionsMenu
 			artifactPath="/api/v1.md"
 			pagePath="/api/v1"
 			prompt={aiPrompt} />
