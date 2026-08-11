@@ -142,7 +142,7 @@
 					name={condition.name}
 					type={condition.type}
 					value={formatConditionValue(condition.data)}
-					valueHref={condition.regularExpressionSlug
+					regularExpressionHref={condition.regularExpressionSlug
 						? `/pcd/${page.params.database}/regular-expressions/${condition.regularExpressionSlug}`
 						: undefined}
 					arrType={condition.arrType}

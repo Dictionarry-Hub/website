@@ -7,6 +7,7 @@
 		Languages,
 		Monitor,
 		Radio,
+		Regex,
 		ScanText,
 		SlidersHorizontal,
 		Tags,
@@ -23,13 +24,21 @@
 		name: string;
 		type: ConditionType;
 		value: string;
-		valueHref?: string;
+		regularExpressionHref?: string;
 		arrType: string;
 		required: boolean;
 		negated: boolean;
 	}
 
-	let { name, type, value, valueHref, arrType, required, negated }: Props = $props();
+	let {
+		name,
+		type,
+		value,
+		regularExpressionHref,
+		arrType,
+		required,
+		negated
+	}: Props = $props();
 
 	const conditionIcons: Record<ConditionType, Component> = {
 		release_title: ScanText,
@@ -74,10 +83,20 @@
 	{/snippet}
 
 	<dl class="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 text-sm">
-		<dt class="text-text-muted">Value</dt>
+		<dt class="text-text-muted">
+			{regularExpressionHref ? 'Regular expression' : 'Value'}
+		</dt>
 		<dd class="min-w-0 break-words font-medium">
-			{#if valueHref}
-				<a href={valueHref}>{value}</a>
+			{#if regularExpressionHref}
+				<a
+					href={regularExpressionHref}
+					aria-label="View regular expression: {value}"
+					class="inline-flex items-center gap-1.5 rounded-control-sm text-link-text underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current focus-visible:decoration-current focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-border">
+					<Regex
+						size={16}
+						aria-hidden="true" />
+					<span>{value}</span>
+				</a>
 			{:else}
 				{value}
 			{/if}
