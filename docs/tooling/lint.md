@@ -65,8 +65,9 @@ interface LintRule {
 
 #### `require-seo` (category: `seo`)
 
-Every `+page.svelte` must import and use the `SEO` component from `$lib/client/ui/utils/SEO.svelte`.
-This ensures all pages have proper meta tags.
+Every `+page.svelte` must import and render either the `SEO` component directly or the approved
+`ListPage` composition, which owns SEO for entity index pages. This ensures all pages have proper
+meta tags without rendering duplicates.
 
 #### `no-raw-ui` (category: `ui`)
 
