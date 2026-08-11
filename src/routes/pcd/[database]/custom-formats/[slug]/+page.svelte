@@ -52,19 +52,21 @@
 	{/snippet}
 </PageHeader>
 
-{#if descriptionHtml}
-	<section aria-labelledby="description">
-		<h2
-			id="description"
-			class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-			Description
-		</h2>
+<section aria-labelledby="description">
+	<h2
+		id="description"
+		class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+		Description
+	</h2>
+	{#if descriptionHtml}
 		<div class="prose mt-2">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -- markdown parsed at build time -->
 			{@html descriptionHtml}
 		</div>
-	</section>
-{/if}
+	{:else}
+		<p class="mt-2 text-sm text-text-muted italic">{format.noDescriptionMessage}</p>
+	{/if}
+</section>
 
 <section aria-labelledby="conditions">
 	<h2

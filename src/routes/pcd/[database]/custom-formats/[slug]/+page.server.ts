@@ -1,9 +1,22 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { sortConditions } from '$lib/shared/utils/pcd/conditions';
+import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
 import type { PageServerLoad } from './$types';
+
+const NO_DESCRIPTION_MESSAGES = [
+	'This custom format speaks for itself.',
+	'No description needed. The conditions tell the story.',
+	'The configuration is the explanation.',
+	'Built from conditions, held together by intent.',
+	'Description missing. Conditions ready.',
+	'If you know, you know.',
+	'A custom format of few words.',
+	'Read the conditions. Trust the process.',
+	'No description found. The format remains unapologetic.'
+] as const;
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug } = params;
@@ -22,6 +35,9 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	const descriptionHtml = format.description ? await marked.parse(format.description) : null;
+	const noDescriptionMessage = descriptionHtml
+		? null
+		: pickDescriptionFallback(format.name, NO_DESCRIPTION_MESSAGES);
 	const conditions = sortConditions(
 		format.conditions.map((condition) => {
 			const regularExpressionName =
@@ -41,5 +57,5 @@ export const load: PageServerLoad = async ({ params }) => {
 		})
 	);
 
-	return { format: { ...format, conditions }, descriptionHtml };
+	return { format: { ...format, conditions, noDescriptionMessage }, descriptionHtml };
 };
