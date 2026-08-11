@@ -158,7 +158,7 @@
 {#if format.tests.length > 0}
 	<section aria-labelledby="tests">
 		<h2 id="tests">Tests</h2>
-		{#each format.tests as test}
+		{#each format.tests as test, index (index)}
 			<article>
 				<h3>{test.title}</h3>
 				<dl>
@@ -186,8 +186,7 @@
 			<AdaptiveList
 				data={references}
 				columns={referenceColumns}
-				href={(row) =>
-					`/pcd/${page.params.database}/quality-profiles/${row.slug}`}>
+				href={(row) => `/pcd/${page.params.database}/quality-profiles/${row.slug}`}>
 				{#snippet cell(row, column)}
 					{#if column.key === 'name'}
 						<span class="font-medium">{row.name}</span>

@@ -16,7 +16,7 @@ const NO_DESCRIPTION_MESSAGES = [
 	'Some things are better left unexplained.',
 	'It matches what it matches.',
 	'This regex matches the correct thing 100% of the time 40% of the time.'
-];
+] as const;
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug } = params;

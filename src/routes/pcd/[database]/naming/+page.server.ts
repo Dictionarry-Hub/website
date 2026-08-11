@@ -23,7 +23,8 @@ export const load: PageServerLoad = async ({ params }) => {
 				name: config.name,
 				arrType,
 				colonReplacement:
-					COLON_REPLACEMENT_LABELS[config.colonReplacementFormat] ?? config.colonReplacementFormat,
+					COLON_REPLACEMENT_LABELS[config.colonReplacementFormat] ??
+					config.colonReplacementFormat,
 				multiEpisode: multiEpisodeStyle
 					? (MULTI_EPISODE_LABELS[multiEpisodeStyle] ?? multiEpisodeStyle)
 					: null,

@@ -245,10 +245,7 @@ function arrLabel(arrType: string): string {
 	return arrType.charAt(0).toUpperCase() + arrType.slice(1);
 }
 
-function referencesSection(
-	databaseId: string,
-	references: RegularExpressionReference[]
-): string {
+function referencesSection(databaseId: string, references: RegularExpressionReference[]): string {
 	if (references.length === 0) {
 		return 'No custom formats reference this regular expression.';
 	}

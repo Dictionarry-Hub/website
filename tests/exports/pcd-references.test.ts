@@ -5,12 +5,7 @@ import {
 	formatProfileScore,
 	regularExpressionReferences
 } from '$lib/shared/utils/pcd/references';
-import type {
-	CompiledDatabase,
-	CustomFormat,
-	ProfileScore,
-	QualityProfile
-} from '$lib/types/pcd';
+import type { CompiledDatabase, CustomFormat, ProfileScore, QualityProfile } from '$lib/types/pcd';
 
 function customFormat(name: string, conditions: CustomFormat['conditions'] = []): CustomFormat {
 	return {

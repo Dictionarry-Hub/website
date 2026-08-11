@@ -187,8 +187,9 @@ export function formatConditionValue(data: ConditionData): string {
 }
 
 function formatSizeRange(minimum: number | null, maximum: number | null): string {
-	if (minimum === null && maximum === null) return 'Any size';
-	if (minimum === null) return `At most ${formatGigabytes(maximum)} GB`;
+	if (minimum === null) {
+		return maximum === null ? 'Any size' : `At most ${formatGigabytes(maximum)} GB`;
+	}
 	if (maximum === null) return `At least ${formatGigabytes(minimum)} GB`;
 	return `${formatGigabytes(minimum)} GB to ${formatGigabytes(maximum)} GB`;
 }

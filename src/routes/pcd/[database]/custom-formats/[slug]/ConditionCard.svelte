@@ -15,6 +15,7 @@
 	} from '@lucide/svelte';
 	import type { Component } from 'svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
+	import Button from '$lib/client/ui/button/Button.svelte';
 	import Card from '$lib/client/ui/card/Card.svelte';
 	import Tooltip from '$lib/client/ui/tooltip/Tooltip.svelte';
 	import { formatConditionType } from '$lib/shared/utils/pcd/format';
@@ -30,15 +31,7 @@
 		negated: boolean;
 	}
 
-	let {
-		name,
-		type,
-		value,
-		regularExpressionHref,
-		arrType,
-		required,
-		negated
-	}: Props = $props();
+	let { name, type, value, regularExpressionHref, arrType, required, negated }: Props = $props();
 
 	const conditionIcons: Record<ConditionType, Component> = {
 		release_title: ScanText,
@@ -69,15 +62,13 @@
 			<Tooltip
 				text={typeLabel}
 				position="top">
-				<!-- svelte-ignore a11y_no_noninteractive_tabindex -- focus exposes the type tooltip to keyboard users -->
-				<span
-					tabindex="0"
+				<Button
+					type="button"
+					variant="ghost"
+					size="sm"
+					icon={TypeIcon}
 					aria-label="Condition type: {typeLabel}"
-					class="inline-flex shrink-0 rounded-control-sm text-text-muted outline-none focus-visible:ring-2 focus-visible:ring-accent-border">
-					<TypeIcon
-						size={18}
-						aria-hidden="true" />
-				</span>
+					class="shrink-0 text-text-muted" />
 			</Tooltip>
 		</div>
 	{/snippet}
@@ -86,12 +77,12 @@
 		<dt class="text-text-muted">
 			{regularExpressionHref ? 'Regular expression' : 'Value'}
 		</dt>
-		<dd class="min-w-0 break-words font-medium">
+		<dd class="min-w-0 font-medium break-words">
 			{#if regularExpressionHref}
 				<a
 					href={regularExpressionHref}
 					aria-label="View regular expression: {value}"
-					class="inline-flex items-center gap-1.5 rounded-control-sm text-link-text underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current focus-visible:decoration-current focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-border">
+					class="inline-flex items-center gap-1.5 rounded-control-sm text-link-text underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current focus-visible:decoration-current focus-visible:ring-2 focus-visible:ring-accent-border focus-visible:outline-none">
 					<Regex
 						size={16}
 						aria-hidden="true" />

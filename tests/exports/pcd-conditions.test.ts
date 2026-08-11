@@ -62,10 +62,18 @@ describe('formatConditionValue', () => {
 			formatConditionValue({ type: 'release_title', regularExpressionName: 'Golden Rule' })
 		).toBe('Golden Rule');
 		expect(
-			formatConditionValue({ type: 'language', languageName: 'English', exceptLanguage: false })
+			formatConditionValue({
+				type: 'language',
+				languageName: 'English',
+				exceptLanguage: false
+			})
 		).toBe('English');
 		expect(
-			formatConditionValue({ type: 'language', languageName: 'English', exceptLanguage: true })
+			formatConditionValue({
+				type: 'language',
+				languageName: 'English',
+				exceptLanguage: true
+			})
 		).toBe('Except English');
 	});
 
