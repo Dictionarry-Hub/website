@@ -31,7 +31,8 @@ jobs:
 
     lint:
         name: Lint
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
         steps:
             - uses: actions/checkout@v7
             - uses: pnpm/action-setup@v6
@@ -79,7 +80,8 @@ jobs:
 
     build:
         name: Build
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
         steps:
             - uses: actions/checkout@v7
             - uses: pnpm/action-setup@v6
