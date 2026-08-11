@@ -3,13 +3,6 @@
 // happens here; ratings are derived at build time by compile:elo. Reads
 // happen via `wrangler d1 execute`, so this stays a single endpoint.
 
-export interface Env {
-	DB: D1Database;
-	ALLOWED_ORIGIN: string;
-	/** Optional secret; salts the IP hash. */
-	IP_SALT?: string;
-}
-
 const MAX_QUERY_LENGTH = 200;
 const MAX_ROUTE_LENGTH = 300;
 const MAX_SHOWN = 20;
@@ -20,12 +13,23 @@ interface ClickPayload {
 	shown: string[];
 }
 
-function corsHeaders(env: Env): Record<string, string> {
+function corsHeaders(origin: string): Record<string, string> {
 	return {
-		'Access-Control-Allow-Origin': env.ALLOWED_ORIGIN,
+		'Access-Control-Allow-Origin': origin,
 		'Access-Control-Allow-Methods': 'POST, OPTIONS',
-		'Access-Control-Allow-Headers': 'Content-Type'
+		'Access-Control-Allow-Headers': 'Content-Type',
+		Vary: 'Origin'
 	};
+}
+
+function allowedOrigin(request: Request, env: Env): string | null {
+	const origin = request.headers.get('Origin');
+	if (origin === env.ALLOWED_ORIGIN) return origin;
+
+	const hostname = new URL(request.url).hostname;
+	const isLocalWorker = hostname === 'localhost' || hostname === '127.0.0.1';
+	const isLocalSite = origin !== null && /^http:\/\/(localhost|127\.0\.0\.1):\d+$/.test(origin);
+	return isLocalWorker && isLocalSite ? origin : null;
 }
 
 function isRoute(value: unknown, maxLength: number): value is string {
@@ -56,7 +60,15 @@ async function hashIp(ip: string, salt: string): Promise<string> {
 
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
-		const headers = corsHeaders(env);
+		const origin = allowedOrigin(request, env);
+		if (!origin) {
+			return new Response('Forbidden', { status: 403 });
+		}
+		const headers = corsHeaders(origin);
+
+		if (!env.IP_SALT) {
+			return new Response('Service unavailable', { status: 503, headers });
+		}
 
 		if (request.method === 'OPTIONS') {
 			return new Response(null, { status: 204, headers });
@@ -78,7 +90,7 @@ export default {
 		}
 
 		const ip = request.headers.get('CF-Connecting-IP') ?? 'unknown';
-		const ipHash = await hashIp(ip, env.IP_SALT ?? '');
+		const ipHash = await hashIp(ip, env.IP_SALT);
 
 		await env.DB.prepare(
 			'INSERT INTO clicks (query, clicked, shown, source, ip_hash, ts) VALUES (?, ?, ?, ?, ?, ?)'

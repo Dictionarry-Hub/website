@@ -25,7 +25,8 @@
 		"compile:api": "tsx tooling/api/index.ts",
 		"compile:elo": "tsx tooling/elo/index.ts",
 		"worker:dev": "wrangler dev -c worker/wrangler.jsonc",
-		"worker:migrate": "wrangler d1 migrations apply dictionarry-clicks --local -c worker/wrangler.jsonc"
+		"worker:migrate": "wrangler d1 migrations apply profilarr-elo --local -c worker/wrangler.jsonc",
+		"worker:types": "wrangler types worker/worker-configuration.d.ts -c worker/wrangler.jsonc"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^5.20260804.1",

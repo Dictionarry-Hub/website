@@ -18,7 +18,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '../..');
 const outputDir = join(projectRoot, 'src/lib/data/elo');
 
-const DATABASE = 'dictionarry-clicks';
+const DATABASE = 'profilarr-elo';
 const WRANGLER_CONFIG = 'worker/wrangler.jsonc';
 const QUERY = 'SELECT query, clicked, shown, source FROM clicks ORDER BY ts';
 

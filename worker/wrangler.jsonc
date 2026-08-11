@@ -1,20 +1,32 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "dictionarry-search-clicks",
+	"$schema": "../node_modules/wrangler/config-schema.json",
+	"name": "profilarr-elo",
 	"main": "src/index.ts",
-	"compatibility_date": "2026-06-01",
+	"compatibility_date": "2026-08-12",
+	"compatibility_flags": ["nodejs_compat"],
+	"workers_dev": false,
+	"routes": [
+		{
+			"pattern": "elo.profilarr.com",
+			"custom_domain": true
+		}
+	],
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "dictionarry-clicks",
-			// Placeholder until the production database is created with
-			// `wrangler d1 create`; local dev ignores it.
-			"database_id": "00000000-0000-0000-0000-000000000000",
+			"database_name": "profilarr-elo",
+			"database_id": "a4330c6e-1f88-4fe1-b2d2-fb20a96d7c05",
 			"migrations_dir": "migrations"
 		}
 	],
 	"vars": {
-		// Overridden in production to the GitHub Pages origin.
-		"ALLOWED_ORIGIN": "*"
+		"ALLOWED_ORIGIN": "https://profilarr.com"
+	},
+	"secrets": {
+		"required": ["IP_SALT"]
+	},
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1
 	}
 }

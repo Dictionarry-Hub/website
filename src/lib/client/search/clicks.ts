@@ -1,11 +1,11 @@
 // Click event recording for the Elo store (docs/backend/search.md). In dev
 // the endpoint is the local worker (`pnpm worker:dev`); in production it is
-// null until the Worker is deployed, making this a typed no-op. sendBeacon
-// survives the navigation that immediately follows every click.
+// the dedicated Elo Worker. sendBeacon survives the navigation that
+// immediately follows every click.
 
 const CLICK_ENDPOINT: string | null = import.meta.env.DEV
 	? 'http://localhost:8787/api/click'
-	: null;
+	: 'https://elo.profilarr.com/api/click';
 
 export interface ClickEvent {
 	/** Raw query text; empty string for clicks from the popular view. */
