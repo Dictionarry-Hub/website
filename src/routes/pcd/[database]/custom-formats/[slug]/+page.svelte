@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
 	import type { PageFormatAction } from '$lib/client/ui/page-actions/types';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
@@ -36,9 +37,16 @@
 	title={format.name}
 	description={format.description ?? undefined} />
 
+{#snippet renameBadge()}
+	<Badge
+		color="info"
+		variant="solid">Included in Rename</Badge>
+{/snippet}
+
 <PageHeader
 	title={format.name}
-	tags={format.tags}>
+	tags={format.tags}
+	badges={format.includeInRename ? renameBadge : undefined}>
 	{#snippet actions()}
 		<PageActionsMenu
 			{formatActions}
@@ -49,21 +57,17 @@
 
 {#if descriptionHtml}
 	<section aria-labelledby="description">
-		<h2 id="description">Description</h2>
-		<div>
+		<h2
+			id="description"
+			class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+			Description
+		</h2>
+		<div class="prose mt-2">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -- markdown parsed at build time -->
 			{@html descriptionHtml}
 		</div>
 	</section>
 {/if}
-
-<section aria-labelledby="configuration">
-	<h2 id="configuration">Configuration</h2>
-	<dl>
-		<dt>Include in Rename</dt>
-		<dd>{format.includeInRename ? 'Yes' : 'No'}</dd>
-	</dl>
-</section>
 
 <section aria-labelledby="conditions">
 	<h2 id="conditions">Conditions</h2>

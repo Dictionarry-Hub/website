@@ -253,6 +253,23 @@ The carousel draws from all groups flattened. The pre-rendered HTML carries the 
 </ListPage>
 ```
 
+### PageHeader
+
+#### `PageHeader`
+
+`src/lib/client/ui/header/PageHeader.svelte`
+
+Page title with optional metadata, tags, supplementary badges, and actions. Supplementary badges
+render in the same row as tags through the `badges` snippet.
+
+| Prop      | Type       | Required | Default |
+| --------- | ---------- | -------- | ------- |
+| `title`   | `string`   | yes      |         |
+| `tags`    | `string[]` | no       |         |
+| `badges`  | `Snippet`  | no       |         |
+| `meta`    | `Snippet`  | no       |         |
+| `actions` | `Snippet`  | no       |         |
+
 ### Kbd
 
 #### `Kbd`
