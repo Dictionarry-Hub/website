@@ -1,7 +1,10 @@
 import { error } from '@sveltejs/kit';
+import { pcdArrEntityEntries } from '$lib/shared/utils/pcd/prerender.js';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
-import type { PageServerLoad } from './$types';
+import type { EntryGenerator, PageServerLoad } from './$types';
+
+export const entries: EntryGenerator = () => pcdArrEntityEntries('qualityDefinitions');
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug, arrType } = params;

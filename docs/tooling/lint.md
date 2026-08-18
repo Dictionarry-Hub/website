@@ -69,6 +69,12 @@ Every `+page.svelte` must import and render either the `SEO` component directly 
 `ListPage` composition, which owns SEO for entity index pages. This ensures all pages have proper
 meta tags without rendering duplicates.
 
+#### `require-pcd-html` (category: `seo`)
+
+Every PCD section index and implemented entity route derived from the compiled navigation data must
+exist as HTML in `build/`. This catches dynamic routes that work in development but were not
+supplied to the static prerenderer. The rule requires `pnpm build` to run first.
+
 #### `no-raw-ui` (category: `ui`)
 
 No raw HTML UI elements (`<button>`, `<input>`, `<select>`, `<textarea>`, `<dialog>`, `<table>`) in

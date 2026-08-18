@@ -1,13 +1,13 @@
 import { error } from '@sveltejs/kit';
+import { pcdNamedEntityEntries } from '$lib/shared/utils/pcd/prerender.js';
 import { slugify } from '$lib/shared/utils/slug';
-import { pcdDatabaseEntries } from '$lib/shared/utils/pcd/prerender.js';
 import type { CompiledDatabase } from '$lib/types/pcd';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
-export const entries: EntryGenerator = pcdDatabaseEntries;
+export const entries: EntryGenerator = () => pcdNamedEntityEntries('qualityProfiles');
 
 export const load: PageServerLoad = async ({ params }) => {
-	const { database } = params;
+	const { database, slug } = params;
 
 	let data: CompiledDatabase;
 	try {
@@ -17,13 +17,10 @@ export const load: PageServerLoad = async ({ params }) => {
 		error(404, 'Database not found');
 	}
 
-	const configs = (['radarr', 'sonarr'] as const).flatMap((arrType) =>
-		data.media[arrType].qualityDefinitions.map((config) => ({
-			name: config.name,
-			arrType,
-			slug: slugify(config.name)
-		}))
-	);
+	const profile = data.qualityProfiles.find((item) => slugify(item.name) === slug);
+	if (!profile) {
+		error(404, 'Quality profile not found');
+	}
 
-	return { configs, database };
+	return { profile };
 };

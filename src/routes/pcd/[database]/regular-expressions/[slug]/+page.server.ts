@@ -1,10 +1,11 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
+import { pcdNamedEntityEntries } from '$lib/shared/utils/pcd/prerender.js';
 import { regularExpressionReferences } from '$lib/shared/utils/pcd/references';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
-import type { PageServerLoad } from './$types';
+import type { EntryGenerator, PageServerLoad } from './$types';
 
 const NO_DESCRIPTION_MESSAGES = [
 	'This regex speaks for itself.',
@@ -17,6 +18,8 @@ const NO_DESCRIPTION_MESSAGES = [
 	'It matches what it matches.',
 	'This regex matches the correct thing 100% of the time 40% of the time.'
 ] as const;
+
+export const entries: EntryGenerator = () => pcdNamedEntityEntries('regularExpressions');
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug } = params;

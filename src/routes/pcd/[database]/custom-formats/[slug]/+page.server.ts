@@ -3,9 +3,10 @@ import { marked } from 'marked';
 import { sortConditions } from '$lib/shared/utils/pcd/conditions';
 import { pickDescriptionFallback } from '$lib/shared/utils/pcd/description';
 import { customFormatProfileReferences } from '$lib/shared/utils/pcd/references';
+import { pcdNamedEntityEntries } from '$lib/shared/utils/pcd/prerender.js';
 import { slugify } from '$lib/shared/utils/slug';
 import type { CompiledDatabase } from '$lib/types/pcd';
-import type { PageServerLoad } from './$types';
+import type { EntryGenerator, PageServerLoad } from './$types';
 
 const NO_DESCRIPTION_MESSAGES = [
 	'This custom format speaks for itself.',
@@ -18,6 +19,8 @@ const NO_DESCRIPTION_MESSAGES = [
 	'Read the conditions. Trust the process.',
 	'No description found. The format remains unapologetic.'
 ] as const;
+
+export const entries: EntryGenerator = () => pcdNamedEntityEntries('customFormats');
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database, slug } = params;

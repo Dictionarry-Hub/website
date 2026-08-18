@@ -135,7 +135,7 @@
 					{#each currentNav.qualityProfiles as name (name)}
 						<NavItem
 							label={name}
-							href="/pcd/{databaseValue}/quality-profiles/{name}" />
+							href="/pcd/{databaseValue}/quality-profiles/{slugify(name)}" />
 					{/each}
 				</NavGroup>
 

@@ -1,8 +1,11 @@
 import { error } from '@sveltejs/kit';
 import { slugify } from '$lib/shared/utils/slug';
 import { formatPropersRepacks } from '$lib/shared/utils/pcd/format';
+import { pcdDatabaseEntries } from '$lib/shared/utils/pcd/prerender.js';
 import type { CompiledDatabase } from '$lib/types/pcd';
-import type { PageServerLoad } from './$types';
+import type { EntryGenerator, PageServerLoad } from './$types';
+
+export const entries: EntryGenerator = pcdDatabaseEntries;
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { database } = params;

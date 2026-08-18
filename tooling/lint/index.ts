@@ -6,6 +6,7 @@ import requireSeo from './rules/require-seo.js';
 import noRawUi from './rules/no-raw-ui.js';
 import noRawTokens from './rules/no-raw-tokens.js';
 import requireMdMirror from './rules/require-md-mirror.js';
+import requirePcdHtml from './rules/require-pcd-html.js';
 import requireYamlArtifact from './rules/require-yaml-artifact.js';
 import themeSync from './rules/theme-sync.js';
 
@@ -14,6 +15,7 @@ const rules: LintRule[] = [
 	noRawUi,
 	noRawTokens,
 	requireMdMirror,
+	requirePcdHtml,
 	requireYamlArtifact,
 	themeSync
 ];

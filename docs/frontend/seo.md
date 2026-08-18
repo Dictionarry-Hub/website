@@ -28,6 +28,10 @@ options:
 - If not linked from anywhere, export an `entries()` function in `+page.server.ts` that returns all
   valid parameter values.
 
+Links rendered only after client interaction, such as items inside a collapsed navigation group, are
+not visible to the prerender crawler. These routes must use explicit entries. CI compares the
+compiled PCD navigation data with the generated HTML so missing pages fail lint.
+
 ## Meta Tags
 
 All meta tags are rendered by the `SEO` component (`src/lib/client/ui/utils/SEO.svelte`). Every page
