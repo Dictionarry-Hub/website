@@ -35,6 +35,10 @@ must use it. The component handles the canonical URL, `<title>`, description, th
 Graph, and Twitter Card tags via `<svelte:head>`. Canonical URLs use the public site origin and the
 current pathname, excluding query parameters and fragments.
 
+The public origin comes from the build-time `PUBLIC_SITE_URL` environment variable. Development
+defaults to `http://localhost:5173` and accepts the same variable as an override. Production builds
+require the variable and reject values that are not plain HTTP or HTTPS origins.
+
 ```svelte
 <SEO
 	title="Installation"

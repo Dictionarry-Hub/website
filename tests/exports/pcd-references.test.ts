@@ -138,10 +138,10 @@ describe('custom format Markdown references', () => {
 		const markdown = customFormatToMarkdown(data, format);
 
 		expect(markdown).toContain(
-			'- [Different Scores](https://dictionarry.dev/pcd/example/quality-profiles/different-scores): Radarr +3,000; Sonarr -1,000'
+			'- [Different Scores](https://profilarr.com/pcd/example/quality-profiles/different-scores): Radarr +3,000; Sonarr -1,000'
 		);
 		expect(markdown).toContain(
-			'- [Same Score](https://dictionarry.dev/pcd/example/quality-profiles/same-score): Radarr and Sonarr +10'
+			'- [Same Score](https://profilarr.com/pcd/example/quality-profiles/same-score): Radarr and Sonarr +10'
 		);
 	});
 

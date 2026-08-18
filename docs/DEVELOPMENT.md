@@ -38,7 +38,9 @@ titles are validated against conventional commit format.
 ## Deployment
 
 The site is built with `pnpm build`, which runs adapter-static and outputs plain HTML, CSS, and JS
-to `build/`. This output is deployed to GitHub Pages.
+to `build/`. Production builds require `PUBLIC_SITE_URL`; CI maps it from the `SITE_URL` GitHub
+Actions variable. Deployment workflows must use the same mapping so generated links and canonical
+metadata share one origin. This output is deployed to GitHub Pages.
 
 There is no runtime, no server process, and no environment variables at serve time. Deployment is
 copying files.

@@ -81,7 +81,7 @@ granularity:
 ```markdown
 # Profilarr API v1: Databases
 
-> Part of the Profilarr API reference. Full reference: https://dictionarry.dev/api/v1.md
+> Part of the Profilarr API reference. Full reference: https://profilarr.com/api/v1.md
 
 All requests use the base URL `${PROFILARR_URL}/api/v1` and authenticate with an `X-Api-Key` header.
 `${PROFILARR_URL}` and `${API_KEY}` are placeholders for the user's own instance URL and API key.

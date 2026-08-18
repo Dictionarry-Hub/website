@@ -13,6 +13,9 @@ concurrency:
 permissions:
     contents: read
 
+env:
+    PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+
 jobs:
     format:
         name: Format
