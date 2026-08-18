@@ -654,6 +654,14 @@ e.g. the API reference uses `Read {url} and help me use this API.`
 
 Components for use inside mdsvex content (`.svx` files).
 
+#### `CodeBlock`
+
+`src/lib/client/ui/markdown/code/CodeBlock.svelte`
+
+Renders code as pre-rendered plain HTML, then lazy-loads Shiki and the active tab's language grammar
+after hydration. Inactive tab grammars load when selected. Plain-text and unsupported languages stay
+unhighlighted, and highlighting failures leave the readable plain code in place.
+
 #### `ThemeImage`
 
 `src/lib/client/ui/markdown/image/ThemeImage.svelte`

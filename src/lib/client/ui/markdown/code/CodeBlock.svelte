@@ -18,12 +18,42 @@
 		headerActions?: Snippet;
 	}
 
+	interface HighlightedItem {
+		key: string;
+		html: string;
+	}
+
 	let { items, overflow = 'scroll', footer, headerActions }: Props = $props();
 
 	let activeTab = $state(0);
 	let copied = $state(false);
+	let highlighted = $state<Array<HighlightedItem | undefined>>([]);
+	let highlightRequest = 0;
 
-	const highlighted = $derived(items.map((item) => highlight(item.code.trim(), item.language)));
+	function highlightKey(code: string, language: string): string {
+		return `${language}\u0000${code}`;
+	}
+
+	$effect(() => {
+		const index = activeTab;
+		const item = items[index];
+		if (!item) return;
+
+		const code = item.code.trim();
+		const key = highlightKey(code, item.language);
+		const request = ++highlightRequest;
+		if (highlighted[index]?.key === key) return;
+
+		void highlight(code, item.language)
+			.then((html) => {
+				if (!html || request !== highlightRequest) return;
+				highlighted[index] = { key, html };
+				highlighted = [...highlighted];
+			})
+			.catch(() => {
+				// Plain code remains visible when highlighting is unavailable.
+			});
+	});
 
 	async function copyToClipboard() {
 		const code = items[activeTab].code.trim();
@@ -99,12 +129,18 @@
 	<div
 		class="code-body"
 		class:wrap={overflow === 'wrap'}>
-		{#each highlighted as html, index (index)}
+		{#each items as item, index (index)}
+			{@const code = item.code.trim()}
+			{@const rendered = highlighted[index]}
 			<div
 				class="code-panel"
 				class:hidden={index !== activeTab}>
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -- highlighted code from build-time shiki -->
-				{@html html}
+				{#if rendered?.key === highlightKey(code, item.language)}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -- highlighted code from Shiki -->
+					{@html rendered.html}
+				{:else}
+					<pre><code>{code}</code></pre>
+				{/if}
 			</div>
 		{/each}
 	</div>
