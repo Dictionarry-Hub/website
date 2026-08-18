@@ -1,5 +1,17 @@
 <script lang="ts">
-	import { Check, ChevronDown, CircleAlert, Copy, Download, FileText } from '@lucide/svelte';
+	import {
+		Check,
+		ChevronDown,
+		CircleAlert,
+		Copy,
+		Download,
+		FileCode,
+		FileText,
+		LayoutTemplate
+	} from '@lucide/svelte';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 	import SiClaude from '@icons-pack/svelte-simple-icons/icons/SiClaude';
 	import Button from '$lib/client/ui/button/Button.svelte';
 	import Dropdown from '$lib/client/ui/dropdown/Dropdown.svelte';
@@ -17,10 +29,18 @@
 		artifactPath: string;
 		pagePath: string;
 		prompt?: string;
+		viewSwitcher?: boolean;
 	}
 
-	let { formatActions = [], artifactPath, pagePath, prompt }: Props = $props();
+	let {
+		formatActions = [],
+		artifactPath,
+		pagePath,
+		prompt,
+		viewSwitcher = false
+	}: Props = $props();
 
+	let mounted = $state(false);
 	let open = $state(false);
 	let triggerEl: HTMLElement | undefined = $state();
 	let feedback = $state<{
@@ -28,6 +48,13 @@
 		label: string;
 	} | null>(null);
 	let timer: ReturnType<typeof setTimeout> | undefined;
+	const activeView = $derived(
+		mounted && page.url.searchParams.get('view') === 'yaml' ? 'yaml' : 'rich'
+	);
+
+	onMount(() => {
+		mounted = true;
+	});
 
 	function showFeedback(status: 'copied' | 'failed', successLabel: string) {
 		feedback = {
@@ -62,6 +89,23 @@
 		clearTimeout(timer);
 		feedback = null;
 		open = !open;
+	}
+
+	function selectView(view: 'rich' | 'yaml') {
+		open = false;
+		if (view === activeView) return;
+
+		const url = new URL(page.url);
+		if (view === 'yaml') {
+			url.searchParams.set('view', 'yaml');
+		} else {
+			url.searchParams.delete('view');
+		}
+
+		void goto(`${url.pathname}${url.search}${url.hash}`, {
+			keepFocus: true,
+			noScroll: true
+		});
 	}
 </script>
 
@@ -98,6 +142,19 @@
 			{triggerEl}
 			position="right"
 			minWidth="15rem">
+			{#if viewSwitcher}
+				<DropdownHeader label="Page view" />
+				<DropdownItem
+					label="Rich view"
+					icon={LayoutTemplate}
+					selected={activeView === 'rich'}
+					onclick={() => selectView('rich')} />
+				<DropdownItem
+					label="YAML view"
+					icon={FileCode}
+					selected={activeView === 'yaml'}
+					onclick={() => selectView('yaml')} />
+			{/if}
 			<DropdownHeader label="Page formats" />
 			{#each formatActions as action (action.label)}
 				<DropdownItem

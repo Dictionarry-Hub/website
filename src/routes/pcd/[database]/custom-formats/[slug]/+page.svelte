@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import EntityView from '$lib/client/pcd/EntityView.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import PageActionsMenu from '$lib/client/ui/page-actions/PageActionsMenu.svelte';
@@ -109,100 +110,105 @@
 		<PageActionsMenu
 			{formatActions}
 			artifactPath="{page.url.pathname}.md"
-			pagePath={page.url.pathname} />
+			pagePath={page.url.pathname}
+			viewSwitcher />
 	{/snippet}
 </PageHeader>
 
-<section aria-labelledby="description">
-	<h2
-		id="description"
-		class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-		Description
-	</h2>
-	{#if descriptionHtml}
-		<div class="prose mt-2">
-			<!-- eslint-disable-next-line svelte/no-at-html-tags -- markdown parsed at build time -->
-			{@html descriptionHtml}
-		</div>
-	{:else}
-		<p class="mt-2 text-sm text-text-muted italic">{format.noDescriptionMessage}</p>
-	{/if}
-</section>
+<EntityView yamlPath="{page.url.pathname}.yaml">
+	{#snippet rich()}
+		<section aria-labelledby="description">
+			<h2
+				id="description"
+				class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+				Description
+			</h2>
+			{#if descriptionHtml}
+				<div class="prose mt-2">
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -- markdown parsed at build time -->
+					{@html descriptionHtml}
+				</div>
+			{:else}
+				<p class="mt-2 text-sm text-text-muted italic">{format.noDescriptionMessage}</p>
+			{/if}
+		</section>
 
-<section aria-labelledby="conditions">
-	<h2
-		id="conditions"
-		class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-		Conditions
-	</h2>
-	{#if format.conditions.length > 0}
-		<div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-			{#each format.conditions as condition, index (index)}
-				<ConditionCard
-					name={condition.name}
-					type={condition.type}
-					value={formatConditionValue(condition.data)}
-					regularExpressionHref={condition.regularExpressionSlug
-						? `/pcd/${page.params.database}/regular-expressions/${condition.regularExpressionSlug}`
-						: undefined}
-					arrType={condition.arrType}
-					required={condition.required}
-					negated={condition.negate} />
-			{/each}
-		</div>
-	{:else}
-		<p class="mt-4 text-sm text-text-muted italic">No conditions.</p>
-	{/if}
-</section>
+		<section aria-labelledby="conditions">
+			<h2
+				id="conditions"
+				class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+				Conditions
+			</h2>
+			{#if format.conditions.length > 0}
+				<div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
+					{#each format.conditions as condition, index (index)}
+						<ConditionCard
+							name={condition.name}
+							type={condition.type}
+							value={formatConditionValue(condition.data)}
+							regularExpressionHref={condition.regularExpressionSlug
+								? `/pcd/${page.params.database}/regular-expressions/${condition.regularExpressionSlug}`
+								: undefined}
+							arrType={condition.arrType}
+							required={condition.required}
+							negated={condition.negate} />
+					{/each}
+				</div>
+			{:else}
+				<p class="mt-4 text-sm text-text-muted italic">No conditions.</p>
+			{/if}
+		</section>
 
-{#if format.tests.length > 0}
-	<section aria-labelledby="tests">
-		<h2 id="tests">Tests</h2>
-		{#each format.tests as test, index (index)}
-			<article>
-				<h3>{test.title}</h3>
-				<dl>
-					<dt>Type</dt>
-					<dd>{test.type}</dd>
-					<dt>Expected to Match</dt>
-					<dd>{test.shouldMatch ? 'Yes' : 'No'}</dd>
-				</dl>
-				{#if test.description}
-					<p>{test.description}</p>
-				{/if}
-			</article>
-		{/each}
-	</section>
-{/if}
+		{#if format.tests.length > 0}
+			<section aria-labelledby="tests">
+				<h2 id="tests">Tests</h2>
+				{#each format.tests as test, index (index)}
+					<article>
+						<h3>{test.title}</h3>
+						<dl>
+							<dt>Type</dt>
+							<dd>{test.type}</dd>
+							<dt>Expected to Match</dt>
+							<dd>{test.shouldMatch ? 'Yes' : 'No'}</dd>
+						</dl>
+						{#if test.description}
+							<p>{test.description}</p>
+						{/if}
+					</article>
+				{/each}
+			</section>
+		{/if}
 
-<section aria-labelledby="references">
-	<h2
-		id="references"
-		class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-		References
-	</h2>
-	{#if references.length > 0}
-		<div class="mt-4">
-			<AdaptiveList
-				data={references}
-				columns={referenceColumns}
-				href={(row) => `/pcd/${page.params.database}/quality-profiles/${row.slug}`}>
-				{#snippet cell(row, column)}
-					{#if column.key === 'name'}
-						<span class="font-medium">{row.name}</span>
-					{:else if column.key === 'scores'}
-						{@render scoreList(row)}
-					{/if}
-				{/snippet}
-				{#snippet card(row)}
-					<p class="text-sm font-medium">{row.name}</p>
-					<div class="mt-2">{@render scoreList(row)}</div>
-				{/snippet}
-			</AdaptiveList>
-		</div>
-	{:else}
-		<p class="mt-4 text-sm text-text-muted italic">
-			No quality profiles reference this custom format.
-		</p>
-	{/if}
-</section>
+		<section aria-labelledby="references">
+			<h2
+				id="references"
+				class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+				References
+			</h2>
+			{#if references.length > 0}
+				<div class="mt-4">
+					<AdaptiveList
+						data={references}
+						columns={referenceColumns}
+						href={(row) => `/pcd/${page.params.database}/quality-profiles/${row.slug}`}>
+						{#snippet cell(row, column)}
+							{#if column.key === 'name'}
+								<span class="font-medium">{row.name}</span>
+							{:else if column.key === 'scores'}
+								{@render scoreList(row)}
+							{/if}
+						{/snippet}
+						{#snippet card(row)}
+							<p class="text-sm font-medium">{row.name}</p>
+							<div class="mt-2">{@render scoreList(row)}</div>
+						{/snippet}
+					</AdaptiveList>
+				</div>
+			{:else}
+				<p class="mt-4 text-sm text-text-muted italic">
+					No quality profiles reference this custom format.
+				</p>
+			{/if}
+		</section>
+	{/snippet}
+</EntityView>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import EntityView from '$lib/client/pcd/EntityView.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
@@ -63,55 +64,60 @@
 		<PageActionsMenu
 			{formatActions}
 			artifactPath="{page.url.pathname}.md"
-			pagePath={page.url.pathname} />
+			pagePath={page.url.pathname}
+			viewSwitcher />
 	{/snippet}
 </PageHeader>
 
-<h2
-	id="configuration"
-	class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-	Configuration
-</h2>
-<div class="mt-4">
-	<AdaptiveList
-		data={rows}
-		{columns}>
-		{#snippet cell(row, col)}
-			{#if col.key === 'setting'}
-				<span class="font-medium">{row.setting}</span>
-			{:else if col.key === 'value'}
-				{#if row.id === 'propers-repacks'}
-					<Badge
-						color="info"
-						variant="subtle"
-						pill>{row.value}</Badge>
-				{:else}
-					<Badge
-						color={row.value === 'Yes' ? 'success' : 'neutral'}
-						variant="subtle"
-						pill>
-						{row.value}
-					</Badge>
-				{/if}
-			{/if}
-		{/snippet}
-		{#snippet card(row)}
-			<p class="text-sm font-medium">{row.setting}</p>
-			<div class="mt-2">
-				{#if row.id === 'propers-repacks'}
-					<Badge
-						color="info"
-						variant="subtle"
-						pill>{row.value}</Badge>
-				{:else}
-					<Badge
-						color={row.value === 'Yes' ? 'success' : 'neutral'}
-						variant="subtle"
-						pill>
-						{row.value}
-					</Badge>
-				{/if}
-			</div>
-		{/snippet}
-	</AdaptiveList>
-</div>
+<EntityView yamlPath="{page.url.pathname}.yaml">
+	{#snippet rich()}
+		<h2
+			id="configuration"
+			class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+			Configuration
+		</h2>
+		<div class="mt-4">
+			<AdaptiveList
+				data={rows}
+				{columns}>
+				{#snippet cell(row, col)}
+					{#if col.key === 'setting'}
+						<span class="font-medium">{row.setting}</span>
+					{:else if col.key === 'value'}
+						{#if row.id === 'propers-repacks'}
+							<Badge
+								color="info"
+								variant="subtle"
+								pill>{row.value}</Badge>
+						{:else}
+							<Badge
+								color={row.value === 'Yes' ? 'success' : 'neutral'}
+								variant="subtle"
+								pill>
+								{row.value}
+							</Badge>
+						{/if}
+					{/if}
+				{/snippet}
+				{#snippet card(row)}
+					<p class="text-sm font-medium">{row.setting}</p>
+					<div class="mt-2">
+						{#if row.id === 'propers-repacks'}
+							<Badge
+								color="info"
+								variant="subtle"
+								pill>{row.value}</Badge>
+						{:else}
+							<Badge
+								color={row.value === 'Yes' ? 'success' : 'neutral'}
+								variant="subtle"
+								pill>
+								{row.value}
+							</Badge>
+						{/if}
+					</div>
+				{/snippet}
+			</AdaptiveList>
+		</div>
+	{/snippet}
+</EntityView>

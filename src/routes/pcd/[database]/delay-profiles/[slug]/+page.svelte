@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import EntityView from '$lib/client/pcd/EntityView.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import PageHeader from '$lib/client/ui/header/PageHeader.svelte';
@@ -73,104 +74,112 @@
 		<PageActionsMenu
 			{formatActions}
 			artifactPath="{page.url.pathname}.md"
-			pagePath={page.url.pathname} />
+			pagePath={page.url.pathname}
+			viewSwitcher />
 	{/snippet}
 </PageHeader>
 
-<h2
-	id="configuration"
-	class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
-	Configuration
-</h2>
-<div class="mt-4">
-	<AdaptiveList
-		data={rows}
-		{columns}>
-		{#snippet cell(row, col)}
-			{#if col.key === 'setting'}
-				<span class="font-medium">{row.setting}</span>
-			{:else if col.key === 'value'}
-				{#if row.id === 'protocol'}
-					<Badge
-						color="info"
-						variant="subtle"
-						pill>{row.value}</Badge>
-				{:else}
-					<Badge
-						color={row.value === 'Yes' ? 'success' : 'neutral'}
-						variant="subtle"
-						pill>
-						{row.value}
-					</Badge>
-				{/if}
-			{/if}
-		{/snippet}
-		{#snippet expanded(row)}
-			{#if row.id === 'protocol'}
-				<div class="space-y-2">
-					{#if showUsenetDelay}
-						<div class="flex items-center justify-between">
-							<span class="text-sm text-text-muted">Usenet Delay</span>
-							<span class="text-sm font-medium">
-								{formatDelay(profile.usenetDelay)}
-							</span>
-						</div>
-					{/if}
-					{#if showTorrentDelay}
-						<div class="flex items-center justify-between">
-							<span class="text-sm text-text-muted">Torrent Delay</span>
-							<span class="text-sm font-medium">
-								{formatDelay(profile.torrentDelay)}
-							</span>
-						</div>
-					{/if}
-				</div>
-			{:else if row.id === 'bypass-score' && profile.bypassIfAboveCustomFormatScore}
-				<div class="flex items-center justify-between">
-					<span class="text-sm text-text-muted">Minimum CF Score</span>
-					<span class="text-sm font-medium">
-						{profile.minimumCustomFormatScore ?? 0}
-					</span>
-				</div>
-			{/if}
-		{/snippet}
-		{#snippet card(row)}
-			<p class="text-sm font-medium">{row.setting}</p>
-			<div class="mt-2">
-				{#if row.id === 'protocol'}
-					<Badge
-						color="info"
-						variant="subtle"
-						pill>{row.value}</Badge>
-					<div class="mt-3 space-y-1">
-						{#if showUsenetDelay}
-							<div class="flex items-center justify-between text-sm">
-								<span class="text-text-muted">Usenet Delay</span>
-								<span class="font-medium">{formatDelay(profile.usenetDelay)}</span>
-							</div>
+<EntityView yamlPath="{page.url.pathname}.yaml">
+	{#snippet rich()}
+		<h2
+			id="configuration"
+			class="mt-8 border-b border-border-muted pb-2 text-xl font-bold">
+			Configuration
+		</h2>
+		<div class="mt-4">
+			<AdaptiveList
+				data={rows}
+				{columns}>
+				{#snippet cell(row, col)}
+					{#if col.key === 'setting'}
+						<span class="font-medium">{row.setting}</span>
+					{:else if col.key === 'value'}
+						{#if row.id === 'protocol'}
+							<Badge
+								color="info"
+								variant="subtle"
+								pill>{row.value}</Badge>
+						{:else}
+							<Badge
+								color={row.value === 'Yes' ? 'success' : 'neutral'}
+								variant="subtle"
+								pill>
+								{row.value}
+							</Badge>
 						{/if}
-						{#if showTorrentDelay}
-							<div class="flex items-center justify-between text-sm">
-								<span class="text-text-muted">Torrent Delay</span>
-								<span class="font-medium">{formatDelay(profile.torrentDelay)}</span>
+					{/if}
+				{/snippet}
+				{#snippet expanded(row)}
+					{#if row.id === 'protocol'}
+						<div class="space-y-2">
+							{#if showUsenetDelay}
+								<div class="flex items-center justify-between">
+									<span class="text-sm text-text-muted">Usenet Delay</span>
+									<span class="text-sm font-medium">
+										{formatDelay(profile.usenetDelay)}
+									</span>
+								</div>
+							{/if}
+							{#if showTorrentDelay}
+								<div class="flex items-center justify-between">
+									<span class="text-sm text-text-muted">Torrent Delay</span>
+									<span class="text-sm font-medium">
+										{formatDelay(profile.torrentDelay)}
+									</span>
+								</div>
+							{/if}
+						</div>
+					{:else if row.id === 'bypass-score' && profile.bypassIfAboveCustomFormatScore}
+						<div class="flex items-center justify-between">
+							<span class="text-sm text-text-muted">Minimum CF Score</span>
+							<span class="text-sm font-medium">
+								{profile.minimumCustomFormatScore ?? 0}
+							</span>
+						</div>
+					{/if}
+				{/snippet}
+				{#snippet card(row)}
+					<p class="text-sm font-medium">{row.setting}</p>
+					<div class="mt-2">
+						{#if row.id === 'protocol'}
+							<Badge
+								color="info"
+								variant="subtle"
+								pill>{row.value}</Badge>
+							<div class="mt-3 space-y-1">
+								{#if showUsenetDelay}
+									<div class="flex items-center justify-between text-sm">
+										<span class="text-text-muted">Usenet Delay</span>
+										<span class="font-medium"
+											>{formatDelay(profile.usenetDelay)}</span>
+									</div>
+								{/if}
+								{#if showTorrentDelay}
+									<div class="flex items-center justify-between text-sm">
+										<span class="text-text-muted">Torrent Delay</span>
+										<span class="font-medium"
+											>{formatDelay(profile.torrentDelay)}</span>
+									</div>
+								{/if}
 							</div>
+						{:else}
+							<Badge
+								color={row.value === 'Yes' ? 'success' : 'neutral'}
+								variant="subtle"
+								pill>
+								{row.value}
+							</Badge>
+							{#if row.id === 'bypass-score' && profile.bypassIfAboveCustomFormatScore}
+								<div class="mt-3 flex items-center justify-between text-sm">
+									<span class="text-text-muted">Minimum CF Score</span>
+									<span class="font-medium"
+										>{profile.minimumCustomFormatScore ?? 0}</span>
+								</div>
+							{/if}
 						{/if}
 					</div>
-				{:else}
-					<Badge
-						color={row.value === 'Yes' ? 'success' : 'neutral'}
-						variant="subtle"
-						pill>
-						{row.value}
-					</Badge>
-					{#if row.id === 'bypass-score' && profile.bypassIfAboveCustomFormatScore}
-						<div class="mt-3 flex items-center justify-between text-sm">
-							<span class="text-text-muted">Minimum CF Score</span>
-							<span class="font-medium">{profile.minimumCustomFormatScore ?? 0}</span>
-						</div>
-					{/if}
-				{/if}
-			</div>
-		{/snippet}
-	</AdaptiveList>
-</div>
+				{/snippet}
+			</AdaptiveList>
+		</div>
+	{/snippet}
+</EntityView>

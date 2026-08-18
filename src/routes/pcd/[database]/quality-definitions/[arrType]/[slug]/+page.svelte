@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
+	import EntityView from '$lib/client/pcd/EntityView.svelte';
 	import AdaptiveList from '$lib/client/ui/adaptive-list/AdaptiveList.svelte';
 	import Badge from '$lib/client/ui/badge/Badge.svelte';
 	import DropdownSelect from '$lib/client/ui/dropdown/DropdownSelect.svelte';
@@ -83,50 +84,55 @@
 		<PageActionsMenu
 			{formatActions}
 			artifactPath="{page.url.pathname}.md"
-			pagePath={page.url.pathname} />
+			pagePath={page.url.pathname}
+			viewSwitcher />
 	{/snippet}
 </PageHeader>
 
-<div class="mt-8 flex items-end justify-between gap-4 border-b border-border-muted pb-2">
-	<h2
-		id="quality-tiers"
-		class="text-xl font-bold">
-		Quality Tiers
-	</h2>
-	<DropdownSelect
-		value={unit}
-		options={unitOptions}
-		header="Size unit"
-		position="right"
-		onchange={(value) => tierSizeUnit.set(value as TierSizeUnit)} />
-</div>
-<div class="mt-4">
-	<AdaptiveList
-		data={rows}
-		{columns}>
-		{#snippet cell(row, col)}
-			{#if col.key === 'quality'}
-				<span class="font-medium">{row.quality}</span>
-			{:else}
-				<Badge variant="outline">{row[col.key]}</Badge>
-			{/if}
-		{/snippet}
-		{#snippet card(row)}
-			<p class="text-sm font-medium">{row.quality}</p>
-			<dl class="mt-2 space-y-1 text-sm">
-				<div class="flex items-center justify-between">
-					<dt class="text-text-muted">Min</dt>
-					<dd><Badge variant="outline">{row.min}</Badge></dd>
-				</div>
-				<div class="flex items-center justify-between">
-					<dt class="text-text-muted">Preferred</dt>
-					<dd><Badge variant="outline">{row.preferred}</Badge></dd>
-				</div>
-				<div class="flex items-center justify-between">
-					<dt class="text-text-muted">Max</dt>
-					<dd><Badge variant="outline">{row.max}</Badge></dd>
-				</div>
-			</dl>
-		{/snippet}
-	</AdaptiveList>
-</div>
+<EntityView yamlPath="{page.url.pathname}.yaml">
+	{#snippet rich()}
+		<div class="mt-8 flex items-end justify-between gap-4 border-b border-border-muted pb-2">
+			<h2
+				id="quality-tiers"
+				class="text-xl font-bold">
+				Quality Tiers
+			</h2>
+			<DropdownSelect
+				value={unit}
+				options={unitOptions}
+				header="Size unit"
+				position="right"
+				onchange={(value) => tierSizeUnit.set(value as TierSizeUnit)} />
+		</div>
+		<div class="mt-4">
+			<AdaptiveList
+				data={rows}
+				{columns}>
+				{#snippet cell(row, col)}
+					{#if col.key === 'quality'}
+						<span class="font-medium">{row.quality}</span>
+					{:else}
+						<Badge variant="outline">{row[col.key]}</Badge>
+					{/if}
+				{/snippet}
+				{#snippet card(row)}
+					<p class="text-sm font-medium">{row.quality}</p>
+					<dl class="mt-2 space-y-1 text-sm">
+						<div class="flex items-center justify-between">
+							<dt class="text-text-muted">Min</dt>
+							<dd><Badge variant="outline">{row.min}</Badge></dd>
+						</div>
+						<div class="flex items-center justify-between">
+							<dt class="text-text-muted">Preferred</dt>
+							<dd><Badge variant="outline">{row.preferred}</Badge></dd>
+						</div>
+						<div class="flex items-center justify-between">
+							<dt class="text-text-muted">Max</dt>
+							<dd><Badge variant="outline">{row.max}</Badge></dd>
+						</div>
+					</dl>
+				{/snippet}
+			</AdaptiveList>
+		</div>
+	{/snippet}
+</EntityView>

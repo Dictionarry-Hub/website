@@ -346,12 +346,13 @@ internal `m-auto` shorthand), e.g. `mt-[12svh]` for a command-palette position.
 
 `src/lib/client/ui/page-actions/PageActionsMenu.svelte`
 
-Unified page-level menu for machine-readable formats and AI actions. Composes `Button`, `Dropdown`,
-`DropdownHeader`, and `DropdownItem`. Entity pages provide copy or download format actions plus
-their Markdown artifact and page paths. Page formats contains the entity format actions followed by
-Copy page as Markdown and View as Markdown; AI actions contains the assistant links. Successful
-copies close the menu and replace the trigger with a green confirmation for two seconds; failures
-use the same pattern with the danger state.
+Unified page-level menu for page views, machine-readable formats, and AI actions. Composes `Button`,
+`Dropdown`, `DropdownHeader`, and `DropdownItem`. Entity pages provide copy or download format
+actions plus their Markdown artifact and page paths. Setting `viewSwitcher` adds Rich view and YAML
+view choices under Page view, with the active choice selected. Page formats contains the entity
+format actions followed by Copy page as Markdown and View as Markdown; AI actions contains the
+assistant links. Successful copies close the menu and replace the trigger with a green confirmation
+for two seconds; failures use the same pattern with the danger state.
 
 ### Search
 

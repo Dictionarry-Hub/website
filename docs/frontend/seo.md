@@ -31,8 +31,9 @@ options:
 ## Meta Tags
 
 All meta tags are rendered by the `SEO` component (`src/lib/client/ui/utils/SEO.svelte`). Every page
-must use it. The component handles `<title>`, description, theme-color, Open Graph, and Twitter Card
-tags via `<svelte:head>`.
+must use it. The component handles the canonical URL, `<title>`, description, theme-color, Open
+Graph, and Twitter Card tags via `<svelte:head>`. Canonical URLs use the public site origin and the
+current pathname, excluding query parameters and fragments.
 
 ```svelte
 <SEO

@@ -56,8 +56,10 @@
 	let themeValue = $state(theme.current);
 	let databaseValue = $state(database.current);
 	let searchOpen = $state(false);
+	let mounted = $state(false);
 
 	const currentNav = $derived(data.pcdNav[databaseValue]);
+	const yamlView = $derived(mounted && page.url.searchParams.get('view') === 'yaml');
 
 	// Sync database from URL when on PCD routes
 	$effect(() => {
@@ -81,6 +83,7 @@
 	}
 
 	onMount(() => {
+		mounted = true;
 		theme.init();
 		themeValue = theme.current;
 		database.init();
@@ -292,12 +295,14 @@
 			{@render children()}
 
 			<!-- Floats beside any page that renders an <article>; renders nothing elsewhere.
-			     Keyed by pathname so the heading scan reruns on client-side navigation. -->
+			     YAML views omit it because they replace the page headings with source. -->
 			<div class="toc-float">
 				<div class="toc-sticky">
-					{#key page.url.pathname}
-						<TableOfContents />
-					{/key}
+					{#if !yamlView}
+						{#key page.url.pathname}
+							<TableOfContents />
+						{/key}
+					{/if}
 				</div>
 			</div>
 		</div>

@@ -1,3 +1,2 @@
-// Canonical site origin, used in artifact preambles where relative links are
-// useless (the text gets copied out of the site entirely).
+// Canonical site origin for public links and metadata that require absolute URLs.
 export const SITE_URL = 'https://dictionarry.dev';
