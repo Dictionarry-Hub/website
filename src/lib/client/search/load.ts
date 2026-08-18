@@ -1,6 +1,8 @@
 import type { SearchEntry } from '$lib/shared/utils/search/types';
 import { createIndex, type SearchIndex } from './search.js';
 
+export const SEARCH_ELO_ENABLED = import.meta.env.PUBLIC_SEARCH_ELO_ENABLED === 'true';
+
 // Lazy index loading: nothing is fetched until the palette first opens.
 // Core entries are required; the per-database file and the per-term rating
 // table are tolerated missing (same philosophy as the nav: absent build
@@ -36,7 +38,7 @@ export function loadSearchIndex(database: string): Promise<LoadedSearch> {
 			fetchJson<SearchEntry[]>(`/search-index/${database}.json`).catch(
 				() => [] as SearchEntry[]
 			),
-			loadQueryRatings()
+			SEARCH_ELO_ENABLED ? loadQueryRatings() : Promise.resolve({})
 		]).then(([core, db, queryRatings]) => ({
 			index: createIndex([...core, ...db]),
 			queryRatings

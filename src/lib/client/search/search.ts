@@ -26,6 +26,8 @@ export interface SearchResult {
 export interface SearchOptions {
 	/** Per-term effective ratings (term -> route -> rating). */
 	queryRatings?: Record<string, Record<string, number>>;
+	/** Whether global and per-term Elo ratings affect result order. */
+	useElo?: boolean;
 	limit?: number;
 }
 
@@ -133,14 +135,17 @@ export function search(
 	const top = candidates[0].text;
 	const gated = candidates.filter((c) => c.text >= SEARCH.RELATIVE_GATE * top);
 
-	const second = gated[1]?.text ?? top;
-	const spread = (top - second) / top;
-	let flatness = 1 - Math.min(spread / SEARCH.SPREAD_REF, 1);
-	if (exploratory) flatness = Math.max(flatness, SEARCH.EXPLORATORY_FLATNESS);
-	const eloWeight =
-		SEARCH.ELO_WEIGHT_MIN + (SEARCH.ELO_WEIGHT_MAX - SEARCH.ELO_WEIGHT_MIN) * flatness;
+	let eloWeight = 0;
+	if (options.useElo !== false) {
+		const second = gated[1]?.text ?? top;
+		const spread = (top - second) / top;
+		let flatness = 1 - Math.min(spread / SEARCH.SPREAD_REF, 1);
+		if (exploratory) flatness = Math.max(flatness, SEARCH.EXPLORATORY_FLATNESS);
+		eloWeight =
+			SEARCH.ELO_WEIGHT_MIN + (SEARCH.ELO_WEIGHT_MAX - SEARCH.ELO_WEIGHT_MIN) * flatness;
+	}
 
-	const table = options.queryRatings?.[termKey(query)];
+	const table = options.useElo === false ? undefined : options.queryRatings?.[termKey(query)];
 	const results = gated.map(({ item, text }) => {
 		const rating = table?.[item.entry.url] ?? item.entry.elo;
 		return { entry: item.entry, score: (1 - eloWeight) * text + eloWeight * eloNorm(rating) };
@@ -150,10 +155,7 @@ export function search(
 	return results.slice(0, options.limit ?? SEARCH.LIMIT);
 }
 
-/**
- * Top entries by global rating, for the palette's empty state. Per-term
- * tables never apply: there is no term.
- */
+/** Top entries by global Elo rating for the palette's empty state. */
 export function popular(index: SearchIndex, limit: number = SEARCH.LIMIT): SearchResult[] {
 	return [...index.items]
 		.sort((a, b) => b.entry.elo - a.entry.elo || a.entry.title.localeCompare(b.entry.title))

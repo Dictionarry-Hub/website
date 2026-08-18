@@ -236,6 +236,22 @@ describe('per-term ratings', () => {
 
 		expect(titles(results)[0]).toBe('1080p Profile Alpha');
 	});
+
+	it('ignores global and per-term ratings when Elo is disabled', () => {
+		const results = run(
+			'1080p profile',
+			[
+				entry({ title: '1080p Profile Alpha', url: '/a', elo: 1200 }),
+				entry({ title: '1080p Profile Beta', url: '/b', elo: 2200 })
+			],
+			{
+				queryRatings: { '1080p profile': { '/b': 2400 } },
+				useElo: false
+			}
+		);
+
+		expect(titles(results)[0]).toBe('1080p Profile Alpha');
+	});
 });
 
 describe('results', () => {

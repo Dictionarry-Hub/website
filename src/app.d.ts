@@ -2,6 +2,7 @@
 // for information about these interfaces
 declare global {
 	interface ImportMetaEnv {
+		readonly PUBLIC_SEARCH_ELO_ENABLED?: string;
 		readonly PUBLIC_SITE_URL: string;
 	}
 

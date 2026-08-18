@@ -6,7 +6,11 @@
 	import Kbd from '$lib/client/ui/kbd/Kbd.svelte';
 	import { popular, search, type SearchResult } from '$lib/client/search';
 	import { SEARCH } from '$lib/client/search/constants';
-	import { loadSearchIndex, type LoadedSearch } from '$lib/client/search/load';
+	import {
+		loadSearchIndex,
+		SEARCH_ELO_ENABLED,
+		type LoadedSearch
+	} from '$lib/client/search/load';
 	import { recordClick } from '$lib/client/search/clicks';
 	import type { SearchEntryType } from '$lib/shared/utils/search/types';
 
@@ -48,8 +52,13 @@
 	const results = $derived.by((): SearchResult[] => {
 		if (!loaded) return [];
 		return isPopular
-			? popular(loaded.index, POPULAR_LIMIT)
-			: search(loaded.index, query, { queryRatings: loaded.queryRatings });
+			? SEARCH_ELO_ENABLED
+				? popular(loaded.index, POPULAR_LIMIT)
+				: []
+			: search(loaded.index, query, {
+					queryRatings: loaded.queryRatings,
+					useElo: SEARCH_ELO_ENABLED
+				});
 	});
 
 	// Load (or reload on database switch) while open. The stale flag guards
@@ -156,7 +165,7 @@
 			<p class="px-4 py-10 text-center text-sm text-text-muted">Loading index...</p>
 		{:else if results.length === 0}
 			<p class="px-4 py-10 text-center text-sm text-text-muted">
-				No results for "{query}".
+				{isPopular ? 'Start typing to search.' : `No results for "${query}".`}
 			</p>
 		{:else}
 			{#if isPopular}
